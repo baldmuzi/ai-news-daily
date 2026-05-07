@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 行业日报 · 第 0003 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #22263a;
+      --border: #2e3352;
+      --accent: #6c8aff;
+      --accent2: #a78bfa;
+      --accent3: #34d399;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --tag-bg: #1e2a3a;
+      --tag-border: #2d4a6b;
+      --tag-text: #7dd3fc;
+      --num-color: #6c8aff;
+      --shadow: 0 4px 24px rgba(0,0,0,0.45);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Noto Serif SC', serif;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      background: linear-gradient(135deg, #10152a 0%, #1a1d27 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+    .header-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+    .header-title {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+    }
+    .header-subtitle {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+    }
+    .header-meta {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .meta-item {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .meta-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent3); }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    .intro-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+    .intro-block-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+    .intro-text { font-size: 1rem; color: var(--text); line-height: 1.85; }
+
+    .tags-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
+    .tag {
+      background: var(--tag-bg);
+      border: 1px solid var(--tag-border);
+      color: var(--tag-text);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      letter-spacing: 0.04em;
+    }
+
+    .section-heading {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .section-heading::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+    .news-grid { display: flex; flex-direction: column; gap: 1.25rem; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+      transition: border-color 0.2s, transform 0.2s;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0 1.25rem;
+    }
+    .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .card-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--num-color);
+      opacity: 0.35;
+      line-height: 1.4;
+      padding-top: 0.1rem;
+      min-width: 2.5rem;
+    }
+    .card-title { font-size: 1.05rem; font-weight: 600; color: #fff; margin-bottom: 0.6rem; line-height: 1.5; }
+    .card-source {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--accent3);
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.05em;
+    }
+    .card-comment { font-size: 0.92rem; color: var(--text-muted); line-height: 1.8; }
+    .card-tag {
+      display: inline-block;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--accent2);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      padding: 0.15rem 0.55rem;
+      border-radius: 4px;
+      margin-top: 0.75rem;
+      letter-spacing: 0.04em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      border-top: 1px solid var(--border);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--accent); }
+    .footer-nav { margin-top: 0.75rem; }
+
+    @media (max-width: 600px) {
+      .card { grid-template-columns: 1fr; }
+      .card-num { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-label">AI 行业日报 · Daily Intelligence</div>
+  <h1 class="header-title">第 0003 期</h1>
+  <p class="header-subtitle">edition-0003 · 2026年5月7日</p>
+  <div class="header-meta">
+    <span class="meta-item"><span class="meta-dot"></span>Top 10 新闻</span>
+    <span class="meta-item"><span class="meta-dot"></span>5 个关键词</span>
+    <span class="meta-item"><span class="meta-dot"></span>2026/05/07</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="intro-block">
+    <div class="intro-block-label">本期导语</div>
+    <p class="intro-text">AI商业化全速推进：OpenAI百亿美元"部署公司"正式落地、AMD数据中心同比暴增57%、Meta年度AI资本支出上调至1450亿美元历史新高。谷歌Gemini 3.1 Flash-Lite今日正式GA，IBM发布企业AI操作模型蓝图，摩根大通和美国运通相继重仓AI基础设施。算力军备、企业落地与金融转型三线并进，AI产业进入不可逆的规模化变现阶段。</p>
+  </div>
+
+  <div class="tags-row">
+    <span class="tag"># 企业AI落地</span>
+    <span class="tag"># 算力军备</span>
+    <span class="tag"># 金融AI</span>
+    <span class="tag"># 商业化加速</span>
+    <span class="tag"># 模型发布</span>
+  </div>
+
+  <div class="section-heading">Top 10 · 本期精选</div>
+  <div class="news-grid">
+
+    <div class="card">
+      <div class="card-num">01</div>
+      <div class="card-body">
+        <div class="card-source">OpenAI · Bloomberg · The Next Web</div>
+        <h2 class="card-title">OpenAI 正式成立百亿美元"部署公司"，携手 TPG、软银深入企业 AI 落地</h2>
+        <p class="card-comment">OpenAI 联合 TPG、Brookfield、Bain Capital、软银等 19 家 PE 机构完成"The Deployment Company"（DeployCo）融资，估值 100 亿美元，承诺五年年化回报 17.5%。该公司将向企业客户嵌入专属 OpenAI 工程师团队，复制 Palantir "前沿部署"模式。这标志着 AI 商业化从订阅服务向企业深度实施的结构性升级，AI 公司的变现逻辑正在根本性重构。</p>
+        <span class="card-tag">商业化加速</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">02</div>
+      <div class="card-body">
+        <div class="card-source">AMD · CNBC · Data Center Dynamics</div>
+        <h2 class="card-title">AMD Q1 2026 数据中心营收 58 亿美元，同比暴增 57%，股价盘后飙升 16%</h2>
+        <p class="card-comment">AMD 一季度总营收 102.5 亿美元，同比增长 38%；数据中心营收 58 亿美元，同比增长 57%，为历史最高，并首次超越 PC 业务成为第一大收入来源。CEO Lisa Su 指出 AI 推理和智能体应用正在大幅拉动 Instinct GPU 和 EPYC 处理器需求，二季度指引 112 亿美元同比增长 46%，再度超出预期。AMD 正成为英伟达之外不可忽视的 AI 芯片第二极。</p>
+        <span class="card-tag">算力军备</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">03</div>
+      <div class="card-body">
+        <div class="card-source">Google · VentureBeat · Google Cloud Blog</div>
+        <h2 class="card-title">谷歌 Gemini 3.1 Flash-Lite 今日正式 GA，速度提升 2.5 倍，每百万 Token 仅 0.25 美元</h2>
+        <p class="card-comment">Gemini 3.1 Flash-Lite 于 5 月 7 日正式全面可用，首答响应速度比上代 2.5 Flash 快 2.5 倍，输出生成速度提升 45%，每秒可生成 355.9 个 Token。输入定价 0.25 美元/百万 Token，仅为 Pro 版本的八分之一，Arena.ai 排行榜 Elo 分 1432，是目前性价比最高的大模型之一，直接降低了中小开发者和企业的 AI 使用门槛。</p>
+        <span class="card-tag">模型发布</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">04</div>
+      <div class="card-body">
+        <div class="card-source">Meta · Fortune · CNBC</div>
+        <h2 class="card-title">Meta 将 2026 年 AI 资本支出上调至 1250–1450 亿美元，创科技公司历史之最</h2>
+        <p class="card-comment">Meta 在 Q1 2026 财报中将全年资本支出指引上调至 1250–1450 亿美元，超出此前 1150–1350 亿美元的预期区间，将超过其 2024 年和 2025 年资本支出的总和。CEO 扎克伯格将这笔巨资押注在 AI 基础设施上，目标是缩小与 OpenAI 和谷歌的差距。消息公布后股价当日下跌 6%，市场对回报节奏仍有疑虑。</p>
+        <span class="card-tag">算力军备</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">05</div>
+      <div class="card-body">
+        <div class="card-source">IBM · IBM Newsroom</div>
+        <h2 class="card-title">IBM Think 2026：发布企业 AI 操作模型蓝图，推出 watsonx Orchestrate 新一代多智能体编排</h2>
+        <p class="card-comment">IBM 在 Think 2026 大会（5月5日）发布了企业 AI "操作模型蓝图"，核心产品包括支持多智能体编排的 watsonx Orchestrate 新版、IBM Confluent 实时数据层、以及首个在基础设施层嵌入治理策略的 IBM Sovereign Core 平台。在与雀巢的概念验证中，watsonx.data GPU 加速引擎实现了 83% 成本节省和 30 倍价格性能提升，企业 AI 合规与主权需求正成为新赛道。</p>
+        <span class="card-tag">企业AI落地</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">06</div>
+      <div class="card-body">
+        <div class="card-source">Google DeepMind · Google Blog · VentureBeat</div>
+        <h2 class="card-title">谷歌 Deep Research Max 开放预览，单任务可执行约 160 次搜索，已整合 FactSet、S&P Global</h2>
+        <p class="card-comment">Google DeepMind 推出的 Deep Research Max 专为异步后台工作流设计，可在夜间自动完成约 160 次搜索并生成尽职调查报告，已与 FactSet、S&P Global、PitchBook 等金融数据平台深度集成。这标志着 AI 从"辅助搜索"向"自主研究代理"的关键跨越；咨询巨头埃森哲、麦肯锡、BCG 等已获得谷歌 DeepMind 未发布模型的预发布访问权。</p>
+        <span class="card-tag">企业AI落地</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">07</div>
+      <div class="card-body">
+        <div class="card-source">American Express · Fortune · VentureBeat</div>
+        <h2 class="card-title">美国运通发布 ACE 套件，AI 代理购物受法律保护，传统金融机构率先布局代理支付</h2>
+        <p class="card-comment">美国运通推出 Agentic Commerce Experiences（ACE）开发者套件，允许 AI 代理在用户设定预算内自主完成购物支付，并为注册代理的交易提供与人工消费相同的消费者法律保障。ACE 采用意图合约和一次性 Token 体系，确保代理行为可审计可回溯。这是传统金融机构率先将 AI 代理纳入法律框架的重大案例，为代理经济的信任基础设施奠定雏形。</p>
+        <span class="card-tag">金融AI</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">08</div>
+      <div class="card-body">
+        <div class="card-source">JPMorgan Chase · Reuters</div>
+        <h2 class="card-title">摩根大通将 AI 正式列为核心基础设施，2026 年科技预算约 198 亿美元，2000 人专职 AI</h2>
+        <p class="card-comment">摩根大通正式将 AI 投资从"实验性 R&D"重新分类为"核心基础设施"，2026 年科技总预算约 198 亿美元，其中约 2000 名员工专职负责 AI 开发与部署。这一分类变化具有重要信号意义：当金融机构开始用基础设施逻辑而非创新试点来看待 AI，行业向 AI 原生转型的进程将大幅加速。</p>
+        <span class="card-tag">金融AI</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">09</div>
+      <div class="card-body">
+        <div class="card-source">Anthropic · Anthropic Blog</div>
+        <h2 class="card-title">Anthropic 为金融行业发布 10 款预配置 AI 代理，覆盖投行、资管与保险核心场景</h2>
+        <p class="card-comment">Anthropic 推出面向金融机构的 10 款开箱即用 AI 代理，能自动执行投资银行、资产管理和保险领域的典型工作流，开启了 Anthropic 的金融行业垂直化布局。这与其 Project Glasswing 的网络安全布局形成互补，显示 Anthropic 正以"受控场景专项智能体"为切入点，在高度合规要求的行业率先形成商业护城河。</p>
+        <span class="card-tag">金融AI</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">10</div>
+      <div class="card-body">
+        <div class="card-source">OpenAI · OpenAI Blog</div>
+        <h2 class="card-title">OpenAI 发布 B2B Signals 报告：前沿企业 AI 使用密度是普通企业 3.5 倍，"AI鸿沟"加速扩大</h2>
+        <p class="card-comment">OpenAI 发布企业 AI 使用分析报告，显示领先企业每名员工使用的 AI 算力是行业平均水平的 3.5 倍（2025 年 4 月为 2 倍），在代码生成工具 Codex 的使用量上差距更达 16 倍。这一数据首次量化了"AI鸿沟"的速度：领先企业的生产效率优势将在未来两年内形成难以逾越的竞争壁垒，中小企业的窗口期正在快速收窄。</p>
+        <span class="card-tag">企业AI落地</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div>AI 行业日报 · 第 0003 期 · 2026年5月7日</div>
+  <div class="footer-nav">
+    <a href="../index.html">← 返回往期存档</a>
+  </div>
+</footer>
+
+</body>
+</html>

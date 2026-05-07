@@ -1,27 +1,27 @@
 {
-  "edition": "0002",
-  "date": "2026年5月7日 08:00",
-  "intro": "本期聚焦AI安全与算力博弈：Anthropic Mythos已能大规模挖掘零日漏洞，引发安全格局巨变；Anthropic与Google签署2000亿美元算力协议，中美差距缩至2.7%。OpenAI、DeepSeek相继更新旗舰模型，企业自主智能体浪潮涌起，AI正快速从实验走向规模化生产部署。",
+  "edition": "0003",
+  "date": "2026年5月7日 10:00",
+  "intro": "AI商业化全速推进：OpenAI百亿美元部署公司正式落地、AMD数据中心同比暴增57%、Meta年度AI资本支出上调至1450亿美元历史新高。谷歌Gemini 3.1 Flash-Lite今日正式GA，IBM发布企业AI操作模型蓝图，摩根大通和美国运通相继重仓AI基础设施，AI产业进入不可逆的规模化变现阶段。",
   "tags": [
-    "AI安全",
-    "基础设施竞争",
-    "中美AI博弈",
-    "企业智能体",
-    "开源模型"
+    "企业AI落地",
+    "算力军备",
+    "金融AI",
+    "商业化加速",
+    "模型发布"
   ],
   "top3": [
     {
-      "title": "Anthropic Claude Mythos发现数万零日漏洞开启Project Glasswing",
-      "comment": "AI网络安全能力超越顶级人类专家，双刃剑效应同步放大攻击风险"
+      "title": "OpenAI正式成立百亿美元部署公司，携手TPG软银深入企业AI落地",
+      "comment": "DeployCo嵌入企业专属工程师团队，复制Palantir前沿部署模式，AI变现逻辑从订阅转向深度实施。"
     },
     {
-      "title": "Anthropic承诺向Google Cloud投入2000亿美元",
-      "comment": "创纪录算力绑定协议占Alphabet云收入积压逾40%，重塑云计算市场"
+      "title": "AMD Q1 2026数据中心营收58亿美元同比暴增57%，股价飙升16%",
+      "comment": "AI推理和智能体需求拉动Instinct GPU销售，AMD正成为英伟达之外不可忽视的AI芯片第二极。"
     },
     {
-      "title": "OpenAI发布GPT-5.5 Instant，幻觉率降低52.5%",
-      "comment": "高风险场景幻觉声明大幅减少，新增记忆来源功能提升透明度与个性化"
+      "title": "谷歌Gemini 3.1 Flash-Lite今日正式GA，速度提升2.5倍每百万Token仅0.25美元",
+      "comment": "性能领先同级模型，定价仅为Pro版八分之一，大幅降低中小开发者和企业的AI使用门槛。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/editions/edition-0002.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/editions/edition-0003.html"
 }
