@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 行业资讯 · 第 0001 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface-alt: #22263a;
+      --border: #2e3350;
+      --text: #e2e6f0;
+      --text-muted: #8b90a8;
+      --accent: #7c88ff;
+      --accent-glow: rgba(124, 136, 255, 0.15);
+      --tag-bg: #1e2340;
+      --tag-text: #9ba8ff;
+      --num-color: #4a5280;
+      --card-hover: #1f2335;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Noto Serif SC', serif;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #111520 0%, #0f1117 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+    .edition-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--accent);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      background: var(--accent-glow);
+      border: 1px solid rgba(124,136,255,0.3);
+      border-radius: 100px;
+      display: inline-block;
+      padding: 0.25em 1em;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: #fff;
+    }
+    header h1 span { color: var(--accent); }
+    .meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+    }
+
+    /* Intro */
+    .intro-section {
+      max-width: 780px;
+      margin: 2.5rem auto 0;
+      padding: 0 1.5rem;
+    }
+    .intro-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+    }
+    .intro-box p {
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+    .tags {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .tag {
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      border: 1px solid rgba(155,168,255,0.2);
+      border-radius: 100px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      padding: 0.2em 0.85em;
+      letter-spacing: 0.04em;
+    }
+
+    /* News grid */
+    .news-section {
+      max-width: 900px;
+      margin: 2.5rem auto 4rem;
+      padding: 0 1.5rem;
+    }
+    .section-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 1rem;
+      display: grid;
+      grid-template-columns: 2.5rem 1fr;
+      gap: 0 1.25rem;
+      transition: background 0.2s, border-color 0.2s, transform 0.15s;
+    }
+    .card:hover {
+      background: var(--card-hover);
+      border-color: rgba(124,136,255,0.35);
+      transform: translateY(-2px);
+    }
+    .card-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--num-color);
+      line-height: 1.4;
+      padding-top: 0.1rem;
+      user-select: none;
+    }
+    .card-body {}
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.5;
+      margin-bottom: 0.6rem;
+    }
+    .card-title a { color: inherit; }
+    .card-title a:hover { color: var(--accent); text-decoration: none; }
+    .card-comment {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+    .card-source {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      color: rgba(124,136,255,0.6);
+      margin-top: 0.6rem;
+      letter-spacing: 0.05em;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      border-top: 1px solid var(--border);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--text-muted); }
+    footer a:hover { color: var(--accent); }
+
+    @media (max-width: 540px) {
+      .card { grid-template-columns: 1.75rem 1fr; gap: 0 0.85rem; padding: 1.1rem 1rem; }
+      .card-num { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="edition-badge">Edition · 0001</div>
+  <h1>AI 行业资讯<span> Daily</span></h1>
+  <p class="meta">2026年5月7日 &nbsp;|&nbsp; Top 10 精选</p>
+</header>
+
+<div class="intro-section">
+  <div class="intro-box">
+    <p>大模型迭代提速，OpenAI 以 GPT-5.5 Instant 刷新 ChatGPT 默认体验；Anthropic 的 Claude Mythos 在网络安全领域展现出超越人类专家的漏洞发现能力；与此同时，AI Agent 正从概念走向金融、企业等实体商业场景，一个以"智能体"为基础设施的新商业时代正在破晓。</p>
+    <div class="tags">
+      <span class="tag">#大模型迭代</span>
+      <span class="tag">#AI Agent</span>
+      <span class="tag">#网络安全</span>
+      <span class="tag">#企业级AI</span>
+      <span class="tag">#行业监管</span>
+    </div>
+  </div>
+</div>
+
+<div class="news-section">
+  <div class="section-title">本期精选 · Top 10</div>
+
+  <div class="card">
+    <div class="card-num">01</div>
+    <div class="card-body">
+      <div class="card-title">
+        <a href="https://openai.com/index/gpt-5-5-instant/" target="_blank" rel="noopener">OpenAI 发布 GPT-5.5 Instant，成为 ChatGPT 全新默认模型</a>
+      </div>
+      <div class="card-comment">
+        OpenAI 于5月5日将 GPT-5.5 Instant 设为 ChatGPT 默认模型，其幻觉率较上一版本下降52.5%，同时大幅压缩回答冗余。新增的"记忆来源"功能让用户能看到 AI 调用了哪些上下文来个性化回答，隐私透明度提升。这一更新标志着 OpenAI 将"精准简洁"作为新一代通用模型的核心设计原则。
+      </div>
+      <div class="card-source">来源: OpenAI Blog · TechCrunch</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-num">02</div>
+    <div class="card-body">
+      <div class="card-title">
+        <a href="https://red.anthropic.com/2026/mythos-preview/" target="_blank" rel="noopener">Anthropic Claude Mythos Preview：发现数千个零日漏洞，重塑网络安全格局</a>
+      </div>
+      <div class="card-comment">
+        Claude Mythos Preview 能自主完成多阶段网络攻击并在所有主流操作系统中发现大量此前未知的关键漏洞，其能力已引发监管机构和安全界的高度关注。Anthropic 以此为契机启动 Project Glasswing，联合苹果、谷歌、微软等巨头将模型能力定向用于防御修复，而非公开发布。此举开创了高危 AI 能力"受控商业化"的新范式。
+      </div>
+      <div class="card-source">来源: Anthropic · The Hacker News · SecurityWeek</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-num">03</div>
+    <div class="card-body">
+      <div class="card-title">
+        <a href="https://ca.finance.yahoo.com/news/anthropic-commits-spending-200-billion-204952202.html" target="_blank" rel="noopener">Anthropic 承诺五年向谷歌云投入 2000 亿美元，绑定 TPU 算力</a>
+      </div>
+      <div class="card-comment">
+        Anthropic 与 Google Cloud 签订五年期战略协议，规模高达2000亿美元，涵盖多吉瓦特 TPU 算力，2027年起陆续交付。这笔创纪录的云计算采购合同揭示了顶级 AI 实验室对算力的巨大渴求，也进一步深化了 Anthropic 与谷歌之间的战略依存关系。企业 AI 采购决策者需重新审视供应商集中风险。
+      </div>
+      <div class="card-source">来源: Yahoo Finance · Kursol</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-num">04</div>
+    <div class="card-body">
+      <div class="card-title">
+        <a href="https://www.anthropic.com/glasswing" target="_blank" rel="noopener">Anthropic 发布 10 款金融行业 AI Agent，覆盖投行、资管与保险</a>
+      </div>
+      <div class="card-comment">
+        Anthropic 向金融行业推出10个预配置 AI 智能体，可自动化处理投资银行、资产管理及保险公司的典型业务流程，大幅降低金融机构部署 AI 的门槛。这是继医疗、法律之后，Anthropic 加速将能力变现的又一关键行业落地动作，"垂直场景 Agent"正成为头部 AI 公司的新竞争阵地。
+      </div>
+      <div class="card-source">来源: Anthropic</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-num">05</div>
+    <div class="card-body">
+      <div class="card-title">
+        <a href="https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html" target="_blank" rel="noopener">美国政府将在发布前测评谷歌、微软、xAI 旗下 AI 模型</a>
+      </div>
+      <div class="card-comment">
+        美国商务部旗下 CAISI 宣布与 Google DeepMind、微软和 xAI 签署协议，允许政府在商业发布前对其 AI 模型进行独立评测，此前已覆盖 OpenAI 与 Anthropic。政府深度介入模型上市前审查，意味着 AI 监管正从事后问责向事前卡口转型，对模型研发周期及商业化节奏将产生深远影响。
+      </div>
+      <div class="card-source">来源: CNBC · CNN Business</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-num">06</div>
+    <div class="card-body">
+      <div class="card-title">
+        <a href="https://releasebot.io/updates/xai" target="_blank" rel="noopener">xAI 推出 Grok 独立语音 API，支持25+语言实时语音转写与合成</a>
+      </div>
+      <div class="card-comment">
+        xAI 发布独立的语音转文字和文字转语音 API，提供低延迟实时转写、说话人分离及时间戳等能力，TTS 定价4.20美元/百万字符。Grok 4.20 Beta 同步面向企业 API 开放，多智能体版本也同步推出。xAI 加速构建完整的平台生态，与 OpenAI 在语音及多模态领域的竞争进一步白热化。
+      </div>
+      <div class="card-source">来源: xAI · Releasebot</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-num">07</div>
+    <div class="card-body">
+      <div class="card-title">
+        <a href="https://www.americanexpress.com/en-us/newsroom/articles/innovation/american-express-debuts-agentic-commerce-experiences--ace--devel.html" target="_blank" rel="noopener">美国运通推出 AI 购物智能体开发套件，并承担 Agent 错误损失</a>
+      </div>
+      <div class="card-comment">
+        美国运通发布 ACE 开发者套件，让 AI Agent 代替用户完成购物下单，并通过意图合约和一次性支付令牌实现消费控制；更首开行业先河地承诺为经认证的智能体交易错误提供购买保护。金融机构正从"支持 AI 使用"升级为"AI 行为责任方"，这将重塑消费者信任体系与合规格局。
+      </div>
+      <div class="card-source">来源: American Express · VentureBeat · Fortune</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-num">08</div>
+    <div class="card-body">
+      <div class="card-title">
+        <a href="https://opentools.ai/news/google-io-2026-ai-gemini-updates-and-android-xr-innovations" target="_blank" rel="noopener">Google I/O 2026 定档5月19日，Gemini 4 有望亮相</a>
+      </div>
+      <div class="card-comment">
+        Google I/O 2026 将于5月19至20日举行，外界预计届时将发布 Gemini 4——该模型最大的范式转变在于从"响应式 AI"升级为"主动式 AI"，可处理真正意义上的自主多步骤任务流。作为每年科技界最受关注的发布舞台，此次 I/O 将成为验证谷歌 AI 战略执行力的重要节点。
+      </div>
+      <div class="card-source">来源: OpenTools AI · Voxfor</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-num">09</div>
+    <div class="card-body">
+      <div class="card-title">
+        <a href="https://venturebeat.com/technology/writer-launches-ai-agents-that-can-act-without-prompts-taking-on-amazon-microsoft-and-salesforce" target="_blank" rel="noopener">Writer 发布无需提示词的自主 AI Agent，挑战微软、Salesforce</a>
+      </div>
+      <div class="card-comment">
+        企业 AI 公司 Writer 推出新一代 AI Agent，可在无需用户提示的情况下主动触发和执行业务流程，直接与亚马逊、微软及 Salesforce 的 Agent 平台展开正面竞争。"主动式 Agent"正成为企业 AI 新战场，它要求 AI 从工具角色转变为业务流程的驱动者，对工作流设计和安全审计提出全新要求。
+      </div>
+      <div class="card-source">来源: VentureBeat</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-num">10</div>
+    <div class="card-body">
+      <div class="card-title">
+        <a href="https://www.stcn.com/article/detail/3821826.html" target="_blank" rel="noopener">DeepSeek API 大幅降价，缓存输入价格降至首发价十分之一</a>
+      </div>
+      <div class="card-comment">
+        DeepSeek 将 API 缓存输入价格从1元/百万 Token 降至0.1元，叠加限时折扣后实际成本极低，再度冲击全球大模型 API 定价体系。国内大模型"价格战"持续升温，倒逼海外模型厂商重新审视定价策略，同时也加速了国内开发者向大模型应用层迁移的步伐。
+      </div>
+      <div class="card-source">来源: 证券时报 · 量子位</div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>
+    <a href="../index.html">← 返回存档首页</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    AI 行业资讯 Daily &nbsp;·&nbsp; Edition #0001 &nbsp;·&nbsp; 2026年5月7日
+  </p>
+</footer>
+
+</body>
+</html>
