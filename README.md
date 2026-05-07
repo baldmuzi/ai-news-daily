@@ -1,5 +1,8 @@
 # AI 行业快讯 · Claude Code 远程任务自动生成
 
+## 线上链接
+https://baldmuzi.github.io/ai-news-daily
+
 ## 架构
 
 ```
