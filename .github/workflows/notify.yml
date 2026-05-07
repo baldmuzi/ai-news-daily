@@ -1,0 +1,80 @@
+name: Notify WeCom on new edition
+
+# 当 Claude Code 远程任务把新生成的 HTML / latest.json push 到 main 分支时触发
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'latest.json'
+      - 'editions/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Read latest.json and post to WeCom
+        env:
+          WECOM_WEBHOOK: ${{ secrets.WECOM_WEBHOOK }}
+        run: |
+          set -e
+          if [ -z "$WECOM_WEBHOOK" ]; then
+            echo "WECOM_WEBHOOK secret not set; skipping."
+            exit 0
+          fi
+          if [ ! -f latest.json ]; then
+            echo "latest.json not found; nothing to notify."
+            exit 0
+          fi
+
+          python3 - <<'PY'
+          import json, os, sys, urllib.request
+
+          with open("latest.json", encoding="utf-8") as f:
+              d = json.load(f)
+
+          edition = d.get("edition", "")
+          date    = d.get("date", "")
+          intro   = d.get("intro", "")
+          tags    = " · ".join(d.get("tags", []))
+          url     = d.get("url", "")
+          top3    = d.get("top3", [])
+
+          top3_md = "\n".join(
+              f"> **#{i+1} {it.get('title','')}**\n> {it.get('comment','')[:80]}"
+              for i, it in enumerate(top3)
+          )
+
+          content = (
+              f"**AI 行业快讯 #{edition}** 🤖\n"
+              f"{date} · 北京时间\n\n"
+              f"{intro}\n\n"
+              f"**关键词：** {tags}\n\n"
+              f"**Top 3 速览：**\n{top3_md}\n\n"
+              f"[📖 阅读完整版]({url})"
+          )
+
+          payload = json.dumps({
+              "msgtype": "markdown",
+              "markdown": {"content": content}
+          }).encode("utf-8")
+
+          req = urllib.request.Request(
+              os.environ["WECOM_WEBHOOK"],
+              data=payload,
+              headers={"Content-Type": "application/json"},
+          )
+          with urllib.request.urlopen(req, timeout=10) as resp:
+              body = resp.read().decode("utf-8")
+              print("WeCom response:", body)
+              result = json.loads(body)
+              if result.get("errcode") != 0:
+                  sys.exit(f"WeCom returned error: {result}")
+          PY
