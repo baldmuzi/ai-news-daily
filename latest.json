@@ -1,21 +1,27 @@
 {
-  "edition": "0001",
-  "date": "2026年5月7日 10:00",
-  "intro": "大模型迭代提速，OpenAI 以 GPT-5.5 Instant 刷新 ChatGPT 默认体验；Anthropic 的 Claude Mythos 在网络安全领域展现出超越人类专家的漏洞发现能力；AI Agent 正从概念走向金融、企业等实体商业场景，一个以"智能体"为基础设施的新商业时代正在破晓。",
-  "tags": ["大模型迭代", "AI Agent", "网络安全", "企业级AI", "行业监管"],
+  "edition": "0002",
+  "date": "2026年5月7日 08:00",
+  "intro": "本期聚焦AI安全与算力博弈：Anthropic Mythos已能大规模挖掘零日漏洞，引发安全格局巨变；Anthropic与Google签署2000亿美元算力协议，中美差距缩至2.7%。OpenAI、DeepSeek相继更新旗舰模型，企业自主智能体浪潮涌起，AI正快速从实验走向规模化生产部署。",
+  "tags": [
+    "AI安全",
+    "基础设施竞争",
+    "中美AI博弈",
+    "企业智能体",
+    "开源模型"
+  ],
   "top3": [
     {
-      "title": "OpenAI 发布 GPT-5.5 Instant，成为 ChatGPT 全新默认模型",
-      "comment": "幻觉率较上一版本下降52.5%，新增"记忆来源"功能提升透明度，标志着 OpenAI 将精准简洁作为新一代通用模型核心设计原则。"
+      "title": "Anthropic Claude Mythos发现数万零日漏洞开启Project Glasswing",
+      "comment": "AI网络安全能力超越顶级人类专家，双刃剑效应同步放大攻击风险"
     },
     {
-      "title": "Anthropic Claude Mythos Preview：发现数千个零日漏洞，重塑网络安全格局",
-      "comment": "Claude Mythos 能自主发现所有主流 OS 的关键漏洞并执行多阶段攻击；Anthropic 以 Project Glasswing 将其定向用于防御，开创高危 AI 能力受控商业化新范式。"
+      "title": "Anthropic承诺向Google Cloud投入2000亿美元",
+      "comment": "创纪录算力绑定协议占Alphabet云收入积压逾40%，重塑云计算市场"
     },
     {
-      "title": "Anthropic 承诺五年向谷歌云投入 2000 亿美元，绑定 TPU 算力",
-      "comment": "这笔创纪录的云计算采购揭示了顶级 AI 实验室的算力渴求，也深化了 Anthropic 与谷歌的战略依存，企业决策者需重新审视供应商集中风险。"
+      "title": "OpenAI发布GPT-5.5 Instant，幻觉率降低52.5%",
+      "comment": "高风险场景幻觉声明大幅减少，新增记忆来源功能提升透明度与个性化"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/editions/edition-0001.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/editions/edition-0002.html"
 }

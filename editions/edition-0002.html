@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 行业日报 · 第 0002 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #22263a;
+      --border: #2e3352;
+      --accent: #6c8aff;
+      --accent2: #a78bfa;
+      --accent3: #34d399;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --tag-bg: #1e2a3a;
+      --tag-border: #2d4a6b;
+      --tag-text: #7dd3fc;
+      --num-color: #6c8aff;
+      --shadow: 0 4px 24px rgba(0,0,0,0.45);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Noto Serif SC', serif;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      background: linear-gradient(135deg, #10152a 0%, #1a1d27 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+    .header-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+    .header-title {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+    }
+    .header-subtitle {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+    }
+    .header-meta {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .meta-item {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .meta-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent3); }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    .intro-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+    .intro-block-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+    .intro-text { font-size: 1rem; color: var(--text); line-height: 1.85; }
+
+    .tags-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
+    .tag {
+      background: var(--tag-bg);
+      border: 1px solid var(--tag-border);
+      color: var(--tag-text);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      letter-spacing: 0.04em;
+    }
+
+    .section-heading {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .section-heading::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+    .news-grid { display: flex; flex-direction: column; gap: 1.25rem; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+      transition: border-color 0.2s, transform 0.2s;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0 1.25rem;
+    }
+    .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .card-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--num-color);
+      opacity: 0.35;
+      line-height: 1.4;
+      padding-top: 0.1rem;
+      min-width: 2.5rem;
+    }
+    .card-title { font-size: 1.05rem; font-weight: 600; color: #fff; margin-bottom: 0.6rem; line-height: 1.5; }
+    .card-source {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--accent3);
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.05em;
+    }
+    .card-comment { font-size: 0.92rem; color: var(--text-muted); line-height: 1.8; }
+    .card-tag {
+      display: inline-block;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--accent2);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      padding: 0.15rem 0.55rem;
+      border-radius: 4px;
+      margin-top: 0.75rem;
+      letter-spacing: 0.04em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      border-top: 1px solid var(--border);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--accent); }
+    .footer-nav { margin-top: 0.75rem; }
+
+    @media (max-width: 600px) {
+      .card { grid-template-columns: 1fr; }
+      .card-num { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-label">AI 行业日报 · Daily Intelligence</div>
+  <h1 class="header-title">第 0002 期</h1>
+  <p class="header-subtitle">edition-0002 · 2026年5月7日</p>
+  <div class="header-meta">
+    <span class="meta-item"><span class="meta-dot"></span>Top 10 新闻</span>
+    <span class="meta-item"><span class="meta-dot"></span>5 个关键词</span>
+    <span class="meta-item"><span class="meta-dot"></span>2026/05/07</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="intro-block">
+    <div class="intro-block-label">本期导语</div>
+    <p class="intro-text">本期聚焦AI安全与算力博弈：Anthropic Mythos已能大规模挖掘零日漏洞，引发安全格局巨变；Anthropic与Google签署2000亿美元算力协议，中美差距缩至2.7%。OpenAI、DeepSeek相继更新旗舰模型，企业自主智能体浪潮涌起，AI正快速从实验走向规模化生产部署。</p>
+  </div>
+
+  <div class="tags-row">
+    <span class="tag"># AI安全</span>
+    <span class="tag"># 基础设施竞争</span>
+    <span class="tag"># 中美AI博弈</span>
+    <span class="tag"># 企业智能体</span>
+    <span class="tag"># 开源模型</span>
+  </div>
+
+  <div class="section-heading">Top 10 · 本期精选</div>
+  <div class="news-grid">
+
+    <div class="card">
+      <div class="card-num">01</div>
+      <div class="card-body">
+        <div class="card-source">Anthropic · TechCrunch · CNBC</div>
+        <h2 class="card-title">Anthropic Claude Mythos 发现数万个零日漏洞，开启 Project Glasswing</h2>
+        <p class="card-comment">Anthropic 推出 Claude Mythos Preview，已在 Firefox、各主流操作系统和浏览器中识别出数万个此前未知的漏洞，合作方涵盖苹果、微软、亚马逊等科技巨头。这标志着 AI 在网络安全领域的能力已全面超越绝大多数顶级人类专家，但双刃剑效应同步放大了攻击风险。Anthropic CEO 警告称当前正处于网络安全的"危险时刻"，该模型以受控方式定向用于防御修复。</p>
+        <span class="card-tag">AI安全</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">02</div>
+      <div class="card-body">
+        <div class="card-source">The Information · CNBC · Engadget</div>
+        <h2 class="card-title">Anthropic 承诺向 Google Cloud 投入 2000 亿美元，占 Alphabet 积压订单逾 40%</h2>
+        <p class="card-comment">Anthropic 与 Google 签署为期五年的算力协议，将在 Google Cloud 和 TPU 芯片上花费高达 2000 亿美元，TPU 算力将于 2027 年起陆续交付。这笔创纪录的基础设施绑定协议使 Anthropic 占据 Alphabet 云收入积压超过 40%，AI 头部公司的算力锁仓策略正在重塑整个云计算市场，其他买家将面临更长等待期与更高成本。</p>
+        <span class="card-tag">基础设施竞争</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">03</div>
+      <div class="card-body">
+        <div class="card-source">OpenAI · TechCrunch · Axios</div>
+        <h2 class="card-title">OpenAI 发布 GPT-5.5 Instant：幻觉率降低 52.5%，新增记忆来源功能</h2>
+        <p class="card-comment">OpenAI 将 ChatGPT 默认模型升级为 GPT-5.5 Instant，在医疗、法律等高风险场景的幻觉声明减少 52.5%，同时新增"记忆来源"控件，用户可查看并管理 ChatGPT 个性化响应所依赖的上下文和历史对话。该模型减少了不必要的追问和过度格式化，付费用户还可通过 Gmail 等连接更强的跨平台上下文。</p>
+        <span class="card-tag">模型更新</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">04</div>
+      <div class="card-body">
+        <div class="card-source">CNBC · TechCrunch · Fortune</div>
+        <h2 class="card-title">DeepSeek V4 发布：1.6 万亿参数开源旗舰，深度整合华为昇腾芯片</h2>
+        <p class="card-comment">中国 DeepSeek 发布 V4-Pro 和 V4-Flash 预览版，V4-Pro 总参数量达 1.6 万亿（激活 490 亿），是目前规模最大的开放权重模型，上下文窗口高达 100 万 token，并与华为"超节点"昇腾 950 芯片深度集成。V4-Flash 每百万输入 token 仅需 0.14 美元，再次以低价搅动全球 AI 市场，表明中国在算力受限下的技术突破路径日趋成熟。</p>
+        <span class="card-tag">开源模型</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">05</div>
+      <div class="card-body">
+        <div class="card-source">Stanford HAI · The Next Web · IEEE Spectrum</div>
+        <h2 class="card-title">斯坦福 2026 AI 指数：中美顶级模型差距收窄至 2.7%，AI学者赴美骤降 89%</h2>
+        <p class="card-comment">斯坦福 HAI 年度报告显示，中美最佳 AI 模型的性能差距从 2023 年最高 31 个百分点骤降至 2.7%，中国以仅为美国 1/23 的私人投资实现近乎追平。更值得关注的是 AI 人才流动逆转：AI 学者移居美国人数较 2017 年下降 89%，其中过去一年骤降 80%，对美国长期 AI 领导地位构成深层挑战。</p>
+        <span class="card-tag">中美AI博弈</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">06</div>
+      <div class="card-body">
+        <div class="card-source">NIST · CNN · Al Jazeera</div>
+        <h2 class="card-title">谷歌、微软、xAI 同意发布前接受美国政府 AI 安全测试</h2>
+        <p class="card-comment">美国商务部 CAISI 与 Google DeepMind、微软和 xAI 签署协议，政府可在 AI 模型公开发布前进行安全评估，测试对象包括去除安全护栏的"裸模型"。此举是对 Anthropic Mythos 展示出的高危网络攻击能力的直接回应，标志着美国 AI 监管体系从自愿测试向更具约束力的预发布审查机制演进。</p>
+        <span class="card-tag">AI监管</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">07</div>
+      <div class="card-body">
+        <div class="card-source">Google Blog · Google Cloud</div>
+        <h2 class="card-title">Google 发布 Gemini 3.1 Flash-Lite：速度提升 2.5 倍，每百万 token 仅 0.25 美元</h2>
+        <p class="card-comment">Google 推出 Gemini 3.1 Flash-Lite，响应速度比上代 2.5 Flash 快 2.5 倍，输出生成速度提升 45%，在 Arena.ai 排行榜获得 1432 Elo 分，且在同档位推理和多模态基准中表现领先。极低定价与卓越性能的结合体现了 AI 行业在普惠化方向的加速竞争，有效降低了中小企业和开发者的使用门槛。</p>
+        <span class="card-tag">模型更新</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">08</div>
+      <div class="card-body">
+        <div class="card-source">VentureBeat · Writer</div>
+        <h2 class="card-title">Writer 发布无需提示的自主 AI 智能体，向微软、Salesforce、亚马逊宣战</h2>
+        <p class="card-comment">企业 AI 平台 Writer 推出事件驱动型自主智能体，可自动监控 Gmail、Slack、Gong、SharePoint 等应用，无需人工触发即可执行复杂多步骤工作流，新增 Adobe Experience Manager 连接器及企业级治理控件。这是对微软 Copilot、Salesforce Agentforce 和 Amazon Q Business 的正面挑战，代表企业 AI 从"响应提示"向"主动感知与行动"的范式跃迁。</p>
+        <span class="card-tag">企业智能体</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">09</div>
+      <div class="card-body">
+        <div class="card-source">TechCrunch · The Information</div>
+        <h2 class="card-title">OpenAI 计划年底将员工扩至 8000 人，AI 行业人才军备竞赛加剧</h2>
+        <p class="card-comment">面对 Anthropic 等对手的激烈竞争，OpenAI 计划到 2026 年底将员工人数从约 4300 人翻倍至 8000 人，年化营收已突破 300 亿美元。这场大规模扩招折射出整个 AI 行业对顶尖研究与工程人才的争夺，与此同时斯坦福报告揭示的 AI 人才"逆向流动"趋势也让这场竞争更加复杂。</p>
+        <span class="card-tag">行业动态</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">10</div>
+      <div class="card-body">
+        <div class="card-source">VentureBeat · Subquadratic</div>
+        <h2 class="card-title">初创公司 Subquadratic 宣称突破 Transformer 二次方复杂度根本限制</h2>
+        <p class="card-comment">迈阿密初创公司 Subquadratic 从隐身模式浮出，自称构建了首个完全突破注意力机制二次方复杂度约束的大型语言模型——该约束自 2017 年以来定义并制约了所有主流 AI 系统。若声明属实，将从根本上改变大模型的长文本处理能力与计算效率，但独立技术验证仍有待进行，业界保持审慎期待。</p>
+        <span class="card-tag">前沿研究</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div>AI 行业日报 · 第 0002 期 · 2026年5月7日</div>
+  <div class="footer-nav">
+    <a href="../index.html">← 返回往期存档</a>
+  </div>
+</footer>
+
+</body>
+</html>
