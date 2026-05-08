@@ -27,8 +27,10 @@ jobs:
         env:
           WECOM_WEBHOOK_TECH:      ${{ secrets.WECOM_WEBHOOK }}
           WECOM_WEBHOOK_BUSINESS:  ${{ secrets.WECOM_WEBHOOK_BUSINESS }}
-          WECOM_MENTION_TECH:      ${{ secrets.WECOM_MENTION_TECH }}
-          WECOM_MENTION_BUSINESS:  ${{ secrets.WECOM_MENTION_BUSINESS }}
+          WECOM_MENTION_TECH:          ${{ secrets.WECOM_MENTION_TECH }}
+          WECOM_MENTION_BUSINESS:      ${{ secrets.WECOM_MENTION_BUSINESS }}
+          WECOM_MENTION_MSG_TECH:      ${{ secrets.WECOM_MENTION_MSG_TECH }}
+          WECOM_MENTION_MSG_BUSINESS:  ${{ secrets.WECOM_MENTION_MSG_BUSINESS }}
           CHANGED_FILES_PATH:      /tmp/changed.txt
         run: |
           git diff --name-only HEAD~1 HEAD 2>/dev/null > /tmp/changed.txt || true

@@ -77,7 +77,8 @@ def post_wecom(webhook, json_path, label, mention_env):
     )
 
     mentions = build_mention_str(mention_env)
-    mention_line = f"\n{mentions}" if mentions else ''
+    msg = os.environ.get(mention_env.replace('MENTION', 'MENTION_MSG'), '').strip()
+    mention_line = f"\n{mentions} {msg}".rstrip() if mentions else ''
 
     content = (
         f"**{label} #{edition}** 🤖\n"
