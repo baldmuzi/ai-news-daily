@@ -1,27 +1,27 @@
 {
-  "edition": "0002",
-  "date": "2026年5月8日 02:30",
-  "intro": "2026年AI大模型全面重构跨境电商：Google开放AI购物协议，Agentic AI渗透选品与广告运营；欧盟CBAM全面落地，AI驱动碳足迹核算成出海环保鞋企合规新门槛，AI赋能企业降本增收优势已现。",
+  "edition": "0003",
+  "date": "2026年5月8日 03:00",
+  "intro": "AI代理商务重塑出海电商格局：Shopify商品进入ChatGPT购物、EU数字护照合规倒计时、AI营销ROI超400%，出海环保鞋企须全面接入AI赋能工具。",
   "tags": [
-    "AI购物代理崛起",
-    "生成式广告优化",
-    "碳足迹AI核算",
-    "AI选品破零提速",
-    "鞋类需求精准预测"
+    "AI代理商务落地",
+    "数字护照合规布局",
+    "AI碳足迹追溯",
+    "AI营销提效",
+    "跨境物流MCP化"
   ],
   "top3": [
     {
-      "title": "Google 发布 Universal Commerce Protocol：AI代理购物进入开放标准时代",
-      "comment": "Google联合Shopify等20余家零售商推出UCP开放协议，AI代理可自主完成全流程购物；出海鞋类品牌需确保商品数据可被AI代理检索，否则将在零点击购物时代失去曝光。"
+      "title": "Shopify代理店面3月落地：数百万商户商品进入ChatGPT购物，AI中介订单同比增长11倍",
+      "comment": "Shopify代理商务3月落地，AI中介订单同比增长11倍，AOV提升30%；出海鞋类PM须立即确保商品数据符合AI代理检索标准。"
     },
     {
-      "title": "量子位：2026年AI重构跨境电商，速卖通AI Agent将新品破零周期压至7天",
-      "comment": "速卖通AI Agent让新品破零周期从14天缩至7天，AI选品7天转化率较人工提升40%；出海鞋类卖家应立即接入平台AI选品工具，同步建立新品上市的AI效果追踪指标体系。"
+      "title": "EU数字产品护照7月中央注册表上线：AI合规追溯助出海鞋企提前布局，2027年执法倒计时",
+      "comment": "EU数字护照7月注册表上线，AI合规追溯工具可自动生成DPP数据；出海鞋企须在2027年执法前完成AI合规布局。"
     },
     {
-      "title": "欧盟CBAM 2026全面生效：AI驱动供应链碳足迹核算成出海合规新门槛",
-      "comment": "CBAM落地要求进口商核算嵌入式碳排放并购买碳证书，AI碳核算平台可实现SKU级实时碳追溯；出海环保鞋企应引入AI碳核算工具，将合规成本转化为EU市场差异化竞争优势。"
+      "title": "Easyship发布全球首个跨境物流MCP服务器：自然语言下单比价550+运费渠道",
+      "comment": "Easyship首个跨境MCP服务4月上线，自然语言下单比价550+渠道；鞋类出海卖家可在AI平台内直接完成物流决策。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0002.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0003.html"
 }
