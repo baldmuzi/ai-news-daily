@@ -1,27 +1,27 @@
 {
-  "edition": "0001",
-  "date": "2026年5月8日 10:00",
-  "intro": "TikTok GMV Max全面接管广告投放，EU数字产品护照与绿色主张法规双重倒计时；可持续鞋类市场破百亿，AI工具加速出海合规与增长双提速。",
+  "edition": "0002",
+  "date": "2026年5月8日 02:30",
+  "intro": "2026年AI大模型全面重构跨境电商：Google开放AI购物协议，Agentic AI渗透选品与广告运营；欧盟CBAM全面落地，AI驱动碳足迹核算成出海环保鞋企合规新门槛，AI赋能企业降本增收优势已现。",
   "tags": [
-    "TikTok GMV Max",
-    "EU DPP合规",
-    "绿色主张法规",
-    "AI客服自动化",
-    "环保鞋类增长"
+    "AI购物代理崛起",
+    "生成式广告优化",
+    "碳足迹AI核算",
+    "AI选品破零提速",
+    "鞋类需求精准预测"
   ],
   "top3": [
     {
-      "title": "TikTok GMV Max成为跨境卖家唯一原生广告类型，AI全面接管定向与出价",
-      "comment": "TikTok弃用手动竞价，GMV Max全自动投放，品牌核心杠杆变为创意素材质量，需建立每周20+素材的生产流水线。"
+      "title": "Google 发布 Universal Commerce Protocol：AI代理购物进入开放标准时代",
+      "comment": "Google联合Shopify等20余家零售商推出UCP开放协议，AI代理可自主完成全流程购物；出海鞋类品牌需确保商品数据可被AI代理检索，否则将在零点击购物时代失去曝光。"
     },
     {
-      "title": "EU数字产品护照中央注册中心7月上线，鞋履品牌须立即布局供应链数据",
-      "comment": "供应链数据收集平均需一年，出海欧洲的PM应立即启动，避免2030年因合规缺口被拦截入市。"
+      "title": "量子位：2026年AI重构跨境电商，速卖通AI Agent将新品破零周期压至7天",
+      "comment": "速卖通AI Agent让新品破零周期从14天缩至7天，AI选品7天转化率较人工提升40%；出海鞋类卖家应立即接入平台AI选品工具，同步建立新品上市的AI效果追踪指标体系。"
     },
     {
-      "title": "EU绿色主张指令2026年9月生效，eco-friendly等模糊声明面临违规处罚",
-      "comment": "欧盟禁止未经认证的通用绿色声明，出海鞋类产品页和广告文案需立即审查，PM应建立合规审核SOP。"
+      "title": "欧盟CBAM 2026全面生效：AI驱动供应链碳足迹核算成出海合规新门槛",
+      "comment": "CBAM落地要求进口商核算嵌入式碳排放并购买碳证书，AI碳核算平台可实现SKU级实时碳追溯；出海环保鞋企应引入AI碳核算工具，将合规成本转化为EU市场差异化竞争优势。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0001.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0002.html"
 }
