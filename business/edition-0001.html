@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>出海洞察 · AI 周报 — 第 0001 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #080c14;
+      --surface: #0f1623;
+      --surface2: #162030;
+      --border: #1e2d42;
+      --accent: #10b981;
+      --accent-dim: #059669;
+      --accent-glow: rgba(16, 185, 129, 0.15);
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --tag-bg: rgba(16, 185, 129, 0.12);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Noto Serif SC', serif;
+      line-height: 1.8;
+      min-height: 100vh;
+      padding: 0 0 4rem;
+    }
+
+    header {
+      background: linear-gradient(180deg, #0a1220 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 3rem 1.5rem 2rem;
+      text-align: center;
+    }
+
+    .header-badge {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      background: var(--tag-bg);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 4px;
+      padding: 0.2em 0.7em;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: #f1f5f9;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.4rem;
+    }
+
+    h1 span { color: var(--accent); }
+
+    .subtitle {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      letter-spacing: 0.15em;
+      font-family: 'JetBrains Mono', monospace;
+      margin-bottom: 1.5rem;
+    }
+
+    .meta-row {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--text-dim);
+    }
+
+    .intro-section {
+      max-width: 760px;
+      margin: 2.5rem auto 0;
+      padding: 0 1.5rem;
+    }
+
+    .intro-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 1.4rem 1.6rem;
+    }
+
+    .intro-card p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.9;
+    }
+
+    .tags-row {
+      max-width: 760px;
+      margin: 1.2rem auto 0;
+      padding: 0 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--accent);
+      background: var(--tag-bg);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: 4px;
+      padding: 0.2em 0.7em;
+      letter-spacing: 0.05em;
+    }
+
+    .section-label {
+      max-width: 760px;
+      margin: 3rem auto 1rem;
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .section-label h2 {
+      font-size: 0.75rem;
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .cards-grid {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.4rem 1.6rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      border-color: rgba(16, 185, 129, 0.4);
+      box-shadow: 0 0 24px var(--accent-glow);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      margin-bottom: 0.9rem;
+      flex-wrap: wrap;
+    }
+
+    .card-number {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--accent);
+      background: var(--tag-bg);
+      border-radius: 3px;
+      padding: 0.15em 0.5em;
+      margin-top: 0.2em;
+      flex-shrink: 0;
+    }
+
+    .card-category {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--text-dim);
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 0.15em 0.5em;
+      margin-top: 0.2em;
+      flex-shrink: 0;
+    }
+
+    .card-title {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .card-title a {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #f1f5f9;
+      text-decoration: none;
+      line-height: 1.5;
+    }
+
+    .card-title a:hover { color: var(--accent); }
+
+    .card-comment {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.85;
+      margin-bottom: 1rem;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .read-more {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      border-radius: 4px;
+      padding: 0.3em 0.8em;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .read-more:hover {
+      background: var(--accent);
+      color: #000;
+    }
+
+    footer {
+      max-width: 760px;
+      margin: 4rem auto 0;
+      padding: 2rem 1.5rem 0;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    footer span {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--text-dim);
+    }
+
+    footer .accent { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-badge">EDITION · 0001 &nbsp;·&nbsp; BUSINESS</div>
+    <h1>出海洞察 · <span>AI 周报</span></h1>
+    <p class="subtitle">跨境电商 · 可持续发展 · 消费趋势</p>
+    <div class="meta-row">
+      <span>2026年5月8日</span>
+      <span>环保鞋类出海</span>
+      <span>TOP 10 精选</span>
+    </div>
+  </header>
+
+  <div class="intro-section">
+    <div class="intro-card">
+      <p>TikTok GMV Max 全面接管广告投放，Shopify 冬季版 150+ AI 新功能重塑独立站运营；EU 数字产品护照与绿色主张法规双重倒计时施压，可持续鞋类市场突破百亿美元。AI 工具正在同步加速出海合规与增长，本期聚焦跨境电商与环保合规的交叉地带。</p>
+    </div>
+  </div>
+
+  <div class="tags-row">
+    <span class="tag"># TikTok GMV Max</span>
+    <span class="tag"># EU DPP合规</span>
+    <span class="tag"># 绿色主张法规</span>
+    <span class="tag"># AI客服自动化</span>
+    <span class="tag"># 环保鞋类增长</span>
+  </div>
+
+  <!-- 跨境电商 -->
+  <div class="section-label"><h2>跨境电商</h2></div>
+  <div class="cards-grid">
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">01</span>
+        <span class="card-category">跨境电商</span>
+        <div class="card-title">
+          <a href="https://stormy.ai/blog/tiktok-shop-ads-2026-gmv-max-playbook" target="_blank">TikTok GMV Max 成为跨境卖家唯一原生广告类型，AI 全面接管定向与出价</a>
+        </div>
+      </div>
+      <p class="card-comment">TikTok 已全面弃用手动竞价，GMV Max 由 AI 自动控制定向与出价，品牌最核心竞争力变为创意素材的质量与数量。出海鞋类卖家需建立每周 20+ 素材的生产流水线，让算法挑选最优组合；PM 应将创意产量纳入团队 OKR，与 AI 投放节奏对齐。</p>
+      <div class="card-footer">
+        <a href="https://stormy.ai/blog/tiktok-shop-ads-2026-gmv-max-playbook" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">02</span>
+        <span class="card-category">跨境电商</span>
+        <div class="card-title">
+          <a href="https://www.shopify.com/editions/winter2026" target="_blank">Shopify Winter '26 Edition 发布 150+ AI 新功能，Sidekick 升级为全能运营 Agent</a>
+        </div>
+      </div>
+      <p class="card-comment">Sidekick 已从问答助手进化为可自动构建工作流、生成 ShopifyQL 报告的运营 Agent；SimGym 支持模拟买家行为预测转化率变化，上线前即可验证页面改动效果。独立站数据分析师可直接用自然语言调取报告，PM 可用 SimGym 降低改版风险。</p>
+      <div class="card-footer">
+        <a href="https://www.shopify.com/editions/winter2026" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">03</span>
+        <span class="card-category">跨境电商</span>
+        <div class="card-title">
+          <a href="https://yuma.ai/blogs/top-11-ai-tools-for-customer-support-in-2026" target="_blank">AI 客服自动化 2026：头部工具实测解决率 55–70%，Yuma 最高达 89%</a>
+        </div>
+      </div>
+      <p class="card-comment">Gorgias、Yuma 等工具已可自主处理退款、换货、物流查询，无需人工介入，且整体价格大幅下降。出海鞋类客服高峰压力大，建议 PM 优先评估 Yuma 接入方案；数据分析师应同步监测自动化率与 CSAT 指标的相关性，确保自动化过程中体验不下滑。</p>
+      <div class="card-footer">
+        <a href="https://yuma.ai/blogs/top-11-ai-tools-for-customer-support-in-2026" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 可持续合规 -->
+  <div class="section-label"><h2>可持续合规</h2></div>
+  <div class="cards-grid">
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">04</span>
+        <span class="card-category">可持续合规</span>
+        <div class="card-title">
+          <a href="https://exploretex.com/eu-digital-product-passport-2026/" target="_blank">EU 数字产品护照（DPP）中央注册中心 7 月 19 日上线，鞋履品牌须提前布局</a>
+        </div>
+      </div>
+      <p class="card-comment">EU 要求鞋类品牌通过 QR/NFC 提供材料成分、供应链来源、碳足迹等可验证数据，2030 年强制覆盖所有品类。供应链数据收集平均需要一年时间，出海欧洲的 PM 应立即启动数据采集流程，避免未来因合规缺口被拦截入市。</p>
+      <div class="card-footer">
+        <a href="https://exploretex.com/eu-digital-product-passport-2026/" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">05</span>
+        <span class="card-category">政策法规</span>
+        <div class="card-title">
+          <a href="https://greenstitch.io/blogs/eu-ecgt/" target="_blank">EU《绿色主张指令》2026 年 9 月生效，"eco-friendly"等模糊声明面临违规处罚</a>
+        </div>
+      </div>
+      <p class="card-comment">欧盟禁止未经认证的通用绿色声明，"可持续""零碳"等词汇须提供第三方可验证证明，违者面临严重处罚。出海鞋类的产品页、广告文案和包装需立即全面审查，PM 应建立绿色主张合规审核 SOP，防止营销团队随意使用不合规表述。</p>
+      <div class="card-footer">
+        <a href="https://greenstitch.io/blogs/eu-ecgt/" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">06</span>
+        <span class="card-category">可持续合规</span>
+        <div class="card-title">
+          <a href="https://www.carbonfact.com/blog/knowledge/carbon-accounting-guide" target="_blank">Carbonfact 发布鞋类碳核算完整指南，AI 驱动产品级 LCA 进入规模化应用阶段</a>
+        </div>
+      </div>
+      <p class="card-comment">Carbonfact 专为服装鞋类设计，可自动清洗供应链数据、生成符合 CSRD 要求的产品生命周期评估报告，审计级精度且大幅降低合规成本。环保鞋类品牌应将碳核算嵌入产品开发流程，既满足 EU 合规要求，又可转化为差异化营销素材提升品牌溢价。</p>
+      <div class="card-footer">
+        <a href="https://www.carbonfact.com/blog/knowledge/carbon-accounting-guide" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 消费趋势 -->
+  <div class="section-label"><h2>消费趋势</h2></div>
+  <div class="cards-grid">
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">07</span>
+        <span class="card-category">消费趋势</span>
+        <div class="card-title">
+          <a href="https://www.fortunebusinessinsights.com/sustainable-footwear-market-111934" target="_blank">全球可持续鞋类市场 2026 年规模达 103 亿美元，40% 消费者愿为环保溢价付费</a>
+        </div>
+      </div>
+      <p class="card-comment">市场以 6.41% CAGR 持续增长，25–45 岁消费者将供应链透明度视为主流需求；AI 虚拟试穿工具已将退货率降低 35%。数据分析师应将"材料透明度偏好"纳入用户画像，PM 可围绕产品溯源打造差异化详情页，同步提升转化率与品牌溢价空间。</p>
+      <div class="card-footer">
+        <a href="https://www.fortunebusinessinsights.com/sustainable-footwear-market-111934" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">08</span>
+        <span class="card-category">消费趋势</span>
+        <div class="card-title">
+          <a href="https://www.customerexperiencedive.com/news/pinterest-ai-powered-personalization-double-digit-user-growth/819361/" target="_blank">Pinterest Q1 2026 营收同比增 18%，AI 购物助手"Styled for you"成时尚种草核心渠道</a>
+        </div>
+      </div>
+      <p class="card-comment">Pinterest AI 实现连续 10 季双位数用户增长，"Styled for you"将视觉发现直接导向购买转化，CEO 称其已成"AI 驱动的购物助手"。环保鞋类品牌应优先在 Pinterest 建立内容矩阵，其用户偏向有目的性的购物决策，与可持续时尚的高意图受众高度匹配。</p>
+      <div class="card-footer">
+        <a href="https://www.customerexperiencedive.com/news/pinterest-ai-powered-personalization-double-digit-user-growth/819361/" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 增长工具 & 数据洞察 -->
+  <div class="section-label"><h2>增长工具 &amp; 数据洞察</h2></div>
+  <div class="cards-grid">
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">09</span>
+        <span class="card-category">增长工具</span>
+        <div class="card-title">
+          <a href="https://www.adstellar.ai/blog/meta-ad-creative-testing-tool" target="_blank">AdStellar / Fibr AI 引领 2026 年广告创意测试新范式，从产品 URL 自动生成多变体广告</a>
+        </div>
+      </div>
+      <p class="card-comment">AdStellar 可从产品 URL 直接生成图片、视频和 UGC 风格创意并预测绩效排名；Fibr AI 支持数百个落地页变体同步 A/B 测试。出海鞋类品牌广告投放节奏快，PM 可将这类工具引入投前测试流程，以数据驱动替代主观判断，降低无效素材消耗。</p>
+      <div class="card-footer">
+        <a href="https://www.adstellar.ai/blog/meta-ad-creative-testing-tool" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">10</span>
+        <span class="card-category">数据洞察</span>
+        <div class="card-title">
+          <a href="https://genesysgrowth.com/blog/tableau-pulse-vs-power-bi-copilot-vs-looker-looker-studio-(gemini)" target="_blank">Power BI Copilot / Tableau Agent 2026 年全面升级，自然语言驱动电商数据分析提速</a>
+        </div>
+      </div>
+      <p class="card-comment">Power BI Copilot 可从自然语言描述生成完整报告，Tableau Pulse 主动推送关键指标异动预警，Looker 与 BigQuery ML 深度集成支持无代码建模。电商数据分析师可快速构建 GMV、复购率、用户分层看板，不再依赖工程师排期，显著缩短洞察到决策的链路。</p>
+      <div class="card-footer">
+        <a href="https://genesysgrowth.com/blog/tableau-pulse-vs-power-bi-copilot-vs-looker-looker-studio-(gemini)" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <span>出海洞察 · AI 周报 <span class="accent">· 第 0001 期</span></span>
+    <span>2026年5月8日 · 环保鞋类出海</span>
+    <span class="accent">baldmuzi.github.io/ai-news-daily</span>
+  </footer>
+
+</body>
+</html>
