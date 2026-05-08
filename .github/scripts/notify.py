@@ -42,7 +42,15 @@ def should_notify(json_file, prefix):
     return json_file in changed or any(f.startswith(prefix) for f in changed)
 
 
-def post_wecom(webhook, json_path, label):
+def build_mention_str(mention_env):
+    """把逗号分隔的 userid 列表转成企微 markdown 艾特格式。"""
+    raw = os.environ.get(mention_env, '').strip()
+    if not raw:
+        return ''
+    return ''.join(f'<@{uid.strip()}>' for uid in raw.split(',') if uid.strip())
+
+
+def post_wecom(webhook, json_path, label, mention_env):
     if not webhook:
         print(f"[{label}] webhook not set, skip")
         return
@@ -68,6 +76,10 @@ def post_wecom(webhook, json_path, label):
         for i, it in enumerate(top3)
     )
 
+    mentions = build_mention_str(mention_env)
+    msg = os.environ.get(mention_env.replace('MENTION', 'MENTION_MSG'), '').strip()
+    mention_line = f"\n{mentions} {msg}".rstrip() if mentions else ''
+
     content = (
         f"**{label} #{edition}** 🤖\n"
         f"{date} · 北京时间\n\n"
@@ -75,6 +87,7 @@ def post_wecom(webhook, json_path, label):
         f"**关键词：** {tags}\n\n"
         f"**Top 3 速览：**\n{top3_md}\n\n"
         f"[📖 阅读完整版]({url})"
+        f"{mention_line}"
     )
 
     payload = json.dumps({
@@ -95,7 +108,7 @@ def post_wecom(webhook, json_path, label):
 
 
 if should_notify('latest.json', 'editions/'):
-    post_wecom(os.environ.get('WECOM_WEBHOOK_TECH', ''), 'latest.json', 'AI 技术快讯')
+    post_wecom(os.environ.get('WECOM_WEBHOOK_TECH', ''), 'latest.json', 'AI 技术快讯', 'WECOM_MENTION_TECH')
 
 if should_notify('latest-business.json', 'business/'):
-    post_wecom(os.environ.get('WECOM_WEBHOOK_BUSINESS', ''), 'latest-business.json', 'AI 产品洞察')
+    post_wecom(os.environ.get('WECOM_WEBHOOK_BUSINESS', ''), 'latest-business.json', 'AI 产品洞察', 'WECOM_MENTION_BUSINESS')
