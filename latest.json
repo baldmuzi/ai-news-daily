@@ -1,27 +1,27 @@
 {
-  "edition": "0003",
-  "date": "2026年5月7日 10:00",
-  "intro": "AI商业化全速推进：OpenAI百亿美元部署公司正式落地、AMD数据中心同比暴增57%、Meta年度AI资本支出上调至1450亿美元历史新高。谷歌Gemini 3.1 Flash-Lite今日正式GA，IBM发布企业AI操作模型蓝图，摩根大通和美国运通相继重仓AI基础设施，AI产业进入不可逆的规模化变现阶段。",
+  "edition": "0004",
+  "date": "2026年5月8日 12:00",
+  "intro": "欧盟AI法规松绑，高风险合规期限再延；Anthropic以梦境自学习颠覆代理范式，借道SpaceX算力扩容并将Claude Code限额翻倍；EPAM携1万架构师押注Claude生态；Anthropic年化收入超越OpenAI，Meta Muse Spark强势亮相，行业监管与商业加速双引擎并驱。",
   "tags": [
-    "企业AI落地",
-    "算力军备",
-    "金融AI",
-    "商业化加速",
-    "模型发布"
+    "AI监管",
+    "智能代理",
+    "算力扩容",
+    "企业AI",
+    "行业格局"
   ],
   "top3": [
     {
-      "title": "OpenAI正式成立百亿美元部署公司，携手TPG软银深入企业AI落地",
-      "comment": "DeployCo嵌入企业专属工程师团队，复制Palantir前沿部署模式，AI变现逻辑从订阅转向深度实施。"
+      "title": "欧盟AI法案重大简化：高风险AI合规期限延至2027年底，新增禁止深度伪造亲密内容条款",
+      "comment": "高风险AI合规截止延至2027年12月，为企业争取16个月缓冲；首次禁止AI生成非自愿亲密内容。"
     },
     {
-      "title": "AMD Q1 2026数据中心营收58亿美元同比暴增57%，股价飙升16%",
-      "comment": "AI推理和智能体需求拉动Instinct GPU销售，AMD正成为英伟达之外不可忽视的AI芯片第二极。"
+      "title": "Anthropic为Claude代理引入梦境自学习机制，Harvey任务完成率提升6倍，多代理编排进入公测",
+      "comment": "代理定期回顾历史自动迭代，Harvey完成率提升6倍，Wisedocs效率提升50%，Netflix并发百个构建日志。"
     },
     {
-      "title": "谷歌Gemini 3.1 Flash-Lite今日正式GA，速度提升2.5倍每百万Token仅0.25美元",
-      "comment": "性能领先同级模型，定价仅为Pro版八分之一，大幅降低中小开发者和企业的AI使用门槛。"
+      "title": "Anthropic与SpaceX签300MW算力协议，Claude Code限额翻倍、峰时节流全面取消",
+      "comment": "获Colossus 1数据中心22万块GPU，Claude Code各付费版本限额即日翻倍，峰值节流取消。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/editions/edition-0003.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/editions/edition-0004.html"
 }

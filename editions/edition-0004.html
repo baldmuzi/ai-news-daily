@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 行业日报 · 第 0004 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #080c14;
+      --surface: #0d1220;
+      --surface2: #121828;
+      --border: #1e2d44;
+      --accent: #6c8aff;
+      --accent2: #a78bfa;
+      --accent3: #34d399;
+      --text: #e2e8f0;
+      --text-muted: #8ba3bf;
+      --tag-bg: #0f1e35;
+      --tag-border: #1e3a5f;
+      --tag-text: #7dd3fc;
+      --num-color: #6c8aff;
+      --shadow: 0 4px 24px rgba(0,0,0,.5);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Noto Serif SC', serif;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #050a15 0%, #0d1220 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+    .header-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+      opacity: 0.85;
+    }
+    header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.04em;
+    }
+    header h1 span { color: var(--accent); }
+    .meta-row {
+      margin-top: 0.6rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.2rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    .meta-dot {
+      display: inline-block;
+      width: 5px; height: 5px;
+      background: var(--accent);
+      border-radius: 50%;
+      margin-right: 0.4rem;
+      vertical-align: middle;
+      opacity: 0.7;
+    }
+
+    /* ── Container ── */
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    /* ── Intro block ── */
+    .intro-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 10px;
+      padding: 1.4rem 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .intro-block-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .intro-text {
+      font-size: 1rem;
+      line-height: 1.85;
+      color: var(--text);
+    }
+
+    /* ── Tags ── */
+    .tags-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .tag {
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      border: 1px solid var(--tag-border);
+      border-radius: 100px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      padding: 0.2em 0.85em;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Section heading ── */
+    .section-heading {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .section-heading::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── News grid ── */
+    .news-grid { display: flex; flex-direction: column; gap: 1rem; }
+
+    /* ── Card ── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      display: grid;
+      grid-template-columns: 2.5rem 1fr;
+      gap: 0 1.25rem;
+      transition: border-color .2s, transform .15s;
+    }
+    .card:hover {
+      border-color: rgba(108,138,255,.4);
+      transform: translateY(-2px);
+    }
+    .card-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1.35rem;
+      font-weight: 500;
+      color: var(--num-color);
+      opacity: 0.45;
+      line-height: 1.4;
+      padding-top: 0.15rem;
+      user-select: none;
+    }
+    .card-body {}
+    .card-source {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      opacity: 0.7;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+    }
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.5;
+      margin-bottom: 0.65rem;
+    }
+    .card-title a { color: inherit; }
+    .card-title a:hover { color: var(--accent); text-decoration: none; }
+    .card-comment {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+    .card-footer {
+      margin-top: 0.9rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .card-tag {
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      border: 1px solid var(--tag-border);
+      border-radius: 100px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      padding: 0.15em 0.7em;
+    }
+    .read-more {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--accent);
+      border: 1px solid rgba(108,138,255,.4);
+      padding: 0.2em 0.65em;
+      border-radius: 4px;
+      transition: background .15s, color .15s;
+      white-space: nowrap;
+    }
+    .read-more:hover { background: var(--accent); color: #fff; text-decoration: none; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      border-top: 1px solid var(--border);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--text-muted); }
+    footer a:hover { color: var(--accent); }
+    .footer-nav { margin-top: 0.5rem; }
+
+    @media (max-width: 560px) {
+      .card { grid-template-columns: 1.75rem 1fr; gap: 0 0.85rem; padding: 1.1rem 1rem; }
+      .card-num { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-label">AI 行业日报 · Edition 0004</div>
+  <h1>AI 行业资讯<span> Daily</span></h1>
+  <div class="meta-row">
+    <span class="meta-item"><span class="meta-dot"></span>第 0004 期</span>
+    <span class="meta-item"><span class="meta-dot"></span>Top 10 新闻</span>
+    <span class="meta-item"><span class="meta-dot"></span>2026/05/08</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="intro-block">
+    <div class="intro-block-label">本期导语</div>
+    <p class="intro-text">欧盟AI法规松绑，高风险合规期限再延；Anthropic以"梦境"自学习颠覆智能代理范式，同时借道SpaceX算力扩容并将Claude Code限额翻倍；EPAM携1万架构师全力押注Claude生态。与此同时，Anthropic年化收入超越OpenAI，Meta Muse Spark强势亮相，AI行业"监管缓冲"与"商业加速"双引擎并驱。</p>
+  </div>
+
+  <div class="tags-row">
+    <span class="tag"># AI监管</span>
+    <span class="tag"># 智能代理</span>
+    <span class="tag"># 算力扩容</span>
+    <span class="tag"># 企业AI</span>
+    <span class="tag"># 行业格局</span>
+  </div>
+
+  <div class="section-heading">Top 10 · 本期精选</div>
+  <div class="news-grid">
+
+    <div class="card">
+      <div class="card-num">01</div>
+      <div class="card-body">
+        <div class="card-source">EU Council · EU Parliament · The Register</div>
+        <h2 class="card-title">
+          <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/" target="_blank" rel="noopener">欧盟AI法案重大简化：高风险AI合规期限延至2027年底，新增禁止深度伪造亲密内容条款</a>
+        </h2>
+        <p class="card-comment">欧盟理事会与欧洲议会于5月7日就《AI法案》修订达成临时协议，将高风险AI系统合规截止日期从2026年8月延至2027年12月，嵌入式产品更延至2028年8月，为全球企业提供约16个月缓冲期。协议还首次将禁止AI生成非自愿性亲密内容写入法规，被誉为数字人权保护的重大里程碑。产业界与监管机构关系进入"务实松绑"新阶段。</p>
+        <div class="card-footer">
+          <span class="card-tag">AI监管</span>
+          <a class="read-more" href="https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">02</div>
+      <div class="card-body">
+        <div class="card-source">Anthropic · VentureBeat · SiliconANGLE</div>
+        <h2 class="card-title">
+          <a href="https://venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes" target="_blank" rel="noopener">Anthropic为Claude代理引入"梦境"自学习机制，Harvey任务完成率提升6倍，多代理编排进入公测</a>
+        </h2>
+        <p class="card-comment">Anthropic在Code with Claude大会推出"dreaming"功能：AI代理通过定期回顾历史会话、提炼规律并自动更新记忆，实现无需人工干预的持续迭代。同时宣布多代理编排（Multiagent Orchestration）与Webhooks从实验室阶段进入公测。法律AI公司Harvey采用后任务完成率提升6倍，医疗文档公司Wisedocs效率提升50%，Netflix借此同步处理数百个构建日志，企业级代理AI进入质变阶段。</p>
+        <div class="card-footer">
+          <span class="card-tag">智能代理</span>
+          <a class="read-more" href="https://venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">03</div>
+      <div class="card-body">
+        <div class="card-source">Anthropic · CNBC · Engadget</div>
+        <h2 class="card-title">
+          <a href="https://www.anthropic.com/news/higher-limits-spacex" target="_blank" rel="noopener">Anthropic与SpaceX签300MW算力协议，Claude Code限额翻倍、峰时节流全面取消</a>
+        </h2>
+        <p class="card-comment">Anthropic宣布将使用SpaceX旗下Colossus 1数据中心全部算力，获得超过300MW、约22万块英伟达GPU的计算支持，并探索未来在轨道部署多GW级AI算力的可能性。即日起，Claude Code Pro/Max/Team/Enterprise版本5小时限额全面翻倍，峰值时段节流措施取消，API层Opus模型速率上限同步提升。算力瓶颈的率先突破将加速Anthropic的企业市场攻势。</p>
+        <div class="card-footer">
+          <span class="card-tag">算力扩容</span>
+          <a class="read-more" href="https://www.anthropic.com/news/higher-limits-spacex" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">04</div>
+      <div class="card-body">
+        <div class="card-source">EPAM · PR Newswire · Investing.com</div>
+        <h2 class="card-title">
+          <a href="https://www.epam.com/about/newsroom/press-releases/2026/epam-and-anthropic-team-up-to-build-the-future-of-enterprise-transformation-with-safe-applied-ai" target="_blank" rel="noopener">EPAM与Anthropic签多年战略合作，承诺2027年前培养1万名Claude认证架构师</a>
+        </h2>
+        <p class="card-comment">全球工程服务巨头EPAM宣布与Anthropic达成多年深度合作，已有逾2万名工程师完成Claude培训，目标于2027年前培养1万名Claude认证架构师，并组建250名精英"黑带"工程师团队随Claude Code与Agent SDK深入企业现场。这是继ServiceNow之后第二家承诺大规模认证的企业，标志着以"认证架构师"为核心的Claude生态战争正式开幕，Anthropic的企业渠道壁垒正在加速构筑。</p>
+        <div class="card-footer">
+          <span class="card-tag">企业AI</span>
+          <a class="read-more" href="https://www.epam.com/about/newsroom/press-releases/2026/epam-and-anthropic-team-up-to-build-the-future-of-enterprise-transformation-with-safe-applied-ai" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">05</div>
+      <div class="card-body">
+        <div class="card-source">SaaStr · The AI Corner · Roborhythms</div>
+        <h2 class="card-title">
+          <a href="https://www.the-ai-corner.com/p/anthropic-30b-arr-passed-openai-revenue-2026" target="_blank" rel="noopener">Anthropic年化收入超越OpenAI：ARR达300亿美元，一年前差距6倍，今日格局逆转</a>
+        </h2>
+        <p class="card-comment">Anthropic年化营收在4月突破300亿美元，首次超越OpenAI约240亿美元的ARR。一年前两者差距高达6:1（Anthropic 10亿、OpenAI 60亿）。Anthropic 80%收入来自企业客户，超1000家企业年消费超100万美元；主要驱动力是企业级代理工作流，而非消费端聊天产品。这一格局逆转深刻揭示：AI市场竞争重心已从面向消费者的产品转向企业自动化工作流，B端才是当前AI赛道的核心战场。</p>
+        <div class="card-footer">
+          <span class="card-tag">行业格局</span>
+          <a class="read-more" href="https://www.the-ai-corner.com/p/anthropic-30b-arr-passed-openai-revenue-2026" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">06</div>
+      <div class="card-body">
+        <div class="card-source">OpenAI · KnightLi · 9to5Mac</div>
+        <h2 class="card-title">
+          <a href="https://openai.com/index/gpt-5-5-instant/" target="_blank" rel="noopener">ChatGPT全面更新：记忆来源可溯源、Excel/Google Sheets全球集成正式上线</a>
+        </h2>
+        <p class="card-comment">随GPT-5.5 Instant全面铺开，OpenAI同步推出两项关键功能：其一，"记忆来源"让所有模型可展示回答所调用的记忆条目，用户可随时纠错或删除过时信息，AI透明度大幅提升；其二，ChatGPT for Excel与Google Sheets正式全球开放，用户可在表格侧边栏直接调用AI构建预算模型、修复公式与生成多标签分析——企业生产力工具与AI的深度融合进入实质推进阶段。</p>
+        <div class="card-footer">
+          <span class="card-tag">企业AI</span>
+          <a class="read-more" href="https://openai.com/index/gpt-5-5-instant/" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">07</div>
+      <div class="card-body">
+        <div class="card-source">Meta · TechCrunch · Axios</div>
+        <h2 class="card-title">
+          <a href="https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/" target="_blank" rel="noopener">Meta Muse Spark发布：Alexandr Wang领导超级智能实验室交出首份答卷</a>
+        </h2>
+        <p class="card-comment">Meta发布由前Scale AI CEO Alexandr Wang主导的Muse Spark模型，这是其以143亿美元收购Scale AI后的"超级智能实验室"首批成果。Muse Spark支持语音、文本与图像多模态输入，具备并发多代理协同推理能力，在多模态感知、健康信息处理等任务上与顶级实验室竞争模型持平，且完全免费开放。尽管尚未达到行业最先进水平，但这是Meta年度数千亿美元AI投入开始兑现的明确信号。</p>
+        <div class="card-footer">
+          <span class="card-tag">大模型</span>
+          <a class="read-more" href="https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">08</div>
+      <div class="card-body">
+        <div class="card-source">Snap · TechCrunch · Variety</div>
+        <h2 class="card-title">
+          <a href="https://techcrunch.com/2026/04/15/snap-is-cutting-1000-jobs-16-of-its-workforce/" target="_blank" rel="noopener">Snap裁员1000人（16%全员），AI已完成65%新增代码，科技行业岗位重构加速</a>
+        </h2>
+        <p class="card-comment">Snap CEO Evan Spiegel宣布裁员约1000人并关闭300个空缺岗位，直接援引"AI生成超过65%新增代码"作为依据，预计每年节省成本逾5亿美元。裁员消息发布后股价盘前涨约10%——资本市场将AI驱动的人力精简视为利好信号。这是继Meta、微软之后，又一家科技巨头将AI效率红利直接转化为裁员动作，AI替代白领编码工作的速度正在超出市场此前预期。</p>
+        <div class="card-footer">
+          <span class="card-tag">行业格局</span>
+          <a class="read-more" href="https://techcrunch.com/2026/04/15/snap-is-cutting-1000-jobs-16-of-its-workforce/" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">09</div>
+      <div class="card-body">
+        <div class="card-source">OpenAI · OpenAI Developers · JetBrains</div>
+        <h2 class="card-title">
+          <a href="https://openai.com/index/introducing-codex/" target="_blank" rel="noopener">OpenAI Codex进化为全栈自主编程代理：支持并发任务、安全沙箱，Windows版同步上线</a>
+        </h2>
+        <p class="card-comment">OpenAI Codex已从代码补全工具升级为完整的全栈软件工程代理，内置GPT-5.4核心模型，能自主完成功能开发、重构迁移、漏洞修复（Codex Security）和多代理并发执行（Skills/Automations）。2026年3月Windows版正式发布，同步集成JetBrains IDE系列。开发者可通过Codex CLI在终端直接调用智能体，多代理并行处理正在让"AI程序员"从助手工具演变为可以真正独立交付功能的核心生产力单元。</p>
+        <div class="card-footer">
+          <span class="card-tag">智能代理</span>
+          <a class="read-more" href="https://openai.com/index/introducing-codex/" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">10</div>
+      <div class="card-body">
+        <div class="card-source">CNBC · Fortune · NAI 500</div>
+        <h2 class="card-title">
+          <a href="https://www.cnbc.com/2026/05/06/china-ai-race-cost-efficiency-sensetime-competition.html" target="_blank" rel="noopener">中国AI凭成本效率参与全球竞争：商汤等企业芯片制裁下仍获国际客户，中美AI差距持续收窄</a>
+        </h2>
+        <p class="card-comment">尽管面临美国芯片出口管制，商汤（SenseTime）等中国AI企业仍凭借极致成本效率在国际市场赢得客户。2026年3月，中国AI大模型日均Token用量达140万亿，占全球61%首次超过美国39%；DeepSeek V4-Pro在数学与代码评测上超越同类开源模型；斯坦福AI指数显示中美顶级模型性能差距已收窄至2.7%。中国AI生态正以"成本领先+开源生态"双路径参与全球竞争，重塑AI地缘格局。</p>
+        <div class="card-footer">
+          <span class="card-tag">行业格局</span>
+          <a class="read-more" href="https://www.cnbc.com/2026/05/06/china-ai-race-cost-efficiency-sensetime-competition.html" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div>AI 行业日报 · 第 0004 期 · 2026年5月8日</div>
+  <div class="footer-nav">
+    <a href="../index.html">← 返回往期存档</a>
+  </div>
+</footer>
+
+</body>
+</html>
