@@ -1,27 +1,27 @@
 {
-  "edition": "0004",
-  "date": "2026年5月8日 12:00",
-  "intro": "欧盟AI法规松绑，高风险合规期限再延；Anthropic以梦境自学习颠覆代理范式，借道SpaceX算力扩容并将Claude Code限额翻倍；EPAM携1万架构师押注Claude生态；Anthropic年化收入超越OpenAI，Meta Muse Spark强势亮相，行业监管与商业加速双引擎并驱。",
+  "edition": "0005",
+  "date": "2026年5月9日 18:05",
+  "intro": "OpenAI GPT-5.5-Cyber专为安全防御团队开放；Claude Opus 4.7视觉与编程双升级；Google Gemini企业代理平台整合全栈工具链；DeepSeek V4-Pro超低价逼近前沿；美国政府启动AI模型预发布审查；GPU利用率仅5%困局引发热议。",
   "tags": [
-    "AI监管",
-    "智能代理",
-    "算力扩容",
-    "企业AI",
-    "行业格局"
+    "模型前沿",
+    "安全AI",
+    "开源生态",
+    "行业政策",
+    "企业基础设施"
   ],
   "top3": [
     {
-      "title": "欧盟AI法案重大简化：高风险AI合规期限延至2027年底，新增禁止深度伪造亲密内容条款",
-      "comment": "高风险AI合规截止延至2027年12月，为企业争取16个月缓冲；首次禁止AI生成非自愿亲密内容。"
+      "title": "OpenAI推出GPT-5.5-Cyber：专为网络安全防御微调，通过Trusted Access向认证团队限量开放",
+      "comment": "GPT-5.5-Cyber经专项微调允许安全团队执行受限操作，含最强防滥用护栏，仅对核实组织开放。"
     },
     {
-      "title": "Anthropic为Claude代理引入梦境自学习机制，Harvey任务完成率提升6倍，多代理编排进入公测",
-      "comment": "代理定期回顾历史自动迭代，Harvey完成率提升6倍，Wisedocs效率提升50%，Netflix并发百个构建日志。"
+      "title": "Claude Opus 4.7正式发布：视觉分辨率提升至3.75MP，支持128K输出与自适应思考",
+      "comment": "图像上限从1568px升至2576px，新增自适应思考能力，编程任务表现显著优于4.6版本。"
     },
     {
-      "title": "Anthropic与SpaceX签300MW算力协议，Claude Code限额翻倍、峰时节流全面取消",
-      "comment": "获Colossus 1数据中心22万块GPU，Claude Code各付费版本限额即日翻倍，峰值节流取消。"
+      "title": "Google推出Gemini Enterprise Agent Platform：低代码Studio、ADK与Agent Marketplace三位一体",
+      "comment": "整合模型选择、DevOps编排与安全治理全链路，附7.5亿美元合作伙伴创新基金。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/editions/edition-0004.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/editions/edition-0005.html"
 }

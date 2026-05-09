@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 行业日报 · 第 0005 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #080c14;
+      --surface: #0d1220;
+      --surface2: #121828;
+      --border: #1e2d44;
+      --blue: #3b82f6;
+      --accent: #6c8aff;
+      --accent2: #a78bfa;
+      --accent3: #34d399;
+      --text: #e2e8f0;
+      --text-muted: #8ba3bf;
+      --tag-bg: #0f1e35;
+      --tag-border: #1e3a5f;
+      --tag-text: #7dd3fc;
+      --num-color: #6c8aff;
+      --shadow: 0 4px 24px rgba(0,0,0,.5);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Noto Serif SC', serif;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Back nav ── */
+    .back-nav {
+      padding: 0.85rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    .back-nav a {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+    }
+    .back-nav a:hover { color: var(--accent); text-decoration: none; }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #050a15 0%, #0d1220 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+    .header-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      color: var(--blue);
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+      opacity: 0.9;
+    }
+    header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.04em;
+    }
+    header h1 span { color: var(--blue); }
+    .meta-row {
+      margin-top: 0.6rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.2rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    .meta-dot {
+      display: inline-block;
+      width: 5px; height: 5px;
+      background: var(--blue);
+      border-radius: 50%;
+      margin-right: 0.4rem;
+      vertical-align: middle;
+      opacity: 0.7;
+    }
+
+    /* ── Container ── */
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    /* ── Intro block ── */
+    .intro-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--blue);
+      border-radius: 10px;
+      padding: 1.4rem 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .intro-block-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      color: var(--blue);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .intro-text {
+      font-size: 1rem;
+      line-height: 1.85;
+      color: var(--text);
+    }
+
+    /* ── Tags ── */
+    .tags-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .tag {
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      border: 1px solid var(--tag-border);
+      border-radius: 100px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      padding: 0.2em 0.85em;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Section heading ── */
+    .section-heading {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .section-heading::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── News grid ── */
+    .news-grid { display: flex; flex-direction: column; gap: 1rem; }
+
+    /* ── Card ── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      display: grid;
+      grid-template-columns: 2.5rem 1fr;
+      gap: 0 1.25rem;
+      transition: border-color .2s, transform .15s;
+    }
+    .card:hover {
+      border-color: rgba(59,130,246,.4);
+      transform: translateY(-2px);
+    }
+    .card-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1.35rem;
+      font-weight: 500;
+      color: var(--num-color);
+      opacity: 0.45;
+      line-height: 1.4;
+      padding-top: 0.15rem;
+      user-select: none;
+    }
+    .card-body {}
+    .card-source {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      opacity: 0.7;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+    }
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.5;
+      margin-bottom: 0.65rem;
+    }
+    .card-title a { color: inherit; }
+    .card-title a:hover { color: var(--blue); text-decoration: none; }
+    .card-comment {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+    .card-footer {
+      margin-top: 0.9rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .card-tag {
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      border: 1px solid var(--tag-border);
+      border-radius: 100px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      padding: 0.15em 0.7em;
+    }
+    .read-more {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--blue);
+      border: 1px solid rgba(59,130,246,.4);
+      padding: 0.2em 0.65em;
+      border-radius: 4px;
+      transition: background .15s, color .15s;
+      white-space: nowrap;
+    }
+    .read-more:hover { background: var(--blue); color: #fff; text-decoration: none; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      border-top: 1px solid var(--border);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--text-muted); }
+    footer a:hover { color: var(--blue); }
+    .footer-nav { margin-top: 0.5rem; }
+
+    @media (max-width: 560px) {
+      .card { grid-template-columns: 1.75rem 1fr; gap: 0 0.85rem; padding: 1.1rem 1rem; }
+      .card-num { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="back-nav">
+  <a href="../editions/">← 返回存档</a>
+</div>
+
+<header>
+  <div class="header-label">AI 行业日报 · Edition 0005</div>
+  <h1>AI 行业资讯<span> Daily</span></h1>
+  <div class="meta-row">
+    <span class="meta-item"><span class="meta-dot"></span>第 0005 期</span>
+    <span class="meta-item"><span class="meta-dot"></span>Top 10 新闻</span>
+    <span class="meta-item"><span class="meta-dot"></span>2026/05/09</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="intro-block">
+    <div class="intro-block-label">本期导语</div>
+    <p class="intro-text">OpenAI GPT-5.5-Cyber专为安全防御团队开放；Claude Opus 4.7视觉与编程能力双升级；Google Gemini企业代理平台整合全栈工具链；DeepSeek V4-Pro以超低价格逼近前沿；HuggingFace发布开源LLM后训练自动化代理；美国政府启动AI模型预发布审查机制；GPU利用率仅5%的基础设施困局引发热议。</p>
+  </div>
+
+  <div class="tags-row">
+    <span class="tag"># 模型前沿</span>
+    <span class="tag"># 安全AI</span>
+    <span class="tag"># 开源生态</span>
+    <span class="tag"># 行业政策</span>
+    <span class="tag"># 企业基础设施</span>
+  </div>
+
+  <div class="section-heading">Top 10 · 本期精选</div>
+  <div class="news-grid">
+
+    <div class="card">
+      <div class="card-num">01</div>
+      <div class="card-body">
+        <div class="card-source">OpenAI · Axios · Help Net Security</div>
+        <h2 class="card-title">
+          <a href="https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/" target="_blank" rel="noopener">OpenAI推出GPT-5.5-Cyber：专为网络安全防御微调，通过"Trusted Access"向认证团队限量开放</a>
+        </h2>
+        <p class="card-comment">GPT-5.5-Cyber基于GPT-5.5架构专项微调，允许安全团队执行常规版本受限的安全分析任务，如漏洞探测与渗透测试报告生成。OpenAI通过身份与信任框架（Trusted Access for Cyber）控制访问权限，仅开放给经核实的网络安全组织，同步配备同系列最强防滥用防护层。这是继Anthropic Mythos之后，头部AI厂商第二次针对安全工作流推出专属大模型。</p>
+        <div class="card-footer">
+          <span class="card-tag">安全AI</span>
+          <a class="read-more" href="https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">02</div>
+      <div class="card-body">
+        <div class="card-source">Anthropic · AWS · GitHub Changelog</div>
+        <h2 class="card-title">
+          <a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank" rel="noopener">Claude Opus 4.7正式发布：视觉分辨率提升至3.75MP，支持128K输出与自适应思考</a>
+        </h2>
+        <p class="card-comment">Opus 4.7图像处理上限从1568px提升至2576px（3.75MP），是Claude系列首款高清视觉模型，在复杂软件工程任务上显著优于4.6版本。支持1M token上下文、128K最大输出，并新增自适应思考（Adaptive Thinking）能力，可在执行前主动校验输出质量。定价与Opus 4.6持平：输入$5/M、输出$25/M tokens，已上线Bedrock、Vertex AI及Microsoft Foundry。</p>
+        <div class="card-footer">
+          <span class="card-tag">模型前沿</span>
+          <a class="read-more" href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">03</div>
+      <div class="card-body">
+        <div class="card-source">Google Cloud · The Journal · Campus Technology</div>
+        <h2 class="card-title">
+          <a href="https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform" target="_blank" rel="noopener">Google推出Gemini Enterprise Agent Platform：低代码Studio、ADK与Agent Marketplace三位一体</a>
+        </h2>
+        <p class="card-comment">Google Cloud Next '26上发布的Gemini Enterprise Agent Platform整合了模型选择、代理构建、DevOps编排、安全治理等全链路能力，提供低代码Agent Studio和代码优先ADK两种开发路径，并上线Agent Marketplace供合作方代理分发。平台同步接入Gemini 3.1 Pro、Gemini 3.1 Flash Image及开源Gemma 4，并设立7.5亿美元合作伙伴创新基金，标志着Google将Vertex AI战略全面升级为"企业代理操作系统"。</p>
+        <div class="card-footer">
+          <span class="card-tag">模型前沿</span>
+          <a class="read-more" href="https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">04</div>
+      <div class="card-body">
+        <div class="card-source">CNBC · Fortune · MIT Technology Review</div>
+        <h2 class="card-title">
+          <a href="https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/" target="_blank" rel="noopener">DeepSeek V4-Pro：1.6万亿参数、百万Token上下文，输出价仅$3.48/M逼近前沿模型</a>
+        </h2>
+        <p class="card-comment">DeepSeek V4-Pro拥有1.6万亿参数与100万token上下文窗口，在数学与代码基准上直逼GPT-5.4和Gemini 3.1 Pro，但输出价格仅$3.48/M tokens，远低于OpenAI的$30和Anthropic的$25。华为同日确认其Ascend AI处理器集群可完整支持V4模型推理，DeepSeek V4-Flash同步发布针对低延迟场景，中国AI在"成本领先+开源"双路径上持续施压全球前沿实验室。</p>
+        <div class="card-footer">
+          <span class="card-tag">中国动态</span>
+          <a class="read-more" href="https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">05</div>
+      <div class="card-body">
+        <div class="card-source">HuggingFace · MarkTechPost · AIToolly</div>
+        <h2 class="card-title">
+          <a href="https://www.marktechpost.com/2026/04/21/hugging-face-releases-ml-intern-an-open-source-ai-agent-that-automates-the-llm-post-training-workflow/" target="_blank" rel="noopener">HuggingFace发布ml-intern：基于smolagents的开源代理，自主完成LLM后训练全流程</a>
+        </h2>
+        <p class="card-comment">ml-intern基于HuggingFace的smolagents框架构建，可自主执行LLM后训练端到端工作流：自动浏览arXiv与HF Papers进行文献调研，从Hub发现并重格式化数据集，运行训练脚本并迭代评估结果，全程无需人工干预。这是继AutoML之后，AI自动化向"AI自我优化"范式的重要跨越，也是HuggingFace将1百万托管模型生态转化为自动化研发工具的战略信号。</p>
+        <div class="card-footer">
+          <span class="card-tag">开源生态</span>
+          <a class="read-more" href="https://www.marktechpost.com/2026/04/21/hugging-face-releases-ml-intern-an-open-source-ai-agent-that-automates-the-llm-post-training-workflow/" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">06</div>
+      <div class="card-body">
+        <div class="card-source">CNBC · CNN Business · Claims Journal</div>
+        <h2 class="card-title">
+          <a href="https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html" target="_blank" rel="noopener">美政府与Google、Microsoft、xAI签协议：AI模型公开发布前须通过政府预审</a>
+        </h2>
+        <p class="card-comment">美国人工智能标准与创新中心（CASI）于5月5日宣布与Google DeepMind、Microsoft及xAI达成协议，允许政府在模型公开发布前进行安全评估，国家经济委员会主任将该机制比作"AI版FDA药物审批"。这一政策由Anthropic Mythos网络安全漏洞探测能力引发的监管讨论驱动，白宫正同步起草行政令正式制度化该审查流程，标志着美国联邦政府AI监管从事后监督向事前审查转型。</p>
+        <div class="card-footer">
+          <span class="card-tag">行业政策</span>
+          <a class="read-more" href="https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">07</div>
+      <div class="card-body">
+        <div class="card-source">VentureBeat · Cast AI · DataCenter Knowledge</div>
+        <h2 class="card-title">
+          <a href="https://venturebeat.com/infrastructure/5-gpu-utilization-the-401-billion-ai-infrastructure-problem-enterprises-cant-keep-ignoring" target="_blank" rel="noopener">企业GPU平均利用率仅5%：4010亿美元AI算力投资95%被浪费，数据供给才是根本瓶颈</a>
+        </h2>
+        <p class="card-comment">根据Cast AI《2026 Kubernetes优化状态报告》，企业GPU集群平均利用率仅5%，对应全球逾4010亿美元的潜在浪费。VentureBeat分析指出根本原因并非软件效率，而是数据管道与编排层的结构性缺陷——GPU长期处于"等待数据"的空转状态。修复该问题需要从存储I/O、批处理调度到多租户资源隔离全面重构AI基础设施，单靠更好的推理框架无法解决。</p>
+        <div class="card-footer">
+          <span class="card-tag">企业基础设施</span>
+          <a class="read-more" href="https://venturebeat.com/infrastructure/5-gpu-utilization-the-401-billion-ai-infrastructure-problem-enterprises-cant-keep-ignoring" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">08</div>
+      <div class="card-body">
+        <div class="card-source">IBM · Solutions Review · Fivetran</div>
+        <h2 class="card-title">
+          <a href="https://solutionsreview.com/ai-news-for-the-week-of-may-8-updates-from-anthropic-cribl-ibm-more/" target="_blank" rel="noopener">IBM：76%企业已设立首席AI官，但仅15%为生产级智能代理做好部署准备</a>
+        </h2>
+        <p class="card-comment">IBM 2026年CEO研究报告显示，设立Chief AI Officer（CAO）的企业比例从2025年的26%跃升至76%，CEO们正以AI为核心重构高管团队。然而Fivetran的《2026 Agentic AI就绪指数》同期揭示：企业总体就绪得分仅61%，仅15%的组织真正准备好在生产环境运行智能代理——组织架构变革与技术就绪之间的落差，正是当前企业AI落地最大障碍。</p>
+        <div class="card-footer">
+          <span class="card-tag">企业基础设施</span>
+          <a class="read-more" href="https://solutionsreview.com/ai-news-for-the-week-of-may-8-updates-from-anthropic-cribl-ibm-more/" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">09</div>
+      <div class="card-body">
+        <div class="card-source">TechCrunch · Anthropic · CNBC</div>
+        <h2 class="card-title">
+          <a href="https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/" target="_blank" rel="noopener">Google向Anthropic追加投资最高400亿美元，并承诺提供5GW云算力资源</a>
+        </h2>
+        <p class="card-comment">Google宣布向Anthropic追加投资最高400亿美元现金与计算资源，并承诺在未来五年内提供5吉瓦云端算力，是目前科技史上最大单笔AI领域投资之一。此举既巩固Google在Anthropic的战略股权，也锁定了其作为核心云算力供应商的地位——与Anthropic此前达成的SpaceX Colossus 300MW算力协议形成多元化算力布局，为Claude系列大规模商业扩张提供基础设施保障。</p>
+        <div class="card-footer">
+          <span class="card-tag">行业政策</span>
+          <a class="read-more" href="https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-num">10</div>
+      <div class="card-body">
+        <div class="card-source">HuggingFace Blog · MIT Technology Review · MarkTechPost</div>
+        <h2 class="card-title">
+          <a href="https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026" target="_blank" rel="noopener">HuggingFace开源生态春季报告：模型托管突破100万，LeRobot机器人库高速增长</a>
+        </h2>
+        <p class="card-comment">HuggingFace发布2026年春季开源生态报告，平台托管模型数量突破100万，社区用户超200万。LeRobot开源机器人库涵盖模仿学习、强化学习与视觉-语言-动作（VLA）模型，成为实体AI领域增速最快的开源项目之一。报告还回顾了一年前DeepSeek震撼开源社区以来的生态演变，指出"开源优先"策略已从研究实验转化为企业AI落地的主流路径选择。</p>
+        <div class="card-footer">
+          <span class="card-tag">开源生态</span>
+          <a class="read-more" href="https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div>AI 行业日报 · 第 0005 期 · 2026年5月9日</div>
+  <div class="footer-nav">
+    <a href="../editions/">← 返回存档</a>
+  </div>
+</footer>
+
+</body>
+</html>
