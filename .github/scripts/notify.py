@@ -43,7 +43,6 @@ def should_notify(json_file, prefix):
 
 
 def build_mention_str(mention_env):
-    """把逗号分隔的 userid 列表转成企微 markdown 艾特格式。"""
     raw = os.environ.get(mention_env, '').strip()
     if not raw:
         return ''
@@ -68,7 +67,6 @@ def post_wecom(webhook, json_path, label, mention_env):
     url = d.get('url', '')
     top3 = d.get('top3', [])
 
-    # Wait until the page is actually live before notifying
     wait_for_page(url)
 
     top3_md = '\n'.join(
@@ -112,3 +110,6 @@ if should_notify('latest.json', 'editions/'):
 
 if should_notify('latest-business.json', 'business/'):
     post_wecom(os.environ.get('WECOM_WEBHOOK_BUSINESS', ''), 'latest-business.json', 'AI 产品洞察', 'WECOM_MENTION_BUSINESS')
+
+if should_notify('latest-fitness.json', 'fitness/'):
+    post_wecom(os.environ.get('WECOM_WEBHOOK_FITNESS', ''), 'latest-fitness.json', 'Fanka 运动健康趋势', 'WECOM_MENTION_FITNESS')
