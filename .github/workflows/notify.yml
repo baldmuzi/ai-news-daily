@@ -6,8 +6,10 @@ on:
     paths:
       - 'latest.json'
       - 'latest-business.json'
+      - 'latest-fitness.json'
       - 'editions/**'
       - 'business/**'
+      - 'fitness/**'
   workflow_dispatch:
 
 permissions:
@@ -25,13 +27,16 @@ jobs:
 
       - name: Send WeCom notifications
         env:
-          WECOM_WEBHOOK_TECH:      ${{ secrets.WECOM_WEBHOOK }}
-          WECOM_WEBHOOK_BUSINESS:  ${{ secrets.WECOM_WEBHOOK_BUSINESS }}
-          WECOM_MENTION_TECH:          ${{ secrets.WECOM_MENTION_TECH }}
-          WECOM_MENTION_BUSINESS:      ${{ secrets.WECOM_MENTION_BUSINESS }}
-          WECOM_MENTION_MSG_TECH:      ${{ secrets.WECOM_MENTION_MSG_TECH }}
-          WECOM_MENTION_MSG_BUSINESS:  ${{ secrets.WECOM_MENTION_MSG_BUSINESS }}
-          CHANGED_FILES_PATH:      /tmp/changed.txt
+          WECOM_WEBHOOK_TECH:         ${{ secrets.WECOM_WEBHOOK }}
+          WECOM_WEBHOOK_BUSINESS:     ${{ secrets.WECOM_WEBHOOK_BUSINESS }}
+          WECOM_WEBHOOK_FITNESS:      ${{ secrets.WECOM_WEBHOOK_FITNESS }}
+          WECOM_MENTION_TECH:         ${{ secrets.WECOM_MENTION_TECH }}
+          WECOM_MENTION_BUSINESS:     ${{ secrets.WECOM_MENTION_BUSINESS }}
+          WECOM_MENTION_FITNESS:      ${{ secrets.WECOM_MENTION_FITNESS }}
+          WECOM_MENTION_MSG_TECH:     ${{ secrets.WECOM_MENTION_MSG_TECH }}
+          WECOM_MENTION_MSG_BUSINESS: ${{ secrets.WECOM_MENTION_MSG_BUSINESS }}
+          WECOM_MENTION_MSG_FITNESS:  ${{ secrets.WECOM_MENTION_MSG_FITNESS }}
+          CHANGED_FILES_PATH:         /tmp/changed.txt
         run: |
           git diff --name-only HEAD~1 HEAD 2>/dev/null > /tmp/changed.txt || true
           echo "=== Changed files ==="
