@@ -1,27 +1,27 @@
 {
-  "edition": "0005",
-  "date": "2026年5月9日 18:05",
-  "intro": "OpenAI GPT-5.5-Cyber专为安全防御团队开放；Claude Opus 4.7视觉与编程双升级；Google Gemini企业代理平台整合全栈工具链；DeepSeek V4-Pro超低价逼近前沿；美国政府启动AI模型预发布审查；GPU利用率仅5%困局引发热议。",
+  "edition": "0006",
+  "date": "2026年5月11日 06:16",
+  "intro": "Anthropic三大代理功能进入公测；SubQ以次二次型注意力声称千倍效率增益；MCP stdio漏洞暴露20万服务器；OpenAI扩大GPT-5.5-Cyber准入范围；Writer推出无提示事件驱动代理；DeepSeek V4在华为Ascend完成国产推理闭环。",
   "tags": [
-    "模型前沿",
-    "安全AI",
-    "开源生态",
-    "行业政策",
-    "企业基础设施"
+    "智能代理",
+    "次二次型LLM",
+    "MCP安全",
+    "开源推理",
+    "中国AI芯片"
   ],
   "top3": [
     {
-      "title": "OpenAI推出GPT-5.5-Cyber：专为网络安全防御微调，通过Trusted Access向认证团队限量开放",
-      "comment": "GPT-5.5-Cyber经专项微调允许安全团队执行受限操作，含最强防滥用护栏，仅对核实组织开放。"
+      "title": "Anthropic Claude Managed Agents三大功能入公测：Dreaming记忆自优化、Outcomes评估、多代理并行编排",
+      "comment": "三功能由研究预览升级为公测版，任务成功率最高提升10个百分点，Netflix已部署多代理编排。"
     },
     {
-      "title": "Claude Opus 4.7正式发布：视觉分辨率提升至3.75MP，支持128K输出与自适应思考",
-      "comment": "图像上限从1568px升至2576px，新增自适应思考能力，编程任务表现显著优于4.6版本。"
+      "title": "Subquadratic SubQ：首个放弃Transformer二次注意力的前沿LLM，12M token效率声称增益千倍",
+      "comment": "4人团队以2900万美元出道，SSA实现近线性上下文扩展，独立验证论文仍未发布。"
     },
     {
-      "title": "Google推出Gemini Enterprise Agent Platform：低代码Studio、ADK与Agent Marketplace三位一体",
-      "comment": "整合模型选择、DevOps编排与安全治理全链路，附7.5亿美元合作伙伴创新基金。"
+      "title": "MCP stdio设计缺陷波及20万AI代理服务器，Anthropic将其定性为设计特性",
+      "comment": "OX Security审计发现零过滤命令执行漏洞，产出10余个高危CVE，供应链安全风险持续发酵。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/editions/edition-0005.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/editions/edition-0006.html"
 }
