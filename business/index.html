@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>出海 AI 洞察 — 产品数据频道</title>
+  <title>出海 AI 洞察 · 往期存档</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -38,7 +38,24 @@
       border-bottom: 1px solid var(--border);
       padding: 3rem 1.5rem 2rem;
       text-align: center;
+      position: relative;
     }
+
+    .back-link {
+      position: absolute;
+      top: 1.2rem;
+      left: 1.5rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--accent);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 4px;
+      padding: 0.25em 0.7em;
+      transition: background 0.15s;
+    }
+    .back-link:hover { background: var(--tag-bg); }
 
     .header-badge {
       display: inline-block;
@@ -233,8 +250,9 @@
 <body>
 
   <header>
+    <a href="../" class="back-link">← 返回首页</a>
     <div class="header-badge">BUSINESS CHANNEL &nbsp;·&nbsp; 产品数据频道</div>
-    <h1>出海 AI <span>洞察</span></h1>
+    <h1>出海 AI <span>洞察</span> · 往期存档</h1>
     <p class="subtitle">跨境电商 · 可持续发展 · AI 应用实战</p>
     <div class="meta-row">
       <span>环保鞋类出海</span>
@@ -249,6 +267,20 @@
 
     <div class="edition-card latest">
       <div class="edition-left">
+        <span class="edition-num">#0005</span>
+        <div class="edition-info">
+          <span class="edition-title">出海 AI 洞察 Top 10</span>
+          <span class="edition-date">2026年5月11日 · AI代理购物崛起 / Google UCP标准 / H&amp;M绿色供应链</span>
+        </div>
+      </div>
+      <div class="edition-badges">
+        <span class="badge-latest">最新</span>
+        <a href="edition-0005.html" class="read-link">阅读 →</a>
+      </div>
+    </div>
+
+    <div class="edition-card">
+      <div class="edition-left">
         <span class="edition-num">#0004</span>
         <div class="edition-info">
           <span class="edition-title">出海 AI 洞察 Top 10</span>
@@ -256,7 +288,6 @@
         </div>
       </div>
       <div class="edition-badges">
-        <span class="badge-latest">最新</span>
         <a href="edition-0004.html" class="read-link">阅读 →</a>
       </div>
     </div>
@@ -304,7 +335,7 @@
 
   <footer>
     <span>出海 AI 洞察 <span class="accent">· 产品数据频道</span></span>
-    <span>更新于 2026年5月9日</span>
+    <span>更新于 2026年5月11日</span>
     <span class="accent">baldmuzi.github.io/ai-news-daily</span>
   </footer>
 
