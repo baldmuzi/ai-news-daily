@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>运动健康趋势 · Fanka — 第 0001 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #080c14;
+      --surface: #0f1623;
+      --surface2: #162030;
+      --border: #1e2d42;
+      --accent: #f43f5e;
+      --accent-dim: #e11d48;
+      --accent-glow: rgba(244, 63, 94, 0.15);
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --tag-bg: rgba(244, 63, 94, 0.12);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Noto Serif SC', serif;
+      line-height: 1.8;
+      min-height: 100vh;
+      padding: 0 0 4rem;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    header {
+      background: linear-gradient(180deg, #100812 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 1.5rem 2.2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .back-link {
+      position: absolute;
+      top: 1.4rem;
+      left: 1.5rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      transition: color 0.15s;
+    }
+    .back-link:hover { color: var(--accent); }
+
+    .header-badge {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      background: var(--tag-bg);
+      border: 1px solid rgba(244, 63, 94, 0.3);
+      border-radius: 4px;
+      padding: 0.2em 0.7em;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(1.7rem, 4.5vw, 2.6rem);
+      font-weight: 700;
+      color: #f1f5f9;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.3rem;
+    }
+    h1 span { color: var(--accent); }
+
+    .subtitle {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      letter-spacing: 0.18em;
+      font-family: 'JetBrains Mono', monospace;
+      margin-bottom: 1.4rem;
+    }
+
+    .meta-row {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--text-dim);
+      margin-bottom: 1.4rem;
+    }
+    .meta-row span::before { content: '· '; color: var(--accent); }
+
+    .intro-box {
+      max-width: 640px;
+      margin: 0 auto;
+      background: var(--tag-bg);
+      border: 1px solid rgba(244, 63, 94, 0.2);
+      border-radius: 8px;
+      padding: 0.9rem 1.2rem;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.9;
+    }
+
+    .tags-row {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--accent);
+      background: var(--tag-bg);
+      border: 1px solid rgba(244, 63, 94, 0.25);
+      border-radius: 3px;
+      padding: 0.15em 0.55em;
+      letter-spacing: 0.05em;
+    }
+
+    .section-label {
+      max-width: 800px;
+      margin: 2.8rem auto 1.2rem;
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    .section-label h2 {
+      font-size: 0.72rem;
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .cards-grid {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.4rem 1.6rem 1.2rem;
+      position: relative;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .card:hover {
+      border-color: rgba(244, 63, 94, 0.4);
+      box-shadow: 0 0 28px var(--accent-glow);
+    }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .card-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--accent);
+      background: var(--tag-bg);
+      border: 1px solid rgba(244, 63, 94, 0.3);
+      border-radius: 3px;
+      padding: 0.15em 0.5em;
+      margin-top: 0.2rem;
+      flex-shrink: 0;
+      letter-spacing: 0.08em;
+    }
+
+    .card-header {
+      flex: 1;
+    }
+
+    .card-cat {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
+    }
+    .cat-emerging   { color: #fb923c; }
+    .cat-style      { color: #a78bfa; }
+    .cat-health     { color: #34d399; }
+    .cat-social     { color: #38bdf8; }
+    .cat-market     { color: #fbbf24; }
+    .cat-women      { color: #f43f5e; }
+
+    .card-title {
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      line-height: 1.45;
+    }
+    .card-title a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .card-title a:hover { color: var(--accent); }
+
+    .card-source {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.6rem;
+      color: var(--text-dim);
+      margin-top: 0.25rem;
+    }
+
+    .card-body {
+      background: var(--surface2);
+      border-radius: 8px;
+      padding: 0.9rem 1rem;
+      font-size: 0.875rem;
+      line-height: 1.9;
+      color: var(--text-muted);
+    }
+
+    .card-body p + p { margin-top: 0.55rem; }
+
+    .card-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      font-weight: 500;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .card-link {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--accent);
+      border: 1px solid rgba(244, 63, 94, 0.35);
+      border-radius: 4px;
+      padding: 0.3em 0.8em;
+      transition: background 0.15s, color 0.15s;
+    }
+    .card-link:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    footer {
+      max-width: 800px;
+      margin: 4rem auto 0;
+      padding: 1.8rem 1.5rem 0;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    footer span {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--text-dim);
+    }
+    footer .accent { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="../fitness/" class="back-link">← 返回存档</a>
+  <div class="header-badge">FITNESS CHANNEL &nbsp;·&nbsp; 第 0001 期</div>
+  <h1>运动健康<span>趋势</span></h1>
+  <p class="subtitle">Global Fitness &amp; Wellness · Powered by Fanka</p>
+  <div class="meta-row">
+    <span>2026年5月11日</span>
+    <span>全球趋势精选</span>
+    <span>Top 10 深度点评</span>
+  </div>
+  <div class="intro-box">
+    全球女性运动版图正在重塑：从病毒级日式间歇走路到改革床普拉提热潮，从经期同步训练到无压迫软雕塑压缩裤，从线下健康狂欢派对到小红书健身打卡文化——这是 Fanka 内容团队把握运动新叙事的绝佳窗口期。
+  </div>
+  <div class="tags-row">
+    <span class="tag">普拉提热潮</span>
+    <span class="tag">女性长寿训练</span>
+    <span class="tag">运动软雕塑穿搭</span>
+    <span class="tag">社媒健身挑战</span>
+    <span class="tag">碎片化健身生活</span>
+  </div>
+</header>
+
+<div class="section-label"><h2>新兴运动</h2></div>
+
+<div class="cards-grid">
+
+  <!-- 01 Japanese Walking -->
+  <div class="card">
+    <div class="card-top">
+      <span class="card-num">#01</span>
+      <div class="card-header">
+        <div class="card-cat cat-emerging">新兴运动 · 社媒热点</div>
+        <div class="card-title">
+          <a href="https://dailyburn.com/life/fitness/japanese-walking-the-viral-2026-fitness-trend-that-burns-more-fat-in-less-time/" target="_blank">
+            日式间歇走路法：2026 年搜索量暴增 2986%，TikTok 爆款挑战席卷全球
+          </a>
+        </div>
+        <div class="card-source">来源：Daily Burn · PureGym Annual Fitness Report 2026</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <p><span class="card-label">【趋势是什么】</span> 源自日本信州大学 Hiroshi Nose 博士2007年研究的间歇步行法——慢走3分钟+快走3分钟循环5~10组，今年在 TikTok 爆发式传播，PureGym 年度报告显示其搜索热度激增 2986%，超越跑步成为年度最热有氧运动。科学验证比普通走路燃脂效率提升14%，同时改善心肺与肌力。</p>
+      <p><span class="card-label">【内容机会】</span> Fanka 可策划「日式间歇走路穿搭指南」系列——展示高腰压缩紧身裤在快走冲刺段的支撑表现与长时穿着舒适度，结合「30天挑战」话题标签，适合 Instagram Reels 和小红书图文引流，打造品牌专属健步运动话题。</p>
+    </div>
+    <div class="card-footer">
+      <a href="https://dailyburn.com/life/fitness/japanese-walking-the-viral-2026-fitness-trend-that-burns-more-fat-in-less-time/" target="_blank" class="card-link">查看原文 →</a>
+    </div>
+  </div>
+
+  <!-- 02 Pilates -->
+  <div class="card">
+    <div class="card-top">
+      <span class="card-num">#02</span>
+      <div class="card-header">
+        <div class="card-cat cat-emerging">新兴运动 · 女性运动</div>
+        <div class="card-title">
+          <a href="https://pilatesjournal.com/articles/2026-pilates-predictions-industry-leaders" target="_blank">
+            改革床普拉提：连续第三年全球最热课程，"Pilates Girl" 美学统治社交媒体
+          </a>
+        </div>
+        <div class="card-source">来源：Pilates Journal · ClassPass 2025 Look Back Report</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <p><span class="card-label">【趋势是什么】</span> ClassPass 数据显示普拉提连续三年蝉联全球最受预订课程，2024年至今增长66%。"Pink Pilates Princess" 美学在 TikTok 引发百万级内容创作，改革床（Reformer）短视频平均互动率比普通健身内容高28~42%。女性涌入普拉提不仅为塑形，更为放松与连接身体。</p>
+      <p><span class="card-label">【内容机会】</span> Fanka 压缩裤是改革床课堂的天然主角——高弹紧身裤满足踢腿、拉伸等大幅动作。可拍摄「普拉提换装对比」视频（宽松vs压缩贴合感），联合工作室 KOL 出品「Pilates Girl 全周穿搭」，借势 #PilatesPrincess 话题冲榜。</p>
+    </div>
+    <div class="card-footer">
+      <a href="https://pilatesjournal.com/articles/2026-pilates-predictions-industry-leaders" target="_blank" class="card-link">查看原文 →</a>
+    </div>
+  </div>
+
+  <!-- 03 Wellness Raves -->
+  <div class="card">
+    <div class="card-top">
+      <span class="card-num">#03</span>
+      <div class="card-header">
+        <div class="card-cat cat-social">社媒热点 · 新兴运动</div>
+        <div class="card-title">
+          <a href="https://edm.com/lifestyle/rave-culture-shapes-festivalization-of-wellness-trends-2026/" target="_blank">
+            健康狂欢派对（Wellness Rave）：无酒精清晨锐舞 × 健身节日化席卷全球
+          </a>
+        </div>
+        <div class="card-source">来源：EDM.com · Global Wellness Summit 2026 Trends</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <p><span class="card-label">【趋势是什么】</span> 全球健康峰会将「健康节日化」列为2026年十大趋势之一。Daybreaker、Heatwave"桑拿锐舞"等无酒精清晨派对席卷纽约、伦敦、上海，用舞蹈、音乐与集体情感释放重新定义健康——从孤独的数据追踪转向热烈的群体共鸣。六感、Soneva等奢华度假村也推出沉浸式多日健康节。</p>
+      <p><span class="card-label">【内容机会】</span> Fanka 可打造「我的清晨锐舞穿搭」内容，展示运动内衣+高腰压缩裤在高强度舞蹈场景下的功能与颜值；还可赞助或参与本地"健康派对"活动拍摄，制造场景化种草内容，突出品牌"让运动变得更简单"的欢乐感。</p>
+    </div>
+    <div class="card-footer">
+      <a href="https://edm.com/lifestyle/rave-culture-shapes-festivalization-of-wellness-trends-2026/" target="_blank" class="card-link">查看原文 →</a>
+    </div>
+  </div>
+
+</div>
+
+<div class="section-label"><h2>女性运动</h2></div>
+
+<div class="cards-grid">
+
+  <!-- 04 Cycle Syncing -->
+  <div class="card">
+    <div class="card-top">
+      <span class="card-num">#04</span>
+      <div class="card-header">
+        <div class="card-cat cat-women">女性运动 · 健康生活</div>
+        <div class="card-title">
+          <a href="https://www.geisinger.org/health-and-wellness/wellness-articles/2026/04/02/17/52/menstrual-cycle-syncing" target="_blank">
+            经期同步训练（Cycle Syncing）：根据激素周期定制运动，成为女性生理自觉运动新标配
+          </a>
+        </div>
+        <div class="card-source">来源：Geisinger Health · WhoWhatWear Wellness Trends 2026</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <p><span class="card-label">【趋势是什么】</span> 越来越多女性根据月经周期四个阶段（月经期/卵泡期/排卵期/黄体期）调整训练强度：经期做恢复性瑜伽，排卵期冲击力量高强度。2026年该概念从 TikTok 科普热词落地为品牌可穿戴设备与 App 的核心卖点，标志着女性生理特异化训练从小众走向主流。</p>
+      <p><span class="card-label">【内容机会】</span> Fanka 可制作"四个周期的穿搭与训练指南"内容矩阵：月经期推荐轻压缩舒适型紧身裤，排卵期主打高支撑运动内衣。让产品功能与女性身体节律深度绑定，强化"Fanka 懂女性运动"的品牌认知。</p>
+    </div>
+    <div class="card-footer">
+      <a href="https://www.geisinger.org/health-and-wellness/wellness-articles/2026/04/02/17/52/menstrual-cycle-syncing" target="_blank" class="card-link">查看原文 →</a>
+    </div>
+  </div>
+
+  <!-- 05 Women's Longevity Strength Training -->
+  <div class="card">
+    <div class="card-top">
+      <span class="card-num">#05</span>
+      <div class="card-header">
+        <div class="card-cat cat-women">女性运动 · 市场洞察</div>
+        <div class="card-title">
+          <a href="https://heragenda.com/p/strength-and-mobility-training-for-women-2026/" target="_blank">
+            女性长寿力量训练：2026 年 JAMA 研究证实握力预测寿命，女性抗衰运动革命启动
+          </a>
+        </div>
+        <div class="card-source">来源：Her Agenda · JAMA Network Open 2026 · CNN Health</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <p><span class="card-label">【趋势是什么】</span> 2026年2月《JAMA》追踪5000名63~99岁女性的研究显示，握力最强组死亡风险降低33%，坐立速度最快组降低37%。此研究引爆"长寿力量训练"热潮——全球女性将力量训练从塑型工具升级为抗衰核心，深蹲、壶铃、单腿训练成为女性运动新标配，女性运动收入预计突破23.5亿美元。</p>
+      <p><span class="card-label">【内容机会】</span> Fanka 可策划「长寿力量训练穿搭」专题，展示压缩紧身裤在深蹲、硬拉场景下的支撑力，同时联动营养师/运动科学博主做健康longevity话题合作，打造"做强壮女性"的品牌价值主张内容。</p>
+    </div>
+    <div class="card-footer">
+      <a href="https://heragenda.com/p/strength-and-mobility-training-for-women-2026/" target="_blank" class="card-link">查看原文 →</a>
+    </div>
+  </div>
+
+  <!-- 06 Community Social Fitness -->
+  <div class="card">
+    <div class="card-top">
+      <span class="card-num">#06</span>
+      <div class="card-header">
+        <div class="card-cat cat-social">社媒热点 · 女性运动</div>
+        <div class="card-title">
+          <a href="https://civicscience.com/fitness-trends-of-2026-the-rise-of-yoga-home-equipment-purchasing-and-gen-z-elevates-social-fitness/" target="_blank">
+            Gen Z 引领社群健身文化：跑步俱乐部、匹克球与集体运动成为女性社交新方式
+          </a>
+        </div>
+        <div class="card-source">来源：CivicScience · ACSM Top Fitness Trends 2026</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <p><span class="card-label">【趋势是什么】</span> ACSM 2026年度报告将"成人娱乐运动俱乐部"首次列入前20大趋势。Gen Z 女性正大规模涌入跑步俱乐部、匹克球、公园瑜伽等社群运动——不只为健身，更为归属感与真实连接。"运动约会"（workout date）已成为25岁以下女性最常见的社交活动。</p>
+      <p><span class="card-label">【内容机会】</span> Fanka 可打造「跑团女孩穿搭日记」UGC 话题，鼓励用户晒出和姐妹运动的日常，同时赞助女性专属跑步活动，让品牌出现在真实社群运动场景中，强化"运动让女性更紧密"的情感价值。</p>
+    </div>
+    <div class="card-footer">
+      <a href="https://civicscience.com/fitness-trends-of-2026-the-rise-of-yoga-home-equipment-purchasing-and-gen-z-elevates-social-fitness/" target="_blank" class="card-link">查看原文 →</a>
+    </div>
+  </div>
+
+</div>
+
+<div class="section-label"><h2>穿搭趋势 · 市场洞察</h2></div>
+
+<div class="cards-grid">
+
+  <!-- 07 Soft Sculpture Compression -->
+  <div class="card">
+    <div class="card-top">
+      <span class="card-num">#07</span>
+      <div class="card-header">
+        <div class="card-cat cat-style">穿搭趋势 · 市场洞察</div>
+        <div class="card-title">
+          <a href="https://graziamagazine.com/us/articles/new-year-activewear-2026-trends-alo-nikeskims-splits59/" target="_blank">
+            软雕塑压缩美学：超高压缩退场，Soft Sculpt 贴合+包容成 2026 压缩裤新标准
+          </a>
+        </div>
+        <div class="card-source">来源：Grazia Magazine · NeceSera Activewear 2026 Trend Report</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <p><span class="card-label">【趋势是什么】</span> 2026年女性运动服市场出现明显转向：超高压缩、"水泥感"紧身裤开始退场，"软雕塑"（Soft Sculpt）风格崛起——面料超柔软但具备收腰提臀的轮廓感，搭配动态分级设计（Dynamic Grading）确保 XS 到 4XL 都有同等支撑质感。大红色与宝蓝色成为2026爆款配色。</p>
+      <p><span class="card-label">【内容机会】</span> 这是 Fanka 直接的产品内容机会——制作"舒适度 vs 支撑感对比测评"视频，突出 Fanka 压缩裤在运动与日常两种场景的自如切换；着重展示不同身材穿着效果，强化包容性品牌形象，契合2026市场主流价值观。</p>
+    </div>
+    <div class="card-footer">
+      <a href="https://graziamagazine.com/us/articles/new-year-activewear-2026-trends-alo-nikeskims-splits59/" target="_blank" class="card-link">查看原文 →</a>
+    </div>
+  </div>
+
+  <!-- 08 Sportif Chic -->
+  <div class="card">
+    <div class="card-top">
+      <span class="card-num">#08</span>
+      <div class="card-header">
+        <div class="card-cat cat-style">穿搭趋势</div>
+        <div class="card-title">
+          <a href="https://www.whowhatwear.com/fashion/trends/sportif-trend-2026" target="_blank">
+            Sportif Chic 运动雅痞美学：从健身房无缝接轨早午餐，运动服进入生活全场景时代
+          </a>
+        </div>
+        <div class="card-source">来源：Who What Wear · Sportofino Magazine 2026</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <p><span class="card-label">【趋势是什么】</span> 2026年 NYC 和 LA 街头最热美学：运动服不再只属于健身房，精致的运动内衣+高腰压缩裤搭配宽版外套、皮带包成为都市女性的日常搭配公式。无缝构造消除接缝摩擦，Lululemon、Alo、NikeSkims 联名款引领"奢华运动休闲"新赛道，运动服进入全场景生活。</p>
+      <p><span class="card-label">【内容机会】</span> Fanka 可制作"从普拉提到咖啡馆"全天穿搭 vlog，展示压缩紧身裤+运动内衣跨场景搭配能力；与时尚 KOL 合作呈现运动雅痞穿法，让"Fanka 可以穿出去"成为用户心智标签，拓宽消费场景认知。</p>
+    </div>
+    <div class="card-footer">
+      <a href="https://www.whowhatwear.com/fashion/trends/sportif-trend-2026" target="_blank" class="card-link">查看原文 →</a>
+    </div>
+  </div>
+
+  <!-- 09 Micro-workouts -->
+  <div class="card">
+    <div class="card-top">
+      <span class="card-num">#09</span>
+      <div class="card-header">
+        <div class="card-cat cat-health">健康生活</div>
+        <div class="card-title">
+          <a href="https://www.womensbusinessdaily.com/career/2026-wellness-trends-that-actually-make-sense-for-busy-women/" target="_blank">
+            碎片健身（Snack-Sized Workouts）：5分钟运动零食取代60分钟大课，忙碌女性运动新哲学
+          </a>
+        </div>
+        <div class="card-source">来源：Women's Business Daily · Active Wellness 2026 · WhoWhatWear</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <p><span class="card-label">【趋势是什么】</span> 在"过度优化"焦虑的反弹浪潮中，"运动零食"（Exercise Snacks）概念大爆发：利用碎片时间完成5~15分钟高效训练——楼梯冲刺、桌边深蹲、午间快走。研究证实碎片化运动累积效果等同持续训练，忙碌职场女性成为最大拥趸，成为2026年女性健康趋势的重要声音。</p>
+      <p><span class="card-label">【内容机会】</span> Fanka 可策划"5分钟运动零食"系列短视频，主角穿着 Fanka 压缩裤在办公室/家庭场景健身，强调产品"穿上就能动，随时开始运动"的便利性；结合"午间15分钟挑战"话题，激励用户打卡分享。</p>
+    </div>
+    <div class="card-footer">
+      <a href="https://www.womensbusinessdaily.com/career/2026-wellness-trends-that-actually-make-sense-for-busy-women/" target="_blank" class="card-link">查看原文 →</a>
+    </div>
+  </div>
+
+  <!-- 10 Xiaohongshu Fitness Check-in Culture -->
+  <div class="card">
+    <div class="card-top">
+      <span class="card-num">#10</span>
+      <div class="card-header">
+        <div class="card-cat cat-social">社媒热点 · 中文平台</div>
+        <div class="card-title">
+          <a href="https://newrank.cn/ranktopic/xiaohongshu/12/1" target="_blank">
+            小红书健身打卡文化：情绪化健身标签爆发，"见人不如健身"成最强共鸣话题
+          </a>
+        </div>
+        <div class="card-source">来源：新榜小红书话题榜·运动健身 · 36氪健康 2026</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <p><span class="card-label">【趋势是什么】</span> 小红书运动健身板块中，"空腹有氧""健身打卡""见人不如健身"等情绪化标签的互动量持续攀升，女性用户将健身行为与自我疗愈、情绪出口深度绑定。抖音上健身 vlog、自律励志类内容是互动量最高的品类，lululemon、耐克、Fanka 等压缩服品牌是核心穿搭种草对象。</p>
+      <p><span class="card-label">【内容机会】</span> Fanka 应在小红书布局"情绪健身"叙事——"穿上它就想去健身""今天不开心，但还是去练了"类内容与目标用户高度共鸣；联合小红书健身博主发起#Fanka30天打卡挑战#，将品牌融入女性自我成长的情绪叙事中，快速积累真实UGC内容。</p>
+    </div>
+    <div class="card-footer">
+      <a href="https://newrank.cn/ranktopic/xiaohongshu/12/1" target="_blank" class="card-link">查看原文 →</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <span>运动健康趋势 <span class="accent">· Powered by Fanka</span></span>
+  <span>2026年5月11日 · 第 0001 期</span>
+  <span class="accent">baldmuzi.github.io/ai-news-daily</span>
+</footer>
+
+</body>
+</html>
