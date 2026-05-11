@@ -49,8 +49,8 @@ def build_mention_str(mention_env):
     return ''.join(f'<@{uid.strip()}>' for uid in raw.split(',') if uid.strip())
 
 
-def post_wecom(webhook, json_path, label, mention_env):
-    if not webhook:
+def post_wecom(webhook_env_val, json_path, label, mention_env):
+    if not webhook_env_val:
         print(f"[{label}] webhook not set, skip")
         return
     if not os.path.exists(json_path):
@@ -93,16 +93,18 @@ def post_wecom(webhook, json_path, label, mention_env):
         'markdown': {'content': content}
     }).encode('utf-8')
 
-    req = urllib.request.Request(
-        webhook,
-        data=payload,
-        headers={'Content-Type': 'application/json'},
-    )
-    with urllib.request.urlopen(req, timeout=10) as resp:
-        body = json.loads(resp.read().decode('utf-8'))
-        if body.get('errcode') != 0:
-            sys.exit(f"WeCom error: {body}")
-        print(f"[{label}] notification sent ✓")
+    webhooks = [w.strip() for w in webhook_env_val.split(',') if w.strip()]
+    for webhook in webhooks:
+        req = urllib.request.Request(
+            webhook,
+            data=payload,
+            headers={'Content-Type': 'application/json'},
+        )
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            body = json.loads(resp.read().decode('utf-8'))
+            if body.get('errcode') != 0:
+                sys.exit(f"WeCom error: {body}")
+            print(f"[{label}] notification sent ✓ ({webhook[-8:]}…)")
 
 
 if should_notify('latest.json', 'editions/'):
