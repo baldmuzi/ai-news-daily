@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>运动健康趋势 · 第0002期 · Fanka</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #080c14;
+      --surface: #0f1521;
+      --surface2: #161e2e;
+      --border: #1e2d42;
+      --accent: #f43f5e;
+      --accent-dim: #be123c;
+      --accent-glow: rgba(244, 63, 94, 0.15);
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --tag-bg: #1e2d42;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Noto Serif SC', serif;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #0f1521 0%, #1a0a10 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2.5rem 1.5rem 2rem;
+    }
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .back-link {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      display: inline-block;
+      margin-bottom: 1.4rem;
+      transition: color 0.2s;
+    }
+    .back-link:hover { color: var(--accent); text-decoration: none; }
+    .brand-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 0.4rem;
+    }
+    .subtitle {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      letter-spacing: 0.06em;
+      margin-bottom: 1.4rem;
+    }
+    .meta-row {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+    .edition-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      background: var(--accent-glow);
+      border: 1px solid var(--accent-dim);
+      color: var(--accent);
+      padding: 0.2rem 0.7rem;
+      border-radius: 4px;
+      letter-spacing: 0.08em;
+    }
+    .date-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--text-dim);
+    }
+    .intro-box {
+      margin-top: 1.4rem;
+      padding: 1rem 1.2rem;
+      background: var(--surface);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 6px 6px 0;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    /* ── Tags row ── */
+    .tags-section {
+      max-width: 900px;
+      margin: 2rem auto 0;
+      padding: 0 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+    .tag-chip {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      background: var(--tag-bg);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 0.25rem 0.7rem;
+      border-radius: 20px;
+      letter-spacing: 0.04em;
+    }
+    .tag-chip.accent {
+      background: var(--accent-glow);
+      border-color: var(--accent-dim);
+      color: var(--accent);
+    }
+
+    /* ── Category filter ── */
+    .cat-filter {
+      max-width: 900px;
+      margin: 1.8rem auto 0;
+      padding: 0 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .cat-btn {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      padding: 0.22rem 0.8rem;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-dim);
+      cursor: default;
+      letter-spacing: 0.04em;
+    }
+    .cat-btn.new   { border-color: #7c3aed; color: #a78bfa; background: rgba(124,58,237,.1); }
+    .cat-btn.wear  { border-color: #0891b2; color: #67e8f9; background: rgba(8,145,178,.1); }
+    .cat-btn.life  { border-color: #059669; color: #6ee7b7; background: rgba(5,150,105,.1); }
+    .cat-btn.social{ border-color: #d97706; color: #fcd34d; background: rgba(217,119,6,.1); }
+    .cat-btn.market{ border-color: #dc2626; color: #fca5a5; background: rgba(220,38,38,.1); }
+    .cat-btn.women { border-color: var(--accent-dim); color: var(--accent); background: var(--accent-glow); }
+
+    /* ── Grid ── */
+    main {
+      max-width: 900px;
+      margin: 2.5rem auto 4rem;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 1.4rem;
+    }
+    @media (max-width: 600px) { main { grid-template-columns: 1fr; } }
+
+    /* ── Card ── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.4rem 1.4rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      transition: border-color 0.25s, box-shadow 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--accent);
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+    .card:hover { border-color: var(--accent-dim); box-shadow: 0 0 24px var(--accent-glow); }
+    .card:hover::before { opacity: 1; }
+
+    .card-rank {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--text-dim);
+      letter-spacing: 0.1em;
+    }
+    .card-cats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .card-cat {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.62rem;
+      padding: 0.15rem 0.55rem;
+      border-radius: 3px;
+      letter-spacing: 0.04em;
+    }
+    .cat-new   { background: rgba(124,58,237,.15); color: #a78bfa; }
+    .cat-wear  { background: rgba(8,145,178,.15);  color: #67e8f9; }
+    .cat-life  { background: rgba(5,150,105,.15);  color: #6ee7b7; }
+    .cat-social{ background: rgba(217,119,6,.15);  color: #fcd34d; }
+    .cat-market{ background: rgba(220,38,38,.15);  color: #fca5a5; }
+    .cat-women { background: var(--accent-glow);   color: var(--accent); }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.45;
+    }
+    .card-title a { color: #fff; }
+    .card-title a:hover { color: var(--accent); text-decoration: none; }
+
+    .card-body { font-size: 0.9rem; color: var(--text-muted); line-height: 1.8; }
+    .label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+    .trend-block { margin-bottom: 0.7rem; }
+    .trend-block:last-child { margin-bottom: 0; }
+
+    .card-footer {
+      margin-top: auto;
+      padding-top: 0.7rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: flex-end;
+    }
+    .read-btn {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--accent);
+      border: 1px solid var(--accent-dim);
+      padding: 0.22rem 0.8rem;
+      border-radius: 4px;
+      transition: background 0.2s;
+      letter-spacing: 0.05em;
+    }
+    .read-btn:hover { background: var(--accent-glow); text-decoration: none; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 1px solid var(--border);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--text-dim);
+      letter-spacing: 0.06em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="back-link" href="../fitness/">← 返回存档</a>
+    <div class="brand-badge">Fanka · Global Fitness Intelligence</div>
+    <h1>运动健康趋势</h1>
+    <div class="subtitle">Global Fitness &amp; Wellness · Powered by Fanka</div>
+    <div class="meta-row">
+      <span class="edition-badge">EDITION #0002</span>
+      <span class="date-badge">2026年5月11日</span>
+    </div>
+    <div class="intro-box">
+      2026年全球健身版图加速重塑：日式间隔步行搜索量暴增近3000%，普拉提王朝延续第三年，"零食式"微运动打破传统60分钟门槛。女性主导的周期同步训练与户外徒步穿搭在社媒掀起浪潮，"软雕塑"压缩技术重新定义功能性美学——每一个趋势都是Fanka内容的绝佳切入点。
+    </div>
+  </div>
+</header>
+
+<div class="tags-section">
+  <span class="tag-chip accent"># 日式间隔步行</span>
+  <span class="tag-chip accent"># 普拉提热潮</span>
+  <span class="tag-chip accent"># 零食式运动</span>
+  <span class="tag-chip accent"># 软雕塑压缩裤</span>
+  <span class="tag-chip accent"># 户外徒步穿搭</span>
+</div>
+
+<div class="cat-filter">
+  <span class="cat-btn new">新兴运动</span>
+  <span class="cat-btn wear">穿搭趋势</span>
+  <span class="cat-btn life">健康生活</span>
+  <span class="cat-btn social">社媒热点</span>
+  <span class="cat-btn market">市场洞察</span>
+  <span class="cat-btn women">女性运动</span>
+</div>
+
+<main>
+
+  <!-- 1 -->
+  <article class="card">
+    <div class="card-rank">TREND 01 / 10</div>
+    <div class="card-cats">
+      <span class="card-cat cat-new">新兴运动</span>
+      <span class="card-cat cat-social">社媒热点</span>
+    </div>
+    <h2 class="card-title">
+      <a href="https://dailyburn.com/life/fitness/japanese-walking-the-viral-2026-fitness-trend-that-burns-more-fat-in-less-time/" target="_blank">
+        日式间隔步行：2026年增速最快的运动，搜索量暴增2986%
+      </a>
+    </h2>
+    <div class="card-body">
+      <div class="trend-block">
+        <span class="label">【趋势是什么】</span>
+        由日本信州大学研究发现的间隔步行法——交替3分钟慢走＋3分钟快走，重复5-10组约30分钟。PureGym年度报告显示，该词搜索量同比暴增2986%，成为2026年增速第一健身趋势，无需器械、随处可练是其爆红核心。
+      </div>
+      <div class="trend-block">
+        <span class="label">【内容机会】</span>
+        以"下班后穿Fanka压缩裤出门走30分钟"为主题，拍摄城市街头的日式步行打卡vlog，配合心率数据展示压缩裤对腿部循环的辅助效果，投放小红书/Reels，搭配"运动穿搭"标签引流。
+      </div>
+    </div>
+    <div class="card-footer">
+      <a class="read-btn" href="https://dailyburn.com/life/fitness/japanese-walking-the-viral-2026-fitness-trend-that-burns-more-fat-in-less-time/" target="_blank">查看原文 →</a>
+    </div>
+  </article>
+
+  <!-- 2 -->
+  <article class="card">
+    <div class="card-rank">TREND 02 / 10</div>
+    <div class="card-cats">
+      <span class="card-cat cat-new">新兴运动</span>
+      <span class="card-cat cat-women">女性运动</span>
+    </div>
+    <h2 class="card-title">
+      <a href="https://pilatesjournal.com/articles/2026-pilates-predictions-industry-leaders" target="_blank">
+        普拉提王朝：全球连续三年预约量第一，增长66%
+      </a>
+    </h2>
+    <div class="card-body">
+      <div class="trend-block">
+        <span class="label">【趋势是什么】</span>
+        普拉提连续三年成为全球最多预约健身运动，预约量较2024年增长66%，在20-35岁女性中是增速最快的健身品类。"普拉提公主"美学（Pilates Princess）带动了无缝裸感套装的流行，塑形裤＋运动内衣成为标准配置。
+      </div>
+      <div class="trend-block">
+        <span class="label">【内容机会】</span>
+        围绕"普拉提公主"美学，拍摄Fanka高腰塑形裤的reformer课穿搭合集；发起#PilatesPrincess话题，邀请KOL展示从课前到咖啡馆的全天穿搭，精准触达普拉提用户群。
+      </div>
+    </div>
+    <div class="card-footer">
+      <a class="read-btn" href="https://pilatesjournal.com/articles/2026-pilates-predictions-industry-leaders" target="_blank">查看原文 →</a>
+    </div>
+  </article>
+
+  <!-- 3 -->
+  <article class="card">
+    <div class="card-rank">TREND 03 / 10</div>
+    <div class="card-cats">
+      <span class="card-cat cat-life">健康生活</span>
+      <span class="card-cat cat-social">社媒热点</span>
+    </div>
+    <h2 class="card-title">
+      <a href="https://vitalearthminerals.com/blogs/news/why-snack-sized-workouts-are-becoming-2026-s-most-unexpected-wellness-power-move" target="_blank">
+        "零食式运动"：5-15分钟微型训练打破60分钟神话
+      </a>
+    </h2>
+    <div class="card-body">
+      <div class="trend-block">
+        <span class="label">【趋势是什么】</span>
+        "Snack-Sized Workout"是2026年最热健康理念之一：3次10分钟运动的效果等同于60分钟连续训练。Who What Wear、Gold's Gym等主流媒体和健身品牌将其列为打破"全有或全无"运动心态的年度转折点。
+      </div>
+      <div class="trend-block">
+        <span class="label">【内容机会】</span>
+        制作"上班族7分钟零食运动"系列短视频，展示穿Fanka压缩裤在工位旁/楼梯间完成的高效微训练；以"不完美但持续"为品牌态度，与Fanka"让运动变得更简单"理念高度契合。
+      </div>
+    </div>
+    <div class="card-footer">
+      <a class="read-btn" href="https://vitalearthminerals.com/blogs/news/why-snack-sized-workouts-are-becoming-2026-s-most-unexpected-wellness-power-move" target="_blank">查看原文 →</a>
+    </div>
+  </article>
+
+  <!-- 4 -->
+  <article class="card">
+    <div class="card-rank">TREND 04 / 10</div>
+    <div class="card-cats">
+      <span class="card-cat cat-women">女性运动</span>
+      <span class="card-cat cat-life">健康生活</span>
+    </div>
+    <h2 class="card-title">
+      <a href="https://www.vitalityviews.com/cycle-syncing-2026-how-to-match-workouts-and/" target="_blank">
+        周期同步训练（Cycle Syncing）：TikTok 2.94亿次浏览的女性健身革命
+      </a>
+    </h2>
+    <div class="card-body">
+      <div class="trend-block">
+        <span class="label">【趋势是什么】</span>
+        根据月经周期四个阶段调整运动强度与类型——卵泡期冲高强度、黄体期转低强度。TikTok累计浏览量达2.94亿次，被WhoWhatWear列为2026年"令人耳目一新的健康趋势"，折射出女性运动科学从数据到情感的双重需求。
+      </div>
+      <div class="trend-block">
+        <span class="label">【内容机会】</span>
+        以"跟随身体节奏的四周穿搭计划"为框架，推出Fanka不同系列对应不同训练强度的搭配指南，既提升产品认知又强化品牌对女性身体的深度关怀形象。
+      </div>
+    </div>
+    <div class="card-footer">
+      <a class="read-btn" href="https://www.vitalityviews.com/cycle-syncing-2026-how-to-match-workouts-and/" target="_blank">查看原文 →</a>
+    </div>
+  </article>
+
+  <!-- 5 -->
+  <article class="card">
+    <div class="card-rank">TREND 05 / 10</div>
+    <div class="card-cats">
+      <span class="card-cat cat-wear">穿搭趋势</span>
+      <span class="card-cat cat-market">市场洞察</span>
+    </div>
+    <h2 class="card-title">
+      <a href="https://www.leggingmanufacturers.com/mild-compression-leggings-future-of-activewear-2026/" target="_blank">
+        "软雕塑"压缩裤：温和分区压缩取代超高压，成2026主流
+      </a>
+    </h2>
+    <div class="card-body">
+      <div class="trend-block">
+        <span class="label">【趋势是什么】</span>
+        超高强度压缩时代正在退潮，"Soft Sculpt"成为新关键词——以分区压缩（核心支撑＋腿部弹性）替代全身均匀强压，强调穿一整天不疲劳。2025年高端运动服消费同比增22%，消费者正在主动抛弃快时尚并为高品质塑形功能付费。
+      </div>
+      <div class="trend-block">
+        <span class="label">【内容机会】</span>
+        这正是Fanka核心产品力的最佳诠释时机——拍摄"穿着Fanka塑形裤从6am瑜伽到9pm晚餐"的真实场景测评，强调分区压缩科技，打差异化的"软雕塑"概念。
+      </div>
+    </div>
+    <div class="card-footer">
+      <a class="read-btn" href="https://www.leggingmanufacturers.com/mild-compression-leggings-future-of-activewear-2026/" target="_blank">查看原文 →</a>
+    </div>
+  </article>
+
+  <!-- 6 -->
+  <article class="card">
+    <div class="card-rank">TREND 06 / 10</div>
+    <div class="card-cats">
+      <span class="card-cat cat-women">女性运动</span>
+      <span class="card-cat cat-life">健康生活</span>
+    </div>
+    <h2 class="card-title">
+      <a href="https://www.scmp.com/lifestyle/health-wellness/article/3343389/8-hot-wellness-trends-2026-womens-longevity-and-sports-health-raves" target="_blank">
+        女性寿命优化运动：从减重到长寿，市场规模预计达23.5亿美元
+      </a>
+    </h2>
+    <div class="card-body">
+      <div class="trend-block">
+        <span class="label">【趋势是什么】</span>
+        全球健康峰会指出：寿命优化市场正在从男性主导转向女性——关注卵巢健康、骨密度、激素周期等议题，运动目标从"好看的身材"升级为"高质量的晚年"，女性运动收入预计2025年达23.5亿美元。
+      </div>
+      <div class="trend-block">
+        <span class="label">【内容机会】</span>
+        打造"Fanka × 女性长寿运动"内容专题：访谈35+女性用户，聚焦运动如何改善骨骼、体态与精力；运动内衣选品可强调支撑性与长期穿用适配，契合成熟女性用户心智。
+      </div>
+    </div>
+    <div class="card-footer">
+      <a class="read-btn" href="https://www.scmp.com/lifestyle/health-wellness/article/3343389/8-hot-wellness-trends-2026-womens-longevity-and-sports-health-raves" target="_blank">查看原文 →</a>
+    </div>
+  </article>
+
+  <!-- 7 -->
+  <article class="card">
+    <div class="card-rank">TREND 07 / 10</div>
+    <div class="card-cats">
+      <span class="card-cat cat-women">女性运动</span>
+      <span class="card-cat cat-social">社媒热点</span>
+    </div>
+    <h2 class="card-title">
+      <a href="https://www.purewow.com/wellness/fitness-trends-2026" target="_blank">
+        社群运动文化爆发：跑团、团课、户外活动取代孤独健身
+      </a>
+    </h2>
+    <div class="card-body">
+      <div class="trend-block">
+        <span class="label">【趋势是什么】</span>
+        "运动＝独自撸铁"的时代正在终结——女性跑团、团课社群、户外徒步小组在全球快速扩张，成为线下社交新场景。PureWow等媒体将"社群健身"列为2026年六大趋势之一，女性在其中既是参与者也是组织者。
+      </div>
+      <div class="trend-block">
+        <span class="label">【内容机会】</span>
+        赞助或联名城市女性跑团，拍摄跑团成员穿Fanka运动套装出发的集体vlog；在小红书发起"我的运动搭子"话题挑战，强化Fanka社群陪伴感与品牌温度。
+      </div>
+    </div>
+    <div class="card-footer">
+      <a class="read-btn" href="https://www.purewow.com/wellness/fitness-trends-2026" target="_blank">查看原文 →</a>
+    </div>
+  </article>
+
+  <!-- 8 -->
+  <article class="card">
+    <div class="card-rank">TREND 08 / 10</div>
+    <div class="card-cats">
+      <span class="card-cat cat-social">社媒热点</span>
+      <span class="card-cat cat-wear">穿搭趋势</span>
+    </div>
+    <h2 class="card-title">
+      <a href="https://www.news.cn/fashion/20260224/375a5d7154034524be5c31f7c1035b1a/c.html" target="_blank">
+        【中文平台】小红书户外徒步热：搜索量破36亿，越野跑笔记增长890%
+      </a>
+    </h2>
+    <div class="card-body">
+      <div class="trend-block">
+        <span class="label">【趋势是什么】</span>
+        小红书/抖音平台上，"户外徒步穿搭"相关搜索量超36亿次、笔记超1亿篇，越野跑笔记点击量同比增长890%。户外机能风（GORPCORE）、山系穿搭从亚文化进入主流，带动冲锋衣、压缩裤、徒步鞋等品类集体爆发。
+      </div>
+      <div class="trend-block">
+        <span class="label">【内容机会】</span>
+        Fanka可切入"城市户外"赛道——以压缩裤的轻量支撑性为卖点，制作"周末入门徒步穿搭"系列笔记，覆盖户外初阶女性群体，关键词布局"徒步穿搭""户外女生"，赶在夏季户外季前形成内容储备。
+      </div>
+    </div>
+    <div class="card-footer">
+      <a class="read-btn" href="https://www.news.cn/fashion/20260224/375a5d7154034524be5c31f7c1035b1a/c.html" target="_blank">查看原文 →</a>
+    </div>
+  </article>
+
+  <!-- 9 -->
+  <article class="card">
+    <div class="card-rank">TREND 09 / 10</div>
+    <div class="card-cats">
+      <span class="card-cat cat-life">健康生活</span>
+    </div>
+    <h2 class="card-title">
+      <a href="https://www.globalwellnesssummit.com/2026trends/" target="_blank">
+        反过度优化运动（Anti-Optimization）：2026全球健康峰会年度定义趋势
+      </a>
+    </h2>
+    <div class="card-body">
+      <div class="trend-block">
+        <span class="label">【趋势是什么】</span>
+        全球健康峰会将"反过度优化"列为2026年度框架趋势：健康文化反讽式地成为压力来源，消费者开始抵制量化指标焦虑，追求纯粹的运动愉悦与身体聆听。这场反叛催生了"感觉运动"（Feel-Good Fitness）新细分。
+      </div>
+      <div class="trend-block">
+        <span class="label">【内容机会】</span>
+        Fanka可借势"让运动回归愉悦"的品牌主张，拍摄"不计卡路里、不看数据，就是喜欢动"的真实用户故事；软性种草对应Fanka柔软亲肤面料，强调"穿上就想动"的感官体验。
+      </div>
+    </div>
+    <div class="card-footer">
+      <a class="read-btn" href="https://www.globalwellnesssummit.com/2026trends/" target="_blank">查看原文 →</a>
+    </div>
+  </article>
+
+  <!-- 10 -->
+  <article class="card">
+    <div class="card-rank">TREND 10 / 10</div>
+    <div class="card-cats">
+      <span class="card-cat cat-wear">穿搭趋势</span>
+      <span class="card-cat cat-market">市场洞察</span>
+    </div>
+    <h2 class="card-title">
+      <a href="https://www.whowhatwear.com/fashion/trends/activewear-trends-2026" target="_blank">
+        Sportif Chic 2.0：大胆红绿配色＋喇叭裤腿，运动服成基础衣橱
+      </a>
+    </h2>
+    <div class="card-body">
+      <div class="trend-block">
+        <span class="label">【趋势是什么】</span>
+        2026年运动美学迎来"色彩爆炸"：樱桃红、番茄红压缩裤＋鼠尾草绿运动内衣成为SS26主流配色；喇叭裤腿（Flare Leggings）持续流行，将运动裤升格为可与西装外套搭配的日常通勤单品，Athleisure不再是"趋势"而是"基础衣橱"。
+      </div>
+      <div class="trend-block">
+        <span class="label">【内容机会】</span>
+        以"同色系运动套装穿搭"为视觉锚点，拍摄Fanka红色或绿色系产品的通勤＋健身两穿内容；在Instagram/TikTok发起色彩挑战#FankaColorMatch，提升产品在穿搭类内容中的曝光度。
+      </div>
+    </div>
+    <div class="card-footer">
+      <a class="read-btn" href="https://www.whowhatwear.com/fashion/trends/activewear-trends-2026" target="_blank">查看原文 →</a>
+    </div>
+  </article>
+
+</main>
+
+<footer>
+  &copy; 2026 Fanka · Global Fitness &amp; Wellness Intelligence · Edition #0002
+</footer>
+
+</body>
+</html>
