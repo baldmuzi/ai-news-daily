@@ -23,7 +23,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
 
       - name: Send WeCom notifications
         env:
@@ -37,8 +37,13 @@ jobs:
           WECOM_MENTION_MSG_BUSINESS: ${{ secrets.WECOM_MENTION_MSG_BUSINESS }}
           WECOM_MENTION_MSG_FITNESS:  ${{ secrets.WECOM_MENTION_MSG_FITNESS }}
           CHANGED_FILES_PATH:         /tmp/changed.txt
+          GIT_BEFORE:                 ${{ github.event.before }}
+          GIT_AFTER:                  ${{ github.sha }}
         run: |
-          git diff --name-only HEAD~1 HEAD 2>/dev/null > /tmp/changed.txt || true
-          echo "=== Changed files ==="
+          # Use the exact commit range from this push event (not HEAD~1 which races with concurrent pushes)
+          git diff --name-only "${GIT_BEFORE}" "${GIT_AFTER}" 2>/dev/null > /tmp/changed.txt \
+            || git diff --name-only HEAD~1 HEAD 2>/dev/null > /tmp/changed.txt \
+            || true
+          echo "=== Changed files (${GIT_BEFORE:0:7}..${GIT_AFTER:0:7}) ==="
           cat /tmp/changed.txt
           python3 .github/scripts/notify.py
