@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>出海 AI 洞察 — 第 0009 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #080c14;
+      --surface: #0f1623;
+      --surface2: #162030;
+      --border: #1e2d42;
+      --accent: #10b981;
+      --accent-dim: #059669;
+      --accent-glow: rgba(16, 185, 129, 0.15);
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --tag-bg: rgba(16, 185, 129, 0.12);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Noto Serif SC', serif;
+      line-height: 1.8;
+      min-height: 100vh;
+      padding: 0 0 4rem;
+    }
+
+    header {
+      background: linear-gradient(180deg, #0a1220 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 3rem 1.5rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .back-link {
+      position: absolute;
+      top: 1.2rem;
+      left: 1.5rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--accent);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 4px;
+      padding: 0.25em 0.7em;
+      transition: background 0.15s;
+    }
+    .back-link:hover { background: var(--tag-bg); }
+
+    .header-badge {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      background: var(--tag-bg);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 4px;
+      padding: 0.2em 0.7em;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: #f1f5f9;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.4rem;
+    }
+
+    h1 span { color: var(--accent); }
+
+    .subtitle {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      letter-spacing: 0.15em;
+      font-family: 'JetBrains Mono', monospace;
+      margin-bottom: 1.5rem;
+    }
+
+    .meta-row {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--text-dim);
+    }
+
+    .intro-section {
+      max-width: 760px;
+      margin: 2.5rem auto 0;
+      padding: 0 1.5rem;
+    }
+
+    .intro-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 1.4rem 1.6rem;
+    }
+
+    .intro-card p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.9;
+    }
+
+    .tags-row {
+      max-width: 760px;
+      margin: 1.2rem auto 0;
+      padding: 0 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--accent);
+      background: var(--tag-bg);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: 4px;
+      padding: 0.2em 0.7em;
+      letter-spacing: 0.05em;
+    }
+
+    .section-label {
+      max-width: 760px;
+      margin: 3rem auto 1rem;
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .section-label h2 {
+      font-size: 0.75rem;
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .cards-grid {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.4rem 1.6rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      border-color: rgba(16, 185, 129, 0.4);
+      box-shadow: 0 0 24px var(--accent-glow);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      margin-bottom: 0.9rem;
+      flex-wrap: wrap;
+    }
+
+    .card-number {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--accent);
+      background: var(--tag-bg);
+      border-radius: 3px;
+      padding: 0.15em 0.5em;
+      margin-top: 0.2em;
+      flex-shrink: 0;
+    }
+
+    .card-category {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--text-dim);
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 0.15em 0.5em;
+      margin-top: 0.2em;
+      flex-shrink: 0;
+    }
+
+    .card-title {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .card-title a {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #f1f5f9;
+      text-decoration: none;
+      line-height: 1.5;
+    }
+
+    .card-title a:hover { color: var(--accent); }
+
+    .card-comment {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.85;
+      margin-bottom: 1rem;
+    }
+
+    .card-comment strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .read-more {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      border-radius: 4px;
+      padding: 0.3em 0.8em;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .read-more:hover {
+      background: var(--accent);
+      color: #000;
+    }
+
+    footer {
+      max-width: 760px;
+      margin: 4rem auto 0;
+      padding: 2rem 1.5rem 0;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    footer span {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--text-dim);
+    }
+
+    footer .accent { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="../business/" class="back-link">← 返回存档</a>
+    <div class="header-badge">EDITION · 0009 &nbsp;·&nbsp; BUSINESS</div>
+    <h1>出海 AI <span>洞察</span></h1>
+    <p class="subtitle">跨境电商 · 可持续发展 · AI 应用实战</p>
+    <div class="meta-row">
+      <span>2026年5月14日</span>
+      <span>环保鞋类出海</span>
+      <span>TOP 10 精选</span>
+    </div>
+  </header>
+
+  <div class="intro-section">
+    <div class="intro-card">
+      <p>AI代理购物2026年激战正酣，Shopify与Google竞相发布代理商务协议；出海鞋类环保品牌须同步把握AI流量红利与绿色供应链机遇，方能在代理商务新格局中率先卡位。</p>
+    </div>
+  </div>
+
+  <div class="tags-row">
+    <span class="tag"># AI代理购物战争</span>
+    <span class="tag"># 跨境流量AI化</span>
+    <span class="tag"># 绿色供应链智能</span>
+    <span class="tag"># 营销自动化升级</span>
+    <span class="tag"># 数据分析AI提速</span>
+  </div>
+
+  <!-- 电商增长 -->
+  <div class="section-label"><h2>电商增长</h2></div>
+  <div class="cards-grid">
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">01</span>
+        <span class="card-category">电商增长</span>
+        <div class="card-title">
+          <a href="https://www.modernretail.co/technology/why-the-ai-shopping-agent-wars-will-heat-up-in-2026/" target="_blank">AI购物代理战争2026全面升温：科技巨头争相入局，代理商务基础设施竞争白热化</a>
+        </div>
+      </div>
+      <p class="card-comment"><strong>【是什么】</strong>Modern Retail深度分析指出，2026年AI购物代理市场将迎来爆发式竞争，亚马逊、Google、Meta、Perplexity等巨头竞相推出代理购物工具，AI代理正从对话入口演变为完整的"发现—比价—下单"商务闭环，重塑零售流量分配逻辑。<br><strong>【对我们意味着什么】</strong>出海鞋类PM需立即启动产品数据结构化改造，将尺码图表、材质认证、环保标签以AI可读格式（结构化JSON-LD）嵌入页面，确保产品在代理发现阶段获得优先权重，提前布局这轮流量迁移。</p>
+      <div class="card-footer">
+        <a href="https://www.modernretail.co/technology/why-the-ai-shopping-agent-wars-will-heat-up-in-2026/" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">02</span>
+        <span class="card-category">电商增长</span>
+        <div class="card-title">
+          <a href="https://techcrunch.com/2026/03/16/shopify-is-preparing-for-ai-shopping-agents-to-change-everything-exec-says/" target="_blank">Shopify高管：公司正全面重构底层架构，迎接AI购物代理彻底改变零售业的新时代</a>
+        </div>
+      </div>
+      <p class="card-comment"><strong>【是什么】</strong>Shopify高管公开表示，公司正在底层架构层面进行全面适配，包括使产品数据更易被AI代理解析、支持代理直接触发结账流程，Shopify将AI购物代理视为继移动电商之后最大的零售基础设施变革，并将其列为2026年最高战略优先级。<br><strong>【对我们意味着什么】</strong>使用Shopify建站的出海鞋类卖家应优先升级至最新版本并开启AI代理购物兼容模式，同步配置产品Feed的结构化数据，在竞争对手尚未行动的窗口期内建立先发优势。</p>
+      <div class="card-footer">
+        <a href="https://techcrunch.com/2026/03/16/shopify-is-preparing-for-ai-shopping-agents-to-change-everything-exec-says/" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">03</span>
+        <span class="card-category">电商增长</span>
+        <div class="card-title">
+          <a href="https://techcrunch.com/2026/01/11/google-announces-a-new-protocol-to-facilitate-commerce-using-ai-agents/" target="_blank">Google发布AI代理商务协议：为AI自主完成购物全流程构建标准化通信基础设施</a>
+        </div>
+      </div>
+      <p class="card-comment"><strong>【是什么】</strong>Google于2026年1月发布全新协议，允许AI代理以安全、标准化的方式代替用户执行电商搜索、商品比较和购买操作，为跨平台AI购物代理构建了统一的底层通信标准，预计将成为代理商务生态的基础设施规范。<br><strong>【对我们意味着什么】</strong>Google协议普及后消费者将不再直接访问独立站，而由AI代理代为比较，出海鞋类品牌必须将GEO（生成式引擎优化）提升至与SEO同等战略地位，重点优化在Google AI答案中的环保卖点曝光度。</p>
+      <div class="card-footer">
+        <a href="https://techcrunch.com/2026/01/11/google-announces-a-new-protocol-to-facilitate-commerce-using-ai-agents/" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 消费洞察 -->
+  <div class="section-label"><h2>消费洞察</h2></div>
+  <div class="cards-grid">
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">04</span>
+        <span class="card-category">消费洞察</span>
+        <div class="card-title">
+          <a href="https://techcrunch.com/2026/04/16/ai-traffic-to-us-retailers-rose-393-in-q1-and-its-boosting-their-revenue-too/" target="_blank">TechCrunch：2026年Q1美国零售AI流量同比暴涨393%，AI引流转化率超传统流量42%</a>
+        </div>
+      </div>
+      <p class="card-comment"><strong>【是什么】</strong>TechCrunch最新数据显示，2026年第一季度AI为美国零售商带来的流量同比激增393%，且AI引流转化率在3月创历史新高——较普通人工浏览流量高出42%，说明通过AI渠道到达的消费者购买意愿更为明确，正在成为最高价值流量来源。<br><strong>【对我们意味着什么】</strong>出海鞋类数据分析师应立即在GA4或三方归因工具中部署AI流量标签追踪，量化AI代理为独立站带来的真实GMV贡献，并以此数据驱动AI渠道预算分配决策，避免错失增长最快的流量红利窗口。</p>
+      <div class="card-footer">
+        <a href="https://techcrunch.com/2026/04/16/ai-traffic-to-us-retailers-rose-393-in-q1-and-its-boosting-their-revenue-too/" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">05</span>
+        <span class="card-category">消费洞察</span>
+        <div class="card-title">
+          <a href="https://www.modernretail.co/technology/in-2026-ai-talk-at-retail-events-shifts-to-proving-real-results-building-strategy/" target="_blank">2026年零售业AI讨论全面转向：从"展示工具"升级为"证明ROI"，AI战略成核心竞争力</a>
+        </div>
+      </div>
+      <p class="card-comment"><strong>【是什么】</strong>Modern Retail深度报道显示，2026年零售业AI话语体系已从展示新工具转向系统性证明AI商业回报，品牌和零售商不再满足于单点工具尝试，而是开始用AI重构选品、定价、客服等完整业务流程，AI战略成熟度成为行业分水岭。<br><strong>【对我们意味着什么】</strong>出海鞋类品牌的AI战略成熟度将直接影响与海外平台、买手和投资方的合作信任度，PM需主动建立可量化的AI ROI追踪体系（节省运营成本×提升转化率×缩短决策周期），为内部AI投入提供持续支撑。</p>
+      <div class="card-footer">
+        <a href="https://www.modernretail.co/technology/in-2026-ai-talk-at-retail-events-shifts-to-proving-real-results-building-strategy/" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 营销工具 -->
+  <div class="section-label"><h2>营销工具</h2></div>
+  <div class="cards-grid">
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">06</span>
+        <span class="card-category">营销工具</span>
+        <div class="card-title">
+          <a href="https://techcrunch.com/2026/04/08/canva-doubles-down-on-ai-and-marketing-automation-with-simtheory-ortto-acquisitions/" target="_blank">Canva双收购押注AI营销自动化：整合Simtheory代理AI与Ortto客户数据平台，打造中小品牌全栈营销闭环</a>
+        </div>
+      </div>
+      <p class="card-comment"><strong>【是什么】</strong>Canva宣布收购AI协作平台Simtheory和营销自动化SaaS Ortto，将代理AI工作流、客户数据分析和自动化邮件营销整合进统一平台，使中小品牌以极低门槛实现从内容生成到用户旅程自动化的全栈AI营销能力。<br><strong>【对我们意味着什么】</strong>出海鞋类营销团队可借助Canva+Ortto组合快速落地AI营销工作流，从买家评论的情感分析、个性化邮件自动触发到AIGC图文素材批量生产，无需专业数据团队即可实现竞品大卖家级别的精准营销能力。</p>
+      <div class="card-footer">
+        <a href="https://techcrunch.com/2026/04/08/canva-doubles-down-on-ai-and-marketing-automation-with-simtheory-ortto-acquisitions/" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 数据分析 -->
+  <div class="section-label"><h2>数据分析</h2></div>
+  <div class="cards-grid">
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">07</span>
+        <span class="card-category">数据分析</span>
+        <div class="card-title">
+          <a href="https://a16z.com/ai-market-research/" target="_blank">a16z：AI正颠覆市场调研行业——更快、更智能、更便宜，数小时替代传统数周研究周期</a>
+        </div>
+      </div>
+      <p class="card-comment"><strong>【是什么】</strong>a16z发布深度研究报告指出，AI工具正在从根本上重构市场调研行业：定性访谈、受众细分、竞品分析等传统上需要数周完成的工作，AI可在数小时内以更低成本完成，并支持实时更新和动态追踪，市场调研的边际成本正趋近于零。<br><strong>【对我们意味着什么】</strong>出海鞋类数据分析师可立即将AI工具引入竞品监测、海外消费者评论情感分析和趋势洞察工作流，将市场研究周期从周级压缩至日级，在快速变化的DTC市场中以更快的数据迭代速度支撑产品和营销决策。</p>
+      <div class="card-footer">
+        <a href="https://a16z.com/ai-market-research/" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">08</span>
+        <span class="card-category">数据分析</span>
+        <div class="card-title">
+          <a href="https://venturebeat.com/ai/report-84-of-marketing-leaders-use-predictive-analytics-but-struggle-with-data-driven-decisions/" target="_blank">VentureBeat报告：84%营销领导者已部署预测分析，但数据驱动决策落地仍是最大瓶颈</a>
+        </div>
+      </div>
+      <p class="card-comment"><strong>【是什么】</strong>VentureBeat最新报告显示，84%的营销领导者已在企业中部署预测分析工具，其中48%首要用于KPI测量与归因分析，但将AI数据洞察转化为实际业务决策的"最后一公里"仍是多数团队的核心痛点，数据与决策之间存在显著落差。<br><strong>【对我们意味着什么】</strong>出海鞋类数据分析师的核心价值不仅在于产出数据报告，更在于建立数据→洞察→决策的标准转化流程；建议优先搭建广告ROI预测模型和库存需求预测两个AI分析场景，直接对接PM和运营的决策需求。</p>
+      <div class="card-footer">
+        <a href="https://venturebeat.com/ai/report-84-of-marketing-leaders-use-predictive-analytics-but-struggle-with-data-driven-decisions/" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 供应链 -->
+  <div class="section-label"><h2>供应链</h2></div>
+  <div class="cards-grid">
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">09</span>
+        <span class="card-category">供应链</span>
+        <div class="card-title">
+          <a href="https://www.cifnews.com/article/182776" target="_blank">【雨果网】AI智驱+供应链升级！2026亚马逊推Agentic AI运营工具与营销云数据开放，双轮驱动跨境卖家提效</a>
+        </div>
+      </div>
+      <p class="card-comment"><strong>【是什么】</strong>雨果网报道亚马逊2026年将在AI与供应链两个方向同步发力：推出Agentic AI运营自动化工具实现从补货到广告投放的智能闭环，同时开放亚马逊营销云（AMC）更多数据分析接口，并上线创意智能体支持广告素材自动生成与测试迭代。<br><strong>【对我们意味着什么】</strong>主营亚马逊渠道的出海鞋类卖家应将AMC归因模型升级列为2026年Q2优先行动，率先掌握多触点归因数据的卖家将在广告竞价效率和预算分配上形成显著领先优势，同时可将AI补货预测与供应链库存协同，降低滞销和断货双重风险。</p>
+      <div class="card-footer">
+        <a href="https://www.cifnews.com/article/182776" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 可持续合规 -->
+  <div class="section-label"><h2>可持续合规</h2></div>
+  <div class="cards-grid">
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">10</span>
+        <span class="card-category">可持续合规</span>
+        <div class="card-title">
+          <a href="https://venturebeat.com/business/the-ai-driven-capabilities-transforming-the-supply-chain" target="_blank">VentureBeat：AI驱动的供应链六大核心能力重构——智能路由降碳、实时ESG追踪助力可持续运营升级</a>
+        </div>
+      </div>
+      <p class="card-comment"><strong>【是什么】</strong>VentureBeat深度分析AI正在从智能路由优化、需求预测、实时可见性到ESG合规追踪六个维度重构供应链能力：AI路由算法通过减少不必要运输里程直接降低碳排放，实时可见性系统支持全链路ESG数据采集与自动化合规审计。<br><strong>【对我们意味着什么】</strong>环保鞋类出海品牌可将AI智能物流产生的碳减排数据（里程优化量×碳排系数）量化为ESG报告核心指标，既满足欧盟CBAM碳边境合规要求，又将绿色供应链转化为对欧美环保消费者的差异化品牌溢价，实现合规与增长的双重收益。</p>
+      <div class="card-footer">
+        <a href="https://venturebeat.com/business/the-ai-driven-capabilities-transforming-the-supply-chain" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 跨境电商（中文媒体） -->
+  <div class="section-label"><h2>跨境电商</h2></div>
+  <div class="cards-grid">
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-number">特别收录</span>
+        <span class="card-category">跨境电商</span>
+        <div class="card-title">
+          <a href="https://36kr.com/p/2746141719051270" target="_blank">【36氪】CEO锦囊：AI爆发下跨境电商有哪些新玩法？三层框架拆解降本增效、驱动增长与组织变革</a>
+        </div>
+      </div>
+      <p class="card-comment"><strong>【是什么】</strong>36氪CEO锦囊栏目深度拆解AI爆发背景下跨境电商的系统性新打法：第一层降本增效（内容生成、智能客服、SEO优化），第二层驱动增长（增单、增利、增品），第三层组织变革（AI重构团队分工与决策流程），并展示头部卖家利用AI Agent自建工作流的实操案例。<br><strong>【对我们意味着什么】</strong>这是目前最具中国跨境卖家实战视角的AI应用路线图，出海鞋类PM可直接对照三层框架自评AI成熟度：多数团队处于第一层，真正竞争壁垒在第二层增长驱动，应尽快规划从效率工具到增长引擎的跨越路径。</p>
+      <div class="card-footer">
+        <a href="https://36kr.com/p/2746141719051270" target="_blank" class="read-more">阅读原文 →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <span>出海 AI 洞察 <span class="accent">· 第 0009 期</span></span>
+    <span>2026年5月14日 · 环保鞋类出海</span>
+    <span class="accent">baldmuzi.github.io/ai-news-daily</span>
+  </footer>
+
+</body>
+</html>
