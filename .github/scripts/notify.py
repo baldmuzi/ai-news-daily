@@ -100,11 +100,22 @@ def post_wecom(webhook_env_val, json_path, label, mention_env):
             data=payload,
             headers={'Content-Type': 'application/json'},
         )
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            body = json.loads(resp.read().decode('utf-8'))
-            if body.get('errcode') != 0:
-                sys.exit(f"WeCom error: {body}")
-            print(f"[{label}] notification sent ✓ ({webhook[-8:]}…)")
+        last_err = None
+        for attempt in range(1, 4):  # up to 3 attempts
+            try:
+                with urllib.request.urlopen(req, timeout=30) as resp:
+                    body = json.loads(resp.read().decode('utf-8'))
+                    if body.get('errcode') != 0:
+                        sys.exit(f"WeCom error: {body}")
+                    print(f"[{label}] notification sent ✓ ({webhook[-8:]}…)")
+                    last_err = None
+                    break
+            except Exception as e:
+                last_err = e
+                print(f"[{label}] attempt {attempt} failed: {e}, retrying in 10s…")
+                time.sleep(10)
+        if last_err:
+            sys.exit(f"[{label}] all attempts failed: {last_err}")
 
 
 if should_notify('latest.json', 'editions/'):
