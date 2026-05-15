@@ -1,0 +1,27 @@
+import json, datetime
+from zoneinfo import ZoneInfo
+now = datetime.datetime.now(ZoneInfo("Asia/Shanghai"))
+data = {
+  "edition": "0010",
+  "date": now.strftime("%Y年%-m月%-d日 %H:%M"),
+  "intro": "AI购物代理流量Q1暴增393%、转化率反超真人用户，重塑出海电商获客逻辑；鞋类供应链ESG合规压力催生AI自动化追踪工具，跨境卖家可借助AI选品、定价与营销自动化实现全链路降本增效。",
+  "tags": ["AI购物代理", "跨境AI选品", "ESG自动合规", "消费行为重构", "营销智能化"],
+  "top3": [
+    {
+      "title": "TechCrunch：Q1美国零售商AI流量暴增393%，转化率较真人用户高出42%",
+      "comment": "AI代理带来的流量质量首次全面超越人工搜索，出海鞋类品牌应将产品内容优化重心转移至AEO/GEO，确保环保材质信息能被AI购物代理精准抓取并推荐。"
+    },
+    {
+      "title": "TechCrunch：Shopify备战AI购物代理全面接管发现与购买流程",
+      "comment": "Shopify重构产品架构以适配AI代理时代，环保鞋类独立站卖家需提前布局产品数据结构化与库存实时同步，确保AI代理可顺畅完成购买全链路。"
+    },
+    {
+      "title": "OFweek AI：AI全链路赋能跨境电商，选品成功率提升93%",
+      "comment": "中国60%-70%出海商户已接入AI工具，未接入者将面临系统性成本劣势，PM可将93%选品成功率提升数据作为立项依据，优先评估AI选品工具ROI。"
+    }
+  ],
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0010.html"
+}
+with open("latest-business.json", "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+print("Generated latest-business.json")
