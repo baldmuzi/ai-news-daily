@@ -60,108 +60,61 @@
     .header-badge {
       display: inline-block;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.7rem;
-      letter-spacing: 0.12em;
+      font-size: 0.65rem;
       color: var(--accent);
-      background: var(--tag-bg);
-      border: 1px solid rgba(16, 185, 129, 0.3);
-      border-radius: 4px;
-      padding: 0.2em 0.7em;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border: 1px solid rgba(16,185,129,0.35);
+      border-radius: 3px;
+      padding: 0.2em 0.8em;
       margin-bottom: 1rem;
     }
 
     h1 {
-      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-size: clamp(1.4rem, 3.5vw, 2.2rem);
       font-weight: 700;
-      color: #f1f5f9;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.04em;
+      color: var(--text);
       margin-bottom: 0.4rem;
     }
-
-    h1 span { color: var(--accent); }
 
     .subtitle {
       font-size: 0.85rem;
       color: var(--text-muted);
-      letter-spacing: 0.15em;
-      font-family: 'JetBrains Mono', monospace;
-      margin-bottom: 1.5rem;
+      letter-spacing: 0.06em;
     }
 
-    .meta-row {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.72rem;
-      color: var(--text-dim);
-    }
-
-    .section-label {
-      max-width: 760px;
-      margin: 3rem auto 1.5rem;
-      padding: 0 1.5rem;
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-    }
-
-    .section-label h2 {
-      font-size: 0.75rem;
-      font-family: 'JetBrains Mono', monospace;
-      letter-spacing: 0.12em;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      white-space: nowrap;
-    }
-
-    .section-label::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--border);
-    }
-
-    .cards-grid {
+    .container {
       max-width: 760px;
       margin: 0 auto;
-      padding: 0 1.5rem;
+      padding: 2.5rem 1.2rem 0;
+    }
+
+    .archive-list {
       display: flex;
       flex-direction: column;
-      gap: 0.75rem;
+      gap: 1rem;
     }
 
-    .edition-card {
+    .archive-item {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.2rem 1.6rem;
+      border-radius: 8px;
+      padding: 1.2rem 1.5rem;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      flex-wrap: wrap;
+      gap: 1.2rem;
+      text-decoration: none;
       transition: border-color 0.2s, box-shadow 0.2s;
     }
-
-    .edition-card:hover {
-      border-color: rgba(16, 185, 129, 0.4);
-      box-shadow: 0 0 24px var(--accent-glow);
+    .archive-item:hover {
+      border-color: rgba(16,185,129,0.45);
+      box-shadow: 0 0 18px rgba(16,185,129,0.07);
     }
-
-    .edition-card.latest {
-      border-color: rgba(16, 185, 129, 0.5);
-      background: linear-gradient(135deg, var(--surface) 0%, rgba(16, 185, 129, 0.06) 100%);
-      box-shadow: 0 0 20px var(--accent-glow);
-    }
-
-    .edition-left {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      flex: 1;
-      min-width: 200px;
+    .archive-item.latest {
+      border-color: rgba(16,185,129,0.5);
+      background: linear-gradient(135deg, #0f1e18 0%, var(--surface) 100%);
+      box-shadow: 0 0 24px rgba(16,185,129,0.1);
     }
 
     .edition-num {
@@ -169,227 +122,179 @@
       font-size: 1.1rem;
       font-weight: 500;
       color: var(--accent);
-      letter-spacing: 0.05em;
+      min-width: 3.5rem;
       flex-shrink: 0;
     }
 
     .edition-info {
-      display: flex;
-      flex-direction: column;
-      gap: 0.2rem;
+      flex: 1;
+      min-width: 0;
     }
 
     .edition-title {
-      font-size: 0.9rem;
+      font-size: 0.92rem;
       font-weight: 600;
-      color: #f1f5f9;
+      color: var(--text);
+      margin-bottom: 0.1rem;
     }
 
-    .edition-date {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.65rem;
-      color: var(--text-dim);
-    }
-
-    .edition-badges {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-
-    .badge-latest {
+    .edition-meta {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.62rem;
-      color: #000;
+      color: var(--text-dim);
+      letter-spacing: 0.04em;
+    }
+
+    .latest-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.6rem;
+      color: var(--bg);
       background: var(--accent);
       border-radius: 3px;
-      padding: 0.15em 0.5em;
-      letter-spacing: 0.05em;
-      font-weight: 600;
+      padding: 0.15em 0.6em;
+      letter-spacing: 0.06em;
+      flex-shrink: 0;
     }
 
-    .read-link {
+    .arrow {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.72rem;
-      color: var(--accent);
-      text-decoration: none;
-      border: 1px solid rgba(16, 185, 129, 0.35);
-      border-radius: 4px;
-      padding: 0.35em 0.9em;
-      white-space: nowrap;
-      transition: background 0.15s, color 0.15s;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      flex-shrink: 0;
+      transition: color 0.15s, transform 0.15s;
     }
-
-    .read-link:hover {
-      background: var(--accent);
-      color: #000;
+    .archive-item:hover .arrow {
+      color: var(--accent);
+      transform: translateX(3px);
     }
 
     footer {
-      max-width: 760px;
-      margin: 4rem auto 0;
-      padding: 2rem 1.5rem 0;
+      margin-top: 4rem;
+      padding: 2rem 1.5rem;
       border-top: 1px solid var(--border);
+      text-align: center;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    footer span {
+      flex-direction: column;
+      gap: 0.4rem;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.7rem;
+      font-size: 0.68rem;
       color: var(--text-dim);
+      letter-spacing: 0.06em;
     }
-
-    footer .accent { color: var(--accent); }
+    .accent { color: var(--accent); }
   </style>
 </head>
 <body>
 
-  <header>
-    <a href="../" class="back-link">← 返回首页</a>
-    <div class="header-badge">BUSINESS CHANNEL &nbsp;·&nbsp; 产品数据频道</div>
-    <h1>出海 AI <span>洞察</span> · 往期存档</h1>
-    <p class="subtitle">跨境电商 · 可持续发展 · AI 应用实战</p>
-    <div class="meta-row">
-      <span>环保鞋类出海</span>
-      <span>产品经理 &amp; 数据分析师</span>
-      <span>每期 TOP 10 精选</span>
-    </div>
-  </header>
+<header>
+  <a class="back-link" href="../">← 返回首页</a>
+  <div class="header-badge">Archive · Business Channel</div>
+  <h1>出海 AI 洞察 · 往期存档</h1>
+  <p class="subtitle">跨境电商 · 可持续发展 · AI 应用实战</p>
+</header>
 
-  <div class="section-label"><h2>往期存档</h2></div>
+<div class="container">
+  <div class="archive-list">
 
-  <div class="cards-grid">
+    <a class="archive-item latest" href="edition-0010.html">
+      <span class="edition-num">#0010</span>
+      <div class="edition-info">
+        <div class="edition-title">AI购物代理流量Q1暴增393%，鞋类ESG自动合规提速</div>
+        <div class="edition-meta">2026年5月15日 · 10篇精选</div>
+      </div>
+      <span class="latest-badge">最新</span>
+      <span class="arrow">→</span>
+    </a>
 
-    <div class="edition-card latest">
-      <div class="edition-left">
-        <span class="edition-num">#0009</span>
-        <div class="edition-info">
-          <span class="edition-title">出海 AI 洞察 Top 10</span>
-          <span class="edition-date">2026年5月14日 · AI代理购物战争 / Shopify全押代理 / AI流量393%增长 / 绿色供应链智能</span>
-        </div>
+    <a class="archive-item" href="edition-0009.html">
+      <span class="edition-num">#0009</span>
+      <div class="edition-info">
+        <div class="edition-title">AI重构供应链可见性，跨境卖家ESG合规提速</div>
+        <div class="edition-meta">2026年5月14日 · 10篇精选</div>
       </div>
-      <div class="edition-badges">
-        <span class="badge-latest">最新</span>
-        <a href="edition-0009.html" class="read-link">阅读 →</a>
-      </div>
-    </div>
+      <span class="arrow">→</span>
+    </a>
 
-    <div class="edition-card">
-      <div class="edition-left">
-        <span class="edition-num">#0008</span>
-        <div class="edition-info">
-          <span class="edition-title">出海 AI 洞察 Top 10</span>
-          <span class="edition-date">2026年5月14日 · Stripe代理支付 / Visa AI协议 / Best Buy代理发现 / 供应链实时智能</span>
-        </div>
+    <a class="archive-item" href="edition-0008.html">
+      <span class="edition-num">#0008</span>
+      <div class="edition-info">
+        <div class="edition-title">AI代理购物战争升温，出海营销智能化提速</div>
+        <div class="edition-meta">2026年5月13日 · 10篇精选</div>
       </div>
-      <div class="edition-badges">
-        <a href="edition-0008.html" class="read-link">阅读 →</a>
-      </div>
-    </div>
+      <span class="arrow">→</span>
+    </a>
 
-    <div class="edition-card">
-      <div class="edition-left">
-        <span class="edition-num">#0007</span>
-        <div class="edition-info">
-          <span class="edition-title">出海 AI 洞察 Top 10</span>
-          <span class="edition-date">2026年5月13日 · Meta代理商务工具 / AI产品可见性 / Kana营销代理 / 鞋类ESG溯源</span>
-        </div>
+    <a class="archive-item" href="edition-0007.html">
+      <span class="edition-num">#0007</span>
+      <div class="edition-info">
+        <div class="edition-title">生成式AI重塑零售消费洞察与跨境选品</div>
+        <div class="edition-meta">2026年5月12日 · 10篇精选</div>
       </div>
-      <div class="edition-badges">
-        <a href="edition-0007.html" class="read-link">阅读 →</a>
-      </div>
-    </div>
+      <span class="arrow">→</span>
+    </a>
 
-    <div class="edition-card">
-      <div class="edition-left">
-        <span class="edition-num">#0006</span>
-        <div class="edition-info">
-          <span class="edition-title">出海 AI 洞察 Top 10</span>
-          <span class="edition-date">2026年5月12日 · AI代理商务实证 / Canva营销闭环 / Loop供应链AI / 速卖通破零7天</span>
-        </div>
+    <a class="archive-item" href="edition-0006.html">
+      <span class="edition-num">#0006</span>
+      <div class="edition-info">
+        <div class="edition-title">AI供应链预测精度跃升，绿色物流降碳实战</div>
+        <div class="edition-meta">2026年5月11日 · 10篇精选</div>
       </div>
-      <div class="edition-badges">
-        <a href="edition-0006.html" class="read-link">阅读 →</a>
-      </div>
-    </div>
+      <span class="arrow">→</span>
+    </a>
 
-    <div class="edition-card">
-      <div class="edition-left">
-        <span class="edition-num">#0005</span>
-        <div class="edition-info">
-          <span class="edition-title">出海 AI 洞察 Top 10</span>
-          <span class="edition-date">2026年5月11日 · AI代理购物崛起 / Google UCP标准 / H&amp;M绿色供应链</span>
-        </div>
+    <a class="archive-item" href="edition-0005.html">
+      <span class="edition-num">#0005</span>
+      <div class="edition-info">
+        <div class="edition-title">跨境电商AI工具矩阵：从选品到履约全链覆盖</div>
+        <div class="edition-meta">2026年5月10日 · 10篇精选</div>
       </div>
-      <div class="edition-badges">
-        <a href="edition-0005.html" class="read-link">阅读 →</a>
-      </div>
-    </div>
+      <span class="arrow">→</span>
+    </a>
 
-    <div class="edition-card">
-      <div class="edition-left">
-        <span class="edition-num">#0004</span>
-        <div class="edition-info">
-          <span class="edition-title">出海 AI 洞察 Top 10</span>
-          <span class="edition-date">2026年5月9日 · AI引流+393% / 遨虾AI选品 / EU碳边境合规</span>
-        </div>
+    <a class="archive-item" href="edition-0004.html">
+      <span class="edition-num">#0004</span>
+      <div class="edition-info">
+        <div class="edition-title">Meta发力代理商业工具，零售AI投入加速</div>
+        <div class="edition-meta">2026年5月9日 · 10篇精选</div>
       </div>
-      <div class="edition-badges">
-        <a href="edition-0004.html" class="read-link">阅读 →</a>
-      </div>
-    </div>
+      <span class="arrow">→</span>
+    </a>
 
-    <div class="edition-card">
-      <div class="edition-left">
-        <span class="edition-num">#0003</span>
-        <div class="edition-info">
-          <span class="edition-title">出海 AI 洞察 Top 10</span>
-          <span class="edition-date">2026年5月8日 · Shopify代理店面 / EU数字护照 / AI碳核算</span>
-        </div>
+    <a class="archive-item" href="edition-0003.html">
+      <span class="edition-num">#0003</span>
+      <div class="edition-info">
+        <div class="edition-title">AI市场调研降本90%，鞋类品牌快速验证新市场</div>
+        <div class="edition-meta">2026年5月8日 · 10篇精选</div>
       </div>
-      <div class="edition-badges">
-        <a href="edition-0003.html" class="read-link">阅读 →</a>
-      </div>
-    </div>
+      <span class="arrow">→</span>
+    </a>
 
-    <div class="edition-card">
-      <div class="edition-left">
-        <span class="edition-num">#0002</span>
-        <div class="edition-info">
-          <span class="edition-title">出海 AI 洞察 Top 10</span>
-          <span class="edition-date">2026年5月8日 · Google UCP / CBAM合规 / Agentic Commerce</span>
-        </div>
+    <a class="archive-item" href="edition-0002.html">
+      <span class="edition-num">#0002</span>
+      <div class="edition-info">
+        <div class="edition-title">AI消费行为预测精准化，出海定价策略升级</div>
+        <div class="edition-meta">2026年5月7日 · 10篇精选</div>
       </div>
-      <div class="edition-badges">
-        <a href="edition-0002.html" class="read-link">阅读 →</a>
-      </div>
-    </div>
+      <span class="arrow">→</span>
+    </a>
 
-    <div class="edition-card">
-      <div class="edition-left">
-        <span class="edition-num">#0001</span>
-        <div class="edition-info">
-          <span class="edition-title">出海 AI 洞察 Top 10</span>
-          <span class="edition-date">2026年5月7日 · 创刊号</span>
-        </div>
+    <a class="archive-item" href="edition-0001.html">
+      <span class="edition-num">#0001</span>
+      <div class="edition-info">
+        <div class="edition-title">创刊号：AI浪潮下出海环保鞋类的增长机遇</div>
+        <div class="edition-meta">2026年5月6日 · 10篇精选</div>
       </div>
-      <div class="edition-badges">
-        <a href="edition-0001.html" class="read-link">阅读 →</a>
-      </div>
-    </div>
+      <span class="arrow">→</span>
+    </a>
 
   </div>
+</div>
 
-  <footer>
-    <span>出海 AI 洞察 <span class="accent">· 产品数据频道</span></span>
-    <span>更新于 2026年5月14日</span>
-    <span class="accent">baldmuzi.github.io/ai-news-daily</span>
-  </footer>
+<footer>
+  <span>出海 AI 洞察 <span class="accent">· 往期存档</span></span>
+  <span>共 <span class="accent">10</span> 期 · 持续更新</span>
+  <span class="accent">baldmuzi.github.io/ai-news-daily</span>
+</footer>
 
 </body>
 </html>
