@@ -71,7 +71,7 @@
     }
 
     h1 {
-      font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
       font-weight: 700;
       letter-spacing: 0.04em;
       color: var(--text);
@@ -85,43 +85,45 @@
     }
 
     .container {
-      max-width: 760px;
+      max-width: 800px;
       margin: 0 auto;
       padding: 2.5rem 1.2rem 0;
     }
 
-    .archive-list {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
+    .archive-grid {
+      display: grid;
+      gap: 0.85rem;
     }
 
     .archive-item {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 8px;
-      padding: 1.2rem 1.5rem;
+      padding: 1.1rem 1.4rem;
       display: flex;
       align-items: center;
       gap: 1.2rem;
       text-decoration: none;
-      transition: border-color 0.2s, box-shadow 0.2s;
+      color: var(--text);
+      transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
     }
     .archive-item:hover {
-      border-color: rgba(16,185,129,0.45);
-      box-shadow: 0 0 18px rgba(16,185,129,0.07);
+      border-color: rgba(16,185,129,0.5);
+      box-shadow: 0 0 20px rgba(16,185,129,0.07);
+      background: var(--surface2);
     }
+
     .archive-item.latest {
       border-color: rgba(16,185,129,0.5);
-      background: linear-gradient(135deg, #0f1e18 0%, var(--surface) 100%);
-      box-shadow: 0 0 24px rgba(16,185,129,0.1);
+      background: linear-gradient(135deg, #0f1e2e 0%, var(--surface) 100%);
+      box-shadow: 0 0 24px rgba(16,185,129,0.10);
     }
 
     .edition-num {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 1.1rem;
-      font-weight: 500;
+      font-size: 1rem;
       color: var(--accent);
+      font-weight: 500;
       min-width: 3.5rem;
       flex-shrink: 0;
     }
@@ -135,13 +137,14 @@
       font-size: 0.92rem;
       font-weight: 600;
       color: var(--text);
-      margin-bottom: 0.1rem;
+      line-height: 1.4;
     }
 
     .edition-meta {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.62rem;
       color: var(--text-dim);
+      margin-top: 0.2rem;
       letter-spacing: 0.04em;
     }
 
@@ -153,6 +156,7 @@
       border-radius: 3px;
       padding: 0.15em 0.6em;
       letter-spacing: 0.06em;
+      text-transform: uppercase;
       flex-shrink: 0;
     }
 
@@ -173,9 +177,6 @@
       padding: 2rem 1.5rem;
       border-top: 1px solid var(--border);
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.68rem;
       color: var(--text-dim);
@@ -194,23 +195,32 @@
 </header>
 
 <div class="container">
-  <div class="archive-list">
+  <div class="archive-grid">
 
-    <a class="archive-item latest" href="edition-0013.html">
-      <span class="edition-num">#0013</span>
+    <a class="archive-item latest" href="edition-0014.html">
+      <span class="edition-num">#0014</span>
       <div class="edition-info">
-        <div class="edition-title">Meta社交电商AI化，AI结账闭环验证与数据主权博弈并进</div>
-        <div class="edition-meta">2026年5月18日 · 10篇精选</div>
+        <div class="edition-title">AI代理流量激增393%·谷歌UCP商务标准·绿色供应链AI全面落地</div>
+        <div class="edition-meta">2026年5月19日 · TechCrunch · VentureBeat · a16z · OFweek</div>
       </div>
       <span class="latest-badge">最新</span>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="archive-item" href="edition-0013.html">
+      <span class="edition-num">#0013</span>
+      <div class="edition-info">
+        <div class="edition-title">Meta AI购物助手全面引入·AI结账闭环验证·数据主权防线</div>
+        <div class="edition-meta">往期存档 · TechCrunch · Modern Retail · Retail Dive · VentureBeat</div>
+      </div>
       <span class="arrow">→</span>
     </a>
 
     <a class="archive-item" href="edition-0012.html">
       <span class="edition-num">#0012</span>
       <div class="edition-info">
-        <div class="edition-title">AI购物代理浪潮爆发，供应链智能减碳成ESG新抓手</div>
-        <div class="edition-meta">2026年5月17日 · 10篇精选</div>
+        <div class="edition-title">出海 AI 洞察 第 0012 期</div>
+        <div class="edition-meta">往期存档</div>
       </div>
       <span class="arrow">→</span>
     </a>
@@ -218,8 +228,8 @@
     <a class="archive-item" href="edition-0011.html">
       <span class="edition-num">#0011</span>
       <div class="edition-info">
-        <div class="edition-title">AI深度渗透跨境电商，对话式购物与ESG合规智能化并进</div>
-        <div class="edition-meta">2026年5月16日 · 10篇精选</div>
+        <div class="edition-title">出海 AI 洞察 第 0011 期</div>
+        <div class="edition-meta">往期存档</div>
       </div>
       <span class="arrow">→</span>
     </a>
@@ -227,8 +237,8 @@
     <a class="archive-item" href="edition-0010.html">
       <span class="edition-num">#0010</span>
       <div class="edition-info">
-        <div class="edition-title">AI购物代理流量Q1暴增393%，鞋类ESG自动合规提速</div>
-        <div class="edition-meta">2026年5月15日 · 10篇精选</div>
+        <div class="edition-title">出海 AI 洞察 第 0010 期</div>
+        <div class="edition-meta">往期存档</div>
       </div>
       <span class="arrow">→</span>
     </a>
@@ -236,8 +246,8 @@
     <a class="archive-item" href="edition-0009.html">
       <span class="edition-num">#0009</span>
       <div class="edition-info">
-        <div class="edition-title">AI重构供应链可见性，跨境卖家ESG合规提速</div>
-        <div class="edition-meta">2026年5月14日 · 10篇精选</div>
+        <div class="edition-title">出海 AI 洞察 第 0009 期</div>
+        <div class="edition-meta">往期存档</div>
       </div>
       <span class="arrow">→</span>
     </a>
@@ -245,8 +255,8 @@
     <a class="archive-item" href="edition-0008.html">
       <span class="edition-num">#0008</span>
       <div class="edition-info">
-        <div class="edition-title">AI驱动零售个性化升级，出海品牌数据竞争加速</div>
-        <div class="edition-meta">2026年5月13日 · 10篇精选</div>
+        <div class="edition-title">出海 AI 洞察 第 0008 期</div>
+        <div class="edition-meta">往期存档</div>
       </div>
       <span class="arrow">→</span>
     </a>
@@ -254,8 +264,8 @@
     <a class="archive-item" href="edition-0007.html">
       <span class="edition-num">#0007</span>
       <div class="edition-info">
-        <div class="edition-title">生成式AI重塑消费决策，跨境营销进入代理时代</div>
-        <div class="edition-meta">2026年5月12日 · 10篇精选</div>
+        <div class="edition-title">出海 AI 洞察 第 0007 期</div>
+        <div class="edition-meta">往期存档</div>
       </div>
       <span class="arrow">→</span>
     </a>
@@ -263,8 +273,8 @@
     <a class="archive-item" href="edition-0006.html">
       <span class="edition-num">#0006</span>
       <div class="edition-info">
-        <div class="edition-title">AI选品与定价双提效，环保标签成欧美转化新杠杆</div>
-        <div class="edition-meta">2026年5月11日 · 10篇精选</div>
+        <div class="edition-title">出海 AI 洞察 第 0006 期</div>
+        <div class="edition-meta">往期存档</div>
       </div>
       <span class="arrow">→</span>
     </a>
@@ -272,8 +282,8 @@
     <a class="archive-item" href="edition-0005.html">
       <span class="edition-num">#0005</span>
       <div class="edition-info">
-        <div class="edition-title">跨境AI工具爆发，数据驱动运营成出海标配</div>
-        <div class="edition-meta">2026年5月10日 · 10篇精选</div>
+        <div class="edition-title">出海 AI 洞察 第 0005 期</div>
+        <div class="edition-meta">往期存档</div>
       </div>
       <span class="arrow">→</span>
     </a>
@@ -281,8 +291,8 @@
     <a class="archive-item" href="edition-0004.html">
       <span class="edition-num">#0004</span>
       <div class="edition-info">
-        <div class="edition-title">AI代理购物协议成型，品牌可见性竞争前移</div>
-        <div class="edition-meta">2026年5月9日 · 10篇精选</div>
+        <div class="edition-title">出海 AI 洞察 第 0004 期</div>
+        <div class="edition-meta">往期存档</div>
       </div>
       <span class="arrow">→</span>
     </a>
@@ -290,8 +300,8 @@
     <a class="archive-item" href="edition-0003.html">
       <span class="edition-num">#0003</span>
       <div class="edition-info">
-        <div class="edition-title">供应链AI融资潮涌，可持续合规智能化加速</div>
-        <div class="edition-meta">2026年5月8日 · 10篇精选</div>
+        <div class="edition-title">出海 AI 洞察 第 0003 期</div>
+        <div class="edition-meta">往期存档</div>
       </div>
       <span class="arrow">→</span>
     </a>
@@ -299,8 +309,8 @@
     <a class="archive-item" href="edition-0002.html">
       <span class="edition-num">#0002</span>
       <div class="edition-info">
-        <div class="edition-title">AI营销工具普及，出海品牌内容效率大幅跃升</div>
-        <div class="edition-meta">2026年5月7日 · 10篇精选</div>
+        <div class="edition-title">出海 AI 洞察 第 0002 期</div>
+        <div class="edition-meta">往期存档</div>
       </div>
       <span class="arrow">→</span>
     </a>
@@ -308,8 +318,8 @@
     <a class="archive-item" href="edition-0001.html">
       <span class="edition-num">#0001</span>
       <div class="edition-info">
-        <div class="edition-title">创刊号：AI重构跨境电商全链路</div>
-        <div class="edition-meta">2026年5月6日 · 10篇精选</div>
+        <div class="edition-title">出海 AI 洞察 第 0001 期</div>
+        <div class="edition-meta">往期存档</div>
       </div>
       <span class="arrow">→</span>
     </a>
@@ -318,8 +328,7 @@
 </div>
 
 <footer>
-  <span><span class="accent">出海 AI 洞察</span> · 往期存档</span>
-  <span>跨境电商 · 可持续发展 · AI 应用实战</span>
+  <span>出海 AI 洞察 · 共 <span class="accent">14</span> 期</span>
 </footer>
 
 </body>
