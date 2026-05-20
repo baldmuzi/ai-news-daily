@@ -126,3 +126,6 @@ if should_notify('latest-business.json', 'business/'):
 
 if should_notify('latest-fitness.json', 'fitness/'):
     post_wecom(os.environ.get('WECOM_WEBHOOK_FITNESS', ''), 'latest-fitness.json', 'Fanka 运动健康趋势', 'WECOM_MENTION_FITNESS')
+
+if should_notify('latest-vivaia.json', 'vivaia/'):
+    post_wecom(os.environ.get('WECOM_WEBHOOK_VIVAIA', ''), 'latest-vivaia.json', 'VIVAIA 品牌趋势', 'WECOM_MENTION_VIVAIA')
