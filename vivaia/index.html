@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIVAIA 品牌趋势 · 往期存档 — VIVAIA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #080c14;
+      --surface: #14110b;
+      --surface2: #1c180f;
+      --border: #2b2316;
+      --accent: #c87a3a;
+      --accent-strong: #804c1a;
+      --accent-dim: rgba(200,122,58,0.14);
+      --accent-glow: rgba(128,76,26,0.3);
+      --text: #ece4d6;
+      --text-muted: #a89a83;
+      --text-dim: #6f6453;
+      --tag-bg: rgba(200,122,58,0.12);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Noto Serif SC', serif;
+      line-height: 1.8;
+      min-height: 100vh;
+      padding: 0 0 4rem;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    header {
+      background: linear-gradient(180deg, #14100a 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2.2rem 1.5rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .back-link {
+      position: absolute;
+      top: 1.4rem;
+      left: 1.5rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      transition: color 0.15s;
+    }
+    .back-link:hover { color: var(--accent); }
+
+    .header-badge {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      background: var(--tag-bg);
+      border: 1px solid rgba(200,122,58,0.35);
+      border-radius: 4px;
+      padding: 0.2em 0.7em;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: #f4ecdf;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.3rem;
+    }
+    h1 span { color: var(--accent); }
+
+    .subtitle {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      letter-spacing: 0.18em;
+      font-family: 'JetBrains Mono', monospace;
+      margin-bottom: 1rem;
+    }
+
+    .meta-row {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--text-dim);
+    }
+    .meta-row span::before { content: '· '; color: var(--accent); }
+
+    .section-label {
+      max-width: 760px;
+      margin: 2.8rem auto 1.2rem;
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    .section-label h2 {
+      font-size: 0.72rem;
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .cards-grid {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .edition-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.2rem 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .edition-card:hover {
+      border-color: rgba(200,122,58,0.45);
+      box-shadow: 0 0 24px var(--accent-glow);
+    }
+    .edition-card.latest {
+      border-color: rgba(200,122,58,0.55);
+      background: linear-gradient(135deg, var(--surface) 0%, rgba(128,76,26,0.10) 100%);
+      box-shadow: 0 0 20px var(--accent-glow);
+    }
+
+    .edition-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .edition-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--accent);
+      letter-spacing: 0.05em;
+      flex-shrink: 0;
+    }
+
+    .edition-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .edition-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #f4ecdf;
+    }
+
+    .edition-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--text-dim);
+    }
+
+    .edition-badges {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .badge-latest {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.62rem;
+      color: #fff;
+      background: var(--accent-strong);
+      border-radius: 3px;
+      padding: 0.15em 0.5em;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+    }
+
+    .read-link {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid rgba(200,122,58,0.4);
+      border-radius: 4px;
+      padding: 0.35em 0.9em;
+      white-space: nowrap;
+      transition: background 0.15s, color 0.15s;
+    }
+    .read-link:hover {
+      background: var(--accent-strong);
+      color: #fff;
+      border-color: var(--accent-strong);
+    }
+
+    .total-count {
+      max-width: 760px;
+      margin: 1.2rem auto 0;
+      padding: 0 1.5rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--text-dim);
+      letter-spacing: 0.06em;
+      text-align: right;
+    }
+
+    footer {
+      max-width: 760px;
+      margin: 4rem auto 0;
+      padding: 1.8rem 1.5rem 0;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    footer span {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--text-dim);
+    }
+    footer .accent { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="../" class="back-link">← 返回首页</a>
+  <div class="header-badge">VIVAIA CHANNEL &nbsp;·&nbsp; 品牌趋势频道</div>
+  <h1>VIVAIA 品牌<span>趋势</span> · 往期存档</h1>
+  <p class="subtitle">Global Fashion &amp; Sustainability · Powered by VIVAIA</p>
+  <div class="meta-row">
+    <span>女鞋品牌出海视角</span>
+    <span>每期 Top 10 全球趋势</span>
+    <span>选品 + 活动机会</span>
+  </div>
+</header>
+
+<div class="section-label"><h2>往期存档</h2></div>
+
+<div class="cards-grid">
+
+  <div class="edition-card latest">
+    <div class="edition-left">
+      <span class="edition-num">#0001</span>
+      <div class="edition-info">
+        <span class="edition-title">V-cut芭蕾鞋·软质乐福·Mary Jane运动鞋齐爆 · 欧盟ESPR禁毁令7月生效 · Allbirds易主</span>
+        <span class="edition-date">2026年5月20日 · 芭蕾鞋热潮 / 软质乐福 / 可持续合规 / 中年女性穿搭 / 小红书爆款</span>
+      </div>
+    </div>
+    <div class="edition-badges">
+      <span class="badge-latest">最新</span>
+      <a href="edition-0001.html" class="read-link">阅读 →</a>
+    </div>
+  </div>
+
+</div>
+
+<div class="total-count">共 1 期 · 最多展示 20 期</div>
+
+<footer>
+  <span>VIVAIA 品牌趋势 <span class="accent">· Powered by VIVAIA</span></span>
+  <span>更新于 2026年5月20日</span>
+</footer>
+
+</body>
+</html>
