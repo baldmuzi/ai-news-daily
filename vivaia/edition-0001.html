@@ -9,23 +9,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <style>
   :root {
-    --bg: #080c14;
-    --surface: #14110b;
-    --surface2: #1c180f;
-    --border: #2b2316;
-    --accent: #c87a3a;
-    --accent-strong: #804c1a;
-    --accent-dim: rgba(200,122,58,0.14);
-    --accent-glow: rgba(128,76,26,0.3);
-    --text: #ece4d6;
-    --text-muted: #a89a83;
-    --text-dim: #6f6453;
-    --tag-bg: #1f1a11;
+    --bg: #0b0f18;
+    --surface: #17130d;
+    --surface2: #221b10;
+    --border: #463722;
+    --accent: #d89a5e;
+    --accent-strong: #a8672f;
+    --accent-dim: rgba(216,154,94,0.18);
+    --accent-glow: rgba(168,103,47,0.28);
+    --text: #f5efe4;
+    --text-muted: #d2c2aa;
+    --text-dim: #b39f82;
+    --tag-bg: #221a10;
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body {
-    background: var(--bg);
+    background: radial-gradient(circle at top, rgba(168,103,47,0.14), transparent 36%), var(--bg);
     color: var(--text);
     font-family: 'Noto Serif SC', serif;
     line-height: 1.75;
@@ -55,7 +55,7 @@
   .header-meta {
     font-family: 'JetBrains Mono', monospace;
     font-size: 12px;
-    color: var(--text-dim);
+    color: var(--text-muted);
     letter-spacing: .08em;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -116,7 +116,7 @@
 
   .cards-grid { display: flex; flex-direction: column; gap: 24px; margin-bottom: 60px; }
   .card {
-    background: var(--surface);
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent 30%), var(--surface);
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 24px 28px;
@@ -146,7 +146,7 @@
     font-size: 11px;
     letter-spacing: .08em;
     text-transform: uppercase;
-    color: var(--text-dim);
+    color: var(--text-muted);
     background: var(--tag-bg);
     border: 1px solid var(--border);
     border-radius: 6px;
@@ -182,11 +182,12 @@
   .read-btn {
     font-family: 'JetBrains Mono', monospace;
     font-size: 12px;
-    color: var(--accent);
-    background: var(--accent-dim);
-    border: 1px solid var(--accent);
+    color: #f8dfc3;
+    background: rgba(216,154,94,0.24);
+    border: 1px solid #c9884e;
     border-radius: 6px;
     padding: 6px 14px;
+    font-weight: 500;
     transition: background .2s;
     text-decoration: none;
   }

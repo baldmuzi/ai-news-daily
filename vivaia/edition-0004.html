@@ -9,24 +9,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <style>
   :root {
-    --bg: #080c14;
-    --surface: #14110b;
-    --surface2: #1c180f;
-    --border: #2b2316;
-    --accent: #804c1a;
-    --accent-soft: #b47536;
-    --accent-dim: rgba(128, 76, 26, 0.16);
-    --accent-glow: rgba(128, 76, 26, 0.26);
-    --text: #ece4d6;
-    --text-muted: #b0a28e;
-    --text-dim: #7a6e5d;
-    --tag-bg: #1f1a11;
-    --competitor-bg: #171007;
-    --competitor-border: #3d2a12;
+    --bg: #0b0f18;
+    --surface: #17130d;
+    --surface2: #221b10;
+    --border: #463722;
+    --accent: #a8672f;
+    --accent-soft: #d89a5e;
+    --accent-dim: rgba(216, 154, 94, 0.18);
+    --accent-glow: rgba(168, 103, 47, 0.28);
+    --text: #f5efe4;
+    --text-muted: #d2c2aa;
+    --text-dim: #b39f82;
+    --tag-bg: #221a10;
+    --competitor-bg: #20170d;
+    --competitor-border: #594027;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    background: radial-gradient(circle at top, rgba(128,76,26,0.16), transparent 36%), var(--bg);
+    background: radial-gradient(circle at top, rgba(168,103,47,0.14), transparent 36%), var(--bg);
     color: var(--text);
     font-family: 'Noto Serif SC', serif;
     line-height: 1.75;
@@ -38,7 +38,7 @@
   .site-header { padding: 24px 0 20px; margin-bottom: 44px; border-bottom: 1px solid var(--border); }
   .back-link { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--text-muted); display: inline-flex; margin-bottom: 20px; }
   .back-link:hover { color: var(--accent-soft); text-decoration: none; }
-  .header-meta { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-dim); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px; }
+  .header-meta { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-muted); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px; }
   .header-title { font-size: clamp(28px, 5vw, 42px); font-weight: 700; line-height: 1.2; margin-bottom: 8px; }
   .header-title span { color: var(--accent-soft); }
   .header-subtitle { font-family: 'JetBrains Mono', monospace; font-size: 14px; color: var(--text-muted); margin-bottom: 20px; }
@@ -52,7 +52,7 @@
   .card { background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent 28%), var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 24px 28px; transition: border-color .2s, box-shadow .2s; }
   .card:hover { border-color: var(--accent-soft); box-shadow: 0 0 24px var(--accent-glow); }
   .card-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
-  .card-cat { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .08em; color: var(--text-dim); background: var(--tag-bg); border: 1px solid var(--border); border-radius: 6px; padding: 4px 9px; white-space: nowrap; }
+  .card-cat { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .08em; color: var(--text-muted); background: var(--tag-bg); border: 1px solid var(--border); border-radius: 6px; padding: 4px 9px; white-space: nowrap; }
   .card-title { font-size: 21px; font-weight: 700; line-height: 1.45; margin-bottom: 10px; }
   .card-title a { color: var(--text); }
   .card-title a:hover { color: var(--accent-soft); text-decoration: none; }
@@ -61,7 +61,7 @@
   .comment-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--accent-soft); margin-bottom: 4px; }
   .comment-text { font-size: 14px; color: var(--text-muted); line-height: 1.9; }
   .card-footer { display: flex; justify-content: flex-end; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); }
-  .read-btn { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--accent-soft); background: var(--accent-dim); border: 1px solid var(--accent); border-radius: 6px; padding: 6px 14px; }
+  .read-btn { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #f8dfc3; background: rgba(216,154,94,0.24); border: 1px solid #c9884e; border-radius: 6px; padding: 6px 14px; font-weight: 500; }
   .read-btn:hover { background: var(--accent); color: #fff; text-decoration: none; }
   .competitor-section { background: var(--competitor-bg); border: 1px solid var(--competitor-border); border-radius: 14px; padding: 28px; margin-bottom: 50px; }
   .competitor-section .section-label::after { background: var(--competitor-border); }
