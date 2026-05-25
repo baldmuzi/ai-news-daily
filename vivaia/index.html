@@ -12,21 +12,21 @@
       --bg: #0b0f18;
       --surface: #17130d;
       --border: #463722;
-      --accent: #a8672f;
+      --accent: #804c1a;
       --accent-soft: #d89a5e;
       --accent-dim: rgba(216,154,94,0.18);
-      --accent-glow: rgba(168,103,47,0.28);
+      --accent-glow: rgba(128,76,26,0.32);
       --text: #f5efe4;
       --text-muted: #d2c2aa;
       --text-dim: #b39f82;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: radial-gradient(circle at top, rgba(168,103,47,0.14), transparent 36%), var(--bg); color: var(--text); font-family: 'Noto Serif SC', serif; line-height: 1.8; min-height: 100vh; padding-bottom: 4rem; }
+    body { background: radial-gradient(circle at top, rgba(128,76,26,0.16), transparent 36%), var(--bg); color: var(--text); font-family: 'Noto Serif SC', serif; line-height: 1.8; min-height: 100vh; padding-bottom: 4rem; }
     a { color: inherit; text-decoration: none; }
     header { background: linear-gradient(180deg, #1a140c 0%, var(--bg) 100%); border-bottom: 1px solid var(--border); padding: 2.2rem 1.5rem 2rem; text-align: center; position: relative; }
     .back-link { position: absolute; top: 1.4rem; left: 1.5rem; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--text-muted); letter-spacing: 0.08em; }
     .back-link:hover { color: var(--accent-soft); }
-    .header-badge { display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.12em; color: var(--accent-soft); background: var(--accent-dim); border: 1px solid rgba(180,117,54,0.35); border-radius: 4px; padding: 0.2em 0.7em; margin-bottom: 1rem; }
+    .header-badge { display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.12em; color: var(--accent-soft); background: var(--accent-dim); border: 1px solid rgba(128,76,26,0.45); border-radius: 4px; padding: 0.2em 0.7em; margin-bottom: 1rem; }
     h1 { font-size: clamp(1.7rem, 4vw, 2.5rem); font-weight: 700; letter-spacing: 0.04em; margin-bottom: 0.3rem; }
     .subtitle { font-size: 0.82rem; color: var(--text-muted); letter-spacing: 0.18em; font-family: 'JetBrains Mono', monospace; margin-bottom: 1rem; }
     .meta-row { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--text-dim); }
@@ -35,8 +35,8 @@
     .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
     .cards-grid { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; }
     .edition-card { background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent 28%), var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem 1.6rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; transition: border-color .2s, box-shadow .2s; }
-    .edition-card:hover { border-color: rgba(180,117,54,0.45); box-shadow: 0 0 24px var(--accent-glow); }
-    .edition-card.latest { border-color: rgba(180,117,54,0.55); background: linear-gradient(135deg, var(--surface) 0%, rgba(128,76,26,0.12) 100%); box-shadow: 0 0 18px var(--accent-glow); }
+    .edition-card:hover { border-color: rgba(128,76,26,0.55); box-shadow: 0 0 24px var(--accent-glow); }
+    .edition-card.latest { border-color: rgba(128,76,26,0.65); background: linear-gradient(135deg, var(--surface) 0%, rgba(128,76,26,0.16) 100%); box-shadow: 0 0 18px var(--accent-glow); }
     .edition-left { display: flex; align-items: center; gap: 1rem; flex: 1; min-width: 200px; }
     .edition-num { font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; color: var(--accent-soft); letter-spacing: 0.05em; }
     .edition-title { font-size: 0.95rem; font-weight: 600; color: #f4ecdf; }
@@ -54,11 +54,21 @@
     <div class="header-badge">VIVAIA ARCHIVE</div>
     <h1>VIVAIA 品牌趋势 · 往期存档</h1>
     <div class="subtitle">GLOBAL FASHION &amp; SUSTAINABILITY</div>
-    <div class="meta-row"><span>Latest 0004</span><span>Showing 4 Editions</span></div>
+    <div class="meta-row"><span>Latest 0005</span><span>Showing 5 Editions</span></div>
   </header>
   <div class="section-label"><h2>Edition Archive</h2></div>
   <div class="cards-grid">
-    <a class="edition-card latest" href="./edition-0004.html">
+    <a class="edition-card latest" href="./edition-0005.html">
+      <div class="edition-left">
+        <div class="edition-num">#0005</div>
+        <div>
+          <div class="edition-title">VIVAIA 品牌趋势 · 第0005期</div>
+          <div class="edition-date">2026年5月25日</div>
+        </div>
+      </div>
+      <div class="edition-badges"><span class="badge-latest">LATEST</span><span class="read-link">查看本期 →</span></div>
+    </a>
+    <a class="edition-card" href="./edition-0004.html">
       <div class="edition-left">
         <div class="edition-num">#0004</div>
         <div>
@@ -66,7 +76,7 @@
           <div class="edition-date">2026年5月22日</div>
         </div>
       </div>
-      <div class="edition-badges"><span class="badge-latest">LATEST</span><span class="read-link">查看本期 →</span></div>
+      <div class="edition-badges"><span class="read-link">查看本期 →</span></div>
     </a>
     <a class="edition-card" href="./edition-0003.html">
       <div class="edition-left">
@@ -99,6 +109,6 @@
       <div class="edition-badges"><span class="read-link">查看本期 →</span></div>
     </a>
   </div>
-  <div class="total-count">共 4 期，当前最多展示 20 期</div>
+  <div class="total-count">共 5 期，当前最多展示 20 期</div>
 </body>
 </html>
