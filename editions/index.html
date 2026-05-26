@@ -6,297 +6,228 @@
   <title>AI 技术快讯 · 往期存档</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   <style>
+
     :root {
       --bg: #080c14;
       --surface: #0d1220;
-      --surface2: #121828;
+      --surface-2: #121828;
       --border: #1e2d44;
       --blue: #3b82f6;
-      --accent: #6c8aff;
-      --accent2: #a78bfa;
+      --violet: #8b5cf6;
       --text: #e2e8f0;
-      --text-muted: #8ba3bf;
-      --tag-bg: #0f1e35;
-      --tag-border: #1e3a5f;
-      --tag-text: #7dd3fc;
+      --muted: #8ba3bf;
+      --shadow: 0 18px 40px rgba(0, 0, 0, .34);
     }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    * { box-sizing: border-box; }
     body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Noto Serif SC', serif;
-      line-height: 1.75;
+      margin: 0;
       min-height: 100vh;
+      font-family: "Noto Serif SC", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top, rgba(59,130,246,.16), transparent 30%),
+        radial-gradient(circle at 85% 10%, rgba(139,92,246,.1), transparent 24%),
+        var(--bg);
     }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    /* ── Back nav ── */
+    a { color: inherit; }
     .back-nav {
-      padding: 0.85rem 1.5rem;
+      padding: 0.9rem 1.4rem;
       border-bottom: 1px solid var(--border);
-      background: var(--surface);
+      background: rgba(8, 12, 20, .82);
+      backdrop-filter: blur(12px);
     }
     .back-nav a {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.72rem;
-      color: var(--text-muted);
-      letter-spacing: 0.04em;
+      font-family: "JetBrains Mono", monospace;
+      font-size: .78rem;
+      color: var(--muted);
+      text-decoration: none;
     }
-    .back-nav a:hover { color: var(--blue); text-decoration: none; }
-
-    /* ── Header ── */
     header {
-      background: linear-gradient(135deg, #050a15 0%, #0d1220 100%);
-      border-bottom: 1px solid var(--border);
-      padding: 3rem 1.5rem 2.5rem;
+      padding: 3.2rem 1.5rem 2.2rem;
       text-align: center;
+      border-bottom: 1px solid var(--border);
     }
-    .header-label {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.72rem;
-      letter-spacing: 0.15em;
+    .eyebrow {
+      font-family: "JetBrains Mono", monospace;
+      font-size: .72rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
       color: var(--blue);
-      text-transform: uppercase;
-      margin-bottom: 0.75rem;
-      opacity: 0.9;
     }
-    header h1 {
-      font-size: clamp(1.6rem, 4vw, 2.4rem);
-      font-weight: 700;
-      color: #fff;
-      letter-spacing: 0.04em;
+    h1 {
+      margin: .8rem 0 .5rem;
+      font-size: clamp(1.7rem, 4vw, 2.7rem);
+      line-height: 1.25;
     }
-    header h1 span { color: var(--blue); }
-    header p {
-      margin-top: 0.6rem;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.75rem;
-      color: var(--text-muted);
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-family: "JetBrains Mono", monospace;
+      font-size: .76rem;
     }
-
-    /* ── Container ── */
     .container {
-      max-width: 760px;
+      width: min(820px, calc(100% - 32px));
       margin: 0 auto;
-      padding: 2.5rem 1.5rem 5rem;
+      padding: 2rem 0 4rem;
     }
-
-    /* ── Section heading ── */
-    .section-heading {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.72rem;
-      letter-spacing: 0.15em;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      margin-bottom: 1.5rem;
+    .section-label {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: .8rem;
+      color: var(--muted);
+      font-family: "JetBrains Mono", monospace;
+      font-size: .72rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
     }
-    .section-heading::after {
-      content: '';
+    .section-label::after {
+      content: "";
       flex: 1;
       height: 1px;
       background: var(--border);
     }
-
-    /* ── Edition list ── */
-    .edition-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0.85rem;
+    .list {
+      display: grid;
+      gap: .9rem;
     }
-
-    /* ── Edition card ── */
     .edition-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.25rem 1.6rem;
       display: flex;
       align-items: center;
-      gap: 1.4rem;
-      transition: border-color .2s, transform .15s;
+      gap: 1rem;
+      padding: 1.15rem 1.2rem;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(13,18,32,.98), rgba(18,24,40,.9));
       text-decoration: none;
-      color: inherit;
+      box-shadow: var(--shadow);
+      transition: transform .18s ease, border-color .18s ease;
     }
     .edition-card:hover {
-      border-color: rgba(59,130,246,.45);
       transform: translateY(-2px);
-      text-decoration: none;
+      border-color: rgba(99,102,241,.55);
     }
-
-    /* Latest edition highlight */
     .edition-card.latest {
       border-color: rgba(59,130,246,.5);
-      background: linear-gradient(135deg, #0d1525 0%, #0d1220 100%);
-      position: relative;
-      overflow: hidden;
+      background: linear-gradient(135deg, rgba(21,31,54,.98), rgba(13,18,32,.94));
     }
-    .edition-card.latest::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: 12px;
-      padding: 1px;
-      background: linear-gradient(135deg, rgba(59,130,246,.6), rgba(167,139,250,.3));
-      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
-      pointer-events: none;
-    }
-
     .edition-num {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 1.5rem;
-      font-weight: 500;
-      color: var(--blue);
-      opacity: 0.55;
-      min-width: 3.5rem;
-      line-height: 1;
+      min-width: 68px;
+      color: rgba(147,197,253,.72);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 1.2rem;
     }
-    .edition-card.latest .edition-num {
-      opacity: 0.85;
-    }
-
     .edition-info { flex: 1; }
     .edition-title {
+      color: #f8fafc;
       font-size: 1rem;
-      font-weight: 600;
-      color: #fff;
-      line-height: 1.45;
-      margin-bottom: 0.2rem;
+      line-height: 1.5;
+      margin-bottom: .16rem;
     }
     .edition-meta {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.68rem;
-      color: var(--text-muted);
-      letter-spacing: 0.04em;
+      color: var(--muted);
+      font-family: "JetBrains Mono", monospace;
+      font-size: .72rem;
     }
-
-    .latest-badge {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.62rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--blue);
-      background: rgba(59,130,246,.12);
-      border: 1px solid rgba(59,130,246,.35);
-      border-radius: 100px;
-      padding: 0.15em 0.7em;
+    .badge,
+    .arrow {
+      font-family: "JetBrains Mono", monospace;
+      font-size: .72rem;
       white-space: nowrap;
     }
-
-    .arrow {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      opacity: 0.5;
-      transition: opacity .15s, transform .15s;
+    .badge {
+      color: #bfdbfe;
+      border: 1px solid rgba(59,130,246,.35);
+      background: rgba(59,130,246,.12);
+      border-radius: 999px;
+      padding: .24rem .72rem;
     }
-    .edition-card:hover .arrow { opacity: 1; transform: translateX(3px); }
-
-    /* ── Footer ── */
+    .arrow { color: var(--muted); }
     footer {
-      text-align: center;
-      padding: 2rem 1.5rem;
+      padding: 2rem 1.5rem 3rem;
       border-top: 1px solid var(--border);
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.72rem;
-      color: var(--text-muted);
+      color: var(--muted);
+      text-align: center;
+      font-family: "JetBrains Mono", monospace;
+      font-size: .75rem;
     }
-    footer a { color: var(--text-muted); }
-    footer a:hover { color: var(--blue); }
+    @media (max-width: 640px) {
+      .edition-card { align-items: flex-start; }
+      .edition-num { min-width: 54px; font-size: 1rem; }
+    }
 
-    @media (max-width: 480px) {
-      .edition-num { font-size: 1.1rem; min-width: 2.8rem; }
-      .edition-card { padding: 1rem 1.1rem; gap: 1rem; }
-    }
   </style>
 </head>
 <body>
-
-<div class="back-nav">
-  <a href="../">← 返回首页</a>
-</div>
-
-<header>
-  <div class="header-label">AI 技术快讯 · Archive</div>
-  <h1>AI 技术快讯<span> · 往期存档</span></h1>
-  <p>面向软件工程师与技术研究者 · 每日精选 Top 10 AI 资讯</p>
-</header>
-
-<div class="container">
-
-  <div class="section-heading">全部期数 · 倒序排列</div>
-
-  <div class="edition-list">
-
-    <a class="edition-card latest" href="./edition-0006.html">
-      <div class="edition-num">006</div>
-      <div class="edition-info">
-        <div class="edition-title">Anthropic代理三功能公测 · SubQ次二次型LLM · MCP安全漏洞 · GPT-5.5-Cyber扩大准入</div>
-        <div class="edition-meta">2026年5月10日 &nbsp;·&nbsp; Top 10 精选</div>
-      </div>
-      <span class="latest-badge">最新</span>
-      <span class="arrow">→</span>
-    </a>
-
-    <a class="edition-card" href="./edition-0005.html">
-      <div class="edition-num">005</div>
-      <div class="edition-info">
-        <div class="edition-title">GPT-5.5-Cyber安全专版 · Opus 4.7高清视觉 · Gemini企业代理平台 · DeepSeek V4-Pro</div>
-        <div class="edition-meta">2026年5月9日 &nbsp;·&nbsp; Top 10 精选</div>
-      </div>
-      <span class="arrow">→</span>
-    </a>
-
-    <a class="edition-card" href="./edition-0004.html">
-      <div class="edition-num">004</div>
-      <div class="edition-info">
-        <div class="edition-title">欧盟AI法规松绑 · Anthropic梦境自学习 · SpaceX算力协议 · ARR超越OpenAI</div>
-        <div class="edition-meta">2026年5月8日 &nbsp;·&nbsp; Top 10 精选</div>
-      </div>
-      <span class="arrow">→</span>
-    </a>
-
-    <a class="edition-card" href="./edition-0003.html">
-      <div class="edition-num">003</div>
-      <div class="edition-info">
-        <div class="edition-title">AI 行业日报 第 0003 期</div>
-        <div class="edition-meta">2026年5月7日 &nbsp;·&nbsp; Top 10 精选</div>
-      </div>
-      <span class="arrow">→</span>
-    </a>
-
-    <a class="edition-card" href="./edition-0002.html">
-      <div class="edition-num">002</div>
-      <div class="edition-info">
-        <div class="edition-title">AI 行业日报 第 0002 期</div>
-        <div class="edition-meta">2026年5月7日 &nbsp;·&nbsp; Top 10 精选</div>
-      </div>
-      <span class="arrow">→</span>
-    </a>
-
-    <a class="edition-card" href="./edition-0001.html">
-      <div class="edition-num">001</div>
-      <div class="edition-info">
-        <div class="edition-title">AI 行业资讯 第 0001 期</div>
-        <div class="edition-meta">2026年5月7日 &nbsp;·&nbsp; Top 10 精选</div>
-      </div>
-      <span class="arrow">→</span>
-    </a>
-
-  </div>
-</div>
-
-<footer>
-  AI 技术快讯 · 往期存档 &nbsp;·&nbsp; <a href="../">返回首页</a>
-</footer>
-
+  <div class="back-nav"><a href="../">← 返回首页</a></div>
+  <header>
+    <div class="eyebrow">Archive</div>
+    <h1>AI 技术快讯 · 往期存档</h1>
+    <p>按期号倒序展示最近 20 期，最新一期已高亮</p>
+  </header>
+  <main class="container">
+    <div class="section-label">Recent Editions</div>
+    <section class="list">
+      <a class="edition-card latest" href="./edition-0007.html">
+        <div class="edition-num">#0007</div>
+        <div class="edition-info">
+          <div class="edition-title">AI 技术快讯 · 第 0007 期</div>
+          <div class="edition-meta">技术频道归档</div>
+        </div>
+        <span class="badge">最新一期</span>
+      </a>
+      <a class="edition-card" href="./edition-0006.html">
+        <div class="edition-num">#0006</div>
+        <div class="edition-info">
+          <div class="edition-title">AI 行业日报 · 第 0006 期</div>
+          <div class="edition-meta">技术频道归档</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+      <a class="edition-card" href="./edition-0005.html">
+        <div class="edition-num">#0005</div>
+        <div class="edition-info">
+          <div class="edition-title">AI 行业日报 · 第 0005 期</div>
+          <div class="edition-meta">技术频道归档</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+      <a class="edition-card" href="./edition-0004.html">
+        <div class="edition-num">#0004</div>
+        <div class="edition-info">
+          <div class="edition-title">AI 行业日报 · 第 0004 期</div>
+          <div class="edition-meta">技术频道归档</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+      <a class="edition-card" href="./edition-0003.html">
+        <div class="edition-num">#0003</div>
+        <div class="edition-info">
+          <div class="edition-title">AI 行业日报 · 第 0003 期</div>
+          <div class="edition-meta">技术频道归档</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+      <a class="edition-card" href="./edition-0002.html">
+        <div class="edition-num">#0002</div>
+        <div class="edition-info">
+          <div class="edition-title">AI 行业日报 · 第 0002 期</div>
+          <div class="edition-meta">技术频道归档</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+      <a class="edition-card" href="./edition-0001.html">
+        <div class="edition-num">#0001</div>
+        <div class="edition-info">
+          <div class="edition-title">AI 行业资讯 · 第 0001 期</div>
+          <div class="edition-meta">技术频道归档</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+    </section>
+  </main>
+  <footer>技术频道存档页</footer>
 </body>
 </html>

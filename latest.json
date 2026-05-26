@@ -1,27 +1,27 @@
 {
-  "edition": "0006",
-  "date": "2026年5月11日 06:16",
-  "intro": "Anthropic三大代理功能进入公测；SubQ以次二次型注意力声称千倍效率增益；MCP stdio漏洞暴露20万服务器；OpenAI扩大GPT-5.5-Cyber准入范围；Writer推出无提示事件驱动代理；DeepSeek V4在华为Ascend完成国产推理闭环。",
+  "edition": "0007",
+  "date": "2026年5月26日 09:17",
+  "intro": "过去24小时，AI 焦点从机器人世界模型、Agent评测到推理缓存优化，竞争正转向可部署性、可验证性与真实场景成本控制。",
   "tags": [
-    "智能代理",
-    "次二次型LLM",
-    "MCP安全",
-    "开源推理",
-    "中国AI芯片"
+    "世界模型",
+    "Agent评测",
+    "推理缓存",
+    "语音识别",
+    "上下文工程"
   ],
   "top3": [
     {
-      "title": "Anthropic Claude Managed Agents三大功能入公测：Dreaming记忆自优化、Outcomes评估、多代理并行编排",
-      "comment": "三功能由研究预览升级为公测版，任务成功率最高提升10个百分点，Netflix已部署多代理编排。"
+      "title": "蚂蚁灵波LingBot-VA论文被机器人顶会RSS 2026接收，让机器人边推演、边行动",
+      "comment": "把因果世界模型接入机器人控制，强调边推演边执行，适合长时序具身决策。"
     },
     {
-      "title": "Subquadratic SubQ：首个放弃Transformer二次注意力的前沿LLM，12M token效率声称增益千倍",
-      "comment": "4人团队以2900万美元出道，SSA实现近线性上下文扩展，独立验证论文仍未发布。"
+      "title": "Claude 通过率不到4%，SaaS-Bench撕碎了Computer-Use的「全自动办公」幻想",
+      "comment": "真实SaaS任务把Computer Use拉回现实，低于4%的通过率暴露规划和状态保持短板。"
     },
     {
-      "title": "MCP stdio设计缺陷波及20万AI代理服务器，Anthropic将其定性为设计特性",
-      "comment": "OX Security审计发现零过滤命令执行漏洞，产出10余个高危CVE，供应链安全风险持续发酵。"
+      "title": "DeepSeek V4还能更省！新工具缓存命中率高达99.82%，2折稳定到手",
+      "comment": "围绕前缀稳定和工具调用修复做工程优化，把长会话缓存命中推到99.82%。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/editions/edition-0006.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/editions/edition-0007.html"
 }

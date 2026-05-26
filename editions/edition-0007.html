@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 技术快讯 · 第 0007 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+
+    :root {
+      --bg: #080c14;
+      --surface: #0d1220;
+      --surface-2: #121828;
+      --border: #1e2d44;
+      --blue: #3b82f6;
+      --violet: #8b5cf6;
+      --text: #e2e8f0;
+      --muted: #8ba3bf;
+      --tag-bg: rgba(59,130,246,.12);
+      --tag-border: rgba(59,130,246,.32);
+      --shadow: 0 18px 40px rgba(0, 0, 0, .34);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Noto Serif SC", serif;
+      background:
+        radial-gradient(circle at top, rgba(59,130,246,.18), transparent 28%),
+        radial-gradient(circle at 85% 12%, rgba(139,92,246,.12), transparent 24%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+    }
+    a { color: inherit; }
+    .back-nav {
+      padding: 0.9rem 1.4rem;
+      border-bottom: 1px solid var(--border);
+      background: rgba(8, 12, 20, .82);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .back-nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-family: "JetBrains Mono", monospace;
+      font-size: .78rem;
+    }
+    .back-nav a:hover { color: #cbd5e1; }
+    header {
+      padding: 3.4rem 1.5rem 2.4rem;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(9,14,24,.95), rgba(9,14,24,.7));
+      text-align: center;
+    }
+    .eyebrow {
+      font-family: "JetBrains Mono", monospace;
+      color: var(--blue);
+      letter-spacing: .18em;
+      font-size: .72rem;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: .8rem 0 .5rem;
+      font-size: clamp(1.8rem, 4vw, 2.9rem);
+      line-height: 1.25;
+    }
+    h1 span { color: var(--blue); }
+    .meta {
+      display: flex;
+      gap: .9rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-family: "JetBrains Mono", monospace;
+      font-size: .76rem;
+    }
+    .container {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 2rem 0 4rem;
+    }
+    .intro {
+      background: linear-gradient(180deg, rgba(13,18,32,.96), rgba(13,18,32,.82));
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 1.3rem 1.4rem;
+      box-shadow: var(--shadow);
+    }
+    .intro .label,
+    .section-label,
+    .card-source,
+    .read-more,
+    .card-tag {
+      font-family: "JetBrains Mono", monospace;
+    }
+    .intro .label,
+    .section-label {
+      color: var(--blue);
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      font-size: .68rem;
+      margin-bottom: .6rem;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .55rem;
+      margin: 1rem 0 2rem;
+    }
+    .tag,
+    .card-tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      border: 1px solid var(--tag-border);
+      background: var(--tag-bg);
+      color: #93c5fd;
+      font-size: .72rem;
+      padding: .22rem .78rem;
+      text-decoration: none;
+    }
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .section-label::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+    .card {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 1rem;
+      padding: 1.35rem 1.4rem;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(13,18,32,.98), rgba(18,24,40,.9));
+      box-shadow: var(--shadow);
+      transition: transform .18s ease, border-color .18s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(99, 102, 241, .55);
+    }
+    .num {
+      color: rgba(147, 197, 253, .45);
+      font-size: 1.35rem;
+      font-family: "JetBrains Mono", monospace;
+      line-height: 1.2;
+      padding-top: .15rem;
+      user-select: none;
+    }
+    .card-source {
+      color: var(--muted);
+      font-size: .7rem;
+      letter-spacing: .05em;
+      margin-bottom: .45rem;
+      text-transform: uppercase;
+    }
+    .title {
+      margin: 0;
+      font-size: 1.08rem;
+      line-height: 1.55;
+    }
+    .title a {
+      text-decoration: none;
+      color: #f8fafc;
+    }
+    .title a:hover { color: #93c5fd; }
+    .body {
+      margin-top: .7rem;
+      color: #c7d2e3;
+      font-size: .95rem;
+    }
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .8rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+    .read-more {
+      margin-left: auto;
+      color: #bfdbfe;
+      text-decoration: none;
+      font-size: .8rem;
+      letter-spacing: .03em;
+    }
+    .read-more:hover { color: white; }
+    footer {
+      padding: 2rem 1.5rem 3rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-family: "JetBrains Mono", monospace;
+      font-size: .75rem;
+      text-align: center;
+    }
+    @media (max-width: 640px) {
+      .card {
+        grid-template-columns: 1fr;
+        gap: .65rem;
+      }
+      .num { font-size: 1rem; }
+      .read-more { margin-left: 0; }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="back-nav"><a href="../editions/">← 返回存档</a></div>
+  <header>
+    <div class="eyebrow">AI Tech Briefing</div>
+    <h1>AI 技术快讯 <span>第 0007 期</span></h1>
+    <div class="meta">
+      <span></span>
+      <span>过去 24 小时</span>
+      <span>Top 10 技术向新闻</span>
+    </div>
+  </header>
+  <main class="container">
+    <section class="intro">
+      <div class="label">Issue Intro</div>
+      <div>过去24小时，AI 焦点从机器人世界模型、Agent评测到推理缓存优化，竞争正转向可部署性、可验证性与真实场景成本控制。</div>
+    </section>
+    <div class="tags"><span class="tag">世界模型</span><span class="tag">Agent评测</span><span class="tag">推理缓存</span><span class="tag">语音识别</span><span class="tag">上下文工程</span></div>
+    <div class="section-label">Top Stories</div>
+    <section class="grid">
+      <article class="card">
+        <div class="num">01</div>
+        <div>
+          <div class="card-source">量子位 · 2026-05-25 14:26</div>
+          <h2 class="title"><a href="https://www.qbitai.com/2026/05/424581.html" target="_blank" rel="noopener noreferrer">蚂蚁灵波LingBot-VA论文被机器人顶会RSS 2026接收，让机器人边推演、边行动</a></h2>
+          <div class="body">LingBot-VA把因果世界模型接到机器人控制环里，核心是让策略在执行前先做状态推演，再把预测结果反馈到动作规划。它对应的论文题目是 Causal World Modeling for Robot Control，技术路线说明具身智能正在从单步模仿转向长时序决策闭环。</div>
+          <div class="footer">
+            <span class="card-tag">模型前沿</span>
+            <a class="read-more" href="https://www.qbitai.com/2026/05/424581.html" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="num">02</div>
+        <div>
+          <div class="card-source">量子位 · 2026-05-25 11:29</div>
+          <h2 class="title"><a href="https://www.qbitai.com/2026/05/424277.html" target="_blank" rel="noopener noreferrer">Claude 通过率不到4%，SaaS-Bench撕碎了Computer-Use的「全自动办公」幻想</a></h2>
+          <div class="body">SaaS-Bench把 Agent 放进真实 SaaS 界面里做跨页面、多状态、强约束任务，结果是当前 Computer-Use 系统在生产级流程上远未达标。Claude 在该基准上的通过率不到 4%，问题集中在长期状态保持、规划回退和工具调用稳定性，而不是单步点击能力。</div>
+          <div class="footer">
+            <span class="card-tag">软件开发</span>
+            <a class="read-more" href="https://www.qbitai.com/2026/05/424277.html" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="num">03</div>
+        <div>
+          <div class="card-source">量子位 · 2026-05-25 12:40</div>
+          <h2 class="title"><a href="https://www.qbitai.com/2026/05/424552.html" target="_blank" rel="noopener noreferrer">DeepSeek V4还能更省！新工具缓存命中率高达99.82%，2折稳定到手</a></h2>
+          <div class="body">Reasonix围绕 DeepSeek V4 的前缀缓存机制做了工程化适配，通过固定旧上下文、仅追加新消息，把缓存命中率推到 99.82%。它还加入工具调用 JSON 修复、失败后自动升配和轮次压缩，本质上是在用 harness 设计换更低推理成本和更稳的 agent 执行。</div>
+          <div class="footer">
+            <span class="card-tag">软件开发</span>
+            <a class="read-more" href="https://www.qbitai.com/2026/05/424552.html" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="num">04</div>
+        <div>
+          <div class="card-source">Hugging Face Blog · 2026-05-25</div>
+          <h2 class="title"><a href="https://huggingface.co/blog/norwooodsystems/offline-asr-benchmark-on-call-center-audio" target="_blank" rel="noopener noreferrer">Offline ASR Benchmark on Call-Center Audio</a></h2>
+          <div class="body">这份离线语音识别评测直接用呼叫中心音频做对比，观察 Whisper、Parakeet 和 Conformer 系列在真实客服噪声场景里的 WER 表现。结论很工程化：Whisper-medium 仍是性价比选项，Whisper-large-v3 稳定性更强，而 Distil-Whisper-large-3.5 在部署效率上更有吸引力。</div>
+          <div class="footer">
+            <span class="card-tag">开源生态</span>
+            <a class="read-more" href="https://huggingface.co/blog/norwooodsystems/offline-asr-benchmark-on-call-center-audio" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="num">05</div>
+        <div>
+          <div class="card-source">Hugging Face Blog · 2026-05-25</div>
+          <h2 class="title"><a href="https://huggingface.co/blog/agent-glossary" target="_blank" rel="noopener noreferrer">Harness, Scaffold, and the AI Agent Terms Worth Getting Right</a></h2>
+          <div class="body">Hugging Face 把 agent 体系里最容易混淆的 scaffold、harness、policy、skills、sub-agents 等概念拆开重新定义，等于在补一份工程词汇表。对开发者更重要的信号是，业界讨论重点已经从单模型能力转向系统分层，后续框架、评测和训练接口会更强调组件边界。</div>
+          <div class="footer">
+            <span class="card-tag">软件开发</span>
+            <a class="read-more" href="https://huggingface.co/blog/agent-glossary" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="num">06</div>
+        <div>
+          <div class="card-source">OpenAI Blog · 2026-05-25</div>
+          <h2 class="title"><a href="https://openai.com/index/grupo-folha-grupo-uol-partnership/" target="_blank" rel="noopener noreferrer">OpenAI, Grupo Folha, and Grupo UOL announce strategic content partnership</a></h2>
+          <div class="body">这次合作本身不是模型发布，但暴露了 ChatGPT 内容接入层的扩张速度：OpenAI称 ChatGPT 周活用户已超过 9 亿。对工程侧更关键的是，产品继续强化摘要、归因和原文链接的内容编排链路，说明检索、授权内容源和展示层联动正在成为生成式搜索的基础设施。</div>
+          <div class="footer">
+            <span class="card-tag">其他</span>
+            <a class="read-more" href="https://openai.com/index/grupo-folha-grupo-uol-partnership/" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="num">07</div>
+        <div>
+          <div class="card-source">VentureBeat · 2026-05-25 12:30 PT</div>
+          <h2 class="title"><a href="https://venturebeat.com/technology/why-prompt-debt-retrieval-debt-and-evaluation-debt-are-quietly-reshaping-enterprise-ai-risk" target="_blank" rel="noopener noreferrer">Why prompt debt, retrieval debt, and evaluation debt are quietly reshaping enterprise AI risk</a></h2>
+          <div class="body">VentureBeat把企业 AI 的隐性技术债拆成 prompt debt、retrieval debt 和 evaluation debt 三层，指出 RAG 和 agent 系统的真实风险早就不是单点模型精度。这个框架对工程团队的价值在于，它把提示词漂移、检索质量退化和评测缺位都纳入了同一套可运维问题域。</div>
+          <div class="footer">
+            <span class="card-tag">软件开发</span>
+            <a class="read-more" href="https://venturebeat.com/technology/why-prompt-debt-retrieval-debt-and-evaluation-debt-are-quietly-reshaping-enterprise-ai-risk" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="num">08</div>
+        <div>
+          <div class="card-source">量子位 · 2026-05-25 10:28</div>
+          <h2 class="title"><a href="https://www.qbitai.com/2026/05/423455.html" target="_blank" rel="noopener noreferrer">华为具身大脑一号位创业，用认知科学造世界模型，获亿元级融资</a></h2>
+          <div class="body">这条新闻的技术看点不在融资额，而在团队试图用认知科学视角重建世界模型训练路径，把感知、记忆和行动抽象到统一建模里。若这条路线跑通，国内具身模型竞争会进一步从单任务控制器转向通用物理环境建模。</div>
+          <div class="footer">
+            <span class="card-tag">中国动态</span>
+            <a class="read-more" href="https://www.qbitai.com/2026/05/423455.html" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="num">09</div>
+        <div>
+          <div class="card-source">量子位 · 2026-05-25 14:56</div>
+          <h2 class="title"><a href="https://www.qbitai.com/2026/05/424584.html" target="_blank" rel="noopener noreferrer">VLA和世界模型都不是终局，会有物理世界独有的模型 | 蚂蚁灵波沈宇军@AIGC2026</a></h2>
+          <div class="body">沈宇军的判断值得关注：VLA 和世界模型都可能只是过渡层，真正的具身系统也许需要面向物理世界单独设计模型形态。这个观点对应的工程含义是，机器人训练数据、时空表征和奖励设计可能无法继续照搬互联网语料时代的范式。</div>
+          <div class="footer">
+            <span class="card-tag">模型前沿</span>
+            <a class="read-more" href="https://www.qbitai.com/2026/05/424584.html" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="num">10</div>
+        <div>
+          <div class="card-source">量子位 · 2026-05-25 17:37</div>
+          <h2 class="title"><a href="https://www.qbitai.com/2026/05/424794.html" target="_blank" rel="noopener noreferrer">京东JoyInside戴文军：AI的终极形态不是聊天，是融入你家每一件物品丨AIGC2026</a></h2>
+          <div class="body">京东给出的目标是 2026 年底把自家大模型植入千万级终端，这比单一 App 落地更接近端云协同的系统工程。对开发者来说，难点不在聊天能力，而在设备侧推理预算、多端状态同步和供应链场景下的任务编排。</div>
+          <div class="footer">
+            <span class="card-tag">中国动态</span>
+            <a class="read-more" href="https://www.qbitai.com/2026/05/424794.html" target="_blank" rel="noopener noreferrer">阅读原文 →</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>本页内容面向软件工程师与技术研究者，聚焦模型、工具链与可部署性变化。</footer>
+</body>
+</html>
