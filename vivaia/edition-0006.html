@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VIVAIA 品牌趋势 · 第0006期 | VIVAIA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #080c14;
+    --surface: #17130d;
+    --surface2: #221b10;
+    --border: #463722;
+    --accent: #804c1a;
+    --accent-soft: #d89a5e;
+    --accent-dim: rgba(216, 154, 94, 0.18);
+    --accent-glow: rgba(128, 76, 26, 0.32);
+    --text: #f5efe4;
+    --text-muted: #d2c2aa;
+    --text-dim: #b39f82;
+    --tag-bg: #221a10;
+    --competitor-bg: #1e150b;
+    --competitor-border: #594027;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(circle at top, rgba(128,76,26,0.16), transparent 36%), var(--bg); color: var(--text); font-family: 'Noto Serif SC', serif; line-height: 1.75; min-height: 100vh; }
+  a { color: var(--accent-soft); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .container { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+  .site-header { padding: 24px 0 20px; margin-bottom: 44px; border-bottom: 1px solid var(--border); }
+  .back-link { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--text-muted); display: inline-flex; margin-bottom: 20px; }
+  .back-link:hover { color: var(--accent-soft); text-decoration: none; }
+  .header-meta { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-muted); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px; }
+  .header-title { font-size: clamp(28px, 5vw, 42px); font-weight: 700; line-height: 1.2; margin-bottom: 8px; }
+  .header-title span { color: var(--accent-soft); }
+  .header-subtitle { font-family: 'JetBrains Mono', monospace; font-size: 14px; color: var(--text-muted); margin-bottom: 20px; }
+  .intro-box { background: var(--accent-dim); border-left: 3px solid var(--accent-soft); border-radius: 0 8px 8px 0; padding: 14px 18px; font-size: 15px; line-height: 1.85; }
+  .tags-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .tag { background: var(--tag-bg); border: 1px solid var(--border); border-radius: 20px; padding: 4px 12px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-muted); }
+  .tag.accent { background: var(--accent-dim); border-color: var(--accent); color: var(--accent-soft); }
+  .section-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent-soft); margin-bottom: 24px; display: flex; align-items: center; gap: 10px; }
+  .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+  .cards-grid { display: flex; flex-direction: column; gap: 24px; margin-bottom: 56px; }
+  .card { background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent 28%), var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 24px 28px; transition: border-color .2s, box-shadow .2s; }
+  .card:hover { border-color: var(--accent-soft); box-shadow: 0 0 24px var(--accent-glow); }
+  .card-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+  .card-cat { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .08em; color: var(--text-muted); background: var(--tag-bg); border: 1px solid var(--border); border-radius: 6px; padding: 4px 9px; white-space: nowrap; }
+  .card-title { font-size: 21px; font-weight: 700; line-height: 1.45; margin-bottom: 10px; }
+  .card-title a { color: var(--text); }
+  .card-title a:hover { color: var(--accent-soft); text-decoration: none; }
+  .card-meta { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-dim); margin-bottom: 14px; }
+  .comment-block + .comment-block { margin-top: 12px; }
+  .comment-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--accent-soft); margin-bottom: 4px; }
+  .comment-text { font-size: 14px; color: var(--text-muted); line-height: 1.9; }
+  .card-footer { display: flex; justify-content: flex-end; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); }
+  .read-btn { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #f8dfc3; background: rgba(216,154,94,0.24); border: 1px solid #c9884e; border-radius: 6px; padding: 6px 14px; font-weight: 500; }
+  .read-btn:hover { background: var(--accent); color: #fff; text-decoration: none; }
+  .competitor-section { background: var(--competitor-bg); border: 1px solid var(--competitor-border); border-radius: 14px; padding: 28px; margin-bottom: 50px; }
+  .competitor-section .section-label::after { background: var(--competitor-border); }
+  .competitor-intro { font-size: 14px; color: var(--text-muted); line-height: 1.85; margin-bottom: 22px; padding-bottom: 18px; border-bottom: 1px dashed var(--competitor-border); }
+  .competitor-list { display: flex; flex-direction: column; gap: 18px; }
+  .competitor-item { display: grid; grid-template-columns: 110px 1fr; gap: 16px; align-items: start; }
+  .competitor-brand { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d2a06d; background: rgba(210,160,109,0.08); border: 1px solid var(--competitor-border); border-radius: 6px; padding: 6px 10px; text-align: center; }
+  .competitor-body { font-size: 14px; line-height: 1.85; }
+  .move { margin-bottom: 4px; }
+  .respond { color: var(--text-muted); font-size: 13.5px; }
+  .respond::before { content: '→ '; color: var(--accent-soft); font-weight: 600; }
+  .site-footer { border-top: 1px solid var(--border); padding: 24px 0; text-align: center; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-dim); }
+  @media (max-width: 640px) {
+    .card { padding: 20px; }
+    .competitor-item { grid-template-columns: 1fr; gap: 8px; }
+    .competitor-brand { justify-self: start; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="site-header">
+    <a class="back-link" href="../vivaia/">← 返回存档</a>
+    <div class="header-meta">Vol. 0006 · 2026年5月26日 · VIVAIA Trend Report</div>
+    <h1 class="header-title">VIVAIA <span>品牌趋势</span></h1>
+    <div class="header-subtitle">Global Fashion &amp; Sustainability · Powered by VIVAIA</div>
+    <div class="intro-box">欧美鞋履进入轻盈混合周期，中文平台强调舒适松弛；VIVAIA 可围绕芭蕾、乐福、宽脚通勤和可持续信任做选品与活动。</div>
+    <div class="tags-row">
+      <span class="tag accent">轻盈芭蕾鞋</span>
+      <span class="tag">软乐福通勤</span>
+      <span class="tag">宽脚舒适</span>
+      <span class="tag">可持续信任</span>
+      <span class="tag">松弛穿搭</span>
+    </div>
+  </header>
+  <div class="section-label">Top 10 全球女鞋品牌趋势</div>
+  <div class="cards-grid">
+    <article class="card">
+      <div class="card-header"><span class="card-cat">鞋履趋势</span></div>
+      <h2 class="card-title"><a href="https://www.whowhatwear.com/fashion/celebrity-style/ballet-flats-skirt-outfit-daisy-edgar-jones-2026" target="_blank">芭蕾平底继续吃透裙装场景，舒适但有女性化轮廓</a></h2>
+      <div class="card-meta">Who What Wear · 发布时间 2026-05-23</div>
+      <div class="comment-block">
+        <div class="comment-label">【趋势是什么】</div>
+        <div class="comment-text">Who What Wear 以 Daisy Edgar-Jones 的裙装造型切入，强调芭蕾平底在 2026 夏季仍是最容易把裙装穿得精致的鞋型。信号不是单纯 balletcore，而是消费者希望在婚礼、花园派对、通勤后聚会等场景里，用低跟或平底完成“有礼貌的打扮”。</div>
+      </div>
+      <div class="comment-block">
+        <div class="comment-label">【商业机会】</div>
+        <div class="comment-text">VIVAIA 可把芭蕾鞋从日常舒适款升级为“裙装搭子”专题，重点推裸粉、黑色、奶油白和浅金属色。商品运营可按半裙、连衣裙、阔腿裤三种下装建立搭配入口；活动运营可做 summer occasion landing page，把舒适鞋卖进轻正式场景。</div>
+      </div>
+      <div class="card-footer"><a class="read-btn" href="https://www.whowhatwear.com/fashion/celebrity-style/ballet-flats-skirt-outfit-daisy-edgar-jones-2026" target="_blank">查看原文 →</a></div>
+    </article>
+    <article class="card">
+      <div class="card-header"><span class="card-cat">鞋履趋势</span></div>
+      <h2 class="card-title"><a href="https://www.whowhatwear.com/fashion/celebrity-style/bruna-marquezine-shawn-mendes-knee-length-skirt-loafers-date-outfit" target="_blank">经典乐福鞋回到膝下裙和约会穿搭，替代运动鞋做轻正式</a></h2>
+      <div class="card-meta">Who What Wear · 发布时间 2026-05-20</div>
+      <div class="comment-block">
+        <div class="comment-label">【趋势是什么】</div>
+        <div class="comment-text">Who What Wear 观察到 Bruna Marquezine 用经典乐福搭配膝下裙，编辑直接把它称为比芭蕾鞋更适合该裙长的鞋型。乐福鞋正在从办公室鞋回到生活方式鞋，核心流行点是软、薄、轻，不再是前几年夸张厚底的学院风。</div>
+      </div>
+      <div class="comment-block">
+        <div class="comment-label">【商业机会】</div>
+        <div class="comment-text">VIVAIA 可把乐福鞋包装成“after-work flat”，主打上班、晚餐、周末展览都能穿。选品上优先补齐柔软鞋面、低调金属扣、深棕与海军蓝；活动上可做“5pm之后不用换鞋”主题，提升通勤客的复购理由。</div>
+      </div>
+      <div class="card-footer"><a class="read-btn" href="https://www.whowhatwear.com/fashion/celebrity-style/bruna-marquezine-shawn-mendes-knee-length-skirt-loafers-date-outfit" target="_blank">查看原文 →</a></div>
+    </article>
+    <article class="card">
+      <div class="card-header"><span class="card-cat">选品灵感</span></div>
+      <h2 class="card-title"><a href="https://www.whowhatwear.com/fashion/trends/french-girl-capri-leggings-ballet-flat-trend-2026" target="_blank">Capri leggings + 芭蕾鞋的法式组合，带动轻量鞋露出需求</a></h2>
+      <div class="card-meta">Who What Wear · 发布时间 2026-05-21</div>
+      <div class="comment-block">
+        <div class="comment-label">【趋势是什么】</div>
+        <div class="comment-text">Who What Wear 把 French girl capri leggings 与芭蕾平底放在一起，说明鞋履正在成为夏季下装比例的关键部件。Capri、九分裤、短裤都会让鞋面完全露出，因此消费者会更关注鞋口线条、脚背修饰和颜色是否显腿长。</div>
+      </div>
+      <div class="comment-block">
+        <div class="comment-label">【商业机会】</div>
+        <div class="comment-text">VIVAIA 可做“显脚背、显腿长”的鞋型筛选页，突出浅口、V 口、尖圆头和低对比色。商品图建议增加九分裤与 capri 搭配，而不只是裙装图；活动可做短视频挑战，邀请用户展示同一双鞋搭配三种裤长。</div>
+      </div>
+      <div class="card-footer"><a class="read-btn" href="https://www.whowhatwear.com/fashion/trends/french-girl-capri-leggings-ballet-flat-trend-2026" target="_blank">查看原文 →</a></div>
+    </article>
+    <article class="card">
+      <div class="card-header"><span class="card-cat">鞋履趋势</span></div>
+      <h2 class="card-title"><a href="https://www.marieclaire.com/fashion/celebrity-style/taylor-swift-hybrid-ballet-shoe-trend-little-black-dress-dior/" target="_blank">Hybrid ballet shoe 被明星街拍放大，芭蕾与运动功能继续融合</a></h2>
+      <div class="card-meta">Marie Claire · 发布时间 2026-05-24</div>
+      <div class="comment-block">
+        <div class="comment-label">【趋势是什么】</div>
+        <div class="comment-text">Marie Claire 报道 Taylor Swift 用 Dior 小黑裙搭配 hybrid ballet shoe，说明芭蕾鞋的下一步不是更甜，而是和运动鞋、玛丽珍、slingback 等结构混合。消费者要的是轻盈外观加更稳的脚感，这非常贴近 35-55 岁女性对“好看但别累”的底层需求。</div>
+      </div>
+      <div class="comment-block">
+        <div class="comment-label">【商业机会】</div>
+        <div class="comment-text">VIVAIA 可强化 sneakerina、带弹力绑带芭蕾鞋、轻底玛丽珍的组合陈列，命名为 Hybrid Comfort Flats。活动内容不要只讲潮流名词，应拆成防滑底、包脚感、轻量鞋底三点，让成熟客群理解为什么值得尝试新鞋型。</div>
+      </div>
+      <div class="card-footer"><a class="read-btn" href="https://www.marieclaire.com/fashion/celebrity-style/taylor-swift-hybrid-ballet-shoe-trend-little-black-dress-dior/" target="_blank">查看原文 →</a></div>
+    </article>
+    <article class="card">
+      <div class="card-header"><span class="card-cat">选品灵感</span></div>
+      <h2 class="card-title"><a href="https://www.whowhatwear.com/fashion/trends/princess-shoe-trend-2026" target="_blank">Princess shoes 带回蝴蝶结、水钻和缎面，精致细节可做小面积升级</a></h2>
+      <div class="card-meta">Who What Wear · 发布时间 2026-05-21</div>
+      <div class="comment-block">
+        <div class="comment-label">【趋势是什么】</div>
+        <div class="comment-text">Who What Wear 将“princess shoes”定义为 2026 夏季漂亮鞋趋势，核心元素包括水晶、蝴蝶结、缎面和微闪细节。它不是夸张礼服鞋，而是让最简单的衣服看起来更完整的点睛鞋，适合婚礼季、度假晚餐和夏季派对。</div>
+      </div>
+      <div class="comment-block">
+        <div class="comment-label">【商业机会】</div>
+        <div class="comment-text">VIVAIA 可在基础芭蕾鞋上做可拆卸蝴蝶结、低饱和亮片或缎面限定，控制甜度，避免偏年轻化。活动可推“one detail makes it dressed up”，把舒适平底鞋卖进礼物、婚礼宾客和旅行晚餐场景。</div>
+      </div>
+      <div class="card-footer"><a class="read-btn" href="https://www.whowhatwear.com/fashion/trends/princess-shoe-trend-2026" target="_blank">查看原文 →</a></div>
+    </article>
+    <article class="card">
+      <div class="card-header"><span class="card-cat">社媒热点</span></div>
+      <h2 class="card-title"><a href="https://www.whowhatwear.com/fashion/trends/dated-summer-shoe-trends-2026" target="_blank">“过时”夏季鞋被重新带火，复古舒适款进入二次流行</a></h2>
+      <div class="card-meta">Who What Wear · 发布时间 2026-05-20</div>
+      <div class="comment-block">
+        <div class="comment-label">【趋势是什么】</div>
+        <div class="comment-text">Who What Wear 盘点 6 个被时尚圈带回来的“过时”夏季鞋趋势，包括更实穿、更松弛的复古鞋型。这个信号说明消费者对全新奇观的兴趣下降，转向熟悉鞋型的新穿法：看起来不费力，但比普通拖鞋或运动鞋更有风格。</div>
+      </div>
+      <div class="comment-block">
+        <div class="comment-label">【商业机会】</div>
+        <div class="comment-text">VIVAIA 可挖掘旧款中的方头、浅口、编织、低跟元素，做“back in rotation”返场活动。运营上适合把老客评价、穿着年限、旅行照片放入页面，制造“这双鞋不是新噱头，而是衣橱常青款”的购买理由。</div>
+      </div>
+      <div class="card-footer"><a class="read-btn" href="https://www.whowhatwear.com/fashion/trends/dated-summer-shoe-trends-2026" target="_blank">查看原文 →</a></div>
+    </article>
+    <article class="card">
+      <div class="card-header"><span class="card-cat">可持续时尚</span></div>
+      <h2 class="card-title"><a href="https://goodonyou.eco/good-offers-wrap/" target="_blank">Good On You 持续更新可持续品牌优惠，消费者要环保也要价格理由</a></h2>
+      <div class="card-meta">Good On You · 发布时间 2026-05-13</div>
+      <div class="comment-block">
+        <div class="comment-label">【趋势是什么】</div>
+        <div class="comment-text">Good On You 5 月继续以每周优惠形式推荐高评级可持续品牌，强调消费者既想支持更负责任的品牌，也需要明确的价格入口。可持续不再只是理念沟通，而是在折扣、评级、材料证据和购买便利之间共同发生。</div>
+      </div>
+      <div class="comment-block">
+        <div class="comment-label">【商业机会】</div>
+        <div class="comment-text">VIVAIA 可把可持续内容从品牌宣言改成“可持续省心购买指南”：材料来源、可清洗、耐穿、包装、旧鞋处理分别给证据。活动上可设计限时 Earth-friendly picks，而不是全场大促，用清晰评分式内容降低消费者对环保溢价的犹豫。</div>
+      </div>
+      <div class="card-footer"><a class="read-btn" href="https://goodonyou.eco/good-offers-wrap/" target="_blank">查看原文 →</a></div>
+    </article>
+    <article class="card">
+      <div class="card-header"><span class="card-cat">可持续时尚</span></div>
+      <h2 class="card-title"><a href="https://www.glossy.co/fashion/everlanes-sale-to-shein-shows-the-limits-of-sustainability-led-fashion-brands/" target="_blank">Everlane 出售传闻引发讨论，可持续 DTC 需要证明商业韧性</a></h2>
+      <div class="card-meta">Glossy · 发布时间 2026-05-18</div>
+      <div class="comment-block">
+        <div class="comment-label">【趋势是什么】</div>
+        <div class="comment-text">Glossy 以 Everlane 出售给 Shein 的报道切入，讨论 sustainability-led fashion brands 面临的增长、债务和消费者信任压力，并提到 Allbirds 也经历过从可持续明星到承压资产的转变。市场正在提醒品牌：环保叙事必须和产品力、价格带、渠道效率一起成立。</div>
+      </div>
+      <div class="comment-block">
+        <div class="comment-label">【商业机会】</div>
+        <div class="comment-text">VIVAIA 不能只讲“环保材料”，要把可持续转译成消费者能感知的耐穿、可洗、轻便和长期成本。活动运营可做“cost per wear”计算器，商品运营则建立经典款长生命周期专区，让可持续成为购买决策里的理性证据。</div>
+      </div>
+      <div class="card-footer"><a class="read-btn" href="https://www.glossy.co/fashion/everlanes-sale-to-shein-shows-the-limits-of-sustainability-led-fashion-brands/" target="_blank">查看原文 →</a></div>
+    </article>
+    <article class="card">
+      <div class="card-header"><span class="card-cat">社媒热点</span></div>
+      <h2 class="card-title"><a href="https://36kr.com/p/3816382849352833" target="_blank">36氪：勃肯鞋和运动半拖流行，本质是“舒适松弛”成为鞋履新商机</a></h2>
+      <div class="card-meta">36氪 · 发布时间 2026-05-20</div>
+      <div class="comment-block">
+        <div class="comment-label">【趋势是什么】</div>
+        <div class="comment-text">36氪观察到勃肯鞋在小红书相关笔记高达 109 万篇、话题浏览量突破 10 亿，并把 MM6 x Salomon XT-4 Mule、Adidas adiFOM、HOKA 运动拖鞋等归为“泛拖鞋品类”。核心不是丑鞋本身，而是消费者厌倦为美受苦，转向足弓支撑、易穿脱和松弛老钱风。</div>
+      </div>
+      <div class="comment-block">
+        <div class="comment-label">【商业机会】</div>
+        <div class="comment-text">VIVAIA 可把“舒适松弛”用于夏季活动主轴，重点推穆勒、针织平底、低后跟鞋和足弓支撑款。中文平台素材可反哺海外站，用“garden-to-office”“errand-to-dinner”等场景替代纯功能卖点，降低平底鞋与拖鞋之间的边界。</div>
+      </div>
+      <div class="card-footer"><a class="read-btn" href="https://36kr.com/p/3816382849352833" target="_blank">查看原文 →</a></div>
+    </article>
+    <article class="card">
+      <div class="card-header"><span class="card-cat">消费洞察</span></div>
+      <h2 class="card-title"><a href="https://www.huxiu.com/article/4861080.html" target="_blank">虎嗅：鞋履消费从社交货币转向日常使用，审美质价比变强</a></h2>
+      <div class="card-meta">虎嗅 · 发布时间 2026-05-25</div>
+      <div class="comment-block">
+        <div class="comment-label">【趋势是什么】</div>
+        <div class="comment-text">虎嗅在国产潮鞋观察中指出，穿鞋动机正在从“社交货币”转向“日常使用”，消费者更偏爱低调舒适、经典格调和可长久陪伴的耐看单品。文章还提到轻薄灵动的复古薄底款回到全球鞋圈中心，厚重夸张的潮鞋吸引力下降。</div>
+      </div>
+      <div class="comment-block">
+        <div class="comment-label">【商业机会】</div>
+        <div class="comment-text">VIVAIA 适合减少过度潮流化表达，把“审美质价比”做成站内内容语言：一双鞋能穿多久、能搭多少衣服、走多远不累。选品上强化薄底复古、软底通勤、宽脚友好三个系列，活动上可做“买给未来三年的自己”主题，击中成熟女性的理性悦己。</div>
+      </div>
+      <div class="card-footer"><a class="read-btn" href="https://www.huxiu.com/article/4861080.html" target="_blank">查看原文 →</a></div>
+    </article>
+  </div>
+  <section class="competitor-section">
+    <div class="section-label">竞品动态与 VIVAIA 应对</div>
+    <div class="competitor-intro">近期竞品动作集中在混合鞋型、可洗环保材料、门店鞋履陈列和可持续商业韧性。VIVAIA 的优势应落在“舒适可感知 + 价格更友好 + 成熟女性场景更清晰”。</div>
+    <div class="competitor-list">
+      <div class="competitor-item">
+        <div class="competitor-brand">Rothy&#x27;s</div>
+        <div class="competitor-body">
+          <div class="move">官网近期继续突出 The Cruiser Collection、可洗鞋履和 recycled materials，新品入口集中在 women new arrivals。</div>
+          <div class="respond">VIVAIA 可对标其“可洗 + 回收材料”心智，但要进一步突出宽脚、足弓支撑和 35-55 岁真实穿着场景，避免只卷环保标签。</div>
+        </div>
+      </div>
+      <div class="competitor-item">
+        <div class="competitor-brand">Tory Burch</div>
+        <div class="competitor-body">
+          <div class="move">Ballet Loafer 以“芭蕾鞋柔韧性 + 乐福鞋轮廓”为卖点，Light Jade 等多色可选，并强调 performance-level comfort 与 LWG 认证皮革。</div>
+          <div class="respond">VIVAIA 可跟进“ballet loafer”混合词，把针织可洗、轻底、防磨脚做成差异点，价格带保持在更易转化的 99-199 美元。</div>
+        </div>
+      </div>
+      <div class="competitor-item">
+        <div class="competitor-brand">Hermès</div>
+        <div class="competitor-body">
+          <div class="move">Hermès 5 月 21 日发布柏林 Kurfürstendamm 翻新店消息，门店动线将 shoes 放在入口右侧，强化鞋履作为高端生活方式入口。</div>
+          <div class="respond">VIVAIA 可借鉴其“鞋履先被看见”的陈列逻辑，在首页和活动页首屏提高鞋履系列入口，不让可持续内容压过商品视觉。</div>
+        </div>
+      </div>
+      <div class="competitor-item">
+        <div class="competitor-brand">Allbirds</div>
+        <div class="competitor-body">
+          <div class="move">Glossy 在 Everlane 可持续 DTC 困境报道中提到 Allbirds 的相似路径，说明环保明星品牌若缺少持续产品热度会被资本和渠道压力反噬。</div>
+          <div class="respond">VIVAIA 应把可持续叙事绑定爆款鞋型，而不是单独做品牌理念；每次环保传播都要同时给出一款明确可买、可穿、可复购的英雄单品。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">VIVAIA Brand Trend · Edition 0006</footer>
+</div>
+</body>
+</html>
