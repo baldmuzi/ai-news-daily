@@ -12,21 +12,21 @@
     *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
     body { background:radial-gradient(circle at top, rgba(16,185,129,0.12), transparent 30%), var(--bg); color:var(--text); font-family:'Noto Serif SC', serif; line-height:1.8; min-height:100vh; padding:0 0 4rem; }
     header { background:linear-gradient(180deg, #0a1220 0%, var(--bg) 100%); border-bottom:1px solid var(--border); padding:3rem 1.5rem 2rem; text-align:center; position:relative; }
-    .back-link { position:absolute; top:1.2rem; left:1.5rem; font-family:'JetBrains Mono', monospace; font-size:0.7rem; color:var(--accent); text-decoration:none; letter-spacing:0.05em; border:1px solid rgba(16,185,129,0.3); border-radius:4px; padding:0.25em 0.7em; }
+    .back-link { position:absolute; top:1.2rem; left:1.5rem; font-family:'JetBrains Mono', monospace; font-size:0.7rem; color:var(--accent); text-decoration:none; letter-spacing:0.05em; border:1px solid rgba(16,185,129,0.3); border-radius:999px; padding:0.3em 0.8em; }
     .back-link:hover { background:var(--tag-bg); }
-    .header-badge { display:inline-block; font-family:'JetBrains Mono', monospace; font-size:0.65rem; color:var(--accent); letter-spacing:0.12em; text-transform:uppercase; border:1px solid rgba(16,185,129,0.35); border-radius:3px; padding:0.2em 0.8em; margin-bottom:1rem; }
+    .header-badge { display:inline-block; font-family:'JetBrains Mono', monospace; font-size:0.65rem; color:var(--accent); letter-spacing:0.12em; text-transform:uppercase; border:1px solid rgba(16,185,129,0.35); border-radius:999px; padding:0.2em 0.8em; margin-bottom:1rem; }
     h1 { font-size:clamp(1.5rem,4vw,2.2rem); margin-bottom:0.4rem; }
     .subtitle { font-size:0.85rem; color:var(--text-muted); letter-spacing:0.06em; }
     .container { max-width:860px; margin:0 auto; padding:2.5rem 1.2rem 0; }
     .archive-grid { display:grid; gap:0.85rem; }
-    .archive-item { background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:1.1rem 1.4rem; display:flex; align-items:center; gap:1.2rem; text-decoration:none; color:var(--text); transition:border-color 0.2s, box-shadow 0.2s, background 0.2s; }
+    .archive-item { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.1rem 1.4rem; display:flex; align-items:center; gap:1.2rem; text-decoration:none; color:var(--text); transition:border-color 0.2s, box-shadow 0.2s, background 0.2s; }
     .archive-item:hover { border-color:rgba(16,185,129,0.5); box-shadow:0 0 20px rgba(16,185,129,0.07); background:var(--surface2); }
-    .archive-item.latest { border-color:rgba(16,185,129,0.5); background:linear-gradient(135deg, #0f1e2e 0%, var(--surface) 100%); box-shadow:0 0 24px rgba(16,185,129,0.10); }
+    .archive-item.latest { border-color:rgba(16,185,129,0.55); background:linear-gradient(135deg, #0f1e2e 0%, var(--surface) 100%); box-shadow:0 0 24px rgba(16,185,129,0.10); }
     .edition-num { font-family:'JetBrains Mono', monospace; font-size:1rem; color:var(--accent); font-weight:500; min-width:3.5rem; flex-shrink:0; }
     .edition-info { flex:1; min-width:0; }
-    .edition-title { font-size:0.92rem; font-weight:600; line-height:1.4; }
+    .edition-title { font-size:0.92rem; font-weight:600; line-height:1.5; }
     .edition-meta { font-family:'JetBrains Mono', monospace; font-size:0.62rem; color:var(--text-dim); margin-top:0.2rem; letter-spacing:0.04em; }
-    .latest-badge { font-family:'JetBrains Mono', monospace; font-size:0.6rem; color:var(--bg); background:var(--accent); border-radius:3px; padding:0.15em 0.6em; letter-spacing:0.06em; text-transform:uppercase; flex-shrink:0; }
+    .latest-badge { font-family:'JetBrains Mono', monospace; font-size:0.6rem; color:var(--bg); background:var(--accent); border-radius:999px; padding:0.15em 0.6em; letter-spacing:0.06em; text-transform:uppercase; flex-shrink:0; }
     .arrow { font-family:'JetBrains Mono', monospace; font-size:0.75rem; color:var(--text-dim); flex-shrink:0; }
     footer { margin-top:4rem; padding:2rem 1.5rem; border-top:1px solid var(--border); text-align:center; font-family:'JetBrains Mono', monospace; font-size:0.68rem; color:var(--text-dim); letter-spacing:0.06em; }
     @media (max-width:640px) { header { padding:4rem 1rem 2rem; } .back-link { left:1rem; } .archive-item { padding:1rem; gap:0.8rem; } .edition-num { min-width:3rem; } }
@@ -41,19 +41,28 @@
 </header>
 <div class="container">
   <div class="archive-grid">
-    <a class="archive-item latest" href="edition-0018.html">
+    <a class="archive-item latest" href="edition-0019.html">
+      <span class="edition-num">#0019</span>
+      <div class="edition-info">
+        <div class="edition-title">AI代理购物、营销数据分析与绿色供应链工具正在同时改写出海鞋类电商的增长与合规节奏。</div>
+        <div class="edition-meta">2026年5月27日</div>
+      </div>
+      <span class="latest-badge">最新</span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="archive-item" href="edition-0018.html">
       <span class="edition-num">#0018</span>
       <div class="edition-info">
         <div class="edition-title">AI购物入口正从搜索页转向智能体，出海鞋类品牌需同时补齐产品数据、跨境履约与可持续追溯能力。</div>
         <div class="edition-meta">2026年5月26日</div>
       </div>
-      <span class="latest-badge">最新</span>
+      
       <span class="arrow">→</span>
     </a>
     <a class="archive-item" href="edition-0017.html">
       <span class="edition-num">#0017</span>
       <div class="edition-info">
-        <div class="edition-title">2026年AI流量爆发重塑跨境零售格局，出海环保鞋类品牌须同步应对AI可见性争夺、欧盟数字产品护照合规与代理购物三重压力</div>
+        <div class="edition-title">2026年AI流量爆发重塑跨境零售格局，出海环保鞋类品牌须同步应对AI可见性争夺、欧盟数字产品护照合规与代理购物三重压力，把握AI代理商务窗口期实现全球增长。</div>
         <div class="edition-meta">2026年5月25日</div>
       </div>
       
@@ -62,7 +71,7 @@
     <a class="archive-item" href="edition-0016.html">
       <span class="edition-num">#0016</span>
       <div class="edition-info">
-        <div class="edition-title">2026年AI代理购物浪潮席卷全球，Google Universal Cart与Shopify全面押注代理商务，出海鞋类</div>
+        <div class="edition-title">2026年AI代理购物浪潮席卷全球，Google Universal Cart与Shopify全面押注代理商务，出海鞋类品牌面临流量结构剧变；AI驱动的供应链减碳与ESG量化叙事，正成为环保出海品牌在欧美市场建立合规壁垒的新核心竞争力。</div>
         <div class="edition-meta">2026年5月21日</div>
       </div>
       
@@ -71,7 +80,7 @@
     <a class="archive-item" href="edition-0015.html">
       <span class="edition-num">#0015</span>
       <div class="edition-info">
-        <div class="edition-title">2026零售AI代理战白热化：Walmart Sparky用户购物车增35%，Macy&#x27;s AI助手提升营收4.75倍；</div>
+        <div class="edition-title">2026零售AI代理战白热化：Walmart Sparky用户购物车增35%，Macy&#x27;s AI助手提升营收4.75倍；环保鞋类品牌须在ESG合规升级与工具洗牌浪潮中借力AI将退货率降30%，抢占高质量AI渠道流量红利。</div>
         <div class="edition-meta">2026年5月20日</div>
       </div>
       
@@ -80,7 +89,7 @@
     <a class="archive-item" href="edition-0014.html">
       <span class="edition-num">#0014</span>
       <div class="edition-info">
-        <div class="edition-title">2026年Q1零售AI流量激增393%，代理购物生态加速成形；出海鞋类品牌须在AI平台抢占品牌可见度，同步部署供应链碳追</div>
+        <div class="edition-title">2026年Q1零售AI流量激增393%，代理购物生态加速成形；出海鞋类品牌须在AI平台抢占品牌可见度，同步部署供应链碳追踪工具，以绿色数据实力赢得欧美合规市场入场券。</div>
         <div class="edition-meta">2026年5月19日</div>
       </div>
       
@@ -89,7 +98,7 @@
     <a class="archive-item" href="edition-0013.html">
       <span class="edition-num">#0013</span>
       <div class="edition-info">
-        <div class="edition-title">2026年AI代理重塑社交电商生态：Meta在Instagram和Facebook全面引入AI购物助手，AI结账闭环迎来</div>
+        <div class="edition-title">2026年AI代理重塑社交电商生态：Meta在Instagram和Facebook全面引入AI购物助手，AI结账闭环迎来规模化验证关键节点；环保鞋类出海品牌须同步布局AI供应链减碳与数据主权防线，在代理时代流量重分配中抢占先机。</div>
         <div class="edition-meta">2026年5月18日</div>
       </div>
       
@@ -98,7 +107,7 @@
     <a class="archive-item" href="edition-0012.html">
       <span class="edition-num">#0012</span>
       <div class="edition-info">
-        <div class="edition-title">AI购物代理浪潮全面爆发：Q1电商AI流量暴涨393%，谷歌与Shopify争建购物协议标准，供应链AI减碳成ESG合规</div>
+        <div class="edition-title">AI购物代理浪潮全面爆发：Q1电商AI流量暴涨393%，谷歌与Shopify争建购物协议标准，供应链AI减碳成ESG合规新抓手；出海环保鞋类品牌的AI卡位战已全面打响。</div>
         <div class="edition-meta">2026年5月17日</div>
       </div>
       
@@ -107,7 +116,7 @@
     <a class="archive-item" href="edition-0011.html">
       <span class="edition-num">#0011</span>
       <div class="edition-info">
-        <div class="edition-title">AI深度渗透跨境电商：梅西百货对话式AI助手重塑购物体验，H&amp;amp;M供应链AI将ESG合规转化为竞争优势，中国90%</div>
+        <div class="edition-title">AI深度渗透跨境电商：梅西百货对话式AI助手重塑购物体验，H&amp;amp;M供应链AI将ESG合规转化为竞争优势，中国90%跨境商家已用AI工具突破语言壁垒。出海环保鞋类品牌需加速全链路AI布局，机遇窗口正在收窄。</div>
         <div class="edition-meta">2026年5月16日</div>
       </div>
       
@@ -116,7 +125,7 @@
     <a class="archive-item" href="edition-0010.html">
       <span class="edition-num">#0010</span>
       <div class="edition-info">
-        <div class="edition-title">AI购物代理流量Q1暴增393%、转化率反超真人用户，正在重塑出海电商获客逻辑；与此同时，鞋类供应链的ESG合规压力催生</div>
+        <div class="edition-title">AI购物代理流量Q1暴增393%、转化率反超真人用户，正在重塑出海电商获客逻辑；与此同时，鞋类供应链的ESG合规压力催生AI自动化追踪工具，跨境卖家可借助AI选品、定价与营销自动化实现全链路降本增效。</div>
         <div class="edition-meta">2026年5月15日</div>
       </div>
       
@@ -125,7 +134,7 @@
     <a class="archive-item" href="edition-0009.html">
       <span class="edition-num">#0009</span>
       <div class="edition-info">
-        <div class="edition-title">出海 AI 洞察第 0009 期</div>
+        <div class="edition-title">出海 AI 洞察 — 第 0009 期</div>
         <div class="edition-meta">2026年5月14日</div>
       </div>
       
@@ -134,7 +143,7 @@
     <a class="archive-item" href="edition-0008.html">
       <span class="edition-num">#0008</span>
       <div class="edition-info">
-        <div class="edition-title">出海 AI 洞察第 0008 期</div>
+        <div class="edition-title">出海 AI 洞察 — 第 0008 期</div>
         <div class="edition-meta">2026年5月14日</div>
       </div>
       
@@ -143,7 +152,7 @@
     <a class="archive-item" href="edition-0007.html">
       <span class="edition-num">#0007</span>
       <div class="edition-info">
-        <div class="edition-title">出海 AI 洞察第 0007 期</div>
+        <div class="edition-title">出海 AI 洞察 — 第 0007 期</div>
         <div class="edition-meta">2026年5月13日</div>
       </div>
       
@@ -152,7 +161,7 @@
     <a class="archive-item" href="edition-0006.html">
       <span class="edition-num">#0006</span>
       <div class="edition-info">
-        <div class="edition-title">出海 AI 洞察第 0006 期</div>
+        <div class="edition-title">出海 AI 洞察 — 第 0006 期</div>
         <div class="edition-meta">2026年5月12日</div>
       </div>
       
@@ -161,7 +170,7 @@
     <a class="archive-item" href="edition-0005.html">
       <span class="edition-num">#0005</span>
       <div class="edition-info">
-        <div class="edition-title">出海 AI 洞察第 0005 期</div>
+        <div class="edition-title">出海 AI 洞察 — 第 0005 期</div>
         <div class="edition-meta">2026年5月11日</div>
       </div>
       
@@ -170,7 +179,7 @@
     <a class="archive-item" href="edition-0004.html">
       <span class="edition-num">#0004</span>
       <div class="edition-info">
-        <div class="edition-title">出海 AI 洞察第 0004 期</div>
+        <div class="edition-title">出海 AI 洞察 — 第 0004 期</div>
         <div class="edition-meta">2026年5月9日</div>
       </div>
       
@@ -179,7 +188,7 @@
     <a class="archive-item" href="edition-0003.html">
       <span class="edition-num">#0003</span>
       <div class="edition-info">
-        <div class="edition-title">出海 AI 洞察第 0003 期</div>
+        <div class="edition-title">出海 AI 洞察 — 第 0003 期</div>
         <div class="edition-meta">2026年5月8日</div>
       </div>
       
@@ -188,7 +197,7 @@
     <a class="archive-item" href="edition-0002.html">
       <span class="edition-num">#0002</span>
       <div class="edition-info">
-        <div class="edition-title">出海 AI 洞察第 0002 期</div>
+        <div class="edition-title">出海 AI 洞察 — 第 0002 期</div>
         <div class="edition-meta">2026年5月8日</div>
       </div>
       
@@ -197,7 +206,7 @@
     <a class="archive-item" href="edition-0001.html">
       <span class="edition-num">#0001</span>
       <div class="edition-info">
-        <div class="edition-title">出海 AI 洞察第 0001 期</div>
+        <div class="edition-title">出海洞察 · AI 周报 — 第 0001 期</div>
         <div class="edition-meta">2026年5月8日</div>
       </div>
       
