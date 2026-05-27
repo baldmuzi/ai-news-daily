@@ -3,49 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VIVAIA 品牌趋势 · 往期存档 — VIVAIA</title>
+  <title>VIVAIA 品牌趋势 · 往期存档</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --bg: #0b0f18;
-      --surface: #17130d;
-      --border: #463722;
-      --accent: #804c1a;
-      --accent-soft: #d89a5e;
-      --accent-dim: rgba(216,154,94,0.18);
-      --accent-glow: rgba(128,76,26,0.32);
-      --text: #f5efe4;
-      --text-muted: #d2c2aa;
-      --text-dim: #b39f82;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: radial-gradient(circle at top, rgba(128,76,26,0.16), transparent 36%), var(--bg); color: var(--text); font-family: 'Noto Serif SC', serif; line-height: 1.8; min-height: 100vh; padding-bottom: 4rem; }
-    a { color: inherit; text-decoration: none; }
-    header { background: linear-gradient(180deg, #1a140c 0%, var(--bg) 100%); border-bottom: 1px solid var(--border); padding: 2.2rem 1.5rem 2rem; text-align: center; position: relative; }
-    .back-link { position: absolute; top: 1.4rem; left: 1.5rem; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--text-muted); letter-spacing: 0.08em; }
-    .back-link:hover { color: var(--accent-soft); }
-    .header-badge { display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.12em; color: var(--accent-soft); background: var(--accent-dim); border: 1px solid rgba(128,76,26,0.45); border-radius: 4px; padding: 0.2em 0.7em; margin-bottom: 1rem; }
-    h1 { font-size: clamp(1.7rem, 4vw, 2.5rem); font-weight: 700; letter-spacing: 0.04em; margin-bottom: 0.3rem; }
-    .subtitle { font-size: 0.82rem; color: var(--text-muted); letter-spacing: 0.18em; font-family: 'JetBrains Mono', monospace; margin-bottom: 1rem; }
-    .meta-row { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--text-dim); }
-    .section-label { max-width: 760px; margin: 2.8rem auto 1.2rem; padding: 0 1.5rem; display: flex; align-items: center; gap: 0.8rem; }
-    .section-label h2 { font-size: 0.72rem; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.12em; color: var(--text-muted); text-transform: uppercase; white-space: nowrap; }
-    .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
-    .cards-grid { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; }
-    .edition-card { background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent 28%), var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem 1.6rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; transition: border-color .2s, box-shadow .2s; }
-    .edition-card:hover { border-color: rgba(128,76,26,0.55); box-shadow: 0 0 24px var(--accent-glow); }
-    .edition-card.latest { border-color: rgba(128,76,26,0.65); background: linear-gradient(135deg, var(--surface) 0%, rgba(128,76,26,0.16) 100%); box-shadow: 0 0 18px var(--accent-glow); }
-    .edition-left { display: flex; align-items: center; gap: 1rem; flex: 1; min-width: 200px; }
-    .edition-num { font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; color: var(--accent-soft); letter-spacing: 0.05em; }
-    .edition-title { font-size: 0.95rem; font-weight: 600; color: #f4ecdf; }
-    .edition-date { font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; color: var(--text-dim); }
-    .edition-badges { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
-    .badge-latest { font-family: 'JetBrains Mono', monospace; font-size: 0.62rem; color: #fff; background: var(--accent); border-radius: 3px; padding: 0.15em 0.5em; letter-spacing: 0.05em; font-weight: 600; }
-    .read-link { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: #f8dfc3; background: rgba(216,154,94,0.24); border: 1px solid #c9884e; border-radius: 4px; padding: 0.35em 0.9em; white-space: nowrap; }
-    .read-link:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
-    .total-count { max-width: 760px; margin: 1.2rem auto 0; padding: 0 1.5rem; font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: var(--text-dim); text-align: right; }
+    :root { --bg:#080c14; --surface:#17130d; --border:#463722; --accent:#804c1a; --accent-soft:#d89a5e; --accent-dim:rgba(216,154,94,.18); --accent-glow:rgba(128,76,26,.32); --text:#f5efe4; --text-muted:#d2c2aa; --text-dim:#b39f82; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { background:radial-gradient(circle at top, rgba(128,76,26,.16), transparent 36%), var(--bg); color:var(--text); font-family:'Noto Serif SC', serif; line-height:1.8; min-height:100vh; padding-bottom:4rem; }
+    a { color:inherit; text-decoration:none; }
+    header { background:linear-gradient(180deg, #1a140c 0%, var(--bg) 100%); border-bottom:1px solid var(--border); padding:2.2rem 1.5rem 2rem; text-align:center; position:relative; }
+    .back-link { position:absolute; top:1.4rem; left:1.5rem; font-family:'JetBrains Mono', monospace; font-size:.72rem; color:var(--text-muted); letter-spacing:.08em; }
+    .back-link:hover { color:var(--accent-soft); }
+    .header-badge { display:inline-block; font-family:'JetBrains Mono', monospace; font-size:.72rem; letter-spacing:.12em; color:var(--accent-soft); background:var(--accent-dim); border:1px solid rgba(128,76,26,.45); border-radius:4px; padding:.2em .7em; margin-bottom:1rem; }
+    h1 { font-size:clamp(1.7rem, 4vw, 2.5rem); font-weight:700; letter-spacing:.04em; margin-bottom:.3rem; }
+    .subtitle { font-size:.82rem; color:var(--text-muted); letter-spacing:.18em; font-family:'JetBrains Mono', monospace; margin-bottom:1rem; }
+    .meta-row { display:flex; justify-content:center; gap:1.5rem; flex-wrap:wrap; font-family:'JetBrains Mono', monospace; font-size:.7rem; color:var(--text-dim); }
+    .section-label { max-width:760px; margin:2.8rem auto 1.2rem; padding:0 1.5rem; display:flex; align-items:center; gap:.8rem; }
+    .section-label h2 { font-size:.72rem; font-family:'JetBrains Mono', monospace; letter-spacing:.12em; color:var(--text-muted); text-transform:uppercase; white-space:nowrap; }
+    .section-label::after { content:''; flex:1; height:1px; background:var(--border); }
+    .cards-grid { max-width:760px; margin:0 auto; padding:0 1.5rem; display:flex; flex-direction:column; gap:.75rem; }
+    .edition-card { background:linear-gradient(180deg, rgba(255,255,255,.02), transparent 28%), var(--surface); border:1px solid var(--border); border-radius:8px; padding:1.2rem 1.6rem; display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap; transition:border-color .2s, box-shadow .2s; }
+    .edition-card:hover { border-color:rgba(128,76,26,.55); box-shadow:0 0 24px var(--accent-glow); }
+    .edition-card.latest { border-color:rgba(128,76,26,.65); background:linear-gradient(135deg, var(--surface) 0%, rgba(128,76,26,.16) 100%); box-shadow:0 0 18px var(--accent-glow); }
+    .edition-left { display:flex; align-items:center; gap:1rem; flex:1; min-width:200px; }
+    .edition-num { font-family:'JetBrains Mono', monospace; font-size:1.1rem; color:var(--accent-soft); letter-spacing:.05em; }
+    .edition-title { font-size:.95rem; font-weight:600; color:#f4ecdf; }
+    .edition-date { font-family:'JetBrains Mono', monospace; font-size:.65rem; color:var(--text-dim); }
+    .edition-badges { display:flex; align-items:center; gap:.5rem; flex-wrap:wrap; }
+    .badge-latest { font-family:'JetBrains Mono', monospace; font-size:.62rem; color:#fff; background:var(--accent); border-radius:3px; padding:.15em .5em; letter-spacing:.05em; font-weight:600; }
+    .read-link { font-family:'JetBrains Mono', monospace; font-size:.72rem; color:#f8dfc3; background:rgba(216,154,94,.24); border:1px solid #c9884e; border-radius:4px; padding:.35em .9em; white-space:nowrap; }
+    .read-link:hover { background:var(--accent); color:#fff; border-color:var(--accent); }
+    .total-count { max-width:760px; margin:1.2rem auto 0; padding:0 1.5rem; font-family:'JetBrains Mono', monospace; font-size:.68rem; color:var(--text-dim); text-align:right; }
   </style>
 </head>
 <body>
@@ -54,11 +43,21 @@
     <div class="header-badge">VIVAIA ARCHIVE</div>
     <h1>VIVAIA 品牌趋势 · 往期存档</h1>
     <div class="subtitle">GLOBAL FASHION &amp; SUSTAINABILITY</div>
-    <div class="meta-row"><span>Latest 0006</span><span>Showing 6 Editions</span></div>
+    <div class="meta-row"><span>Latest 0007</span><span>Showing 7 Editions</span></div>
   </header>
   <div class="section-label"><h2>Edition Archive</h2></div>
   <div class="cards-grid">
-    <a class="edition-card latest" href="./edition-0006.html">
+    <a class="edition-card latest" href="./edition-0007.html">
+      <div class="edition-left">
+        <div class="edition-num">#0007</div>
+        <div>
+          <div class="edition-title">VIVAIA 品牌趋势 · 第0007期</div>
+          <div class="edition-date">2026年5月27日</div>
+        </div>
+      </div>
+      <div class="edition-badges"><span class="badge-latest">LATEST</span><span class="read-link">查看本期 →</span></div>
+    </a>
+    <a class="edition-card" href="./edition-0006.html">
       <div class="edition-left">
         <div class="edition-num">#0006</div>
         <div>
@@ -66,7 +65,7 @@
           <div class="edition-date">2026年5月26日</div>
         </div>
       </div>
-      <div class="edition-badges"><span class="badge-latest">LATEST</span><span class="read-link">查看本期 →</span></div>
+      <div class="edition-badges"><span class="read-link">查看本期 →</span></div>
     </a>
     <a class="edition-card" href="./edition-0005.html">
       <div class="edition-left">
@@ -93,7 +92,7 @@
         <div class="edition-num">#0003</div>
         <div>
           <div class="edition-title">VIVAIA 品牌趋势 · 第0003期</div>
-          <div class="edition-date">2026年5月21日</div>
+          <div class="edition-date">2026年5月22日</div>
         </div>
       </div>
       <div class="edition-badges"><span class="read-link">查看本期 →</span></div>
@@ -103,7 +102,7 @@
         <div class="edition-num">#0002</div>
         <div>
           <div class="edition-title">VIVAIA 品牌趋势 · 第0002期</div>
-          <div class="edition-date">2026年5月20日</div>
+          <div class="edition-date">2026年5月22日</div>
         </div>
       </div>
       <div class="edition-badges"><span class="read-link">查看本期 →</span></div>
@@ -113,12 +112,12 @@
         <div class="edition-num">#0001</div>
         <div>
           <div class="edition-title">VIVAIA 品牌趋势 · 第0001期</div>
-          <div class="edition-date">2026年5月20日</div>
+          <div class="edition-date">2026年5月22日</div>
         </div>
       </div>
       <div class="edition-badges"><span class="read-link">查看本期 →</span></div>
     </a>
   </div>
-  <div class="total-count">共 6 期，当前最多展示 20 期</div>
+  <div class="total-count">共 7 期，当前最多展示 20 期</div>
 </body>
 </html>
