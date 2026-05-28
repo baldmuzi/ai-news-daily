@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>运动健康趋势 · 第 0011 期 — Fanka</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#080c14; --surface:#0f1623; --surface2:#151d2c; --border:#213047; --accent:#f43f5e; --accent-dim:rgba(244,63,94,.14); --text:#e8eaf0; --muted:#91a0b5; --dim:#64748b; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { min-height:100vh; background:var(--bg); color:var(--text); font-family:'Noto Serif SC',serif; line-height:1.75; }
+    a { color:inherit; } .wrapper { max-width:1120px; margin:0 auto; padding:0 24px; }
+    header { padding:46px 0 36px; border-bottom:1px solid var(--border); background:linear-gradient(180deg,#10101b 0%,#080c14 100%); }
+    .back-link { display:inline-flex; margin-bottom:26px; color:var(--muted); text-decoration:none; font:12px 'JetBrains Mono',monospace; letter-spacing:.05em; }
+    .back-link:hover { color:var(--accent); } .edition-badge { display:flex; align-items:center; gap:8px; margin-bottom:12px; color:var(--accent); font:11px 'JetBrains Mono',monospace; letter-spacing:.12em; text-transform:uppercase; }
+    .edition-badge::before { content:''; width:28px; height:1px; background:var(--accent); }
+    h1 { margin-bottom:10px; color:#fff; font-size:clamp(2rem,5vw,3.25rem); line-height:1.2; }
+    .subtitle { margin-bottom:20px; color:var(--muted); font:13px 'JetBrains Mono',monospace; letter-spacing:.06em; }
+    .intro { max-width:780px; margin-bottom:26px; padding-left:16px; border-left:2px solid var(--accent); color:var(--muted); font-size:15px; }
+    .tags-row { display:flex; flex-wrap:wrap; gap:8px; } .tag-chip { border:1px solid rgba(244,63,94,.28); border-radius:999px; padding:4px 12px; background:var(--accent-dim); color:var(--accent); font:12px 'JetBrains Mono',monospace; }
+    main { padding:40px 0 82px; } .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:20px; }
+    .card { display:flex; flex-direction:column; gap:14px; position:relative; overflow:hidden; min-height:430px; padding:24px; border:1px solid var(--border); border-radius:12px; background:var(--surface); transition:border-color .2s,transform .2s,box-shadow .2s; }
+    .card::before { content:''; position:absolute; inset:0 0 auto; height:2px; background:transparent; } .card:hover { transform:translateY(-2px); border-color:rgba(244,63,94,.42); box-shadow:0 10px 30px rgba(0,0,0,.32); } .card:hover::before { background:linear-gradient(90deg,var(--accent),transparent); }
+    .card-header { display:flex; justify-content:space-between; gap:12px; align-items:flex-start; } .cat-label { border:1px solid var(--border); border-radius:999px; padding:3px 10px; background:#1a2436; color:#9aa8bb; font:11px 'JetBrains Mono',monospace; } .card-num { color:var(--accent); opacity:.7; font:11px 'JetBrains Mono',monospace; }
+    .card-title { display:block; color:#fff; text-decoration:none; font-size:17px; font-weight:700; line-height:1.45; } .card-title:hover { color:var(--accent); } .meta { color:var(--dim); font:11px 'JetBrains Mono',monospace; } .card-body { flex:1; }
+    .trend-block,.opp-block { margin-bottom:10px; color:var(--muted); font-size:14px; } .block-label { display:block; margin-bottom:4px; color:var(--accent); font:11px 'JetBrains Mono',monospace; letter-spacing:.06em; }
+    .card-footer { display:flex; justify-content:flex-end; padding-top:14px; border-top:1px solid var(--border); } .source-btn { color:var(--accent); text-decoration:none; font:11px 'JetBrains Mono',monospace; letter-spacing:.06em; }
+    .competitor-section { margin-top:44px; padding:28px; border:1px solid rgba(244,63,94,.32); border-radius:14px; background:linear-gradient(135deg,rgba(244,63,94,.08),rgba(15,22,35,.96)); } .section-title { margin-bottom:6px; color:#fff; font-size:24px; } .section-note { margin-bottom:20px; color:var(--muted); font-size:14px; } .competitor-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
+    .competitor-card { border:1px solid rgba(244,63,94,.22); border-radius:10px; padding:16px; background:rgba(8,12,20,.54); } .competitor-top { display:flex; justify-content:space-between; gap:10px; margin-bottom:10px; } .competitor-top h3 { color:#fff; font-size:16px; } .competitor-top span { color:var(--dim); font:10px 'JetBrains Mono',monospace; text-align:right; } .competitor-card p { margin-bottom:8px; color:var(--muted); font-size:13px; } .competitor-card strong { color:#f3b2bf; } .competitor-card a { color:var(--accent); font:11px 'JetBrains Mono',monospace; text-decoration:none; }
+    @media (max-width:640px) { .wrapper { padding:0 18px; } header { padding-top:32px; } .grid { grid-template-columns:1fr; } .card { min-height:auto; padding:20px; } .competitor-section { padding:20px; } }
+  </style>
+</head>
+<body>
+  <header><div class="wrapper"><a class="back-link" href="../fitness/">← 返回存档</a><div class="edition-badge">EDITION 0011 · 2026年5月28日 17:02</div><h1>运动健康趋势</h1><p class="subtitle">Global Fitness &amp; Wellness · Powered by Fanka</p><p class="intro">本期聚焦低冲击步行、爬坡热、加重训练和夏季压缩裤穿搭，为 Fanka 捕捉全球女性运动内容机会。</p><div class="tags-row"><span class="tag-chip">低冲击步行</span><span class="tag-chip">爬坡热潮</span><span class="tag-chip">压缩裤穿搭</span><span class="tag-chip">功能实测</span><span class="tag-chip">女性力量</span></div></div></header>
+  <main><div class="wrapper"><section class="grid">
+      <article class="card">
+        <div class="card-header"><span class="cat-label">新兴运动</span><span class="card-num">#01</span></div>
+        <a class="card-title" href="https://www.womenshealthmag.com/fitness/a71409553/does-walking-build-muscle-what-trainers-say/" target="_blank" rel="noopener">Does Walking Build Muscle? Trainers Weigh In</a>
+        <div class="meta">Women’s Health · 2026-05-26</div>
+        <div class="card-body">
+          <p class="trend-block"><span class="block-label">【趋势是什么】</span>Women’s Health 将走路从“轻运动”重新包装为可升级的低冲击训练：坡度、负重背心、Nordic walking 和间歇力量动作都能提高训练感。它延续 Hot Girl Walk 与 12-3-30 的传播逻辑，用低门槛动作承接女性日常健康需求。</p>
+          <p class="opp-block"><span class="block-label">【内容机会】</span>Fanka 可做“通勤走路也算训练”系列，把压缩裤的包裹、防卷边、臀腿线条和舒适支撑放进户外步行、坡度走与饭后散步场景，强化“让运动变得更简单”。</p>
+        </div>
+        <div class="card-footer"><a class="source-btn" href="https://www.womenshealthmag.com/fitness/a71409553/does-walking-build-muscle-what-trainers-say/" target="_blank" rel="noopener">查看原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="cat-label">健康生活</span><span class="card-num">#02</span></div>
+        <a class="card-title" href="https://www.womenshealthmag.com/fitness/g29641621/best-weighted-vest/" target="_blank" rel="noopener">The 12 Best Weighted Vests for Women, Tested by Personal Trainers</a>
+        <div class="meta">Women’s Health · 2026-05-26</div>
+        <div class="card-body">
+          <p class="trend-block"><span class="block-label">【趋势是什么】</span>加重背心继续成为女性低冲击训练工具，媒体把它用于走路、家务、徒手训练和楼梯训练，而不是只服务高强度军训式场景。热度来自“给日常动作加一点阻力”的简单感。</p>
+          <p class="opp-block"><span class="block-label">【内容机会】</span>Fanka 可做“低冲击也能进阶”内容，用加重背心+压缩裤+运动内衣讲清不同强度穿搭：稳定胸部、包裹腰腹、减少走动移位，让轻训练更有仪式感。</p>
+        </div>
+        <div class="card-footer"><a class="source-btn" href="https://www.womenshealthmag.com/fitness/g29641621/best-weighted-vest/" target="_blank" rel="noopener">查看原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="cat-label">女性运动</span><span class="card-num">#03</span></div>
+        <a class="card-title" href="https://www.womenshealthmag.com/health/a71332027/cardio-strength-exercise-combo-health-benefits/" target="_blank" rel="noopener">This Exercise Combo Packs an Impressive Health-Promoting Punch</a>
+        <div class="meta">Women’s Health · 2026-05-23</div>
+        <div class="card-body">
+          <p class="trend-block"><span class="block-label">【趋势是什么】</span>Women’s Health 把有氧+力量组合重新推到大众视野，强调女性不必在“只跑步”或“只撸铁”之间二选一。混合训练更适合长期健康、体态和可持续习惯。</p>
+          <p class="opp-block"><span class="block-label">【内容机会】</span>Fanka 可将内容拆成“30 分钟组合课”：10 分钟快走、15 分钟臀腿力量、5 分钟拉伸，并对应展示压缩裤在跑跳、深蹲和拉伸里的稳定表现。</p>
+        </div>
+        <div class="card-footer"><a class="source-btn" href="https://www.womenshealthmag.com/health/a71332027/cardio-strength-exercise-combo-health-benefits/" target="_blank" rel="noopener">查看原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="cat-label">女性运动</span><span class="card-num">#04</span></div>
+        <a class="card-title" href="https://www.runnersworld.com/training/a71363618/increase-running-pace-signs/" target="_blank" rel="noopener">Run Coaches Say These 3 Signs Mean You’re Ready to Increase Your Training Paces</a>
+        <div class="meta">Runner’s World · 2026-05-23</div>
+        <div class="card-body">
+          <p class="trend-block"><span class="block-label">【趋势是什么】</span>Runner’s World 把“什么时候跑快”讲成可判断的训练节点，帮助跑者避免被 PB 焦虑推着过度训练。更聪明的配速、恢复和身体反馈正在替代单纯追速度的叙事。</p>
+          <p class="opp-block"><span class="block-label">【内容机会】</span>Fanka 可做“你该提速了吗？”互动帖，配合跑步压缩裤和运动内衣的稳定支撑卖点，让用户用状态决定强度，而不是被社媒速度焦虑带跑。</p>
+        </div>
+        <div class="card-footer"><a class="source-btn" href="https://www.runnersworld.com/training/a71363618/increase-running-pace-signs/" target="_blank" rel="noopener">查看原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="cat-label">新兴运动</span><span class="card-num">#05</span></div>
+        <a class="card-title" href="https://www.runnersworld.com/training/a71405703/elite-marathon-runner-workouts/" target="_blank" rel="noopener">The Workouts Behind Some of the World’s Fastest Marathoners—and How to Try Them</a>
+        <div class="meta">Runner’s World · 2026-05-22</div>
+        <div class="card-body">
+          <p class="trend-block"><span class="block-label">【趋势是什么】</span>精英马拉松训练被拆解成普通人可模仿的节奏跑、间歇跑和长距离训练，说明跑步内容正在从“晒成绩”转向“复制训练方法”。这类内容天然适合做清单、模板和挑战。</p>
+          <p class="opp-block"><span class="block-label">【内容机会】</span>Fanka 可做“普通女孩的一周跑步训练模板”，把压缩裤的支撑、排汗和防摩擦放进不同跑步日，形成可收藏的训练穿搭指南。</p>
+        </div>
+        <div class="card-footer"><a class="source-btn" href="https://www.runnersworld.com/training/a71405703/elite-marathon-runner-workouts/" target="_blank" rel="noopener">查看原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="cat-label">穿搭趋势</span><span class="card-num">#06</span></div>
+        <a class="card-title" href="https://www.whowhatwear.com/fashion/trends/summer-trends-to-wear-with-leggings-2026" target="_blank" rel="noopener">Those With Cool Style Know Leggings Aren’t Just For Exercising—6 Summer Trends To Wear Them With</a>
+        <div class="meta">Who What Wear · 2026-05-24</div>
+        <div class="card-body">
+          <p class="trend-block"><span class="block-label">【趋势是什么】</span>Who What Wear 将 leggings 与夏季潮流单品组合，说明紧身裤已从健身房基础款变成可重新造型的日常单品。轻薄、露肤、层次和鞋履搭配给压缩裤带来更多夏季内容入口。</p>
+          <p class="opp-block"><span class="block-label">【内容机会】</span>Fanka 可做“压缩裤不是只能运动穿”系列，用短上衣、衬衫、防晒外套、运动鞋和凉鞋演示 studio-to-street，降低用户对紧身裤外穿的心理门槛。</p>
+        </div>
+        <div class="card-footer"><a class="source-btn" href="https://www.whowhatwear.com/fashion/trends/summer-trends-to-wear-with-leggings-2026" target="_blank" rel="noopener">查看原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="cat-label">市场洞察</span><span class="card-num">#07</span></div>
+        <a class="card-title" href="https://www.reddit.com/r/Activewear/comments/1tn8u1i/i_went_through_hundreds_of_posts_in_this_sub_and/" target="_blank" rel="noopener">I went through hundreds of posts in this sub and the complaints are almost never about style</a>
+        <div class="meta">Reddit r/Activewear · 2026-05-25</div>
+        <div class="card-body">
+          <p class="trend-block"><span class="block-label">【趋势是什么】</span>活跃社群讨论显示，女性对运动服的抱怨更多集中在卷腰、前中缝、胸垫乱跑、头饰压痛等真实穿着痛点，而不是单纯颜色和流行。功能细节正在重新成为购买决策核心。</p>
+          <p class="opp-block"><span class="block-label">【内容机会】</span>Fanka 可把内容从“好看”推进到“实测”：深蹲不透、腰头不卷、胸垫稳定、久穿不勒，用问题解决型短视频建立压缩服可信度。</p>
+        </div>
+        <div class="card-footer"><a class="source-btn" href="https://www.reddit.com/r/Activewear/comments/1tn8u1i/i_went_through_hundreds_of_posts_in_this_sub_and/" target="_blank" rel="noopener">查看原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="cat-label">市场洞察</span><span class="card-num">#08</span></div>
+        <a class="card-title" href="https://eu.36kr.com/zh/p/3825327818560132" target="_blank" rel="noopener">「爬坡」正在重塑健身房生意</a>
+        <div class="meta">36氪 · 2026-05-26</div>
+        <div class="card-body">
+          <p class="trend-block"><span class="block-label">【趋势是什么】</span>36氪指出“半小时爬坡”、椭圆机等低损伤运动在健身房和社媒走红，小红书还出现“爬坡人爬坡魂”活动。爬坡热本质是普通人想要低门槛、易坚持、反馈明确的运动方式。</p>
+          <p class="opp-block"><span class="block-label">【内容机会】</span>Fanka 可围绕“下班后 30 分钟爬坡”做中文社媒挑战，用压缩裤的腿部支撑、腰腹包裹和排汗舒适表达，连接健身房轻量化训练人群。</p>
+        </div>
+        <div class="card-footer"><a class="source-btn" href="https://eu.36kr.com/zh/p/3825327818560132" target="_blank" rel="noopener">查看原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="cat-label">穿搭趋势</span><span class="card-num">#09</span></div>
+        <a class="card-title" href="https://www.womenshealthmag.com/style/g64979918/best-summer-pants-for-women/" target="_blank" rel="noopener">Best Summer Pants for Women, Tested By a Style Editor</a>
+        <div class="meta">Women’s Health · 2026-05-26</div>
+        <div class="card-body">
+          <p class="trend-block"><span class="block-label">【趋势是什么】</span>夏季裤装内容强调轻盈、透气、办公室到晚餐的多场景切换，说明女性对“舒服但体面”的下装需求持续增强。运动裤、宽腿裤和压缩裤都在争夺日常衣橱位置。</p>
+          <p class="opp-block"><span class="block-label">【内容机会】</span>Fanka 可把压缩裤定位为“夏季高频基础裤”之一，做办公室前后、旅行步行、轻训练后的搭配内容，突出轻薄支撑和不臃肿线条。</p>
+        </div>
+        <div class="card-footer"><a class="source-btn" href="https://www.womenshealthmag.com/style/g64979918/best-summer-pants-for-women/" target="_blank" rel="noopener">查看原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="cat-label">社媒热点</span><span class="card-num">#10</span></div>
+        <a class="card-title" href="https://www.reddit.com/r/Athleta_gap/comments/1tkdb1r/new_arrivals_chat/" target="_blank" rel="noopener">New Arrivals Chat</a>
+        <div class="meta">Reddit r/Athleta_gap · 2026-05-22</div>
+        <div class="card-body">
+          <p class="trend-block"><span class="block-label">【趋势是什么】</span>Athleta 社群的新到货讨论显示，用户持续追踪 Skyline、运动裙裤、bra tank、短裤等单品更新，社群本身成为新品反馈和尺码建议场。品牌新品传播不只靠官方发布，也靠用户互相“试水”。</p>
+          <p class="opp-block"><span class="block-label">【内容机会】</span>Fanka 可建立“新品试穿观察”栏目，让真实用户反馈尺码、压缩感、支撑度和搭配方式，形成比单向种草更可信的社群内容资产。</p>
+        </div>
+        <div class="card-footer"><a class="source-btn" href="https://www.reddit.com/r/Athleta_gap/comments/1tkdb1r/new_arrivals_chat/" target="_blank" rel="noopener">查看原文 →</a></div>
+      </article>
+      </section><section class="competitor-section"><h2 class="section-title">竞品动态观察</h2><p class="section-note">近 7 天公开信息中，优先记录品牌官方、媒体报道、可验证新品页和社群热点。</p><div class="competitor-grid">
+        <article class="competitor-card">
+          <div class="competitor-top"><h3>lululemon</h3><span>Forbes Vetted · 2026-05-25</span></div>
+          <p><strong>竞品动作：</strong>Memorial Day 期间继续用 We Made Too Much 折扣区带动女性短裤、上衣、包袋和夏季运动单品关注。</p>
+          <p><strong>Fanka 可参考：</strong>Fanka 可参考“场景化折扣清单”打法，把优惠沟通改成训练、步行、旅行和通勤场景搭配。</p>
+          <a href="https://www.forbes.com/sites/forbes-personal-shopper/2025/05/26/lululemon-memorial-day-sale/" target="_blank" rel="noopener">原文链接 →</a>
+        </article>
+        <article class="competitor-card">
+          <div class="competitor-top"><h3>Alo Yoga</h3><span>Athletech News · 2026-05-26</span></div>
+          <p><strong>竞品动作：</strong>Alo 在 Women’s Health Month 推出面向女性生理需求的 Balanced 系列/健康内容项目，把 menopause、女性健身和数字课程结合到品牌会员生态。</p>
+          <p><strong>Fanka 可参考：</strong>Fanka 可参考其“内容教育+运动场景”打法，围绕低冲击训练、恢复和不同身体阶段做温和但专业的女性健康内容。</p>
+          <a href="https://athletechnews.com/alo-womens-wellness-health-balanced-series/" target="_blank" rel="noopener">原文链接 →</a>
+        </article>
+        <article class="competitor-card">
+          <div class="competitor-top"><h3>Sweaty Betty</h3><span>Sweaty Betty New Arrivals · 2026-05-27（页面抓取）</span></div>
+          <p><strong>竞品动作：</strong>近 7 天未发现带明确发布时间的高价值媒体动态；其新到货页重点展示 Power biker shorts、Ultimate Move leggings、sports bra、tennis dress 等训练到日常单品。</p>
+          <p><strong>Fanka 可参考：</strong>Fanka 可参考其“按活动+支撑等级”陈列方式，在内容里明确标注步行、跑步、普拉提和力量训练适配。</p>
+          <a href="https://www.sweatybetty.com/us/shop/new-arrivals" target="_blank" rel="noopener">原文链接 →</a>
+        </article>
+        <article class="competitor-card">
+          <div class="competitor-top"><h3>Athleta</h3><span>Reddit r/Athleta_gap · 2026-05-22</span></div>
+          <p><strong>竞品动作：</strong>Athleta 用户社群继续以每周 New Arrivals Chat 跟踪新品，讨论 Skyline 系列尺码和新到货节奏。</p>
+          <p><strong>Fanka 可参考：</strong>Fanka 可建立固定“新品试穿日”，用社区评论收集尺码、压缩感和舒适度问题，再反哺产品教育内容。</p>
+          <a href="https://www.reddit.com/r/Athleta_gap/comments/1tkdb1r/new_arrivals_chat/" target="_blank" rel="noopener">原文链接 →</a>
+        </article>
+        </div></section></div></main>
+</body>
+</html>

@@ -1,0 +1,1168 @@
+<body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+    }
+
+    .fanka-blog_weike * {
+      margin: 0;
+      padding: 0;
+      font-family: "Montserrat";
+      color: #000000;
+      box-sizing: border-box;
+    }
+
+    .fanka-blog_weike .show-big {
+      display: block;
+    }
+
+    .fanka-blog_weike .show-small {
+      display: none;
+    }
+
+    .fanka-blog_weike .content_body .shop_now {
+      display: block;
+      font-family: "Montserrat";
+      font-size: 0.63vw;
+      color: #fff !important;
+      background: #000;
+      padding: 0.83vw 0;
+      width: 5.89vw;
+      height: 2.45vw;
+      text-decoration: none;
+      margin-left: calc(50% - 2.5vw);
+      text-align: center;
+    }
+
+    .fanka-blog_weike picture {
+      font-size: 0;
+      display: block;
+    }
+
+    .fanka-blog_weike a {
+      color: #000000 !important;
+      font-weight: 600;
+    }
+
+    .fanka-blog_weike a:hover {
+      color: #cb4a65 !important;
+    }
+
+    .fanka-blog_weike img {
+      width: 100%;
+      margin-bottom: 0 !important;
+    }
+
+    .fanka-blog_weike {
+      padding: 2.08vw 0;
+    }
+
+    /* -----顶部---- */
+    .fanka-blog_weike .top_tab {
+      width: 100%;
+      text-align: center;
+      font-size: 0.63vw;
+    }
+
+    .top_tab .item {
+      text-decoration: underline;
+      font-family: "Roboto";
+      font-size: 0.63vw;
+      color: #505050;
+      font-weight: 500;
+    }
+
+    .top_tab .item a {
+      text-decoration: none !important;
+      color: #505050 !important;
+      line-height: unset !important;
+      text-underline-offset: unset;
+    }
+
+    .top_tab .item_other {
+      text-decoration: underline;
+      font-family: "Roboto";
+      color: #000000;
+      font-size: 0.63vw;
+      font-weight: 500;
+    }
+
+    .top_tab .item_other a {
+      text-decoration: none !important;
+      color: #000000 !important;
+      line-height: unset !important;
+      text-underline-offset: unset;
+    }
+
+    .fanka-blog_weike .header_other {
+      margin-top: 2.08vw;
+      width: 100%;
+      padding: 0 18.75vw;
+    }
+
+    .header_other .header_title {
+      width: 40.73vw;
+      font-weight: 700;
+      font-size: 1.875vw;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .header_other .title1 {
+      width: 37.76vw;
+      font-weight: 500;
+      font-size: 1.04vw;
+      color: #000000;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 1.04vw;
+    }
+
+    .header_other .title2 {
+      width: 37.76vw;
+      font-weight: 400;
+      font-size: 0.83vw;
+      color: #666666;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 1.04vw;
+      text-transform: capitalize;
+    }
+
+    .header_other .header-img {
+      width: 100%;
+      margin-top: 2.08vw;
+      /* 注意｜这里是pc主图比例 */
+      /* aspect-ratio: 1200/760; */
+    }
+
+    /* -----正文---- */
+    .fanka-blog_weike .content_body {
+      margin-top: 4.16vw;
+      width: 100%;
+      padding: 0 28.33vw;
+    }
+
+    .fanka-blog_weike .content_body a {
+      font-weight: 400;
+      color: #cb4a65 !important;
+      text-underline-offset: 0.36vw;
+    }
+
+    /* 默认标题规范 */
+    .content_body .content-big-title {
+      font-size: 1.67vw;
+      line-height: 1.22;
+      margin: 4.16vw 0 2.08vw;
+      font-weight: 700;
+    }
+
+    /* 默认小标题规范 */
+    .content_body .content-small-title {
+      font-size: 1.25vw;
+      margin: 1.04vw 0;
+      font-weight: 700;
+    }
+
+    .content-desc-title {
+      font-size: 1.25vw;
+      margin-top: 1.67vw;
+      font-weight: 600;
+    }
+
+    /* 默认普通文本规范 */
+    .content_body .content-desc {
+      font-size: 0.83vw;
+      line-height: 1.5;
+      margin: 1.04vw 0;
+      font-weight: 400;
+    }
+
+    /* 默认图片视频区域规范 */
+    .content_body .content-img {
+      margin: 2.08vw 0;
+      font-size: 0;
+    }
+
+    .content_body .content-two-img {
+      margin: 2.08vw 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 1.04vw;
+    }
+
+    .content_body .content-two-img > img {
+      width: 50%;
+    }
+
+    .content_body .content-two-img > a {
+      width: 50%;
+      display: inline-block;
+      font-size: 0;
+    }
+
+    .content_body ul {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0 !important;
+    }
+
+    .content_body ul li {
+      list-style: disc;
+      list-style-position: inside;
+    }
+
+    .content_body ul li::marker {
+      font-size: smaller;
+    }
+
+    .content_body .ul-li {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .content_body .li-disc {
+      font-weight: 700;
+      font-size: 1.25vw;
+      line-height: 1;
+      height: 100%;
+      align-self: baseline;
+    }
+
+    .content_body .tags-card {
+      margin: 2.6vw 0 4.17vw;
+      padding: 2.08vw;
+      box-sizing: border-box;
+      display: flex;
+      gap: 2.34vw;
+      align-items: center;
+      border: 1px solid #b8b8b8;
+    }
+
+    .content_body .content-desc .content-desc-li {
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 0.83vw;
+      letter-spacing: 0px;
+    }
+
+    .content_body .tags-card .tags-title {
+      font-weight: 700;
+      font-size: 1.67vw;
+      line-height: 1.22;
+      white-space: nowrap;
+    }
+
+    .content_body .tags-card .tags-list {
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 0 2.34vw;
+      box-sizing: border-box;
+      border-left: 1px solid #b8b8b8;
+    }
+
+    .content_body .tags-card .tags-list .tags-item {
+      font-size: 0.83vw;
+      line-height: 1.6;
+      text-decoration: none;
+      color: #000 !important;
+      margin-top: 6px;
+    }
+
+    .content_body .tags-card .tags-list .tags-item:first-child {
+      margin-top: 0;
+    }
+
+    .content_body .tags-card .tags-list .tags-item:hover {
+      text-decoration: underline;
+      color: #cb4a65 !important;
+    }
+
+    .content_body .understanding-table {
+      margin: 2.08vw 0;
+      width: 100%;
+    }
+
+    .content_body .understanding-table th,
+    .content_body .understanding-table td {
+      box-sizing: border-box;
+      text-align: center;
+      font-size: 0.83vw;
+      font-weight: 500;
+      padding: 1.04vw;
+    }
+
+    .content_body .understanding-table .set-width1 {
+      width: 11.51vw;
+    }
+
+    .content_body .final-two-box {
+      display: flex;
+      gap: 1.67vw;
+    }
+
+    .content_body .final-two-box .content-box-private {
+      display: flex;
+      flex-direction: column;
+      gap: 1.04vw;
+    }
+
+    .content_body .final-two-box .btn {
+      display: flex;
+      color: #fff !important;
+      text-decoration: none;
+      background-color: #d43e63;
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 0.63vw;
+      letter-spacing: 0px;
+      justify-content: center;
+      align-items: center;
+      width: 12.46vw;
+      padding: 0.83vw 1.25vw;
+    }
+
+    .content_body .shop-list {
+      display: flex;
+      column-gap: 10px;
+      row-gap: 2.08vw;
+      flex-wrap: wrap;
+      margin: 2.08vw 0;
+    }
+
+    .content_body .shop-list .shop-item {
+      width: calc((100% - 10px * 2) / 3);
+    }
+
+    .content_body .shop-list .shop-item .item-a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .content_body .shop-list .item-a img {
+      width: 100%;
+      aspect-ratio: 270/360;
+    }
+
+    .content_body .shop-list .item-a .btn-shop {
+      position: absolute;
+      bottom: -12px;
+      width: 100%;
+      text-align: center;
+      background-color: #d43e63;
+      color: #fff;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 12px 0;
+      box-sizing: border-box;
+      opacity: 0;
+    }
+
+    .content_body .shop-list .shop-item .item-a:hover .btn-shop {
+      bottom: 0;
+      opacity: 1;
+      transition: 0.3s;
+    }
+
+    .content_body .shop-list .shop-item .shop-title {
+      font-size: 0.83vw;
+      margin-top: 1.04vw;
+      font-weight: 500;
+      text-align: center;
+      padding: 0 0.52vw;
+      box-sizing: border-box;
+    }
+
+    .content_body .faq-area {
+      margin: 2.08vw 0;
+    }
+
+    .content_body .faq-area .question {
+      margin: 1.04vw 0;
+      font-weight: 700;
+      font-size: 1.04vw;
+      line-height: 1.2;
+      text-transform: capitalize;
+    }
+
+    .content_body .faq-area .answer {
+      margin: 1.04vw 0;
+      font-size: 0.83vw;
+      line-height: 1.25;
+    }
+
+    .content_body .faq-area .answer a {
+      color: #000 !important;
+      text-transform: capitalize;
+    }
+
+    .content_body .faq-area .faq-line {
+      margin: 1.04vw 0;
+      width: 100%;
+      height: 1px;
+      background-color: #000;
+      opacity: 0.2;
+      display: block;
+    }
+
+    .fanka-blog_weike .content_body .btn-div {
+      display: block;
+      padding: 0.83vw 1.25vw;
+      text-align: center;
+      background-color: #d43e63;
+      color: #fff !important;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 12px;
+      box-sizing: border-box;
+      margin-top: 1.04vw;
+      width: fit-content;
+      margin-bottom: 4.16vw;
+    }
+
+    /* ----分享---- */
+    .bottom-area {
+      margin-top: 4.16vw;
+      width: 100%;
+      padding: 0 28.33vw;
+      box-sizing: border-box;
+    }
+
+    .bottom-area .share {
+      display: flex;
+      font-weight: 500;
+      font-size: 1.04vw;
+      gap: 1.04vw;
+    }
+
+    .bottom-area .share span {
+      margin-right: 0.52vw;
+    }
+
+    .bottom-area .share svg {
+      width: 1.92vw;
+      cursor: pointer;
+    }
+
+    .bottom-area .share #Facebook:hover path {
+      fill: #0b64f9;
+    }
+
+    .bottom-area .share #Twitter:hover path {
+      fill: #3599ec;
+    }
+
+    .bottom-area .share #pinterest:hover path {
+      fill: #dc2b2a;
+    }
+
+    .bottom-area .page_change {
+      margin-top: 4.16vw;
+      font-size: 1.25vw;
+      font-weight: 600;
+      display: flex;
+      gap: 2.08vw;
+    }
+
+    .bottom-area .page_change svg {
+      width: 2.24vw;
+    }
+
+    .bottom-area .page_change div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.52vw;
+      /* cursor: pointer; */
+      opacity: 0.3;
+    }
+
+    /* ----轮播图---- */
+    .fanka-blog_weike .foot-area {
+      margin-top: 4.16vw;
+      background-color: #f8f8f8;
+      padding: 4.16vw 18.75vw;
+    }
+
+    .foot-area .footer_title {
+      font-weight: 700;
+      font-size: 1.67vw;
+    }
+
+    .foot-area .foot-swiper {
+      overflow: hidden;
+      margin-top: 1.04vw;
+      position: relative;
+      padding-bottom: 1.04vw;
+    }
+
+    .foot-area a {
+      display: block;
+      font-size: 0;
+      line-height: 0;
+    }
+
+    .foot-swiper .desc {
+      margin-top: 8px;
+      font-size: 0.83vw;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .swiper-pagination-progressbar {
+      top: unset !important;
+      bottom: 0;
+    }
+
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+      background-color: #191817 !important;
+    }
+
+    @media screen and (max-width: 768px) {
+      .show-small {
+        display: block !important;
+      }
+
+      .show-big {
+        display: none !important;
+      }
+
+      .fanka-blog_weike {
+        padding: 5.33vw 0 10.67vw;
+      }
+
+      .fanka-blog_weike .content_body a {
+        text-underline-offset: 5px;
+      }
+
+      /* -----顶部---- */
+      .fanka-blog_weike .top_tab {
+        text-align: left;
+        padding: 0 4.26vw;
+        font-size: 3.2vw;
+        display: flex;
+        white-space: nowrap;
+      }
+
+      .fanka-blog_weike .top_tab .item:not(:first-child) {
+        margin-left: 10px;
+      }
+
+      .top_tab .item {
+        font-size: 3.2vw;
+        margin-right: 10px;
+      }
+
+      .top_tab .item_other {
+        font-size: 3.2vw;
+
+        display: block;
+        width: -webkit-fill-available;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .content_body .content-desc .content-desc-li {
+        font-size: 3.73vw;
+      }
+
+      .fanka-blog_weike .header_other {
+        width: 100%;
+        margin-top: 5.33vw;
+        padding: 0;
+      }
+
+      .header_other .header_title {
+        width: 100%;
+        font-size: 6.4vw;
+        padding: 0 4.26vw;
+        text-align: left;
+      }
+
+      .header_other .title1 {
+        padding: 0 4.26vw;
+        font-size: 3.73vw;
+        text-align: left;
+        margin-top: 5.33vw;
+        width: 100%;
+      }
+
+      .header_other .header-img {
+        width: 100%;
+        margin-top: 5.33vw;
+        /* 注意｜这里是m主图比例 */
+        /* aspect-ratio: 375/470; */
+      }
+
+      .header_other .title2 {
+        font-size: 3.73vw;
+        width: 100%;
+        margin-top: 5.33vw;
+        padding: 0 4.26vw;
+        text-align: left;
+      }
+
+      /* -----正文---- */
+      .fanka-blog_weike .content_body {
+        margin-top: 10.67vw;
+        padding: 0 4.26vw;
+      }
+
+      .fanka-blog_weike .content_body .shop_now {
+        font-size: 12px;
+        color: #fff !important;
+        padding: 10px 0;
+        width: 113px;
+        height: 35px;
+        text-decoration: none;
+        margin-left: calc(50% - 56.5px);
+      }
+
+      /* 默认标题规范 */
+      .content_body .content-big-title {
+        font-size: 6.4vw;
+        line-height: 1.21;
+        margin: 10.67vw 0 5.33vw;
+      }
+
+      /* 默认小标题规范 */
+      .content_body .content-small-title {
+        font-size: 5.33vw;
+        margin: 5.33vw 0;
+      }
+
+      .content-desc-title {
+        font-size: 5.33vw;
+        margin-top: 10.67vw;
+        font-weight: 600;
+      }
+
+      /* 默认普通文本规范 */
+      .content_body .content-desc {
+        font-size: 3.73vw;
+        line-height: 1.42;
+        margin: 5.33vw 0;
+      }
+
+      /* 默认图片视频区域规范 */
+      .content_body .content-img {
+        margin: 5.33vw 0;
+      }
+
+      .content_body .content-two-img {
+        margin: 5.33vw 0;
+        gap: 2.2vw;
+      }
+
+      .fanka-blog_weike .content_body .m-show-btn {
+        padding: 2.67vw 4.26vw;
+        box-sizing: border-box;
+        margin: 5.33vw auto;
+        background-color: #d43e63;
+        color: #fff !important;
+        font-weight: 700;
+        font-size: 3.2vw;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        width: fit-content;
+      }
+
+      .content_body .ul-li {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+      }
+
+      .content_body .li-disc {
+        font-size: 5.29vw;
+      }
+
+      .content_body .understanding-table {
+        margin: 5.33vw 0;
+      }
+
+      .content_body .understanding-table th,
+      .content_body .understanding-table td {
+        text-align: center;
+      }
+
+      .content_body .understanding-table th {
+        padding: 5.33vw 2.67vw;
+        font-size: 3.73vw;
+      }
+
+      .content_body .understanding-table td {
+        padding: 4vw 2.4vw;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 3.2vw;
+      }
+
+      .content_body div:has(.understanding-table)::-webkit-scrollbar {
+        height: 2px;
+        width: 100%;
+      }
+      .content_body div:has(.understanding-table)::-webkit-scrollbar-track {
+        background-color: #d9d9d9;
+        border-radius: 1px;
+      }
+      .content_body div:has(.understanding-table)::-webkit-scrollbar-thumb {
+        background-color: #000000;
+        border-radius: 1px;
+      }
+
+      .content_body .understanding-table .set-width1 {
+        width: 120px;
+      }
+
+      .content_body .shop-list {
+        display: flex;
+        column-gap: 2.67vw;
+        row-gap: 5.33vw;
+        flex-wrap: wrap;
+        margin: 5.33vw 0;
+      }
+
+      .content_body .shop-list .shop-item {
+        width: calc((100% - 2.67vw) / 2);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .content_body .shop-list .item-a img {
+        width: 100%;
+        aspect-ratio: 167/222;
+      }
+
+      .content_body .shop-list .item-a .btn-shop {
+        display: none;
+      }
+
+      .content_body .shop-list .shop-item .shop-title {
+        font-size: 3.2vw;
+        line-height: 1.27;
+        margin-top: 2.67vw;
+        padding: 0;
+        text-align: left;
+        flex: auto;
+      }
+
+      .content_body .shop-list .shop-item .is-h-2 {
+        min-height: 8.1vw;
+      }
+
+      .content_body .shop-list .btn-shop {
+        display: block;
+        width: 100%;
+        text-align: center;
+        background-color: #d43e63;
+        color: #fff !important;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 3.2vw;
+        padding: 2.67vw 0;
+        margin-top: 10px;
+        box-sizing: border-box;
+      }
+
+      .fanka-blog_weike .content_body .btn-div {
+        padding: 2.67vw 6.4vw;
+        font-size: 3.2vw;
+        margin-top: 5.33vw;
+        margin-bottom: 10.67vw;
+      }
+
+      .content_body .tags-card {
+        margin: 20px 0 40px;
+        padding: 5.33vw 4.26vw;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        border: 1px solid #b8b8b8;
+      }
+
+      .content_body .tags-card .tags-title {
+        font-weight: 700;
+        font-size: 6.4vw;
+        white-space: nowrap;
+        text-align: left;
+        width: 100%;
+      }
+
+      .content_body .tags-card .tags-list {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        box-sizing: border-box;
+        border-left: none;
+        width: 100%;
+      }
+
+      .content_body .tags-card .tags-list .tags-item {
+        font-size: 3.2vw;
+        line-height: 2;
+        margin-top: 2.67vw;
+        text-decoration: none;
+        color: #000 !important;
+      }
+
+      .content_body .tags-card .tags-list .tags-item:hover {
+        text-decoration: underline;
+        color: #cb4a65 !important;
+      }
+
+      .content_body .faq-area {
+        margin: 5.33vw 0;
+      }
+
+      .content_body .faq-area .question {
+        margin: 5.33vw 0;
+        font-weight: 700;
+        font-size: 4.26vw;
+        line-height: 1.2;
+        text-transform: capitalize;
+      }
+
+      .content_body .faq-area .answer {
+        margin: 5.33vw 0;
+        font-size: 3.73vw;
+        line-height: 1.25;
+      }
+
+      .content_body .faq-area .answer a {
+        color: #000 !important;
+      }
+
+      .content_body .faq-area .faq-line {
+        margin: 5.33vw 0;
+        width: 100%;
+        height: 1px;
+        background-color: #000;
+        opacity: 0.2;
+        display: block;
+      }
+
+      /* ----分享---- */
+      .bottom-area {
+        width: unset;
+        padding: 0 4.26vw;
+        margin-top: 10.67vw;
+      }
+
+      .bottom-area .share {
+        display: flex;
+        font-size: 3.73vw;
+        gap: 5.33vw;
+      }
+
+      .bottom-area .share #Facebook path {
+        fill: #0b64f9;
+      }
+
+      .bottom-area .share #Twitter path {
+        fill: #3599ec;
+      }
+
+      .bottom-area .share #pinterest path {
+        fill: #dc2b2a;
+      }
+
+      .bottom-area .share svg {
+        width: 7.46vw;
+      }
+
+      .bottom-area .page_change {
+        margin-top: 10.67vw;
+        font-size: 4.26vw;
+        gap: unset;
+        justify-content: space-between;
+      }
+
+      .bottom-area .page_change svg {
+        width: 8vw;
+      }
+
+      .bottom-area .page_change div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4vw;
+        /* cursor: pointer; */
+        opacity: 0.3;
+      }
+
+      /* ----轮播图---- */
+      .fanka-blog_weike .foot-area {
+        margin-top: 10.67vw;
+        background-color: unset;
+        padding: 0 4.26vw;
+      }
+
+      .foot-area .footer_title {
+        font-size: 5.33vw;
+      }
+
+      .foot-area .foot-m {
+        margin-top: 5.33vw;
+        display: flex !important;
+        flex-direction: column;
+        gap: 5.33vw;
+      }
+
+      .foot-m .desc {
+        margin-top: 2.67vw;
+        font-size: 3.73vw;
+        font-weight: 500;
+      }
+
+      .foot-m .foot-item {
+        display: none;
+      }
+
+      .foot-m .foot-item:nth-child(-n + 3) {
+        display: block;
+      }
+
+      .foot-m .foot-item .active {
+        display: block !important;
+      }
+
+      .foot-more {
+        font-size: 3.73vw;
+        text-align: center;
+        text-decoration: underline;
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      .content_body .final-two-box {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .content_body .final-two-box .content-box-private {
+        gap: 20px;
+      }
+
+      .content_body .final-two-box .btn {
+        font-size: 12px;
+        width: 220px;
+        padding: 10px 24px;
+      }
+    }
+
+    .fw-400 {
+      font-weight: 400;
+    }
+
+    .fw-500 {
+      font-weight: 500;
+    }
+
+    .fw-600 {
+      font-weight: 600;
+    }
+
+    .fw-700 {
+      font-weight: 700;
+    }
+  </style>
+  <div class="fanka-blog_weike">
+    <!-- 顶部 -->
+    <div class="top_tab">
+      <span class="item"><a href="https://www.fanka.com/">Home</a></span> &gt;
+      <span class="item"><a href="https://www.fanka.com/pages/wellnesshub">Wellness Hub</a></span> &gt;
+      <span class="item"><a href="https://www.fanka.com/blogs/articles">Articles</a></span> &gt;
+      <br class="show-small" /><span class="item_other item"
+        ><a
+          href="https://www.fanka.com/blogs/articles/how-to-pair-your-fanka-leggings-to-hit-your-goals-maximize-results"
+        >
+          How to Pair Your Fanka Leggings to Hit Your Goals & Maximize Results
+        </a></span
+      >
+    </div>
+
+    <div class="header_other">
+      <div class="header_title">
+        How to Pair Your Fanka Leggings to <br class="show-big" />
+        Hit Your Goals & Maximize Results
+      </div>
+
+      <div class="title2 show-big">By Fanka Designer Hanna Monroe | Mar 23rd, 2026 | 3 Min Read</div>
+      <a href="https://www.fanka.com/collections/bottoms">
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              https://cdn.shopify.com/s/files/1/0619/5265/5591/files/Fankawellnesshub-How-to-Pair-Your-Fanka-Leggings-to-Hit-Your-Goals-Maximize-Results-banner-m.jpg?v=1773884885
+            "
+          />
+          <img
+            class="header-img"
+            src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/Fankawellnesshub-How-to-Pair-Your-Fanka-Leggings-to-Hit-Your-Goals-Maximize-Results-banner-pc.jpg?v=1773884885"
+          />
+        </picture>
+      </a>
+      <div class="title2 show-small">By Fanka Designer Hanna Monroe | Mar 23rd, 2026 | 3 Min Read</div>
+    </div>
+
+    <!-- 正文 -->
+    <div class="content_body">
+      <!-- content-big-title:大标题 -->
+      <!-- content-small-title:小标题 -->
+      <!-- content-desc:文本 -->
+      <!-- content-img:单个图片 -->
+      <!-- content-two-img:两个图片 -->
+      <!-- tags-card:目录卡片 -->
+      <!-- shop-list:商品推荐卡片 -->
+      <div class="content-desc">
+        Think of your skincare routine, your serum works better with your face cream. At Fanka, we approach our leggings
+        the same way. Each pair is designed with a specific purpose, and we want to show you how to combine them for the
+        best results.
+      </div>
+
+      <div class="content-desc">
+        When paired thoughtfully, your workouts become more effective, you burn more calories, and your recovery is
+        smoother. Whether your goal is sculpting, fat burn, or faster recovery, knowing how to pair your leggings can
+        make all the difference.
+      </div>
+
+      <div class="content-desc">
+        Here’s how we recommend pairing Fanka leggings to help you hit your goals and maximize results.
+      </div>
+
+      <div class="tags-card">
+        <div class="tags-title">Table of Contents</div>
+        <div class="tags-list">
+          <a class="tags-item" href="#Fanka Leggings Product Overview">1. Fanka Leggings Product Overview</a>
+          <a class="tags-item" href="#Recommended Leggings Combos">2. Recommended Leggings Combos</a>
+          <a class="tags-item" href="#Frequently Asked Questions">3. Frequently Asked Questions</a>
+          <a class="tags-item" href="#A Note from Fanka">4. A Note from Fanka</a>
+        </div>
+      </div>
+
+      <div class="content-big-title" id="Fanka Leggings Product Overview">Fanka Leggings Product Overview</div>
+      <div class="content-desc">
+        Compression isn’t just about tightness — it’s about how your body feels and performs. Fanka leggings use
+        PowerLift™ technology to deliver graduated compression, so every move feels lighter, stronger, and supported.
+      </div>
+
+      <table style="width: 100%; border-collapse: collapse" class="understanding-table show-big">
+        <tbody>
+          <tr style="background: #f5f5f5">
+            <th style="border: 1px solid #ccc; font-weight: 600" class="set-width">Product</th>
+            <th style="border: 1px solid #ccc; font-weight: 600" class="set-width">Best For</th>
+            <th style="border: 1px solid #ccc; font-weight: 600" class="set-width">Ideal Use</th>
+            <th style="border: 1px solid #ccc; font-weight: 600" class="set-width">Key Benefits</th>
+          </tr>
+          <tr style="background: #ffffff" class="padding-2">
+            <td style="border: 1px solid #ccc">Body Sculpt Leggings</td>
+            <td style="border: 1px solid #ccc">Strength & sculpting</td>
+            <td style="border: 1px solid #ccc">Lifting, squats, resistance workouts</td>
+            <td style="border: 1px solid #ccc">Joint support, muscle activation, high compression</td>
+          </tr>
+          <tr style="background: #f5f5f5" class="padding-3">
+            <td style="border: 1px solid #ccc">PowerBand Resistance Leggings</td>
+            <td style="border: 1px solid #ccc">Cardio & calorie burn</td>
+            <td style="border: 1px solid #ccc">Running, HIIT, walking</td>
+            <td style="border: 1px solid #ccc">Added resistance, higher calorie burn, flexible fit</td>
+          </tr>
+          <tr style="background: #ffffff" class="padding-4">
+            <td style="border: 1px solid #ccc">RecoverEase Leggings</td>
+            <td style="border: 1px solid #ccc">Recovery & comfort</td>
+            <td style="border: 1px solid #ccc">Post-workout, rest days</td>
+            <td style="border: 1px solid #ccc">Gradient compression, improved circulation, soothing comfort</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="show-small" style="overflow-x: scroll">
+        <!-- 100%就是刚好占满屏幕，超出就说明要滚动才能看见 -->
+        <table style="width: 150%; border-collapse: collapse" class="understanding-table">
+          <tbody>
+            <tr style="background: #f5f5f5">
+              <th style="border: 1px solid #ccc; font-weight: 600" class="set-width1">Product</th>
+              <th style="border: 1px solid #ccc; font-weight: 600" class="set-width2">Best For</th>
+              <th style="border: 1px solid #ccc; font-weight: 600" class="set-width3">Ideal Use</th>
+              <th style="border: 1px solid #ccc; font-weight: 600" class="set-width3">Key Benefits</th>
+            </tr>
+            <tr style="background: #ffffff" class="padding-2">
+              <td style="border: 1px solid #ccc">Body Sculpt Leggings</td>
+              <td style="border: 1px solid #ccc">Strength & sculpting</td>
+              <td style="border: 1px solid #ccc">Lifting, squats, resistance workouts</td>
+              <td style="border: 1px solid #ccc">Joint support, muscle activation, high compression</td>
+            </tr>
+            <tr style="background: #f5f5f5" class="padding-3">
+              <td style="border: 1px solid #ccc">PowerBand Resistance Leggings</td>
+              <td style="border: 1px solid #ccc">Cardio & calorie burn</td>
+              <td style="border: 1px solid #ccc">Running, HIIT, walking</td>
+              <td style="border: 1px solid #ccc">Added resistance, higher calorie burn, flexible fit</td>
+            </tr>
+            <tr style="background: #ffffff" class="padding-4">
+              <td style="border: 1px solid #ccc">RecoverEase Leggings</td>
+              <td style="border: 1px solid #ccc">Recovery & comfort</td>
+              <td style="border: 1px solid #ccc">Post-workout, rest days</td>
+              <td style="border: 1px solid #ccc">Gradient compression, improved circulation, soothing comfort</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="content-big-title" id="Recommended Leggings Combos">Recommended Leggings Combos</div>
+
+      
+  </div>
+  <script>
+    // 平滑滚动锚点跳转
+    document.querySelectorAll('.tags-item[href^="#"]').forEach(function (el) {
+      el.addEventListener("click", function (e) {
+        const targetId = el.getAttribute("href").replace("#", "");
+        const target = document.getElementById(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: "smooth" });
+          // 可选：更新 hash
+          history.pushState(null, "", "#" + targetId);
+        }
+      });
+    });
+    if (document.documentElement.clientWidth > 768) {
+      setTimeout(() => {
+        new Swiper(".foot-swiper", {
+          slidesPerView: 3,
+          spaceBetween: 32,
+          pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+          },
+        });
+      });
+    } else {
+      const more_btn = document.querySelector(".foot-more");
+      more_btn.addEventListener("click", function () {
+        const items = document.querySelectorAll(".foot-item");
+        items.forEach((item) => {
+          item.style.display = "block";
+        });
+        if (more_btn) {
+          more_btn.parentElement.removeChild(more_btn);
+        }
+      });
+    }
+  </script>
+</body>

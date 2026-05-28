@@ -1,0 +1,1868 @@
+<body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+  <style>
+    .fanka-blog_weike * {
+      margin: 0;
+      padding: 0;
+      font-family: "Montserrat";
+      color: #000000;
+      box-sizing: border-box;
+    }
+
+    .fanka-blog_weike .show-big {
+      display: block;
+    }
+
+    .fanka-blog_weike .show-small {
+      display: none;
+    }
+
+    .fanka-blog_weike picture {
+      font-size: 0;
+      display: block;
+    }
+
+    .fanka-blog_weike a {
+      color: #000000 !important;
+      font-weight: 600;
+    }
+
+    .fanka-blog_weike a:hover {
+      color: #cb4a65 !important;
+    }
+
+    .fanka-blog_weike img {
+      width: 100%;
+      margin-bottom: 0 !important;
+    }
+
+    .fanka-blog_weike {
+      padding: 2.08vw 0;
+    }
+
+    /* -----顶部---- */
+    .fanka-blog_weike .top_tab {
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .top_tab .item {
+      text-decoration: underline;
+      font-family: "Roboto";
+      font-size: 12px;
+      color: #505050;
+      font-weight: 500;
+    }
+
+    .top_tab .item a {
+      text-decoration: none !important;
+      color: #505050 !important;
+      line-height: unset !important;
+      text-underline-offset: unset;
+    }
+
+    .top_tab .item_other {
+      text-decoration: underline;
+      font-family: "Roboto";
+      color: #000000;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .top_tab .item_other a {
+      text-decoration: none !important;
+      color: #000000 !important;
+      line-height: unset !important;
+      text-underline-offset: unset;
+    }
+
+    .fanka-blog_weike .header_other {
+      margin-top: 2.08vw;
+      width: 100%;
+      padding: 0 18.75vw;
+    }
+
+    .header_other .header_title {
+      width: 40.73vw;
+      font-weight: 700;
+      font-size: 1.875vw;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .header_other .title2 {
+      width: 37.76vw;
+      font-weight: 400;
+      font-size: 0.83vw;
+      color: #666666;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 1.04vw;
+      text-transform: capitalize;
+    }
+
+    .header_other .header-img {
+      width: 100%;
+      margin-top: 2.08vw;
+    }
+
+    /* -----正文---- */
+    .fanka-blog_weike .content_body {
+      margin-top: 4.16vw;
+      width: 100%;
+      padding: 0 28.33vw;
+    }
+
+    .fanka-blog_weike .content_body a {
+      font-weight: 400;
+      color: #cb4a65 !important;
+    }
+
+    .content_body .content-big-title {
+      font-size: 1.67vw;
+      line-height: 1.22;
+      margin: 4.16vw 0 2.08vw;
+      font-weight: 700;
+    }
+
+    .content_body .content-small-title {
+      font-size: 1.25vw;
+      margin: 1.04vw 0;
+      font-weight: 700;
+    }
+
+    .content_body .content-desc {
+      font-size: 0.83vw;
+      line-height: 1.5;
+      margin: 1.04vw 0;
+      font-weight: 400;
+    }
+
+    .content_body .content-img {
+      margin: 2.08vw 0;
+      font-size: 0;
+    }
+
+    .content_body ul {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0.52vw;
+    }
+
+    .content_body ul li {
+      list-style: disc;
+      margin-left: 2em;
+    }
+
+    .content_body ul li::marker {
+      font-size: smaller;
+    }
+
+    .content_body .tags-card {
+      margin: 4.16vw 0;
+      padding: 2.08vw;
+      box-sizing: border-box;
+      display: flex;
+      gap: 2.34vw;
+      align-items: center;
+      border: 1px solid #b8b8b8;
+    }
+
+    .content_body .tags-card .tags-title {
+      font-weight: 700;
+      font-size: 1.67vw;
+      line-height: 1.22;
+      white-space: nowrap;
+    }
+
+    .content_body .tags-card .tags-list {
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 0 2.34vw;
+      box-sizing: border-box;
+      border-left: 1px solid #b8b8b8;
+    }
+
+    .content_body .tags-card .tags-list .tags-item {
+      font-size: 0.83vw;
+      line-height: 1.6;
+      text-decoration: none;
+      color: #000 !important;
+      margin-top: 6px;
+    }
+
+    .content_body .tags-card .tags-list .tags-item:first-child {
+      margin-top: 0;
+    }
+
+    .content_body .tags-card .tags-list .tags-item:hover {
+      text-decoration: underline;
+      color: #cb4a65 !important;
+    }
+
+    .content_body .shop-list-3 {
+      display: flex;
+      column-gap: 10px;
+      row-gap: 2.08vw;
+      flex-wrap: wrap;
+      margin: 2.08vw 0;
+    }
+
+    .content_body .shop-list-3 .shop-item {
+      width: calc((100% - 10px * 2) / 3);
+    }
+
+    .content_body .shop-list-3 .shop-item .item-a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .content_body .shop-list-3 .item-a img {
+      width: 100%;
+      aspect-ratio: 270/360;
+    }
+
+    .content_body .shop-list-3 .item-a .btn-shop {
+      position: absolute;
+      bottom: -12px;
+      width: 100%;
+      text-align: center;
+      background-color: #d43e63;
+      color: #fff;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 12px 0;
+      box-sizing: border-box;
+      opacity: 0;
+    }
+
+    .content_body .shop-list-3 .shop-item .item-a:hover .btn-shop {
+      bottom: 0;
+      opacity: 1;
+      transition: 0.3s;
+    }
+
+    .content_body .shop-list-3 .shop-item .shop-title {
+      font-size: 0.83vw;
+      margin-top: 1.04vw;
+      font-weight: 500;
+      text-align: center;
+      padding: 0 0.52vw;
+      box-sizing: border-box;
+    }
+
+    .content_body .faq-area {
+      margin: 2.08vw 0;
+    }
+
+    .content_body .faq-area .question {
+      margin: 1.04vw 0;
+      font-weight: 700;
+      font-size: 1.04vw;
+      line-height: 1.2;
+      text-transform: capitalize;
+    }
+
+    .content_body .faq-area .answer {
+      margin: 1.04vw 0;
+      font-size: 0.83vw;
+      line-height: 1.25;
+    }
+
+    .content_body .faq-area .faq-line {
+      margin: 1.04vw 0;
+      width: 100%;
+      height: 1px;
+      background-color: #000;
+      opacity: 0.2;
+      display: block;
+    }
+
+    .fanka-blog_weike .content_body .btn-div {
+      display: block;
+      padding: 0.83vw 1.25vw;
+      text-align: center;
+      background-color: #d43e63;
+      color: #fff !important;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 12px;
+      box-sizing: border-box;
+      margin-top: 1.04vw;
+      width: fit-content;
+      margin-bottom: 4.16vw;
+    }
+
+    /* ---- 比较视觉模块 ---- */
+    .content_body .comparison-visual {
+      margin: 2.08vw 0;
+    }
+
+    .comparison-visual .comparison-images {
+      display: flex;
+    }
+
+    .comparison-visual .comparison-col-wrap {
+      width: 50%;
+      flex-shrink: 0;
+    }
+
+    .comparison-visual .comparison-headers {
+      display: flex;
+      margin-top: 1.04vw;
+    }
+
+    .comparison-visual .comparison-col-title {
+      width: 50%;
+      font-weight: 700;
+      font-size: 1.04vw;
+      text-align: center;
+      text-transform: capitalize;
+      padding: 0 0.52vw;
+      box-sizing: border-box;
+    }
+
+    .comparison-visual .comparison-rows {
+      margin-top: 0.52vw;
+    }
+
+    .comparison-visual .comparison-row {
+      display: flex;
+    }
+
+    .comparison-visual .comparison-row > div {
+      width: 50%;
+      padding: 0.83vw 1.04vw;
+      font-size: 0.83vw;
+      text-align: center;
+      box-sizing: border-box;
+      line-height: 1.5;
+    }
+
+    .comparison-visual .comparison-row:nth-child(odd) {
+      background-color: rgba(228, 228, 228, 0.6);
+    }
+
+    .comparison-visual .comparison-row:nth-child(even) {
+      background-color: rgba(249, 249, 249, 0.6);
+    }
+
+    /* ---- 评价卡片 ---- */
+    .content_body .review-card {
+      display: flex;
+      align-items: center;
+      background-color: #f5f5f5;
+      padding: 1.04vw;
+      gap: 1.67vw;
+      margin: 2.08vw 0;
+    }
+
+    .review-card .review-img-wrap {
+      width: 15.625vw;
+      flex-shrink: 0;
+    }
+
+    .review-card .review-content {
+      flex: 1;
+    }
+
+    .review-card .review-stars {
+      font-size: 1.25vw;
+      color: #f5a623;
+      letter-spacing: 2px;
+      font-weight: 400;
+    }
+
+    .review-card .review-text {
+      font-size: 0.83vw;
+      line-height: 1.5;
+      margin-top: 0.52vw;
+      font-weight: 400;
+    }
+
+    .review-card .review-author {
+      font-size: 0.83vw;
+      margin-top: 0.52vw;
+      font-weight: 400;
+    }
+
+    /* ---- 分享 ---- */
+    .bottom-area {
+      margin-top: 4.16vw;
+      width: 100%;
+      padding: 0 28.33vw;
+      box-sizing: border-box;
+    }
+    .bottom-area .share {
+      display: flex;
+      font-weight: 500;
+      font-size: 1.04vw;
+      gap: 1.04vw;
+    }
+    .bottom-area .share span {
+      margin-right: 0.52vw;
+    }
+    .bottom-area .share svg {
+      width: 1.92vw;
+      cursor: pointer;
+    }
+    .bottom-area .share #Facebook:hover path {
+      fill: #0b64f9;
+    }
+    .bottom-area .share #Twitter:hover path {
+      fill: #3599ec;
+    }
+    .bottom-area .share #pinterest:hover path {
+      fill: #dc2b2a;
+    }
+    .bottom-area .page_change {
+      margin-top: 4.16vw;
+      font-size: 1.25vw;
+      font-weight: 600;
+      display: flex;
+      gap: 2.08vw;
+    }
+    .bottom-area .page_change svg {
+      width: 2.24vw;
+    }
+    .bottom-area .page_change div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.52vw;
+      opacity: 0.3;
+    }
+
+    /* ---- 轮播图 ---- */
+    .fanka-blog_weike .foot-area {
+      margin-top: 4.16vw;
+      background-color: #f8f8f8;
+      padding: 4.16vw 18.75vw;
+    }
+    .foot-area .footer_title {
+      font-weight: 700;
+      font-size: 1.67vw;
+    }
+    .foot-area .foot-swiper {
+      overflow: hidden;
+      margin-top: 1.04vw;
+      position: relative;
+      padding-bottom: 1.04vw;
+    }
+    .foot-area .foot-swiper .swiper-wrapper {
+      height: auto !important;
+    }
+    .foot-area a {
+      display: block;
+      font-size: 0;
+      line-height: 0;
+    }
+    .foot-swiper .desc {
+      margin-top: 8px;
+      font-size: 0.83vw;
+      text-align: center;
+      font-weight: 500;
+    }
+    .swiper-pagination-progressbar {
+      top: unset !important;
+      bottom: 0;
+    }
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+      background-color: #191817 !important;
+    }
+
+    /* ---- 穿搭展示模块（左文右图） ---- */
+    .content_body .style-showcase {
+      margin: 2.08vw 0;
+    }
+
+    .style-showcase .showcase-item {
+      display: flex;
+      gap: 2.08vw;
+      margin: 4.16vw 0 2.08vw;
+      align-items: flex-start;
+    }
+
+    .style-showcase .showcase-item:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .showcase-item .showcase-text {
+      flex: 1;
+    }
+
+    .showcase-item .showcase-swiper-wrap {
+      width: 41%;
+      flex-shrink: 0;
+    }
+
+    .showcase-item .showcase-num-title {
+      font-size: 1.67vw;
+      font-weight: 700;
+      margin-bottom: 2.08vw;
+    }
+
+    .showcase-item .showcase-label {
+      font-size: 0.83vw;
+      margin: 1.3vw 0 0;
+      line-height: 1.5;
+    }
+
+    .showcase-item .showcase-ul {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+      margin-top: 0.26vw;
+    }
+
+    .showcase-item .showcase-ul li {
+      list-style: disc;
+      font-size: 0.83vw;
+      line-height: 1.5;
+    }
+
+    .showcase-item .showcase-ul li::marker {
+      font-size: smaller;
+    }
+
+    .showcase-item .showcase-style-desc {
+      font-size: 0.83vw;
+      line-height: 1.5;
+    }
+
+    .showcase-item .showcase-style-desc a {
+      font-weight: 400 !important;
+      color: #cb4a65 !important;
+    }
+
+    .showcase-swiper-wrap .showcase-swiper {
+      overflow: hidden;
+      position: relative;
+      padding-bottom: 1.46vw;
+    }
+
+    .showcase-swiper-wrap .showcase-swiper .swiper-wrapper {
+      height: auto !important;
+    }
+
+    .showcase-swiper-wrap .showcase-swiper .swiper-pagination-progressbar {
+      top: unset !important;
+      bottom: 0;
+    }
+
+    .showcase-swiper-wrap .showcase-swiper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+      background-color: #191817 !important;
+    }
+
+    .showcase-swiper-wrap .showcase-swiper .swiper-pagination-bullets {
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.31vw;
+    }
+
+    .showcase-swiper-wrap .showcase-swiper .swiper-pagination-bullet {
+      width: 2.5vw;
+      height: 0.42vw;
+      border-radius: 200px;
+      background: #d4d4d4;
+      opacity: 1;
+      margin: 0 !important;
+    }
+
+    .showcase-swiper-wrap .showcase-swiper .swiper-pagination-bullet-active {
+      background-color: #191817;
+    }
+
+    /* ---- shop-list-2 ---- */
+    .content_body .shop-list-2 {
+      display: flex;
+      gap: 1.25vw;
+      flex-wrap: wrap;
+      margin: 2.08vw 0;
+    }
+
+    .content_body .shop-list-2 .shop-item {
+      width: calc((100% - 1.25vw) / 2);
+    }
+
+    .content_body .shop-list-2 .shop-item .item-a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .content_body .shop-list-2 .item-a img {
+      width: 100%;
+      aspect-ratio: 406/500;
+    }
+
+    .content_body .shop-list-2 .item-a .btn-shop {
+      position: absolute;
+      bottom: -12px;
+      width: 100%;
+      text-align: center;
+      background-color: #d43e63;
+      color: #fff;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 12px 0;
+      box-sizing: border-box;
+      opacity: 0;
+    }
+
+    .content_body .shop-list-2 .shop-item .item-a:hover .btn-shop {
+      bottom: 0;
+      opacity: 1;
+      transition: 0.3s;
+    }
+
+    .content_body .shop-list-2 .shop-item .shop-title {
+      font-size: 0.83vw;
+      margin-top: 1.04vw;
+      font-weight: 500;
+      text-align: center;
+      padding: 0 0.52vw;
+      box-sizing: border-box;
+    }
+
+    /* ---- Styling Tips 卡片 ---- */
+    .content_body .tips-card-list {
+      display: flex;
+      gap: 1.04vw;
+      margin: 2.08vw 0 1.04vw;
+    }
+
+    .tips-card-list .tip-card {
+      flex: 1;
+      border: 1px solid #b8b8b8;
+      padding: 1.04vw;
+      box-sizing: border-box;
+    }
+
+    .tip-card .tip-icon-wrap {
+      width: 2.34vw;
+      height: 2.5vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-bottom: 0.52vw;
+    }
+
+    .tip-card .tip-icon-wrap img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .tip-card .tip-card-title {
+      font-size: 0.83vw;
+      font-weight: 700;
+      margin-bottom: 0.52vw;
+      line-height: 1.3;
+    }
+
+    .tip-card .tip-card-points {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+      margin-top: 0.52vw;
+    }
+
+    .tip-card .tip-card-points li {
+      list-style: disc;
+      font-size: 0.73vw;
+      line-height: 1.2;
+      margin-left: 1.5em;
+      font-weight: 400;
+    }
+
+    .tip-card .tip-card-points li::marker {
+      font-size: smaller;
+    }
+
+    .content_body .tips-highlight {
+      background-color: #000000;
+      padding: 0.52vw 1.04vw;
+      margin: 1.04vw 0;
+    }
+
+    .content_body .tips-highlight p {
+      color: #ffffff;
+      font-size: 0.73vw;
+      font-weight: 400;
+    }
+
+    @media screen and (min-width: 1025px) and (max-width: 1440px) {
+      .fanka-blog_weike .top_tab {
+        font-size: 0.83vw;
+      }
+      .top_tab .item {
+        font-size: 0.83vw;
+      }
+      .top_tab .item_other {
+        font-size: 0.83vw;
+      }
+      .header_other .header_title {
+        width: 40.73vw;
+        font-size: 1.875vw;
+      }
+      .header_other .title2 {
+        width: 37.76vw;
+        font-size: 0.83vw;
+      }
+      .content_body .content-big-title {
+        font-size: 2.22vw;
+      }
+      .content_body .content-small-title {
+        font-size: 1.67vw;
+      }
+      .content_body .content-desc {
+        font-size: 1.1vw;
+      }
+      .content_body .tags-card .tags-list .tags-item {
+        font-size: 1.1vw;
+      }
+      .content_body .shop-list-3 .shop-item .shop-title {
+        font-size: 1.1vw;
+      }
+      .content_body .faq-area .question {
+        font-size: 1.3vw;
+      }
+      .content_body .faq-area .answer {
+        font-size: 1.1vw;
+      }
+      .comparison-visual .comparison-col-title {
+        font-size: 1.3vw;
+      }
+      .comparison-visual .comparison-row > div {
+        font-size: 1.1vw;
+      }
+      .review-card .review-stars {
+        font-size: 1.65vw;
+      }
+      .review-card .review-text {
+        font-size: 1.1vw;
+      }
+      .review-card .review-author {
+        font-size: 1.1vw;
+      }
+      .bottom-area .share {
+        font-size: 1.95vw;
+        gap: 1.95vw;
+      }
+      .bottom-area .share svg {
+        width: 3.6vw;
+      }
+      .bottom-area .page_change {
+        font-size: 2.34vw;
+        gap: 3.9vw;
+      }
+      .foot-area .footer_title {
+        font-size: 2.22vw;
+      }
+      .foot-swiper .desc {
+        font-size: 1.1vw;
+      }
+      .content_body .shop-list-2 .shop-item .shop-title {
+        font-size: 1.1vw;
+      }
+      .tip-card .tip-card-title {
+        font-size: 1.25vw;
+      }
+      .tip-card .tip-card-points li {
+        font-size: 1.1vw;
+      }
+      .content_body .tips-highlight p {
+        font-size: 1.1vw;
+      }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      .fanka-blog_weike .top_tab {
+        font-size: 1.17vw;
+      }
+      .top_tab .item {
+        font-size: 1.17vw;
+      }
+      .top_tab .item_other {
+        font-size: 1.17vw;
+      }
+      .header_other .header_title {
+        font-size: 2.625vw;
+        width: 100%;
+      }
+      .header_other .title2 {
+        font-size: 1.161vw;
+        width: 100%;
+      }
+      .content_body .content-big-title {
+        font-size: 2.55vw;
+      }
+      .content_body .content-small-title {
+        font-size: 1.84vw;
+      }
+      .content_body .content-desc {
+        font-size: 1.3vw;
+      }
+      .content_body .tags-card .tags-list .tags-item {
+        font-size: 1.1vw;
+      }
+      .content_body .shop-list-3 .item-a .btn-shop {
+        bottom: -1.1vw;
+        font-size: 1.1vw;
+        padding: 1.1vw 0;
+      }
+      .content_body .shop-list-3 .shop-item .shop-title {
+        font-size: 1.1vw;
+      }
+      .content_body .faq-area .question {
+        font-size: 1.3vw;
+      }
+      .content_body .faq-area .answer {
+        font-size: 1.1vw;
+      }
+      .fanka-blog_weike .content_body .btn-div {
+        font-size: 1.1vw;
+      }
+      .comparison-visual .comparison-col-title {
+        font-size: 1.56vw;
+      }
+      .comparison-visual .comparison-row > div {
+        font-size: 1.17vw;
+        padding: 1.17vw 1.56vw;
+      }
+      .review-card .review-img-wrap {
+        width: 23.4vw;
+      }
+      .review-card .review-stars {
+        font-size: 1.95vw;
+      }
+      .review-card .review-text {
+        font-size: 1.17vw;
+      }
+      .review-card .review-author {
+        font-size: 1.17vw;
+      }
+      .bottom-area .share {
+        font-size: 1.95vw;
+        gap: 1.95vw;
+      }
+      .bottom-area .share svg {
+        width: 3.6vw;
+      }
+      .bottom-area .page_change {
+        font-size: 2.34vw;
+        gap: 3.9vw;
+      }
+      .foot-area .footer_title {
+        font-size: 2.55vw;
+      }
+      .foot-swiper .desc {
+        font-size: 1.1vw;
+      }
+      .content_body .shop-list-2 .shop-item .shop-title {
+        font-size: 1.1vw;
+      }
+      .tip-card .tip-card-title {
+        font-size: 1.56vw;
+      }
+      .tip-card .tip-card-points li {
+        font-size: 1.17vw;
+      }
+      .content_body .tips-highlight p {
+        font-size: 1.17vw;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .show-small {
+        display: block !important;
+      }
+      .show-big {
+        display: none !important;
+      }
+
+      .fanka-blog_weike {
+        padding: 5.33vw 0 10.67vw;
+      }
+
+      .fanka-blog_weike .top_tab {
+        text-align: left;
+        padding: 0 4.26vw;
+        font-size: 3.2vw;
+      }
+      .top_tab .item {
+        font-size: 3.2vw;
+        margin-right: 10px;
+      }
+      .top_tab .item_other {
+        font-size: 3.2vw;
+        display: block;
+        width: -webkit-fill-available;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .fanka-blog_weike .header_other {
+        width: 100%;
+        margin-top: 5.33vw;
+        padding: 0;
+      }
+      .header_other .header_title {
+        width: 100%;
+        font-size: 6.4vw;
+        padding: 0 4.26vw;
+        text-align: left;
+      }
+      .header_other .header-img {
+        width: 100%;
+        margin-top: 5.33vw;
+      }
+      .header_other .title2 {
+        font-size: 3.73vw;
+        width: 100%;
+        margin-top: 5.33vw;
+        padding: 0 4.26vw;
+        text-align: left;
+      }
+
+      .fanka-blog_weike .content_body {
+        margin-top: 10.67vw;
+        padding: 0 4.26vw;
+      }
+
+      .content_body .content-big-title {
+        font-size: 6.4vw;
+        line-height: 1.21;
+        margin: 10.67vw 0 5.33vw;
+      }
+      .content_body .content-small-title {
+        font-size: 5.33vw;
+        margin: 5.33vw 0;
+      }
+      .content_body .content-desc {
+        font-size: 3.73vw;
+        line-height: 1.42;
+        margin: 5.33vw 0;
+      }
+      .content_body .content-img {
+        margin: 5.33vw 0;
+      }
+      .content_body ul {
+        margin-top: 2.67vw;
+      }
+
+      .content_body .tags-card {
+        margin: 10.67vw 0;
+        padding: 5.33vw 4.26vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2.67vw;
+        align-items: center;
+        border: 1px solid #b8b8b8;
+      }
+      .content_body .tags-card .tags-title {
+        font-weight: 700;
+        font-size: 6.4vw;
+        white-space: nowrap;
+        text-align: left;
+        width: 100%;
+      }
+      .content_body .tags-card .tags-list {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        border-left: none;
+        width: 100%;
+      }
+      .content_body .tags-card .tags-list .tags-item {
+        font-size: 3.2vw;
+        line-height: 2;
+        margin-top: 2.67vw;
+        text-decoration: underline;
+      }
+
+      .content_body .shop-list-3 {
+        column-gap: 2.67vw;
+        row-gap: 5.33vw;
+        margin: 5.33vw 0;
+      }
+      .content_body .shop-list-3 .shop-item {
+        width: calc((100% - 2.67vw) / 2);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .content_body .shop-list-3 .item-a img {
+        aspect-ratio: 167/222;
+      }
+      .content_body .shop-list-3 .item-a .btn-shop {
+        display: none;
+      }
+      .content_body .shop-list-3 .shop-item .shop-title {
+        font-size: 3.2vw;
+        line-height: 1.27;
+        margin-top: 2.67vw;
+        padding: 0;
+        text-align: left;
+        flex: auto;
+      }
+      .content_body .shop-list-3 .btn-shop {
+        display: block;
+        width: 100%;
+        text-align: center;
+        background-color: #d43e63;
+        color: #fff !important;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 3.2vw;
+        padding: 2.67vw 0;
+        margin-top: 10px;
+        box-sizing: border-box;
+      }
+
+      .fanka-blog_weike .content_body .btn-div {
+        padding: 2.67vw 6.4vw;
+        font-size: 3.2vw;
+        margin-top: 5.33vw;
+        margin-bottom: 10.67vw;
+      }
+
+      .content_body .shop-swiper {
+        overflow: hidden;
+        margin: 5.33vw 0;
+      }
+      .shop-swiper .shop-item {
+        width: 72vw;
+        display: flex;
+        flex-direction: column;
+      }
+      .shop-swiper .item-a img {
+        aspect-ratio: 167/222;
+      }
+      .shop-swiper .shop-title {
+        font-size: 3.2vw;
+        line-height: 1.27;
+        margin-top: 2.67vw;
+        padding: 0;
+      }
+      .shop-swiper .btn-shop {
+        display: block;
+        width: 100%;
+        text-align: center;
+        background-color: #d43e63;
+        color: #fff !important;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 3.2vw;
+        padding: 2.67vw 0;
+        margin-top: 10px;
+        box-sizing: border-box;
+      }
+      .shop-swiper .swiper-pagination {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        height: 2px;
+        margin-top: 4vw;
+      }
+      .shop-swiper .swiper-pagination-progressbar {
+        background-color: #d4d4d4;
+      }
+      .shop-swiper .swiper-pagination-progressbar-fill {
+        background: #191817 !important;
+      }
+
+      .content_body .faq-area {
+        margin: 5.33vw 0;
+      }
+      .content_body .faq-area .question {
+        margin: 5.33vw 0;
+        font-size: 4.26vw;
+      }
+      .content_body .faq-area .answer {
+        margin: 5.33vw 0;
+        font-size: 3.73vw;
+      }
+      .content_body .faq-area .faq-line {
+        margin: 5.33vw 0;
+      }
+
+      /* 比较视觉 mobile */
+      .comparison-visual .comparison-col-title {
+        font-size: 3.2vw;
+      }
+      .comparison-visual .comparison-row > div {
+        font-size: 3.2vw;
+        padding: 2.67vw 2.13vw;
+      }
+
+      /* 评价卡片 mobile */
+      .content_body .review-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5.33vw 4.26vw;
+        gap: 0;
+      }
+      .review-card .review-img-wrap {
+        width: 100%;
+      }
+      .review-card .review-stars {
+        font-size: 5.33vw;
+        margin-top: 4vw;
+      }
+      .review-card .review-text {
+        font-size: 3.73vw;
+        margin-top: 2.67vw;
+      }
+      .review-card .review-author {
+        font-size: 3.73vw;
+        margin-top: 2.67vw;
+      }
+
+      .bottom-area {
+        width: unset;
+        padding: 0 4.26vw;
+        margin-top: 10.67vw;
+      }
+      .bottom-area .share {
+        display: flex;
+        font-size: 3.73vw;
+        gap: 5.33vw;
+      }
+      .bottom-area .share #Facebook path {
+        fill: #0b64f9;
+      }
+      .bottom-area .share #Twitter path {
+        fill: #3599ec;
+      }
+      .bottom-area .share #pinterest path {
+        fill: #dc2b2a;
+      }
+      .bottom-area .share svg {
+        width: 7.46vw;
+      }
+      .bottom-area .page_change {
+        margin-top: 10.67vw;
+        font-size: 4.26vw;
+        gap: unset;
+        justify-content: space-between;
+      }
+      .bottom-area .page_change svg {
+        width: 8vw;
+      }
+      .bottom-area .page_change div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4vw;
+        opacity: 0.3;
+      }
+
+      .fanka-blog_weike .foot-area {
+        margin-top: 10.67vw;
+        background-color: unset;
+        padding: 0 4.26vw;
+      }
+      .foot-area .footer_title {
+        font-size: 5.33vw;
+      }
+      .foot-area .foot-m {
+        margin-top: 5.33vw;
+        display: flex !important;
+        flex-direction: column;
+        gap: 5.33vw;
+      }
+      .foot-m .desc {
+        margin-top: 2.67vw;
+        font-size: 3.73vw;
+        font-weight: 500;
+      }
+      .foot-m .foot-item {
+        display: none;
+      }
+      .foot-m .foot-item:nth-child(-n + 3) {
+        display: block;
+      }
+      .foot-more {
+        font-size: 3.73vw;
+        text-align: center;
+        text-decoration: underline;
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      /* 穿搭展示模块 mobile */
+      .style-showcase .showcase-item,
+      .style-showcase .showcase-item:nth-child(even) {
+        flex-direction: column;
+        gap: 0;
+        margin: 10.67vw 0 5.33vw;
+      }
+
+      .showcase-item .showcase-swiper-wrap {
+        width: 100%;
+        margin-top: 5.33vw;
+      }
+
+      .showcase-item .showcase-num-title {
+        font-size: 6.4vw;
+        margin-bottom: 5.33vw;
+      }
+
+      .showcase-item .showcase-label {
+        font-size: 3.73vw;
+        margin: 5.33vw 0 0;
+      }
+
+      .showcase-item .showcase-ul {
+        margin-top: 1.33vw;
+      }
+
+      .showcase-item .showcase-ul li {
+        font-size: 3.73vw;
+      }
+
+      .showcase-item .showcase-style-desc {
+        font-size: 3.73vw;
+      }
+
+      .showcase-swiper-wrap .showcase-swiper {
+        padding-bottom: 4vw;
+      }
+
+      .showcase-swiper-wrap .showcase-swiper .swiper-pagination-progressbar {
+        background-color: #d4d4d4;
+      }
+
+      /* shop-list-2 mobile */
+      .content_body .shop-list-2 {
+        column-gap: 2.67vw;
+        row-gap: 5.33vw;
+        margin: 5.33vw 0;
+      }
+      .content_body .shop-list-2 .shop-item {
+        width: calc((100% - 2.67vw) / 2);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .content_body .shop-list-2 .item-a .btn-shop {
+        display: none;
+      }
+      .content_body .shop-list-2 .shop-item .shop-title {
+        font-size: 3.2vw;
+        line-height: 1.27;
+        margin-top: 2.67vw;
+        padding: 0;
+        text-align: left;
+        flex: auto;
+      }
+
+      /* Styling Tips 卡片 mobile */
+      .content_body .tips-card-list {
+        flex-direction: column;
+        gap: 2.67vw;
+        margin: 5.33vw 0;
+      }
+      .tips-card-list .tip-card {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 4.26vw;
+        padding: 4.26vw;
+      }
+      .tip-card .tip-icon-wrap {
+        width: 16vw;
+        height: 16vw;
+        margin-bottom: 0;
+        flex-shrink: 0;
+      }
+
+      .tip-card .tip-card-content {
+        flex: 1;
+      }
+      .tip-card .tip-card-title {
+        font-size: 4.26vw;
+        margin-bottom: 2.67vw;
+      }
+      .tip-card .tip-card-points li {
+        font-size: 3.73vw;
+      }
+      .content_body .tips-highlight {
+        padding: 4.26vw;
+        margin: 5.33vw 0;
+      }
+      .content_body .tips-highlight p {
+        font-size: 3.73vw;
+      }
+    }
+
+    .shop-swiper .swiper-wrapper {
+      height: auto !important;
+    }
+
+    .fw-400 {
+      font-weight: 400;
+    }
+    .fw-500 {
+      font-weight: 500;
+    }
+    .fw-600 {
+      font-weight: 600;
+    }
+    .fw-700 {
+      font-weight: 700;
+    }
+  </style>
+
+  <div class="fanka-blog_weike">
+    <!-- 顶部 -->
+    <div class="top_tab">
+      <span class="item"><a href="https://www.fanka.com/">Home</a></span> &gt;
+      <span class="item"><a href="https://www.fanka.com/pages/wellnesshub">Wellness Hub</a></span> &gt;
+      <span class="item"><a href="https://www.fanka.com/blogs/articles">Articles</a></span> &gt;
+      <br class="show-small" /><span class="item_other"
+        ><a href="https://www.fanka.com/blogs/articles/how-to-style-fanka-capri-leggings-for-any-occasion"
+          >How to Style Fanka Capri Leggings for Any Occasion</a
+        ></span
+      >
+    </div>
+
+    <div class="header_other">
+      <div class="header_title">How to Style Fanka Capri Leggings for Any Occasion</div>
+      <div class="title2 show-big">By Fanka stylist Amber Vance | Mar 30th, 2026 | 3 Min Read</div>
+      <a
+        href="https://www.fanka.com/products/powerband-resistance-capris-leggings-reversible-wear?variant=52061886808295"
+      >
+        <picture>
+          <source media="(max-width: 768px)" srcset="" />
+          https://cdn.shopify.com/s/files/1/0619/5265/5591/files/FankaWellnessHub-how-to-style-fanka-capri-leggings-for-any-occasion-banner-pc.jpg?v=1778574515
+
+          <img
+            class="header-img"
+            src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/FankaWellnessHub-how-to-style-fanka-capri-leggings-for-any-occasion-banner-pc.jpg?v=1778574515"
+        /></picture>
+      </a>
+      <div class="title2 show-small">By Fanka stylist Amber Vance | Mar 30th, 2026 | 3 Min Read</div>
+    </div>
+
+    <!-- 正文 -->
+    <div class="content_body">
+      <div class="content-desc">
+        Capri leggings are officially back—and more elevated than ever. In 2026, the retro revival has turned them into
+        a fashion-forward styling piece seen across street style and editorials alike.
+      </div>
+      <div class="content-desc">
+        The key to making black capri leggings look chic comes down to proportion: exposing more of the foot to elongate
+        the legs, and creating separation between the top and bottom.
+      </div>
+      <div class="content-desc">
+        Once you get these right, capri leggings can work anywhere from office to workouts to everyday errands.
+      </div>
+      <div class="content-desc">
+        In this guide, we’ll use the
+        <a
+          href="https://www.fanka.com/products/powerband-resistance-capris-leggings-reversible-wear?variant=52061886808295"
+          >Fanka PowerBand Resistance Capri Leggings</a
+        >
+        to show you three easy ways to style them for different occasions.
+      </div>
+
+      <div class="tags-card">
+        <div class="tags-title">Quick Guide</div>
+        <div class="tags-list">
+          <a class="tags-item" href="#office-look">1. Office Look: Clean, Structured, Professional</a>
+          <a class="tags-item" href="#workout-look">2. Workout Look: Sculpted, Elevated</a>
+          <a class="tags-item" href="#casual-look">3. Casual Look: Relaxed but Styled</a>
+          <a class="tags-item" href="#styling-tips">4. Styling Tips to Remember</a>
+          <a class="tags-item" href="#feel-the-difference">5. Feel the Difference On Your Skin</a>
+        </div>
+      </div>
+
+      <!-- 穿搭展示模块 -->
+      <div class="style-showcase">
+        <!-- Item 1: Office Look -->
+        <div class="showcase-item" id="office-look">
+          <div class="showcase-text">
+            <div class="showcase-num-title">1. Office Look: Clean, Structured, Professional</div>
+            <div class="showcase-label">Key points:</div>
+            <ul class="showcase-ul">
+              <li>Heels or minimal sandals + more foot exposure + longer legs</li>
+              <li>Cropped or fitted top + define the waist</li>
+              <li>Blazer worn open + elongates proportions</li>
+            </ul>
+            <div class="showcase-label">Style it with:</div>
+            <div class="showcase-style-desc">
+              <a
+                href="https://www.fanka.com/products/powerband-resistance-capris-leggings-reversible-wear?variant=52061886808295"
+                >Black capri leggings</a
+              >
+              + fitted top + open blazer + pointed heels / sleek sandals
+            </div>
+            <div class="showcase-label">Finish with:</div>
+            <ul class="showcase-ul">
+              <li>Sleek low bun</li>
+              <li>Narrow black sunglasses</li>
+              <li>Structured clutch</li>
+            </ul>
+          </div>
+          <div class="showcase-swiper-wrap">
+            <div class="showcase-swiper swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="https://www.fanka.com/products/powerband-resistance-capris-leggings-reversible-wear?variant=52061886808295">
+                    <picture>
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/FankaWellnessHub-how-to-style-fanka-capri-leggings-for-any-occasion-powerbandresistancecaprileggings-office-1.jpg?v=1778574517"
+                      />
+                    </picture>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.fanka.com/products/powerband-resistance-capris-leggings-reversible-wear?variant=52061886808295">
+                    <picture>
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/FankaWellnessHub-how-to-style-fanka-capri-leggings-for-any-occasion-powerbandresistancecaprileggings-office-2.jpg?v=1778574517"
+                      />
+                    </picture>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.fanka.com/products/powerband-resistance-capris-leggings-reversible-wear?variant=52061886808295">
+                    <picture>
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/FankaWellnessHub-how-to-style-fanka-capri-leggings-for-any-occasion-powerbandresistancecaprileggings-office-3.jpg?v=1778574517"
+                      />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Workout Look -->
+        <div class="showcase-item" id="workout-look">
+          <div class="showcase-text">
+            <div class="showcase-num-title">2. Workout Look: Sculpted, Elevated</div>
+            <div class="showcase-label">Key points:</div>
+            <ul class="showcase-ul">
+              <li>Keep the look clean and fitted</li>
+              <li>Add one or two styled elements (not too many)</li>
+            </ul>
+            <div class="showcase-label">Style it with:</div>
+            <div class="showcase-style-desc">
+              <a
+                href="https://www.fanka.com/products/powerband-resistance-capris-leggings-reversible-wear?variant=52061886808295"
+                >Black capri leggings</a
+              >
+              +
+              <a href="https://www.fanka.com/products/body-sculpt-bra-tank?variant=50948359946471"
+                >Fanka body sculpt bra tank</a
+              >
+            </div>
+            <div class="showcase-label">Finish with:</div>
+            <ul class="showcase-ul">
+              <li>High ponytail</li>
+              <li>Crossbody gym bag</li>
+              <li>Lightweight shoulder wrap</li>
+              <li>Silver earrings + headband</li>
+            </ul>
+          </div>
+          <div class="showcase-swiper-wrap">
+            <div class="showcase-swiper swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="https://www.fanka.com/products/powerband-resistance-capris-leggings-reversible-wear?variant=52061886808295">
+                    <picture>
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/FankaWellnessHub-how-to-style-fanka-capri-leggings-for-any-occasion-powerbandresistancecaprileggings-workout-1.jpg?v=1778574515"
+                      />
+                    </picture>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.fanka.com/products/powerband-resistance-capris-leggings-reversible-wear?variant=52061886808295">
+                    <picture>
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/FankaWellnessHub-how-to-style-fanka-capri-leggings-for-any-occasion-powerbandresistancecaprileggings-workout-2.jpg?v=1778574517"
+                      />
+                    </picture>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.fanka.com/products/powerband-resistance-capris-leggings-reversible-wear?variant=52061886808295">
+                    <picture>
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/FankaWellnessHub-how-to-style-fanka-capri-leggings-for-any-occasion-powerbandresistancecaprileggings-workout-3.jpg?v=1778574517"
+                      />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Casual Look -->
+        <div class="showcase-item" id="casual-look">
+          <div class="showcase-text">
+            <div class="showcase-num-title">3. Casual Look: Relaxed but Styled</div>
+            <div class="showcase-label">Key points:</div>
+            <ul class="showcase-ul">
+              <li>Layer on top to create depth</li>
+              <li>Break the waistline to improve proportions</li>
+              <li>Minimal footwear to lengthen legs</li>
+            </ul>
+            <div class="showcase-label">Style it with:</div>
+            <div class="showcase-style-desc">
+              <a
+                href="https://www.fanka.com/products/powerband-resistance-capris-leggings-reversible-wear?variant=52061886808295"
+                >Black capri leggings</a
+              >
+              + white tank + black tank (layered)
+            </div>
+            <div class="showcase-label">Finish with:</div>
+            <ul class="showcase-ul">
+              <li>Silk scarf tied at waist</li>
+              <li>Flip flops / strappy sandals / pointed flats</li>
+              <li>Lightweight shoulder bag</li>
+              <li>Hair down</li>
+            </ul>
+          </div>
+          <div class="showcase-swiper-wrap">
+            <div class="showcase-swiper swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="https://www.fanka.com/products/powerband-resistance-capris-leggings-reversible-wear?variant=52061886808295">
+                    <picture>
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/FankaWellnessHub-how-to-style-fanka-capri-leggings-for-any-occasion-powerbandresistancecaprileggings-casual-1.jpg?v=1778574517"
+                      />
+                    </picture>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.fanka.com/products/powerband-resistance-capris-leggings-reversible-wear?variant=52061886808295">
+                    <picture>
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/FankaWellnessHub-how-to-style-fanka-capri-leggings-for-any-occasion-powerbandresistancecaprileggings-casual-2.jpg?v=1778574516"
+                      />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-desc">
+        <b>Visual Note</b>
+        <br />The images featured in this guide are AI-generated for styling inspiration. They’re designed to help you
+        better visualize proportions, layering, and overall looks.
+      </div>
+
+      <!-- 4. styling-tips -->
+      <div class="content-big-title" id="styling-tips">Styling Tips to Remember</div>
+      <div class="content-desc">
+        Styling black capri leggings is all about proportion and balance. Small choices can change how the silhouette
+        looks.
+      </div>
+
+      <div class="tips-card-list">
+        <div class="tip-card">
+          <div class="tip-icon-wrap">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/FankaWellnessHub-how-to-style-fanka-capri-leggings-for-any-occasion-icon1.svg?v=1778575688"
+            />
+          </div>
+          <div class="tip-card-content">
+            <div class="tip-card-title">Elongate the legs</div>
+            <ul class="tip-card-points">
+              <li>Show more foot to visually lengthen the legs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon-wrap">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/FankaWellnessHub-how-to-style-fanka-capri-leggings-for-any-occasion-icon2.svg?v=1778575688"
+            />
+          </div>
+          <div class="tip-card-content">
+            <div class="tip-card-title">Balance proportions</div>
+            <ul class="tip-card-points">
+              <li>Use cropped or fitted tops to define the waist</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon-wrap">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/FankaWellnessHub-how-to-style-fanka-capri-leggings-for-any-occasion-icon3.svg?v=1778575688"
+            />
+          </div>
+          <div class="tip-card-content">
+            <div class="tip-card-title">Two ways to wear</div>
+            <ul class="tip-card-points">
+              <li>3D printed line side out → sculpted, more fashion-forward look</li>
+              <li>Clean side out → minimal, smooth finish</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="tips-highlight">
+        <p>Once you get this right, capri leggings become less of a trend and more of a styling tool.</p>
+      </div>
+
+      <div class="shop-list-2">
+        <div class="shop-item">
+          <a href="https://www.fanka.com/products/body-sculpt-bra-tank?variant=50948359946471" class="item-a">
+            <picture>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/FankaWellnessHub-how-to-style-fanka-capri-leggings-for-any-occasion-bodysculptbratank-pc.jpg?v=1778574510"
+              />
+            </picture>
+            <div class="btn-shop show-big">Shop Now</div>
+          </a>
+          <div class="shop-title">Body Sculpt Bra Tank</div>
+        </div>
+        <div class="shop-item">
+          <a
+            href="https://www.fanka.com/products/powerband-resistance-capris-leggings-reversible-wear?variant=52061886808295"
+            class="item-a"
+          >
+            <picture>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/FankaWellnessHub-how-to-style-fanka-capri-leggings-for-any-occasion-powerbandresistancecaprileggings-pc.jpg?v=1778574514"
+              />
+            </picture>
+            <div class="btn-shop show-big">Shop Now</div>
+          </a>
+          <div class="shop-title">PowerBand Resistance Capri Leggings <br />(Reversible Wear)</div>
+        </div>
+      </div>
+
+      <!-- 5. feel-the-difference -->
+      <div class="content-big-title" id="feel-the-difference">A Note From Fanka</div>
+      <div class="content-desc">
+        When exploring compression wear, many women come across two main types: medical compression and athletic
+        compression leggings.
+      </div>
+      <div class="content-desc">
+        If you try any of these looks, we’d love to see how you style your
+        <a
+          href="https://www.fanka.com/products/powerband-resistance-capris-leggings-reversible-wear?variant=52061886808295"
+          >Fanka capri leggings.</a
+        >
+        Feel free to share your photos with us. We’re always excited to see how you make these pieces your own.
+      </div>
+
+      <div class="content-desc">
+        Our goal is simple: to help you feel confident, comfortable, and effortlessly put-together—not just for
+        workouts, but in your daily life too.
+      </div>
+
+      <a
+        href="https://www.fanka.com/products/powerband-resistance-capris-leggings-reversible-wear?variant=52061886808295"
+        class="btn-div"
+        >Shop Fanka Leggings</a
+      >
+    </div>
+
+    <div class="klaviyo-form-XrPfme" style="margin-top: 40px"></div>
+
+    <!-- 轮播图 -->
+    <div class="foot-area">
+      <div class="footer_title">Keep Exploring</div>
+      <div class="foot-swiper show-big swiper-container-initialized swiper-container-horizontal">
+        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px)">
+          <div class="swiper-slide swiper-slide-active" style="width: 255.333px; margin-right: 32px">
+            <a
+              style="height: 100%; width: 100%"
+              href="https://www.fanka.com/blogs/articles/can-back-exercises-help-reduce-wrinkles"
+              ><img
+                src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/Keep_Exploring.jpg?v=1757063287"
+                alt="Fanka"
+            /></a>
+            <div class="desc">Can Back Exercises Help Reduce Wrinkles?</div>
+          </div>
+          <div class="swiper-slide swiper-slide-next" style="width: 255.333px; margin-right: 32px">
+            <a
+              style="height: 100%; width: 100%"
+              href="https://www.fanka.com/blogs/real-stories/i-ride-half-marathons-at-64-and-i-m-just-getting-started"
+              ><img
+                src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/4_53805f24-4560-4140-98db-8934cc690a45.jpg?v=1749174124"
+                alt="Fanka"
+            /></a>
+            <div class="desc">I Ride Half-Marathons at 64—And I’m Just Getting Started</div>
+          </div>
+          <div class="swiper-slide" style="width: 255.333px; margin-right: 32px">
+            <a style="height: 100%; width: 100%" href="https://www.fanka.com/blogs/real-stories/from-cancer-to-champion"
+              ><img src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/31.jpg?v=1748426976" alt="Fanka"
+            /></a>
+            <div class="desc">From Cancer to Champion</div>
+          </div>
+          <div class="swiper-slide" style="width: 255.333px; margin-right: 32px">
+            <a
+              style="height: 100%; width: 100%"
+              href="https://www.fanka.com/blogs/articles/how-to-stay-active-during-menopause"
+            >
+              <img src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/32.jpg?v=1748426976" alt="Fanka"
+            /></a>
+            <div class="desc">How to Stay Active During Menopause?</div>
+          </div>
+          <div class="swiper-slide" style="width: 255.333px; margin-right: 32px">
+            <a
+              style="height: 100%; width: 100%"
+              href="https://www.fanka.com/blogs/articles/why-we-need-to-talk-about-menopause"
+              ><img src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/30.jpg?v=1748426976" alt="Fanka"
+            /></a>
+            <div class="desc">Why We Need to Talk About Menopause？</div>
+          </div>
+        </div>
+        <div class="swiper-pagination swiper-pagination-progressbar">
+          <span
+            class="swiper-pagination-progressbar-fill"
+            style="transform: translate3d(0px, 0px, 0px) scaleX(0.333333) scaleY(1); transition-duration: 300ms"
+          ></span>
+        </div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+      </div>
+      <div class="foot-m show-small">
+        <div class="foot-item">
+          <a
+            style="height: 100%; width: 100%"
+            href="https://www.fanka.com/blogs/articles/can-back-exercises-help-reduce-wrinkles"
+            ><img
+              src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/Keep_Exploring.jpg?v=1757063287"
+              alt="Fanka"
+          /></a>
+          <div class="desc">Can Back Exercises Help Reduce Wrinkles?</div>
+        </div>
+        <div class="foot-item">
+          <a
+            style="height: 100%; width: 100%"
+            href="https://www.fanka.com/blogs/real-stories/i-ride-half-marathons-at-64-and-i-m-just-getting-started"
+            ><img
+              src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/4_53805f24-4560-4140-98db-8934cc690a45.jpg?v=1749174124"
+              alt="Fanka"
+          /></a>
+          <div class="desc">I Ride Half-Marathons at 64—And I’m Just Getting Started</div>
+        </div>
+        <div class="foot-item">
+          <a style="height: 100%; width: 100%" href="https://www.fanka.com/blogs/real-stories/from-cancer-to-champion"
+            ><img src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/31.jpg?v=1748426976" alt="Fanka"
+          /></a>
+          <div class="desc">From Cancer to Champion</div>
+        </div>
+        <div class="foot-item">
+          <a
+            style="height: 100%; width: 100%"
+            href="https://www.fanka.com/blogs/articles/how-to-stay-active-during-menopause"
+          >
+            <img src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/32.jpg?v=1748426976" alt="Fanka"
+          /></a>
+          <div class="desc">How to Stay Active During Menopause?</div>
+        </div>
+        <div class="foot-item">
+          <a
+            style="height: 100%; width: 100%"
+            href="https://www.fanka.com/blogs/articles/why-we-need-to-talk-about-menopause"
+            ><img src="https://cdn.shopify.com/s/files/1/0619/5265/5591/files/30.jpg?v=1748426976" alt="Fanka"
+          /></a>
+          <div class="desc">Why We Need to Talk About Menopause？</div>
+        </div>
+        <div class="foot-more">Explore More</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var isPC = document.documentElement.clientWidth > 768;
+    var showcaseSwiperConfig = isPC
+      ? { slidesPerView: 1, spaceBetween: 0, autoplay: { delay: 3000, disableOnInteraction: false } }
+      : {
+          slidesPerView: 2,
+          spaceBetween: 10,
+          freeMode: true,
+          freeModeMomentum: true,
+          freeModeMomentumRatio: 0.5,
+          freeModeMomentumVelocityRatio: 0.5,
+          autoplay: { delay: 3000, disableOnInteraction: false },
+        };
+
+    document.querySelectorAll(".showcase-swiper").forEach(function (el) {
+      new Swiper(
+        el,
+        Object.assign({}, showcaseSwiperConfig, {
+          pagination: {
+            el: el.querySelector(".swiper-pagination"),
+            type: isPC ? "bullets" : "progressbar",
+            clickable: true,
+          },
+        }),
+      );
+    });
+
+    if (document.documentElement.clientWidth <= 768) {
+      new Swiper(".shop-swiper", {
+        slidesPerView: 1.3,
+        spaceBetween: 10,
+        freeMode: true,
+        freeModeMomentum: true,
+        freeModeMomentumRatio: 0.5,
+        freeModeMomentumVelocityRatio: 0.5,
+        pagination: { el: ".shop-swiper .swiper-pagination", type: "progressbar" },
+      });
+    }
+
+    document.querySelectorAll('.tags-item[href^="#"]').forEach(function (el) {
+      el.addEventListener("click", function (e) {
+        var targetId = el.getAttribute("href").replace("#", "");
+        var target = document.getElementById(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: "smooth" });
+          history.pushState(null, "", "#" + targetId);
+        }
+      });
+    });
+
+    if (document.documentElement.clientWidth > 768) {
+      setTimeout(() => {
+        new Swiper(".foot-swiper", {
+          slidesPerView: 3,
+          spaceBetween: 32,
+          pagination: { el: ".swiper-pagination", type: "progressbar" },
+        });
+      });
+    } else {
+      const more_btn = document.querySelector(".foot-more");
+      more_btn.addEventListener("click", function () {
+        document.querySelectorAll(".foot-item").forEach((item) => {
+          item.style.display = "block";
+        });
+        if (more_btn) more_btn.parentElement.removeChild(more_btn);
+      });
+    }
+  </script>
+</body>
