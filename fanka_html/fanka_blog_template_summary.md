@@ -263,6 +263,7 @@
 博客生成步骤建议输出：
 
 - `fanka_html/{slug}.html`
+- `fanka_html/index.html`
 - 一个简短生成摘要，包含：
   - 来源日报，例如 `fitness/edition-0010.html`
   - 选中的趋势或主题
@@ -273,9 +274,43 @@
   - 使用的 Fanka 商品链接
   - 使用的图片来源或缺失说明
 
+同时需要把博客信息写入 `latest-fitness.json`，供企业微信机器人读取：
+
+```json
+{
+  "blog": {
+    "title": "博客标题",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/{slug}.html",
+    "summary": "一句中文说明"
+  },
+  "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
+}
+```
+
+`blog.url` 必须指向 GitHub Pages 可访问的博客页，`blog_index_url` 必须指向博客汇总页。
+
+## 博客汇总页规则
+
+每次生成新博客后，都要重建 `fanka_html/index.html`：
+
+- 页面标题：`Fanka AI 博客汇总`
+- 访问地址：`https://baldmuzi.github.io/ai-news-daily/fanka_html/`
+- 只展示 AI 生成的博客页，不展示本地模板参考页
+- 排除这些模板文件：
+  - `2026.html`
+  - `how-to-care.html`
+  - `how-to-pair.html`
+  - `how-to-style-fanka-capri-leggings-for-any-occasion.html`
+  - `what compression level do you need.html`
+  - `index.html`
+- 每张卡片建议展示：生成日期、来源日报期号、博客标题、中文摘要、博客链接
+- 新生成的博客排在最前面
+
 ## 发布前检查
 
 - 新文件存在于 `fanka_html/`。
+- `fanka_html/index.html` 已更新，并能链接到新博客。
+- `latest-fitness.json` 已包含 `blog.url` 和 `blog_index_url`。
 - 页面 title、面包屑标题、头部标题、OG / Twitter 标题、分享标题保持一致。
 - `.tags-card` 里的所有锚点都能跳到真实章节。
 - 商品链接是有效的 Fanka 链接。

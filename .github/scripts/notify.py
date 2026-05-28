@@ -36,10 +36,15 @@ def wait_for_page(url, timeout=480, interval=20):
     print(f"Timeout after {timeout}s, sending notification anyway")
 
 
-def should_notify(json_file, prefix):
+def should_notify(json_file, prefixes):
     if event == 'workflow_dispatch':
         return os.path.exists(json_file)
-    return json_file in changed or any(f.startswith(prefix) for f in changed)
+    if isinstance(prefixes, str):
+        prefixes = (prefixes,)
+    return json_file in changed or any(
+        any(f.startswith(prefix) for prefix in prefixes)
+        for f in changed
+    )
 
 
 def build_mention_str(mention_env):
@@ -66,13 +71,29 @@ def post_wecom(webhook_env_val, json_path, label, mention_env):
     tags = ' · '.join(d.get('tags', []))
     url = d.get('url', '')
     top3 = d.get('top3', [])
+    blog = d.get('blog') or {}
+    blog_url = blog.get('url') or d.get('blog_url', '')
+    blog_title = blog.get('title') or d.get('blog_title') or '本期延展博客'
+    blog_index_url = d.get('blog_index_url', '')
 
     wait_for_page(url)
+    if blog_url:
+        wait_for_page(blog_url)
+    if blog_index_url:
+        wait_for_page(blog_index_url)
 
     top3_md = '\n'.join(
         f"> **#{i+1} {it.get('title', '')}**\n> {it.get('comment', '')[:80]}"
         for i, it in enumerate(top3)
     )
+
+    extra_links = []
+    if blog_url:
+        extra_links.append(f"[📝 延展博客：{blog_title}]({blog_url})")
+    if blog_index_url:
+        extra_links.append(f"[📚 Fanka 博客汇总]({blog_index_url})")
+    extra_links_md = '\n'.join(extra_links)
+    extra_links_block = f"\n\n{extra_links_md}" if extra_links_md else ''
 
     mentions = build_mention_str(mention_env)
     msg = os.environ.get(mention_env.replace('MENTION', 'MENTION_MSG'), '').strip()
@@ -85,6 +106,7 @@ def post_wecom(webhook_env_val, json_path, label, mention_env):
         f"**关键词：** {tags}\n\n"
         f"**Top 3 速览：**\n{top3_md}\n\n"
         f"[📖 阅读完整版]({url})"
+        f"{extra_links_block}"
         f"{mention_line}"
     )
 
@@ -124,7 +146,7 @@ if should_notify('latest.json', 'editions/'):
 if should_notify('latest-business.json', 'business/'):
     post_wecom(os.environ.get('WECOM_WEBHOOK_BUSINESS', ''), 'latest-business.json', 'AI 产品洞察', 'WECOM_MENTION_BUSINESS')
 
-if should_notify('latest-fitness.json', 'fitness/'):
+if should_notify('latest-fitness.json', ('fitness/', 'fanka_html/')):
     post_wecom(os.environ.get('WECOM_WEBHOOK_FITNESS', ''), 'latest-fitness.json', 'Fanka 运动健康趋势', 'WECOM_MENTION_FITNESS')
 
 if should_notify('latest-vivaia.json', 'vivaia/'):
