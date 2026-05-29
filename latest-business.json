@@ -1,27 +1,27 @@
 {
-  "edition": "0020",
-  "date": "2026年5月28日 09:11",
-  "intro": "AI购物入口、绿色供应链和商品数据优化同步升级，出海鞋类品牌正迎来电商增长与环保合规的双重重构。",
+  "edition": "0021",
+  "date": "2026年5月29日 09:11",
+  "intro": "AI代理购物、绿色供应链和零售数据智能同步升级，出海鞋类品牌要同时抢入口、控合规、提转化。",
   "tags": [
-    "AI购物",
-    "绿色溯源",
-    "跨境转化",
-    "商品数据",
-    "Agent支付"
+    "代理购物",
+    "绿色追溯",
+    "跨境运营",
+    "消费洞察",
+    "数据转化"
   ],
   "top3": [
     {
-      "title": "Google 推出 UCP，让 AI 代理接管发现到售后的电商链路",
-      "comment": "先把商品与支付能力做成代理可读接口。"
+      "title": "Google 推出 UCP 协议，让 AI 代理直接贯通商品发现到结账",
+      "comment": "代理购物标准成形，商品与履约数据必须AI可读。"
     },
     {
-      "title": "Adobe：Q1 美国零售 AI 流量同比增 393%，并开始带来更高收入",
-      "comment": "AI流量已成高转化新渠道，归因口径要重做。"
+      "title": "亿邦动力：美国 AI 购物流量 Q1 同比暴涨 393%，转化率首次反超传统渠道",
+      "comment": "AI来源流量已能带来更高转化，归因口径要重做。"
     },
     {
-      "title": "亿邦动力：数智供应链进入“向绿”阶段，AI 正从智能采购延伸到全球协同",
-      "comment": "绿色供应链数据将成为鞋类出海合规底座。"
+      "title": "Gap 借助 Inspectorio AI 做供应链追溯，把合规、质量与可持续数据打通",
+      "comment": "合规与追溯正被AI串联成可执行的供应链底座。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0020.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0021.html"
 }
