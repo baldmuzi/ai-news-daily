@@ -1,27 +1,27 @@
 {
-  "edition": "0021",
-  "date": "2026年5月29日 09:11",
-  "intro": "AI代理购物、绿色供应链和零售数据智能同步升级，出海鞋类品牌要同时抢入口、控合规、提转化。",
+  "edition": "0022",
+  "date": "2026年6月1日 09:12",
+  "intro": "AI 购物入口正加速外移，鞋类出海团队要同步补齐商品数据、绿色追溯和营销归因。",
   "tags": [
     "代理购物",
+    "商品可见",
     "绿色追溯",
-    "跨境运营",
-    "消费洞察",
-    "数据转化"
+    "供应链AI",
+    "数据治理"
   ],
   "top3": [
     {
-      "title": "Google 推出 UCP 协议，让 AI 代理直接贯通商品发现到结账",
-      "comment": "代理购物标准成形，商品与履约数据必须AI可读。"
+      "title": "Google 推出 Universal Cart 和 AP2，让 AI 代理开始接管购物车与支付",
+      "comment": "商品、价格和履约数据要先变成 AI 可读格式。"
     },
     {
-      "title": "亿邦动力：美国 AI 购物流量 Q1 同比暴涨 393%，转化率首次反超传统渠道",
-      "comment": "AI来源流量已能带来更高转化，归因口径要重做。"
+      "title": "Gap 用 Inspectorio 的 AI layer 打通追溯、质检、实验室测试和合规协作",
+      "comment": "绿色追溯开始从汇报材料变成可执行的数据链路。"
     },
     {
-      "title": "Gap 借助 Inspectorio AI 做供应链追溯，把合规、质量与可持续数据打通",
-      "comment": "合规与追溯正被AI串联成可执行的供应链底座。"
+      "title": "DataGrail：63.6% 宣称有 AI 功能的软件商，未披露第三方 AI 子处理方",
+      "comment": "接入 AI 工具前，必须先盘清数据流向与供应商边界。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0021.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0022.html"
 }
