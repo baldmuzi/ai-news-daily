@@ -1,33 +1,27 @@
 {
-  "edition": "0012",
-  "date": "2026年5月29日 09:13",
-  "intro": "本期从全球女性运动、趣味健身、爬坡热和夏季彩色穿搭中，提炼 Fanka 压缩服内容机会。",
+  "edition": "0013",
+  "date": "2026年6月1日 09:13",
+  "intro": "2026年，全球运动方式从「高强度打卡」转向「可持续健康」——日式间歇步行搜索量暴增3000%，普拉提三年蝉联最热运动，温和压缩裤取代高弹紧绷成为穿搭新主流。Fanka以功能美学为支点打入女性运动文化前沿。",
   "tags": [
-    "趣味运动",
-    "爬坡热潮",
-    "彩色穿搭",
-    "女性力量",
-    "压缩支撑"
+    "步行运动革命",
+    "普拉提穿搭热",
+    "温和压缩趋势",
+    "女性周期健身",
+    "社群健康文化"
   ],
   "top3": [
     {
-      "title": "How To Motivate Yourself to Work Out When You Hate Exercising",
-      "comment": "趣味运动降低启动门槛，适合做 Fanka 轻松运动穿搭内容"
+      "title": "日式间歇步行法：2026年搜索量暴增3000%的步行革命",
+      "comment": "源自日本的间歇步行法在TikTok爆发，ACSM列为年度头号趋势。Fanka可围绕户外步行场景拍摄压缩裤实测，发起品牌挑战降低传播成本。"
     },
     {
-      "title": "「爬坡」正在重塑健身房生意",
-      "comment": "中文爬坡热连接健身房轻量化训练和压缩裤支撑卖点"
+      "title": "普拉提公主美学：全球最热预约运动的穿搭密码",
+      "comment": "普拉提三年蝉联ClassPass全球榜首，普拉提公主穿搭席卷小红书。Fanka可制作从器械到街头的Lookbook，精准覆盖高消费力普拉提女孩。"
     },
     {
-      "title": "Paradise Pink Takes Over Summer ’26",
-      "comment": "高识别粉色 activewear 提供夏季社媒色彩借势"
+      "title": "温和压缩裤主导2026：拥抱感取代紧绷感",
+      "comment": "超高压缩时代落幕，温和压缩成主流。Fanka可主打轻压缩重自由叙事，以对比测评内容强化专业感，讲述从健身房到咖啡馆的跨场景生活方式故事。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0012.html",
-  "blog": {
-    "title": "Fun Workout Outfits: How Compression Leggings Help Movement Feel Easier",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/fun-workout-compression-outfits.html",
-    "summary": "由本期趣味运动与低门槛健身趋势延展而来，讲压缩裤如何服务日常运动穿搭。"
-  },
-  "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0013.html"
 }
