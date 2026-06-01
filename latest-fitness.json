@@ -1,33 +1,33 @@
 {
-  "edition": "0012",
-  "date": "2026年5月29日 09:13",
-  "intro": "本期从全球女性运动、趣味健身、爬坡热和夏季彩色穿搭中，提炼 Fanka 压缩服内容机会。",
+  "edition": "0013",
+  "date": "2026年6月1日 09:13",
+  "intro": "本期从爬坡步行、音乐训练、低腰 leggings 与恢复热中，捕捉全球女性运动和压缩穿搭内容机会。",
   "tags": [
-    "趣味运动",
-    "爬坡热潮",
-    "彩色穿搭",
-    "女性力量",
+    "爬坡步行",
+    "低腰穿搭",
+    "音乐训练",
+    "恢复冷热",
     "压缩支撑"
   ],
   "top3": [
     {
-      "title": "How To Motivate Yourself to Work Out When You Hate Exercising",
-      "comment": "趣味运动降低启动门槛，适合做 Fanka 轻松运动穿搭内容"
+      "title": "Walking Less Than 10k Steps Daily Can Help Maintain Weight Loss, Study Finds",
+      "comment": "8,500步让走路挑战更现实，适合压缩裤日常内容。"
+    },
+    {
+      "title": "The 7 Best Compression Leggings for Women, Tested by Personal Trainers and Editors",
+      "comment": "压缩裤测评热度高，可转化为Fanka功能测试清单。"
     },
     {
       "title": "「爬坡」正在重塑健身房生意",
-      "comment": "中文爬坡热连接健身房轻量化训练和压缩裤支撑卖点"
-    },
-    {
-      "title": "Paradise Pink Takes Over Summer ’26",
-      "comment": "高识别粉色 activewear 提供夏季社媒色彩借势"
+      "comment": "中文爬坡热继续发酵，适合发起下班后30分钟挑战。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0012.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0013.html",
   "blog": {
-    "title": "Fun Workout Outfits: How Compression Leggings Help Movement Feel Easier",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/fun-workout-compression-outfits.html",
-    "summary": "由本期趣味运动与低门槛健身趋势延展而来，讲压缩裤如何服务日常运动穿搭。"
+    "title": "What to Wear for Incline Walking: Compression Leggings, Support, and Low-Impact Cardio",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/incline-walking-compression-leggings-outfits.html",
+    "summary": "由本期爬坡步行和压缩裤趋势延展，沉淀为低冲击有氧穿搭指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
