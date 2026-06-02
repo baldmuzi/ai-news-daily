@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>出海 AI 洞察 — 第 0023 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #080c14;
+      --surface: #0f1623;
+      --surface-2: #142032;
+      --border: #1f2d3f;
+      --accent: #10b981;
+      --accent-2: #34d399;
+      --text: #e5eef7;
+      --muted: #94a3b8;
+      --dim: #64748b;
+      --tag-bg: rgba(16, 185, 129, 0.12);
+      --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(16,185,129,0.14), transparent 28%),
+        radial-gradient(circle at top right, rgba(52,211,153,0.10), transparent 24%),
+        linear-gradient(180deg, #0a111c 0%, var(--bg) 26%);
+      color: var(--text);
+      font-family: 'Noto Serif SC', serif;
+      line-height: 1.85;
+      min-height: 100vh;
+      padding-bottom: 4rem;
+    }
+    a { color: inherit; }
+    header {
+      position: relative;
+      padding: 3rem 1.5rem 2rem;
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+    .back-link {
+      position: absolute;
+      top: 1.2rem;
+      left: 1.5rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      border: 1px solid rgba(16,185,129,0.32);
+      border-radius: 999px;
+      padding: 0.36em 0.9em;
+      background: rgba(15,22,35,0.7);
+    }
+    .back-link:hover { background: var(--tag-bg); }
+    .badge {
+      display: inline-block;
+      color: var(--accent);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.66rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border: 1px solid rgba(16,185,129,0.34);
+      border-radius: 999px;
+      padding: 0.25em 0.9em;
+      margin-bottom: 1rem;
+      background: rgba(15,22,35,0.7);
+    }
+    h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); letter-spacing: 0.04em; margin-bottom: 0.45rem; }
+    .subtitle { color: var(--muted); font-size: 0.92rem; letter-spacing: 0.06em; }
+    .meta { margin-top: 1rem; color: var(--dim); font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; letter-spacing: 0.06em; }
+    .intro {
+      max-width: 820px;
+      margin: 1.5rem auto 0;
+      padding: 1.15rem 1.35rem;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      background: linear-gradient(135deg, rgba(15,22,35,0.98), rgba(10,18,30,0.94));
+      color: var(--muted);
+      text-align: left;
+      box-shadow: var(--shadow);
+    }
+    .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-top: 1.1rem; }
+    .tag {
+      color: var(--accent);
+      background: var(--tag-bg);
+      border: 1px solid rgba(16,185,129,0.24);
+      border-radius: 999px;
+      padding: 0.26em 0.8em;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.66rem;
+    }
+    main { max-width: 980px; margin: 0 auto; padding: 2rem 1.2rem 0; }
+    .section-title { border-bottom: 1px solid var(--border); padding-bottom: 0.65rem; margin-bottom: 1rem; }
+    .section-title h2 { color: var(--accent); font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; font-family: 'JetBrains Mono', monospace; }
+    .grid { display: grid; gap: 1.2rem; }
+    .card {
+      background: linear-gradient(180deg, rgba(15,22,35,0.96), rgba(9,16,27,0.98));
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.45rem 1.5rem;
+      box-shadow: var(--shadow);
+      transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+    .card:hover { transform: translateY(-2px); border-color: rgba(16,185,129,0.44); box-shadow: 0 28px 60px rgba(16,185,129,0.08); }
+    .card-header { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.7rem; }
+    .num, .cat {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.63rem;
+      border-radius: 999px;
+      padding: 0.22em 0.65em;
+      white-space: nowrap;
+      margin-top: 0.15em;
+    }
+    .num { color: var(--dim); background: var(--surface-2); border: 1px solid var(--border); }
+    .cat { color: var(--accent); background: var(--tag-bg); border: 1px solid rgba(16,185,129,0.24); }
+    .title-wrap { flex: 1; min-width: 0; }
+    .title-link { display: block; text-decoration: none; color: var(--text); font-size: 1.02rem; font-weight: 600; line-height: 1.55; }
+    .title-link:hover { color: var(--accent-2); }
+    .source { color: var(--dim); font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; letter-spacing: 0.04em; margin-bottom: 0.9rem; }
+    .comment { color: var(--muted); font-size: 0.88rem; }
+    .comment strong { color: var(--accent); }
+    .footer { display: flex; justify-content: flex-end; margin-top: 1rem; }
+    .button {
+      text-decoration: none;
+      color: var(--accent);
+      border: 1px solid rgba(16,185,129,0.28);
+      border-radius: 999px;
+      padding: 0.42em 0.95em;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+    }
+    .button:hover { background: var(--tag-bg); border-color: rgba(16,185,129,0.45); }
+    footer {
+      margin-top: 4rem;
+      padding: 2rem 1.5rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--dim);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.06em;
+    }
+    @media (max-width: 640px) {
+      header { padding: 4.2rem 1rem 2rem; }
+      .back-link { left: 1rem; }
+      .card { padding: 1.15rem 1rem; }
+      .title-link { font-size: 0.96rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="back-link" href="../business/">← 返回存档</a>
+    <div class="badge">Business Channel · Edition 0023</div>
+    <h1>出海 AI 洞察</h1>
+    <p class="subtitle">跨境电商 · 可持续发展 · AI 应用实战</p>
+    <div class="meta">2026年6月2日 09:09</div>
+    <div class="intro">AI代理购物与绿色供应链同步提速，出海鞋类电商既要抢新流量入口，也要把环保追溯和营销数据做成机器可读资产。</div>
+    <div class="tags"><span class="tag">代理购物</span><span class="tag">绿色追溯</span><span class="tag">AI归因</span><span class="tag">跨境工具</span><span class="tag">供应链预测</span></div>
+  </header>
+  <main>
+    <div class="section-title"><h2>Top 10 Signals</h2></div>
+    <section class="grid">
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.01</span>
+          <span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://techcrunch.com/2026/04/16/ai-traffic-to-us-retailers-rose-393-in-q1-and-its-boosting-their-revenue-too/" target="_blank" rel="noreferrer">Adobe：2026 年 Q1 导向美国零售站点的 AI 流量同比增长 393%</a></div>
+        </div>
+        <div class="source">TechCrunch · 2026-04-16</div>
+        <div class="comment"><strong>【是什么】</strong>Adobe 追踪发现，消费者通过 AI 助手进入零售网站的流量在 2026 年 Q1 大幅上升，而且这类流量的停留、互动和收入贡献都在变强。<br /><strong>【对我们意味着什么】</strong>出海鞋类团队不能再只看 SEO 和广告归因，必须单独识别 AI 来源会话、商品页被引用路径和 AI 转化质量，否则会低估新入口价值。</div>
+        <div class="footer"><a class="button" href="https://techcrunch.com/2026/04/16/ai-traffic-to-us-retailers-rose-393-in-q1-and-its-boosting-their-revenue-too/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.02</span>
+          <span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://techcrunch.com/2026/01/11/google-announces-a-new-protocol-to-facilitate-commerce-using-ai-agents/" target="_blank" rel="noreferrer">Google 发布 UCP，让 AI 智能体能跨发现、下单与售后环节协同购物</a></div>
+        </div>
+        <div class="source">TechCrunch · 2026-01-11</div>
+        <div class="comment"><strong>【是什么】</strong>Google 在 NRF 2026 推出 Universal Commerce Protocol，用统一协议把商品发现、结账和售后支持开放给 AI 购物智能体。<br /><strong>【对我们意味着什么】</strong>对 PM 来说，商品信息、库存、配送和退换货规则都要转成机器可调用接口；否则 AI 代购链路一旦成熟，品牌会在协议层失去可见性。</div>
+        <div class="footer"><a class="button" href="https://techcrunch.com/2026/01/11/google-announces-a-new-protocol-to-facilitate-commerce-using-ai-agents/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.03</span>
+          <span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.retaildive.com/news/google-launches-cross-retailer-universal-cart/820957/" target="_blank" rel="noreferrer">Google Universal Cart 开始跨零售商保存购物意图，Gemini 将成新购物车入口</a></div>
+        </div>
+        <div class="source">Retail Dive · 2026-05-26</div>
+        <div class="comment"><strong>【是什么】</strong>Google 把 Universal Cart 推进到 Gemini 和 Search，让用户能在不同零售商之间保存待购商品，并在多个入口继续完成购买。<br /><strong>【对我们意味着什么】</strong>这意味着用户的购物车不再只属于站内；鞋类品牌需要把价格、促销、尺码库存和运费数据保持实时一致，避免在 AI 聚合入口里被更完整的数据集替代。</div>
+        <div class="footer"><a class="button" href="https://www.retaildive.com/news/google-launches-cross-retailer-universal-cart/820957/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.04</span>
+          <span class="cat">营销工具</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.retaildive.com/news/stripe-google-partner-on-agentic-commerce/820088/" target="_blank" rel="noreferrer">Stripe 与 Google 扩大 agentic commerce 合作，支付能力开始原生嵌入 AI 购物</a></div>
+        </div>
+        <div class="source">Retail Dive · 2026-05-13</div>
+        <div class="comment"><strong>【是什么】</strong>Stripe 为 Google Gemini 内的商品购买提供支付支持，把 AI 搜索和 AI 助手里的“看见商品”延伸到“完成交易”。<br /><strong>【对我们意味着什么】</strong>营销和产品团队要把 AI 入口当成可成交渠道，而不是内容曝光位；数据分析也要补上 AI 渠道支付漏斗、授权失败率和客单价监控。</div>
+        <div class="footer"><a class="button" href="https://www.retaildive.com/news/stripe-google-partner-on-agentic-commerce/820088/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.05</span>
+          <span class="cat">消费洞察</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.retaildive.com/news/gap-inc-bold-metrics-google-universal-commerce-protocol-online-shopping/815621/" target="_blank" rel="noreferrer">Gap 用 AI 尺码与版型推荐改造线上购物，先解决“合不合脚”式决策难题</a></div>
+        </div>
+        <div class="source">Retail Dive · 2026-03-25</div>
+        <div class="comment"><strong>【是什么】</strong>Gap 接入 Bold Metrics 的数字孪生尺码技术，并结合 Google 的 AI 购物协议，希望同时优化发现、试配和购买体验。<br /><strong>【对我们意味着什么】</strong>鞋类是高尺码焦虑品类，品牌应尽快结构化脚型、鞋楦、尺码偏差与退货原因数据，让 AI 推荐更可信，也让退货控制更可量化。</div>
+        <div class="footer"><a class="button" href="https://www.retaildive.com/news/gap-inc-bold-metrics-google-universal-commerce-protocol-online-shopping/815621/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.06</span>
+          <span class="cat">可持续合规</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.supplychaindive.com/news/gap-targets-improved-traceability-operations-data-collection/818685/" target="_blank" rel="noreferrer">Gap 借助 Inspectorio 的 AI layer，把追溯、质检和合规数据接成同一条生产链</a></div>
+        </div>
+        <div class="source">Supply Chain Dive · 2026-04-28</div>
+        <div class="comment"><strong>【是什么】</strong>Gap 使用 Inspectorio 的 Paramo，把质量、合规、实验室测试和 traceability 数据放到 AI 可联动的生产链系统里。<br /><strong>【对我们意味着什么】</strong>对环保鞋类品牌，这类能力直接对应材料溯源、低碳叙事和法规应对；只靠人工表格做 ESG 证明，已经跟不上品牌和平台对实时证据链的要求。</div>
+        <div class="footer"><a class="button" href="https://www.supplychaindive.com/news/gap-targets-improved-traceability-operations-data-collection/818685/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.07</span>
+          <span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://techcrunch.com/2026/04/17/loop-raises-95m-to-build-supply-chain-ai-that-predicts-disruptions/" target="_blank" rel="noreferrer">Loop 用预测式供应链 AI 把库存、采购与物流风险提前转成修复建议</a></div>
+        </div>
+        <div class="source">TechCrunch · 2026-04-17</div>
+        <div class="comment"><strong>【是什么】</strong>Loop 的系统不只看板监控，而是利用多源供应链信号预测扰动，并给出更接近“处方式”的运营建议。<br /><strong>【对我们意味着什么】</strong>鞋类出海经常受旺季补货、断码和海运波动影响，这类 AI 更适合做断货预警、补货节奏和仓配优先级判断，而不是事后复盘。</div>
+        <div class="footer"><a class="button" href="https://techcrunch.com/2026/04/17/loop-raises-95m-to-build-supply-chain-ai-that-predicts-disruptions/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.08</span>
+          <span class="cat">数据分析</span>
+          <div class="title-wrap"><a class="title-link" href="https://venturebeat.com/technology/rethinking-aeo-when-software-agents-navigate-the-web-on-behalf-of-users" target="_blank" rel="noreferrer">VentureBeat：AI 智能体流量正在改写归因逻辑，AEO 已经变成数据分析问题</a></div>
+        </div>
+        <div class="source">VentureBeat · 2026-03-15</div>
+        <div class="comment"><strong>【是什么】</strong>文章指出，当软件代理替用户浏览和决策时，传统基于点击链路的归因、受众建模和流量评估会出现更大歧义。<br /><strong>【对我们意味着什么】</strong>数据团队需要把 AI referrer、代理会话、引用摘要与站内行为连起来看；否则营销预算可能继续投给“最后点击”，而忽略真正带来需求生成的 AI 入口。</div>
+        <div class="footer"><a class="button" href="https://venturebeat.com/technology/rethinking-aeo-when-software-agents-navigate-the-web-on-behalf-of-users" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.09</span>
+          <span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.cifnews.com/article/186224" target="_blank" rel="noreferrer">雨果跨境：StoreClaw 把选品、内容、投放、库存串成一个 AI 电商增长引擎</a></div>
+        </div>
+        <div class="source">雨果跨境 · 2026-05-26</div>
+        <div class="comment"><strong>【是什么】</strong>StoreClaw 试图把市场调研、店铺搭建、SEO、内容生产、广告和跨平台拓店整合成一个可执行的电商 AI 大脑。<br /><strong>【对我们意味着什么】</strong>对跨境运营团队，这类工具的关键不是“会不会写文案”，而是能否打通多平台数据和执行动作；如果可行，会直接压缩人力切换成本与投放试错周期。</div>
+        <div class="footer"><a class="button" href="https://www.cifnews.com/article/186224" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.10</span>
+          <span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.qbitai.com/2026/01/369878.html" target="_blank" rel="noreferrer">量子位：支付宝、千问与淘宝闪购发布 ACT，国内 AI 商业协议开始补齐交易信任层</a></div>
+        </div>
+        <div class="source">量子位 · 2026-01-16</div>
+        <div class="comment"><strong>【是什么】</strong>ACT 协议试图让 AI Agent 在跨终端、跨平台场景里完成推荐、比价、优惠核销和支付确认，补上商业执行所需的信任与支付框架。<br /><strong>【对我们意味着什么】</strong>中国出海团队可以把它视作国内版 agentic commerce 基建信号；未来不论做独立站还是平台电商，商品和支付能力都需要为“AI 代办”模式预留接口。</div>
+        <div class="footer"><a class="button" href="https://www.qbitai.com/2026/01/369878.html" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+    </section>
+  </main>
+  <footer>Edition 0023 · 出海 AI 洞察</footer>
+</body>
+</html>
