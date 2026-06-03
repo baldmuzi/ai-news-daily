@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIVAIA 品牌趋势 · 第0013期 | VIVAIA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #080c14; --surface: #17130d; --surface2: #221b10; --border: #463722; --accent: #804c1a; --accent-soft: #d89a5e; --accent-dim: rgba(216,154,94,.18); --accent-glow: rgba(128,76,26,.32); --text: #f5efe4; --text-muted: #d2c2aa; --text-dim: #b39f82; --tag-bg: #221a10; --competitor-bg: #1e150b; --competitor-border: #594027;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Noto Serif SC', serif; background: radial-gradient(circle at top, rgba(128,76,26,.18), transparent 32%), var(--bg); color: var(--text); }
+    a { color: inherit; text-decoration: none; }
+    .page { width: min(1040px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 56px; }
+    .back-link { display: inline-flex; color: var(--text-muted); font-size: 14px; margin-bottom: 28px; border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; background: rgba(255,255,255,.02); }
+    .back-link:hover { color: var(--accent-soft); border-color: var(--accent); }
+    header { padding: 18px 0 34px; border-bottom: 1px solid var(--border); margin-bottom: 32px; }
+    .eyebrow { font-family: 'JetBrains Mono', monospace; color: var(--accent-soft); font-size: 13px; margin-bottom: 12px; }
+    .header-title { font-size: clamp(28px, 5vw, 42px); font-weight: 700; line-height: 1.2; margin: 0 0 8px; }
+    .header-title span { color: var(--accent-soft); }
+    .header-subtitle { font-family: 'JetBrains Mono', monospace; font-size: 14px; color: var(--text-muted); margin-bottom: 20px; }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 10px; font-family: 'JetBrains Mono', monospace; color: var(--text-dim); font-size: 12px; margin-bottom: 18px; }
+    .pill { border: 1px solid var(--border); background: var(--accent-dim); border-radius: 999px; padding: 6px 10px; }
+    .intro { color: var(--text-muted); line-height: 1.85; max-width: 820px; font-size: 16px; }
+    .notice { margin-top: 14px; color: #e5c08d; background: rgba(128,76,26,.18); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; line-height: 1.75; font-size: 14px; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .tag { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-muted); border: 1px solid var(--border); background: var(--tag-bg); border-radius: 999px; padding: 6px 10px; }
+    .cards-grid { display: flex; flex-direction: column; gap: 24px; margin-bottom: 56px; }
+    .card { background: linear-gradient(180deg, rgba(255,255,255,.02), transparent 28%), var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 24px 28px; transition: border-color .2s, box-shadow .2s; }
+    .card:hover { border-color: var(--accent-soft); box-shadow: 0 0 24px var(--accent-glow); }
+    .card-cat { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .08em; color: var(--text-muted); background: var(--tag-bg); border: 1px solid var(--border); border-radius: 6px; padding: 4px 9px; white-space: nowrap; display: inline-flex; margin-bottom: 14px; }
+    .card-title { font-size: 21px; font-weight: 700; line-height: 1.45; margin: 0 0 10px; }
+    .card-title a { color: var(--text); } .card-title a:hover { color: var(--accent-soft); text-decoration: none; }
+    .card-meta { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-dim); margin-bottom: 14px; }
+    .comment-block { margin: 14px 0; line-height: 1.85; color: var(--text-muted); }
+    .comment-label { color: var(--accent-soft); font-weight: 700; margin-bottom: 4px; }
+    .comment-text { font-size: 15px; }
+    .card-footer { display: flex; justify-content: flex-end; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); }
+    .read-btn { font-family: 'JetBrains Mono', monospace; color: var(--accent-soft); border: 1px solid var(--accent); border-radius: 8px; padding: 8px 12px; font-size: 12px; background: rgba(128,76,26,.18); }
+    .read-btn:hover { background: rgba(128,76,26,.32); }
+    .section-label { display: flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 700; margin: 0 0 18px; }
+    .section-label::after { content: ""; height: 1px; flex: 1; background: var(--border); }
+    .competitor-section { background: var(--competitor-bg); border: 1px solid var(--competitor-border); border-radius: 14px; padding: 28px; margin-bottom: 50px; }
+    .competitor-section .section-label::after { background: var(--competitor-border); }
+    .competitor-intro { font-size: 14px; color: var(--text-muted); line-height: 1.85; margin-bottom: 22px; padding-bottom: 18px; border-bottom: 1px dashed var(--competitor-border); }
+    .competitor-list { display: flex; flex-direction: column; gap: 18px; }
+    .competitor-item { display: grid; grid-template-columns: 110px 1fr; gap: 16px; align-items: start; }
+    .competitor-brand { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #d2a06d; background: rgba(210,160,109,.08); border: 1px solid var(--competitor-border); border-radius: 6px; padding: 6px 10px; text-align: center; }
+    .competitor-body { font-size: 14px; line-height: 1.85; color: var(--text-muted); }
+    footer { color: var(--text-dim); font-family: 'JetBrains Mono', monospace; font-size: 12px; text-align: center; padding-top: 28px; border-top: 1px solid var(--border); }
+    @media (max-width: 640px) { .page { width: min(100% - 24px, 1040px); } .card, .competitor-section { padding: 20px; } .competitor-item { grid-template-columns: 1fr; gap: 8px; } .competitor-brand { justify-self: start; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back-link" href="../vivaia/">← 返回存档</a>
+    <header>
+      <div class="eyebrow">VIVAIA TREND REPORT</div>
+      <h1 class="header-title">VIVAIA <span>品牌趋势</span></h1>
+      <div class="header-subtitle">Global Fashion &amp; Sustainability · Powered by VIVAIA</div>
+      <div class="meta-row"><span class="pill">Edition 0013</span><span class="pill">2026年6月3日 09:16</span><span class="pill">Asia/Shanghai</span></div>
+      <div class="intro">本期聚焦中年女性可见度、夏季活动场景、Prime Day 提前开跑与循环纺织议题，为 VIVAIA 选品和活动寻找新切口。</div>
+      <div class="notice">近 3 天可核验素材不足，本期仅收录 8 条。本期未发现可核验的中文平台新趋势；小红书/抖音相关线索未纳入确定性趋势。</div>
+      <div class="tag-row"><span class="tag">中年可见度</span><span class="tag">夏日美式</span><span class="tag">大促提前</span><span class="tag">循环纺织</span><span class="tag">鞋业女性</span></div>
+    </header>
+
+    <section class="cards-grid">
+      <article class="card">
+        <span class="card-cat">消费洞察</span>
+        <h2 class="card-title"><a href="https://www.vogue.com/article/its-a-hot-divorcee-summer-how-can-brands-tap-in" target="_blank">“Hot Divorcée Summer” 把 40+、50+ 女性从隐形消费群变成高表达活动主角</a></h2>
+        <div class="card-meta">Vogue Business · 发布时间 2026-06-02</div>
+        <div class="comment-block"><div class="comment-label">【趋势是什么】</div><div class="comment-text">Vogue Business 6 月 2 日报道，单身、离婚与中年女性自我表达正在被品牌重新包装为夏季态度：成熟色调、高品质晚装、可见度、旅行与约会共同成为关键词，而不是只强调“遮盖年龄”。</div></div>
+        <div class="comment-block"><div class="comment-label">【商业机会】</div><div class="comment-text">VIVAIA 可做“Reclaim Summer”主题页，把晚餐、城市周末、短途旅行、女性聚会拆成四个鞋包/裙装搭配场景；重点突出有存在感的配色、金属点缀和可长时间站立的活动鞋，而不是只讲通勤舒适。</div></div>
+        <div class="card-footer"><a class="read-btn" href="https://www.vogue.com/article/its-a-hot-divorcee-summer-how-can-brands-tap-in" target="_blank">查看原文 →</a></div>
+      </article>
+
+      <article class="card">
+        <span class="card-cat">社媒热点</span>
+        <h2 class="card-title"><a href="https://www.events.wwd.com/womenwhorock2026" target="_blank">FN x Two Ten Women Who Rock 讨论鞋履行业女性进阶，品牌内容可从“女性领导力”切入</a></h2>
+        <div class="card-meta">Footwear News / WWD Events · 发布时间 2026-06-03</div>
+        <div class="comment-block"><div class="comment-label">【趋势是什么】</div><div class="comment-text">FN x Two Ten 的 Women Who Rock 活动在 6 月 3 日纽约举行，议题围绕鞋履行业女性领导者、职业进阶、年轻女性与资深女性的成功定义差异。它不是消费者爆款，但能验证鞋履行业正在把女性职场叙事重新放到台前。</div></div>
+        <div class="comment-block"><div class="comment-label">【商业机会】</div><div class="comment-text">活动运营可在欧美站做“Women Who Move”内容专题，邀请女性创业者、教师、零售从业者或健康行业用户讲述一天走路场景；商品侧匹配会议、通勤、差旅三组鞋款，提高品牌与 35-55 岁职业女性的情感连接。</div></div>
+        <div class="card-footer"><a class="read-btn" href="https://www.events.wwd.com/womenwhorock2026" target="_blank">查看原文 →</a></div>
+      </article>
+
+      <article class="card">
+        <span class="card-cat">选品灵感</span>
+        <h2 class="card-title"><a href="https://www.vogue.com/article/best-jcrew-finds" target="_blank">J.Crew 夏季新到把“美式露营”搬进城市，船鞋、串珠凉鞋和白裙形成完整场景</a></h2>
+        <div class="card-meta">Vogue · 发布时间 2026-06-02</div>
+        <div class="comment-block"><div class="comment-label">【趋势是什么】</div><div class="comment-text">Vogue 6 月 2 日报道 J.Crew 夏季新到与 Camp Crew 叙事，围绕白裙、帆布包、红色麂皮船鞋、串珠凉鞋和城市周末造型组织商品，而不是单独卖一双鞋。</div></div>
+        <div class="comment-block"><div class="comment-label">【商业机会】</div><div class="comment-text">VIVAIA 可把夏季系列从“单鞋列表”改为“城市露营周末”套装：白裙+可折叠平底、帆布包+轻量凉鞋、短途出行+可水洗鞋袋。重点做组合购和造型图，而不是只给鞋款打折。</div></div>
+        <div class="card-footer"><a class="read-btn" href="https://www.vogue.com/article/best-jcrew-finds" target="_blank">查看原文 →</a></div>
+      </article>
+
+      <article class="card">
+        <span class="card-cat">消费洞察</span>
+        <h2 class="card-title"><a href="https://techcrunch.com/2026/06/02/amazon-prime-day-2026-takes-place-june-23-26/" target="_blank">Amazon Prime Day 提前至 6 月 23-26 日，夏季大促窗口前移</a></h2>
+        <div class="card-meta">TechCrunch · 发布时间 2026-06-02</div>
+        <div class="comment-block"><div class="comment-label">【趋势是什么】</div><div class="comment-text">TechCrunch 6 月 2 日确认，Amazon Prime Day 2026 将在 6 月 23-26 日举行，早于传统 7 月节奏，并强调夏季必需品、返校前购物和快速配送。</div></div>
+        <div class="comment-block"><div class="comment-label">【商业机会】</div><div class="comment-text">VIVAIA 独立站可把 6 月下旬设为“Prime Week Alternative”，用免会员、尺码更全、旅行打包套装和售后保障对冲平台大促；商品运营提前准备 $99-$149 的夏季核心价格带，减少被 Amazon 价格锚点动摇。</div></div>
+        <div class="card-footer"><a class="read-btn" href="https://techcrunch.com/2026/06/02/amazon-prime-day-2026-takes-place-june-23-26/" target="_blank">查看原文 →</a></div>
+      </article>
+
+      <article class="card">
+        <span class="card-cat">可持续时尚</span>
+        <h2 class="card-title"><a href="https://www.acceleratingcircularity.org/" target="_blank">Sustainable Apparel & Textiles Conference 纽约开会，循环纺织从概念进入系统协作</a></h2>
+        <div class="card-meta">Accelerating Circularity · 页面更新并列示 2026-06-03 至 2026-06-04 会议</div>
+        <div class="comment-block"><div class="comment-label">【趋势是什么】</div><div class="comment-text">Accelerating Circularity 官网列示 6 月 3-4 日纽约 Sustainable Apparel &amp; Textiles Conference，并强调纺织品从废弃物回到新原料的系统建设，议题覆盖品牌、回收商、收集端和创新方。</div></div>
+        <div class="comment-block"><div class="comment-label">【商业机会】</div><div class="comment-text">VIVAIA 的环保叙事可从“材料来自哪里”推进到“穿后如何进入下一步”：在商品页加入护理、维修、旧鞋回收问答，并把可持续专题拆成消费者能完成的 3 个动作，降低绿色宣称的空泛感。</div></div>
+        <div class="card-footer"><a class="read-btn" href="https://www.acceleratingcircularity.org/" target="_blank">查看原文 →</a></div>
+      </article>
+
+      <article class="card">
+        <span class="card-cat">消费洞察</span>
+        <h2 class="card-title"><a href="https://www.glam.com/2185263/chic-summer-2026-fashion-trends-for-women-over-50/" target="_blank">50+ 夏季造型强调宽松上装、九分裤和可玩配色，年龄友好不等于保守</a></h2>
+        <div class="card-meta">Glam · 发布时间 2026-06-01</div>
+        <div class="comment-block"><div class="comment-label">【趋势是什么】</div><div class="comment-text">Glam 6 月 1 日面向 50+ 女性总结夏季趋势，提到宽松衬衫、九分裤、现代经典和个性配色；文章把年龄友好表达为可调节、可搭配、有趣，而不是单纯“低调”。</div></div>
+        <div class="comment-block"><div class="comment-label">【商业机会】</div><div class="comment-text">商品运营可新增“over 50 styling notes”：同一鞋款分别搭配九分裤、衬衫裙、宽腿裤，并用“显腿部线条”“不抢衣服风格”“可露脚背比例”作为卖点，替代重复的软底描述。</div></div>
+        <div class="card-footer"><a class="read-btn" href="https://www.glam.com/2185263/chic-summer-2026-fashion-trends-for-women-over-50/" target="_blank">查看原文 →</a></div>
+      </article>
+
+      <article class="card">
+        <span class="card-cat">消费洞察</span>
+        <h2 class="card-title"><a href="https://www.vogue.com/article/the-next-ai-battleground-your-senses" target="_blank">AI 智能眼镜让“所见即购物”更近，线下穿搭内容会反哺线上转化</a></h2>
+        <div class="card-meta">Vogue Business · 发布时间 2026-06-02</div>
+        <div class="comment-block"><div class="comment-label">【趋势是什么】</div><div class="comment-text">Vogue Business 6 月 2 日分析 Google 与 Gentle Monster、Warby Parker 合作的 AI 智能眼镜，指出可穿戴设备将捕捉用户在门店、街头和生活场景中的实际兴趣，影响未来商品发现。</div></div>
+        <div class="comment-block"><div class="comment-label">【商业机会】</div><div class="comment-text">VIVAIA 可提前优化图片与短视频的场景识别：每个主推款配一组清晰的街拍式图像、脚部近景、场景标题和结构化 alt 文案，让搜索、推荐和 AI 购物工具更容易理解“这双鞋适合什么生活场景”。</div></div>
+        <div class="card-footer"><a class="read-btn" href="https://www.vogue.com/article/the-next-ai-battleground-your-senses" target="_blank">查看原文 →</a></div>
+      </article>
+
+      <article class="card">
+        <span class="card-cat">竞品动态</span>
+        <h2 class="card-title"><a href="https://www.fashionsquare.com/Sales/Details/2138719302" target="_blank">Tory Burch 多个夏季鞋包促销跨 5 月底至 6 月中，轻量凉鞋与手袋一起推</a></h2>
+        <div class="card-meta">Scottsdale Fashion Square / Tory Burch · 页面列示 2026-05-31 至 2026-06-13 等有效期</div>
+        <div class="comment-block"><div class="comment-label">【趋势是什么】</div><div class="comment-text">Scottsdale Fashion Square 销售页列示 Tory Burch 多个当前有效主题，包括 Miller Cloud Light、Romy Flip-Flop、Eleanor Slide 与 Tote Edit，活动覆盖 5 月底到 6 月中旬，说明夏季鞋包被打包成连续上新/促销节奏。</div></div>
+        <div class="comment-block"><div class="comment-label">【商业机会】</div><div class="comment-text">VIVAIA 可参考“鞋+包+水边/城市”连续微主题，不必一次性大促。每 3-4 天轮换一个夏季小入口，如轻雨天、防晒步行、泳池后晚餐、城市周末，让活动页保持新鲜。</div></div>
+        <div class="card-footer"><a class="read-btn" href="https://www.fashionsquare.com/Sales/Details/2138719302" target="_blank">查看原文 →</a></div>
+      </article>
+    </section>
+
+    <section class="competitor-section">
+      <h2 class="section-label">竞品动态</h2>
+      <div class="competitor-intro">本期对 Rothy's、Tory Burch、Hermès、Allbirds、M.Gemi、Veja 做近 7 天核验；除 Tory Burch 当前夏季鞋包促销外，未找到明确发布时间与可打开事实的新动作。</div>
+      <div class="competitor-list">
+        <div class="competitor-item"><div class="competitor-brand">Rothy's</div><div class="competitor-body">本期未发现近 7 天可核验新动作。VIVAIA 可继续监测其 Friends &amp; Family、可洗针织和门店活动是否出现新周期。</div></div>
+        <div class="competitor-item"><div class="competitor-brand">Tory Burch</div><div class="competitor-body">Scottsdale Fashion Square 页面列示 Miller Cloud Light、Romy Flip-Flop、Eleanor Slide 等夏季促销在 6 月上旬有效。VIVAIA 可参考其鞋包同场景轮换策略，而不是单一鞋款打折。</div></div>
+        <div class="competitor-item"><div class="competitor-brand">Hermès</div><div class="competitor-body">本期未发现近 7 天可核验新动作。Oran 等度假凉鞋话题此前已出现，本期不重复写入。</div></div>
+        <div class="competitor-item"><div class="competitor-brand">Allbirds</div><div class="competitor-body">本期未发现近 7 天可核验新动作。4 月 Allbirds 战略变化不符合本期 7 天窗口，只作为后续观察背景。</div></div>
+        <div class="competitor-item"><div class="competitor-brand">M.Gemi</div><div class="competitor-body">本期未发现近 7 天可核验新动作。后续重点看其意大利手工、旅行凉鞋和折扣节奏是否更新。</div></div>
+        <div class="competitor-item"><div class="competitor-brand">Veja</div><div class="competitor-body">本期未发现近 7 天可核验新动作。若出现新联名、材料认证或零售合作，再作为可持续竞品案例。</div></div>
+      </div>
+    </section>
+    <footer>VIVAIA Brand Trend Report · Edition 0013 · Generated 2026年6月3日 09:16</footer>
+  </main>
+</body>
+</html>

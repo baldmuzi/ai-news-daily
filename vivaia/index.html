@@ -6,97 +6,119 @@
   <title>VIVAIA 品牌趋势 · 往期存档</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <style>
-    :root { --bg:#080c14; --surface:#17130d; --border:#463722; --accent:#804c1a; --accent-soft:#d89a5e; --accent-dim:rgba(216,154,94,.18); --accent-glow:rgba(128,76,26,.32); --text:#f5efe4; --text-muted:#d2c2aa; --text-dim:#b39f82; }
-    * { box-sizing:border-box; margin:0; padding:0; }
-    body { background:radial-gradient(circle at top, rgba(128,76,26,.16), transparent 36%), var(--bg); color:var(--text); font-family:'Noto Serif SC', serif; line-height:1.8; min-height:100vh; padding-bottom:4rem; }
+    :root { --bg:#080c14; --surface:#17130d; --surface2:#221b10; --border:#463722; --accent:#804c1a; --accent-soft:#d89a5e; --text:#f5efe4; --muted:#d2c2aa; --dim:#b39f82; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:'Noto Serif SC', serif; background:radial-gradient(circle at top, rgba(128,76,26,.2), transparent 32%), var(--bg); color:var(--text); }
     a { color:inherit; text-decoration:none; }
-    header { background:linear-gradient(180deg, #1a140c 0%, var(--bg) 100%); border-bottom:1px solid var(--border); padding:2.2rem 1.5rem 2rem; text-align:center; position:relative; }
-    .back-link { position:absolute; top:1.4rem; left:1.5rem; font-family:'JetBrains Mono', monospace; font-size:.72rem; color:var(--text-muted); letter-spacing:.08em; }
-    .back-link:hover { color:var(--accent-soft); }
-    .header-badge { display:inline-block; font-family:'JetBrains Mono', monospace; font-size:.72rem; letter-spacing:.12em; color:var(--accent-soft); background:var(--accent-dim); border:1px solid rgba(128,76,26,.45); border-radius:4px; padding:.2em .7em; margin-bottom:1rem; }
-    h1 { font-size:clamp(1.7rem, 4vw, 2.5rem); font-weight:700; letter-spacing:.04em; margin-bottom:.3rem; }
-    .subtitle { font-size:.82rem; color:var(--text-muted); letter-spacing:.18em; font-family:'JetBrains Mono', monospace; margin-bottom:1rem; }
-    .meta-row { display:flex; justify-content:center; gap:1.5rem; flex-wrap:wrap; font-family:'JetBrains Mono', monospace; font-size:.7rem; color:var(--text-dim); }
-    .section-label { max-width:760px; margin:2.8rem auto 1.2rem; padding:0 1.5rem; display:flex; align-items:center; gap:.8rem; }
-    .section-label h2 { font-size:.72rem; font-family:'JetBrains Mono', monospace; letter-spacing:.12em; color:var(--text-muted); text-transform:uppercase; white-space:nowrap; }
-    .section-label::after { content:''; flex:1; height:1px; background:var(--border); }
-    .cards-grid { max-width:760px; margin:0 auto; padding:0 1.5rem; display:flex; flex-direction:column; gap:.75rem; }
-    .edition-card { background:linear-gradient(180deg, rgba(255,255,255,.02), transparent 28%), var(--surface); border:1px solid var(--border); border-radius:8px; padding:1.2rem 1.6rem; display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap; transition:border-color .2s, box-shadow .2s; }
-    .edition-card:hover { border-color:rgba(128,76,26,.55); box-shadow:0 0 24px var(--accent-glow); }
-    .edition-card.latest { border-color:rgba(128,76,26,.65); background:linear-gradient(135deg, var(--surface) 0%, rgba(128,76,26,.16) 100%); box-shadow:0 0 18px var(--accent-glow); }
-    .edition-left { display:flex; align-items:center; gap:1rem; flex:1; min-width:200px; }
-    .edition-num { font-family:'JetBrains Mono', monospace; font-size:1.1rem; color:var(--accent-soft); letter-spacing:.05em; }
-    .edition-title { font-size:.95rem; font-weight:600; color:#f4ecdf; }
-    .edition-date { font-family:'JetBrains Mono', monospace; font-size:.65rem; color:var(--text-dim); }
-    .edition-badges { display:flex; align-items:center; gap:.5rem; flex-wrap:wrap; }
-    .badge-latest { font-family:'JetBrains Mono', monospace; font-size:.62rem; color:#fff; background:var(--accent); border-radius:3px; padding:.15em .5em; letter-spacing:.05em; font-weight:600; }
-    .read-link { font-family:'JetBrains Mono', monospace; font-size:.72rem; color:#f8dfc3; background:rgba(216,154,94,.24); border:1px solid #c9884e; border-radius:4px; padding:.35em .9em; white-space:nowrap; }
-    .read-link:hover { background:var(--accent); color:#fff; border-color:var(--accent); }
-    .total-count { max-width:760px; margin:1.2rem auto 0; padding:0 1.5rem; font-family:'JetBrains Mono', monospace; font-size:.68rem; color:var(--text-dim); text-align:right; }
-    @media (max-width:640px) { .back-link { position:static; display:inline-block; margin-bottom:1rem; } header { text-align:left; } .meta-row { justify-content:flex-start; } }
-</style>
+    .page { width:min(1040px, calc(100% - 32px)); margin:0 auto; padding:32px 0 56px; }
+    .home-link { display:inline-flex; color:var(--muted); font-size:14px; margin-bottom:28px; border:1px solid var(--border); border-radius:8px; padding:8px 12px; background:rgba(255,255,255,.02); }
+    .home-link:hover { color:var(--accent-soft); border-color:var(--accent); }
+    header { padding:18px 0 34px; border-bottom:1px solid var(--border); margin-bottom:30px; }
+    .eyebrow { font-family:'JetBrains Mono', monospace; color:var(--accent-soft); font-size:13px; margin-bottom:12px; }
+    h1 { font-size:clamp(28px, 5vw, 42px); line-height:1.2; margin:0 0 10px; }
+    .subtitle { color:var(--muted); font-family:'JetBrains Mono', monospace; font-size:14px; }
+    .archive-list { display:flex; flex-direction:column; gap:18px; }
+    .archive-card { background:linear-gradient(180deg, rgba(255,255,255,.02), transparent 28%), var(--surface); border:1px solid var(--border); border-radius:14px; padding:22px 24px; }
+    .archive-card.latest { border-color:var(--accent-soft); background:linear-gradient(180deg, rgba(128,76,26,.22), rgba(128,76,26,.06)), var(--surface2); box-shadow:0 0 24px rgba(128,76,26,.25); }
+    .archive-meta { display:flex; flex-wrap:wrap; gap:10px; color:var(--dim); font-family:'JetBrains Mono', monospace; font-size:12px; margin-bottom:10px; }
+    h2 { font-size:21px; margin:0 0 10px; line-height:1.45; }
+    h2 a:hover { color:var(--accent-soft); }
+    p { color:var(--muted); line-height:1.75; margin:0 0 14px; }
+    .read-link { color:var(--accent-soft); font-family:'JetBrains Mono', monospace; font-size:12px; }
+    footer { color:var(--dim); font-family:'JetBrains Mono', monospace; font-size:12px; text-align:center; padding-top:28px; border-top:1px solid var(--border); margin-top:42px; }
+  </style>
 </head>
 <body>
-  <header>
-    <a class="back-link" href="../">← 返回首页</a>
-    <div class="header-badge">VIVAIA ARCHIVE</div>
-    <h1>VIVAIA 品牌趋势 · 往期存档</h1>
-    <div class="subtitle">GLOBAL FASHION &amp; SUSTAINABILITY</div>
-    <div class="meta-row"><span>Latest 0012</span><span>Showing 12 Editions</span></div>
-  </header>
-  <div class="section-label"><h2>Edition Archive</h2></div>
-  <div class="cards-grid">
-    <a class="edition-card latest" href="./edition-0012.html">
-      <div class="edition-left"><div class="edition-num">#0012</div><div><div class="edition-title">VIVAIA 品牌趋势 · 第0012期</div><div class="edition-date">2026年6月2日</div></div></div>
-      <div class="edition-badges"><span class="badge-latest">LATEST</span><span class="read-link">查看本期 →</span></div>
-    </a>
-    <a class="edition-card" href="./edition-0011.html">
-      <div class="edition-left"><div class="edition-num">#0011</div><div><div class="edition-title">VIVAIA 品牌趋势 · 第0011期</div><div class="edition-date">2026年6月2日</div></div></div>
-      <div class="edition-badges"><span class="read-link">查看本期 →</span></div>
-    </a>
-    <a class="edition-card" href="./edition-0010.html">
-      <div class="edition-left"><div class="edition-num">#0010</div><div><div class="edition-title">VIVAIA 品牌趋势 · 第0010期</div><div class="edition-date">2026年6月1日</div></div></div>
-      <div class="edition-badges"><span class="read-link">查看本期 →</span></div>
-    </a>
-    <a class="edition-card" href="./edition-0009.html">
-      <div class="edition-left"><div class="edition-num">#0009</div><div><div class="edition-title">VIVAIA 品牌趋势 · 第0009期</div><div class="edition-date">2026年5月29日</div></div></div>
-      <div class="edition-badges"><span class="read-link">查看本期 →</span></div>
-    </a>
-    <a class="edition-card" href="./edition-0008.html">
-      <div class="edition-left"><div class="edition-num">#0008</div><div><div class="edition-title">VIVAIA 品牌趋势 · 第0008期</div><div class="edition-date">2026年5月28日</div></div></div>
-      <div class="edition-badges"><span class="read-link">查看本期 →</span></div>
-    </a>
-    <a class="edition-card" href="./edition-0007.html">
-      <div class="edition-left"><div class="edition-num">#0007</div><div><div class="edition-title">VIVAIA 品牌趋势 · 第0007期</div><div class="edition-date">2026年5月27日</div></div></div>
-      <div class="edition-badges"><span class="read-link">查看本期 →</span></div>
-    </a>
-    <a class="edition-card" href="./edition-0006.html">
-      <div class="edition-left"><div class="edition-num">#0006</div><div><div class="edition-title">VIVAIA 品牌趋势 · 第0006期</div><div class="edition-date">2026年5月26日</div></div></div>
-      <div class="edition-badges"><span class="read-link">查看本期 →</span></div>
-    </a>
-    <a class="edition-card" href="./edition-0005.html">
-      <div class="edition-left"><div class="edition-num">#0005</div><div><div class="edition-title">VIVAIA 品牌趋势 · 第0005期</div><div class="edition-date">2026年5月25日</div></div></div>
-      <div class="edition-badges"><span class="read-link">查看本期 →</span></div>
-    </a>
-    <a class="edition-card" href="./edition-0004.html">
-      <div class="edition-left"><div class="edition-num">#0004</div><div><div class="edition-title">VIVAIA 品牌趋势 · 第0004期</div><div class="edition-date">2026年5月22日</div></div></div>
-      <div class="edition-badges"><span class="read-link">查看本期 →</span></div>
-    </a>
-    <a class="edition-card" href="./edition-0003.html">
-      <div class="edition-left"><div class="edition-num">#0003</div><div><div class="edition-title">VIVAIA 品牌趋势 · 第0003期</div><div class="edition-date">2026年5月21日</div></div></div>
-      <div class="edition-badges"><span class="read-link">查看本期 →</span></div>
-    </a>
-    <a class="edition-card" href="./edition-0002.html">
-      <div class="edition-left"><div class="edition-num">#0002</div><div><div class="edition-title">VIVAIA 品牌趋势 · 第0002期</div><div class="edition-date">2026年5月20日</div></div></div>
-      <div class="edition-badges"><span class="read-link">查看本期 →</span></div>
-    </a>
-    <a class="edition-card" href="./edition-0001.html">
-      <div class="edition-left"><div class="edition-num">#0001</div><div><div class="edition-title">VIVAIA 品牌趋势 · 第0001期</div><div class="edition-date">2026年5月20日</div></div></div>
-      <div class="edition-badges"><span class="read-link">查看本期 →</span></div>
-    </a>
-  </div>
-  <div class="total-count">共 12 期，当前最多展示 20 期</div>
+  <main class="page">
+    <a class="home-link" href="../">← 返回首页</a>
+    <header>
+      <div class="eyebrow">VIVAIA ARCHIVE</div>
+      <h1>VIVAIA 品牌趋势 · 往期存档</h1>
+      <div class="subtitle">Latest 20 editions · Brown theme #804c1a</div>
+    </header>
+    <section class="archive-list">
+      <article class="archive-card latest">
+        <div class="archive-meta"><span>Edition 0013</span><span>2026年6月3日 09:16</span></div>
+        <h2><a href="edition-0013.html">VIVAIA 品牌趋势 · 第0013期</a></h2>
+        <p>本期聚焦中年女性可见度、夏季活动场景、Prime Day 提前开跑与循环纺织议题，为 VIVAIA 选品和活动寻找新切口。</p>
+        <a class="read-link" href="edition-0013.html">查看本期 →</a>
+      </article>
+      <article class="archive-card">
+        <div class="archive-meta"><span>Edition 0012</span><span>2026年6月2日</span></div>
+        <h2><a href="edition-0012.html">VIVAIA 品牌趋势 · 第0012期</a></h2>
+        <p>近 3 天海外鞋服新素材集中在颜色、联名、价格与活动营销；VIVAIA 可用小胶囊和场景内容放大转化。</p>
+        <a class="read-link" href="edition-0012.html">查看本期 →</a>
+      </article>
+      <article class="archive-card">
+        <div class="archive-meta"><span>Edition 0011</span><span>2026年6月2日</span></div>
+        <h2><a href="edition-0011.html">VIVAIA 品牌趋势 · 第0011期</a></h2>
+        <p>欧美鞋履热点转向精致平底、舞蹈系轮廓与可验证环保；VIVAIA 可用舒适科技承接通勤、度假与社媒种草。</p>
+        <a class="read-link" href="edition-0011.html">查看本期 →</a>
+      </article>
+      <article class="archive-card">
+        <div class="archive-meta"><span>Edition 0010</span><span>2026年6月1日</span></div>
+        <h2><a href="edition-0010.html">VIVAIA 品牌趋势 · 第0010期</a></h2>
+        <p>欧美平底鞋正从基础款转向双色、网面、爵士鞋与柔和裸色；中文短视频继续放大软底通勤，VIVAIA 可把舒适科技与精致场景绑定。</p>
+        <a class="read-link" href="edition-0010.html">查看本期 →</a>
+      </article>
+      <article class="archive-card">
+        <div class="archive-meta"><span>Edition 0009</span><span>2026年5月29日</span></div>
+        <h2><a href="edition-0009.html">VIVAIA 品牌趋势 · 第0009期</a></h2>
+        <p>欧美平底鞋继续向芭蕾、乐福与裸米色转移；中文社媒强调软底通勤，VIVAIA 可用舒适科技承接选品和场景活动。</p>
+        <a class="read-link" href="edition-0009.html">查看本期 →</a>
+      </article>
+      <article class="archive-card">
+        <div class="archive-meta"><span>Edition 0008</span><span>2026年5月28日</span></div>
+        <h2><a href="edition-0008.html">VIVAIA 品牌趋势 · 第0008期</a></h2>
+        <p>欧美女鞋继续转向芭蕾平底、柔和中性色与舒适通勤；可持续叙事更需产品力支撑，VIVAIA 可借热点做选品与活动转化。</p>
+        <a class="read-link" href="edition-0008.html">查看本期 →</a>
+      </article>
+      <article class="archive-card">
+        <div class="archive-meta"><span>Edition 0007</span><span>2026年5月27日</span></div>
+        <h2><a href="edition-0007.html">VIVAIA 品牌趋势 · 第0007期</a></h2>
+        <p>欧美鞋履转向轻薄芭蕾、柔软乐福和精致凉鞋；中文平台继续强调软底通勤，VIVAIA 可用舒适与可持续放大转化。</p>
+        <a class="read-link" href="edition-0007.html">查看本期 →</a>
+      </article>
+      <article class="archive-card">
+        <div class="archive-meta"><span>Edition 0006</span><span>2026年5月26日</span></div>
+        <h2><a href="edition-0006.html">VIVAIA 品牌趋势 · 第0006期</a></h2>
+        <p>欧美鞋履进入轻盈混合周期，中文平台强调舒适松弛；VIVAIA 可围绕芭蕾、乐福、宽脚通勤和可持续信任做选品与活动。</p>
+        <a class="read-link" href="edition-0006.html">查看本期 →</a>
+      </article>
+      <article class="archive-card">
+        <div class="archive-meta"><span>Edition 0005</span><span>2026年5月25日</span></div>
+        <h2><a href="edition-0005.html">VIVAIA 品牌趋势 · 第0005期</a></h2>
+        <p>夏季芭蕾鞋走向透气网面，软乐福与 Sneakerina 同步加热；中年女性进入&quot;少买好穿&quot;阶段，VIVAIA 可借势上新与场景化活动同步推进。</p>
+        <a class="read-link" href="edition-0005.html">查看本期 →</a>
+      </article>
+      <article class="archive-card">
+        <div class="archive-meta"><span>Edition 0004</span><span>2026年5月22日</span></div>
+        <h2><a href="edition-0004.html">VIVAIA 品牌趋势 · 第0004期</a></h2>
+        <p>芭蕾鞋、乐福与舒适通勤热度同步抬升，可持续材料和社媒测评正给VIVAIA带来选品与活动双窗口。</p>
+        <a class="read-link" href="edition-0004.html">查看本期 →</a>
+      </article>
+      <article class="archive-card">
+        <div class="archive-meta"><span>Edition 0003</span><span>2026年5月21日</span></div>
+        <h2><a href="edition-0003.html">VIVAIA 品牌趋势 · 第0003期</a></h2>
+        <p>夏季女鞋三线齐爆——&quot;渔夫凉鞋+软乐福+芭蕾运动鞋（Sneakerina）&quot;承接2026暑期出货高峰；50+女性从感性种草转向&quot;耐久测评+理性验证&quot;决策；Allbirds易主、Rothy&#x27;s首发Penny Loafer、Birkenstock金属铆钉系列同步上线，VIVAIA舒适可持续基因迎来欧美夏季选品与活动新一波黄金切入点。</p>
+        <a class="read-link" href="edition-0003.html">查看本期 →</a>
+      </article>
+      <article class="archive-card">
+        <div class="archive-meta"><span>Edition 0002</span><span>2026年5月20日</span></div>
+        <h2><a href="edition-0002.html">VIVAIA 品牌趋势 · 第0002期</a></h2>
+        <p>2026夏季全球鞋履进入&quot;网纱+混搭+柠檬黄&quot;三线齐爆窗口期，50+女性$15万亿消费力被严重低估，Tom Ford、M&amp;S掀起成熟模特回潮，欧盟ESPR禁毁令7月19日大企业生效在即，VIVAIA舒适可持续基因迎来欧美选品与活动的黄金切入点。</p>
+        <a class="read-link" href="edition-0002.html">查看本期 →</a>
+      </article>
+      <article class="archive-card">
+        <div class="archive-meta"><span>Edition 0001</span><span>2026年5月20日</span></div>
+        <h2><a href="edition-0001.html">VIVAIA 品牌趋势 · 第0001期</a></h2>
+        <p>2026春夏全球女鞋三线齐爆：V-cut芭蕾鞋、软质乐福、Mary Jane运动鞋；欧盟ESPR禁毁令7月19日生效，Allbirds以3900万美元易主收缩留出生态位；小红书&quot;通勤暴走实测&quot;型功能内容飙升至58%，VIVAIA舒适可持续基因迎来选品与活动的黄金窗口。</p>
+        <a class="read-link" href="edition-0001.html">查看本期 →</a>
+      </article>
+    </section>
+    <footer>VIVAIA Brand Trend Archive · Latest Edition 0013</footer>
+  </main>
 </body>
 </html>
