@@ -1,27 +1,27 @@
 {
-  "edition": "0023",
-  "date": "2026年6月2日 09:12",
-  "intro": "AI代理购物与绿色供应链同步提速，出海鞋类电商既要抢新流量入口，也要把环保追溯和营销数据做成机器可读资产。",
+  "edition": "0024",
+  "date": "2026年6月3日 09:18",
+  "intro": "AI购物入口、绿色追溯与跨境履约同时升级，出海鞋类团队要把商品、合规和营销数据做成可执行资产。",
   "tags": [
     "代理购物",
     "绿色追溯",
-    "AI归因",
-    "跨境工具",
-    "供应链预测"
+    "跨境履约",
+    "商品数据",
+    "AI归因"
   ],
   "top3": [
     {
-      "title": "Adobe：2026 年 Q1 导向美国零售站点的 AI 流量同比增长 393%",
-      "comment": "AI 导购流量已成独立渠道，归因和转化监测要单独建模。"
+      "title": "Amazon 向零售商开放 Agentic Shopping Assistant，加速品牌自建 AI 导购",
+      "comment": "品牌可更快上线自有AI导购与推荐闭环"
     },
     {
-      "title": "Google 发布 UCP，让 AI 智能体能跨发现、下单与售后环节协同购物",
-      "comment": "商品与履约数据需要机器可调用，否则会失去智能体入口。"
+      "title": "Google Universal Cart 把 AI 购物从推荐推进到跨场景持续加购",
+      "comment": "商品与库存数据要适配AI跨场景购物车"
     },
     {
-      "title": "Gap 借助 Inspectorio 的 AI layer，把追溯、质检和合规数据接成同一条生产链",
-      "comment": "环保鞋类的追溯、质检与 ESG 证据链开始走向实时化。"
+      "title": "Adobe 数据显示 AI 导购流量 Q1 同比暴涨 393%，转化首次超过传统渠道",
+      "comment": "需单独监测AI引流转化与商品页可见性"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0023.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0024.html"
 }
