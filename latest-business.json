@@ -1,27 +1,27 @@
 {
-  "edition": "0024",
-  "date": "2026年6月3日 09:18",
-  "intro": "AI购物入口、绿色追溯与跨境履约同时升级，出海鞋类团队要把商品、合规和营销数据做成可执行资产。",
+  "edition": "0025",
+  "date": "2026年6月4日 09:11",
+  "intro": "AI购物入口、鞋类供应链追溯与跨境营销自动化同步升级，出海团队正把环保合规和转化数据一起做成机器可执行资产。",
   "tags": [
     "代理购物",
     "绿色追溯",
-    "跨境履约",
-    "商品数据",
-    "AI归因"
+    "鞋类数据",
+    "跨境增长",
+    "智能补货"
   ],
   "top3": [
     {
-      "title": "Amazon 向零售商开放 Agentic Shopping Assistant，加速品牌自建 AI 导购",
-      "comment": "品牌可更快上线自有AI导购与推荐闭环"
+      "title": "Amazon 向零售商开放 Agentic Shopping Assistant，品牌可在数周内上线 AI 导购",
+      "comment": "先把尺码材质库存整理成可被智能体调用的商品层"
     },
     {
-      "title": "Google Universal Cart 把 AI 购物从推荐推进到跨场景持续加购",
-      "comment": "商品与库存数据要适配AI跨场景购物车"
+      "title": "Google Universal Cart 把 AI 购物从推荐推进到跨入口持续加购",
+      "comment": "价格库存促销规则要跨渠道一致且机器可读"
     },
     {
-      "title": "Adobe 数据显示 AI 导购流量 Q1 同比暴涨 393%，转化首次超过传统渠道",
-      "comment": "需单独监测AI引流转化与商品页可见性"
+      "title": "Adobe：Q1 美国零售 AI 流量同比暴涨 393%，转化率首次反超传统渠道",
+      "comment": "AI来源流量需单独归因并检查商品页LLM可见性"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0024.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0025.html"
 }
