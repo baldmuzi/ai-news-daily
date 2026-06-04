@@ -1,27 +1,27 @@
 {
-  "edition": "0013",
-  "date": "2026年6月3日 09:19",
-  "intro": "本期聚焦中年女性可见度、夏季活动场景、Prime Day 提前开跑与循环纺织议题。",
+  "edition": "0014",
+  "date": "2026年6月4日 09:09",
+  "intro": "本期聚焦 AI 购物、区域扩张、舒适鞋联名与循环纺织，为 VIVAIA 找到夏季选品、内容和转化新入口。",
   "tags": [
-    "中年可见度",
-    "夏日美式",
-    "大促提前",
+    "AI购物",
     "循环纺织",
-    "鞋业女性"
+    "播客联名",
+    "区域扩张",
+    "夏日防汗"
   ],
   "top3": [
     {
-      "title": "40+、50+ 女性成为夏季活动主角",
-      "comment": "以旅行、约会和聚会场景做选品，强化成熟女性表达。"
+      "title": "Hey Savi 与 PayPal 推出英国女性 AI 购物闭环，截图种草正在变成即时转化",
+      "comment": "AI 搜图到结账缩短链路，VIVAIA 应补齐场景化商品数据。"
     },
     {
-      "title": "Prime Day 提前到 6 月下旬",
-      "comment": "独立站需提前设置夏季大促价格带与免会员权益。"
+      "title": "UAE 推出 Naseej 国家纺织循环计划，回收不再只是品牌自愿动作",
+      "comment": "纺织循环进入国家框架，旧鞋回收和护理延寿可前置。"
     },
     {
-      "title": "循环纺织进入系统协作",
-      "comment": "环保内容要落到护理、回收和穿后路径。"
+      "title": "OluKai 把舒适凉鞋绑定热门播客，功能鞋也开始用内容 IP 制造社群话题",
+      "comment": "舒适鞋绑定播客社群，适合借女性内容场景做轻联名。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0013.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0014.html"
 }
