@@ -1,33 +1,33 @@
 {
-  "edition": "0013",
-  "date": "2026年6月1日 09:13",
-  "intro": "本期从爬坡步行、音乐训练、低腰 leggings 与恢复热中，捕捉全球女性运动和压缩穿搭内容机会。",
+  "edition": "0014",
+  "date": "2026年6月4日 09:25",
+  "intro": "本期从负重背心、短时训练、跑者力量、训练鞋科技与 HYROX 社媒化中，筛选女性运动穿搭和内容机会。",
   "tags": [
-    "爬坡步行",
-    "低腰穿搭",
-    "音乐训练",
-    "恢复冷热",
-    "压缩支撑"
+    "负重训练",
+    "短时训练",
+    "跑者力量",
+    "训练鞋科技",
+    "HYROX热"
   ],
   "top3": [
     {
-      "title": "Walking Less Than 10k Steps Daily Can Help Maintain Weight Loss, Study Finds",
-      "comment": "8,500步让走路挑战更现实，适合压缩裤日常内容。"
+      "title": "Omorpho G-Vest Icon Review: A Fitness Writer’s Honest Opinion After Four Weeks of Testing",
+      "comment": "负重背心进入日常训练，可延展压缩穿搭和低冲击力量内容。"
     },
     {
-      "title": "The 7 Best Compression Leggings for Women, Tested by Personal Trainers and Editors",
-      "comment": "压缩裤测评热度高，可转化为Fanka功能测试清单。"
+      "title": "June 2026 TikTok Trends: What’s Viral This Month",
+      "comment": "6月TikTok音频和单镜头格式，适合做一首歌一套穿搭。"
     },
     {
-      "title": "「爬坡」正在重塑健身房生意",
-      "comment": "中文爬坡热继续发酵，适合发起下班后30分钟挑战。"
+      "title": "Shred Your Whole Body Fast With Our 30-Minute Workout Guide",
+      "comment": "30分钟训练模板热度高，适合下班后短时训练内容。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0013.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0014.html",
   "blog": {
-    "title": "What to Wear for Incline Walking: Compression Leggings, Support, and Low-Impact Cardio",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/incline-walking-compression-leggings-outfits.html",
-    "summary": "由本期爬坡步行和压缩裤趋势延展，沉淀为低冲击有氧穿搭指南。"
+    "title": "Weighted Vest Workout Outfits: How to Layer Compression Leggings for Low-Impact Strength",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/weighted-vest-workout-outfits-compression-leggings.html",
+    "summary": "由本期负重背心和低冲击力量趋势延展，沉淀为压缩裤训练基础层穿搭指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }

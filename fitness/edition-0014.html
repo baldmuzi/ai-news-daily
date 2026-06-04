@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>运动健康趋势 · 第 0014 期 — Fanka</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#080c14; --surface:#0f1623; --surface2:#151d2c; --border:#213047; --accent:#f43f5e; --accent-dim:rgba(244,63,94,.14); --text:#e8eaf0; --muted:#91a0b5; --dim:#64748b; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { min-height:100vh; background:var(--bg); color:var(--text); font-family:'Noto Serif SC',serif; line-height:1.75; }
+    a { color:inherit; } .wrapper { max-width:1120px; margin:0 auto; padding:0 24px; }
+    header { padding:46px 0 36px; border-bottom:1px solid var(--border); background:linear-gradient(180deg,#10101b 0%,#080c14 100%); }
+    .back-link { display:inline-flex; margin-bottom:26px; color:var(--muted); text-decoration:none; font:12px 'JetBrains Mono',monospace; letter-spacing:.05em; }
+    .back-link:hover { color:var(--accent); } .edition-badge { display:flex; align-items:center; gap:8px; margin-bottom:12px; color:var(--accent); font:11px 'JetBrains Mono',monospace; letter-spacing:.12em; text-transform:uppercase; }
+    .edition-badge::before { content:''; width:28px; height:1px; background:var(--accent); }
+    h1 { margin-bottom:10px; color:#fff; font-size:clamp(2rem,5vw,3.25rem); line-height:1.2; }
+    .subtitle { margin-bottom:20px; color:var(--muted); font:13px 'JetBrains Mono',monospace; letter-spacing:.06em; }
+    .intro { max-width:780px; margin-bottom:14px; padding-left:16px; border-left:2px solid var(--accent); color:var(--muted); font-size:15px; }
+    .scarcity { max-width:780px; margin:0 0 24px 16px; color:#fda4af; font-size:13px; }
+    .tags-row { display:flex; flex-wrap:wrap; gap:8px; } .tag-chip { border:1px solid rgba(244,63,94,.28); border-radius:999px; padding:4px 12px; background:var(--accent-dim); color:var(--accent); font:12px 'JetBrains Mono',monospace; }
+    main { padding:40px 0 82px; } .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:20px; }
+    .card { display:flex; flex-direction:column; gap:14px; position:relative; overflow:hidden; min-height:430px; padding:24px; border:1px solid var(--border); border-radius:12px; background:var(--surface); transition:border-color .2s,transform .2s,box-shadow .2s; }
+    .card:hover { transform:translateY(-2px); border-color:rgba(244,63,94,.42); box-shadow:0 10px 30px rgba(0,0,0,.32); } .card::before { content:''; position:absolute; inset:0 0 auto; height:2px; background:linear-gradient(90deg,var(--accent),transparent); opacity:.55; }
+    .card-header { display:flex; justify-content:space-between; gap:12px; align-items:flex-start; } .cat-label { border:1px solid var(--border); border-radius:999px; padding:3px 10px; background:#1a2436; color:#9aa8bb; font:11px 'JetBrains Mono',monospace; } .card-num { color:var(--accent); opacity:.7; font:11px 'JetBrains Mono',monospace; }
+    .card-title { display:block; color:#fff; text-decoration:none; font-size:17px; font-weight:700; line-height:1.45; } .card-title:hover { color:var(--accent); } .meta { color:var(--dim); font:11px 'JetBrains Mono',monospace; } .card-body { flex:1; }
+    .trend-block,.opp-block { margin-bottom:10px; color:var(--muted); font-size:14px; } .block-label { display:block; margin-bottom:4px; color:var(--accent); font:11px 'JetBrains Mono',monospace; letter-spacing:.06em; }
+    .card-footer { display:flex; justify-content:flex-end; padding-top:14px; border-top:1px solid var(--border); } .source-btn { color:var(--accent); text-decoration:none; font:11px 'JetBrains Mono',monospace; letter-spacing:.06em; }
+    .competitor-section { margin-top:44px; padding:28px; border:1px solid rgba(244,63,94,.32); border-radius:14px; background:linear-gradient(135deg,rgba(244,63,94,.08),rgba(15,22,35,.96)); } .section-title { margin-bottom:6px; color:#fff; font-size:24px; } .section-note { margin-bottom:20px; color:var(--muted); font-size:14px; } .competitor-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
+    .competitor-card { border:1px solid rgba(244,63,94,.22); border-radius:10px; padding:16px; background:rgba(8,12,20,.54); } .competitor-top { display:flex; justify-content:space-between; gap:10px; margin-bottom:10px; } .competitor-top h3 { color:#fff; font-size:16px; } .competitor-top span { color:var(--dim); font:10px 'JetBrains Mono',monospace; text-align:right; } .competitor-card p { margin-bottom:8px; color:var(--muted); font-size:13px; } .competitor-card strong { color:#f3b2bf; } .competitor-card a { color:var(--accent); font:11px 'JetBrains Mono',monospace; text-decoration:none; }
+    @media (max-width:640px) { .wrapper { padding:0 18px; } header { padding-top:32px; } .grid { grid-template-columns:1fr; } .card { min-height:auto; padding:20px; } .competitor-section { padding:20px; } }
+</style>
+</head>
+<body>
+  <header><div class="wrapper"><a class="back-link" href="../fitness/">← 返回存档</a><div class="edition-badge">EDITION 0014 · 2026年6月4日 09:25</div><h1>运动健康趋势</h1><p class="subtitle">Global Fitness &amp; Wellness · Powered by Fanka</p><p class="intro">本期从负重背心、短时训练、跑者力量、训练鞋科技与 HYROX 社媒化中，筛选女性运动穿搭和内容机会。</p><p class="scarcity">近 3 天可核验素材不足，本期仅收录 8 条</p><div class="tags-row"><span class="tag-chip">负重训练</span><span class="tag-chip">短时训练</span><span class="tag-chip">跑者力量</span><span class="tag-chip">训练鞋科技</span><span class="tag-chip">HYROX热</span></div></div></header>
+  <main><div class="wrapper"><section class="grid">
+      <article class="card">
+        <div class="card-header"><span class="cat-label">穿搭趋势</span><span class="card-num">#01</span></div>
+        <a class="card-title" href="https://www.womenshealthmag.com/fitness/a71459565/omorpho-g-vest-icon-review/" target="_blank" rel="noopener">Omorpho G-Vest Icon Review: A Fitness Writer’s Honest Opinion After Four Weeks of Testing</a>
+        <div class="meta">Women’s Health · 2026-06-01</div>
+        <div class="card-body">
+          <p class="trend-block"><span class="block-label">【趋势是什么】</span>Women’s Health 近期开箱测试 Omorpho 可调节负重背心，说明 weighted vest 已从硬核训练装备进入日常力量、步行和户外训练场景。它的传播点不是极限重量，而是“穿上就能给普通动作加一点阻力”的低门槛升级。</p>
+          <p class="opp-block"><span class="block-label">【内容机会】</span>Fanka 可做“负重背心穿搭公式”：压缩裤负责腰臀稳定和下肢线条，运动内衣负责支撑，上层背心负责训练强度，让用户理解一套装备如何覆盖步行、深蹲、台阶和短时力量。</p>
+        </div>
+        <div class="card-footer"><a class="source-btn" href="https://www.womenshealthmag.com/fitness/a71459565/omorpho-g-vest-icon-review/" target="_blank" rel="noopener">查看原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="cat-label">社媒热点</span><span class="card-num">#02</span></div>
+        <a class="card-title" href="https://newengen.com/insights/june-tiktok-trends/" target="_blank" rel="noopener">June 2026 TikTok Trends: What’s Viral This Month</a>
+        <div class="meta">New Engen · 2026-06-03</div>
+        <div class="card-body">
+          <p class="trend-block"><span class="block-label">【趋势是什么】</span>New Engen 的 6 月 TikTok 趋势观察显示，anthem audio、歌词叠字、单镜头慢摇和“carefree energy”视频仍在推动短内容扩散。健身内容可以借这些音频和镜头语言，把“动作教程”变成“情绪 + 穿搭 + 一组动作”的低成本格式。</p>
+          <p class="opp-block"><span class="block-label">【内容机会】</span>Fanka 可把训练内容改成“one song, one set, one move”：一首歌、一套压缩穿搭、一个动作循环，用固定镜头展示不卷边、不移位、出汗后仍利落的体验，而不是只做传统产品卖点讲解。</p>
+        </div>
+        <div class="card-footer"><a class="source-btn" href="https://newengen.com/insights/june-tiktok-trends/" target="_blank" rel="noopener">查看原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="cat-label">新兴运动</span><span class="card-num">#03</span></div>
+        <a class="card-title" href="https://www.menshealth.com/fitness/" target="_blank" rel="noopener">Shred Your Whole Body Fast With Our 30-Minute Workout Guide</a>
+        <div class="meta">Men’s Health · 2026-06-02</div>
+        <div class="card-body">
+          <p class="trend-block"><span class="block-label">【趋势是什么】</span>Men’s Health 最新 fitness 首页把 30 分钟全身训练指南放在首位，反映短时、高密度、可下载训练计划仍是内容入口。用户要的不是复杂计划，而是能马上开始、能坚持、能覆盖燃脂和力量的清晰模板。</p>
+          <p class="opp-block"><span class="block-label">【内容机会】</span>Fanka 可做“30 分钟下班后训练穿搭”系列：5 分钟热身、20 分钟循环、5 分钟拉伸，用同一套压缩裤和 bra tank 完成全流程，突出让运动变简单的品牌承诺。</p>
+        </div>
+        <div class="card-footer"><a class="source-btn" href="https://www.menshealth.com/fitness/" target="_blank" rel="noopener">查看原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="cat-label">女性运动</span><span class="card-num">#04</span></div>
+        <a class="card-title" href="https://www.runnersworld.com/workouts/" target="_blank" rel="noopener">The Types of Workouts You Need to Train for a Marathon on Just 3 Runs a Week</a>
+        <div class="meta">Runner’s World · 2026-06-02</div>
+        <div class="card-body">
+          <p class="trend-block"><span class="block-label">【趋势是什么】</span>Runner’s World 将马拉松训练拆成每周 3 次跑步与关键训练组合，说明跑者内容正在向“更少次数、更高质量、更可恢复”转变。女性跑者尤其需要在跑步、力量和恢复之间找到可持续节奏。</p>
+          <p class="opp-block"><span class="block-label">【内容机会】</span>Fanka 可做“跑者一周三练穿搭清单”，把压缩裤、运动内衣和轻外套分别对应速度日、长跑日和力量日，强调一套装备覆盖多训练场景。</p>
+        </div>
+        <div class="card-footer"><a class="source-btn" href="https://www.runnersworld.com/workouts/" target="_blank" rel="noopener">查看原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="cat-label">市场洞察</span><span class="card-num">#05</span></div>
+        <a class="card-title" href="https://www.runnersworld.com/gear/a71282549/runners-world-shoe-awards-2026-training-shoes/" target="_blank" rel="noopener">Runner’s World Shoe Awards 2026 - Training Shoes</a>
+        <div class="meta">Runner’s World · 2026-06-02</div>
+        <div class="card-body">
+          <p class="trend-block"><span class="block-label">【趋势是什么】</span>Runner’s World 2026 训练鞋奖项强调 daily trainer、super shoe 科技和耐用舒适，说明消费者购买跑步装备时越来越按训练目的细分。鞋履评测也带动用户重新思考上身与下装如何匹配具体训练日。</p>
+          <p class="opp-block"><span class="block-label">【内容机会】</span>Fanka 可做“训练鞋怎么配压缩裤”内容，把日常跑、力量训练、户外步行和通勤恢复拆成 4 套造型，用产品搭配而非单品硬广承接跑步装备搜索流量。</p>
+        </div>
+        <div class="card-footer"><a class="source-btn" href="https://www.runnersworld.com/gear/a71282549/runners-world-shoe-awards-2026-training-shoes/" target="_blank" rel="noopener">查看原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="cat-label">健康生活</span><span class="card-num">#06</span></div>
+        <a class="card-title" href="https://www.womenshealthmag.com/fitness/a68002478/guide-to-exercise-for-bone-health/" target="_blank" rel="noopener">How Strength Training Can Prevent Osteoporosis For Women, According to Experts</a>
+        <div class="meta">Women’s Health · 2026-05-31</div>
+        <div class="card-body">
+          <p class="trend-block"><span class="block-label">【趋势是什么】</span>Women’s Health 以女性骨骼健康切入力量训练，说明“练出线条”之外，女性健身内容正在更关注长期健康、衰老预防和日常功能。它适合被表达为生活方式习惯，而不是医学承诺。</p>
+          <p class="opp-block"><span class="block-label">【内容机会】</span>Fanka 可做“为未来身体储备力量”栏目，用自重、弹力带、负重背心和低冲击力量动作切入，产品表达聚焦支撑、舒适和动作稳定，并明确避免医疗化承诺。</p>
+        </div>
+        <div class="card-footer"><a class="source-btn" href="https://www.womenshealthmag.com/fitness/a68002478/guide-to-exercise-for-bone-health/" target="_blank" rel="noopener">查看原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="cat-label">市场洞察</span><span class="card-num">#07</span></div>
+        <a class="card-title" href="https://www.36kr.com/p/3828518256693892" target="_blank" rel="noopener">9辆卡车两天造“军训场”，京沪年轻人疯抢600元门票</a>
+        <div class="meta">36氪 / 中国企业家 · 2026-05-28</div>
+        <div class="card-body">
+          <p class="trend-block"><span class="block-label">【趋势是什么】</span>36氪报道 HYROX 在中国的混合健身竞速热：跑步与功能训练循环结合，上海站参赛人数突破 1 万，并在小红书、抖音形成强社交货币。它不是单一运动，而是赛事、社交、穿搭和完赛仪式共同驱动的内容场景。</p>
+          <p class="opp-block"><span class="block-label">【内容机会】</span>Fanka 可把 HYROX 写成“女生功能训练穿什么”而非硬蹭赛事：推雪橇、弓步、划船和跑步都需要不移位、耐磨、支撑好的压缩穿搭，适合做训练前后对比和完赛穿搭模板。</p>
+        </div>
+        <div class="card-footer"><a class="source-btn" href="https://www.36kr.com/p/3828518256693892" target="_blank" rel="noopener">查看原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="cat-label">市场洞察</span><span class="card-num">#08</span></div>
+        <a class="card-title" href="https://sgbonline.com/athletas-comps-slump-11-percent-in-first-quarter/" target="_blank" rel="noopener">Gap CFO Expects Athleta’s Q1 Weakness to Continue into Second Quarter</a>
+        <div class="meta">SGB Media · 2026-05-30</div>
+        <div class="card-body">
+          <p class="trend-block"><span class="block-label">【趋势是什么】</span>SGB Media 报道 Gap 管理层预计 Athleta Q1 疲弱会延续到 Q2，原因包括旧产品消化和更相关新品组合的重建。女性 activewear 市场的竞争不只在声量，也在产品相关性、上新节奏和用户信任。</p>
+          <p class="opp-block"><span class="block-label">【内容机会】</span>Fanka 可从反面借鉴：持续把压缩感、尺码、面料和真实训练场景讲透，减少“好看但不知为何买”的内容空转，让运营素材直接回答用户购买犹豫。</p>
+        </div>
+        <div class="card-footer"><a class="source-btn" href="https://sgbonline.com/athletas-comps-slump-11-percent-in-first-quarter/" target="_blank" rel="noopener">查看原文 →</a></div>
+      </article>
+      </section><section class="competitor-section"><h2 class="section-title">竞品动态观察</h2><p class="section-note">近 7 天公开信息中，优先记录品牌官方、媒体报道、可验证新品页和社群热点。</p><div class="competitor-grid">
+        <article class="competitor-card">
+          <div class="competitor-top"><h3>lululemon</h3><span>lululemon What’s New · 2026-06-04</span></div>
+          <p><strong>竞品动作：</strong>近 7 天未发现高价值公开媒体动态；官网 What’s New 仍以女性跑步、瑜伽、训练和日常层次穿搭组织上新。</p>
+          <p><strong>Fanka 可参考：</strong>Fanka 可用同样的场景导航，把压缩裤按训练、步行、恢复、旅行拆分，降低用户选择成本。</p>
+          <a href="https://shop.lululemon.com/c/women-whats-new/_/N-7vfZ1z0xcuu" target="_blank" rel="noopener">原文链接 →</a>
+        </article>
+        <article class="competitor-card">
+          <div class="competitor-top"><h3>Alo Yoga</h3><span>Tom’s Guide · 2026-05-31</span></div>
+          <p><strong>竞品动作：</strong>Tom’s Guide 记录 Alo Yoga 罕见折扣，女性 apparel/accessories 从低门槛商品切入，继续强化高溢价品牌的限时优惠心智。</p>
+          <p><strong>Fanka 可参考：</strong>Fanka 做促销内容时可避免只喊折扣，改用“训练场景 + 套装建议 + 功能理由”让低门槛商品带动整套穿搭。</p>
+          <a href="https://www.tomsguide.com/wellness/fitness/alo-yoga-apparel-rarely-goes-on-sale-but-i-found-7-deals-you-need-to-see" target="_blank" rel="noopener">原文链接 →</a>
+        </article>
+        <article class="competitor-card">
+          <div class="competitor-top"><h3>Sweaty Betty</h3><span>Sweaty Betty New Arrivals · 2026-06-04</span></div>
+          <p><strong>竞品动作：</strong>近 7 天未发现高价值公开动态；官网新品页继续按 Run、Gym + Workout、Yoga + Pilates、Tennis 等运动场景组织。</p>
+          <p><strong>Fanka 可参考：</strong>Fanka 可参考其运动场景分类，但在内容上补足“压缩为什么适合这个场景”的解释。</p>
+          <a href="https://www.sweatybetty.com/us/shop/new-arrivals" target="_blank" rel="noopener">原文链接 →</a>
+        </article>
+        <article class="competitor-card">
+          <div class="competitor-top"><h3>Athleta</h3><span>SGB Media · 2026-05-30</span></div>
+          <p><strong>竞品动作：</strong>Gap 管理层称 Athleta Q1 comparable sales 下滑，Q2 仍处于重建期，重点在消化旧产品和推出更相关 assortment。</p>
+          <p><strong>Fanka 可参考：</strong>Fanka 应把新品节奏和用户反馈闭环做得更轻：用试穿问答、尺码反馈和训练场景实测快速验证单品相关性。</p>
+          <a href="https://sgbonline.com/athletas-comps-slump-11-percent-in-first-quarter/" target="_blank" rel="noopener">原文链接 →</a>
+        </article>
+        </div></section></div></main>
+</body>
+</html>
