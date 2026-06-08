@@ -1,33 +1,33 @@
 {
-  "edition": "0015",
-  "date": "2026年6月5日 09:27",
-  "intro": "本期聚焦恢复感训练、女性健康音频、Pride 核心挑战、跑者装备与小红书体育内容化，寻找 Fanka 压缩穿搭机会。",
+  "edition": "0016",
+  "date": "2026年6月8日 10:37",
+  "intro": "本期从女性力量训练、短时冥想、跑姿修正、运动装备细分与中文平台内容化中，提炼 Fanka 压缩服与运动穿搭机会。",
   "tags": [
-    "恢复感训练",
-    "女性健康音频",
-    "核心挑战",
-    "跑者装备",
-    "小红书体育"
+    "女性力量",
+    "短时恢复",
+    "跑姿修正",
+    "装备细分",
+    "平台种草"
   ],
   "top3": [
     {
-      "title": "Can You Train Every Day? Dr. Charlotte Weidenbach Explains What Actually Works",
-      "comment": "恢复感训练成为反卷新入口，可做训练日/轻松日穿搭。"
+      "title": "After 5 Years of Strength Training, Here are 4 Things I Wish I Knew at the Start for Quicker Results",
+      "comment": "女性力量训练转向长期进步，可做新手训练穿搭指南。"
     },
     {
-      "title": "Introducing Our New Health and Fitness Podcast, The Huddle",
-      "comment": "女性健康内容产品化，适合 Fanka 做短栏目沉淀专业感。"
+      "title": "You Only Need a Few Minutes to Feel the Peak Benefits of Meditation, Study Finds",
+      "comment": "短时冥想成为微恢复入口，适合训练后压缩穿搭内容。"
     },
     {
-      "title": "Matty Launches June Pride Core Classes for 30 Days",
-      "comment": "10分钟核心挑战结合社群身份，适合做低门槛打卡内容。"
+      "title": "After Over a Decade of Running, I Was Told I Run All Wrong—But Also How to Fix My Form",
+      "comment": "跑姿修正内容升温，可用贴身穿搭辅助动作观察。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0015.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0016.html",
   "blog": {
-    "title": "Recovery-Aware Workout Outfits: How to Dress for Training, Easy Days, and Restorative Movement",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/recovery-aware-workout-outfits-compression-leggings.html",
-    "summary": "由本期恢复感训练和每日训练可持续性趋势延展，沉淀为压缩裤分场景穿搭指南。"
+    "title": "Strength Training Outfits for Women: How to Dress for Progress, Comfort, and Consistency",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/strength-training-outfits-for-women-compression-leggings.html",
+    "summary": "由本期女性力量训练和长期进步趋势延展，沉淀为压缩裤、运动内衣和训练层叠穿搭指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
