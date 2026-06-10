@@ -1,27 +1,27 @@
 {
-  "edition": "0029",
-  "date": "2026年6月10日 09:38",
-  "intro": "AI 购物代理和绿色追溯正同时改写出海鞋类电商，商品语义、环保数据与消费者分析开始合流成新的增长底座。",
+  "edition": "0030",
+  "date": "2026年6月10日 14:20",
+  "intro": "AI购物代理与绿色供应链工具同步成熟，出海鞋类团队要同时重做商品数据、营销分析和环保追溯。",
   "tags": [
     "代理购物",
     "绿色追溯",
-    "零售数据",
-    "鞋类电商",
-    "供应链AI"
+    "商品数据",
+    "消费分析",
+    "鞋类出海"
   ],
   "top3": [
     {
-      "title": "Gopuff Go 把聊天式采购、重复补货和优惠筛选合进一个 AI 购物助手",
-      "comment": "对话式补货正在变成高频复购的新入口"
+      "title": "Gopuff Go 把补货、优惠和下单整合进同一个 AI 购物助手",
+      "comment": "Gopuff 的 Go 会结合历史购买、配送偏好和实时促销，在对话里直接完成补货、选品和加购。 鞋类团队可以优"
     },
     {
-      "title": "Amazon 把 Alexa+ 深度接入购物流程，让 AI 主动追踪折扣、补货与比较决策",
-      "comment": "商品规则越结构化，越容易被 AI 购物助手采纳"
+      "title": "Amazon 用 Alexa for Shopping 把价格追踪、比较与自动补货接入主购物入口",
+      "comment": "Amazon 把 Rufus 升级成 Alexa for Shopping，让 AI 在搜索栏里直接完成比价、"
     },
     {
-      "title": "Google Universal Cart + AP2 把 AI 购物推进到跨站加购、比价和自动支付",
-      "comment": "跨渠道一致的价格库存将决定 AI 分发效率"
+      "title": "Google Universal Cart 开始接管跨站比价与机器可读结账",
+      "comment": "Google 用 Gemini 驱动 Universal Cart，在 Search、Gemini、YouTu"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0029.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0030.html"
 }
