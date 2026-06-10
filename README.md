@@ -110,9 +110,9 @@ Settings → Secrets and variables → Actions → New repository secret：
      "intro": "（80字内）",
      "tags": ["标签1","标签2","标签3","标签4","标签5"],
      "top3": [
-       {"title": "新闻标题", "comment": "不超过60字，无换行无双引号"},
-       {"title": "...", "comment": "..."},
-       {"title": "...", "comment": "..."}
+       {"title": "新闻标题", "comment": "不超过60字，无换行无双引号", "url": "原文URL"},
+       {"title": "...", "comment": "...", "url": "..."},
+       {"title": "...", "comment": "...", "url": "..."}
      ],
      "url": "https://baldmuzi.github.io/ai-news-daily/editions/edition-XXXX.html"
    }
@@ -172,9 +172,9 @@ Settings → Secrets and variables → Actions → New repository secret：
      "intro": "（80字内）",
      "tags": ["标签1","标签2","标签3","标签4","标签5"],
      "top3": [
-       {"title": "标题（不含引号）", "comment": "不超过55字，无换行"},
-       {"title": "...", "comment": "..."},
-       {"title": "...", "comment": "..."}
+       {"title": "标题（不含引号）", "comment": "不超过55字，无换行", "url": "原文URL"},
+       {"title": "...", "comment": "...", "url": "..."},
+       {"title": "...", "comment": "...", "url": "..."}
      ],
      "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-XXXX.html"
    }
@@ -244,9 +244,9 @@ Settings → Secrets and variables → Actions → New repository secret：
      "intro": "（80字内，体现 Fanka 内容视角）",
      "tags": ["标签1","标签2","标签3","标签4","标签5"],
      "top3": [
-       {"title": "趋势标题（不含引号）", "comment": "不超过55字，无换行"},
-       {"title": "...", "comment": "..."},
-       {"title": "...", "comment": "..."}
+       {"title": "趋势标题（不含引号）", "comment": "不超过55字，无换行", "url": "原文URL"},
+       {"title": "...", "comment": "...", "url": "..."},
+       {"title": "...", "comment": "...", "url": "..."}
      ],
      "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-XXXX.html"
    }
@@ -297,9 +297,9 @@ Settings → Secrets and variables → Actions → New repository secret：
   "intro": "本期导语...",
   "tags": ["标签1", "标签2", "标签3", "标签4", "标签5"],
   "top3": [
-    {"title": "标题", "comment": "点评"},
-    {"title": "...", "comment": "..."},
-    {"title": "...", "comment": "..."}
+    {"title": "标题", "comment": "点评", "url": "原文URL"},
+    {"title": "...", "comment": "...", "url": "..."},
+    {"title": "...", "comment": "...", "url": "..."}
   ],
   "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0001.html"
 }
@@ -308,7 +308,7 @@ Settings → Secrets and variables → Actions → New repository secret：
 ## 企微通知格式
 
 ```
-Fanka 运动健康趋势 #0001 🤖
+# Fanka 运动健康趋势 #0001 🤖
 2026年5月9日 08:30 · 北京时间
 
 本期导语...
@@ -316,10 +316,10 @@ Fanka 运动健康趋势 #0001 🤖
 关键词：普拉提热潮 · 户外徒步穿搭 · 恢复性运动 · 社媒健身 · 女性运动文化
 
 Top 3 速览：
-> #1 趋势标题
+> **#1** | [趋势标题](原文URL)
 > 点评内容...
 
-📖 阅读完整版
+[📖 阅读完整版](https://baldmuzi.github.io/ai-news-daily/fitness/edition-0001.html)
 
 <@wangwu> 今日运动趋势已更新，请查阅！
 ```
