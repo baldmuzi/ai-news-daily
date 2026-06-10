@@ -1,27 +1,27 @@
 {
-  "edition": "0028",
-  "date": "2026年6月9日 09:12",
-  "intro": "AI导购与供应链追溯加速进入出海鞋类电商，环保合规和商品数据正在一起重构转化链路。",
+  "edition": "0029",
+  "date": "2026年6月10日 09:38",
+  "intro": "AI 购物代理和绿色追溯正同时改写出海鞋类电商，商品语义、环保数据与消费者分析开始合流成新的增长底座。",
   "tags": [
-    "AI导购",
+    "代理购物",
     "绿色追溯",
-    "商品数据",
-    "跨境运营",
-    "零售归因"
+    "零售数据",
+    "鞋类电商",
+    "供应链AI"
   ],
   "top3": [
     {
-      "title": "Best Buy、Gap、Dick's 把 AI 从前台导购推进到经营决策层",
-      "comment": "AI 已从前台导购进入经营决策层"
+      "title": "Gopuff Go 把聊天式采购、重复补货和优惠筛选合进一个 AI 购物助手",
+      "comment": "对话式补货正在变成高频复购的新入口"
     },
     {
-      "title": "Google Universal Cart 把跨站加购、比价和代付串成 AI 购物闭环",
-      "comment": "跨站加购与代付要求商品规则机器可读"
+      "title": "Amazon 把 Alexa+ 深度接入购物流程，让 AI 主动追踪折扣、补货与比较决策",
+      "comment": "商品规则越结构化，越容易被 AI 购物助手采纳"
     },
     {
-      "title": "Shopify 公开押注 Agentic Shopping，强调发现逻辑将被 AI 改写",
-      "comment": "AI 渠道归因已值得单独建模监控"
+      "title": "Google Universal Cart + AP2 把 AI 购物推进到跨站加购、比价和自动支付",
+      "comment": "跨渠道一致的价格库存将决定 AI 分发效率"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0028.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0029.html"
 }
