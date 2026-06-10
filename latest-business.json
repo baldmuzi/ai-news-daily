@@ -1,27 +1,27 @@
 {
-  "edition": "0030",
-  "date": "2026年6月10日 14:20",
-  "intro": "AI购物代理与绿色供应链工具同步成熟，出海鞋类团队要同时重做商品数据、营销分析和环保追溯。",
+  "edition": "0031",
+  "date": "2026年6月10日 14:38",
+  "intro": "AI购物入口外移，鞋类出海团队正把商品语义、绿色追溯和转化归因一起做成机器可读资产。",
   "tags": [
     "代理购物",
     "绿色追溯",
-    "商品数据",
-    "消费分析",
-    "鞋类出海"
+    "商品语义",
+    "归因分析",
+    "跨境鞋类"
   ],
   "top3": [
     {
-      "title": "Gopuff Go 把补货、优惠和下单整合进同一个 AI 购物助手",
-      "comment": "Gopuff 的 Go 会结合历史购买、配送偏好和实时促销，在对话里直接完成补货、选品和加购。 鞋类团队可以优"
+      "title": "Gopuff 推出 Go，让 AI 直接根据历史购买记录帮用户补货下单",
+      "comment": "Gopuff 把历史购买、优惠和加购交给 AI 助手，复购入口开始前移。"
     },
     {
-      "title": "Amazon 用 Alexa for Shopping 把价格追踪、比较与自动补货接入主购物入口",
-      "comment": "Amazon 把 Rufus 升级成 Alexa for Shopping，让 AI 在搜索栏里直接完成比价、"
+      "title": "Amazon 上线 AI 生成式搜索图，鞋服类检索开始从关键词切到语义描述",
+      "comment": "Amazon 用生成式图像理解模糊需求，鞋服搜索正从关键词走向语义匹配。"
     },
     {
-      "title": "Google Universal Cart 开始接管跨站比价与机器可读结账",
-      "comment": "Google 用 Gemini 驱动 Universal Cart，在 Search、Gemini、YouTu"
+      "title": "Amazon 把 AI 设计接入 Merch，长尾定制商品从提示词直接走向售卖",
+      "comment": "Amazon 把 AI 设计、下单和分发合并进 Merch 流程，长尾 SKU 上新更快。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0030.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0031.html"
 }
