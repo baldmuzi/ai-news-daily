@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Fanka 社交趋势拆解 · 往期存档</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <style>
 :root{--bg:#080c14;--surface:#0f1623;--border:#213047;--accent:#f43f5e;--signal:#38bdf8;--text:#e8eaf0;--muted:#91a0b5}
 *{box-sizing:border-box;margin:0;padding:0}
-body{min-height:100vh;background:var(--bg);color:var(--text);font-family:"Noto Serif SC",serif;line-height:1.7}
+body{min-height:100vh;background:radial-gradient(circle at top,rgba(244,63,94,.12),transparent 24rem),var(--bg);color:var(--text);font-family:"Noto Serif SC",serif;line-height:1.7}
 .wrap{max-width:980px;margin:0 auto;padding:46px 22px 84px}
-.back{display:inline-block;margin-bottom:26px;color:var(--muted);font:12px "JetBrains Mono",monospace;text-decoration:none}
+a{text-decoration:none}
+.back{display:inline-block;margin-bottom:26px;color:var(--muted);font:12px "JetBrains Mono",monospace}
 h1{font-size:clamp(2rem,5vw,3.2rem);margin-bottom:12px}
 .sub{color:var(--muted);margin-bottom:28px}
-.empty{padding:28px;border:1px solid var(--border);border-radius:12px;background:var(--surface)}
-.empty strong{display:block;margin-bottom:10px;color:var(--signal);font-family:"JetBrains Mono",monospace;font-size:13px}
-.empty p{color:var(--muted);font-size:15px}
+.list{display:grid;gap:16px}
+.item{display:block;padding:22px;border:1px solid var(--border);border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01)),var(--surface);color:var(--text)}
+.item:hover{border-color:rgba(244,63,94,.45)}
+.item-top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:10px}
+.badge{display:inline-flex;padding:6px 10px;border-radius:999px;border:1px solid rgba(244,63,94,.4);background:rgba(244,63,94,.08);color:#fecdd3;font:12px "JetBrains Mono",monospace}
+.latest{border-color:rgba(56,189,248,.45);box-shadow:0 0 0 1px rgba(56,189,248,.18) inset}
+.latest .badge{border-color:rgba(56,189,248,.45);background:rgba(56,189,248,.09);color:#c4eeff}
+.item h2{font-size:22px;margin-bottom:8px}
+.item p{color:#ccd7e5;font-size:15px}
+.meta{color:var(--muted);font:12px "JetBrains Mono",monospace}
 </style>
 </head>
 <body>
@@ -25,9 +33,15 @@ h1{font-size:clamp(2rem,5vw,3.2rem);margin-bottom:12px}
   <a class="back" href="../">← 返回首页</a>
   <h1>Fanka 社交趋势拆解 · 往期存档</h1>
   <p class="sub">Social Trend &amp; Creator Playbook · Powered by Fanka</p>
-  <section class="empty">
-    <strong>WAITING FOR FIRST EDITION</strong>
-    <p>首期生成后，定时任务会在此按期号倒序展示最近 20 期社交趋势拆解日报。</p>
+  <section class="list">
+    <a class="item latest" href="./edition-0001.html">
+      <div class="item-top">
+        <span class="badge">LATEST · 0001</span>
+        <span class="meta">2026-06-11</span>
+      </div>
+      <h2>第 0001 期 · 高温训练、UPF 日常化与女性健康分阶段内容</h2>
+      <p>首期聚焦更年期训练支持、降温面料、旅行跑步场景和头部品牌的内容导航方式；近 3 天可核验社媒素材不足，仅收录 7 条趋势信号。</p>
+    </a>
   </section>
 </main>
 </body>
