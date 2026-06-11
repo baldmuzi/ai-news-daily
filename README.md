@@ -6,7 +6,7 @@ https://baldmuzi.github.io/ai-news-daily
 ## 架构
 
 ```
-Claude Code 远程任务（三个频道独立运行）
+Claude Code 远程任务（多个频道独立运行）
    │
    ├─ 技术频道任务
    │   ├─ editions/edition-XXXX.html
@@ -18,17 +18,29 @@ Claude Code 远程任务（三个频道独立运行）
    │   ├─ business/index.html
    │   └─ latest-business.json → push
    │
-   └─ 运动健康频道任务（Fanka）
-       ├─ fitness/edition-XXXX.html
-       ├─ fitness/index.html
-       └─ latest-fitness.json → push
+   ├─ 运动健康频道任务（Fanka）
+   │   ├─ fitness/edition-XXXX.html
+   │   ├─ fitness/index.html
+   │   └─ latest-fitness.json → push
+   │
+   ├─ 社交趋势频道任务（Fanka）
+   │   ├─ fanka-social/edition-XXXX.html
+   │   ├─ fanka-social/index.html
+   │   └─ latest-fanka-social.json → push
+   │
+   └─ VIVAIA 品牌趋势任务
+       ├─ vivaia/edition-XXXX.html
+       ├─ vivaia/index.html
+       └─ latest-vivaia.json → push
               │
               ▼
    GitHub Actions (notify.yml)
        ├─ 轮询对应页面 URL，等 HTTP 200 上线后
        ├─ latest.json          → 技术群企微机器人
        ├─ latest-business.json → 产品群企微机器人
-       └─ latest-fitness.json  → Fanka 群企微机器人
+       ├─ latest-fitness.json      → Fanka 群企微机器人
+       ├─ latest-fanka-social.json → Fanka 社交趋势企微机器人
+       └─ latest-vivaia.json       → VIVAIA 群企微机器人
 ```
 
 - 根目录 `index.html` 为**静态门户首页**，不由任务生成，直接维护
@@ -44,6 +56,8 @@ Claude Code 远程任务（三个频道独立运行）
 | 技术频道存档 | `https://baldmuzi.github.io/ai-news-daily/editions/` |
 | 产品/数据频道存档 | `https://baldmuzi.github.io/ai-news-daily/business/` |
 | 运动健康频道存档 | `https://baldmuzi.github.io/ai-news-daily/fitness/` |
+| Fanka 社交趋势存档 | `https://baldmuzi.github.io/ai-news-daily/fanka-social/` |
+| VIVAIA 品牌趋势存档 | `https://baldmuzi.github.io/ai-news-daily/vivaia/` |
 
 ---
 
@@ -62,16 +76,22 @@ Settings → Secrets and variables → Actions → New repository secret：
 | `WECOM_WEBHOOK` | 技术群机器人 Webhook | ✅ |
 | `WECOM_WEBHOOK_BUSINESS` | 产品/数据群机器人 Webhook | 可选 |
 | `WECOM_WEBHOOK_FITNESS` | Fanka 运动健康群机器人 Webhook | 可选 |
+| `WECOM_WEBHOOK_FANKA_SOCIAL` | Fanka 社交趋势群机器人 Webhook；未配置时回退到 `WECOM_WEBHOOK_FITNESS` | 可选 |
+| `WECOM_WEBHOOK_VIVAIA` | VIVAIA 群机器人 Webhook | 可选 |
 | `WECOM_MENTION_TECH` | 技术群艾特成员 userid（逗号分隔） | 可选 |
 | `WECOM_MENTION_MSG_TECH` | 技术群艾特后附加的话 | 可选 |
 | `WECOM_MENTION_BUSINESS` | 产品群艾特成员 userid | 可选 |
 | `WECOM_MENTION_MSG_BUSINESS` | 产品群艾特后附加的话 | 可选 |
 | `WECOM_MENTION_FITNESS` | Fanka 群艾特成员 userid | 可选 |
 | `WECOM_MENTION_MSG_FITNESS` | Fanka 群艾特后附加的话 | 可选 |
+| `WECOM_MENTION_FANKA_SOCIAL` | Fanka 社交趋势群艾特成员 userid；未配置时回退到 `WECOM_MENTION_FITNESS` | 可选 |
+| `WECOM_MENTION_MSG_FANKA_SOCIAL` | Fanka 社交趋势群艾特后附加的话 | 可选 |
+| `WECOM_MENTION_VIVAIA` | VIVAIA 群艾特成员 userid | 可选 |
+| `WECOM_MENTION_MSG_VIVAIA` | VIVAIA 群艾特后附加的话 | 可选 |
 
 > 企微 userid：企业微信管理后台 → 通讯录 → 成员详情。艾特全员用 `@all`。
 
-### 3. 在 Claude Code 里创建三个远程任务
+### 3. 在 Claude Code 里创建远程任务
 
 ---
 
@@ -261,6 +281,20 @@ Settings → Secrets and variables → Actions → New repository secret：
 
 ---
 
+#### Fanka 社交趋势拆解 prompt
+
+完整提示词见 `prompts/fanka-social-trends-daily.md`。
+
+该任务独立生成：
+
+- `fanka-social/edition-XXXX.html`
+- `fanka-social/index.html`
+- `latest-fanka-social.json`
+
+它专门抓取 TikTok、Instagram、小红书、抖音、Reddit、Amazon reviews、Google 推荐搜索词等社交与用户反馈信号，并拆解 the_french_fit、Alo Yoga、Buff Bunny、Sweaty Betty、Vuori、Gymshark、Halara 等头部账号或竞品的内容结构。
+
+---
+
 ### 4. 设置定时（建议错开时间）
 
 | 频道 | 建议时间（北京时间） |
@@ -268,6 +302,7 @@ Settings → Secrets and variables → Actions → New repository secret：
 | 技术频道 | 每天 08:00 / 18:00 |
 | 产品/数据频道 | 每天 09:00 / 19:00 |
 | 运动健康频道 | 每天 08:30 / 18:30 |
+| Fanka 社交趋势频道 | 每天 10:00 / 20:00 |
 
 ---
 
@@ -285,7 +320,10 @@ Settings → Secrets and variables → Actions → New repository secret：
 | `fitness/edition-XXXX.html` | Fanka 任务 | 运动健康趋势各期 |
 | `fitness/index.html` | Fanka 任务 | 运动健康存档页 |
 | `latest-fitness.json` | Fanka 任务 | 触发 Fanka 群企微 |
-| `.github/workflows/notify.yml` | 本仓库 | 三频道 push 触发通知 |
+| `fanka-social/edition-XXXX.html` | Fanka 社交趋势任务 | 社交趋势拆解各期 |
+| `fanka-social/index.html` | Fanka 社交趋势任务 | 社交趋势存档页 |
+| `latest-fanka-social.json` | Fanka 社交趋势任务 | 触发 Fanka 社交趋势企微 |
+| `.github/workflows/notify.yml` | 本仓库 | 多频道 push 触发通知 |
 | `.github/scripts/notify.py` | 本仓库 | 轮询+发送+艾特逻辑 |
 
 ## JSON 结构

@@ -7,10 +7,12 @@ on:
       - 'latest.json'
       - 'latest-business.json'
       - 'latest-fitness.json'
+      - 'latest-fanka-social.json'
       - 'latest-vivaia.json'
       - 'editions/**'
       - 'business/**'
       - 'fitness/**'
+      - 'fanka-social/**'
       - 'vivaia/**'
   workflow_dispatch:
 
@@ -32,14 +34,17 @@ jobs:
           WECOM_WEBHOOK_TECH:         ${{ secrets.WECOM_WEBHOOK }}
           WECOM_WEBHOOK_BUSINESS:     ${{ secrets.WECOM_WEBHOOK_BUSINESS }}
           WECOM_WEBHOOK_FITNESS:      ${{ secrets.WECOM_WEBHOOK_FITNESS }}
+          WECOM_WEBHOOK_FANKA_SOCIAL: ${{ secrets.WECOM_WEBHOOK_FANKA_SOCIAL }}
           WECOM_WEBHOOK_VIVAIA:       ${{ secrets.WECOM_WEBHOOK_VIVAIA }}
           WECOM_MENTION_TECH:         ${{ secrets.WECOM_MENTION_TECH }}
           WECOM_MENTION_BUSINESS:     ${{ secrets.WECOM_MENTION_BUSINESS }}
           WECOM_MENTION_FITNESS:      ${{ secrets.WECOM_MENTION_FITNESS }}
+          WECOM_MENTION_FANKA_SOCIAL: ${{ secrets.WECOM_MENTION_FANKA_SOCIAL }}
           WECOM_MENTION_VIVAIA:       ${{ secrets.WECOM_MENTION_VIVAIA }}
           WECOM_MENTION_MSG_TECH:     ${{ secrets.WECOM_MENTION_MSG_TECH }}
           WECOM_MENTION_MSG_BUSINESS: ${{ secrets.WECOM_MENTION_MSG_BUSINESS }}
           WECOM_MENTION_MSG_FITNESS:  ${{ secrets.WECOM_MENTION_MSG_FITNESS }}
+          WECOM_MENTION_MSG_FANKA_SOCIAL: ${{ secrets.WECOM_MENTION_MSG_FANKA_SOCIAL }}
           WECOM_MENTION_MSG_VIVAIA:   ${{ secrets.WECOM_MENTION_MSG_VIVAIA }}
           CHANGED_FILES_PATH:         /tmp/changed.txt
           GIT_BEFORE:                 ${{ github.event.before }}

@@ -307,6 +307,11 @@ def main():
     if should_notify('latest-fitness.json', ('fitness/', 'fanka_html/'), event, changed):
         post_wecom(os.environ.get('WECOM_WEBHOOK_FITNESS', ''), 'latest-fitness.json', 'Fanka 运动健康趋势', 'WECOM_MENTION_FITNESS')
 
+    if should_notify('latest-fanka-social.json', 'fanka-social/', event, changed):
+        webhook = os.environ.get('WECOM_WEBHOOK_FANKA_SOCIAL', '') or os.environ.get('WECOM_WEBHOOK_FITNESS', '')
+        mention_env = 'WECOM_MENTION_FANKA_SOCIAL' if os.environ.get('WECOM_MENTION_FANKA_SOCIAL', '').strip() else 'WECOM_MENTION_FITNESS'
+        post_wecom(webhook, 'latest-fanka-social.json', 'Fanka 社交趋势拆解', mention_env)
+
     if should_notify('latest-vivaia.json', 'vivaia/', event, changed):
         post_wecom(os.environ.get('WECOM_WEBHOOK_VIVAIA', ''), 'latest-vivaia.json', 'VIVAIA 品牌趋势', 'WECOM_MENTION_VIVAIA')
 
