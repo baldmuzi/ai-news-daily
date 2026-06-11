@@ -7,154 +7,160 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <style>
-    :root { --bg:#080c14; --surface:#17130d; --surface2:#221b10; --border:#463722; --accent:#804c1a; --accent-soft:#d89a5e; --text:#f5efe4; --muted:#d2c2aa; --dim:#b39f82; }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:'Noto Serif SC', serif; background:radial-gradient(circle at top, rgba(128,76,26,.2), transparent 32%), var(--bg); color:var(--text); }
-    a { color:inherit; text-decoration:none; }
-    .page { width:min(1040px, calc(100% - 32px)); margin:0 auto; padding:32px 0 56px; }
-    .home-link { display:inline-flex; color:var(--muted); font-size:14px; margin-bottom:28px; border:1px solid var(--border); border-radius:8px; padding:8px 12px; background:rgba(255,255,255,.02); }
-    .home-link:hover { color:var(--accent-soft); border-color:var(--accent); }
-    header { padding:18px 0 34px; border-bottom:1px solid var(--border); margin-bottom:30px; }
-    .eyebrow { font-family:'JetBrains Mono', monospace; color:var(--accent-soft); font-size:13px; margin-bottom:12px; }
-    h1 { font-size:clamp(28px, 5vw, 42px); line-height:1.2; margin:0 0 10px; }
-    .subtitle { color:var(--muted); font-family:'JetBrains Mono', monospace; font-size:14px; }
-    .archive-list { display:flex; flex-direction:column; gap:18px; }
-    .archive-card { background:linear-gradient(180deg, rgba(255,255,255,.02), transparent 28%), var(--surface); border:1px solid var(--border); border-radius:14px; padding:22px 24px; }
-    .archive-card.latest { border-color:var(--accent-soft); background:linear-gradient(180deg, rgba(128,76,26,.22), rgba(128,76,26,.06)), var(--surface2); box-shadow:0 0 24px rgba(128,76,26,.25); }
-    .archive-meta { display:flex; flex-wrap:wrap; gap:10px; color:var(--dim); font-family:'JetBrains Mono', monospace; font-size:12px; margin-bottom:10px; }
-    h2 { font-size:21px; margin:0 0 10px; line-height:1.45; }
-    h2 a:hover { color:var(--accent-soft); }
-    p { color:var(--muted); line-height:1.75; margin:0 0 14px; }
-    .read-link { color:var(--accent-soft); font-family:'JetBrains Mono', monospace; font-size:12px; }
-    footer { color:var(--dim); font-family:'JetBrains Mono', monospace; font-size:12px; text-align:center; padding-top:28px; border-top:1px solid var(--border); margin-top:42px; }
-  </style>
+  <style>:root { --bg:#080c14; --surface:#17130d; --border:#463722; --accent:#804c1a; --accent-soft:#d89a5e; --text:#f5efe4; --text-muted:#d2c2aa; --text-dim:#b39f82; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:'Noto Serif SC', serif; background:radial-gradient(circle at top, rgba(128,76,26,.24), transparent 36%), var(--bg); color:var(--text); }
+a { color:inherit; text-decoration:none; }
+.page { width:min(1040px, calc(100% - 32px)); margin:0 auto; padding:32px 0 60px; }
+.back-link { display:inline-flex; color:var(--text-muted); font-size:14px; margin-bottom:30px; border:1px solid var(--border); border-radius:8px; padding:8px 12px; background:rgba(255,255,255,.02); }
+.back-link:hover { color:var(--accent-soft); border-color:var(--accent); }
+header { padding:18px 0 32px; border-bottom:1px solid var(--border); margin-bottom:28px; }
+.eyebrow { font-family:'JetBrains Mono', monospace; color:var(--accent-soft); font-size:13px; margin-bottom:12px; }
+h1 { font-size:clamp(28px, 5vw, 42px); margin:0 0 10px; }
+.sub { color:var(--text-muted); line-height:1.7; }
+.archive-list { display:flex; flex-direction:column; gap:16px; }
+.archive-card { border:1px solid var(--border); border-radius:14px; padding:22px 24px; background:linear-gradient(180deg, rgba(255,255,255,.025), transparent 35%), var(--surface); }
+.archive-card.latest { border-color:var(--accent-soft); box-shadow:0 0 24px rgba(128,76,26,.28); }
+.archive-top { display:flex; justify-content:space-between; gap:16px; align-items:flex-start; margin-bottom:10px; }
+.archive-title { font-size:21px; font-weight:700; }
+.archive-title:hover { color:var(--accent-soft); }
+.badge { font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--accent-soft); border:1px solid var(--accent); border-radius:999px; padding:4px 9px; white-space:nowrap; }
+.date { font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--text-dim); margin-bottom:10px; }
+.intro { color:var(--text-muted); line-height:1.7; margin-bottom:12px; }
+.tags { display:flex; flex-wrap:wrap; gap:8px; }
+.tag { font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--text-muted); border:1px solid var(--border); border-radius:999px; padding:5px 9px; background:#221a10; }
+@media (max-width:640px) { .archive-top { flex-direction:column; } }</style>
 </head>
 <body>
   <main class="page">
-    <a class="home-link" href="../">← 返回首页</a>
+    <a class="back-link" href="../">← 返回首页</a>
     <header>
       <div class="eyebrow">VIVAIA ARCHIVE</div>
       <h1>VIVAIA 品牌趋势 · 往期存档</h1>
-      <div class="subtitle">Latest 20 editions · Brown theme #804c1a</div>
+      <div class="sub">聚焦全球鞋服趋势、可持续议题、竞品动作与成熟女性消费场景。</div>
     </header>
     <section class="archive-list">
       <article class="archive-card latest">
-        <div class="archive-meta"><span>Edition 0019</span><span>2026年6月10日 09:10</span></div>
-        <h2><a href="edition-0019.html">VIVAIA 品牌趋势 · 第0019期</a></h2>
-        <p>本期从名人社媒穿搭、支撑型凉鞋、平价替代和高步数旅行鞋中，提炼 VIVAIA 夏季转化新入口。</p>
-        <a class="read-link" href="edition-0019.html">查看本期 →</a>
+        <div class="archive-top"><a class="archive-title" href="edition-0020.html">第0020期 · VIVAIA 品牌趋势</a><span class="badge">最新一期</span></div>
+        <div class="date">2026年6月11日 09:12</div>
+        <div class="intro">本期从公益联名、邮轮舒适鞋、LA 夏季比例和低价零售新品中，提炼 VIVAIA 活动与选品机会。</div>
+        <div class="tags"><span class="tag">公益联名</span><span class="tag">邮轮舒适</span><span class="tag">方头凉鞋</span><span class="tag">LA比例</span><span class="tag">六月联名</span></div>
       </article>
       <article class="archive-card">
-        <div class="archive-meta"><span>Edition 0018</span><span>2026年6月9日 09:11</span></div>
-        <h2><a href="edition-0018.html">VIVAIA 品牌趋势 · 第0018期</a></h2>
-        <p>本期从夏季凉鞋、宽脚搜索、轻装旅行、成熟女性风格重启与 Tory Burch 快闪里，寻找 VIVAIA 新活动窗口。</p>
-        <a class="read-link" href="edition-0018.html">查看本期 →</a>
+        <div class="archive-top"><a class="archive-title" href="edition-0019.html">第0019期 · VIVAIA 品牌趋势</a></div>
+        <div class="date">2026年6月10日 09:10</div>
+        <div class="intro">本期从名人社媒穿搭、支撑型凉鞋、平价替代和高步数旅行鞋中，提炼 VIVAIA 夏季转化新入口。</div>
+        <div class="tags"><span class="tag">支撑凉鞋</span><span class="tag">平价替代</span><span class="tag">熟龄球鞋</span><span class="tag">高步数旅行</span><span class="tag">耐穿少买</span></div>
       </article>
       <article class="archive-card">
-        <div class="archive-meta"><span>Edition 0017</span><span></span></div>
-        <h2><a href="edition-0017.html">VIVAIA 品牌趋势 · 第0017期</a></h2>
-        <p>本期从夏季联名、材料循环、旅行打包、社群问答和批发市场日程里，寻找 VIVAIA 选品与活动窗口。</p>
-        <a class="read-link" href="edition-0017.html">查看本期 →</a>
+        <div class="archive-top"><a class="archive-title" href="edition-0018.html">第0018期 · VIVAIA 品牌趋势</a></div>
+        <div class="date">2026年6月9日 09:11</div>
+        <div class="intro">本期从夏季凉鞋、宽脚搜索、轻装旅行、成熟女性风格重启与 Tory Burch 快闪里，寻找 VIVAIA 新活动窗口。</div>
+        <div class="tags"><span class="tag">宽脚搜索</span><span class="tag">一鞋旅行</span><span class="tag">快闪度假</span><span class="tag">闭趾通勤</span><span class="tag">环保优惠</span></div>
       </article>
       <article class="archive-card">
-        <div class="archive-meta"><span>Edition 0016</span><span></span></div>
-        <h2><a href="edition-0016.html">VIVAIA 品牌趋势 · 第0016期</a></h2>
-        <p>本期从夏季大促、TikTok 直播、创作者社群、AI 造型与 Reddit 舒适提问里，提炼 VIVAIA 新活动入口。</p>
-        <a class="read-link" href="edition-0016.html">查看本期 →</a>
+        <div class="archive-top"><a class="archive-title" href="edition-0017.html">第0017期 · VIVAIA 品牌趋势</a></div>
+        <div class="date"></div>
+        <div class="intro">本期从夏季联名、材料循环、旅行打包、社群问答和批发市场日程里，寻找 VIVAIA 选品与活动窗口。</div>
+        <div class="tags"><span class="tag">夏季联名</span><span class="tag">材料循环</span><span class="tag">旅行打包</span><span class="tag">社群问答</span><span class="tag">批发窗口</span></div>
       </article>
       <article class="archive-card">
-        <div class="archive-meta"><span>Edition 0015</span><span></span></div>
-        <h2><a href="edition-0015.html">VIVAIA 品牌趋势 · 第0015期</a></h2>
-        <p>本期从门店复兴、女性健康快闪、包装合规与 Reddit 真实提问里，寻找 VIVAIA 夏季选品和内容新切口。</p>
-        <a class="read-link" href="edition-0015.html">查看本期 →</a>
+        <div class="archive-top"><a class="archive-title" href="edition-0016.html">第0016期 · VIVAIA 品牌趋势</a></div>
+        <div class="date"></div>
+        <div class="intro">本期从夏季大促、TikTok 直播、创作者社群、AI 造型与 Reddit 舒适提问里，提炼 VIVAIA 新活动入口。</div>
+        <div class="tags"><span class="tag">直播购物</span><span class="tag">创作者社群</span><span class="tag">大促提前</span><span class="tag">AI造型</span><span class="tag">足弓支持</span></div>
       </article>
       <article class="archive-card">
-        <div class="archive-meta"><span>Edition 0014</span><span></span></div>
-        <h2><a href="edition-0014.html">VIVAIA 品牌趋势 · 第0014期</a></h2>
-        <p>本期聚焦 AI 购物、区域扩张、舒适鞋联名与循环纺织，为 VIVAIA 找到夏季选品、内容和转化新入口。</p>
-        <a class="read-link" href="edition-0014.html">查看本期 →</a>
+        <div class="archive-top"><a class="archive-title" href="edition-0015.html">第0015期 · VIVAIA 品牌趋势</a></div>
+        <div class="date"></div>
+        <div class="intro">本期从门店复兴、女性健康快闪、包装合规与 Reddit 真实提问里，寻找 VIVAIA 夏季选品和内容新切口。</div>
+        <div class="tags"><span class="tag">门店体验</span><span class="tag">健康快闪</span><span class="tag">包装合规</span><span class="tag">舒适提问</span><span class="tag">运动精致</span></div>
       </article>
       <article class="archive-card">
-        <div class="archive-meta"><span>Edition 0013</span><span></span></div>
-        <h2><a href="edition-0013.html">VIVAIA 品牌趋势 · 第0013期</a></h2>
-        <p>本期聚焦中年女性可见度、夏季活动场景、Prime Day 提前开跑与循环纺织议题，为 VIVAIA 选品和活动寻找新切口。</p>
-        <a class="read-link" href="edition-0013.html">查看本期 →</a>
+        <div class="archive-top"><a class="archive-title" href="edition-0014.html">第0014期 · VIVAIA 品牌趋势</a></div>
+        <div class="date"></div>
+        <div class="intro">本期聚焦 AI 购物、区域扩张、舒适鞋联名与循环纺织，为 VIVAIA 找到夏季选品、内容和转化新入口。</div>
+        <div class="tags"><span class="tag">AI购物</span><span class="tag">循环纺织</span><span class="tag">播客联名</span><span class="tag">区域扩张</span><span class="tag">夏日防汗</span></div>
       </article>
       <article class="archive-card">
-        <div class="archive-meta"><span>Edition 0012</span><span></span></div>
-        <h2><a href="edition-0012.html">VIVAIA 品牌趋势 · 第0012期</a></h2>
-        <p></p>
-        <a class="read-link" href="edition-0012.html">查看本期 →</a>
+        <div class="archive-top"><a class="archive-title" href="edition-0013.html">第0013期 · VIVAIA 品牌趋势</a></div>
+        <div class="date"></div>
+        <div class="intro">本期聚焦中年女性可见度、夏季活动场景、Prime Day 提前开跑与循环纺织议题，为 VIVAIA 选品和活动寻找新切口。</div>
+        <div class="tags"><span class="tag">中年可见度</span><span class="tag">夏日美式</span><span class="tag">大促提前</span><span class="tag">循环纺织</span><span class="tag">鞋业女性</span></div>
       </article>
       <article class="archive-card">
-        <div class="archive-meta"><span>Edition 0011</span><span></span></div>
-        <h2><a href="edition-0011.html">VIVAIA 品牌趋势 · 第0011期</a></h2>
-        <p></p>
-        <a class="read-link" href="edition-0011.html">查看本期 →</a>
+        <div class="archive-top"><a class="archive-title" href="edition-0012.html">第0012期 · VIVAIA 品牌趋势</a></div>
+        <div class="date"></div>
+        <div class="intro">VIVAIA 品牌趋势日报</div>
+        <div class="tags"><span class="tag">联名造势</span><span class="tag">价格敏感</span><span class="tag">环保活动</span><span class="tag">社群观察</span></div>
       </article>
       <article class="archive-card">
-        <div class="archive-meta"><span>Edition 0010</span><span></span></div>
-        <h2><a href="edition-0010.html">VIVAIA 品牌趋势 · 第0010期</a></h2>
-        <p></p>
-        <a class="read-link" href="edition-0010.html">查看本期 →</a>
+        <div class="archive-top"><a class="archive-title" href="edition-0011.html">第0011期 · VIVAIA 品牌趋势</a></div>
+        <div class="date"></div>
+        <div class="intro">VIVAIA 品牌趋势日报</div>
+        <div class="tags"><span class="tag">舞蹈系鞋履</span><span class="tag">软米色通勤</span><span class="tag">可持续闭环</span><span class="tag">社媒种草</span></div>
       </article>
       <article class="archive-card">
-        <div class="archive-meta"><span>Edition 0009</span><span></span></div>
-        <h2><a href="edition-0009.html">VIVAIA 品牌趋势 · 第0009期</a></h2>
-        <p></p>
-        <a class="read-link" href="edition-0009.html">查看本期 →</a>
+        <div class="archive-top"><a class="archive-title" href="edition-0010.html">第0010期 · VIVAIA 品牌趋势</a></div>
+        <div class="date"></div>
+        <div class="intro">VIVAIA 品牌趋势日报</div>
+        <div class="tags"><span class="tag">爵士鞋热</span><span class="tag">裸色通勤</span><span class="tag">软底短视频</span><span class="tag">环保可信</span></div>
       </article>
       <article class="archive-card">
-        <div class="archive-meta"><span>Edition 0008</span><span></span></div>
-        <h2><a href="edition-0008.html">VIVAIA 品牌趋势 · 第0008期</a></h2>
-        <p></p>
-        <a class="read-link" href="edition-0008.html">查看本期 →</a>
+        <div class="archive-top"><a class="archive-title" href="edition-0009.html">第0009期 · VIVAIA 品牌趋势</a></div>
+        <div class="date"></div>
+        <div class="intro">VIVAIA 品牌趋势日报</div>
+        <div class="tags"><span class="tag">裸米色鞋</span><span class="tag">软底通勤</span><span class="tag">可持续信任</span><span class="tag">旅行鞋柜</span></div>
       </article>
       <article class="archive-card">
-        <div class="archive-meta"><span>Edition 0007</span><span></span></div>
-        <h2><a href="edition-0007.html">VIVAIA 品牌趋势 · 第0007期</a></h2>
-        <p></p>
-        <a class="read-link" href="edition-0007.html">查看本期 →</a>
+        <div class="archive-top"><a class="archive-title" href="edition-0008.html">第0008期 · VIVAIA 品牌趋势</a></div>
+        <div class="date"></div>
+        <div class="intro">VIVAIA 品牌趋势日报</div>
+        <div class="tags"><span class="tag">舒适通勤</span><span class="tag">裸米色鞋</span><span class="tag">可持续信任</span><span class="tag">两双旅行鞋</span></div>
       </article>
       <article class="archive-card">
-        <div class="archive-meta"><span>Edition 0006</span><span></span></div>
-        <h2><a href="edition-0006.html">VIVAIA 品牌趋势 · 第0006期</a></h2>
-        <p></p>
-        <a class="read-link" href="edition-0006.html">查看本期 →</a>
+        <div class="archive-top"><a class="archive-title" href="edition-0007.html">第0007期 · VIVAIA 品牌趋势</a></div>
+        <div class="date"></div>
+        <div class="intro">VIVAIA 品牌趋势日报</div>
+        <div class="tags"><span class="tag">软底通勤</span><span class="tag">精致凉鞋</span><span class="tag">可持续信任</span><span class="tag">中文舒适风</span></div>
       </article>
       <article class="archive-card">
-        <div class="archive-meta"><span>Edition 0005</span><span></span></div>
-        <h2><a href="edition-0005.html">VIVAIA 品牌趋势 · 第0005期</a></h2>
-        <p></p>
-        <a class="read-link" href="edition-0005.html">查看本期 →</a>
+        <div class="archive-top"><a class="archive-title" href="edition-0006.html">第0006期 · VIVAIA 品牌趋势</a></div>
+        <div class="date"></div>
+        <div class="intro">VIVAIA 品牌趋势日报</div>
+        <div class="tags"><span class="tag">软乐福通勤</span><span class="tag">宽脚舒适</span><span class="tag">可持续信任</span><span class="tag">松弛穿搭</span></div>
       </article>
       <article class="archive-card">
-        <div class="archive-meta"><span>Edition 0004</span><span></span></div>
-        <h2><a href="edition-0004.html">VIVAIA 品牌趋势 · 第0004期</a></h2>
-        <p></p>
-        <a class="read-link" href="edition-0004.html">查看本期 →</a>
+        <div class="archive-top"><a class="archive-title" href="edition-0005.html">第0005期 · VIVAIA 品牌趋势</a></div>
+        <div class="date"></div>
+        <div class="intro">VIVAIA 品牌趋势日报</div>
+        <div class="tags"><span class="tag">软乐福回潮</span><span class="tag">中年悦己穿搭</span><span class="tag">鞋类涨价红利</span><span class="tag">可持续二手潮</span></div>
       </article>
       <article class="archive-card">
-        <div class="archive-meta"><span>Edition 0003</span><span></span></div>
-        <h2><a href="edition-0003.html">VIVAIA 品牌趋势 · 第0003期</a></h2>
-        <p></p>
-        <a class="read-link" href="edition-0003.html">查看本期 →</a>
+        <div class="archive-top"><a class="archive-title" href="edition-0004.html">第0004期 · VIVAIA 品牌趋势</a></div>
+        <div class="date"></div>
+        <div class="intro">VIVAIA 品牌趋势日报</div>
+        <div class="tags"><span class="tag">乐福回潮</span><span class="tag">舒适通勤</span><span class="tag">可持续材质</span><span class="tag">社媒种草</span></div>
       </article>
       <article class="archive-card">
-        <div class="archive-meta"><span>Edition 0002</span><span></span></div>
-        <h2><a href="edition-0002.html">VIVAIA 品牌趋势 · 第0002期</a></h2>
-        <p></p>
-        <a class="read-link" href="edition-0002.html">查看本期 →</a>
+        <div class="archive-top"><a class="archive-title" href="edition-0003.html">第0003期 · VIVAIA 品牌趋势</a></div>
+        <div class="date"></div>
+        <div class="intro">VIVAIA 品牌趋势日报</div>
+        <div class="tags"><span class="tag">软乐福鞋</span><span class="tag">芭蕾运动鞋</span><span class="tag">理性种草</span><span class="tag">可持续转型</span></div>
       </article>
       <article class="archive-card">
-        <div class="archive-meta"><span>Edition 0001</span><span></span></div>
-        <h2><a href="edition-0001.html">VIVAIA 品牌趋势 · 第0001期</a></h2>
-        <p></p>
-        <a class="read-link" href="edition-0001.html">查看本期 →</a>
+        <div class="archive-top"><a class="archive-title" href="edition-0002.html">第0002期 · VIVAIA 品牌趋势</a></div>
+        <div class="date"></div>
+        <div class="intro">VIVAIA 品牌趋势日报</div>
+        <div class="tags"><span class="tag">混搭鞋型</span><span class="tag">柠檬黄爆款</span><span class="tag">50+女性消费</span><span class="tag">中国女鞋转型</span></div>
+      </article>
+      <article class="archive-card">
+        <div class="archive-top"><a class="archive-title" href="edition-0001.html">第0001期 · VIVAIA 品牌趋势</a></div>
+        <div class="date"></div>
+        <div class="intro">VIVAIA 品牌趋势日报</div>
+        <div class="tags"><span class="tag">软质乐福</span><span class="tag">可持续合规</span><span class="tag">中年女性穿搭</span><span class="tag">小红书爆款</span></div>
       </article>
     </section>
-    <footer>VIVAIA Brand Trend Archive · Latest Edition 0019</footer>
   </main>
 </body>
 </html>
