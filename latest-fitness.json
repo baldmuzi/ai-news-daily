@@ -1,33 +1,33 @@
 {
-  "edition": "0018",
-  "date": "2026年6月10日 09:20",
-  "intro": "本期全球新素材偏少，聚焦夏季降温面料、Alo 体验式零售和女性全天候 activewear，为 Fanka 提炼压缩穿搭内容机会。",
+  "edition": "0019",
+  "date": "2026年6月11日 09:15",
+  "intro": "本期全球新素材偏少，聚焦女性更年期训练、全球跑步目的地、低冲击功能训练与户外装备消费，提炼 Fanka 压缩穿搭机会。",
   "tags": [
-    "降温面料",
-    "夏季穿搭",
-    "体验零售",
-    "全天运动",
-    "理性种草"
+    "更年期训练",
+    "赛事旅行",
+    "功能雕塑",
+    "骑行装备",
+    "AI健康"
   ],
   "top3": [
     {
-      "title": "Spanx's New Activewear Drop Is a Dream If You Love Outdoor Workouts—Shop Breathable Leggings, Tanks, and More",
-      "comment": "降温功能面料适合转成夏训穿搭指南。"
+      "title": "Apple Just Announced Their Newest Features Dropping This Fall—And They Might Be Real Game Changers for Women",
+      "comment": "更年期训练进入主流女性健康产品叙事。"
     },
     {
-      "title": "The Brand Guide to Euro Summer 2026 Pop-ups",
-      "comment": "Alo 把运动服饰做成旅行 wellness 体验。"
+      "title": "The Cape Town Marathon Has Officially Become a World Marathon Major",
+      "comment": "全球马拉松扩容带来跑步旅行内容机会。"
     },
     {
-      "title": "I live in activewear and these are the best lululemon pieces for an effortless summer wardrobe",
-      "comment": "女性全天候 activewear 继续强调低决策穿搭。"
+      "title": "Jennifer Aniston’s favorite workout Pvolve is the low-impact method that defined my abs",
+      "comment": "低冲击功能训练可替代重复步行话题。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0018.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0019.html",
   "blog": {
-    "title": "What to Wear for Hot Weather Workouts: Cooling Activewear and Compression Leggings",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/hot-weather-workout-outfits-cooling-activewear-compression-leggings.html",
-    "summary": "由本期 Spanx 夏季降温 activewear 趋势延展，沉淀为热天训练穿搭和压缩裤选择指南。"
+    "title": "Menopause Workout Outfits: Strength, Yoga, and Compression Leggings for Easier Movement",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/menopause-workout-outfits-strength-yoga-compression-leggings.html",
+    "summary": "由本期 Apple 女性健康与 Fitness+ 更年期训练趋势延展，沉淀为更年期阶段力量、瑜伽和压缩穿搭指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
