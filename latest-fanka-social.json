@@ -1,32 +1,32 @@
 {
-  "edition": "0001",
-  "date": "2026年6月11日 16:11",
-  "intro": "本期社媒可核验新素材偏少，重点转向女性健康分阶段、夏季降温面料、UPF日常化与头部品牌内容结构，适合Fanka做更真实的场景化表达。",
+  "edition": "0002",
+  "date": "2026年6月12日 09:12",
+  "intro": "本期聚焦 sports-inspired 穿搭、训练分类型首页与合身问答内容，Fanka 可把压缩与支撑表达做成更像账号内容的场景脚本。",
   "tags": [
-    "健康分阶段",
-    "降温面料",
-    "UPF穿搭",
-    "UGC互动",
-    "尺码痛点"
+    "世界杯穿搭",
+    "训练分类",
+    "账号导航",
+    "尺码合身",
+    "通勤度假"
   ],
   "top3": [
     {
-      "title": "Apple Just Announced Their Newest Features Dropping This Fall—And They Might Be Real Game Changers for Women",
-      "comment": "女性运动内容继续切向更年期与分阶段训练支持。",
-      "url": "https://www.womenshealthmag.com/health/a71538081/apple-wwdc-2026-ios-27-health-updates-for-women/"
+      "title": "A Soccer Fan or Not, the FIFA Fever Trend Is Taking Over Fashion",
+      "comment": "运动队风格穿搭正在抢占社媒 look 话题。",
+      "url": "https://www.elle.com/fashion/trend-reports/a65094795/sports-inspired-fashion-trend/"
     },
     {
-      "title": "Spanx's New Activewear Drop Is a Dream If You Love Outdoor Workouts—Shop Breathable Leggings, Tanks, and More",
-      "comment": "高温训练内容开始围绕降温面料、口袋与轻层次展开。",
-      "url": "https://www.realsimple.com/spanx-staycool-activewear-collection-june-2026-11993340"
+      "title": "Gymshark 首页把 Bratz 联名直接做成“视觉先停留、再讲训练”的入口",
+      "comment": "强视觉封面先建立人设，再承接训练与套装。",
+      "url": "https://www.gymshark.com/"
     },
     {
-      "title": "Can Sun-Protective Clothing Ever Be Chic? These Brands Think So",
-      "comment": "UPF功能正在被包装成更适合社媒传播的日常穿搭叙事。",
-      "url": "https://www.vogue.com/article/can-sun-protective-clothing-ever-be-chic-these-brands-think-so"
+      "title": "Athleta 把 BodyMove、Travel & Resort 与 Bra Fit 放在同一条内容路由里",
+      "comment": "先回答合身问题，再让产品完成转化。",
+      "url": "https://athleta.gap.com/"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0001.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0002.html",
   "report_type": "fanka-social-trends",
   "source_window": "趋势近72小时；账号结构近7天；用户痛点近30天"
 }
