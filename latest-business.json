@@ -1,27 +1,27 @@
 {
-  "edition": "0032",
-  "date": "2026年6月11日 09:12",
-  "intro": "AI 购物入口、消费者轨迹分析与绿色供应链正在合流，出海鞋类电商需要把商品、营销和环保数据一起做成机器可执行资产。",
+  "edition": "0033",
+  "date": "2026年6月12日 09:07",
+  "intro": "AI 代理购物、零售数据归因与绿色供应链工具正在同步成熟，出海鞋类团队需要把商品、营销和环保数据一起做成可执行接口。",
   "tags": [
     "代理购物",
-    "消费轨迹",
+    "零售归因",
     "绿色供应链",
-    "跨境鞋类",
-    "归因分析"
+    "跨境履约",
+    "商品数据"
   ],
   "top3": [
     {
-      "title": "Visa 把支付网络接入 ChatGPT，AI 代理开始具备可控下单能力",
-      "comment": "Visa 把支付与风控接入 ChatGPT，AI 代理开始逼近真实成交。"
+      "title": "Visa 把支付网络接入 ChatGPT，AI 代理开始具备真实下单能力",
+      "comment": "Visa 把支付与风控接入 ChatGPT，AI 代理离真实成交更近。"
     },
     {
-      "title": "Walmart 接入 Google Gemini，把发现商品到结账压缩进对话框",
-      "comment": "Walmart 把商品发现到结账压进 Gemini，对话式电商继续前移。"
+      "title": "Walmart 开始把广告嵌入 Sparky，对话式零售媒体进入实战期",
+      "comment": "Sparky 内广告开始吃到对话意图，零售媒体归因要重做。"
     },
     {
       "title": "新研究显示，AI 品牌推荐会显著抬升品牌搜索与零售页访问",
-      "comment": "AI 推荐带来的搜索与零售页访问增量，正在冲击传统归因模型。"
+      "comment": "AI 推荐会抬升搜索和零售页访问，传统最后点击会失真。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0032.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0033.html"
 }
