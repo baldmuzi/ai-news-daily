@@ -1,33 +1,33 @@
 {
-  "edition": "0019",
-  "date": "2026年6月11日 09:15",
-  "intro": "本期全球新素材偏少，聚焦女性更年期训练、全球跑步目的地、低冲击功能训练与户外装备消费，提炼 Fanka 压缩穿搭机会。",
+  "edition": "0020",
+  "date": "2026年6月12日 09:09",
+  "intro": "本期近 72 小时可核验素材继续偏少，聚焦女性长距离耐力、Gen Z 跑步社群、骑行恢复、喇叭运动裤与世界杯运动时尚。",
   "tags": [
-    "更年期训练",
-    "赛事旅行",
-    "功能雕塑",
-    "骑行装备",
-    "AI健康"
+    "女性耐力",
+    "跑步社群",
+    "骑行恢复",
+    "喇叭裤",
+    "足球时尚"
   ],
   "top3": [
     {
-      "title": "Apple Just Announced Their Newest Features Dropping This Fall—And They Might Be Real Game Changers for Women",
-      "comment": "更年期训练进入主流女性健康产品叙事。"
+      "title": "Could Higher Mileage Unlock Your Best Racing? Here’s What Experts Say About Building Durability.",
+      "comment": "女性耐力话题从跑量转向可持续训练阈值。"
     },
     {
-      "title": "The Cape Town Marathon Has Officially Become a World Marathon Major",
-      "comment": "全球马拉松扩容带来跑步旅行内容机会。"
+      "title": "Gen Z Is Really Into Running. Somehow, That’s a Problem Now?",
+      "comment": "Gen Z 跑步社群需要聪明训练与穿搭教育。"
     },
     {
-      "title": "Jennifer Aniston’s favorite workout Pvolve is the low-impact method that defined my abs",
-      "comment": "低冲击功能训练可替代重复步行话题。"
+      "title": "4 Off-Bike Habits That Are Making Your Cycling Pain Worse",
+      "comment": "骑行恢复内容延伸到全天姿势与生活习惯。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0019.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0020.html",
   "blog": {
-    "title": "Menopause Workout Outfits: Strength, Yoga, and Compression Leggings for Easier Movement",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/menopause-workout-outfits-strength-yoga-compression-leggings.html",
-    "summary": "由本期 Apple 女性健康与 Fitness+ 更年期训练趋势延展，沉淀为更年期阶段力量、瑜伽和压缩穿搭指南。"
+    "title": "High-Mileage Running Outfits for Women: Compression Leggings, Layers, and Recovery Basics",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/high-mileage-running-outfits-women-compression-leggings.html",
+    "summary": "由本期女性长距离跑步耐力与恢复趋势延展，沉淀为高跑量训练、压缩裤、层次和恢复穿搭指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
