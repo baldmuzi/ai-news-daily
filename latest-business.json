@@ -1,27 +1,27 @@
 {
-  "edition": "0033",
-  "date": "2026年6月12日 09:07",
-  "intro": "AI 代理购物、零售数据归因与绿色供应链工具正在同步成熟，出海鞋类团队需要把商品、营销和环保数据一起做成可执行接口。",
+  "edition": "0034",
+  "date": "2026年6月15日 09:09",
+  "intro": "AI 购物入口、绿色追溯与消费者归因正在同时升级，出海环保鞋类团队要把商品、营销和供应链数据一起做成机器可执行资产。",
   "tags": [
     "代理购物",
+    "绿色追溯",
     "零售归因",
-    "绿色供应链",
-    "跨境履约",
-    "商品数据"
+    "消费信号",
+    "供应链AI"
   ],
   "top3": [
     {
-      "title": "Visa 把支付网络接入 ChatGPT，AI 代理开始具备真实下单能力",
-      "comment": "Visa 把支付与风控接入 ChatGPT，AI 代理离真实成交更近。"
+      "title": "Walmart 把 Sparky 对话意图接入广告系统，零售媒体开始吃会话信号",
+      "comment": "Sparky 开始把对话意图喂给广告系统，零售媒体归因要改。"
     },
     {
-      "title": "Walmart 开始把广告嵌入 Sparky，对话式零售媒体进入实战期",
-      "comment": "Sparky 内广告开始吃到对话意图，零售媒体归因要重做。"
+      "title": "新研究确认 AI 推荐会抬升品牌搜索与零售页访问，传统最后点击继续失真",
+      "comment": "AI 助手已成上游触点，只看站内点击会低估品牌曝光。"
     },
     {
-      "title": "新研究显示，AI 品牌推荐会显著抬升品牌搜索与零售页访问",
-      "comment": "AI 推荐会抬升搜索和零售页访问，传统最后点击会失真。"
+      "title": "H&M、Kering 等把 AI 用进环保报告、需求预测和材料决策，但也开始追踪模型足迹",
+      "comment": "AI 能帮降库存和浪费，但自身能耗也要进 ESG 账本。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0033.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0034.html"
 }
