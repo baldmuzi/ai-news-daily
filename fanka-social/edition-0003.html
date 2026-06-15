@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fanka 社交趋势拆解 · 第 0003 期</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root{--bg:#080c14;--surface:#0f1623;--surface-2:#141d2d;--border:#213047;--accent:#f43f5e;--signal:#38bdf8;--text:#e8eaf0;--muted:#91a0b5;--dim:#64748b;--warn:rgba(244,63,94,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;background:radial-gradient(circle at top,rgba(244,63,94,.14),transparent 28rem),var(--bg);color:var(--text);font-family:"Noto Serif SC",serif;line-height:1.72}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+header{padding:42px 0 30px;border-bottom:1px solid var(--border)}
+.back{display:inline-block;margin-bottom:24px;color:var(--muted);font:12px "JetBrains Mono",monospace;text-decoration:none}
+.back:hover,.source-btn:hover,.card-title:hover,table a:hover,.play-card a:hover,.pain-card a:hover{color:var(--accent)}
+.hero-top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:18px}
+.badge{display:inline-flex;padding:7px 10px;border-radius:999px;border:1px solid rgba(244,63,94,.4);background:rgba(244,63,94,.08);color:#fecdd3;font:12px "JetBrains Mono",monospace}
+.window{display:inline-flex;padding:7px 10px;border-radius:999px;border:1px solid rgba(56,189,248,.32);background:rgba(56,189,248,.09);color:#bfe8ff;font:12px "JetBrains Mono",monospace}
+h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.06;margin-bottom:8px}
+.subtitle{color:var(--muted);font:14px "JetBrains Mono",monospace;letter-spacing:.06em;margin-bottom:18px}
+.intro{max-width:860px;color:#d7dde8;font-size:16px}
+.shortage{display:inline-block;margin-top:14px;padding:10px 14px;border:1px solid rgba(244,63,94,.32);border-radius:10px;background:var(--warn);color:#fecdd3;font-size:14px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.tag{padding:7px 10px;border:1px solid var(--border);border-radius:999px;background:#0b111d;color:#d8e2f0;font-size:13px}
+main{padding:34px 0 80px}
+section{margin-top:34px}
+.section-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-end;margin-bottom:16px}
+.section-head h2{font-size:28px}
+.section-head p{max-width:760px;color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.card,.pain-card,.play-card{display:flex;flex-direction:column;gap:12px;padding:22px;border:1px solid var(--border);border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01)),var(--surface)}
+.card-header{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.cat{display:inline-flex;padding:4px 9px;border-radius:999px;background:rgba(244,63,94,.16);color:#ffd4dc;font:11px "JetBrains Mono",monospace}
+.num{color:var(--dim);font:11px "JetBrains Mono",monospace}
+.card-title{display:block;color:#fff;text-decoration:none;font-size:18px;font-weight:700;line-height:1.42}
+.meta,.mono{color:var(--dim);font:12px "JetBrains Mono",monospace}
+.blocks p{margin-top:10px;color:#d8e0eb;font-size:15px}
+.blocks strong,.pain-card strong,.play-card strong{color:#ffd1da}
+.card-footer{display:flex;justify-content:flex-end;margin-top:auto;padding-top:14px;border-top:1px solid var(--border)}
+.source-btn{text-decoration:none;color:var(--accent);font:12px "JetBrains Mono",monospace}
+.radar,.play-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.pain-card h3,.play-card h3{font-size:18px}
+.pain-card p,.play-card p{color:#d8e0eb;font-size:14px}
+.table-wrap{overflow:auto;border:1px solid var(--border);border-radius:14px;background:var(--surface)}
+table{width:100%;border-collapse:collapse;min-width:980px}
+th,td{padding:14px 16px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top;font-size:14px}
+th{background:#0d1420;color:#c7d3e3;font:12px "JetBrains Mono",monospace;letter-spacing:.04em}
+td{color:#d7deea}
+tr:last-child td{border-bottom:none}
+.ok{color:#7dd3fc}
+.muted{color:var(--muted)}
+.topic-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;list-style:none}
+.topic-list li{padding:18px;border:1px solid rgba(56,189,248,.24);border-radius:14px;background:rgba(56,189,248,.07)}
+.topic-list strong{display:block;margin-bottom:8px;color:#dff4ff}
+.topic-list p{color:#c8d5e6;font-size:14px}
+@media (max-width:760px){
+  .wrap{padding:0 16px}
+  header{padding-top:28px}
+  .section-head{display:block}
+  .section-head p{margin-top:8px}
+  .grid,.radar,.play-grid,.topic-list{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="back" href="../fanka-social/">← 返回存档</a>
+    <div class="hero-top">
+      <span class="badge">EDITION 0003 · 2026年6月15日</span>
+      <span class="window">趋势近 72 小时</span>
+      <span class="window">账号结构近 7 天</span>
+      <span class="window">用户痛点近 30 天</span>
+    </div>
+    <h1>Fanka 社交趋势拆解</h1>
+    <p class="subtitle">Social Trend &amp; Creator Playbook · Powered by Fanka</p>
+    <p class="intro">过去 72 小时能稳定复核的原生社媒公开证据仍然偏少，但“夏季 leggings 场景化”“先回答合身焦虑再转化”“品牌官网前台越来越像内容目录”三条线更清楚了。对 Fanka 来说，这期重点不是追爆帖，而是把热天支撑、场景问答、UGC 证明和压缩分级做成更像账号内容的表达。</p>
+    <p class="shortage">近 3 天可核验社媒素材不足，本期仅收录 7 条趋势信号；本期未发现可核验中文平台新趋势，Instagram 指定主页多因登录墙无法直接核验，只能降级使用二级公开线索。</p>
+    <div class="tags">
+      <span class="tag">前3秒钩子</span>
+      <span class="tag">热天支撑</span>
+      <span class="tag">场景问答</span>
+      <span class="tag">UGC图库</span>
+      <span class="tag">压缩分级</span>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <section>
+      <div class="section-head">
+        <h2>Top 社交趋势信号</h2>
+        <p>只保留能确认链接、主体与日期的信号；无法直访的 Instagram 内容不写成“最新爆帖”，统一标为二级公开线索或结构参考。</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="card-header"><span class="cat">穿搭趋势</span><span class="num">#01</span></div>
+          <a class="card-title" href="https://www.whowhatwear.com/fashion/trends/summer-leggings-trends-2026" target="_blank" rel="noopener">Leggings in Summer Are an Absolute Must—5 Ways to Wear Them in 2026</a>
+          <div class="meta">Who What Wear · 2026-06-13 · 时尚媒体整理社媒穿搭样本 · 互动数据未公开</div>
+          <div class="blocks">
+            <p><strong>【信号是什么】</strong>Who What Wear 在 2026 年 6 月 13 日把 low-rise、foldover、capri、baby flare 和 white leggings 归纳成夏季核心 legging 轮廓，说明 leggings 已经不只是健身裤，而是会被直接穿去咖啡、通勤和短途出门的夏季底层单品。它和前两期的“世界杯运动风”不同，这次更像具体廓形和腰头语言的切换。</p>
+            <p><strong>【内容结构】</strong>这类内容最有效的前 3 秒不是健身动作，而是“同一条 leggings 在两个非健身场景里都成立”的对比。视觉节奏上先给外搭和比例，再补腰头、长度、颜色和材质，CTA 适合问“你会选 foldover 还是高腰”来撬开评论。</p>
+            <p><strong>【Fanka 机会】</strong>Fanka 可以做“同一条压缩裤 3 个夏季版本”系列，把高腰稳定、不过度闷热和外搭兼容做成短视频选题。产品表达上不要只讲显瘦，更要讲“为什么她愿意一直穿到下一个场景”。</p>
+          </div>
+          <div class="card-footer"><a class="source-btn" href="https://www.whowhatwear.com/fashion/trends/summer-leggings-trends-2026" target="_blank" rel="noopener">查看原文 →</a></div>
+        </article>
+
+        <article class="card">
+          <div class="card-header"><span class="cat">用户痛点</span><span class="num">#02</span></div>
+          <a class="card-title" href="https://www.realsimple.com/amazon-letsjoli-wireless-jelly-bra-deal-june-2026-11994577" target="_blank" rel="noopener">Amazon Reviews Say This $20 Wireless Bra Stops ‘Swamp Boob’ Before It Starts</a>
+          <div class="meta">Real Simple · 2026-06-13 · Amazon 公开评论整理 · 互动数据未公开</div>
+          <div class="blocks">
+            <p><strong>【信号是什么】</strong>Real Simple 在 6 月 13 日整理 Amazon 公开评论时，把“swamp boob”、热天湿黏、胸下红疹和闷热摩擦直接写成购买原因，说明夏季内衣痛点正在从“好不好看”转向“能不能在高温和热潮红里继续穿”。这是一个比泛“夏日穿搭”更贴近 Fanka bra 机会的用户信号。</p>
+            <p><strong>【内容结构】</strong>这类内容的钩子很直接：先点出具体不适词，再用一两句体感差异回应。最值得学的是把宽肩带、无钢圈、透气和不留红印这些细节写进用户语言里，而不是只堆参数；CTA 则适合问“你最怕闷、勒、磨还是湿”。</p>
+            <p><strong>【Fanka 机会】</strong>Fanka 可以把 sports bra 内容从“支撑强度”扩展到“高温舒适度”，做热天训练、通勤和更年期热潮红友好的脚本。评论区回复也应承认汗闷和胸下摩擦是真问题，再给出适用款型和穿着建议。</p>
+          </div>
+          <div class="card-footer"><a class="source-btn" href="https://www.realsimple.com/amazon-letsjoli-wireless-jelly-bra-deal-june-2026-11994577" target="_blank" rel="noopener">查看原文 →</a></div>
+        </article>
+
+        <article class="card">
+          <div class="card-header"><span class="cat">内容结构</span><span class="num">#03</span></div>
+          <a class="card-title" href="https://shop.lululemon.com/" target="_blank" rel="noopener">lululemon 把 6 月 16 日 app 先享新粉色做成“颜色先钩住你”的轻稀缺入口</a>
+          <div class="meta">lululemon 官方站 · 2026-06-15 采集 · 来自二级公开线索 · 互动数据未公开</div>
+          <div class="blocks">
+            <p><strong>【信号是什么】</strong>当前 lululemon 公开首页直接写出“Members, scoop up this new colour in breathable styles starting June 16, only on the app”，把颜色和 app 先享做成了明确的近期动作。它不是社媒公开帖，但能代表品牌这一轮内容节奏：先用颜色和稀缺感抓停留，再引导进入更深层的产品和活动页面。</p>
+            <p><strong>【内容结构】</strong>前 3 秒非常适合被改写成“一个新色 + 一个明确日期 + 一个场景词”的钩子，而不是冗长讲功能。视觉节奏上先看颜色，再看面料和活动场景，CTA 则落到“要不要先收藏/等上新/进 app 看”。</p>
+            <p><strong>【Fanka 机会】</strong>Fanka 可以把新色或限量组合从单纯上新图，升级成“场景化颜色发布”内容，用日期感和情绪感提升停留。前提是先告诉用户这个颜色适合什么训练或什么出门状态，而不是只说“新色来了”。</p>
+          </div>
+          <div class="card-footer"><a class="source-btn" href="https://shop.lululemon.com/" target="_blank" rel="noopener">查看原文 →</a></div>
+        </article>
+
+        <article class="card">
+          <div class="card-header"><span class="cat">内容结构</span><span class="num">#04</span></div>
+          <a class="card-title" href="https://shop.lululemon.com/" target="_blank" rel="noopener">lululemon 用 “Space to feel” 和 App 先享颜色，把 Yoga &amp; Pilates 入口做成情绪化首屏</a>
+          <div class="meta">lululemon 官方站 · 2026-06-15 采集 · 来自二级公开线索 · 互动数据未公开</div>
+          <div class="blocks">
+            <p><strong>【信号是什么】</strong>当前公开首页把 “Space to feel” 对应到 Yoga &amp; Pilates，并同时出现“6 月 16 日 app 内先享新粉色”的颜色前置动作，说明 lululemon 最近的公开表达不只是新品罗列，而是把情绪、活动场景和会员/App 稀缺感一起推到首屏。这和前两期的 Athleta 式问答不同，更偏氛围化内容运营。</p>
+            <p><strong>【内容结构】</strong>前 3 秒不是先讲技术，而是先让用户感觉“我想进这个状态”。随后才补 Nulu、夏季透气、颜色和活动入口；App 限定颜色又给了一个轻量稀缺 CTA，能把浏览转成收藏、下载或等待上新。</p>
+            <p><strong>【Fanka 机会】</strong>Fanka 可把内容从“功能说明书”升级成“情绪化场景入口”，先让用户看见自己想去的状态，再解释压缩感和支撑感为什么匹配这个场景。限时颜色或限定组合也可以做，但要靠场景语言驱动，而不是纯折扣话术。</p>
+          </div>
+          <div class="card-footer"><a class="source-btn" href="https://shop.lululemon.com/" target="_blank" rel="noopener">查看原文 →</a></div>
+        </article>
+
+        <article class="card">
+          <div class="card-header"><span class="cat">账号观察</span><span class="num">#05</span></div>
+          <a class="card-title" href="https://www.buffbunny.com/" target="_blank" rel="noopener">Buffbunny 把 support、compression、activity 和 Summer Essentials 摆成“自己选答案”的内容货架</a>
+          <div class="meta">Buffbunny 官方站 · 2026-06-15 采集 · 来自二级公开线索 · 互动数据未公开</div>
+          <div class="blocks">
+            <p><strong>【信号是什么】</strong>Buffbunny 当前公开首页同时给出 Sports Bra Support、Compression Level、Strength Training / Cardio / Mobility / Lounge、The Color Club 和 Summer Essentials，还能看到新色 Punch 与 Tequila Sunrise 的多款新单品。这说明它近期把产品表达做成了“先自我判断需求，再进入具体单品”的结构，而不是只靠创始人人格。</p>
+            <p><strong>【内容结构】</strong>这种结构的前 3 秒很适合用问答钩子：“你要高支撑还是轻支撑？高压缩还是日常压缩？” 视觉上用色彩 drop 吸引，再用 support/compression 标签做解释，CTA 则自然落到收藏、对比或留言自己的训练类型。</p>
+            <p><strong>【Fanka 机会】</strong>Fanka 很适合借这套框架做“压缩分级”和“运动强度分级”内容，把用户最容易混淆的差异讲明白。短视频里可以先给 2 个问题，再把用户分流到不同腰头、面料和 bra support 方案。</p>
+          </div>
+          <div class="card-footer"><a class="source-btn" href="https://www.buffbunny.com/" target="_blank" rel="noopener">查看原文 →</a></div>
+        </article>
+
+        <article class="card">
+          <div class="card-header"><span class="cat">生活方式</span><span class="num">#06</span></div>
+          <a class="card-title" href="https://thehalara.com/" target="_blank" rel="noopener">Halara 用 Flex Denim 与 Flex Pant 把“像牛仔/像西裤，但像运动服一样舒服”摆成首页入口</a>
+          <div class="meta">Halara 官方站 · 2026-06-15 采集 · 来自二级公开线索 · 互动数据未公开</div>
+          <div class="blocks">
+            <p><strong>【信号是什么】</strong>Halara 当前公开首页能稳定看到 Fabric Innovation、Flex Denim 和 Flex Pant 入口，说明它最近仍在用“看起来像日常服，但体感像 athleisure”的轻功能叙事吸引用户。它不是标准运动训练路线，却对 Fanka 的 studio-to-street 与通勤内容很有参考价值。</p>
+            <p><strong>【内容结构】</strong>前 3 秒适合用“你以为这是牛仔/西裤，其实它更像运动服”的反转开场。后面再补 stretch、轻量、travel-friendly 或久坐不难受这些体感证据，CTA 适合落到“你会想拿它去上班还是旅行”。</p>
+            <p><strong>【Fanka 机会】</strong>Fanka 可以借这套思路，把 compression bottoms 的内容从“训练装备”扩展到“通勤和长途移动也愿意穿”的解释。关键不是模仿 denim，而是学会怎么把功能体感翻译成更日常的语言。</p>
+          </div>
+          <div class="card-footer"><a class="source-btn" href="https://thehalara.com/" target="_blank" rel="noopener">查看原文 →</a></div>
+        </article>
+
+        <article class="card">
+          <div class="card-header"><span class="cat">用户痛点</span><span class="num">#07</span></div>
+          <a class="card-title" href="https://www.goodhousekeeping.com/clothing/bra-reviews/a71320491/best-bras/" target="_blank" rel="noopener">10 Best Bras of 2026, Tested by 1,000+ Women</a>
+          <div class="meta">Good Housekeeping · 2026-05-20 · 1000+ 女性测试反馈整理 · 互动数据未公开</div>
+          <div class="blocks">
+            <p><strong>【信号是什么】</strong>Good Housekeeping 在 5 月 20 日汇总 1000 多位女性测试反馈时，持续把“dig、pinch、stretch out、stay-put、all-day comfort”放在同一套评估里，说明 bra 的核心焦虑仍是舒适与支撑能否同时成立，而不是单一功能参数。这类公开测试对 Fanka 的价值在于，它给了更系统的用户语言，而不是零散评论。</p>
+            <p><strong>【内容结构】</strong>可学习的不是榜单本身，而是“先说痛点词，再说场景，再说谁适合”的内容骨架。前 3 秒如果直接点出“不想 dig / pinch / roll”，比抽象“高支撑 bra 推荐”更容易拉进真实咨询。</p>
+            <p><strong>【Fanka 机会】</strong>Fanka 可以把 bra 选题从款式介绍改成“痛点词典”，按肩带勒、下围闷、空杯、支撑不足分集制作。产品表达要更早出现 stay-put、全天体感和尺码稳定性，而不是等用户追问才解释。</p>
+          </div>
+          <div class="card-footer"><a class="source-btn" href="https://www.goodhousekeeping.com/clothing/bra-reviews/a71320491/best-bras/" target="_blank" rel="noopener">查看原文 →</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>用户痛点雷达</h2>
+        <p>本期新增痛点主要来自近 30 天公开评论、公开测评和购物媒体整理；未抓到足够新的 Reddit / 小红书 / 抖音公开评论，因此不把传闻写成结论。</p>
+      </div>
+      <div class="radar">
+        <article class="pain-card">
+          <h3>热天最怕“swamp boob”、红疹和湿黏</h3>
+          <p class="mono">Real Simple · 2026-06-13 · <a href="https://www.realsimple.com/amazon-letsjoli-wireless-jelly-bra-deal-june-2026-11994577" target="_blank" rel="noopener">原文</a></p>
+          <p><strong>用户原始反馈概括：</strong>公开评论反复提到胸下潮湿、摩擦和热潮红下的黏腻感，让用户甚至要带备用 bra。</p>
+          <p><strong>对 Fanka 的内容启发：</strong>适合做“高温训练也不想一直整理 bra”的短视频，直接点出汗闷词汇。</p>
+          <p><strong>对 Fanka 的产品表达启发：</strong>把透气、无钢圈、不留红印和热天可持续穿着放到更靠前的位置。</p>
+        </article>
+        <article class="pain-card">
+          <h3>用户不想再买会 dig、pinch、roll、suffocate 的 bra</h3>
+          <p class="mono">Real Simple · 2026-05-16 · <a href="https://www.realsimple.com/amazon-best-selling-comfortable-bras-under-30-may-2026-11972257" target="_blank" rel="noopener">原文</a></p>
+          <p><strong>用户原始反馈概括：</strong>畅销 bra 的高频好评词正好反过来暴露痛点：大家厌倦 digging、pinching、rolling 和被“勒得喘不过气”。</p>
+          <p><strong>对 Fanka 的内容启发：</strong>把“不会 dig / pinch / roll”做成直给型封面，比抽象舒适更有辨识度。</p>
+          <p><strong>对 Fanka 的产品表达启发：</strong>用用户痛点词替代过度品牌化语言，能更快建立真实感。</p>
+        </article>
+        <article class="pain-card">
+          <h3>杯型和 band 码之间容易空杯、溢杯、跑位</h3>
+          <p class="mono">Good Housekeeping · 2026-05-20 · <a href="https://www.goodhousekeeping.com/clothing/bra-reviews/a71320491/best-bras/" target="_blank" rel="noopener">原文</a></p>
+          <p><strong>用户原始反馈概括：</strong>大样本测试里，stay-put 和 all-day comfort 总是和 cup/band 适配绑在一起，说明“穿得住”比“看起来像对尺码”更关键。</p>
+          <p><strong>对 Fanka 的内容启发：</strong>用不同胸型和运动强度做更真实的试穿说明，而不是只给平铺尺码表。</p>
+          <p><strong>对 Fanka 的产品表达启发：</strong>强调调节空间、边缘包裹和运动场景适配，降低用户对尺码失误的焦虑。</p>
+        </article>
+        <article class="pain-card">
+          <h3>无钢圈 support bra 也会遇到“支撑够了但分离感不够”</h3>
+          <p class="mono">Business Insider · 2026-05-21 · <a href="https://www.businessinsider.com/guides/style/eby-bra-underwear-review" target="_blank" rel="noopener">原文</a></p>
+          <p><strong>用户原始反馈概括：</strong>测试者认可无线 support bralette 的舒适和跳动控制，但也指出分离感不足、band 不可调会影响长期适配。</p>
+          <p><strong>对 Fanka 的内容启发：</strong>适合做“舒适不等于万用”的诚实型内容，告诉用户哪类训练强度更适合哪类 bra。</p>
+          <p><strong>对 Fanka 的产品表达启发：</strong>讲清楚支撑、分离、调节空间之间的取舍，会比一味说“全都可以”更可信。</p>
+        </article>
+        <article class="pain-card">
+          <h3>很多女性想摆脱钢圈，但又怕支撑不够和背部不平整</h3>
+          <p class="mono">Real Simple · 2026-05-29 · <a href="https://www.realsimple.com/amazon-jelly-bra-deals-may-2026-11984647" target="_blank" rel="noopener">原文</a></p>
+          <p><strong>用户原始反馈概括：</strong>公开评论把 jelly bra 当成“替代钢圈”的原因，集中在 lift、separation、背部平整和不再被勒。</p>
+          <p><strong>对 Fanka 的内容启发：</strong>可以做“什么时候该选无线、什么时候该选更强支撑”的两难题内容。</p>
+          <p><strong>对 Fanka 的产品表达启发：</strong>把无钢圈 support、侧翼包裹和大胸友好作为一组价值表达，而不是分散成零碎卖点。</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>头部内容结构拆解</h2>
+        <p>由于 Instagram 指定主页多无法直访，本期统一采用品牌官方公开页与可访问落地页做二级公开线索，不做高热度定性。</p>
+      </div>
+      <div class="play-grid">
+        <article class="play-card">
+          <h3>lululemon</h3>
+          <p class="mono">平台与 URL：官方站 / <a href="https://shop.lululemon.com/" target="_blank" rel="noopener">https://shop.lululemon.com/</a></p>
+          <p><strong>发布时间：</strong>2026-06-15 采集；来自二级公开线索</p>
+          <p><strong>内容主题：</strong>“Space to feel” 对应 Yoga &amp; Pilates，并用 6 月 16 日 app 先享新粉色制造情绪和稀缺感。</p>
+          <p><strong>前 3 秒钩子：</strong>不是卖技术，而是先卖一个想进去的状态。</p>
+          <p><strong>结构拆解：</strong>Hook：情绪化场景句。 Demo / Story：Yoga &amp; Pilates 或夏季轻训练场景。 Proof / Detail：Nulu、透气、颜色、活动入口。 CTA：收藏、等上新或进入 app。</p>
+          <p><strong>评论区反馈或互动机制：</strong>颜色先享和活动场景很适合带出“我更想要哪个色/哪个场景”的轻互动。</p>
+          <p><strong>Fanka 可复用 30 秒脚本：</strong>开头 4 秒先给“今天只想穿得轻一点”的状态句；中段 20 秒展示凉感 bra + leggings 在 Pilates、stretch、cafe 三段里的切换；结尾 6 秒 CTA 改成“你想先看哪种颜色或训练日版本？”</p>
+        </article>
+        <article class="play-card">
+          <h3>Buffbunny</h3>
+          <p class="mono">平台与 URL：官方站 / <a href="https://www.buffbunny.com/" target="_blank" rel="noopener">https://www.buffbunny.com/</a></p>
+          <p><strong>发布时间：</strong>2026-06-15 采集；来自二级公开线索</p>
+          <p><strong>内容主题：</strong>把 support、compression、activity 和 color drop 做成可自选的内容货架。</p>
+          <p><strong>前 3 秒钩子：</strong>先抛二选一问题，再用新色和新品吸引停留。</p>
+          <p><strong>结构拆解：</strong>Hook：高支撑还是轻支撑？高压缩还是日常压缩？ Demo / Story：按 Strength / Cardio / Mobility / Lounge 分流。 Proof / Detail：Summer Essentials、新色 Punch、具体单品。 CTA：收藏或留言你的训练路径。</p>
+          <p><strong>评论区反馈或互动机制：</strong>分级天然适合用户自报训练强度和体感偏好，评论质量会高于泛穿搭帖。</p>
+          <p><strong>Fanka 可复用 30 秒脚本：</strong>开头 5 秒连问两个问题；中段 18 秒展示轻压缩、高压缩和不同 bra support 的差异；结尾 7 秒 CTA 让用户留言“你是哪一派”，下一条按票数拍实测。</p>
+        </article>
+        <article class="play-card">
+          <h3>Halara</h3>
+          <p class="mono">平台与 URL：官方站 / <a href="https://thehalara.com/" target="_blank" rel="noopener">https://thehalara.com/</a></p>
+          <p><strong>发布时间：</strong>2026-06-15 采集；来自二级公开线索</p>
+          <p><strong>内容主题：</strong>Fabric Innovation、Flex Denim 和 Flex Pant 用“像日常服、但更像运动服的体感”做首页入口。</p>
+          <p><strong>前 3 秒钩子：</strong>先制造“这不是你以为的牛仔/西裤”的反转。</p>
+          <p><strong>结构拆解：</strong>Hook：误认感。 Demo / Story：像 denim / pant 的外观。 Proof / Detail：stretch、轻量、travel-friendly、久坐舒服。 CTA：让用户代入上班或旅行场景。</p>
+          <p><strong>评论区反馈或互动机制：</strong>反转型结构很容易带来“真的假的”“会不会很热”“能不能上班穿”的实用评论。</p>
+          <p><strong>Fanka 可复用 30 秒脚本：</strong>开头 4 秒拍“你猜这条是训练裤还是通勤裤”；中段 20 秒用办公椅、机场和散步三段证明体感；结尾 6 秒 CTA 问“你更想看哪种非健身房场景？”</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>账号观察表</h2>
+        <p>先尝试访问指定 Instagram 主页；本期多数账号因登录墙或公开页缺乏日期/互动证据，部分只能保留为“未发现近 7 天可核验公开内容”。</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>账号 / 品牌</th>
+              <th>本期可核验情况</th>
+              <th>公开线索 / URL</th>
+              <th>Fanka 可学点</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>the_french_fit</td>
+              <td class="muted">未发现近 7 天可核验公开内容</td>
+              <td>Instagram reels 指定页无法稳定直访；本轮未检到足够可靠的二级公开结果。</td>
+              <td>不写动作拆解结论，避免把旧认知当成新内容。</td>
+            </tr>
+            <tr>
+              <td>Alo Yoga</td>
+              <td class="muted">未发现比近两期更多的新公开事实</td>
+              <td><a href="https://www.aloyoga.com/collections/new-arrivals" target="_blank" rel="noopener">官方新到页</a> 仍可见 Travel in Alo；但该主题已在近两期覆盖。</td>
+              <td>本期不重复写旅行 wellness 叙事，避免连续刷同主题。</td>
+            </tr>
+            <tr>
+              <td>Buffbunny</td>
+              <td class="ok">有可核验公开内容</td>
+              <td><a href="https://www.buffbunny.com/" target="_blank" rel="noopener">官方站</a>，2026-06-15 采集，可见 support/compression/activity 分级与 Summer Essentials 新品。</td>
+              <td>把“先分级再卖货”做成短视频问答结构，很适合 Fanka。</td>
+            </tr>
+            <tr>
+              <td>Sweaty Betty</td>
+              <td class="ok">有可核验公开内容</td>
+              <td><a href="https://www.sweatybetty.com/us/shop/new-arrivals" target="_blank" rel="noopener">New Arrivals</a>，2026-06-15 采集，可见 Vacation Shop、Sported By You Gallery、Bra Quiz。</td>
+              <td>UGC 证明和选码问答应更早出现在 Fanka 首帧和合集封面里。</td>
+            </tr>
+            <tr>
+              <td>Vuori</td>
+              <td class="ok">有可核验公开内容</td>
+              <td><a href="https://vuoriclothing.com/" target="_blank" rel="noopener">官方站</a>，2026-06-15 采集，可见 BlissBlend Form 与 Performance Apparel 叙事。</td>
+              <td>恢复穿搭和旅行日内容可以更松弛，不必全部高强度。</td>
+            </tr>
+            <tr>
+              <td>Gymshark</td>
+              <td class="muted">公开页可访问，但近期主主题仍与上期重复</td>
+              <td><a href="https://www.gymshark.com/" target="_blank" rel="noopener">官方站</a> 仍突出 Gymshark x Bratz 与训练指南；近 5 期里已使用同主题。</td>
+              <td>本期不再把同一主题放进主结构拆解，避免重复消耗。</td>
+            </tr>
+            <tr>
+              <td>Halara</td>
+              <td class="muted">公开首页信息不足</td>
+              <td><a href="https://thehalara.com/" target="_blank" rel="noopener">官方站</a> 重定向后仅见 Flex Denim / Flex Pant 等入口，缺乏明确日期与互动线索。</td>
+              <td>不写 UGC 转化或评论区痛点回应，以免把泛印象写成事实。</td>
+            </tr>
+            <tr>
+              <td>lululemon</td>
+              <td class="ok">有可核验公开内容</td>
+              <td><a href="https://shop.lululemon.com/" target="_blank" rel="noopener">官方站</a>，2026-06-15 采集，可见 Yoga &amp; Pilates、Space to feel、6 月 16 日新色 app 先享。</td>
+              <td>情绪场景 + 稀缺 CTA 的组合，很适合 Fanka 做低压转化。</td>
+            </tr>
+            <tr>
+              <td>Athleta</td>
+              <td class="muted">未发现比上期更多的新公开事实</td>
+              <td><a href="https://athleta.gap.com/" target="_blank" rel="noopener">官方站</a> 仍可见 Travel &amp; Resort、Yoga &amp; Studio、Extended Sizes；与上期主结论高度重合。</td>
+              <td>把其当作长期参考，不再连续放进本期主名单。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>Fanka 今日可执行选题</h2>
+        <p>全部按本期已核验的场景、痛点和结构设计，社媒团队可直接开拍或改脚本。</p>
+      </div>
+      <ul class="topic-list">
+        <li><strong>同一条压缩裤的 3 个夏季版本</strong><p>用通勤、Pilates、晚间出门三段镜头，回应“为什么她愿意一直穿着不换”。</p></li>
+        <li><strong>你最怕闷、勒、磨还是湿</strong><p>把热天 bra 痛点做成评论投票，下一条按票数回具体款型和穿法。</p></li>
+        <li><strong>高压缩还是日常压缩</strong><p>仿照 Buffbunny 的分级思路，先提问再给不同训练强度的答案。</p></li>
+        <li><strong>真实身形试穿 + 选码问答</strong><p>借鉴 Sweaty Betty，把真实用户试穿和 FAQ 合并成一条内容，不再拆开发。</p></li>
+        <li><strong>今天只想穿得轻一点</strong><p>参考 lululemon 的情绪入口，用恢复日或轻训练日切入凉感、支撑和场景感。</p></li>
+      </ul>
+    </section>
+  </div>
+</main>
+</body>
+</html>

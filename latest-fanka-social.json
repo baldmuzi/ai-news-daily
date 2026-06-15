@@ -1,32 +1,32 @@
 {
-  "edition": "0002",
-  "date": "2026年6月12日 09:12",
-  "intro": "本期聚焦 sports-inspired 穿搭、训练分类型首页与合身问答内容，Fanka 可把压缩与支撑表达做成更像账号内容的场景脚本。",
+  "edition": "0003",
+  "date": "2026年6月15日 09:14",
+  "intro": "本期从夏季 leggings、热天 bra 痛点与头部品牌首页结构里，提炼 Fanka 可直接执行的场景化内容与压缩分级表达。",
   "tags": [
-    "世界杯穿搭",
-    "训练分类",
-    "账号导航",
-    "尺码合身",
-    "通勤度假"
+    "前3秒钩子",
+    "热天支撑",
+    "场景问答",
+    "UGC图库",
+    "压缩分级"
   ],
   "top3": [
     {
-      "title": "A Soccer Fan or Not, the FIFA Fever Trend Is Taking Over Fashion",
-      "comment": "运动队风格穿搭正在抢占社媒 look 话题。",
-      "url": "https://www.elle.com/fashion/trend-reports/a65094795/sports-inspired-fashion-trend/"
+      "title": "Leggings in Summer Are an Absolute Must—5 Ways to Wear Them in 2026",
+      "comment": "夏季 leggings 正从训练裤变成日常多场景底层单品。",
+      "url": "https://www.whowhatwear.com/fashion/trends/summer-leggings-trends-2026"
     },
     {
-      "title": "Gymshark 首页把 Bratz 联名直接做成“视觉先停留、再讲训练”的入口",
-      "comment": "强视觉封面先建立人设，再承接训练与套装。",
-      "url": "https://www.gymshark.com/"
+      "title": "Amazon Reviews Say This $20 Wireless Bra Stops ‘Swamp Boob’ Before It Starts",
+      "comment": "热天湿闷、摩擦和红印正在成为 bra 内容的高频入口。",
+      "url": "https://www.realsimple.com/amazon-letsjoli-wireless-jelly-bra-deal-june-2026-11994577"
     },
     {
-      "title": "Athleta 把 BodyMove、Travel & Resort 与 Bra Fit 放在同一条内容路由里",
-      "comment": "先回答合身问题，再让产品完成转化。",
-      "url": "https://athleta.gap.com/"
+      "title": "Buffbunny 把 support、compression、activity 和 Summer Essentials 摆成“自己选答案”的内容货架",
+      "comment": "先分级再卖货的结构，很适合 Fanka 做压缩分级内容。",
+      "url": "https://www.buffbunny.com/"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0002.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0003.html",
   "report_type": "fanka-social-trends",
   "source_window": "趋势近72小时；账号结构近7天；用户痛点近30天"
 }
