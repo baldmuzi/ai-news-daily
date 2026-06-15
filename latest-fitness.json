@@ -1,33 +1,33 @@
 {
-  "edition": "0020",
-  "date": "2026年6月12日 09:09",
-  "intro": "本期近 72 小时可核验素材继续偏少，聚焦女性长距离耐力、Gen Z 跑步社群、骑行恢复、喇叭运动裤与世界杯运动时尚。",
+  "edition": "0021",
+  "date": "2026年6月15日 09:13",
+  "intro": "本期近 72 小时可核验素材偏少，聚焦跑步训练指标、回归跑步、Y2K 运动风、夏季 leggings 与平价运动服内容机会。",
   "tags": [
-    "女性耐力",
-    "跑步社群",
-    "骑行恢复",
-    "喇叭裤",
-    "足球时尚"
+    "跑步指标",
+    "回归训练",
+    "复古运动风",
+    "夏季裤型",
+    "平价运动服"
   ],
   "top3": [
     {
-      "title": "Could Higher Mileage Unlock Your Best Racing? Here’s What Experts Say About Building Durability.",
-      "comment": "女性耐力话题从跑量转向可持续训练阈值。"
+      "title": "Should You Run by Pace, Heart Rate, or Effort? Coaches Explain When Each Metric Matters Most",
+      "comment": "跑步内容转向配速、心率与体感的组合管理。"
     },
     {
-      "title": "Gen Z Is Really Into Running. Somehow, That’s a Problem Now?",
-      "comment": "Gen Z 跑步社群需要聪明训练与穿搭教育。"
+      "title": "Runners Make One Common Mistake When Returning to the Sport. Here's How to Avoid It for a Smoother Comeback.",
+      "comment": "回归跑步需要渐进加载与更低阻力穿搭。"
     },
     {
-      "title": "4 Off-Bike Habits That Are Making Your Cycling Pain Worse",
-      "comment": "骑行恢复内容延伸到全天姿势与生活习惯。"
+      "title": "Gymshark Review: A Style Writer's Honest Take on the Activewear Label",
+      "comment": "Gymshark x Bratz 放大复古运动风社媒机会。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0020.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0021.html",
   "blog": {
-    "title": "High-Mileage Running Outfits for Women: Compression Leggings, Layers, and Recovery Basics",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/high-mileage-running-outfits-women-compression-leggings.html",
-    "summary": "由本期女性长距离跑步耐力与恢复趋势延展，沉淀为高跑量训练、压缩裤、层次和恢复穿搭指南。"
+    "title": "Y2K Activewear Outfits for Women: How to Make Retro Gym Style Work for Real Movement",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/y2k-activewear-outfits-for-women-real-movement.html",
+    "summary": "由本期 Y2K 运动风和夏季 leggings 趋势延展，沉淀为复古运动穿搭、压缩裤和真实运动场景指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
