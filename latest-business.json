@@ -1,27 +1,27 @@
 {
-  "edition": "0034",
-  "date": "2026年6月15日 09:09",
-  "intro": "AI 购物入口、绿色追溯与消费者归因正在同时升级，出海环保鞋类团队要把商品、营销和供应链数据一起做成机器可执行资产。",
+  "edition": "0035",
+  "date": "2026年6月16日 09:12",
+  "intro": "AI 代理购物、环保追溯与零售数据重估同时提速，出海鞋类团队要尽快把商品、合规与营销数据做成可执行接口。",
   "tags": [
     "代理购物",
     "绿色追溯",
     "零售归因",
-    "消费信号",
+    "会话营销",
     "供应链AI"
   ],
   "top3": [
     {
-      "title": "Walmart 把 Sparky 对话意图接入广告系统，零售媒体开始吃会话信号",
-      "comment": "Sparky 开始把对话意图喂给广告系统，零售媒体归因要改。"
+      "title": "Visa 把支付网络接入 ChatGPT，AI 助手开始具备真实下单与支付能力",
+      "comment": "AI 助手开始能直接支付，商品与支付规则必须结构化。"
     },
     {
-      "title": "新研究确认 AI 推荐会抬升品牌搜索与零售页访问，传统最后点击继续失真",
-      "comment": "AI 助手已成上游触点，只看站内点击会低估品牌曝光。"
+      "title": "Walmart 用 Sparky 对话信号重写零售广告，营销开始从搜索词转向会话意图",
+      "comment": "零售媒体开始吃会话意图，归因模型得跟着重做。"
     },
     {
-      "title": "H&M、Kering 等把 AI 用进环保报告、需求预测和材料决策，但也开始追踪模型足迹",
-      "comment": "AI 能帮降库存和浪费，但自身能耗也要进 ESG 账本。"
+      "title": "时尚品牌开始用 AI 同时做环保报告、需求预测和材料决策，但也追踪模型自身足迹",
+      "comment": "AI 要进 ESG 账本，既看减废也看模型自身足迹。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0034.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0035.html"
 }
