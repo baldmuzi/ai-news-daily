@@ -1,32 +1,32 @@
 {
-  "edition": "0003",
-  "date": "2026年6月15日 09:14",
-  "intro": "本期从夏季 leggings、热天 bra 痛点与头部品牌首页结构里，提炼 Fanka 可直接执行的场景化内容与压缩分级表达。",
+  "edition": "0004",
+  "date": "2026年6月16日 09:20",
+  "intro": "近 72 小时公开可核验的原生社媒帖仍偏少，但 bra 的低存在感诉求、Y2K 运动身份感和品牌把官网做成“内容目录”的趋势更明确了；Fanka 这期更值得学的是痛点命名、场景分流和低压 CTA。",
   "tags": [
-    "前3秒钩子",
-    "热天支撑",
-    "场景问答",
-    "UGC图库",
-    "压缩分级"
+    "低存在感",
+    "Y2K运动感",
+    "场景分流",
+    "UGC证据",
+    "低压CTA"
   ],
   "top3": [
     {
-      "title": "Leggings in Summer Are an Absolute Must—5 Ways to Wear Them in 2026",
-      "comment": "夏季 leggings 正从训练裤变成日常多场景底层单品。",
-      "url": "https://www.whowhatwear.com/fashion/trends/summer-leggings-trends-2026"
+      "title": "You'll Want to Throw Out All Your Old Bras When You Try These 10 Comfy Options From Amazon, Starting at $16",
+      "comment": "用户更在意长时间穿着后的 stay-put 和不 dig 体感。",
+      "url": "https://www.realsimple.com/comfortable-bra-deals-amazon-june-2026-11989187"
     },
     {
-      "title": "Amazon Reviews Say This $20 Wireless Bra Stops ‘Swamp Boob’ Before It Starts",
-      "comment": "热天湿闷、摩擦和红印正在成为 bra 内容的高频入口。",
-      "url": "https://www.realsimple.com/amazon-letsjoli-wireless-jelly-bra-deal-june-2026-11994577"
+      "title": "Not Ugg Boots, Not Low-Rise Jeans—These Are the Y2K Trends That Matter Most This Summer",
+      "comment": "Y2K activewear 回潮，但用户先被配色和身份感吸引。",
+      "url": "https://www.whowhatwear.com/fashion/summer/y2k-summer-fashion-trends-2026"
     },
     {
-      "title": "Buffbunny 把 support、compression、activity 和 Summer Essentials 摆成“自己选答案”的内容货架",
-      "comment": "先分级再卖货的结构，很适合 Fanka 做压缩分级内容。",
-      "url": "https://www.buffbunny.com/"
+      "title": "Vacation Clothes | Swimwear, Shorts & Dresses | Sweaty Betty",
+      "comment": "先让用户按场景自选入口，再给 UGC 和问答承接。",
+      "url": "https://www.sweatybetty.com/us/shop/edits/vacation-shop"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0003.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0004.html",
   "report_type": "fanka-social-trends",
   "source_window": "趋势近72小时；账号结构近7天；用户痛点近30天"
 }
