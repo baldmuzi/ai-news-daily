@@ -1,33 +1,33 @@
 {
-  "edition": "0021",
-  "date": "2026年6月15日 09:13",
-  "intro": "本期近 72 小时可核验素材偏少，聚焦跑步训练指标、回归跑步、Y2K 运动风、夏季 leggings 与平价运动服内容机会。",
+  "edition": "0022",
+  "date": "2026年6月17日 09:14",
+  "intro": "本期近 72 小时新鲜素材稀缺，聚焦 Gen Z 混搭运动风、女性跑鞋选择与世界杯观赛穿搭，为 Fanka 提炼压缩服内容机会。",
   "tags": [
-    "跑步指标",
-    "回归训练",
-    "复古运动风",
-    "夏季裤型",
-    "平价运动服"
+    "混搭运动风",
+    "女性跑鞋",
+    "世界杯穿搭",
+    "社群运动",
+    "压缩基础层"
   ],
   "top3": [
     {
-      "title": "Should You Run by Pace, Heart Rate, or Effort? Coaches Explain When Each Metric Matters Most",
-      "comment": "跑步内容转向配速、心率与体感的组合管理。"
+      "title": "Goodbye, Matching Sets-Gen Z Is Making Workout Style Personal (and Chaotic) Again",
+      "comment": "Gen Z 运动穿搭从成套转向更个人化混搭。"
     },
     {
-      "title": "Runners Make One Common Mistake When Returning to the Sport. Here's How to Avoid It for a Smoother Comeback.",
-      "comment": "回归跑步需要渐进加载与更低阻力穿搭。"
+      "title": "The 10 Best Running Shoes for Women, Tested and Reviewed by Editors",
+      "comment": "女性跑步装备内容更重视缓震、稳定和训练目标。"
     },
     {
-      "title": "Gymshark Review: A Style Writer's Honest Take on the Activewear Label",
-      "comment": "Gymshark x Bratz 放大复古运动风社媒机会。"
+      "title": "Fashion’s Top Models Are All In on the World Cup",
+      "comment": "世界杯观赛把球衣、城市移动和社群穿搭连接起来。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0021.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0022.html",
   "blog": {
-    "title": "Y2K Activewear Outfits for Women: How to Make Retro Gym Style Work for Real Movement",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/y2k-activewear-outfits-for-women-real-movement.html",
-    "summary": "由本期 Y2K 运动风和夏季 leggings 趋势延展，沉淀为复古运动穿搭、压缩裤和真实运动场景指南。"
+    "title": "Mismatched Workout Outfits for Women: How to Style Activewear That Still Moves",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/mismatched-workout-outfits-for-women-activewear-guide.html",
+    "summary": "由本期 Gen Z 非成套运动穿搭趋势延展，沉淀为运动套装混搭、压缩裤和真实训练场景指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
