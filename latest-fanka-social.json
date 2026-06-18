@@ -1,32 +1,32 @@
 {
-  "edition": "0005",
-  "date": "2026年6月17日 09:16",
-  "intro": "近72小时原生社媒新帖偏少，但混搭训练风、场景分流和热感痛点更清晰，Fanka 更该学会先帮用户做选择，再讲卖点。",
+  "edition": "0006",
+  "date": "2026年6月18日 10:09",
+  "intro": "近72小时原生社媒新帖仍稀缺，但头部品牌的活动路由、生活方式叙事和真实fit痛点更清晰，Fanka这期更该学先回答身体感受。",
   "tags": [
-    "混搭训练风",
+    "活动倒计时",
     "场景分流",
-    "低压支撑",
-    "心脏年龄",
-    "热感痛点"
+    "体感卖点",
+    "罩杯空杯",
+    "低饱和生活"
   ],
   "top3": [
     {
-      "title": "Goodbye, Matching Sets—Gen Z Is Making Workout Style Personal (and Chaotic) Again",
-      "comment": "整套健身穿搭退潮，混搭与个性表达重新上位。",
-      "url": "https://www.whowhatwear.com/wellness/fitness/gen-z-mismatched-workout-set-trend"
+      "title": "Gymshark Review: A Style Writer's Honest Take on the Activewear Label",
+      "comment": "用长期穿着背书讲腰头稳定与真实留存理由。",
+      "url": "https://www.womenshealthmag.com/style/a71562219/gymshark-review-2026/"
     },
     {
-      "title": "Gymshark Official Store - Gym Clothes & Workout Clothes",
-      "comment": "倒计时、系列入口和支撑等级被压进同一屏。",
-      "url": "https://www.gymshark.com/"
+      "title": "Athletic Clothing & Activewear Apparel for Performance – Vuori",
+      "comment": "低饱和生活方式加社群入口，比硬卖货更能留人。",
+      "url": "https://vuoriclothing.com/"
     },
     {
-      "title": "The New Age of Heart Health",
-      "comment": "女性健身叙事开始用“心脏年龄”组织恢复内容。",
-      "url": "https://www.womenshealthmag.com/fitness/a71571923/heart-health-fitness-trackers-heart-age/"
+      "title": "Finding a Bra That Fits My Smaller Chest Is Tricky — Shoppers Say This One Solves the 'Awkward Gap' Problem",
+      "comment": "小胸空杯被直接命名，适合改写成bra内容开头。",
+      "url": "https://people.com/early-prime-day-warners-cloud-9-wireless-bra-amazon-deal-june-2026-12000282"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0005.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0006.html",
   "report_type": "fanka-social-trends",
   "source_window": "趋势近72小时；账号结构近7天；用户痛点近30天"
 }
