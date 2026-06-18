@@ -1,33 +1,33 @@
 {
-  "edition": "0022",
-  "date": "2026年6月17日 09:14",
-  "intro": "本期近 72 小时新鲜素材稀缺，聚焦 Gen Z 混搭运动风、女性跑鞋选择与世界杯观赛穿搭，为 Fanka 提炼压缩服内容机会。",
+  "edition": "0023",
+  "date": "2026年6月18日 10:08",
+  "intro": "本期聚焦 Strava 社交移动、居家垫上训练、马拉松入门和夏季 activewear 零售，提炼 Fanka 压缩服内容机会。",
   "tags": [
-    "混搭运动风",
-    "女性跑鞋",
-    "世界杯穿搭",
-    "社群运动",
-    "压缩基础层"
+    "社交跑步",
+    "垫上训练",
+    "马拉松入门",
+    "夏季运动装",
+    "阻力带训练"
   ],
   "top3": [
     {
-      "title": "Goodbye, Matching Sets-Gen Z Is Making Workout Style Personal (and Chaotic) Again",
-      "comment": "Gen Z 运动穿搭从成套转向更个人化混搭。"
+      "title": "These Women Skipped the Uber and Strava’d Home from the Bar. They Might Have Changed the Game",
+      "comment": "Strava 从训练记录延伸到社交移动场景。"
     },
     {
-      "title": "The 10 Best Running Shoes for Women, Tested and Reviewed by Editors",
-      "comment": "女性跑步装备内容更重视缓震、稳定和训练目标。"
+      "title": "Dua Lipa Does These Mat Workouts Daily to Feel Her Best-Try This 20-minute Full-Body Session",
+      "comment": "20 分钟垫上训练强化居家、旅行与短时运动内容。"
     },
     {
-      "title": "Fashion’s Top Models Are All In on the World Cup",
-      "comment": "世界杯观赛把球衣、城市移动和社群穿搭连接起来。"
+      "title": "Want to Run Your First Marathon? Experts Reveal the Most Important Tip to Make Training Successful",
+      "comment": "马拉松入门内容转向习惯建立和有氧基础。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0022.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0023.html",
   "blog": {
-    "title": "Mismatched Workout Outfits for Women: How to Style Activewear That Still Moves",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/mismatched-workout-outfits-for-women-activewear-guide.html",
-    "summary": "由本期 Gen Z 非成套运动穿搭趋势延展，沉淀为运动套装混搭、压缩裤和真实训练场景指南。"
+    "title": "At-Home Mat Workout Outfits for Women: What to Wear for Pilates, Mobility, and Strength",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/at-home-mat-workout-outfits-for-women.html",
+    "summary": "由本期名人 mat workout 与居家普拉提趋势延展，沉淀为女性居家垫上训练、压缩裤和轻支撑穿搭指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
