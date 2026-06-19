@@ -1,33 +1,33 @@
 {
-  "edition": "0023",
-  "date": "2026年6月18日 10:08",
-  "intro": "本期聚焦 Strava 社交移动、居家垫上训练、马拉松入门和夏季 activewear 零售，提炼 Fanka 压缩服内容机会。",
+  "edition": "0024",
+  "date": "2026年6月19日 11:53",
+  "intro": "本期聚焦女性跑步内容健康讨论、反精致健身审美与夏季 athleisure 消费变化，提炼 Fanka 压缩穿搭和内容机会。",
   "tags": [
-    "社交跑步",
-    "垫上训练",
-    "马拉松入门",
-    "夏季运动装",
-    "阻力带训练"
+    "跑圈健康",
+    "真实健身",
+    "夏季通勤",
+    "运动消费",
+    "轻量叠穿"
   ],
   "top3": [
     {
-      "title": "These Women Skipped the Uber and Strava’d Home from the Bar. They Might Have Changed the Game",
-      "comment": "Strava 从训练记录延伸到社交移动场景。"
+      "title": "These Women Went Viral for Their Running Content. The Conversation They Started Was Much Bigger.",
+      "comment": "女性跑步内容开始公开反思体重与供能焦虑。"
     },
     {
-      "title": "Dua Lipa Does These Mat Workouts Daily to Feel Her Best-Try This 20-minute Full-Body Session",
-      "comment": "20 分钟垫上训练强化居家、旅行与短时运动内容。"
+      "title": "No Matching Set? No Problem. The Case for Dressing Like a Mess at the Gym",
+      "comment": "真实 gym outfit 反击精致健身房审美压力。"
     },
     {
-      "title": "Want to Run Your First Marathon? Experts Reveal the Most Important Tip to Make Training Successful",
-      "comment": "马拉松入门内容转向习惯建立和有氧基础。"
+      "title": "Are Leggings Outdated? Stylists Shared Their Favorite Trending Summer Athleisure Picks to Wear Instead",
+      "comment": "夏季 athleisure 正从单一 leggings 套装外扩。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0023.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0024.html",
   "blog": {
-    "title": "At-Home Mat Workout Outfits for Women: What to Wear for Pilates, Mobility, and Strength",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/at-home-mat-workout-outfits-for-women.html",
-    "summary": "由本期名人 mat workout 与居家普拉提趋势延展，沉淀为女性居家垫上训练、压缩裤和轻支撑穿搭指南。"
+    "title": "Summer Athleisure Outfits Beyond Leggings: Capris, Layers, and Compression Basics",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/summer-athleisure-outfits-beyond-leggings.html",
+    "summary": "由本期夏季 athleisure 轮廓变化趋势延展，沉淀为女性夏季运动通勤穿搭、capri、层次上装与压缩基础层指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
