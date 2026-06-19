@@ -1,32 +1,32 @@
 {
-  "edition": "0006",
-  "date": "2026年6月18日 10:09",
-  "intro": "近72小时原生社媒新帖仍稀缺，但头部品牌的活动路由、生活方式叙事和真实fit痛点更清晰，Fanka这期更该学先回答身体感受。",
+  "edition": "0007",
+  "date": "2026年6月19日 11:49",
+  "intro": "近72小时新鲜社媒素材仍少，但身体中立跑步、反精致健身穿搭与品牌场景路由更清晰，Fanka 该多讲真实体感与选择题内容。",
   "tags": [
-    "活动倒计时",
-    "场景分流",
-    "体感卖点",
-    "罩杯空杯",
-    "低饱和生活"
+    "身体中立跑步",
+    "反精致健身",
+    "赛事生活方式",
+    "Bra 体感词",
+    "场景选择题"
   ],
   "top3": [
     {
-      "title": "Gymshark Review: A Style Writer's Honest Take on the Activewear Label",
-      "comment": "用长期穿着背书讲腰头稳定与真实留存理由。",
-      "url": "https://www.womenshealthmag.com/style/a71562219/gymshark-review-2026/"
+      "title": "These Women Went Viral for Their Running Content. The Conversation They Started Was Much Bigger.",
+      "comment": "跑步内容从更瘦更狠，转向恢复、长期主义和身体中立。",
+      "url": "https://www.womenshealthmag.com/fitness/a71590323/running-influencers-eating-disorder-awareness/"
     },
     {
-      "title": "Athletic Clothing & Activewear Apparel for Performance – Vuori",
-      "comment": "低饱和生活方式加社群入口，比硬卖货更能留人。",
-      "url": "https://vuoriclothing.com/"
+      "title": "No Matching Set? No Problem. The Case for Dressing Like a Mess at the Gym",
+      "comment": "反精致健身穿搭在抬头，真实训练感比整套造型更可聊。",
+      "url": "https://www.womenshealthmag.com/fitness/a71619070/dressing-up-at-the-gym/"
     },
     {
-      "title": "Finding a Bra That Fits My Smaller Chest Is Tricky — Shoppers Say This One Solves the 'Awkward Gap' Problem",
-      "comment": "小胸空杯被直接命名，适合改写成bra内容开头。",
-      "url": "https://people.com/early-prime-day-warners-cloud-9-wireless-bra-amazon-deal-june-2026-12000282"
+      "title": "Buffbunny 把 support、compression、activity 直接做成内容入口",
+      "comment": "先让用户选支撑和压缩等级，再让单品和颜色接住停留。",
+      "url": "https://www.buffbunny.com/"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0006.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0007.html",
   "report_type": "fanka-social-trends",
   "source_window": "趋势近72小时；账号结构近7天；用户痛点近30天"
 }
