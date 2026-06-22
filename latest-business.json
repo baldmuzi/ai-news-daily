@@ -1,30 +1,27 @@
 {
-  "edition": "0038",
-  "date": "2026年6月19日 11:46",
-  "intro": "AI 购物入口、绿色追溯与会员数据正在同时外移，出海环保鞋类要把商品、合规和归因字段做成可执行资产。",
+  "edition": "0039",
+  "date": "2026年6月22日 09:10",
+  "intro": "AI 购物代理、绿色追溯与零售数据栈一起重构出海鞋类电商，环保卖点和转化信号都要先变成机器可执行资产。",
   "tags": [
-    "代理下单",
+    "代理购物",
     "绿色追溯",
     "会话归因",
-    "跨境工具",
-    "商品接口"
+    "商品数据",
+    "跨境工具"
   ],
   "top3": [
     {
-      "title": "Walmart 用 Sparky 对话信号重写零售广告，品牌投放开始围绕会话意图重排",
-      "comment": "会话广告起量，营销归因要升级到对话层。",
-      "url": "https://www.businessinsider.com/walmart-growth-chief-says-ai-is-rewriting-ad-strategy-2026-6"
+      "title": "TechRadar：零售商若不先重做决策与数据层，AI 购物代理只会放大混乱",
+      "comment": "先补齐主数据、规则和审计链路，再谈代理购物接入。"
     },
     {
-      "title": "Google 联合 Walmart、Shopify 与 Wayfair，把发现到结账直接推进 Gemini 对话框",
-      "comment": "AI 入口外移，商品与结账接口必须标准化。",
-      "url": "https://apnews.com/article/f1679240ba93d40b90a97348b73039d3"
+      "title": "Walmart 用 Sparky 对话上下文重写广告分发，零售媒体开始从关键词转向会话意图",
+      "comment": "广告归因将从搜索词转向用户对话与购物意图。"
     },
     {
-      "title": "时尚合规迎来 AI 关口，品牌开始用生成式系统应对 DPP 与 EPR 数据负担",
-      "comment": "环保合规正数据化，字段治理要先行。",
-      "url": "https://www.voguebusiness.com/story/sustainability/the-fashion-compliance-reckoning"
+      "title": "Gopuff 上线会记忆历史订单的 AI 助手 Go，补货型购物开始从搜商品变成说需求",
+      "comment": "补货型配件适合先做 AI 复购与连带购实验。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0038.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0039.html"
 }
