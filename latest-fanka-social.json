@@ -1,32 +1,32 @@
 {
-  "edition": "0008",
-  "date": "2026年6月22日 09:15",
-  "intro": "近 72 小时新鲜社媒公开证据仍少，但夏季冷感通勤、无压迫支撑和场景化内容路由更清晰，Fanka 该把选择题入口和真实体感一起拍出来。",
+  "edition": "0009",
+  "date": "2026年6月23日 09:17",
+  "intro": "近72小时公开社媒线索仍偏少，但健身社交化、球衣混搭、四分钟力量练和按支撑/尺码分流的内容结构更清晰，Fanka 该把真实体感与选择题入口一起拍出来。",
   "tags": [
-    "冷感通勤",
-    "支撑分级",
-    "前3秒选择题",
-    "防闷热痛点",
-    "场景路由"
+    "第三空间",
+    "四分钟练",
+    "球衣混搭",
+    "尺码路由",
+    "无压迫感"
   ],
   "top3": [
     {
-      "title": "According to Both Fashion Editors and It Girls, This Is How You're Supposed to Wear Adidas Sneakers in 2026",
-      "comment": "运动元素正被重新编进通勤公式，先给整套反差穿搭更容易停住用户。",
-      "url": "https://www.whowhatwear.com/fashion/shopping/how-to-style-adidas-sneakers-summer-2026"
+      "title": "Hyrox 正把健身赛事改造成“第三空间”社交场",
+      "comment": "健身赛事正在变成社交化第三空间，挑战氛围本身能带内容。",
+      "url": "https://www.businessinsider.com/i-went-on-a-blind-date-at-hyrox-fun-sweaty-2026-6"
     },
     {
-      "title": "Reviewers Say This $20 Bra Doesn’t Dig in and Fits So Much More Comfortably Than More-Expensive Styles",
-      "comment": "Bra 内容里“先不勒不压”仍比抽象支撑等级更能引发共鸣。",
-      "url": "https://www.realsimple.com/oeak-wireless-jelly-bra-amazon-sale-june-2026-12002075"
+      "title": "Bra 内容里“不勒不夹”比抽象支撑更先打动人",
+      "comment": "用户先想解决勒、夹、闷，再考虑抽象支撑等级。",
+      "url": "https://www.realsimple.com/warners-easy-does-it-underarm-smoothing-wireless-bra-amazon-deal-june-2026-12000782"
     },
     {
-      "title": "Buffbunny 把 support / compression / activity 直接做成前台入口",
-      "comment": "先让用户选支撑和压缩等级，再让商品出现，停留和评论都更自然。",
+      "title": "Buffbunny 把支撑、压缩和运动类型直接做成内容入口",
+      "comment": "先让用户选压缩和支撑，再给商品，互动会更自然。",
       "url": "https://www.buffbunny.com/"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0008.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0009.html",
   "report_type": "fanka-social-trends",
   "source_window": "趋势近72小时；账号结构近7天；用户痛点近30天"
 }
