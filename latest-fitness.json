@@ -1,33 +1,33 @@
 {
-  "edition": "0024",
-  "date": "2026年6月19日 11:53",
-  "intro": "本期聚焦女性跑步内容健康讨论、反精致健身审美与夏季 athleisure 消费变化，提炼 Fanka 压缩穿搭和内容机会。",
+  "edition": "0025",
+  "date": "2026年6月23日 09:15",
+  "intro": "本期从全球女性力量训练、Hyrox 社交化、混合体能赛事和 Alo wellness 体验中，提炼 Fanka 压缩穿搭、运动社群与内容叙事机会。",
   "tags": [
-    "跑圈健康",
-    "真实健身",
-    "夏季通勤",
-    "运动消费",
-    "轻量叠穿"
+    "中年力量",
+    "混合体能",
+    "运动社交",
+    "体验营销",
+    "恢复穿搭"
   ],
   "top3": [
     {
-      "title": "These Women Went Viral for Their Running Content. The Conversation They Started Was Much Bigger.",
-      "comment": "女性跑步内容开始公开反思体重与供能焦虑。"
+      "title": "How to start strength training in midlife, according to female trainers 40 and over",
+      "comment": "40+ 女性力量训练从简单复合动作与恢复穿搭切入。"
     },
     {
-      "title": "No Matching Set? No Problem. The Case for Dressing Like a Mess at the Gym",
-      "comment": "真实 gym outfit 反击精致健身房审美压力。"
+      "title": "The hot new dating scene isn't a bar. It's Hyrox.",
+      "comment": "Hyrox 正从比赛扩展成健身社交第三空间。"
     },
     {
-      "title": "Are Leggings Outdated? Stylists Shared Their Favorite Trending Summer Athleisure Picks to Wear Instead",
-      "comment": "夏季 athleisure 正从单一 leggings 套装外扩。"
+      "title": "La onda expansiva del Hyrox: cómo se convirtió en la competición fitness de moda en España",
+      "comment": "混合体能赛事在欧洲继续规模化，适合做训练穿搭内容。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0024.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0025.html",
   "blog": {
-    "title": "Summer Athleisure Outfits Beyond Leggings: Capris, Layers, and Compression Basics",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/summer-athleisure-outfits-beyond-leggings.html",
-    "summary": "由本期夏季 athleisure 轮廓变化趋势延展，沉淀为女性夏季运动通勤穿搭、capri、层次上装与压缩基础层指南。"
+    "title": "Midlife Strength Training Outfits for Women: Supportive Layers for Lifting, Mobility, and Recovery",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/midlife-strength-training-outfits-for-women.html",
+    "summary": "由本期中年女性力量训练趋势延展，沉淀为压缩裤、支撑上装与恢复层穿搭指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
