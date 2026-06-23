@@ -1,27 +1,27 @@
 {
-  "edition": "0039",
-  "date": "2026年6月22日 09:10",
-  "intro": "AI 购物代理、绿色追溯与零售数据栈一起重构出海鞋类电商，环保卖点和转化信号都要先变成机器可执行资产。",
+  "edition": "0040",
+  "date": "2026年6月23日 09:12",
+  "intro": "AI 代理购物、会话营销和绿色追溯正同时改写出海鞋类电商，环保合规与转化数据都要先变成机器可执行资产。",
   "tags": [
     "代理购物",
     "绿色追溯",
     "会话归因",
-    "商品数据",
-    "跨境工具"
+    "AI导购",
+    "零售数据"
   ],
   "top3": [
     {
-      "title": "TechRadar：零售商若不先重做决策与数据层，AI 购物代理只会放大混乱",
-      "comment": "先补齐主数据、规则和审计链路，再谈代理购物接入。"
+      "title": "Amazon 把 Prime Day 变成 Alexa for Shopping 的首场大考，AI 导购开始直接影响大促转化",
+      "comment": "Prime Day 将检验 AI 导购是否能真正带动鞋类大促转化。"
     },
     {
-      "title": "Walmart 用 Sparky 对话上下文重写广告分发，零售媒体开始从关键词转向会话意图",
-      "comment": "广告归因将从搜索词转向用户对话与购物意图。"
+      "title": "Amazon 首次在 ChatGPT 投放广告，品牌开始为“AI 搜索里的购买意图”单独买量",
+      "comment": "AI 搜索正在变成新广告位，需单独监测 AI 流量漏斗。"
     },
     {
-      "title": "Gopuff 上线会记忆历史订单的 AI 助手 Go，补货型购物开始从搜商品变成说需求",
-      "comment": "补货型配件适合先做 AI 复购与连带购实验。"
+      "title": "TechRadar：零售 AI 代理要真正落地，先得把决策权限、主数据和审计链路补齐",
+      "comment": "代理购物前先补主数据、权限和审计链路。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0039.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0040.html"
 }
