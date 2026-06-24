@@ -1,32 +1,32 @@
 {
-  "edition": "0009",
-  "date": "2026年6月23日 09:17",
-  "intro": "近72小时公开社媒线索仍偏少，但健身社交化、球衣混搭、四分钟力量练和按支撑/尺码分流的内容结构更清晰，Fanka 该把真实体感与选择题入口一起拍出来。",
+  "edition": "0010",
+  "date": "2026年6月24日 09:31",
+  "intro": "近72小时公开可核验的社媒与品牌页线索仍然偏少，但“去精致化穿搭”、长时间舒适体感、门店课程联动和尺码路由式内容结构同时在抬头，Fanka 适合把真实穿着反馈与场景入口拍得更直给。",
   "tags": [
-    "第三空间",
-    "四分钟练",
-    "球衣混搭",
+    "去精致穿搭",
+    "无压迫感",
+    "门店课程链",
     "尺码路由",
-    "无压迫感"
+    "夏日体感"
   ],
   "top3": [
     {
-      "title": "Hyrox 正把健身赛事改造成“第三空间”社交场",
-      "comment": "健身赛事正在变成社交化第三空间，挑战氛围本身能带内容。",
-      "url": "https://www.businessinsider.com/i-went-on-a-blind-date-at-hyrox-fun-sweaty-2026-6"
+      "title": "“Gym Goblin” 正在替代精致版 Pilates Princess",
+      "comment": "健身穿搭从精致成套转向更松弛的复古混穿，真实感比整齐更重要。",
+      "url": "https://www.theguardian.com/fashion/2026/jun/23/how-just-got-out-of-bed-look-took-over-fitness-pilates"
     },
     {
-      "title": "Bra 内容里“不勒不夹”比抽象支撑更先打动人",
-      "comment": "用户先想解决勒、夹、闷，再考虑抽象支撑等级。",
-      "url": "https://www.realsimple.com/warners-easy-does-it-underarm-smoothing-wireless-bra-amazon-deal-june-2026-12000782"
+      "title": "“不 rub、不 tug、不 pinch” 已经成了 bra 文案的第一入口",
+      "comment": "Bra 内容标题已经先讲不磨不夹，具体体感比抽象支撑更好转化。",
+      "url": "https://www.realsimple.com/bali-illusion-seamless-underwire-bra-amazon-deal-june-2026-11977438"
     },
     {
-      "title": "Buffbunny 把支撑、压缩和运动类型直接做成内容入口",
-      "comment": "先让用户选压缩和支撑，再给商品，互动会更自然。",
-      "url": "https://www.buffbunny.com/"
+      "title": "高腰稳定感有了，但口袋和前中缝仍然会立刻被放大",
+      "comment": "裤装内容必须第一时间说清口袋、前缝和腰头稳定，不然用户马上追问。",
+      "url": "https://www.prevention.com/fitness/workout-clothes-gear/a71604511/lululemon-nulu-flares-review/"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0009.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0010.html",
   "report_type": "fanka-social-trends",
   "source_window": "趋势近72小时；账号结构近7天；用户痛点近30天"
 }
