@@ -1,33 +1,33 @@
 {
-  "edition": "0025",
-  "date": "2026年6月23日 09:15",
-  "intro": "本期从全球女性力量训练、Hyrox 社交化、混合体能赛事和 Alo wellness 体验中，提炼 Fanka 压缩穿搭、运动社群与内容叙事机会。",
+  "edition": "0026",
+  "date": "2026年6月24日 09:28",
+  "intro": "本期从复古舒适健身穿搭、低跑量马拉松训练、夏季运动服零售和 Vuori 入华中，提炼 Fanka 压缩服内容机会。",
   "tags": [
-    "中年力量",
-    "混合体能",
-    "运动社交",
-    "体验营销",
-    "恢复穿搭"
+    "复古运动风",
+    "恢复训练",
+    "夏季零售",
+    "中国市场",
+    "压缩基础层"
   ],
   "top3": [
     {
-      "title": "How to start strength training in midlife, according to female trainers 40 and over",
-      "comment": "40+ 女性力量训练从简单复合动作与恢复穿搭切入。"
+      "title": "Goodbye, pilates princess - hello, gym goblin: how the just-got-out-of-bed look took over fitness",
+      "comment": "复古舒适运动风反击完美套装，适合做压缩基础层穿搭。"
     },
     {
-      "title": "The hot new dating scene isn't a bar. It's Hyrox.",
-      "comment": "Hyrox 正从比赛扩展成健身社交第三空间。"
+      "title": "Run Less, Recover More, Race Better: The Case for a 3-Day-a-Week Marathon Training Plan",
+      "comment": "三天跑步周把重点放回恢复、质量课和可持续训练节奏。"
     },
     {
-      "title": "La onda expansiva del Hyrox: cómo se convirtió en la competición fitness de moda en España",
-      "comment": "混合体能赛事在欧洲继续规模化，适合做训练穿搭内容。"
+      "title": "Lululemon's Summer Sale Is Back With up to 50% off Editor-Approved Activewear",
+      "comment": "lululemon 夏季大促凸显会员优先和场景化 activewear 消费。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0025.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0026.html",
   "blog": {
-    "title": "Midlife Strength Training Outfits for Women: Supportive Layers for Lifting, Mobility, and Recovery",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/midlife-strength-training-outfits-for-women.html",
-    "summary": "由本期中年女性力量训练趋势延展，沉淀为压缩裤、支撑上装与恢复层穿搭指南。"
+    "title": "Three-Day Running Week Outfits for Women: Support, Recovery, and Cross-Training Layers",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/three-day-running-week-outfits-for-women.html",
+    "summary": "由本期低跑量马拉松训练与恢复节奏趋势延展，沉淀为女性跑步日、交叉训练日和恢复日压缩穿搭指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
