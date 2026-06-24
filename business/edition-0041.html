@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>出海 AI 洞察 — 第 0041 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #080c14;
+      --surface: #0f1623;
+      --surface-2: #142032;
+      --border: #1f2d3f;
+      --accent: #10b981;
+      --accent-2: #34d399;
+      --text: #e5eef7;
+      --muted: #94a3b8;
+      --dim: #64748b;
+      --tag-bg: rgba(16, 185, 129, 0.12);
+      --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(16,185,129,0.14), transparent 28%),
+        radial-gradient(circle at top right, rgba(52,211,153,0.10), transparent 24%),
+        linear-gradient(180deg, #0a111c 0%, var(--bg) 26%);
+      color: var(--text);
+      font-family: "Noto Serif SC", serif;
+      line-height: 1.85;
+      min-height: 100vh;
+      padding-bottom: 4rem;
+    }
+    a { color: inherit; }
+    header { position: relative; padding: 3rem 1.5rem 2rem; border-bottom: 1px solid var(--border); text-align: center; }
+    .back-link { position: absolute; top: 1.2rem; left: 1.5rem; color: var(--accent); text-decoration: none; font-family: "JetBrains Mono", monospace; font-size: 0.72rem; border: 1px solid rgba(16,185,129,0.32); border-radius: 999px; padding: 0.36em 0.9em; background: rgba(15,22,35,0.7); }
+    .back-link:hover { background: var(--tag-bg); }
+    .badge { display: inline-block; color: var(--accent); font-family: "JetBrains Mono", monospace; font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid rgba(16,185,129,0.34); border-radius: 999px; padding: 0.25em 0.9em; margin-bottom: 1rem; background: rgba(15,22,35,0.7); }
+    h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); letter-spacing: 0.04em; margin-bottom: 0.45rem; }
+    .subtitle { color: var(--muted); font-size: 0.92rem; letter-spacing: 0.06em; }
+    .meta { margin-top: 1rem; color: var(--dim); font-family: "JetBrains Mono", monospace; font-size: 0.7rem; letter-spacing: 0.06em; }
+    .intro { max-width: 820px; margin: 1.5rem auto 0; padding: 1.15rem 1.35rem; border-radius: 14px; border: 1px solid var(--border); border-left: 3px solid var(--accent); background: linear-gradient(135deg, rgba(15,22,35,0.98), rgba(10,18,30,0.94)); color: var(--muted); text-align: left; box-shadow: var(--shadow); }
+    .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-top: 1.1rem; }
+    .tag { color: var(--accent); background: var(--tag-bg); border: 1px solid rgba(16,185,129,0.24); border-radius: 999px; padding: 0.26em 0.8em; font-family: "JetBrains Mono", monospace; font-size: 0.66rem; }
+    main { max-width: 980px; margin: 0 auto; padding: 2rem 1.2rem 0; }
+    .section-title { border-bottom: 1px solid var(--border); padding-bottom: 0.65rem; margin-bottom: 1rem; }
+    .section-title h2 { color: var(--accent); font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; font-family: "JetBrains Mono", monospace; }
+    .grid { display: grid; gap: 1.2rem; }
+    .card { background: linear-gradient(180deg, rgba(15,22,35,0.96), rgba(9,16,27,0.98)); border: 1px solid var(--border); border-radius: 16px; padding: 1.45rem 1.5rem; box-shadow: var(--shadow); transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease; }
+    .card:hover { transform: translateY(-2px); border-color: rgba(16,185,129,0.44); box-shadow: 0 28px 60px rgba(16,185,129,0.08); }
+    .card-header { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.7rem; }
+    .num, .cat { font-family: "JetBrains Mono", monospace; font-size: 0.63rem; border-radius: 999px; padding: 0.22em 0.65em; white-space: nowrap; margin-top: 0.15em; }
+    .num { color: var(--dim); background: var(--surface-2); border: 1px solid var(--border); }
+    .cat { color: var(--accent); background: var(--tag-bg); border: 1px solid rgba(16,185,129,0.24); }
+    .title-wrap { flex: 1; min-width: 0; }
+    .title-link { display: block; text-decoration: none; color: var(--text); font-size: 1.02rem; font-weight: 600; line-height: 1.55; }
+    .title-link:hover { color: var(--accent-2); }
+    .source { color: var(--dim); font-family: "JetBrains Mono", monospace; font-size: 0.68rem; letter-spacing: 0.04em; margin-bottom: 0.9rem; }
+    .comment { color: var(--muted); font-size: 0.88rem; }
+    .comment strong { color: var(--accent); }
+    .footer { display: flex; justify-content: flex-end; margin-top: 1rem; }
+    .button { text-decoration: none; color: var(--accent); border: 1px solid rgba(16,185,129,0.28); border-radius: 999px; padding: 0.42em 0.95em; font-family: "JetBrains Mono", monospace; font-size: 0.68rem; }
+    .button:hover { background: var(--tag-bg); border-color: rgba(16,185,129,0.45); }
+    footer { margin-top: 4rem; padding: 2rem 1.5rem; border-top: 1px solid var(--border); text-align: center; color: var(--dim); font-family: "JetBrains Mono", monospace; font-size: 0.68rem; letter-spacing: 0.06em; }
+    @media (max-width: 640px) { header { padding: 4.2rem 1rem 2rem; } .back-link { left: 1rem; } .card { padding: 1.15rem 1rem; } .title-link { font-size: 0.96rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="back-link" href="../business/">← 返回存档</a>
+    <div class="badge">Business Channel · Edition 0041</div>
+    <h1>出海 AI 洞察</h1>
+    <p class="subtitle">跨境电商 · 可持续发展 · AI 应用实战</p>
+    <div class="meta">2026年6月24日 09:28</div>
+    <div class="intro">AI 代理购物、绿色追溯与零售归因正同时重写出海鞋类电商，环保卖点和转化链路都要先变成机器可执行数据。</div>
+    <div class="tags"><span class="tag">代理购物</span><span class="tag">绿色追溯</span><span class="tag">零售归因</span><span class="tag">智能导购</span><span class="tag">供应链AI</span></div>
+  </header>
+  <main>
+    <div class="section-title"><h2>Top 10 Signals</h2></div>
+    <section class="grid">
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.01</span>
+          <span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.barrons.com/articles/amazon-stock-prime-day-ai-1dc4e81a" target="_blank" rel="noreferrer">Prime Day 成为 Amazon Alexa for Shopping 的首场大考，AI 导购开始直接影响大促转化</a></div>
+        </div>
+        <div class="source">Barron&#x27;s · 2026-06-23</div>
+        <div class="comment">【是什么】Amazon 在 2026 年 Prime Day 前把 Alexa for Shopping 推到核心购物链路，支持加购、追踪价格和个性化找货。<br /><strong>【对我们意味着什么】</strong>出海鞋类团队要把折扣、库存、尺码和材质卖点做成机器可调用字段，大促流量会越来越先经过 AI 导购层。</div>
+        <div class="footer"><a class="button" href="https://www.barrons.com/articles/amazon-stock-prime-day-ai-1dc4e81a" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.02</span>
+          <span class="cat">数据分析</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.techradar.com/pro/when-ai-agents-start-shopping-for-us-retails-identity-stack-needs-a-rewrite" target="_blank" rel="noreferrer">TechRadar：AI 代理开始替消费者下单，零售的身份验证与授权栈必须重写</a></div>
+        </div>
+        <div class="source">TechRadar · 2026-06-22</div>
+        <div class="comment">【是什么】Signifyd 观点文指出，30% 到 45% 的美国消费者已用生成式 AI 做商品研究，零售系统必须能分辨恶意自动化、授权代理和人机协同流量。<br /><strong>【对我们意味着什么】</strong>对鞋类 PM 和分析师来说，商品、运费、退货和支付限制要先结构化，否则 AI 下单会先撞上风控和权限边界。</div>
+        <div class="footer"><a class="button" href="https://www.techradar.com/pro/when-ai-agents-start-shopping-for-us-retails-identity-stack-needs-a-rewrite" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.03</span>
+          <span class="cat">数据分析</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.techradar.com/pro/how-ai-fraud-rings-are-taking-on-retail" target="_blank" rel="noreferrer">TechRadar：AI 欺诈团伙正把浏览、下单、退款和伪造凭证整成一条零售自动化攻击链</a></div>
+        </div>
+        <div class="source">TechRadar · 2026-06-23</div>
+        <div class="comment">【是什么】最新案例显示，生成式 AI 已被用于合成身份、伪造退货图片和自动化退款攻击，欺诈开始模拟真实购物旅程。<br /><strong>【对我们意味着什么】</strong>鞋类电商的风控模型不能只盯支付节点，退货、换码和售后环节也要纳入实时风险评分与异常归因。</div>
+        <div class="footer"><a class="button" href="https://www.techradar.com/pro/how-ai-fraud-rings-are-taking-on-retail" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.04</span>
+          <span class="cat">可持续合规</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.vogue.com/article/will-ai-make-fashion-more-or-less-sustainable" target="_blank" rel="noreferrer">Vogue Business：H&amp;M、Kering 与 Cotopaxi 正把 AI 用进环保报告、需求预测与材料决策，但也开始追踪 AI 自身足迹</a></div>
+        </div>
+        <div class="source">Vogue Business · 2026-04-07</div>
+        <div class="comment">【是什么】品牌正在用 AI 自动化环境披露、需求预测、库存优化和 eco-design，同时开始评估模型推理带来的能耗、水耗与排放。<br /><strong>【对我们意味着什么】</strong>环保鞋类团队不能只讲 AI 提效，还要把模型使用量纳入 ESG 盘点，否则绿色叙事会在合规审计里失真。</div>
+        <div class="footer"><a class="button" href="https://www.vogue.com/article/will-ai-make-fashion-more-or-less-sustainable" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.05</span>
+          <span class="cat">可持续合规</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.vogue.com/article/lvmh-announces-the-winners-of-its-2026-innovation-awards" target="_blank" rel="noreferrer">LVMH 2026 创新奖把 Fairly Made、Bluefish AI 和 Synthesia 推到台前，追溯、GEO 与培训一起进入品牌 AI 主线</a></div>
+        </div>
+        <div class="source">Vogue Business · 2026-06-17</div>
+        <div class="comment">【是什么】LVMH 在 Vivatech 2026 同时表彰了原料追溯平台 Fairly Made、AI 搜索可见度工具 Bluefish AI 和多语种视频生成工具 Synthesia。<br /><strong>【对我们意味着什么】</strong>这说明环保鞋类品牌的 AI 投入不能只押注导购，还要同步布局供应链透明度、AI 搜索曝光和全球团队内容生产。</div>
+        <div class="footer"><a class="button" href="https://www.vogue.com/article/lvmh-announces-the-winners-of-its-2026-innovation-awards" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.06</span>
+          <span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.axios.com/2026/06/03/exclusive-spacexai-and-gopuff-help-you-shop-for-more-stuff" target="_blank" rel="noreferrer">Gopuff 上线会记忆历史订单的 AI 助手 Go，补货型购物开始从搜索商品转向描述需求</a></div>
+        </div>
+        <div class="source">Axios · 2026-06-03</div>
+        <div class="comment">【是什么】Gopuff 联合 xAI 推出购物助手 Go，用户通过语音或文本描述场景后，系统会结合历史订单自动补齐购物车。<br /><strong>【对我们意味着什么】</strong>鞋垫、袜类、护理喷雾这类复购配件很适合先测试 AI 补货，能更直接拉动复购率与连带购。</div>
+        <div class="footer"><a class="button" href="https://www.axios.com/2026/06/03/exclusive-spacexai-and-gopuff-help-you-shop-for-more-stuff" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.07</span>
+          <span class="cat">消费洞察</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.marketwatch.com/story/retailers-keep-tinkering-with-their-ai-shopping-assistants-in-search-of-better-service-d17b01b0" target="_blank" rel="noreferrer">MarketWatch：零售商还在反复调试 AI 购物助手，Rufus 与 Alexa+ 合并后进入更重的个性化阶段</a></div>
+        </div>
+        <div class="source">MarketWatch · 2026-05-13</div>
+        <div class="comment">【是什么】Amazon 把 Rufus 与 Alexa+ 合并成 Alexa for Shopping，意图把商品知识、用户偏好和跨触点服务整到一套 AI 购物助手里。<br /><strong>【对我们意味着什么】</strong>这提醒我们，AI 导购的胜负不只在模型回答质量，更在用户历史、商品属性和服务链路有没有被统一成一份可用画像。</div>
+        <div class="footer"><a class="button" href="https://www.marketwatch.com/story/retailers-keep-tinkering-with-their-ai-shopping-assistants-in-search-of-better-service-d17b01b0" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.08</span>
+          <span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.36kr.com/p/3804380953255682" target="_blank" rel="noreferrer">36氪：2026 年 618 把 AI 导购、虚拟试穿和优惠计算一起前置，平台在争夺下单前第一句话</a></div>
+        </div>
+        <div class="source">36氪 · 2026-05-11</div>
+        <div class="comment">【是什么】36氪梳理 2026 年 618 发现，AI 导购、虚拟试穿、自动算优惠和站内闭环交易正被平台同步前置，AI 已从插件升级为交易入口。<br /><strong>【对我们意味着什么】</strong>如果未来要吃到中文生态回流，鞋类商品文案里的尺码、脚感和材质信息要先拆成模型能理解的标签和规则。</div>
+        <div class="footer"><a class="button" href="https://www.36kr.com/p/3804380953255682" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.09</span>
+          <span class="cat">营销工具</span>
+          <div class="title-wrap"><a class="title-link" href="https://arxiv.org/abs/2606.10907" target="_blank" rel="noreferrer">最新研究显示：当大模型主动推荐品牌后，用户会显著增加品牌搜索、官网访问和零售页访问</a></div>
+        </div>
+        <div class="source">arXiv · 2026-06-09</div>
+        <div class="comment">【是什么】6 月 9 日发布的研究发现，AI 助手推荐品牌后，用户的品牌搜索、官网访问和零售页访问都会显著上升。<br /><strong>【对我们意味着什么】</strong>传统 last-click 会低估 AI 暴露的上游价值，分析师需要新增“模型推荐后站外行为”与“品牌被提及后回流”指标。</div>
+        <div class="footer"><a class="button" href="https://arxiv.org/abs/2606.10907" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.10</span>
+          <span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://arxiv.org/abs/2604.05987" target="_blank" rel="noreferrer">Flowr 提出零售供应链 Agentic AI 框架，把预测、采购、补货和供应商协同串成端到端自动化</a></div>
+        </div>
+        <div class="source">arXiv · 2026-04-07</div>
+        <div class="comment">【是什么】Flowr 论文把零售供应链里的需求预测、采购协调、库存补货和门店执行抽象为可由代理协作完成的连续工作流。<br /><strong>【对我们意味着什么】</strong>对多市场出海鞋类来说，这比单点预测更有启发：真正的效率提升来自把补货、仓配和供应商反馈接成一个可执行闭环。</div>
+        <div class="footer"><a class="button" href="https://arxiv.org/abs/2604.05987" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+    </section>
+  </main>
+  <footer>Edition 0041 · 出海 AI 洞察</footer>
+</body>
+</html>
