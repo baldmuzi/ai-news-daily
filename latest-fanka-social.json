@@ -1,32 +1,32 @@
 {
-  "edition": "0010",
-  "date": "2026年6月24日 09:31",
-  "intro": "近72小时公开可核验的社媒与品牌页线索仍然偏少，但“去精致化穿搭”、长时间舒适体感、门店课程联动和尺码路由式内容结构同时在抬头，Fanka 适合把真实穿着反馈与场景入口拍得更直给。",
+  "edition": "0011",
+  "date": "2026年6月25日 09:11",
+  "intro": "近 72 小时可核验社媒素材依旧偏少，但女性运动内容里“先讲体感、再讲功能”“同色轻层次”“按当天状态分流”的结构更清晰了；Fanka 这期更适合学表达方式，而不是硬追单一训练热点。",
   "tags": [
-    "去精致穿搭",
-    "无压迫感",
-    "门店课程链",
-    "尺码路由",
-    "夏日体感"
+    "久穿不勒",
+    "同色层次",
+    "亮色点缀",
+    "状态分流",
+    "评论路由"
   ],
   "top3": [
     {
-      "title": "“Gym Goblin” 正在替代精致版 Pilates Princess",
-      "comment": "健身穿搭从精致成套转向更松弛的复古混穿，真实感比整齐更重要。",
-      "url": "https://www.theguardian.com/fashion/2026/jun/23/how-just-got-out-of-bed-look-took-over-fitness-pilates"
+      "title": "“不勒皮肤”成了今天 bra 内容最直白的点击入口",
+      "comment": "Bra 内容先讲不勒不磨，比抽象支撑更容易拿到停留和评论。",
+      "url": "https://www.realsimple.com/amazon-comfy-bra-deals-june-2026-11970237"
     },
     {
-      "title": "“不 rub、不 tug、不 pinch” 已经成了 bra 文案的第一入口",
-      "comment": "Bra 内容标题已经先讲不磨不夹，具体体感比抽象支撑更好转化。",
-      "url": "https://www.realsimple.com/bali-illusion-seamless-underwire-bra-amazon-deal-june-2026-11977438"
+      "title": "夏季运动风正在往“单色系 + 轻层次”收口",
+      "comment": "同色轻层次比只拍成套更适合夏天，也更适合压缩服内容改写。",
+      "url": "https://www.realsimple.com/stylist-approved-2026-fashion-trends-11975444"
     },
     {
-      "title": "高腰稳定感有了，但口袋和前中缝仍然会立刻被放大",
-      "comment": "裤装内容必须第一时间说清口袋、前缝和腰头稳定，不然用户马上追问。",
-      "url": "https://www.prevention.com/fitness/workout-clothes-gear/a71604511/lululemon-nulu-flares-review/"
+      "title": "Green apple 正在变成今夏运动穿搭里的提气色",
+      "comment": "green apple 适合做局部亮色点缀，让功能单品更新鲜。",
+      "url": "https://www.whowhatwear.com/fashion/summer/green-apple-color-trend"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0010.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0011.html",
   "report_type": "fanka-social-trends",
   "source_window": "趋势近72小时；账号结构近7天；用户痛点近30天"
 }
