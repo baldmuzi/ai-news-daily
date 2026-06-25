@@ -1,27 +1,27 @@
 {
-  "edition": "0041",
-  "date": "2026年6月24日 09:28",
-  "intro": "AI 代理购物、绿色追溯与零售归因正同时重写出海鞋类电商，环保卖点和转化链路都要先变成机器可执行数据。",
+  "edition": "0042",
+  "date": "2026年6月25日 09:06",
+  "intro": "AI导购、代理下单与绿色追溯正同步改写出海鞋类电商，商品数据、环保合规和营销归因都要先变成机器可执行资产。",
   "tags": [
     "代理购物",
     "绿色追溯",
-    "零售归因",
-    "智能导购",
-    "供应链AI"
+    "零售风控",
+    "导购AI",
+    "归因升级"
   ],
   "top3": [
     {
-      "title": "Prime Day 成为 Amazon Alexa for Shopping 的首场大考，AI 导购开始直接影响大促转化",
-      "comment": "Alexa 导购进入大促实战，商品字段要先适配 AI 结账链路。"
+      "title": "TechRadar：AI 代理开始替消费者下单，零售身份验证与授权栈必须重写",
+      "comment": "AI 下单进入风控核心，商品与授权字段要先机器可读。"
     },
     {
-      "title": "TechRadar：AI 代理开始替消费者下单，零售的身份验证与授权栈必须重写",
-      "comment": "AI 下单会冲击风控与归因，先补机器可读商品和授权字段。"
+      "title": "LVMH 2026 创新奖把 Fairly Made、Bluefish AI 和 Synthesia 一起推上主舞台",
+      "comment": "环保追溯、GEO 和培训已并线，AI 投入不能再拆开算。"
     },
     {
-      "title": "LVMH 2026 创新奖把 Fairly Made、Bluefish AI 和 Synthesia 推到台前，追溯、GEO 与培训一起进入品牌 AI 主线",
-      "comment": "环保与 AI 不再分开投入，追溯、GEO 和培训要一体设计。"
+      "title": "最新研究：AI 助手推荐品牌后，品牌搜索、官网访问和零售页访问都会显著上升",
+      "comment": "AI 提及会带来站外回流，归因模型要补助手曝光层。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0041.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0042.html"
 }
