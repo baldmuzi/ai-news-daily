@@ -1,33 +1,33 @@
 {
-  "edition": "0027",
-  "date": "2026年6月25日 09:10",
-  "intro": "本期聚焦 Hyrox 中年竞技、轻重量高次数训练、普拉提女性健康、娇小身材 leggings 和跑者数据化训练，提炼 Fanka 压缩穿搭机会。",
+  "edition": "0028",
+  "date": "2026年6月26日 13:54",
+  "intro": "本期从女性力量、热天户外训练、无器械运动和女性 wellness 对话中，提炼 Fanka 压缩服、夏季穿搭与内容社群机会。",
   "tags": [
-    "混合体能",
-    "轻量力量",
-    "普拉提健康",
-    "娇小版型",
-    "数据训练"
+    "女性力量",
+    "热天训练",
+    "无器械运动",
+    "主动变老",
+    "女性健康"
   ],
   "top3": [
     {
-      "title": "The 2026 Hyrox World Championship: A 41-Year-Old’s Journey at the Gauntlet of Amateur Athletes",
-      "comment": "Hyrox 世界赛把中年业余竞技和混合体能推向更大舞台。"
+      "title": "6 Science-Backed Benefits of Strength Training for Women",
+      "comment": "女性力量训练继续从塑形叙事转向长期健康能力。"
     },
     {
-      "title": "I Switched Heavy Lifting for Lighter, High-Rep Workouts—Here’s Why I Won’t Go Back",
-      "comment": "轻重量高次数训练强调压力期的恢复容量和可持续力量习惯。"
+      "title": "Your Complete Guide to Exercising Safely in the Heat This Summer, According to Experts",
+      "comment": "热天户外训练强调排汗穿搭、补水和降强度策略。"
     },
     {
-      "title": "These Are, Hands Down, the Best Petite Gym Leggings That Money Can Buy According to Our 5ft1 Editors",
-      "comment": "娇小身材 leggings 需求把版型教育推到 activewear 内容前台。"
+      "title": "The 22 Best Bodyweight Exercises to Build Strength, According To Trainers",
+      "comment": "无器械训练适合出差、忙碌日和低门槛内容化。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0027.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0028.html",
   "blog": {
-    "title": "High-Rep Strength Training Outfits for Women: Supportive Layers for Lighter Lifts",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/high-rep-strength-training-outfits-for-women.html",
-    "summary": "由本期轻重量高次数力量训练趋势延展，沉淀为女性轻量力量、压力期训练和压缩穿搭指南。"
+    "title": "Bodyweight Workout Outfits for Women: Compression Layers for No-Gym Strength",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/bodyweight-workout-outfits-for-women.html",
+    "summary": "由本期无器械 bodyweight 训练趋势延展，沉淀为女性居家、旅行和忙碌日压缩穿搭指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
