@@ -1,27 +1,27 @@
 {
-  "edition": "0042",
-  "date": "2026年6月25日 09:06",
-  "intro": "AI导购、代理下单与绿色追溯正同步改写出海鞋类电商，商品数据、环保合规和营销归因都要先变成机器可执行资产。",
+  "edition": "0043",
+  "date": "2026年6月26日 13:53",
+  "intro": "AI代理购物、绿色追溯与隐私归因正在改写出海鞋类电商，商品、环保和营销数据都要先变成机器可执行资产。",
   "tags": [
     "代理购物",
     "绿色追溯",
-    "零售风控",
+    "隐私归因",
     "导购AI",
-    "归因升级"
+    "供应链AI"
   ],
   "top3": [
     {
-      "title": "TechRadar：AI 代理开始替消费者下单，零售身份验证与授权栈必须重写",
-      "comment": "AI 下单进入风控核心，商品与授权字段要先机器可读。"
+      "title": "AP：Visa 把支付网络接进 ChatGPT，AI 代理开始具备“推荐+支付”一体能力",
+      "comment": "AI 从推荐走向支付闭环，商品与风控接口要先标准化。"
     },
     {
-      "title": "LVMH 2026 创新奖把 Fairly Made、Bluefish AI 和 Synthesia 一起推上主舞台",
-      "comment": "环保追溯、GEO 和培训已并线，AI 投入不能再拆开算。"
+      "title": "36氪：618 大战进入 AI 电商贴身肉搏，AI 算优惠、AI 试穿与闭环导购被推到前台",
+      "comment": "中文平台把导购、优惠计算和闭环成交一起前置。"
     },
     {
-      "title": "最新研究：AI 助手推荐品牌后，品牌搜索、官网访问和零售页访问都会显著上升",
-      "comment": "AI 提及会带来站外回流，归因模型要补助手曝光层。"
+      "title": "最新论文提出 IMA：在隐私限制下，把 MMM 与贝叶斯归因拼成可落到活动层的 AI 测量框架",
+      "comment": "隐私时代还能下钻到活动层，营销分析口径可重建。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0042.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0043.html"
 }
