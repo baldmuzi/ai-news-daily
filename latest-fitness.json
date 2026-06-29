@@ -1,33 +1,33 @@
 {
-  "edition": "0028",
-  "date": "2026年6月26日 13:54",
-  "intro": "本期从女性力量、热天户外训练、无器械运动和女性 wellness 对话中，提炼 Fanka 压缩服、夏季穿搭与内容社群机会。",
+  "edition": "0029",
+  "date": "2026年6月29日 09:24",
+  "intro": "本期聚焦全球女性微时长力量、明星核心训练与夏季泳装回潮，提炼 Fanka 压缩穿搭、内容节奏和社媒借势线索。",
   "tags": [
-    "女性力量",
-    "热天训练",
-    "无器械运动",
-    "主动变老",
-    "女性健康"
+    "微时长训练",
+    "核心控制",
+    "泳装回潮",
+    "明星训练",
+    "轻量穿搭"
   ],
   "top3": [
     {
-      "title": "6 Science-Backed Benefits of Strength Training for Women",
-      "comment": "女性力量训练继续从塑形叙事转向长期健康能力。"
+      "title": "These 10-Minute Workouts Are Proof You Don't Need Long Workouts to Get Stronger",
+      "comment": "10 分钟力量训练正被包装成女性更容易坚持的日常节奏。"
     },
     {
-      "title": "Your Complete Guide to Exercising Safely in the Heat This Summer, According to Experts",
-      "comment": "热天户外训练强调排汗穿搭、补水和降强度策略。"
+      "title": "Jodie Comer Shows Strong Core - Her PT Reveals the 100-Rep Ab Challenge He Recommends",
+      "comment": "明星核心挑战继续放大短时高体感训练的传播力。"
     },
     {
-      "title": "The 22 Best Bodyweight Exercises to Build Strength, According To Trainers",
-      "comment": "无器械训练适合出差、忙碌日和低门槛内容化。"
+      "title": "The 2026 Swim Report Has Arrived—Here Are the Trends Defining the Season",
+      "comment": "夏季泳装回潮把运动感身形线条重新带回假日穿搭。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0028.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0029.html",
   "blog": {
-    "title": "Bodyweight Workout Outfits for Women: Compression Layers for No-Gym Strength",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/bodyweight-workout-outfits-for-women.html",
-    "summary": "由本期无器械 bodyweight 训练趋势延展，沉淀为女性居家、旅行和忙碌日压缩穿搭指南。"
+    "title": "10-Minute Strength Workout Outfits for Women: Compression Layers for Busy Days",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/10-minute-strength-workout-outfits-for-women.html",
+    "summary": "由本期 10-minute 力量训练趋势延展，沉淀为女性忙碌日短时训练与压缩穿搭指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
