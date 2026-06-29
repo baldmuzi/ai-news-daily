@@ -1,32 +1,32 @@
 {
-  "edition": "0012",
-  "date": "2026年6月26日 13:54",
-  "intro": "近72小时可核验社媒原生新帖偏少，但训练分流、热天透气表达和轻外穿脚本更清楚了；Fanka 这期更适合学入口设计。",
+  "edition": "0013",
+  "date": "2026年6月29日 09:21",
+  "intro": "近72小时可核验原生社媒仍偏少，但“先分流再卖点”“热天透气细节”“健康老龄化口播”三条内容线更清楚了；Fanka 这期更适合学脚本入口。",
   "tags": [
+    "透气细节",
+    "健康老龄化",
     "训练分流",
-    "热天透气",
-    "灰色leggings",
-    "Track Shorts",
-    "Fabric入口"
+    "尺码痛点",
+    "功能入口"
   ],
   "top3": [
     {
-      "title": "Gymshark 把 Bratz 联名、训练分流和指南内容压进同一屏",
-      "comment": "先按训练场景分流，再讲卖点，比直接卖裤子更高效。",
+      "title": "“不要 uniboob，也别勒肋骨”成了新一轮 bra 点击入口",
+      "comment": "痛点词比抽象舒适更抓人，适合拍 bra 真实体感。",
+      "url": "https://www.realsimple.com/vanity-fair-minimizer-bra-sale-june-2026-12007161"
+    },
+    {
+      "title": "Gymshark 还在用“训练分流先于卖点解释”的首页逻辑",
+      "comment": "先分流再讲卖点，比直接堆 SKU 更好复用。",
       "url": "https://www.gymshark.com/"
     },
     {
-      "title": "热天 bra 内容开始把“透气孔位”讲得比“软不软”更具体",
-      "comment": "热天用户想看的是透气细节，不只是“软和舒服”。",
-      "url": "https://people.com/wireless-bras-and-underwear-deals-amazon-june-2026-12007057"
-    },
-    {
-      "title": "灰色 leggings + jelly flip-flops 成了今夏更轻的 leggings 外穿法",
-      "comment": "灰色 leggings 加轻凉鞋，提供了更夏天的外穿入口。",
-      "url": "https://www.whowhatwear.com/fashion/celebrity-style/leggings-with-jelly-flip-flops-outfit"
+      "title": "69 岁女性健身口播继续放大“可持续变强”叙事",
+      "comment": "健康老龄化叙事适合拓宽 Fanka 的年龄层沟通。",
+      "url": "https://www.womenshealthmag.com/fitness/a71669217/midlife-strength-muscle-60s-bodybuilding-competition-transformation/"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0012.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0013.html",
   "report_type": "fanka-social-trends",
   "source_window": "趋势近72小时；账号结构近7天；用户痛点近30天"
 }
