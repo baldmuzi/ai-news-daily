@@ -1,27 +1,27 @@
 {
-  "edition": "0043",
-  "date": "2026年6月26日 13:53",
-  "intro": "AI代理购物、绿色追溯与隐私归因正在改写出海鞋类电商，商品、环保和营销数据都要先变成机器可执行资产。",
+  "edition": "0044",
+  "date": "2026年6月29日 09:19",
+  "intro": "AI购物代理、绿色追溯与营销测量同步升级，出海鞋类团队要把商品、合规和用户数据都做成可被模型直接调用的资产。",
   "tags": [
     "代理购物",
     "绿色追溯",
-    "隐私归因",
-    "导购AI",
-    "供应链AI"
+    "零售风控",
+    "营销归因",
+    "会话导购"
   ],
   "top3": [
     {
-      "title": "AP：Visa 把支付网络接进 ChatGPT，AI 代理开始具备“推荐+支付”一体能力",
-      "comment": "AI 从推荐走向支付闭环，商品与风控接口要先标准化。"
+      "title": "Axios：e.l.f. 等品牌已组建 Agentic Commerce 专班，抢先重写 AI 可读内容结构",
+      "comment": "商品内容要从 SEO 文案升级为 AI 可调用资产。"
     },
     {
-      "title": "36氪：618 大战进入 AI 电商贴身肉搏，AI 算优惠、AI 试穿与闭环导购被推到前台",
-      "comment": "中文平台把导购、优惠计算和闭环成交一起前置。"
+      "title": "TechRadar：AI 欺诈团伙开始像自动化零售系统一样协同进攻",
+      "comment": "风控口径要覆盖下单、退款和地址变更全链路。"
     },
     {
-      "title": "最新论文提出 IMA：在隐私限制下，把 MMM 与贝叶斯归因拼成可落到活动层的 AI 测量框架",
-      "comment": "隐私时代还能下钻到活动层，营销分析口径可重建。"
+      "title": "Vogue Business：一批 AI 创企把 eco-design、追溯和纺织回收做成时尚 ESG 执行工具",
+      "comment": "环保鞋类可优先把 AI 投向追溯与回收识别。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0043.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0044.html"
 }
