@@ -1,27 +1,27 @@
 {
-  "edition": "0031",
-  "date": "2026年6月29日 09:19",
-  "intro": "本期从会员联营、创作者秀场、50+步行鞋到混种凉鞋切入，提醒 VIVAIA 同步做渠道权益、成熟客群与新审美测试。",
+  "edition": "0032",
+  "date": "2026年6月30日 09:11",
+  "intro": "本期从 Shein 化学品诉讼、Prime Day 增长、社交优先营销到黑色凉鞋与水鞋联名切入，提示 VIVAIA 同步运营合规、渠道和夏季脚感。",
   "tags": [
-    "会员联营",
-    "创作者秀场",
-    "50+步行",
-    "混种凉鞋",
-    "紫罗兰鞋色"
+    "PFAS合规",
+    "大促增长",
+    "社交优先",
+    "供应链韧性",
+    "黑色凉鞋"
   ],
   "top3": [
     {
-      "title": "Vogue 6 月 27 日拆解 Reformation IPO，证明“可持续 + 高毛利 DTC”仍能讲资本故事",
-      "comment": "可持续与盈利可被一起经营和讲述。"
+      "title": "WWD 6 月 29 日报道 Shein 在德国遭遇有毒化学品诉讼，PFAS 与合规可信度继续升温",
+      "comment": "PFAS 与材料安全正在变成欧洲合规竞争。"
     },
     {
-      "title": "Glossy 6 月 26 日称 Victoria’s Secret 为 2026 大秀押注创作者，入场券从名人转向“头部 VS creator”",
-      "comment": "创作者席位正在替代部分传统大秀声量入口。"
+      "title": "Retail Dive 6 月 29 日称 Prime Day 推动美国线上销售增长 9.3%，鞋服促销仍有强转化窗口",
+      "comment": "Prime Day 增长证明大促仍能集中释放需求。"
     },
     {
-      "title": "Footwear News 6 月 28 日预告 Hoka x Beams，性能跑鞋开始主动对接生活方式买手系统",
-      "comment": "舒适鞋也在抢时装发现感与买手背书。"
+      "title": "Glossy 6 月 29 日拆解 Unilever World Cup 合作，品牌营销进入社交优先的 beta 测试模式",
+      "comment": "社交优先内容应先定义生活事件再导流商品。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0031.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0032.html"
 }
