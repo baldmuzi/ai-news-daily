@@ -1,27 +1,27 @@
 {
-  "edition": "0044",
-  "date": "2026年6月29日 09:19",
-  "intro": "AI购物代理、绿色追溯与营销测量同步升级，出海鞋类团队要把商品、合规和用户数据都做成可被模型直接调用的资产。",
+  "edition": "0045",
+  "date": "2026年6月30日 09:14",
+  "intro": "AI 购物代理与绿色追溯正重塑出海鞋类电商，商品语义、风控和营销测量都要先做成机器可执行资产。",
   "tags": [
     "代理购物",
     "绿色追溯",
-    "零售风控",
-    "营销归因",
-    "会话导购"
+    "会话导购",
+    "风控识别",
+    "归因测量"
   ],
   "top3": [
     {
-      "title": "Axios：e.l.f. 等品牌已组建 Agentic Commerce 专班，抢先重写 AI 可读内容结构",
-      "comment": "商品内容要从 SEO 文案升级为 AI 可调用资产。"
+      "title": "Axios：Gopuff 上线 Go 助手，让 AI 直接按历史偏好帮用户装满购物车",
+      "comment": "AI 代购开始直接装车，商品结构化将决定被买到的概率。"
     },
     {
-      "title": "TechRadar：AI 欺诈团伙开始像自动化零售系统一样协同进攻",
-      "comment": "风控口径要覆盖下单、退款和地址变更全链路。"
+      "title": "Axios：e.l.f. 等品牌已组建 Agentic Commerce 专班，重写商品内容给 AI 读",
+      "comment": "品牌已为 AI 购物重写商品层，鞋类内容也要机器可读。"
     },
     {
-      "title": "Vogue Business：一批 AI 创企把 eco-design、追溯和纺织回收做成时尚 ESG 执行工具",
-      "comment": "环保鞋类可优先把 AI 投向追溯与回收识别。"
+      "title": "Vogue Business：AI 创企开始把 eco-design、追溯与回收识别变成时尚 ESG 工具链",
+      "comment": "ESG 数据正从报告材料转向 AI 驱动的追溯执行工具。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0044.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0045.html"
 }
