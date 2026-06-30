@@ -1,32 +1,32 @@
 {
-  "edition": "0013",
-  "date": "2026年6月29日 09:21",
-  "intro": "近72小时可核验原生社媒仍偏少，但“先分流再卖点”“热天透气细节”“健康老龄化口播”三条内容线更清楚了；Fanka 这期更适合学脚本入口。",
+  "edition": "0014",
+  "date": "2026年6月30日 09:17",
+  "intro": "近72小时原生社媒仍偏少，但女性增肌、假期混搭和状态分流三条内容线更清楚了。",
   "tags": [
-    "透气细节",
-    "健康老龄化",
-    "训练分流",
-    "尺码痛点",
-    "功能入口"
+    "女性增肌",
+    "假期混搭",
+    "状态分流",
+    "腰头稳定",
+    "bra体感"
   ],
   "top3": [
     {
-      "title": "“不要 uniboob，也别勒肋骨”成了新一轮 bra 点击入口",
-      "comment": "痛点词比抽象舒适更抓人，适合拍 bra 真实体感。",
-      "url": "https://www.realsimple.com/vanity-fair-minimizer-bra-sale-june-2026-12007161"
+      "title": "“肌肉感”正在替代单纯“瘦感”成为女性健身新叙事",
+      "comment": "女性健身话术正从显瘦转向能发力与更稳定。",
+      "url": "https://economictimes.indiatimes.com/magazines/panache/for-women-muscle-is-the-new-fitness-flex-heres-why-this-strength-training-trend-is-taking-over/articleshow/122143346.cms"
     },
     {
-      "title": "Gymshark 还在用“训练分流先于卖点解释”的首页逻辑",
-      "comment": "先分流再讲卖点，比直接堆 SKU 更好复用。",
-      "url": "https://www.gymshark.com/"
+      "title": "Google 建议词直接把“勒肋骨、喘不过气”写成运动内衣检索入口",
+      "comment": "用户先搜勒感和呼吸问题，痛点表达比泛舒适更抓人。",
+      "url": "https://suggestqueries.google.com/complete/search?client=firefox&q=sports%20bra%20too%20tight"
     },
     {
-      "title": "69 岁女性健身口播继续放大“可持续变强”叙事",
-      "comment": "健康老龄化叙事适合拓宽 Fanka 的年龄层沟通。",
-      "url": "https://www.womenshealthmag.com/fitness/a71669217/midlife-strength-muscle-60s-bodybuilding-competition-transformation/"
+      "title": "Alo 继续用 Performance / Recovery / Travel 三段式，而不是直接堆新品",
+      "comment": "先按状态分流再讲单品，适合 Fanka 改脚本入口。",
+      "url": "https://www.aloyoga.com/collections/travel-in-alo"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0013.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0014.html",
   "report_type": "fanka-social-trends",
   "source_window": "趋势近72小时；账号结构近7天；用户痛点近30天"
 }

@@ -8,30 +8,114 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <style>
-    :root { --bg:#080c14; --surface:#0f1724; --surface-2:#121f31; --border:#23324a; --accent:#f43f5e; --signal:#38bdf8; --text:#e8edf6; --muted:#94a3b8; }
+    :root { --bg:#080c14; --surface:#0f1724; --border:#23324a; --accent:#f43f5e; --signal:#38bdf8; --text:#e8edf6; --muted:#94a3b8; }
     * { box-sizing:border-box; margin:0; padding:0; }
     body { min-height:100vh; background:radial-gradient(circle at top,rgba(244,63,94,.16),transparent 28rem),radial-gradient(circle at 80% 0,rgba(56,189,248,.12),transparent 24rem),var(--bg); color:var(--text); font-family:'Noto Serif SC',serif; }
+    .wrap { width:min(980px,calc(100vw - 28px)); margin:0 auto; padding:36px 0 72px; }
     a { color:inherit; text-decoration:none; }
-    .wrap { width:min(980px,calc(100vw - 28px)); margin:0 auto; }
-    header { padding:34px 0 28px; border-bottom:1px solid var(--border); }
-    .back-link { display:inline-block; margin-bottom:18px; color:var(--muted); font:12px 'JetBrains Mono',monospace; }
-    h1 { font-size:clamp(2.2rem,5vw,4rem); line-height:1.08; margin-bottom:10px; }
-    .subtitle { color:var(--muted); font:14px 'JetBrains Mono',monospace; max-width:760px; }
-    main { padding:28px 0 72px; }
-    .list { display:grid; gap:16px; }
-    .entry { display:flex; justify-content:space-between; align-items:center; gap:20px; border:1px solid var(--border); border-radius:16px; background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01)),var(--surface); padding:22px; }
-    .entry:hover { border-color:rgba(244,63,94,.45); transform:translateY(-1px); transition:.18s ease; }
-    .entry h2 { font-size:24px; line-height:1.35; margin-top:8px; }
-    .mono { color:var(--signal); font:12px 'JetBrains Mono',monospace; }
-    .entry-tail { display:flex; flex-direction:column; align-items:flex-end; gap:10px; color:var(--muted); font:12px 'JetBrains Mono',monospace; min-width:120px; }
-    .latest { border-color:rgba(244,63,94,.45); background:linear-gradient(180deg,rgba(244,63,94,.12),rgba(56,189,248,.06)),var(--surface-2); }
-    .latest-badge { display:inline-flex; align-items:center; border:1px solid rgba(244,63,94,.35); background:rgba(244,63,94,.08); color:#fecdd3; border-radius:999px; padding:5px 10px; }
-    @media (max-width:720px) { .wrap { width:min(100vw - 20px,980px); } .entry { display:block; } .entry-tail { align-items:flex-start; margin-top:14px; } .entry h2 { font-size:20px; } }
+    .back-link { display:inline-block; margin-bottom:20px; color:var(--muted); font:12px 'JetBrains Mono',monospace; }
+    h1 { font-size:clamp(2.2rem,5vw,4rem); line-height:1.05; margin-bottom:10px; }
+    .subtitle { color:var(--muted); font:14px 'JetBrains Mono',monospace; margin-bottom:24px; }
+    .archive-list { display:grid; gap:14px; }
+    .archive-card { display:flex; justify-content:space-between; align-items:center; gap:18px; border:1px solid var(--border); border-radius:16px; padding:20px 22px; background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01)),var(--surface); }
+    .archive-card.latest { border-color:rgba(244,63,94,.45); box-shadow:0 0 0 1px rgba(244,63,94,.18) inset; }
+    .archive-card:hover { border-color:rgba(56,189,248,.45); }
+    .archive-meta,.archive-tail { color:var(--muted); font:12px 'JetBrains Mono',monospace; }
+    .archive-card h2 { margin-top:8px; font-size:24px; }
+    .badge { display:inline-block; margin-left:8px; border:1px solid rgba(244,63,94,.35); background:rgba(244,63,94,.1); color:#fecdd3; border-radius:999px; padding:4px 8px; }
+    @media (max-width:720px) { .archive-card { display:block; } .archive-tail { margin-top:12px; } }
   </style>
 </head>
 <body>
-  <header><div class="wrap"><a class="back-link" href="../">← 返回首页</a><h1>Fanka 社交趋势拆解 · 往期存档</h1><p class="subtitle">按期号倒序展示最近 20 期；最新一期已高亮，风格与日报一致，便于运营团队快速回看素材演进。</p></div></header>
-  <main><div class="wrap"><div class="list">      <a class="entry latest" href="./edition-0013.html"><div><div class="mono">EDITION 0013 · 2026年6月29日</div><h2>Fanka 社交趋势拆解 · 第 0013 期</h2></div><div class="entry-tail"><span class="latest-badge">LATEST</span><span>打开 →</span></div></a>      <a class="entry" href="./edition-0012.html"><div><div class="mono">EDITION 0012 · 2026年6月26日</div><h2>Fanka 社交趋势拆解 · 第 0012 期</h2></div><div class="entry-tail"><span>打开 →</span></div></a>      <a class="entry" href="./edition-0011.html"><div><div class="mono">EDITION 0011 · 2026年6月25日</div><h2>Fanka 社交趋势拆解 · 第 0011 期</h2></div><div class="entry-tail"><span>打开 →</span></div></a>      <a class="entry" href="./edition-0010.html"><div><div class="mono">EDITION 0010 · 2026年6月24日</div><h2>Fanka 社交趋势拆解 · 第 0010 期</h2></div><div class="entry-tail"><span>打开 →</span></div></a>      <a class="entry" href="./edition-0009.html"><div><div class="mono">EDITION 0009 · 2026年6月23日</div><h2>Fanka 社交趋势拆解 · 第 0009 期</h2></div><div class="entry-tail"><span>打开 →</span></div></a>      <a class="entry" href="./edition-0008.html"><div><div class="mono">EDITION 0008 · 2026年6月22日</div><h2>Fanka 社交趋势拆解 · 第 0008 期</h2></div><div class="entry-tail"><span>打开 →</span></div></a>      <a class="entry" href="./edition-0007.html"><div><div class="mono">EDITION 0007 · 2026年6月19日</div><h2>Fanka 社交趋势拆解 · 第 0007 期</h2></div><div class="entry-tail"><span>打开 →</span></div></a>      <a class="entry" href="./edition-0006.html"><div><div class="mono">EDITION 0006 · 2026年6月18日</div><h2>Fanka 社交趋势拆解 · 第 0006 期</h2></div><div class="entry-tail"><span>打开 →</span></div></a>      <a class="entry" href="./edition-0005.html"><div><div class="mono">EDITION 0005 · 2026年6月17日</div><h2>Fanka 社交趋势拆解 · 第 0005 期</h2></div><div class="entry-tail"><span>打开 →</span></div></a>      <a class="entry" href="./edition-0004.html"><div><div class="mono">EDITION 0004 · 2026年6月16日</div><h2>Fanka 社交趋势拆解 · 第 0004 期</h2></div><div class="entry-tail"><span>打开 →</span></div></a>      <a class="entry" href="./edition-0003.html"><div><div class="mono">EDITION 0003 · 2026年6月15日</div><h2>Fanka 社交趋势拆解 · 第 0003 期</h2></div><div class="entry-tail"><span>打开 →</span></div></a>      <a class="entry" href="./edition-0002.html"><div><div class="mono">EDITION 0002 · 2026年6月12日</div><h2>Fanka 社交趋势拆解 · 第 0002 期</h2></div><div class="entry-tail"><span>打开 →</span></div></a>      <a class="entry" href="./edition-0001.html"><div><div class="mono">EDITION 0001 · 2026年6月11日</div><h2>Fanka 社交趋势拆解 · 第 0001 期</h2></div><div class="entry-tail"><span>打开 →</span></div></a>
-    </div></div></main>
+  <div class="wrap">
+    <a class="back-link" href="../">← 返回首页</a>
+    <h1>Fanka 社交趋势拆解 · 往期存档</h1>
+    <p class="subtitle">Social Trend &amp; Creator Playbook Archive · Latest 20 Editions</p>
+    <div class="archive-list"><a class="archive-card latest" href="./edition-0014.html">
+      <div>
+        <div class="archive-meta">Edition 0014 · 2026年6月30日</div>
+        <h2>Fanka 社交趋势拆解</h2>
+      </div>
+      <div class="archive-tail">查看日报 <span class="badge">最新</span></div>
+    </a><a class="archive-card" href="./edition-0013.html">
+      <div>
+        <div class="archive-meta">Edition 0013 · 2026年6月29日</div>
+        <h2>Fanka 社交趋势拆解</h2>
+      </div>
+      <div class="archive-tail">查看日报 </div>
+    </a><a class="archive-card" href="./edition-0012.html">
+      <div>
+        <div class="archive-meta">Edition 0012 · 2026年6月26日</div>
+        <h2>Fanka 社交趋势拆解</h2>
+      </div>
+      <div class="archive-tail">查看日报 </div>
+    </a><a class="archive-card" href="./edition-0011.html">
+      <div>
+        <div class="archive-meta">Edition 0011 · 2026年6月25日</div>
+        <h2>Fanka 社交趋势拆解</h2>
+      </div>
+      <div class="archive-tail">查看日报 </div>
+    </a><a class="archive-card" href="./edition-0010.html">
+      <div>
+        <div class="archive-meta">Edition 0010 · 2026年6月24日</div>
+        <h2>Fanka 社交趋势拆解</h2>
+      </div>
+      <div class="archive-tail">查看日报 </div>
+    </a><a class="archive-card" href="./edition-0009.html">
+      <div>
+        <div class="archive-meta">Edition 0009 · 2026年6月23日</div>
+        <h2>Fanka 社交趋势拆解</h2>
+      </div>
+      <div class="archive-tail">查看日报 </div>
+    </a><a class="archive-card" href="./edition-0008.html">
+      <div>
+        <div class="archive-meta">Edition 0008 · 2026年6月22日</div>
+        <h2>Fanka 社交趋势拆解</h2>
+      </div>
+      <div class="archive-tail">查看日报 </div>
+    </a><a class="archive-card" href="./edition-0007.html">
+      <div>
+        <div class="archive-meta">Edition 0007 · 2026年6月19日</div>
+        <h2>Fanka 社交趋势拆解</h2>
+      </div>
+      <div class="archive-tail">查看日报 </div>
+    </a><a class="archive-card" href="./edition-0006.html">
+      <div>
+        <div class="archive-meta">Edition 0006 · 2026年6月18日</div>
+        <h2>Fanka 社交趋势拆解</h2>
+      </div>
+      <div class="archive-tail">查看日报 </div>
+    </a><a class="archive-card" href="./edition-0005.html">
+      <div>
+        <div class="archive-meta">Edition 0005 · 2026年6月17日</div>
+        <h2>Fanka 社交趋势拆解</h2>
+      </div>
+      <div class="archive-tail">查看日报 </div>
+    </a><a class="archive-card" href="./edition-0004.html">
+      <div>
+        <div class="archive-meta">Edition 0004 · 2026年6月16日</div>
+        <h2>Fanka 社交趋势拆解</h2>
+      </div>
+      <div class="archive-tail">查看日报 </div>
+    </a><a class="archive-card" href="./edition-0003.html">
+      <div>
+        <div class="archive-meta">Edition 0003 · 日期缺失</div>
+        <h2>Fanka 社交趋势拆解</h2>
+      </div>
+      <div class="archive-tail">查看日报 </div>
+    </a><a class="archive-card" href="./edition-0002.html">
+      <div>
+        <div class="archive-meta">Edition 0002 · 日期缺失</div>
+        <h2>Fanka 社交趋势拆解</h2>
+      </div>
+      <div class="archive-tail">查看日报 </div>
+    </a><a class="archive-card" href="./edition-0001.html">
+      <div>
+        <div class="archive-meta">Edition 0001 · 日期缺失</div>
+        <h2>Fanka 社交趋势拆解</h2>
+      </div>
+      <div class="archive-tail">查看日报 </div>
+    </a></div>
+  </div>
 </body>
 </html>
