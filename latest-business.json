@@ -1,27 +1,27 @@
 {
-  "edition": "0045",
-  "date": "2026年6月30日 09:14",
-  "intro": "AI 购物代理与绿色追溯正重塑出海鞋类电商，商品语义、风控和营销测量都要先做成机器可执行资产。",
+  "edition": "0046",
+  "date": "2026年7月1日 09:27",
+  "intro": "AI 购物代理与绿色追溯继续外溢，出海鞋类要把商品、信任和环保数据都做成机器可执行资产。",
   "tags": [
     "代理购物",
     "绿色追溯",
-    "会话导购",
-    "风控识别",
-    "归因测量"
+    "机器信任",
+    "零售数据",
+    "会话导购"
   ],
   "top3": [
     {
-      "title": "Axios：Gopuff 上线 Go 助手，让 AI 直接按历史偏好帮用户装满购物车",
-      "comment": "AI 代购开始直接装车，商品结构化将决定被买到的概率。"
+      "title": "AP：Google 联合 Walmart、Shopify、Wayfair，把 Gemini 变成可直接下单的购物入口",
+      "comment": "AI 购物入口外移到聊天界面，商品结构化能力决定转化。"
     },
     {
-      "title": "Axios：e.l.f. 等品牌已组建 Agentic Commerce 专班，重写商品内容给 AI 读",
-      "comment": "品牌已为 AI 购物重写商品层，鞋类内容也要机器可读。"
+      "title": "Vogue Business：AI 创企把 eco-design、追溯与回收识别做成时尚 ESG 工具链",
+      "comment": "环保数据正从披露材料变成 AI 驱动的执行链路。"
     },
     {
-      "title": "Vogue Business：AI 创企开始把 eco-design、追溯与回收识别变成时尚 ESG 工具链",
-      "comment": "ESG 数据正从报告材料转向 AI 驱动的追溯执行工具。"
+      "title": "TechRadar：AI 代理流量已成网站分析盲区，电商和旅游站最先中招",
+      "comment": "AI 代理流量若不单列，归因和风控都会失真。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0045.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0046.html"
 }
