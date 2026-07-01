@@ -1,33 +1,33 @@
 {
-  "edition": "0029",
-  "date": "2026年6月29日 09:24",
-  "intro": "本期聚焦全球女性微时长力量、明星核心训练与夏季泳装回潮，提炼 Fanka 压缩穿搭、内容节奏和社媒借势线索。",
+  "edition": "0030",
+  "date": "2026年7月1日 09:17",
+  "intro": "本期从全球女性力量训练、夏季露肩穿搭与 #GymTok 身体观念出发，提炼 Fanka 压缩服和运动穿搭的内容机会。",
   "tags": [
-    "微时长训练",
-    "核心控制",
-    "泳装回潮",
-    "明星训练",
-    "轻量穿搭"
+    "肩背线条",
+    "短组力量",
+    "身体友好",
+    "夏季露肩",
+    "社媒健身"
   ],
   "top3": [
     {
-      "title": "These 10-Minute Workouts Are Proof You Don't Need Long Workouts to Get Stronger",
-      "comment": "10 分钟力量训练正被包装成女性更容易坚持的日常节奏。"
+      "title": "I Tried Hailey Bieber's PT's 3-Move Glute Workout For A Week, And I'm Still Sore",
+      "comment": "名人训练叙事从普拉提单点转向短组力量和臀腿塑形。"
     },
     {
-      "title": "Jodie Comer Shows Strong Core - Her PT Reveals the 100-Rep Ab Challenge He Recommends",
-      "comment": "明星核心挑战继续放大短时高体感训练的传播力。"
+      "title": "Toned shoulders and arms make strapless summer dressing a fitness-fashion signal",
+      "comment": "露肩夏装回潮让肩背线条成为 fitness-fashion 信号。"
     },
     {
-      "title": "The 2026 Swim Report Has Arrived—Here Are the Trends Defining the Season",
-      "comment": "夏季泳装回潮把运动感身形线条重新带回假日穿搭。"
+      "title": "Muscle Gain or Body Strain? Analyzing #GymTok's Impacts on Self-Esteem and Body Image Among Young Adults",
+      "comment": "#GymTok 新研究提醒健身内容要避免身体焦虑表达。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0029.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0030.html",
   "blog": {
-    "title": "10-Minute Strength Workout Outfits for Women: Compression Layers for Busy Days",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/10-minute-strength-workout-outfits-for-women.html",
-    "summary": "由本期 10-minute 力量训练趋势延展，沉淀为女性忙碌日短时训练与压缩穿搭指南。"
+    "title": "Upper-Body Workout Outfits for Women: Supportive Layers for Shoulder Days",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/upper-body-workout-outfits-for-women.html",
+    "summary": "由本期夏季肩背线条与上肢训练趋势延展，沉淀为女性肩背训练、运动内衣与压缩穿搭指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
