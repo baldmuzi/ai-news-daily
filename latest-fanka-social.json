@@ -1,32 +1,32 @@
 {
-  "edition": "0014",
-  "date": "2026年6月30日 09:17",
-  "intro": "近72小时原生社媒仍偏少，但女性增肌、假期混搭和状态分流三条内容线更清楚了。",
+  "edition": "0015",
+  "date": "2026年7月1日 09:25",
+  "intro": "近72小时公开可核验的原生社媒不算多，但工位普拉提、全身跟练和高压缩分流三条线更清楚了，Fanka 这期更该学结构和痛点表达。",
   "tags": [
-    "女性增肌",
-    "假期混搭",
-    "状态分流",
-    "腰头稳定",
-    "bra体感"
+    "工位普拉提",
+    "全身跟练",
+    "高压缩分流",
+    "bra尺码",
+    "夏季换装"
   ],
   "top3": [
     {
-      "title": "“肌肉感”正在替代单纯“瘦感”成为女性健身新叙事",
-      "comment": "女性健身话术正从显瘦转向能发力与更稳定。",
-      "url": "https://economictimes.indiatimes.com/magazines/panache/for-women-muscle-is-the-new-fitness-flex-heres-why-this-strength-training-trend-is-taking-over/articleshow/122143346.cms"
+      "title": "Kerry Washington 把“工位资料 + 普拉提 reformer”拍成了女性忙碌生活的新平衡感",
+      "comment": "工位资料与 reformer 同框，忙碌女性恢复场景更容易被代入。",
+      "url": "https://people.com/kerry-washington-brings-her-laptop-to-the-pilates-studio-life-is-all-about-balance-12009540"
     },
     {
-      "title": "Google 建议词直接把“勒肋骨、喘不过气”写成运动内衣检索入口",
-      "comment": "用户先搜勒感和呼吸问题，痛点表达比泛舒适更抓人。",
-      "url": "https://suggestqueries.google.com/complete/search?client=firefox&q=sports%20bra%20too%20tight"
+      "title": "Jessica Biel 的 45 分钟全身训练把 mobility + strength + 间歇车重新缝成一条可偷学脚本",
+      "comment": "mobility 到力量再到间歇车，整套训练脚本比单动作更能借鉴。",
+      "url": "https://people.com/justin-timberlake-literally-eating-onion-rings-while-jessica-biel-intense-workout-12008661"
     },
     {
-      "title": "Alo 继续用 Performance / Recovery / Travel 三段式，而不是直接堆新品",
-      "comment": "先按状态分流再讲单品，适合 Fanka 改脚本入口。",
-      "url": "https://www.aloyoga.com/collections/travel-in-alo"
+      "title": "Gymshark 把 bra 内容拆成 activity、support、collection 三条导航线，先帮用户找路再卖款",
+      "comment": "先按训练场景和支撑等级分流，比直接推款更利于评论区承接。",
+      "url": "https://www.gymshark.com/pages/sports-bras"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0014.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0015.html",
   "report_type": "fanka-social-trends",
   "source_window": "趋势近72小时；账号结构近7天；用户痛点近30天"
 }
