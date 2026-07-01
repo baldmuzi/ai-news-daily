@@ -1,27 +1,27 @@
 {
-  "edition": "0032",
-  "date": "2026年6月30日 09:11",
-  "intro": "本期从 Shein 化学品诉讼、Prime Day 增长、社交优先营销到黑色凉鞋与水鞋联名切入，提示 VIVAIA 同步运营合规、渠道和夏季脚感。",
+  "edition": "0033",
+  "date": "2026年7月1日 09:00",
+  "intro": "本期从法国快时尚新法、欧盟包裹税、暑期机场穿搭和独立日促销切入，提示 VIVAIA 同步运营合规、旅行场景与渠道价格战。",
   "tags": [
-    "PFAS合规",
-    "大促增长",
-    "社交优先",
-    "供应链韧性",
-    "黑色凉鞋"
+    "快时尚新法",
+    "包裹税",
+    "机场穿搭",
+    "独立日促销",
+    "社媒不足"
   ],
   "top3": [
     {
-      "title": "WWD 6 月 29 日报道 Shein 在德国遭遇有毒化学品诉讼，PFAS 与合规可信度继续升温",
-      "comment": "PFAS 与材料安全正在变成欧洲合规竞争。"
+      "title": "Le Monde 6 月 30 日称法国通过缩水版快时尚法，Shein/Temu 式超快时尚进入广告与环境罚金监管",
+      "comment": "法国快时尚新法让耐穿、修补和广告责任成为欧盟运营新门槛。"
     },
     {
-      "title": "Retail Dive 6 月 29 日称 Prime Day 推动美国线上销售增长 9.3%，鞋服促销仍有强转化窗口",
-      "comment": "Prime Day 增长证明大促仍能集中释放需求。"
+      "title": "People 7 月 1 日用 Nicole Kidman、Margot Robbie 机场造型组织旅行购买，VIVAIA Yancy Sneakerinas 进入飞行友好清单",
+      "comment": "机场穿搭把 VIVAIA Sneakerina 放进飞行到落地的连续场景。"
     },
     {
-      "title": "Glossy 6 月 29 日拆解 Unilever World Cup 合作，品牌营销进入社交优先的 beta 测试模式",
-      "comment": "社交优先内容应先定义生活事件再导流商品。"
+      "title": "New York Post 6 月 30 日汇总 250 个独立日折扣，鞋服从 Prime Day 后半场转入多平台价格战",
+      "comment": "独立日促销显示 Prime Day 后多平台比价仍会强拉鞋服转化。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0032.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0033.html"
 }
