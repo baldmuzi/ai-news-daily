@@ -1,33 +1,33 @@
 {
-  "edition": "0030",
-  "date": "2026年7月1日 09:17",
-  "intro": "本期从全球女性力量训练、夏季露肩穿搭与 #GymTok 身体观念出发，提炼 Fanka 压缩服和运动穿搭的内容机会。",
+  "edition": "0031",
+  "date": "2026年7月2日 10:08",
+  "intro": "本期聚焦社群训练、Barre3 低冲击混合、节日前运动休闲消费与女性长期习惯链，提炼 Fanka 压缩穿搭内容机会。",
   "tags": [
-    "肩背线条",
-    "短组力量",
-    "身体友好",
-    "夏季露肩",
-    "社媒健身"
+    "社群训练",
+    "Barre混合",
+    "节日清货",
+    "习惯链路",
+    "场景选裤"
   ],
   "top3": [
     {
-      "title": "I Tried Hailey Bieber's PT's 3-Move Glute Workout For A Week, And I'm Still Sore",
-      "comment": "名人训练叙事从普拉提单点转向短组力量和臀腿塑形。"
+      "title": "The group fitness trend helping New Yorkers get in the best shape of their lives",
+      "comment": "固定小队训练把健身坚持转化为社群归属和打卡机制。"
     },
     {
-      "title": "Toned shoulders and arms make strapless summer dressing a fitness-fashion signal",
-      "comment": "露肩夏装回潮让肩背线条成为 fitness-fashion 信号。"
+      "title": "Barre3 Is the Latest Low-Impact Fitness Craze-Here's What To Know",
+      "comment": "Barre3 把低冲击、力量、心肺和 mindfulness 融合成新 studio 话题。"
     },
     {
-      "title": "Muscle Gain or Body Strain? Analyzing #GymTok's Impacts on Self-Esteem and Body Image Among Young Adults",
-      "comment": "#GymTok 新研究提醒健身内容要避免身体焦虑表达。"
+      "title": "Exercise your right to shop: lululemon made too much ahead of Fourth of July",
+      "comment": "节日前 athleisure 清货显示训练、通勤、轻户外场景继续融合。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0030.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0031.html",
   "blog": {
-    "title": "Upper-Body Workout Outfits for Women: Supportive Layers for Shoulder Days",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/upper-body-workout-outfits-for-women.html",
-    "summary": "由本期夏季肩背线条与上肢训练趋势延展，沉淀为女性肩背训练、运动内衣与压缩穿搭指南。"
+    "title": "Barre3 Workout Outfits for Women: Low-Impact Layers for Strength, Cardio, and Mindfulness",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/barre3-low-impact-workout-outfits-for-women.html",
+    "summary": "由本期 Barre3 低冲击混合训练趋势延展，沉淀为女性 studio 训练、压缩裤和支撑背心穿搭指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
