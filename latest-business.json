@@ -1,27 +1,27 @@
 {
-  "edition": "0046",
-  "date": "2026年7月1日 09:27",
-  "intro": "AI 购物代理与绿色追溯继续外溢，出海鞋类要把商品、信任和环保数据都做成机器可执行资产。",
+  "edition": "0047",
+  "date": "2026年7月2日 10:07",
+  "intro": "AI 代理购物、定价和绿色追溯正在同时改写出海鞋类电商，商品、营销与环保数据都得先变成机器可执行资产。",
   "tags": [
     "代理购物",
+    "动态定价",
     "绿色追溯",
-    "机器信任",
-    "零售数据",
-    "会话导购"
+    "跨境运营",
+    "消费信号"
   ],
   "top3": [
     {
-      "title": "AP：Google 联合 Walmart、Shopify、Wayfair，把 Gemini 变成可直接下单的购物入口",
-      "comment": "AI 购物入口外移到聊天界面，商品结构化能力决定转化。"
+      "title": "Insider：Lantern 从忠诚度工具转向 GEO，帮电商品牌优化 AI 搜索与购物结果曝光",
+      "comment": "AI 搜索入口前移，商品语义将直接影响曝光。"
     },
     {
-      "title": "Vogue Business：AI 创企把 eco-design、追溯与回收识别做成时尚 ESG 工具链",
-      "comment": "环保数据正从披露材料变成 AI 驱动的执行链路。"
+      "title": "arXiv：AIGP 用 LLM + 强化学习做电商定价，在线实验同时拉升 GMV 与 ROI",
+      "comment": "LLM 定价开始同时优化 GMV 与 ROI。"
     },
     {
-      "title": "TechRadar：AI 代理流量已成网站分析盲区，电商和旅游站最先中招",
-      "comment": "AI 代理流量若不单列，归因和风控都会失真。"
+      "title": "Vogue Business：AI 创企正把 eco-design、追溯与纺织回收识别做成可执行的时尚 ESG 工具链",
+      "comment": "环保合规数据正从披露层进入执行链路。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0046.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0047.html"
 }

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>出海 AI 洞察 — 第 0047 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #080c14;
+      --surface: #0f1623;
+      --surface-2: #142032;
+      --border: #1f2d3f;
+      --accent: #10b981;
+      --accent-2: #34d399;
+      --text: #e5eef7;
+      --muted: #94a3b8;
+      --dim: #64748b;
+      --tag-bg: rgba(16, 185, 129, 0.12);
+      --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(16,185,129,0.14), transparent 28%),
+        radial-gradient(circle at top right, rgba(52,211,153,0.10), transparent 24%),
+        linear-gradient(180deg, #0a111c 0%, var(--bg) 26%);
+      color: var(--text);
+      font-family: "Noto Serif SC", serif;
+      line-height: 1.85;
+      min-height: 100vh;
+      padding-bottom: 4rem;
+    }
+    a { color: inherit; }
+    header { position: relative; padding: 3rem 1.5rem 2rem; border-bottom: 1px solid var(--border); text-align: center; }
+    .back-link { position: absolute; top: 1.2rem; left: 1.5rem; color: var(--accent); text-decoration: none; font-family: "JetBrains Mono", monospace; font-size: 0.72rem; border: 1px solid rgba(16,185,129,0.32); border-radius: 999px; padding: 0.36em 0.9em; background: rgba(15,22,35,0.7); }
+    .back-link:hover { background: var(--tag-bg); }
+    .badge { display: inline-block; color: var(--accent); font-family: "JetBrains Mono", monospace; font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid rgba(16,185,129,0.34); border-radius: 999px; padding: 0.25em 0.9em; margin-bottom: 1rem; background: rgba(15,22,35,0.7); }
+    h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); letter-spacing: 0.04em; margin-bottom: 0.45rem; }
+    .subtitle { color: var(--muted); font-size: 0.92rem; letter-spacing: 0.06em; }
+    .meta { margin-top: 1rem; color: var(--dim); font-family: "JetBrains Mono", monospace; font-size: 0.7rem; letter-spacing: 0.06em; }
+    .intro { max-width: 820px; margin: 1.5rem auto 0; padding: 1.15rem 1.35rem; border-radius: 14px; border: 1px solid var(--border); border-left: 3px solid var(--accent); background: linear-gradient(135deg, rgba(15,22,35,0.98), rgba(10,18,30,0.94)); color: var(--muted); text-align: left; box-shadow: var(--shadow); }
+    .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-top: 1.1rem; }
+    .tag { color: var(--accent); background: var(--tag-bg); border: 1px solid rgba(16,185,129,0.24); border-radius: 999px; padding: 0.26em 0.8em; font-family: "JetBrains Mono", monospace; font-size: 0.66rem; }
+    main { max-width: 980px; margin: 0 auto; padding: 2rem 1.2rem 0; }
+    .section-title { border-bottom: 1px solid var(--border); padding-bottom: 0.65rem; margin-bottom: 1rem; }
+    .section-title h2 { color: var(--accent); font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; font-family: "JetBrains Mono", monospace; }
+    .grid { display: grid; gap: 1.2rem; }
+    .card { background: linear-gradient(180deg, rgba(15,22,35,0.96), rgba(9,16,27,0.98)); border: 1px solid var(--border); border-radius: 16px; padding: 1.45rem 1.5rem; box-shadow: var(--shadow); transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease; }
+    .card:hover { transform: translateY(-2px); border-color: rgba(16,185,129,0.44); box-shadow: 0 28px 60px rgba(16,185,129,0.08); }
+    .card-header { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.7rem; }
+    .num, .cat { font-family: "JetBrains Mono", monospace; font-size: 0.63rem; border-radius: 999px; padding: 0.22em 0.65em; white-space: nowrap; margin-top: 0.15em; }
+    .num { color: var(--dim); background: var(--surface-2); border: 1px solid var(--border); }
+    .cat { color: var(--accent); background: var(--tag-bg); border: 1px solid rgba(16,185,129,0.24); }
+    .title-wrap { flex: 1; min-width: 0; }
+    .title-link { display: block; text-decoration: none; color: var(--text); font-size: 1.02rem; font-weight: 600; line-height: 1.55; }
+    .title-link:hover { color: var(--accent-2); }
+    .source { color: var(--dim); font-family: "JetBrains Mono", monospace; font-size: 0.68rem; letter-spacing: 0.04em; margin-bottom: 0.9rem; }
+    .comment { color: var(--muted); font-size: 0.88rem; }
+    .comment strong { color: var(--accent); }
+    .footer { display: flex; justify-content: flex-end; margin-top: 1rem; }
+    .button { text-decoration: none; color: var(--accent); border: 1px solid rgba(16,185,129,0.28); border-radius: 999px; padding: 0.42em 0.95em; font-family: "JetBrains Mono", monospace; font-size: 0.68rem; }
+    .button:hover { background: var(--tag-bg); border-color: rgba(16,185,129,0.45); }
+    footer { margin-top: 4rem; padding: 2rem 1.5rem; border-top: 1px solid var(--border); text-align: center; color: var(--dim); font-family: "JetBrains Mono", monospace; font-size: 0.68rem; letter-spacing: 0.06em; }
+    @media (max-width: 640px) { header { padding: 4.2rem 1rem 2rem; } .back-link { left: 1rem; } .card { padding: 1.15rem 1rem; } .title-link { font-size: 0.96rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="back-link" href="../business/">← 返回存档</a>
+    <div class="badge">Business Channel · Edition 0047</div>
+    <h1>出海 AI 洞察</h1>
+    <p class="subtitle">跨境电商 · 可持续发展 · AI 应用实战</p>
+    <div class="meta">2026年7月2日 10:07</div>
+    <div class="intro">AI 代理购物、定价和绿色追溯正在同时改写出海鞋类电商，商品、营销与环保数据都得先变成机器可执行资产。</div>
+    <div class="tags"><span class="tag">代理购物</span><span class="tag">动态定价</span><span class="tag">绿色追溯</span><span class="tag">跨境运营</span><span class="tag">消费信号</span></div>
+  </header>
+  <main>
+    <div class="section-title"><h2>Top 10 Signals</h2></div>
+    <section class="grid">
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.01</span>
+          <span class="cat">营销工具</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.businessinsider.com/why-ecommerce-startup-lantern-pivoted-geo-agentic-shopping-marketing-pitch-2026-7" target="_blank" rel="noreferrer">Insider：Lantern 从忠诚度工具转向 GEO，帮电商品牌优化 AI 搜索与购物结果曝光</a></div>
+        </div>
+        <div class="source">Insider · 2026-07-01</div>
+        <div class="comment">【是什么】Lantern 把核心能力转到生成式引擎优化（GEO），让电商品牌在 AI 搜索、问答和代理购物结果里更容易被正确推荐。<br /><strong>【对我们意味着什么】</strong>出海鞋类团队不能只盯 SEO 和站内投放，必须开始管理模型读到的商品语义、评价证据和品牌回答口径。</div>
+        <div class="footer"><a class="button" href="https://www.businessinsider.com/why-ecommerce-startup-lantern-pivoted-geo-agentic-shopping-marketing-pitch-2026-7" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>      <article class="card">
+        <div class="card-header">
+          <span class="num">No.02</span>
+          <span class="cat">消费洞察</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.zawya.com/en/business/technology-and-telecom/ai-will-soon-choose-what-people-buy-says-ecommerce-trends-report-ta3mvndh" target="_blank" rel="noreferrer">DHL/ZAWYA：AI 很快会替消费者做更多购买决策，可持续偏好正进入电商主流程</a></div>
+        </div>
+        <div class="source">ZAWYA · 2026-06-29</div>
+        <div class="comment">【是什么】DHL eCommerce 2026 趋势报告指出，AI 聊天与代理式购物正在接管发现和筛选阶段，消费者还会把可持续偏好一并交给模型处理。<br /><strong>【对我们意味着什么】</strong>鞋类产品页的环保材质、回收信息和履约承诺要结构化表达，否则 AI 不会把这些卖点稳定带进推荐链路。</div>
+        <div class="footer"><a class="button" href="https://www.zawya.com/en/business/technology-and-telecom/ai-will-soon-choose-what-people-buy-says-ecommerce-trends-report-ta3mvndh" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>      <article class="card">
+        <div class="card-header">
+          <span class="num">No.03</span>
+          <span class="cat">数据分析</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.zawya.com/en/business/technology-and-telecom/driven-by-ai-customers-now-rival-criminals-for-ecommerce-fraud-say-merchants-xn2ivtp2" target="_blank" rel="noreferrer">Ravelin/ZAWYA：AI 让电商欺诈从“黑产问题”升级为“用户滥用 + 黑产并发”问题</a></div>
+        </div>
+        <div class="source">ZAWYA · 2026-06-26</div>
+        <div class="comment">【是什么】Ravelin 的新研究显示，生成式 AI 正降低伪造退款证据、撞库和多账号滥用门槛，普通用户滥用开始与职业欺诈团伙同样值得警惕。<br /><strong>【对我们意味着什么】</strong>数据分析师需要把退款、客服、地址变更和促销滥用放到同一风险视图里，不能再分散看单点异常。</div>
+        <div class="footer"><a class="button" href="https://www.zawya.com/en/business/technology-and-telecom/driven-by-ai-customers-now-rival-criminals-for-ecommerce-fraud-say-merchants-xn2ivtp2" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>      <article class="card">
+        <div class="card-header">
+          <span class="num">No.04</span>
+          <span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://techwireasia.com/2026/06/alibaba-malaysia-sme-agentic-ai-for-business/" target="_blank" rel="noreferrer">Tech Wire Asia：阿里在马来西亚推 Accio Work，用 agentic AI 自动化跨境业务与供应链协同</a></div>
+        </div>
+        <div class="source">Tech Wire Asia · 2026-06-26</div>
+        <div class="comment">【是什么】阿里在马来西亚推广 Accio Work，把找货、询盘、供应商协同和跨境业务执行交给 agentic AI，目标是缓解中小企业的人力缺口。<br /><strong>【对我们意味着什么】</strong>对出海鞋类 PM 来说，AI 不再只是前台导购，还开始吞掉选品、协同和跟单流程，后台流程标准化会直接决定自动化上限。</div>
+        <div class="footer"><a class="button" href="https://techwireasia.com/2026/06/alibaba-malaysia-sme-agentic-ai-for-business/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>      <article class="card">
+        <div class="card-header">
+          <span class="num">No.05</span>
+          <span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.channelnewsasia.com/east-asia/china-supply-chain-expo-artificial-intelligence-6220511" target="_blank" rel="noreferrer">CNA：从制造到物流，中国企业正在用 AI 做更稳健的供应链调度与可视化</a></div>
+        </div>
+        <div class="source">CNA · 2026-06-30</div>
+        <div class="comment">【是什么】中国国际供应链促进博览会上，多家公司展示了用 AI 做排产、物流预警、库存协同和异常响应，以降低地缘与需求波动带来的冲击。<br /><strong>【对我们意味着什么】</strong>环保鞋类出海如果还靠 Excel 串供应商与仓配节点，AI 很难发挥作用，先打通订单、补货和运输事件数据才有意义。</div>
+        <div class="footer"><a class="button" href="https://www.channelnewsasia.com/east-asia/china-supply-chain-expo-artificial-intelligence-6220511" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>      <article class="card">
+        <div class="card-header">
+          <span class="num">No.06</span>
+          <span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.36kr.com/p/3804380953255682" target="_blank" rel="noreferrer">36氪：2026 年 618 的 AI 电商，已经走到试穿、算优惠与一句话下单闭环</a></div>
+        </div>
+        <div class="source">36氪 · 2026-05-11</div>
+        <div class="comment">【是什么】36氪梳理今年 618 发现，AI 购物已从问答式导购推进到 AI 试穿、自动凑单、比价抢券和端内支付闭环。<br /><strong>【对我们意味着什么】</strong>这证明商品属性、折扣规则和尺码解释必须被模型直接读取，鞋类站点越早把这些字段结构化，越容易吃到新入口流量。</div>
+        <div class="footer"><a class="button" href="https://www.36kr.com/p/3804380953255682" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>      <article class="card">
+        <div class="card-header">
+          <span class="num">No.07</span>
+          <span class="cat">消费洞察</span>
+          <div class="title-wrap"><a class="title-link" href="https://finance.yahoo.com/technology/ai/articles/one-three-western-consumers-now-080000198.html" target="_blank" rel="noreferrer">NIQ/Yahoo Finance：三分之一西方消费者已购买社交平台发现的商品，AI 正重塑发现链路</a></div>
+        </div>
+        <div class="source">Yahoo Finance · 2026-06-26</div>
+        <div class="comment">【是什么】NIQ 新数据指出，社交平台购物发现已成主流，而 AI 推荐和个性化排序正在进一步改变消费者从种草到下单的路径。<br /><strong>【对我们意味着什么】</strong>鞋类数据团队要把社媒内容、站内转化和复购信号连起来看，否则会低估 AI 分发对新品冷启动和渠道归因的影响。</div>
+        <div class="footer"><a class="button" href="https://finance.yahoo.com/technology/ai/articles/one-three-western-consumers-now-080000198.html" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>      <article class="card">
+        <div class="card-header">
+          <span class="num">No.08</span>
+          <span class="cat">数据分析</span>
+          <div class="title-wrap"><a class="title-link" href="https://arxiv.org/abs/2606.26787" target="_blank" rel="noreferrer">arXiv：AIGP 用 LLM + 强化学习做电商定价，在线实验同时拉升 GMV 与 ROI</a></div>
+        </div>
+        <div class="source">arXiv · 2026-06-25</div>
+        <div class="comment">【是什么】AIGP 把大模型、文本上下文和离线强化学习接到电商定价决策里，在真实业务 A/B 中实现 GMV、ROI 和阶段目标同步提升。<br /><strong>【对我们意味着什么】</strong>对鞋类 PM 来说，定价模型不该只看历史销量，材质故事、促销窗口和渠道语境也可以进入 AI 决策层。</div>
+        <div class="footer"><a class="button" href="https://arxiv.org/abs/2606.26787" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>      <article class="card">
+        <div class="card-header">
+          <span class="num">No.09</span>
+          <span class="cat">营销工具</span>
+          <div class="title-wrap"><a class="title-link" href="https://arxiv.org/abs/2606.10907" target="_blank" rel="noreferrer">arXiv：From Prompt to Purchase 量化了 AI 品牌推荐，能显著推高搜索与站外访问</a></div>
+        </div>
+        <div class="source">arXiv · 2026-06-09</div>
+        <div class="comment">【是什么】这项研究把 ChatGPT、Claude、Gemini 的对话与点击流数据拼接后发现，被 AI 提到的品牌会显著带动后续品牌搜索和官网访问。<br /><strong>【对我们意味着什么】</strong>营销分析不能再只看 referrer，未来品牌被模型“点名”后的站外搜索抬升，也要纳入增长归因框架。</div>
+        <div class="footer"><a class="button" href="https://arxiv.org/abs/2606.10907" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>      <article class="card">
+        <div class="card-header">
+          <span class="num">No.10</span>
+          <span class="cat">可持续合规</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.vogue.com/article/the-ai-startups-promising-a-sustainable-future-for-fashion" target="_blank" rel="noreferrer">Vogue Business：AI 创企正把 eco-design、追溯与纺织回收识别做成可执行的时尚 ESG 工具链</a></div>
+        </div>
+        <div class="source">Vogue Business · 2026-04-22</div>
+        <div class="comment">【是什么】Vogue Business 盘点了用 AI 做材料环境影响评估、数字产品护照、供应链追溯和纺织回收识别的新工具，ESG 正从披露走向执行。<br /><strong>【对我们意味着什么】</strong>环保鞋类品牌最该优先投入的不是口号，而是材料台账、碳数据和回收分拣的机器可读化，这些会直接影响合规与成本。</div>
+        <div class="footer"><a class="button" href="https://www.vogue.com/article/the-ai-startups-promising-a-sustainable-future-for-fashion" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+    </section>
+  </main>
+  <footer>Edition 0047 · 出海 AI 洞察</footer>
+</body>
+</html>

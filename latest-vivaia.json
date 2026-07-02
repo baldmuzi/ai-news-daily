@@ -1,27 +1,27 @@
 {
-  "edition": "0033",
-  "date": "2026年7月1日 09:00",
-  "intro": "本期从法国快时尚新法、欧盟包裹税、暑期机场穿搭和独立日促销切入，提示 VIVAIA 同步运营合规、旅行场景与渠道价格战。",
+  "edition": "0034",
+  "date": "2026年7月2日 10:06",
+  "intro": "7月初欧美鞋服热点转向明星舒适鞋、足科支撑、复古裤长与独立日后比价，适合用场景化内容承接成熟客群。",
   "tags": [
-    "快时尚新法",
-    "包裹税",
-    "机场穿搭",
-    "独立日促销",
+    "明星舒适鞋",
+    "足科支撑",
+    "复古裤长",
+    "运动生活",
     "社媒不足"
   ],
   "top3": [
     {
-      "title": "Le Monde 6 月 30 日称法国通过缩水版快时尚法，Shein/Temu 式超快时尚进入广告与环境罚金监管",
-      "comment": "法国快时尚新法让耐穿、修补和广告责任成为欧盟运营新门槛。"
+      "title": "Page Six 7 月 1 日报道 Anne Hathaway 穿 VIVAIA $129 Emeline Kitten-Heel Sandals，明星舒适鞋从平底延伸到低跟场景",
+      "comment": "明星低跟鞋把可持续、足弓支撑和正式活动合并成新卖点。"
     },
     {
-      "title": "People 7 月 1 日用 Nicole Kidman、Margot Robbie 机场造型组织旅行购买，VIVAIA Yancy Sneakerinas 进入飞行友好清单",
-      "comment": "机场穿搭把 VIVAIA Sneakerina 放进飞行到落地的连续场景。"
+      "title": "People 7 月 1 日用足科医生建议筛选 Amazon 支撑鞋，平足、足底筋膜炎用户继续把鞋当健康消费",
+      "comment": "成熟用户用足科指标判断鞋值不值得买，站内筛选应更细。"
     },
     {
-      "title": "New York Post 6 月 30 日汇总 250 个独立日折扣，鞋服从 Prime Day 后半场转入多平台价格战",
-      "comment": "独立日促销显示 Prime Day 后多平台比价仍会强拉鞋服转化。"
+      "title": "InStyle 7 月 2 日称 harem pants、wedge sandals、capris 等“过时趋势”回归，鞋履要服务裤长和舒适高度变化",
+      "comment": "复古裤长与楔跟回归，鞋履推荐要服务比例和舒适高度。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0033.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0034.html"
 }
