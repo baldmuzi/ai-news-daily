@@ -1,33 +1,33 @@
 {
-  "edition": "0031",
-  "date": "2026年7月2日 10:08",
-  "intro": "本期聚焦社群训练、Barre3 低冲击混合、节日前运动休闲消费与女性长期习惯链，提炼 Fanka 压缩穿搭内容机会。",
+  "edition": "0032",
+  "date": "2026年7月3日 09:14",
+  "intro": "本期聚焦团队健身文化、速度耐力训练、夏季运动休闲消费与旅行轻塑穿搭，提炼 Fanka 压缩服内容与场景表达机会。",
   "tags": [
-    "社群训练",
-    "Barre混合",
-    "节日清货",
-    "习惯链路",
-    "场景选裤"
+    "团队健身",
+    "速度耐力",
+    "夏季运动衣橱",
+    "运动时装",
+    "旅行轻塑"
   ],
   "top3": [
     {
-      "title": "The group fitness trend helping New Yorkers get in the best shape of their lives",
-      "comment": "固定小队训练把健身坚持转化为社群归属和打卡机制。"
+      "title": "Business Unusual: Why Norma Kamali Swapped Fashion Shows for Team Fitness",
+      "comment": "品牌把团体健身变成员工韧性和女性团队文化资产。"
     },
     {
-      "title": "Barre3 Is the Latest Low-Impact Fitness Craze-Here's What To Know",
-      "comment": "Barre3 把低冲击、力量、心肺和 mindfulness 融合成新 studio 话题。"
+      "title": "A Run Coach to the Pros Reveals the Habits That Separate Elites. Here’s How They Can Transform Your Next Training Cycle.",
+      "comment": "专业跑者训练习惯强调目的、补给、睡眠和恢复细节。"
     },
     {
-      "title": "Exercise your right to shop: lululemon made too much ahead of Fourth of July",
-      "comment": "节日前 athleisure 清货显示训练、通勤、轻户外场景继续融合。"
+      "title": "Workouts to Build Speed Endurance so You Finish Your Races Strong and Fast",
+      "comment": "速度耐力训练从慢跑进阶到有结构的快节奏训练日。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0031.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0032.html",
   "blog": {
-    "title": "Barre3 Workout Outfits for Women: Low-Impact Layers for Strength, Cardio, and Mindfulness",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/barre3-low-impact-workout-outfits-for-women.html",
-    "summary": "由本期 Barre3 低冲击混合训练趋势延展，沉淀为女性 studio 训练、压缩裤和支撑背心穿搭指南。"
+    "title": "Speed Endurance Workout Outfits for Women: Supportive Layers for Fast, Focused Training Days",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/speed-endurance-workout-outfits-for-women.html",
+    "summary": "由本期 speed endurance 速度耐力训练趋势延展，沉淀为女性间歇跑、压缩裤和支撑上衣穿搭指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
