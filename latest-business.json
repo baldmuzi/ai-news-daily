@@ -1,27 +1,27 @@
 {
-  "edition": "0048",
-  "date": "2026年7月3日 09:21",
-  "intro": "AI 购物代理、定价与绿色追溯正在重写出海鞋类电商，环保合规和增长分析都得先机器可读。",
+  "edition": "0049",
+  "date": "2026年7月6日 09:12",
+  "intro": "AI 购物代理、退货风控和绿色追溯一起逼近实战，出海鞋类团队要同时重写商品数据与环保证据。",
   "tags": [
     "代理购物",
     "绿色追溯",
-    "定价智能",
+    "退货风控",
     "跨境工具",
     "消费归因"
   ],
   "top3": [
     {
-      "title": "Insider：Lantern 押注 GEO，帮电商品牌争夺 AI 搜索与购物入口曝光",
-      "comment": "AI 搜索入口开始决定商品是否被看见，GEO 要补齐。"
+      "title": "AI 正在重写印度零售规则，个性化、定价与履约一起算法化",
+      "comment": "零售竞争转向统一特征层，鞋类站点要补齐商品与库存数据。"
     },
     {
-      "title": "Axios：GoPuff 联合 xAI 上线 Go，让 AI 直接替用户组购物车",
-      "comment": "购物助手正从推荐走向代购，商品规则必须可调用。"
+      "title": "Amazon、Swiggy 和 Zepto 正把购物从搜索推向代理代办",
+      "comment": "未来入口更像代理调用，商品规则和售后策略需可机读。"
     },
     {
-      "title": "arXiv：AIGP 把 LLM 和强化学习接入电商定价，在线 A/B 同时抬升 GMV 与 ROI",
-      "comment": "电商定价进入 LLM+强化学习阶段，利润与转化可一起调。"
+      "title": "Google 联合 Walmart、Shopify、Wayfair，把 Gemini 变成站外结账入口",
+      "comment": "结构化商品 feed 将直接影响 AI 对话里的可见性和成交率。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0048.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0049.html"
 }

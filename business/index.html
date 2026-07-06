@@ -9,218 +9,241 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #08110f;
-      --surface: #0d1714;
-      --surface-2: #12211d;
-      --border: #1c332c;
+      --bg: #071019;
+      --panel: #0d1724;
+      --panel-2: #122133;
+      --border: #1d3346;
       --accent: #10b981;
       --accent-2: #6ee7b7;
-      --text: #ebf5f2;
-      --muted: #9ab0a8;
-      --dim: #688076;
-      --shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
+      --text: #ecfdf5;
+      --muted: #9fb7ad;
+      --dim: #6f8b82;
+      --shadow: 0 22px 50px rgba(0, 0, 0, 0.28);
     }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       min-height: 100vh;
       color: var(--text);
       font-family: "Noto Serif SC", serif;
       background:
-        radial-gradient(circle at top left, rgba(16,185,129,0.16), transparent 24%),
-        linear-gradient(180deg, #091411 0%, var(--bg) 30%);
+        radial-gradient(circle at top left, rgba(16,185,129,0.18), transparent 24%),
+        radial-gradient(circle at top right, rgba(110,231,183,0.12), transparent 22%),
+        linear-gradient(180deg, #09111b 0%, var(--bg) 28%);
       line-height: 1.75;
     }
     a { color: inherit; text-decoration: none; }
-    header { padding: 2.8rem 1.25rem 2rem; max-width: 1080px; margin: 0 auto; }
-    .back-link { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--accent); font-family: "JetBrains Mono", monospace; font-size: 0.74rem; border: 1px solid rgba(16,185,129,0.3); border-radius: 999px; padding: 0.38em 0.88em; background: rgba(13,23,20,0.72); }
-    .back-link:hover { background: rgba(16,185,129,0.1); }
-    h1 { margin-top: 1.3rem; font-size: clamp(1.8rem, 4vw, 2.7rem); }
-    .sub { margin-top: 0.55rem; color: var(--muted); max-width: 760px; }
-    main { max-width: 1080px; margin: 0 auto; padding: 0 1.25rem 3.5rem; }
-    .archive-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
-    .archive-card { display: block; background: linear-gradient(180deg, rgba(13,23,20,0.96), rgba(8,17,15,0.98)); border: 1px solid var(--border); border-radius: 18px; padding: 1.2rem 1.15rem; box-shadow: var(--shadow); transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease; }
-    .archive-card:hover { transform: translateY(-2px); border-color: rgba(16,185,129,0.42); box-shadow: 0 28px 60px rgba(16,185,129,0.09); }
-    .archive-card.latest { border-color: rgba(110,231,183,0.7); background: linear-gradient(180deg, rgba(14,31,25,0.98), rgba(8,18,15,0.98)); box-shadow: 0 30px 70px rgba(16,185,129,0.16); }
-    .archive-top { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; margin-bottom: 0.9rem; }
-    .pill, .date { font-family: "JetBrains Mono", monospace; font-size: 0.66rem; }
-    .pill { color: var(--accent); background: rgba(16,185,129,0.12); border: 1px solid rgba(16,185,129,0.28); border-radius: 999px; padding: 0.28em 0.72em; }
-    .date { color: var(--dim); }
-    .archive-card h2 { font-size: 1rem; line-height: 1.55; margin-bottom: 0.7rem; }
-    .archive-card p { color: var(--muted); font-size: 0.88rem; }
-    footer { max-width: 1080px; margin: 0 auto; padding: 0 1.25rem 2.2rem; color: var(--dim); font-family: "JetBrains Mono", monospace; font-size: 0.68rem; }
-    @media (max-width: 640px) { header { padding-top: 2.2rem; } .archive-top { align-items: flex-start; flex-direction: column; } }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 2rem 1.2rem 4rem; }
+    .back-link { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--accent); border: 1px solid rgba(16,185,129,0.28); border-radius: 999px; padding: 0.42rem 0.9rem; font-family: "JetBrains Mono", monospace; font-size: 0.74rem; background: rgba(13,23,36,0.74); }
+    header { margin-top: 1.2rem; padding: 1.8rem 0 1.6rem; border-bottom: 1px solid var(--border); }
+    .eyebrow { color: var(--accent); font-family: "JetBrains Mono", monospace; font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; }
+    h1 { margin-top: 0.6rem; font-size: clamp(1.9rem, 4vw, 3rem); letter-spacing: 0.04em; }
+    .sub { margin-top: 0.8rem; max-width: 760px; color: var(--muted); font-size: 0.95rem; }
+    .grid { display: grid; gap: 1rem; margin-top: 1.6rem; }
+    .entry { display: block; padding: 1.2rem 1.2rem 1.15rem; border-radius: 18px; border: 1px solid var(--border); background: linear-gradient(180deg, rgba(13,23,36,0.98), rgba(8,15,24,0.98)); box-shadow: var(--shadow); transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease; }
+    .entry:hover { transform: translateY(-2px); border-color: rgba(16,185,129,0.5); box-shadow: 0 28px 56px rgba(16,185,129,0.12); }
+    .entry.latest { border-color: rgba(16,185,129,0.62); background: linear-gradient(180deg, rgba(16,33,45,0.98), rgba(9,24,20,0.98)); }
+    .entry-top { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 0.65rem; }
+    .edition, .pill { font-family: "JetBrains Mono", monospace; font-size: 0.68rem; border-radius: 999px; padding: 0.22rem 0.65rem; }
+    .edition { color: var(--dim); border: 1px solid var(--border); background: var(--panel-2); }
+    .pill { color: #062b1c; background: var(--accent-2); font-weight: 600; }
+    h2 { font-size: 1.02rem; line-height: 1.55; }
+    .date { margin-top: 0.5rem; color: var(--dim); font-family: "JetBrains Mono", monospace; font-size: 0.72rem; }
+    .intro { margin-top: 0.72rem; color: var(--muted); font-size: 0.88rem; }
+    footer { margin-top: 2.5rem; color: var(--dim); font-family: "JetBrains Mono", monospace; font-size: 0.72rem; text-align: center; }
+    @media (max-width: 640px) { .wrap { padding: 1.2rem 0.95rem 3rem; } .entry { padding: 1rem; } }
   </style>
 </head>
 <body>
-  <header>
+  <div class="wrap">
     <a class="back-link" href="../">← 返回首页</a>
-    <h1>出海 AI 洞察 · 往期存档</h1>
-    <p class="sub">聚合跨境电商、可持续发展与 AI 应用实战的近 20 期信号，默认按最新期优先展示。</p>
-  </header>
-  <main>
-    <section class="archive-grid">
-      <a class="archive-card latest" href="edition-0048.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0048</span>
-          <span class="date">2026年7月3日 09:21</span>
+    <header>
+      <div class="eyebrow">Business Channel Archive</div>
+      <h1>出海 AI 洞察 · 往期存档</h1>
+      <p class="sub">收录最近 20 期面向跨境电商、可持续合规与 AI 应用实战的产品数据日报，按期号倒序展示。</p>
+    </header>
+    <section class="grid">
+      <a class="entry latest" href="edition-0049.html">
+        <div class="entry-top">
+          <span class="edition">第 0049 期</span>
+          <span class="pill">最新</span>
         </div>
-        <h2>出海 AI 洞察 — 第 0048 期</h2>
-        <p>AI 购物代理、定价与绿色追溯正在重写出海鞋类电商，环保合规和增长分析都得先机器可读。</p>
+        <h2>出海 AI 洞察 · 第 0049 期</h2>
+        <p class="date">2026年7月6日 09:10</p>
+        <p class="intro">AI 购物代理、退货风控和绿色追溯一起逼近实战，出海鞋类团队要同时重写商品数据与环保证据。</p>
       </a>
-      <a class="archive-card" href="edition-0047.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0047</span>
-          <span class="date">2026年7月2日 10:07</span>
+      <a class="entry" href="edition-0048.html">
+        <div class="entry-top">
+          <span class="edition">第 0048 期</span>
+
         </div>
-        <h2>出海 AI 洞察 — 第 0047 期</h2>
-        <p>AI 代理购物、定价和绿色追溯正在同时改写出海鞋类电商，商品、营销与环保数据都得先变成机器可执行资产。</p>
+        <h2>出海 AI 洞察 · 第 0048 期</h2>
+        <p class="date">2026年7月3日 09:21</p>
+        <p class="intro">AI 购物代理、定价与绿色追溯正在重写出海鞋类电商，环保合规和增长分析都得先机器可读。</p>
       </a>
-      <a class="archive-card" href="edition-0046.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0046</span>
-          <span class="date">2026年7月1日 09:27</span>
+      <a class="entry" href="edition-0047.html">
+        <div class="entry-top">
+          <span class="edition">第 0047 期</span>
+
         </div>
-        <h2>出海 AI 洞察 — 第 0046 期</h2>
-        <p>AI 购物代理与绿色追溯继续外溢，出海鞋类要把商品、信任和环保数据都做成机器可执行资产。</p>
+        <h2>出海 AI 洞察 · 第 0047 期</h2>
+        <p class="date">2026年7月2日 10:07</p>
+        <p class="intro">AI 代理购物、定价和绿色追溯正在同时改写出海鞋类电商，商品、营销与环保数据都得先变成机器可执行资产。</p>
       </a>
-      <a class="archive-card" href="edition-0045.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0045</span>
-          <span class="date">2026年6月30日 09:14</span>
+      <a class="entry" href="edition-0046.html">
+        <div class="entry-top">
+          <span class="edition">第 0046 期</span>
+
         </div>
-        <h2>出海 AI 洞察 — 第 0045 期</h2>
-        <p>AI 购物代理与绿色追溯正重塑出海鞋类电商，商品语义、风控和营销测量都要先做成机器可执行资产。</p>
+        <h2>出海 AI 洞察 · 第 0046 期</h2>
+        <p class="date">2026年7月1日 09:27</p>
+        <p class="intro">AI 购物代理与绿色追溯继续外溢，出海鞋类要把商品、信任和环保数据都做成机器可执行资产。</p>
       </a>
-      <a class="archive-card" href="edition-0044.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0044</span>
-          <span class="date">2026年6月29日 09:19</span>
+      <a class="entry" href="edition-0045.html">
+        <div class="entry-top">
+          <span class="edition">第 0045 期</span>
+
         </div>
-        <h2>出海 AI 洞察 — 第 0044 期</h2>
-        <p>AI购物代理、绿色追溯与营销测量同步升级，出海鞋类团队要把商品、合规和用户数据都做成可被模型直接调用的资产。</p>
+        <h2>出海 AI 洞察 · 第 0045 期</h2>
+        <p class="date">2026年6月30日 09:14</p>
+        <p class="intro">AI 购物代理与绿色追溯正重塑出海鞋类电商，商品语义、风控和营销测量都要先做成机器可执行资产。</p>
       </a>
-      <a class="archive-card" href="edition-0043.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0043</span>
-          <span class="date">2026年6月26日 13:53</span>
+      <a class="entry" href="edition-0044.html">
+        <div class="entry-top">
+          <span class="edition">第 0044 期</span>
+
         </div>
-        <h2>出海 AI 洞察 — 第 0043 期</h2>
-        <p>AI代理购物、绿色追溯与隐私归因正在改写出海鞋类电商，商品、环保和营销数据都要先变成机器可执行资产。</p>
+        <h2>出海 AI 洞察 · 第 0044 期</h2>
+        <p class="date">2026年6月29日 09:19</p>
+        <p class="intro">AI购物代理、绿色追溯与营销测量同步升级，出海鞋类团队要把商品、合规和用户数据都做成可被模型直接调用的资产。</p>
       </a>
-      <a class="archive-card" href="edition-0042.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0042</span>
-          <span class="date">2026年6月25日 09:06</span>
+      <a class="entry" href="edition-0043.html">
+        <div class="entry-top">
+          <span class="edition">第 0043 期</span>
+
         </div>
-        <h2>出海 AI 洞察 — 第 0042 期</h2>
-        <p>AI导购、代理下单与绿色追溯正同步改写出海鞋类电商，商品数据、环保合规和营销归因都要先变成机器可执行资产。</p>
+        <h2>出海 AI 洞察 · 第 0043 期</h2>
+        <p class="date">2026年6月26日 13:53</p>
+        <p class="intro">AI代理购物、绿色追溯与隐私归因正在改写出海鞋类电商，商品、环保和营销数据都要先变成机器可执行资产。</p>
       </a>
-      <a class="archive-card" href="edition-0041.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0041</span>
-          <span class="date">2026年6月24日 09:28</span>
+      <a class="entry" href="edition-0042.html">
+        <div class="entry-top">
+          <span class="edition">第 0042 期</span>
+
         </div>
-        <h2>出海 AI 洞察 — 第 0041 期</h2>
-        <p>AI 代理购物、绿色追溯与零售归因正同时重写出海鞋类电商，环保卖点和转化链路都要先变成机器可执行数据。</p>
+        <h2>出海 AI 洞察 · 第 0042 期</h2>
+        <p class="date">2026年6月25日 09:06</p>
+        <p class="intro">AI导购、代理下单与绿色追溯正同步改写出海鞋类电商，商品数据、环保合规和营销归因都要先变成机器可执行资产。</p>
       </a>
-      <a class="archive-card" href="edition-0040.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0040</span>
-          <span class="date">2026年6月23日 09:12</span>
+      <a class="entry" href="edition-0041.html">
+        <div class="entry-top">
+          <span class="edition">第 0041 期</span>
+
         </div>
-        <h2>出海 AI 洞察 — 第 0040 期</h2>
-        <p>AI 代理购物、会话营销和绿色追溯正同时改写出海鞋类电商，环保合规与转化数据都要先变成机器可执行资产。</p>
+        <h2>出海 AI 洞察 · 第 0041 期</h2>
+        <p class="date">2026年6月24日 09:28</p>
+        <p class="intro">AI 代理购物、绿色追溯与零售归因正同时重写出海鞋类电商，环保卖点和转化链路都要先变成机器可执行数据。</p>
       </a>
-      <a class="archive-card" href="edition-0039.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0039</span>
-          <span class="date">2026年6月22日 09:10</span>
+      <a class="entry" href="edition-0040.html">
+        <div class="entry-top">
+          <span class="edition">第 0040 期</span>
+
         </div>
-        <h2>出海 AI 洞察 — 第 0039 期</h2>
-        <p>AI 购物代理、绿色追溯与零售数据栈一起重构出海鞋类电商，环保卖点和转化信号都要先变成机器可执行资产。</p>
+        <h2>出海 AI 洞察 · 第 0040 期</h2>
+        <p class="date">2026年6月23日 09:12</p>
+        <p class="intro">AI 代理购物、会话营销和绿色追溯正同时改写出海鞋类电商，环保合规与转化数据都要先变成机器可执行资产。</p>
       </a>
-      <a class="archive-card" href="edition-0038.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0038</span>
-          <span class="date">2026年6月19日 11:46</span>
+      <a class="entry" href="edition-0039.html">
+        <div class="entry-top">
+          <span class="edition">第 0039 期</span>
+
         </div>
-        <h2>出海 AI 洞察 — 第 0038 期</h2>
-        <p>AI 购物入口、绿色追溯与会员数据正在同时外移，出海环保鞋类要把商品、合规和归因字段做成可执行资产。</p>
+        <h2>出海 AI 洞察 · 第 0039 期</h2>
+        <p class="date">2026年6月22日 09:10</p>
+        <p class="intro">AI 购物代理、绿色追溯与零售数据栈一起重构出海鞋类电商，环保卖点和转化信号都要先变成机器可执行资产。</p>
       </a>
-      <a class="archive-card" href="edition-0037.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0037</span>
-          <span class="date">2026年6月18日 10:01</span>
+      <a class="entry" href="edition-0038.html">
+        <div class="entry-top">
+          <span class="edition">第 0038 期</span>
+
         </div>
-        <h2>出海 AI 洞察 — 第 0037 期</h2>
-        <p>AI 购物代理、零售数据分身与环保追溯正在改写出海鞋类电商，商品、营销和可持续数据都要先变成机器可执行资产。</p>
+        <h2>出海 AI 洞察 · 第 0038 期</h2>
+        <p class="date">2026年6月19日 11:46</p>
+        <p class="intro">AI 购物入口、绿色追溯与会员数据正在同时外移，出海环保鞋类要把商品、合规和归因字段做成可执行资产。</p>
       </a>
-      <a class="archive-card" href="edition-0036.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0036</span>
-          <span class="date">2026年6月17日 09:18</span>
+      <a class="entry" href="edition-0037.html">
+        <div class="entry-top">
+          <span class="edition">第 0037 期</span>
+
         </div>
-        <h2>出海 AI 洞察 — 第 0036 期</h2>
-        <p>AI 代理下单、绿色履约与零售数据风控开始并线，出海环保鞋类团队要把商品、支付和合规字段做成机器可执行资产。</p>
+        <h2>出海 AI 洞察 · 第 0037 期</h2>
+        <p class="date">2026年6月18日 10:01</p>
+        <p class="intro">AI 购物代理、零售数据分身与环保追溯正在改写出海鞋类电商，商品、营销和可持续数据都要先变成机器可执行资产。</p>
       </a>
-      <a class="archive-card" href="edition-0035.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0035</span>
-          <span class="date">2026年6月16日 09:12</span>
+      <a class="entry" href="edition-0036.html">
+        <div class="entry-top">
+          <span class="edition">第 0036 期</span>
+
         </div>
-        <h2>出海 AI 洞察 — 第 0035 期</h2>
-        <p>AI 代理购物、环保追溯与零售数据重估同时提速，出海鞋类团队要尽快把商品、合规与营销数据做成可执行接口。</p>
+        <h2>出海 AI 洞察 · 第 0036 期</h2>
+        <p class="date">2026年6月17日 09:18</p>
+        <p class="intro">AI 代理下单、绿色履约与零售数据风控开始并线，出海环保鞋类团队要把商品、支付和合规字段做成机器可执行资产。</p>
       </a>
-      <a class="archive-card" href="edition-0034.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0034</span>
-          <span class="date">2026年6月15日 09:09</span>
+      <a class="entry" href="edition-0035.html">
+        <div class="entry-top">
+          <span class="edition">第 0035 期</span>
+
         </div>
-        <h2>出海 AI 洞察 — 第 0034 期</h2>
-        <p>AI 购物入口、绿色追溯与消费者归因正在同时升级，出海环保鞋类团队要把商品、营销和供应链数据一起做成机器可执行资产。</p>
+        <h2>出海 AI 洞察 · 第 0035 期</h2>
+        <p class="date">2026年6月16日 09:12</p>
+        <p class="intro">AI 代理购物、环保追溯与零售数据重估同时提速，出海鞋类团队要尽快把商品、合规与营销数据做成可执行接口。</p>
       </a>
-      <a class="archive-card" href="edition-0033.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0033</span>
-          <span class="date">2026年6月12日 09:07</span>
+      <a class="entry" href="edition-0034.html">
+        <div class="entry-top">
+          <span class="edition">第 0034 期</span>
+
         </div>
-        <h2>出海 AI 洞察 — 第 0033 期</h2>
-        <p>AI 代理购物、零售数据归因与绿色供应链工具正在同步成熟，出海鞋类团队需要把商品、营销和环保数据一起做成可执行接口。</p>
+        <h2>出海 AI 洞察 · 第 0034 期</h2>
+        <p class="date">2026年6月15日 09:09</p>
+        <p class="intro">AI 购物入口、绿色追溯与消费者归因正在同时升级，出海环保鞋类团队要把商品、营销和供应链数据一起做成机器可执行资产。</p>
       </a>
-      <a class="archive-card" href="edition-0032.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0032</span>
-          <span class="date">2026年6月11日 09:12</span>
+      <a class="entry" href="edition-0033.html">
+        <div class="entry-top">
+          <span class="edition">第 0033 期</span>
+
         </div>
-        <h2>出海 AI 洞察 — 第 0032 期</h2>
-        <p>AI 购物入口、消费者轨迹分析与绿色供应链正在合流，出海鞋类电商需要把商品、营销和环保数据一起做成机器可执行资产。</p>
+        <h2>出海 AI 洞察 · 第 0033 期</h2>
+        <p class="date">2026年6月12日 09:07</p>
+        <p class="intro">AI 代理购物、零售数据归因与绿色供应链工具正在同步成熟，出海鞋类团队需要把商品、营销和环保数据一起做成可执行接口。</p>
       </a>
-      <a class="archive-card" href="edition-0031.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0031</span>
-          <span class="date">2026年6月10日 14:38</span>
+      <a class="entry" href="edition-0032.html">
+        <div class="entry-top">
+          <span class="edition">第 0032 期</span>
+
         </div>
-        <h2>出海 AI 洞察 — 第 0031 期</h2>
-        <p>AI购物入口外移，鞋类出海团队正把商品语义、绿色追溯和转化归因一起做成机器可读资产。</p>
+        <h2>出海 AI 洞察 · 第 0032 期</h2>
+        <p class="date">2026年6月11日 09:12</p>
+        <p class="intro">AI 购物入口、消费者轨迹分析与绿色供应链正在合流，出海鞋类电商需要把商品、营销和环保数据一起做成机器可执行资产。</p>
       </a>
-      <a class="archive-card" href="edition-0030.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0030</span>
-          <span class="date">2026年6月10日 14:20</span>
+      <a class="entry" href="edition-0031.html">
+        <div class="entry-top">
+          <span class="edition">第 0031 期</span>
+
         </div>
-        <h2>出海 AI 洞察 — 第 0030 期</h2>
-        <p>AI购物代理与绿色供应链工具同步成熟，出海鞋类团队要同时重做商品数据、营销分析和环保追溯。</p>
+        <h2>出海 AI 洞察 · 第 0031 期</h2>
+        <p class="date">2026年6月10日 14:38</p>
+        <p class="intro">AI购物入口外移，鞋类出海团队正把商品语义、绿色追溯和转化归因一起做成机器可读资产。</p>
       </a>
-      <a class="archive-card" href="edition-0029.html">
-        <div class="archive-top">
-          <span class="pill">Edition 0029</span>
-          <span class="date">2026年6月10日 09:38</span>
+      <a class="entry" href="edition-0030.html">
+        <div class="entry-top">
+          <span class="edition">第 0030 期</span>
+
         </div>
-        <h2>出海 AI 洞察 — 第 0029 期</h2>
-        <p>AI 购物代理和绿色追溯正同时改写出海鞋类电商，商品语义、环保数据与消费者分析开始合流成新的增长底座。</p>
+        <h2>出海 AI 洞察 · 第 0030 期</h2>
+        <p class="date">2026年6月10日 14:20</p>
+        <p class="intro">AI购物代理与绿色供应链工具同步成熟，出海鞋类团队要同时重做商品数据、营销分析和环保追溯。</p>
       </a>
     </section>
-  </main>
-  <footer>Latest edition: 0048</footer>
+    <footer>Latest 20 editions · newest first</footer>
+  </div>
 </body>
 </html>
