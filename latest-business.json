@@ -1,27 +1,27 @@
 {
-  "edition": "0049",
-  "date": "2026年7月6日 09:12",
-  "intro": "AI 购物代理、退货风控和绿色追溯一起逼近实战，出海鞋类团队要同时重写商品数据与环保证据。",
+  "edition": "0050",
+  "date": "2026年7月7日 13:55",
+  "intro": "AI 购物入口、绿色追溯和定价智能正在合流，出海鞋类团队要把商品、环保与消费者数据一起做成可执行资产。",
   "tags": [
     "代理购物",
     "绿色追溯",
-    "退货风控",
-    "跨境工具",
+    "动态定价",
+    "跨境运营",
     "消费归因"
   ],
   "top3": [
     {
-      "title": "AI 正在重写印度零售规则，个性化、定价与履约一起算法化",
-      "comment": "零售竞争转向统一特征层，鞋类站点要补齐商品与库存数据。"
+      "title": "Lantern 用 GEO/AEO 帮电商品牌争夺 AI 搜索曝光位",
+      "comment": "商品卖点和评价结构要改成可被模型引用的内容资产。"
     },
     {
-      "title": "Amazon、Swiggy 和 Zepto 正把购物从搜索推向代理代办",
-      "comment": "未来入口更像代理调用，商品规则和售后策略需可机读。"
+      "title": "AI 正在重写印度零售规则，个性化、定价与履约开始统一建模",
+      "comment": "价格、尺码、库存和物流要进入同一特征层联动决策。"
     },
     {
-      "title": "Google 联合 Walmart、Shopify、Wayfair，把 Gemini 变成站外结账入口",
-      "comment": "结构化商品 feed 将直接影响 AI 对话里的可见性和成交率。"
+      "title": "AI 创企正把 eco-design、追溯与回收识别做成时尚 ESG 工具链",
+      "comment": "环保鞋类应尽快把材料与碳排证据做成机器可读台账。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0049.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0050.html"
 }
