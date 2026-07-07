@@ -1,33 +1,33 @@
 {
-  "edition": "0033",
-  "date": "2026年7月6日 09:18",
-  "intro": "本期从功能性力量、跑步训练科技、骑行装备和 lululemon 中国放缓中，提炼 Fanka 压缩穿搭与女性内容机会。",
+  "edition": "0034",
+  "date": "2026年7月7日 13:58",
+  "intro": "本期从社媒健身纠错、跑步支撑穿搭和热天户外装备中，提炼 Fanka 压缩服内容机会。",
   "tags": [
-    "功能性力量",
-    "训练科技",
-    "步行基线",
-    "运动消费",
-    "骑行核心"
+    "社媒纠错",
+    "支撑内衣",
+    "恢复周期",
+    "夏季穿搭",
+    "热天补水"
   ],
   "top3": [
     {
-      "title": "Lululemon’s latest struggle: slowing sales in key China market",
-      "comment": "lululemon 中国放缓提示高端运动服增长叙事需要重建。"
+      "title": "TikTok Stairmaster 姿势纠错升温",
+      "comment": "用专家纠错内容承接器械热度，展示稳定压缩穿搭。"
     },
     {
-      "title": "Age-Proof Your Body With These 4 Functional Exercises for Lifelong Strength",
-      "comment": "功能性力量回到女性长期运动能力与稳定穿搭。"
+      "title": "跑者运动内衣推荐更新",
+      "comment": "把上身支撑和下身压缩讲成完整跑步穿搭公式。"
     },
     {
-      "title": "I’m Crushing Every Workout in My Half Marathon Plan—Is It a Good Sign or Should I Train for a Faster Finish Time?",
-      "comment": "跑步 App 预测之外，身体感受重新成为训练判断依据。"
+      "title": "9 天跑步训练周期受关注",
+      "comment": "用恢复周期内容提醒女性训练不必每天硬撑。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0033.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0034.html",
   "blog": {
-    "title": "Functional Fitness Outfits for Women: Compression Layers for Lifelong Strength",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/functional-fitness-outfits-for-women-lifelong-strength.html",
-    "summary": "由本期功能性力量与长期运动能力趋势延展，沉淀为女性功能训练、压缩裤和支撑上衣穿搭指南。"
+    "title": "Sports Bra and Compression Leggings for Running Days: A Fanka Fit Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/sports-bra-compression-leggings-running-outfits.html",
+    "summary": "由本期运动内衣支撑趋势延展为女性跑步日压缩穿搭指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
