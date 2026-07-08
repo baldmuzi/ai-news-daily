@@ -1,27 +1,27 @@
 {
-  "edition": "0036",
-  "date": "2026年7月6日 09:10",
-  "intro": "本期从循环设计、AI发现、创作者营销、成熟妈妈穿搭与夏季鞋色切入，提示VIVAIA同步做材料证据、内容响应和脚感分层。",
+  "edition": "0037",
+  "date": "2026年7月8日 09:26",
+  "intro": "本期聚焦价格战、创作者社群、跑步生活方式与舒适鞋联名，给 VIVAIA 提供夏季转化与秋季预热的新入口。",
   "tags": [
-    "循环设计",
-    "AI发现",
-    "创作者营销",
-    "成熟妈妈",
-    "棕色鞋"
+    "价格战",
+    "社群跑步",
+    "回收验证",
+    "舒适联名",
+    "木底复兴"
   ],
   "top3": [
     {
-      "title": "WWD 7 月 5 日报道 Yoshita 1967 赢得欧洲 Circular Design Challenge，循环设计开始从材料概念进入成衣验证",
-      "comment": "循环设计成为材料可信度的新证据，适合升级可持续说明。"
+      "title": "Retail Dive 7 月 7 日称 Walmart 下调食品和日用品价格，暑期消费继续被“省钱理由”主导",
+      "comment": "价格战下，舒适鞋要用 cost-per-wear 证明少买错。"
     },
     {
-      "title": "Glossy 7 月 3 日拆解 Meta 首个时尚 campaign，Kylie Jenner、Peggy Gou 与 Substack 创作者被放进同一传播框架",
-      "comment": "名人、音乐人和内容作者组合传播，适合重构达人矩阵。"
+      "title": "Good On You RSS 7 月 7 日更新 textile-to-textile recycling 议题，回收叙事需要从材料名走向可验证链路",
+      "comment": "回收叙事进入可验证链路，环保要落到服务和证据。"
     },
     {
-      "title": "Real Simple 7 月 6 日称 woven flats 成为夏季趋势，VIVAIA Nelly 等透气编织平底被放进足部友好清单",
-      "comment": "透气编织平底进入足部友好清单，可承接夏季闭趾需求。"
+      "title": "ELLE 7 月 6 日报道 Birkenstock 1774 x Repetto，舒适足床被重新包装成芭蕾审美联名",
+      "comment": "舒适足床与芭蕾审美联名，功能鞋需要先有设计感。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0036.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0037.html"
 }
