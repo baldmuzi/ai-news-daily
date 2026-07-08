@@ -1,33 +1,33 @@
 {
-  "edition": "0034",
-  "date": "2026年7月7日 13:58",
-  "intro": "本期从社媒健身纠错、跑步支撑穿搭和热天户外装备中，提炼 Fanka 压缩服内容机会。",
+  "edition": "0035",
+  "date": "2026年7月8日 09:28",
+  "intro": "本期从 GLP-1 力量训练、汗痕管理面料、环法恢复和热天赛事安全中，提炼 Fanka 女性压缩穿搭内容机会。",
   "tags": [
-    "社媒纠错",
-    "支撑内衣",
-    "恢复周期",
-    "夏季穿搭",
-    "热天补水"
+    "肌肉维护",
+    "汗痕管理",
+    "恢复训练",
+    "热天安全",
+    "回归运动"
   ],
   "top3": [
     {
-      "title": "TikTok Stairmaster 姿势纠错升温",
-      "comment": "用专家纠错内容承接器械热度，展示稳定压缩穿搭。"
+      "title": "GLP-1 力量训练计划升温",
+      "comment": "把变化期力量维护讲成女性压缩穿搭内容。"
     },
     {
-      "title": "跑者运动内衣推荐更新",
-      "comment": "把上身支撑和下身压缩讲成完整跑步穿搭公式。"
+      "title": "夏季跑步服进入汗痕管理",
+      "comment": "从透气延展到跑后体面与面料真实表现。"
     },
     {
-      "title": "9 天跑步训练周期受关注",
-      "comment": "用恢复周期内容提醒女性训练不必每天硬撑。"
+      "title": "环法恢复流程走向大众内容",
+      "comment": "用恢复清单连接压缩层、补水和冷却场景。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0034.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0035.html",
   "blog": {
-    "title": "Sports Bra and Compression Leggings for Running Days: A Fanka Fit Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/sports-bra-compression-leggings-running-outfits.html",
-    "summary": "由本期运动内衣支撑趋势延展为女性跑步日压缩穿搭指南"
+    "title": "Strength Training Outfits for Women on GLP-1: Supportive Layers for Consistent Movement",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/glp-1-strength-training-outfits-women.html",
+    "summary": "由本期 GLP-1 使用者力量训练趋势延展为女性力量训练与压缩穿搭指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
