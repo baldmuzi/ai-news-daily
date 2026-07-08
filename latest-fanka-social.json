@@ -1,32 +1,32 @@
 {
-  "edition": "0019",
-  "date": "2026年7月7日 13:58",
-  "intro": "近 72 小时能稳定核验的社媒原生素材仍偏少，但夏季 activewear 已明显往热天体感、轻运动通勤和任务型浏览靠拢，Fanka 这期更该学会把用户问题写成内容入口。",
+  "edition": "0020",
+  "date": "2026年7月8日 09:29",
+  "intro": "近72小时公开信号集中在热天体感、七分裤长与任务式内容分流，Fanka 适合把用户会搜的痛点词直接写进前3秒和穿搭脚本。",
   "tags": [
-    "热天支撑",
-    "轻运动通勤",
-    "长度回潮",
+    "前3秒纠错",
+    "热天体感",
+    "七分裤长",
     "任务分流",
-    "恢复入口"
+    "恢复节奏"
   ],
   "top3": [
     {
-      "title": "skort 正在从球场单品变成 FYP 里的轻运动通勤模板",
-      "comment": "轻运动通勤里，skort 已成比纯训练更好传播的场景入口。",
-      "url": "https://www.instyle.com/shoes-to-wear-with-skorts-12003625"
+      "title": "TikTok 把 Stairmaster 姿势纠错推成新入口",
+      "comment": "热门器械纠错内容还有效，适合接稳定感与不下滑卖点。",
+      "url": "https://www.womenshealthmag.com/fitness/a71836435/proper-stairmaster-form-gargolying/"
     },
     {
-      "title": "Lululemon 最新清仓刷新把 office-ready 长裤、Align 和速干上衣放进同一条夏日路径",
-      "comment": "夏季 activewear 正从单件训练品转向整天切场景组合。",
-      "url": "https://www.realsimple.com/lululemon-we-made-too-much-summer-refresh-july-2026-12009199"
+      "title": "biker shorts 被重新写成日常夏季基础下装",
+      "comment": "短款运动下装正在走出健身房，适合做通勤与周末双场景。",
+      "url": "https://www.womenshealthmag.com/style/a71839422/how-style-biker-shorts/"
     },
     {
-      "title": "高温季 sports bra 的第一诉求正在回到透气、止汗和不磨皮肤",
-      "comment": "热天 bra 内容要先解决闷热和摩擦，再谈塑形支撑。",
-      "url": "https://www.realsimple.com/amazon-letsjoli-wireless-jelly-bra-deal-july-2026-12010221"
+      "title": "capri 回潮让裤长本身变成内容钩子",
+      "comment": "七分长度被重新讨论，Fanka 可测试 cropped legging 选题。",
+      "url": "https://www.instyle.com/capri-pants-travel-kendall-jenner-12010309"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0019.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0020.html",
   "report_type": "fanka-social-trends",
   "source_window": "趋势近72小时；账号结构近7天；用户痛点近30天"
 }
