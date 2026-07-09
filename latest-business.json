@@ -1,27 +1,27 @@
 {
-  "edition": "0051",
-  "date": "2026年7月8日 09:25",
-  "intro": "AI购物代理、绿色工厂与定价分析正在合流，出海鞋类团队要把商品、环保和消费者数据做成可执行资产。",
+  "edition": "0052",
+  "date": "2026年7月9日 09:15",
+  "intro": "AI 购物协议、代理支付和绿色供应链工具正在同步落地，出海鞋类团队要把商品、环保与消费者数据都做成可执行资产。",
   "tags": [
     "代理购物",
-    "绿色工厂",
-    "动态定价",
-    "退货风控",
-    "跨境运营"
+    "绿色供应链",
+    "跨境选品",
+    "评论洞察",
+    "营销自动化"
   ],
   "top3": [
     {
-      "title": "Lantern 用 GEO/AEO 帮电商品牌争夺 AI 搜索曝光位",
-      "comment": "商品信息要为AI搜索重写，先抢模型引用位。"
+      "title": "Google 推 UCP，AI 购物开始有统一协议层",
+      "comment": "商品、库存和售后规则要先结构化给代理读取。"
     },
     {
-      "title": "零售商正用 AI 处理退货欺诈与逆向物流决策",
-      "comment": "退货数据可直接反哺风控、尺码和商品页优化。"
+      "title": "Visa 把支付网络接进 ChatGPT",
+      "comment": "代理下单将进入真实支付环节，风控口径要前置。"
     },
     {
-      "title": "AI 正在重写零售规则，定价、库存与个性化开始统一建模",
-      "comment": "零售AI开始统一调度价格、库存和履约。"
+      "title": "VIVAIA：AI 把全球品牌拉回同一起跑线",
+      "comment": "多语言内容、评论分析和本地化表达先受益。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0051.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0052.html"
 }
