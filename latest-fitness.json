@@ -1,33 +1,33 @@
 {
-  "edition": "0035",
-  "date": "2026年7月8日 09:28",
-  "intro": "本期从 GLP-1 力量训练、汗痕管理面料、环法恢复和热天赛事安全中，提炼 Fanka 女性压缩穿搭内容机会。",
+  "edition": "0036",
+  "date": "2026年7月9日 09:17",
+  "intro": "本期从训练量管理、户外步行鞋、运动科技、Alo 高端化和会员促销中，提炼 Fanka 女性压缩穿搭内容机会。",
   "tags": [
-    "肌肉维护",
-    "汗痕管理",
-    "恢复训练",
-    "热天安全",
-    "回归运动"
+    "训练量管理",
+    "户外步行",
+    "运动科技",
+    "高端运动风",
+    "会员促销"
   ],
   "top3": [
     {
-      "title": "GLP-1 力量训练计划升温",
-      "comment": "把变化期力量维护讲成女性压缩穿搭内容。"
+      "title": "周跑量管理回到训练核心",
+      "comment": "把训练量、恢复和压缩层穿搭做成分层内容。"
     },
     {
-      "title": "夏季跑步服进入汗痕管理",
-      "comment": "从透气延展到跑后体面与面料真实表现。"
+      "title": "周末集中运动成健康入口",
+      "comment": "用周末户外日连接长时间活动和舒适支撑。"
     },
     {
-      "title": "环法恢复流程走向大众内容",
-      "comment": "用恢复清单连接压缩层、补水和冷却场景。"
+      "title": "Alo 高端化带动运动生活方式",
+      "comment": "借鉴场景扩张，但保留 Fanka 功能可信度。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0035.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0036.html",
   "blog": {
-    "title": "Strength Training Outfits for Women on GLP-1: Supportive Layers for Consistent Movement",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/glp-1-strength-training-outfits-women.html",
-    "summary": "由本期 GLP-1 使用者力量训练趋势延展为女性力量训练与压缩穿搭指南"
+    "title": "Outdoor Walking and Hiking Outfits for Women: Compression Layers for Long Days Outside",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/outdoor-walking-hiking-outfits-for-women.html",
+    "summary": "由本期户外徒步装备与步行鞋消费趋势延展为女性户外步行、轻徒步和压缩层穿搭指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
