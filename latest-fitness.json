@@ -1,33 +1,33 @@
 {
-  "edition": "0036",
-  "date": "2026年7月9日 09:17",
-  "intro": "本期从训练量管理、户外步行鞋、运动科技、Alo 高端化和会员促销中，提炼 Fanka 女性压缩穿搭内容机会。",
+  "edition": "0037",
+  "date": "2026年7月10日 09:36",
+  "intro": "本期从 BFR 训练、折腰喇叭裤、彩色运动街拍、女性更年期健康与无屏穿戴设备中，提炼 Fanka 压缩穿搭内容机会。",
   "tags": [
-    "训练量管理",
-    "户外步行",
-    "运动科技",
-    "高端运动风",
-    "会员促销"
+    "BFR训练",
+    "折腰裤型",
+    "运动街拍",
+    "女性健康",
+    "无屏穿戴"
   ],
   "top3": [
     {
-      "title": "周跑量管理回到训练核心",
-      "comment": "把训练量、恢复和压缩层穿搭做成分层内容。"
+      "title": "BFR 训练从社媒进入主流解释",
+      "comment": "讲安全边界，连接力量日基础压缩穿搭。"
     },
     {
-      "title": "周末集中运动成健康入口",
-      "comment": "用周末户外日连接长时间活动和舒适支撑。"
+      "title": "折腰 leggings 回到运动街拍",
+      "comment": "用腰头选择指南区分支撑训练与低冲击造型。"
     },
     {
-      "title": "Alo 高端化带动运动生活方式",
-      "comment": "借鉴场景扩张，但保留 Fanka 功能可信度。"
+      "title": "无屏穿戴强调少打扰记录",
+      "comment": "把少调整、少干扰转化为压缩服内容卖点。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0036.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0037.html",
   "blog": {
-    "title": "Outdoor Walking and Hiking Outfits for Women: Compression Layers for Long Days Outside",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/outdoor-walking-hiking-outfits-for-women.html",
-    "summary": "由本期户外徒步装备与步行鞋消费趋势延展为女性户外步行、轻徒步和压缩层穿搭指南"
+    "title": "High-Rise vs. Foldover Leggings: A Workout Guide for Support, Comfort, and Style",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/high-rise-vs-foldover-leggings-workout-guide.html",
+    "summary": "由本期折腰 leggings 回潮趋势延展为高腰压缩裤、折腰裤型和真实运动场景选择指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
