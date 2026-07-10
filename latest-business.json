@@ -1,27 +1,27 @@
 {
-  "edition": "0052",
-  "date": "2026年7月9日 09:15",
-  "intro": "AI 购物协议、代理支付和绿色供应链工具正在同步落地，出海鞋类团队要把商品、环保与消费者数据都做成可执行资产。",
+  "edition": "0053",
+  "date": "2026年7月10日 09:36",
+  "intro": "AI 代理购物、绿色追溯与跨境运营自动化正在汇流，出海鞋类团队必须把商品、环保与消费者数据一起做成可执行资产。",
   "tags": [
     "代理购物",
-    "绿色供应链",
-    "跨境选品",
-    "评论洞察",
-    "营销自动化"
+    "绿色追溯",
+    "退货风控",
+    "跨境运营",
+    "零售分析"
   ],
   "top3": [
     {
-      "title": "Google 推 UCP，AI 购物开始有统一协议层",
-      "comment": "商品、库存和售后规则要先结构化给代理读取。"
+      "title": "Gemini 变成可下单购物代理",
+      "comment": "聊天入口开始吞掉详情页，商品字段必须先结构化。"
     },
     {
-      "title": "Visa 把支付网络接进 ChatGPT",
-      "comment": "代理下单将进入真实支付环节，风控口径要前置。"
+      "title": "零售商用 AI 管退货欺诈",
+      "comment": "退货、尺码投诉和逆向物流要并进同一风控闭环。"
     },
     {
-      "title": "VIVAIA：AI 把全球品牌拉回同一起跑线",
-      "comment": "多语言内容、评论分析和本地化表达先受益。"
+      "title": "AI 开始直连亚马逊运营系统",
+      "comment": "权限、审批流和回滚机制要先于功能接入设计。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0052.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0053.html"
 }
