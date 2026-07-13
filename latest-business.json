@@ -1,27 +1,27 @@
 {
-  "edition": "0053",
-  "date": "2026年7月10日 09:36",
-  "intro": "AI 代理购物、绿色追溯与跨境运营自动化正在汇流，出海鞋类团队必须把商品、环保与消费者数据一起做成可执行资产。",
+  "edition": "0054",
+  "date": "2026年7月13日 09:16",
+  "intro": "AI购物助手、环保追溯与零售算法正在合流，出海鞋类团队要同时重写商品、营销与可持续数据层。",
   "tags": [
     "代理购物",
     "绿色追溯",
+    "定价智能",
     "退货风控",
-    "跨境运营",
-    "零售分析"
+    "投放自动化"
   ],
   "top3": [
     {
-      "title": "Gemini 变成可下单购物代理",
-      "comment": "聊天入口开始吞掉详情页，商品字段必须先结构化。"
+      "title": "TechRadar：AI购物加速发现，但品牌、评价与支付信任仍决定最终成交",
+      "comment": "AI加速选购，但信任信号仍决定鞋类成交。"
     },
     {
-      "title": "零售商用 AI 管退货欺诈",
-      "comment": "退货、尺码投诉和逆向物流要并进同一风控闭环。"
+      "title": "Business Insider：零售商开始用 AI 打击退货欺诈，把逆向物流从成本中心变成数据资产",
+      "comment": "退货欺诈检测最适合高退货鞋服先落地。"
     },
     {
-      "title": "AI 开始直连亚马逊运营系统",
-      "comment": "权限、审批流和回滚机制要先于功能接入设计。"
+      "title": "arXiv：AIGP 把大模型与强化学习接入电商定价，在真实业务中同时拉升 GMV 与 ROI",
+      "comment": "大模型定价开始把GMV与ROI一起优化。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0053.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0054.html"
 }
