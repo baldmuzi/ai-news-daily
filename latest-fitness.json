@@ -1,33 +1,33 @@
 {
-  "edition": "0037",
-  "date": "2026年7月10日 09:36",
-  "intro": "本期从 BFR 训练、折腰喇叭裤、彩色运动街拍、女性更年期健康与无屏穿戴设备中，提炼 Fanka 压缩穿搭内容机会。",
+  "edition": "0038",
+  "date": "2026年7月13日 09:17",
+  "intro": "本期关注女性跑者盆底健康、骑行入门、恢复鞋消费、夏季耐热训练与 capri leggings 回潮，提炼 Fanka 压缩穿搭内容机会。",
   "tags": [
-    "BFR训练",
-    "折腰裤型",
-    "运动街拍",
-    "女性健康",
-    "无屏穿戴"
+    "盆底友好跑",
+    "骑行入门",
+    "恢复鞋消费",
+    "耐热训练",
+    "七分裤回潮"
   ],
   "top3": [
     {
-      "title": "BFR 训练从社媒进入主流解释",
-      "comment": "讲安全边界，连接力量日基础压缩穿搭。"
+      "title": "女性跑者盆底健康进入训练讨论",
+      "comment": "做盆底友好跑步穿搭，安全边界必须清楚。"
     },
     {
-      "title": "折腰 leggings 回到运动街拍",
-      "comment": "用腰头选择指南区分支撑训练与低冲击造型。"
+      "title": "新手女性骑行强调低门槛体验",
+      "comment": "用第一次骑行穿搭降低装备焦虑。"
     },
     {
-      "title": "无屏穿戴强调少打扰记录",
-      "comment": "把少调整、少干扰转化为压缩服内容卖点。"
+      "title": "恢复鞋消费走向日常恢复场景",
+      "comment": "训练后穿搭可连接压缩层与轻恢复。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0037.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0038.html",
   "blog": {
-    "title": "High-Rise vs. Foldover Leggings: A Workout Guide for Support, Comfort, and Style",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/high-rise-vs-foldover-leggings-workout-guide.html",
-    "summary": "由本期折腰 leggings 回潮趋势延展为高腰压缩裤、折腰裤型和真实运动场景选择指南"
+    "title": "Pelvic Floor-Friendly Running Outfits for Women: Supportive Layers for Easier Miles",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/pelvic-floor-friendly-running-outfits-women.html",
+    "summary": "由本期跑者盆底健康趋势延展为女性跑步支撑穿搭与安全边界指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
