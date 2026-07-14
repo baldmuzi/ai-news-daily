@@ -1,33 +1,33 @@
 {
-  "edition": "0038",
-  "date": "2026年7月13日 09:17",
-  "intro": "本期关注女性跑者盆底健康、骑行入门、恢复鞋消费、夏季耐热训练与 capri leggings 回潮，提炼 Fanka 压缩穿搭内容机会。",
+  "edition": "0039",
+  "date": "2026年7月14日 09:10",
+  "intro": "本期关注耐疲劳跑步、骑行间歇、deload 恢复、运动收纳与健康老化，提炼 Fanka 压缩穿搭内容机会。",
   "tags": [
-    "盆底友好跑",
-    "骑行入门",
-    "恢复鞋消费",
-    "耐热训练",
-    "七分裤回潮"
+    "耐疲劳训练",
+    "聪明恢复",
+    "骑行间歇",
+    "运动收纳",
+    "健康老化"
   ],
   "top3": [
     {
-      "title": "女性跑者盆底健康进入训练讨论",
-      "comment": "做盆底友好跑步穿搭，安全边界必须清楚。"
+      "title": "跑步耐疲劳训练强调后半程稳定",
+      "comment": "用稳定压缩与少干扰收纳讲长跑支持。"
     },
     {
-      "title": "新手女性骑行强调低门槛体验",
-      "comment": "用第一次骑行穿搭降低装备焦虑。"
+      "title": "deload week 把恢复变成主动训练",
+      "comment": "恢复周穿搭可连接低压运动和长期坚持。"
     },
     {
-      "title": "恢复鞋消费走向日常恢复场景",
-      "comment": "训练后穿搭可连接压缩层与轻恢复。"
+      "title": "骑行 over/under 间歇走向大众化",
+      "comment": "强度切换日适合讲透气支撑与少调整。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0038.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0039.html",
   "blog": {
-    "title": "Pelvic Floor-Friendly Running Outfits for Women: Supportive Layers for Easier Miles",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/pelvic-floor-friendly-running-outfits-women.html",
-    "summary": "由本期跑者盆底健康趋势延展为女性跑步支撑穿搭与安全边界指南"
+    "title": "Deload Week Workout Outfits for Women: Supportive Layers for Smarter Recovery",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/deload-week-workout-outfits-for-women.html",
+    "summary": "由本期 deload week 与恢复训练趋势延展为女性低压力训练穿搭指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
