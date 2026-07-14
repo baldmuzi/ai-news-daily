@@ -1,27 +1,27 @@
 {
-  "edition": "0054",
-  "date": "2026年7月13日 09:16",
-  "intro": "AI购物助手、环保追溯与零售算法正在合流，出海鞋类团队要同时重写商品、营销与可持续数据层。",
+  "edition": "0055",
+  "date": "2026年7月14日 09:07",
+  "intro": "AI购物入口、绿色追溯与营销测量继续并线，出海鞋类团队要把商品、合规和消费者数据一起做成机器可执行资产。",
   "tags": [
-    "代理购物",
+    "AI购物",
     "绿色追溯",
-    "定价智能",
     "退货风控",
-    "投放自动化"
+    "定价优化",
+    "归因测量"
   ],
   "top3": [
     {
-      "title": "TechRadar：AI购物加速发现，但品牌、评价与支付信任仍决定最终成交",
-      "comment": "AI加速选购，但信任信号仍决定鞋类成交。"
+      "title": "TechRadar：AI购物加速商品发现，但信任机制仍决定最后成交",
+      "comment": "AI导购提速，但信任信号仍决定成交。"
     },
     {
-      "title": "Business Insider：零售商开始用 AI 打击退货欺诈，把逆向物流从成本中心变成数据资产",
-      "comment": "退货欺诈检测最适合高退货鞋服先落地。"
+      "title": "36氪：千问入淘对撞豆包闭环，618 首次进入 AI 电商正面战",
+      "comment": "AI购物入口开始在中美平台同步前移。"
     },
     {
-      "title": "arXiv：AIGP 把大模型与强化学习接入电商定价，在真实业务中同时拉升 GMV 与 ROI",
-      "comment": "大模型定价开始把GMV与ROI一起优化。"
+      "title": "Vogue：可持续时尚 AI 工具开始把追溯、合规与循环利用做成执行系统",
+      "comment": "环保合规正从报表走向可查询执行系统。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0054.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0055.html"
 }
