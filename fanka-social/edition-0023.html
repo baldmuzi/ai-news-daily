@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fanka 社交趋势拆解 #0023</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#080c14; --surface:#0f1724; --border:#22314a; --accent:#f43f5e; --signal:#38bdf8; --text:#e8edf6; --muted:#94a3b8; --soft:#cbd5e1; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { min-height:100vh; background:radial-gradient(circle at top,rgba(244,63,94,.16),transparent 28rem),radial-gradient(circle at 85% 0,rgba(56,189,248,.1),transparent 24rem),linear-gradient(180deg,#080c14,#0a101a 58%,#080c14); color:var(--text); font-family:"Noto Serif SC",serif; line-height:1.75; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { width:min(1180px,calc(100vw - 28px)); margin:0 auto; padding:34px 0 88px; }
+    .back-link { display:inline-block; margin-bottom:24px; color:var(--muted); font:12px "JetBrains Mono",monospace; }
+    .hero { padding:8px 0 30px; border-bottom:1px solid rgba(255,255,255,.08); }
+    .eyebrow { color:#fecdd3; font:12px "JetBrains Mono",monospace; letter-spacing:.08em; text-transform:uppercase; margin-bottom:14px; }
+    h1 { font-size:clamp(2.4rem,5vw,4.4rem); line-height:1.05; margin-bottom:12px; }
+    .subtitle { color:var(--muted); font:14px "JetBrains Mono",monospace; margin-bottom:20px; }
+    .hero-meta,.data-window,.tags { display:flex; flex-wrap:wrap; gap:10px; }
+    .pill { border:1px solid rgba(244,63,94,.3); background:rgba(244,63,94,.08); color:#ffe4e6; border-radius:999px; padding:7px 12px; font:12px "JetBrains Mono",monospace; }
+    .data-window { margin-top:10px; }
+    .data-window .pill { border-color:rgba(56,189,248,.26); background:rgba(56,189,248,.08); color:#d8f2ff; }
+    .intro-panel { margin:28px 0 34px; padding:22px; border:1px solid var(--border); border-radius:18px; background:linear-gradient(180deg,rgba(15,23,36,.95),rgba(10,16,26,.95)); }
+    .intro-panel p { color:var(--soft); font-size:16px; }
+    .shortage { margin-top:12px; color:#fda4af; font-size:14px; }
+    .tag { border:1px solid rgba(56,189,248,.24); background:rgba(56,189,248,.08); color:#dbeafe; border-radius:999px; padding:7px 11px; font-size:13px; }
+    section { margin-top:34px; }
+    .section-head { display:flex; justify-content:space-between; align-items:end; gap:18px; margin-bottom:18px; }
+    .section-head h2 { font-size:clamp(1.7rem,3vw,2.4rem); line-height:1.1; }
+    .section-head p { max-width:760px; color:var(--muted); font-size:14px; }
+    .trend-grid,.pain-grid,.structure-grid,.topics-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+    .trend-card,.pain-card,.structure-card,.topic-card { border:1px solid var(--border); border-radius:18px; background:linear-gradient(180deg,rgba(15,23,36,.98),rgba(9,15,25,.98)); padding:22px; box-shadow:0 16px 44px rgba(0,0,0,.16); }
+    .card-top { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:12px; font:12px "JetBrains Mono",monospace; color:var(--muted); }
+    .cat { display:inline-flex; align-items:center; gap:6px; background:rgba(244,63,94,.92); color:white; border-radius:999px; padding:5px 10px; }
+    .card-title,.structure-card h3 { font-size:22px; line-height:1.35; }
+    .card-title:hover { color:#fecdd3; }
+    .meta,.mono { margin-top:10px; color:var(--muted); font:12px "JetBrains Mono",monospace; }
+    .card-body,.structure-card .body,.pain-card .body,.topic-card .body { margin-top:15px; color:var(--soft); font-size:15px; }
+    .card-body p + p,.structure-card .body p + p,.pain-card .body p + p,.topic-card .body p + p { margin-top:10px; }
+    .card-footer { display:flex; justify-content:flex-end; margin-top:16px; }
+    .source-btn { color:var(--accent); font:12px "JetBrains Mono",monospace; }
+    .pain-card h3,.topic-card h3 { font-size:20px; line-height:1.35; }
+    table { width:100%; border-collapse:collapse; overflow:hidden; border-radius:16px; border:1px solid var(--border); background:linear-gradient(180deg,rgba(15,23,36,.96),rgba(9,15,25,.96)); }
+    th,td { padding:16px 14px; border-bottom:1px solid rgba(255,255,255,.07); text-align:left; vertical-align:top; font-size:14px; }
+    th { color:#f8fafc; font:12px "JetBrains Mono",monospace; letter-spacing:.04em; text-transform:uppercase; background:rgba(255,255,255,.02); }
+    td { color:var(--soft); }
+    td a { color:#bfdbfe; }
+    .foot { margin-top:28px; color:var(--muted); font-size:13px; }
+    @media (max-width:860px) { .trend-grid,.pain-grid,.structure-grid,.topics-grid { grid-template-columns:1fr; } table,thead,tbody,tr,th,td { display:block; width:100%; } thead { display:none; } tr + tr { border-top:1px solid rgba(255,255,255,.07); } td { padding:14px 14px 0; border-bottom:0; } td:last-child { padding-bottom:14px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back-link" href="../fanka-social/">← 返回存档</a>
+    <section class="hero">
+      <div class="eyebrow">Social Trend &amp; Creator Playbook · Powered by Fanka</div>
+      <h1>Fanka 社交趋势拆解</h1>
+      <p class="subtitle">Edition 0023 · 2026年7月14日</p>
+      <div class="hero-meta">
+        <span class="pill">近 72 小时趋势 7 条</span>
+        <span class="pill">结构参考含近 7 天二级公开线索</span>
+        <span class="pill">用户痛点近 30 天</span>
+      </div>
+      <div class="data-window">
+        <span class="pill">趋势近 72 小时</span>
+        <span class="pill">账号结构近 7 天</span>
+        <span class="pill">用户痛点近 30 天</span>
+      </div>
+    </section>
+
+    <div class="intro-panel">
+      <p>本期新变化集中在 capri 回潮、力量训练前置、海边运动审美和任务分流式选品，Fanka 要同步更新短视频钩子与痛点文案。</p>
+      <p class="shortage">近 3 天可核验社媒素材不足，本期仅收录 7 条趋势信号。 本期未发现可核验中文平台新趋势。</p>
+      <div class="tags"><span class="tag">力量前置</span><span class="tag">capri回潮</span><span class="tag">海边运动感</span><span class="tag">任务分流</span><span class="tag">肋骨压痛</span></div>
+    </div>
+
+    <section>
+      <div class="section-head"><div><h2>Top 社交趋势信号</h2><p>本期按近 72 小时优先抓取；账号结构与品牌动作只在一级来源不可稳定访问时，明确降级为“二级公开线索”。最近 5 期已重复的折叠腰头、旧 Alo / Gymshark / Halara 主卡位本期不再复用。</p></div></div>
+      <div class="trend-grid">
+        
+        <article class="trend-card">
+          <div class="card-top"><span class="cat">穿搭趋势</span><span class="num">#01</span></div>
+          <a class="card-title" href="https://people.com/jennifer-lopez-capri-pants-july-2026-12015465" target="_blank" rel="noopener">Jennifer Lopez 把 capri 穿成“比牛仔更凉快、比短裤更利落”的夏季通勤裤型</a>
+          <div class="meta">People · celebrity street style / 公开图像线索 · 2026-07-14 · 互动数据未公开</div>
+          <div class="card-body"><p>【信号是什么】People 7 月 14 日写到，Jennifer Lopez 在纽约把黑色 capri 搭配 bomber 和 kitten heels，重新把 capri 从单纯运动裤拉回城市造型。最近 3 期里 capri 已经连续出现，所以本期只保留这一条，并把它视作“练前练后都能穿”的轮廓信号，而不是再做泛泛的 Y2K 回顾。</p><p>【内容结构】这类内容的前 3 秒非常直接，先给完整街拍轮廓，再告诉你“它比 jeans 更凉快”；中段不讲训练动作，而是用鞋、外套和比例解释为什么 capri 看起来更利落，CTA 适合做“你会穿去办公室还是 Pilates”二选一评论。</p><p>【Fanka 机会】Fanka 可以拍一条“压缩 capri 怎么从 studio 直接穿去 city errands”的短视频，把高腰稳感、长度显腿型和不闷热一起说清楚。</p></div>
+          <div class="card-footer"><a class="source-btn" href="https://people.com/jennifer-lopez-capri-pants-july-2026-12015465" target="_blank" rel="noopener">查看原文 →</a></div>
+        </article>
+        
+        <article class="trend-card">
+          <div class="card-top"><span class="cat">训练潮流</span><span class="num">#02</span></div>
+          <a class="card-title" href="https://www.vogue.com/article/hailey-bieber-strength-training" target="_blank" rel="noopener">Hailey Bieber 公开从 Pilates 语境切向 weighted vest + BFR 的下肢力量训练</a>
+          <div class="meta">Vogue（近 7 天结构参考） · 基于 Hailey Bieber Instagram 公开照片的二级报道 · 2026-07-09 · 58M 粉丝账号引用，互动数据未公开</div>
+          <div class="card-body"><p>【信号是什么】Vogue 7 月 9 日记录 Hailey Bieber 最近公开训练照里出现 weighted vest 和 individual blood flow restriction bands，意味着女性 fitness 话语正在从“Pilates princess”继续往更明确的力量训练和骨密度、姿态、下肢增肌结果推进。它不是全新大众潮流结论，但足够说明头部内容正在把 strength 说得更时髦、更可分享。</p><p>【内容结构】前 3 秒的钩子不是器械教学，而是“Hailey 不只练 Pilates 了”；随后用一个新工具名词解释训练升级，再把 posture、power、glute gains 这些结果词塞进中段，CTA 天然适合问“你最近训练更偏拉伸还是力量”。</p><p>【Fanka 机会】Fanka 可以测试“压缩裤不是只给 low-impact 穿”的力量训练脚本，把稳定腰腹、深蹲不位移、训练后仍能通勤穿出门作为一条线说。</p></div>
+          <div class="card-footer"><a class="source-btn" href="https://www.vogue.com/article/hailey-bieber-strength-training" target="_blank" rel="noopener">查看原文 →</a></div>
+        </article>
+        
+        <article class="trend-card">
+          <div class="card-top"><span class="cat">生活方式</span><span class="num">#03</span></div>
+          <a class="card-title" href="https://www.whowhatwear.com/beauty/surfer-aesthetic-summer-trend" target="_blank" rel="noopener">“Surf’s Up” 夏季审美把 rash guard、tankini 和 wraparound sunglasses 推成带运动感的海边穿搭线索</a>
+          <div class="meta">Who What Wear · beauty + fashion trend report · 2026-07-12 · 互动数据未公开</div>
+          <div class="card-body"><p>【信号是什么】Who What Wear 7 月 12 日把 2026 夏季的 surfer aesthetic 讲成带明显 athletic 感的海边风格，核心单品包括 rash guards、tankinis、sporty sunglasses 和带一点功能感的 body care。对 Fanka 来说，这不是严格意义上的健身爆点，但它说明“海边运动感”正在替代单纯度假感。</p><p>【内容结构】这类稿子的前 3 秒会先给完整氛围图，再快速点名 3 到 4 个识别度很高的单品；中段不是讲性能参数，而是讲你如何把 beach、poolside 和 sporty beauty 连成一个 mood，CTA 适合做“你更想看 beach workout 还是 resort recovery”。</p><p>【Fanka 机会】Fanka 可以切出“海边轻训练 / 旅行恢复穿搭”专题，用速干、覆盖感、防晒搭配和轻支撑 bra 来拓展夏季内容边界。</p></div>
+          <div class="card-footer"><a class="source-btn" href="https://www.whowhatwear.com/beauty/surfer-aesthetic-summer-trend" target="_blank" rel="noopener">查看原文 →</a></div>
+        </article>
+        
+        <article class="trend-card">
+          <div class="card-top"><span class="cat">账号观察</span><span class="num">#04</span></div>
+          <a class="card-title" href="https://people.com/lululemon-summer-sale-last-chance-july-2026-12002931" target="_blank" rel="noopener">lululemon 最后阶段夏促仍在用“今天要做什么”来组织内容，而不是只推单品</a>
+          <div class="meta">People（来自二级公开线索） · 2026-07-11 · 价格与补货信息公开可见</div>
+          <div class="card-body"><p>【信号是什么】People 7 月 11 日写到 lululemon 夏促最后阶段仍在强调 breathable tank、supportive sports bra、bermuda shorts、belt bag 和 2-in-1 running shorts 的“任务分流”。这和最近几期反复出现的“单条 Align 带全场”不同，它更像把内容先按 travel、walk、hot workout 切场景。</p><p>【内容结构】前 3 秒先抛“last chance”紧迫感，中段把一个价格点配一个场景用途，而不是配一堆材质词；CTA 适合做“如果只能带三件去旅行你拿什么”的评论引导。</p><p>【Fanka 机会】Fanka 可以把内容从单 SKU 介绍切换成“高温训练包 / 飞机通勤包 / 轻恢复包”，同一条压缩裤在不同任务里重复出现。</p></div>
+          <div class="card-footer"><a class="source-btn" href="https://people.com/lululemon-summer-sale-last-chance-july-2026-12002931" target="_blank" rel="noopener">查看原文 →</a></div>
+        </article>
+        
+        <article class="trend-card">
+          <div class="card-top"><span class="cat">账号观察</span><span class="num">#05</span></div>
+          <a class="card-title" href="https://www.harpersbazaar.com/fashion/a71872080/alo-atelier-luxury-brand-workout-athleisure/" target="_blank" rel="noopener">Alo 的公开叙事继续把 activewear 往 luxury wellness travel 推，而不是只停留在 studio</a>
+          <div class="meta">Harper&#x27;s Bazaar（近 7 天结构参考，来自二级公开线索） · 2026-07-09 · 互动数据未公开</div>
+          <div class="card-body"><p>【信号是什么】Harper&#x27;s Bazaar 7 月 9 日把 Alo 夏季 Atelier 和 wellness yacht 事件写成 luxury lifestyle 扩张案例，而不是单纯的 yoga wear 新闻。结合官网当前仍把 Travel in Alo、Pilates、Wellness 放在首页导航层，Alo 的重点已经很明确：把品牌从课程穿搭升级成一种更昂贵的生活方式想象。</p><p>【内容结构】前 3 秒不是产品特写，而是游艇、度假地和活动场景；中段再补 celebrity、wellness、atelier 这些标签完成 aspirational 锚定，CTA 更适合引导“你想把 activewear 穿到哪一个生活场景”。</p><p>【Fanka 机会】Fanka 不需要学昂贵外壳，但可以学“场景先行”的叙事，把 travel、recovery、studio-to-street 说成一个连续日程。</p></div>
+          <div class="card-footer"><a class="source-btn" href="https://www.harpersbazaar.com/fashion/a71872080/alo-atelier-luxury-brand-workout-athleisure/" target="_blank" rel="noopener">查看原文 →</a></div>
+        </article>
+        
+        <article class="trend-card">
+          <div class="card-top"><span class="cat">用户痛点</span><span class="num">#06</span></div>
+          <a class="card-title" href="https://suggestqueries.google.com/complete/search?client=firefox&amp;q=leggings%20slide%20down%20when%20walking" target="_blank" rel="noopener">Google 推荐词继续把“walking 时 leggings 下滑”顶在公开搜索需求里</a>
+          <div class="meta">Google Autocomplete · 2026-07-14 采集 · 公开推荐词，无互动数据</div>
+          <div class="card-body"><p>【信号是什么】7 月 14 日实时抓到的 Google 推荐词仍在出现 “leggings slide down when walking”“what causes leggings to slide down”“why do my leggings slide down”。这说明下滑不是训练强度很高时才出现的问题，而是普通走路场景也在持续触发搜索。</p><p>【内容结构】这类痛点内容的最佳开头不是展示好看的 look，而是先问“为什么我只是走路裤子也往下掉”；中段用腰头、裆部、尺码和面料回弹做拆解，CTA 最适合把用户拉进自报身高体重或使用场景的评论。</p><p>【Fanka 机会】Fanka 可以把“走路也不往下掉”单独做成一条内容，少说抽象支撑，多给步行、弯腰、装手机的连续镜头。</p></div>
+          <div class="card-footer"><a class="source-btn" href="https://suggestqueries.google.com/complete/search?client=firefox&amp;q=leggings%20slide%20down%20when%20walking" target="_blank" rel="noopener">查看原文 →</a></div>
+        </article>
+        
+        <article class="trend-card">
+          <div class="card-top"><span class="cat">用户痛点</span><span class="num">#07</span></div>
+          <a class="card-title" href="https://suggestqueries.google.com/complete/search?client=firefox&amp;q=can%20a%20tight%20sports%20bra%20cause%20rib%20pain" target="_blank" rel="noopener">Google 推荐词把“tight sports bra / rib pain”继续公开化，说明用户已把压迫感写成明确风险词</a>
+          <div class="meta">Google Autocomplete · 2026-07-14 采集 · 公开推荐词，无互动数据</div>
+          <div class="card-body"><p>【信号是什么】同日抓取里出现 “can a tight sports bra cause rib pain”“can a tight bra cause rib pain”，说明用户对于 sports bra 的抱怨已经从“紧不紧”升级到“会不会造成肋骨痛”。这比泛泛的舒适度抱怨更值得被前置到文案里。</p><p>【内容结构】前 3 秒最好先点一个很具体的身体反馈词，例如 rib pain 或 tight around ribs；中段再解释底围、罩杯、支撑级别和训练类型如何匹配，CTA 可引导评论区说出“你最怕勒哪一圈”。</p><p>【Fanka 机会】Fanka 可以把底围舒适区、轻中高支撑差异和长时间穿着体感拆成系列内容，别只讲“包裹感”。</p></div>
+          <div class="card-footer"><a class="source-btn" href="https://suggestqueries.google.com/complete/search?client=firefox&amp;q=can%20a%20tight%20sports%20bra%20cause%20rib%20pain" target="_blank" rel="noopener">查看原文 →</a></div>
+        </article>
+        
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><div><h2>用户痛点雷达</h2><p>优先保留 30 天内仍能公开核验的搜索需求、公开评论摘要和媒体整理评论，不用“常识”代替用户语言。</p></div></div>
+      <div class="pain-grid">
+        
+        <article class="pain-card">
+          <h3>步行场景也会触发 leggings 下滑焦虑</h3>
+          <p class="mono">Google Autocomplete · 2026-07-14 · https://suggestqueries.google.com/complete/search?client=firefox&amp;q=leggings%20slide%20down%20when%20walking</p>
+          <div class="body">
+            <p><strong>用户反馈概括：</strong>公开推荐词直接出现 leggings slide down when walking、why do my leggings slide down，说明用户不是只在高强度训练时抱怨下滑，日常通勤和散步也在搜。</p>
+            <p><strong>对 Fanka 的内容启发：</strong>评论区适合反问“你最常在哪个动作里开始下滑”，把步行、蹲下、装手机分开拍。</p>
+            <p><strong>对 Fanka 的产品表达启发：</strong>产品表达要把腰头回弹、裆部版型和口袋承重写在一起，而不是只说高腰。</p>
+          </div>
+        </article>
+        
+        <article class="pain-card">
+          <h3>肋骨压痛已经是公开可见的 sports bra 搜索词</h3>
+          <p class="mono">Google Autocomplete · 2026-07-14 · https://suggestqueries.google.com/complete/search?client=firefox&amp;q=can%20a%20tight%20sports%20bra%20cause%20rib%20pain</p>
+          <div class="body">
+            <p><strong>用户反馈概括：</strong>推荐词里直接出现 can a tight sports bra cause rib pain，说明底围压迫已不是隐性不适，而是被用户明确命名。</p>
+            <p><strong>对 Fanka 的内容启发：</strong>内容别只说支撑，应该更早出现“勒肋骨、勒呼吸、练完想立刻脱”的真实语言。</p>
+            <p><strong>对 Fanka 的产品表达启发：</strong>强调底围压力分布、面料回弹和不同支撑级别的使用边界。</p>
+          </div>
+        </article>
+        
+        <article class="pain-card">
+          <h3>热天穿 leggings 的第一担忧仍然是闷热</h3>
+          <p class="mono">Google Autocomplete · 2026-07-14 · https://suggestqueries.google.com/complete/search?client=firefox&amp;q=leggings%20too%20hot%20for%20summer</p>
+          <div class="body">
+            <p><strong>用户反馈概括：</strong>同日推荐词出现 are leggings too hot for summer、leggings for hot weather，说明高温下用户先问能不能穿，再问好不好看。</p>
+            <p><strong>对 Fanka 的内容启发：</strong>高温内容要把透气和出汗场景拍在前面，不要先拍静态显瘦镜头。</p>
+            <p><strong>对 Fanka 的产品表达启发：</strong>产品卖点可突出轻量、快干、不同温度场景的搭配建议。</p>
+          </div>
+        </article>
+        
+        <article class="pain-card">
+          <h3>compression leggings 的需求已经分化到医疗、plus size 和 lipedema 等细分意图</h3>
+          <p class="mono">Google Autocomplete · 2026-07-14 · https://suggestqueries.google.com/complete/search?client=firefox&amp;q=compression%20leggings%20women</p>
+          <div class="body">
+            <p><strong>用户反馈概括：</strong>公开推荐词里已经分化出 plus size、medical、lipedema 等尾词，说明用户对压缩裤的期待不再只是一般塑形。</p>
+            <p><strong>对 Fanka 的内容启发：</strong>内容里要区分塑形压缩、运动支撑和特殊体感诉求，避免一句压缩包打天下。</p>
+            <p><strong>对 Fanka 的产品表达启发：</strong>对压缩等级和适用场景的表达要更具体，减少模糊的“all day compression”。</p>
+          </div>
+        </article>
+        
+        <article class="pain-card">
+          <h3>热天 bra 的公开评论仍围着闷汗、摩擦和 rash 打转</h3>
+          <p class="mono">Real Simple · 2026-07-04 · https://www.realsimple.com/amazon-letsjoli-wireless-jelly-bra-deal-july-2026-12010221</p>
+          <div class="body">
+            <p><strong>用户反馈概括：</strong>媒体整理 Amazon 公开反馈时仍重点提到 swamp boob、chafing、irritation、rashes，说明 bra 体感问题在夏季持续放大。</p>
+            <p><strong>对 Fanka 的内容启发：</strong>把不黏、不磨、不勒提前到前 3 秒，效果通常比先讲胸型更直接。</p>
+            <p><strong>对 Fanka 的产品表达启发：</strong>产品话术适合强化透气内层、宽底围和肩带稳定。</p>
+          </div>
+        </article>
+        
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><div><h2>高参考价值内容结构</h2><p>指定 Instagram 一级来源已尝试，但当前环境未稳定公开返回，因此以下拆解均明确标注为二级公开线索。</p></div></div>
+      <div class="structure-grid">
+        
+        <article class="structure-card">
+          <h3>Alo Yoga</h3>
+          <p class="mono">2026-07-14 采集（来自二级公开线索） · <a href="https://www.aloyoga.com/" target="_blank" rel="noopener">https://www.aloyoga.com/</a></p>
+          <div class="body">
+            <p><strong>内容主题：</strong>官网公开导航同时露出 Travel in Alo、Pilates、Wellness 与 ALO Wellness Club。</p>
+            <p><strong>前 3 秒钩子：</strong>先卖生活场景和度假心智，再给运动项目入口。</p>
+            <p><strong>结构拆解：</strong>Hook：Travel in Alo 先把人带进旅行与日常切换。 Demo / Story：紧接着把 Pilates 与 Wellness 放在同一导航层，把 studio 与生活方式连起来。 Proof / Detail：ALO Wellness Club 继续往会员化、仪式感和恢复场景延伸。 CTA：用场景入口驱动继续浏览，而不是急着在第一屏完成成交。</p>
+            <p><strong>评论区 / 互动机制：</strong>评论区不可见；可见机制是场景优先于单品、wellness 优先于单次训练。</p>
+            <p><strong>Fanka 可复用 30 秒脚本：</strong>开头：今天你不是只选一件衣服，你是在选 travel、pilates 还是 recovery。 主体：镜头一给机场或咖啡店，镜头二切到训练，镜头三补腰头和面料体感。 收尾 CTA：评论告诉我，你最想先解决哪一个场景。</p>
+          </div>
+        </article>
+        
+        <article class="structure-card">
+          <h3>Gymshark</h3>
+          <p class="mono">2026-07-14 采集（来自二级公开线索） · <a href="https://www.gymshark.com/" target="_blank" rel="noopener">https://www.gymshark.com/</a></p>
+          <div class="body">
+            <p><strong>内容主题：</strong>首页公开文案继续把 women’s leggings、sports bras、running、app 与 loyalty 放在一个生态里。</p>
+            <p><strong>前 3 秒钩子：</strong>先制造加入感，再让用户自我筛选训练类型和功能需求。</p>
+            <p><strong>结构拆解：</strong>Hook：app、newsletter、student offer 先给加入理由。 Demo / Story：首页文案把 leggings、sports bras、running clothes 与 training insights 放成一个训练生态。 Proof / Detail：support、quick-dry、community 这些词让产品不再只是衣服。 CTA：把回访动作留给 app、blog 和训练内容。</p>
+            <p><strong>评论区 / 互动机制：</strong>评论区不可见；互动机制是训练生态和会员回访，而不只是单次上新。</p>
+            <p><strong>Fanka 可复用 30 秒脚本：</strong>开头：别先问哪条最火，先问你练什么。 主体：按 running、training、high support 三段快切，再补具体穿着场景。 收尾 CTA：把你的训练类型打在评论区，我按类型给你配。</p>
+          </div>
+        </article>
+        
+        <article class="structure-card">
+          <h3>Athleta</h3>
+          <p class="mono">2026-07-14 采集（来自二级公开线索） · <a href="https://athleta.gap.com/" target="_blank" rel="noopener">https://athleta.gap.com/</a></p>
+          <div class="body">
+            <p><strong>内容主题：</strong>公开页仍把 BodyMove、Run &amp; Train、Travel、Bra Fit、D-DD+ 并列前置。</p>
+            <p><strong>前 3 秒钩子：</strong>场景分流和胸型分流被放在产品之前。</p>
+            <p><strong>结构拆解：</strong>Hook：BodyMove 先定义运动与生活的连续性。 Demo / Story：Run &amp; Train、Travel 等活动入口帮助用户按场景归类。 Proof / Detail：Bra Fit 和 D-DD+ 让 fit 痛点在最前层被看见。 CTA：用导航结构替用户完成第一次筛选。</p>
+            <p><strong>评论区 / 互动机制：</strong>评论区不可见；互动机制是 fit-routing 和更明确的需求标签。</p>
+            <p><strong>Fanka 可复用 30 秒脚本：</strong>开头：同样是运动内衣，通勤、训练和大杯需求根本不是一回事。 主体：先切场景，再切支撑级别和胸型，再落到产品。 收尾 CTA：评论写下你最难买的一类，我下一条专门拆。</p>
+          </div>
+        </article>
+        
+        <article class="structure-card">
+          <h3>Vuori</h3>
+          <p class="mono">2026-07-14 采集（来自二级公开线索） · <a href="https://vuoriclothing.com/" target="_blank" rel="noopener">https://vuoriclothing.com/</a></p>
+          <div class="body">
+            <p><strong>内容主题：</strong>公开站点标题和描述继续强调 Built to move in. Styled for life. 以及 performance 与 daily life 的合并。</p>
+            <p><strong>前 3 秒钩子：</strong>不先讲运动强度，而是先讲 daily life 里的 performance。</p>
+            <p><strong>结构拆解：</strong>Hook：Built to move in. Styled for life. 先把舒适日常和运动性能绑在一起。 Demo / Story：DreamKnit 等关键词把柔软与生活方式放进性能叙事。 Proof / Detail：页面描述强调 coastal lifestyle，而非单一训练门类。 CTA：让用户把 activewear 当成全天候穿着，而不是课上装备。</p>
+            <p><strong>评论区 / 互动机制：</strong>评论区不可见；互动机制是舒适生活方式与性能词并列出现。</p>
+            <p><strong>Fanka 可复用 30 秒脚本：</strong>开头：如果你一天只换一次裤子，那条裤子必须同时撑住通勤和训练。 主体：先拍日常走动，再拍伸展或轻训练，最后补面料手感。 收尾 CTA：评论告诉我，你更在意软还是稳。</p>
+          </div>
+        </article>
+        
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><div><h2>账号观察表</h2><p>能核验的写清公开线索和日期；拿不到新证据的账号保留空窗结论，不硬凑。</p></div></div>
+      <table>
+        <thead><tr><th>账号 / 品牌</th><th>指定主页</th><th>本轮可核验情况</th><th>可学习点</th></tr></thead>
+        <tbody>
+          
+          <tr>
+            <td>the_french_fit</td>
+            <td><a href="https://www.instagram.com/the_french_fit/reels/" target="_blank" rel="noopener">https://www.instagram.com/the_french_fit/reels/</a></td>
+            <td>已尝试 Instagram 一级来源；当前环境未稳定公开返回，也未找到近 7 天可核验替代公开内容。</td>
+            <td>继续优先盯动作拆解、纠错口播和跟练节奏。</td>
+          </tr>
+        
+          <tr>
+            <td>Alo Yoga</td>
+            <td><a href="https://www.instagram.com/aloyoga/" target="_blank" rel="noopener">https://www.instagram.com/aloyoga/</a></td>
+            <td>Instagram 一级来源未稳定公开读取；官网公开导航可见 Travel in Alo、Pilates、Wellness，Harper&#x27;s Bazaar 2026-07-09 有 Alo Atelier / wellness 叙事二级线索。</td>
+            <td>先卖场景和生活方式，再卖运动项目。</td>
+          </tr>
+        
+          <tr>
+            <td>Buff Bunny</td>
+            <td><a href="https://www.instagram.com/buffbunny/" target="_blank" rel="noopener">https://www.instagram.com/buffbunny/</a></td>
+            <td>本轮未拿到近 7 天可核验新帖；官网公开页仍以 supportive activewear、New Arrivals、leggings、sports bras 为主。</td>
+            <td>support / collection / drop 的命名很适合做上新节奏。</td>
+          </tr>
+        
+          <tr>
+            <td>Sweaty Betty</td>
+            <td><a href="https://www.instagram.com/sweatybetty/" target="_blank" rel="noopener">https://www.instagram.com/sweatybetty/</a></td>
+            <td>Instagram 一级来源未稳定返回；公开站点可见 bra、leggings、vacation shop 和活动页，但未发现近 7 天明确社媒新结构。</td>
+            <td>可关注女性生活方式与场景分流。</td>
+          </tr>
+        
+          <tr>
+            <td>Vuori</td>
+            <td><a href="https://www.instagram.com/vuoriclothing/" target="_blank" rel="noopener">https://www.instagram.com/vuoriclothing/</a></td>
+            <td>Instagram 一级来源未稳定返回；官网公开描述继续强调 performance + daily life，并可见 DreamKnit 相关词。</td>
+            <td>舒适生活方式语言值得学习。</td>
+          </tr>
+        
+          <tr>
+            <td>Gymshark</td>
+            <td><a href="https://www.instagram.com/gymshark/" target="_blank" rel="noopener">https://www.instagram.com/gymshark/</a></td>
+            <td>Instagram 一级来源未稳定返回；官网公开页可见 women、running、sports bras、app、blog 与 loyalty 生态。</td>
+            <td>把产品、训练内容和会员回访连成链条。</td>
+          </tr>
+        
+          <tr>
+            <td>Halara</td>
+            <td><a href="https://www.instagram.com/halara_official/" target="_blank" rel="noopener">https://www.instagram.com/halara_official/</a></td>
+            <td>Instagram 一级来源未稳定返回；官网本轮抓取失败，未发现近 7 天可核验新公开内容。</td>
+            <td>后续仍优先观察 everyday bottoms 与评论区转化。</td>
+          </tr>
+        
+          <tr>
+            <td>lululemon</td>
+            <td><a href="https://www.instagram.com/lululemon/" target="_blank" rel="noopener">https://www.instagram.com/lululemon/</a></td>
+            <td>Instagram 一级来源未稳定返回；People 2026-07-11 的夏促补货报道可作为二级公开线索。</td>
+            <td>任务分流式选品与场景化卖货值得学。</td>
+          </tr>
+        
+          <tr>
+            <td>Athleta</td>
+            <td><a href="https://www.instagram.com/athleta/" target="_blank" rel="noopener">https://www.instagram.com/athleta/</a></td>
+            <td>Instagram 一级来源未稳定返回；官网公开页可见 BodyMove、Bra Fit、D-DD+、Run &amp; Train 等导航。</td>
+            <td>先按需求分流，再落具体产品。</td>
+          </tr>
+        
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <div class="section-head"><div><h2>Fanka 今日可执行选题清单</h2><p>以下 5 条都可以直接给社媒团队开拍或开写，不需要再做长链路研究。</p></div></div>
+      <div class="topics-grid">
+        
+        <article class="topic-card">
+          <div class="card-top"><span class="cat">选题 #1</span></div>
+          <h3>把“只走路也下滑吗”做成一条连续实测短视频，重点拍口袋装手机、上楼和坐下。</h3>
+        </article>
+        
+        <article class="topic-card">
+          <div class="card-top"><span class="cat">选题 #2</span></div>
+          <h3>做一条“Pilates 之外我为什么开始加力量训练”的脚本，把压缩裤从 low-impact 语境拉出来。</h3>
+        </article>
+        
+        <article class="topic-card">
+          <div class="card-top"><span class="cat">选题 #3</span></div>
+          <h3>拍“studio 到 city errands”的 capri 穿搭切换，用一条裤子讲练前练后两套节奏。</h3>
+        </article>
+        
+        <article class="topic-card">
+          <div class="card-top"><span class="cat">选题 #4</span></div>
+          <h3>做“热天 bra 最烦哪一圈勒”评论区互动，顺手拆轻 / 中 / 高支撑区别。</h3>
+        </article>
+        
+        <article class="topic-card">
+          <div class="card-top"><span class="cat">选题 #5</span></div>
+          <h3>做“旅行恢复包”图文或短视频，围绕 beach workout、recovery 和通勤友好层搭配展开。</h3>
+        </article>
+        
+      </div>
+    </section>
+
+    <p class="foot">注：本期中文平台检索未拿到近 72 小时可核验的新公开社媒趋势，因此未强行填入小红书 / 抖音卡片。账号结构模块中的 Alo、Gymshark、Athleta、Vuori 均为二级公开线索拆解。</p>
+  </div>
+</body>
+</html>
