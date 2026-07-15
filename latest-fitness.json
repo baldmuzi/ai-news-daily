@@ -1,33 +1,33 @@
 {
-  "edition": "0039",
-  "date": "2026年7月14日 09:10",
-  "intro": "本期关注耐疲劳跑步、骑行间歇、deload 恢复、运动收纳与健康老化，提炼 Fanka 压缩穿搭内容机会。",
+  "edition": "0040",
+  "date": "2026年7月15日 09:11",
+  "intro": "本期聚焦女性运动呈现、经期骑行、恢复消费与运动社区，提炼 Fanka 压缩穿搭和内容选题机会。",
   "tags": [
-    "耐疲劳训练",
-    "聪明恢复",
-    "骑行间歇",
-    "运动收纳",
-    "健康老化"
+    "女性运动",
+    "经期骑行",
+    "恢复消费",
+    "社区跑团",
+    "功能穿搭"
   ],
   "top3": [
     {
-      "title": "跑步耐疲劳训练强调后半程稳定",
-      "comment": "用稳定压缩与少干扰收纳讲长跑支持。"
+      "title": "田径转播新指南要求减少女性运动员“性化”呈现",
+      "comment": "女性运动内容可转向表现优先叙事。"
     },
     {
-      "title": "deload week 把恢复变成主动训练",
-      "comment": "恢复周穿搭可连接低压运动和长期坚持。"
+      "title": "经期骑行被拆成装备、补给和身体信号管理",
+      "comment": "经期骑行适合延展舒适压缩穿搭指南。"
     },
     {
-      "title": "骑行 over/under 间歇走向大众化",
-      "comment": "强度切换日适合讲透气支撑与少调整。"
+      "title": "休息日后更累：恢复不再等于完全不动",
+      "comment": "恢复日内容可从休息延伸到轻活动。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0039.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0040.html",
   "blog": {
-    "title": "Deload Week Workout Outfits for Women: Supportive Layers for Smarter Recovery",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/deload-week-workout-outfits-for-women.html",
-    "summary": "由本期 deload week 与恢复训练趋势延展为女性低压力训练穿搭指南"
+    "title": "What to Wear for Cycling During Your Period: Supportive Layers for Comfort and Confidence",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/cycling-during-period-outfits-women.html",
+    "summary": "由本期经期骑行趋势延展为女性骑行与轻运动舒适穿搭指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
