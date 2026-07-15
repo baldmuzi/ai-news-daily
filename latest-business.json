@@ -1,27 +1,27 @@
 {
-  "edition": "0055",
-  "date": "2026年7月14日 09:07",
-  "intro": "AI购物入口、绿色追溯与营销测量继续并线，出海鞋类团队要把商品、合规和消费者数据一起做成机器可执行资产。",
+  "edition": "0056",
+  "date": "2026年7月15日 09:11",
+  "intro": "AI 购物代理、零售数据分析和绿色制造工具继续并线，出海鞋类团队要把商品、消费者与环保证据一起做成机器可执行资产。",
   "tags": [
-    "AI购物",
-    "绿色追溯",
-    "退货风控",
-    "定价优化",
-    "归因测量"
+    "代理购物",
+    "绿色制造",
+    "零售分析",
+    "消费信任",
+    "货架优化"
   ],
   "top3": [
     {
-      "title": "TechRadar：AI购物加速商品发现，但信任机制仍决定最后成交",
-      "comment": "AI导购提速，但信任信号仍决定成交。"
+      "title": "Disney Store 测试 App 内 AI 导购助手",
+      "comment": "对话式选品正在替代纯关键词搜索，商品属性要更可机读。"
     },
     {
-      "title": "36氪：千问入淘对撞豆包闭环，618 首次进入 AI 电商正面战",
-      "comment": "AI购物入口开始在中美平台同步前移。"
+      "title": "Gopuff 用 AI 助手自动填充购物车",
+      "comment": "复购与补货逻辑可沉淀成代理可执行的购物规则。"
     },
     {
-      "title": "Vogue：可持续时尚 AI 工具开始把追溯、合规与循环利用做成执行系统",
-      "comment": "环保合规正从报表走向可查询执行系统。"
+      "title": "智能制造路线图强化可持续与供应链 AI",
+      "comment": "ESG 数据应直接进入选材、排产和审计决策闭环。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0055.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0056.html"
 }
