@@ -1,33 +1,33 @@
 {
-  "edition": "0040",
-  "date": "2026年7月15日 09:11",
-  "intro": "本期聚焦女性运动呈现、经期骑行、恢复消费与运动社区，提炼 Fanka 压缩穿搭和内容选题机会。",
+  "edition": "0041",
+  "date": "2026年7月16日 09:26",
+  "intro": "本期从全球夏季训练、微运动和运动服饰消费切入，提炼 Fanka 压缩穿搭、防晒层与多场景内容机会。",
   "tags": [
-    "女性运动",
-    "经期骑行",
-    "恢复消费",
-    "社区跑团",
-    "功能穿搭"
+    "防晒训练服",
+    "微运动",
+    "夏季通勤",
+    "动作纠错",
+    "女性跑步"
   ],
   "top3": [
     {
-      "title": "田径转播新指南要求减少女性运动员“性化”呈现",
-      "comment": "女性运动内容可转向表现优先叙事。"
+      "title": "轻量运动长裤成为夏季旅行与通勤替代品",
+      "comment": "夏季运动裤从健身房扩展到旅行通勤。"
     },
     {
-      "title": "经期骑行被拆成装备、补给和身体信号管理",
-      "comment": "经期骑行适合延展舒适压缩穿搭指南。"
+      "title": "UPF 跑步上衣把防晒从配件升级为训练服功能",
+      "comment": "防晒功能服成为户外训练内容新切口。"
     },
     {
-      "title": "休息日后更累：恢复不再等于完全不动",
-      "comment": "恢复日内容可从休息延伸到轻活动。"
+      "title": "工作日微运动替代“等下班再运动”的单一叙事",
+      "comment": "微运动让工作日内容更易被普通用户执行。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0040.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0041.html",
   "blog": {
-    "title": "What to Wear for Cycling During Your Period: Supportive Layers for Comfort and Confidence",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/cycling-during-period-outfits-women.html",
-    "summary": "由本期经期骑行趋势延展为女性骑行与轻运动舒适穿搭指南"
+    "title": "Sun-Safe Summer Workout Outfits: UPF Layers and Compression Basics",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/sun-safe-summer-workout-outfits-upf-compression.html",
+    "summary": "由本期 UPF 防晒训练服趋势延展为夏季户外运动穿搭指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
