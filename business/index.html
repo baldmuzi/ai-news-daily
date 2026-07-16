@@ -8,49 +8,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --bg: #071019;
-      --panel: #0d1724;
-      --panel-2: #122133;
-      --border: #1d3346;
-      --accent: #10b981;
-      --accent-2: #6ee7b7;
-      --text: #ecfdf5;
-      --muted: #9fb7ad;
-      --dim: #6f8b82;
-      --shadow: 0 22px 50px rgba(0, 0, 0, 0.28);
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      min-height: 100vh;
-      color: var(--text);
-      font-family: "Noto Serif SC", serif;
-      background:
-        radial-gradient(circle at top left, rgba(16,185,129,0.18), transparent 24%),
-        radial-gradient(circle at top right, rgba(110,231,183,0.12), transparent 22%),
-        linear-gradient(180deg, #09111b 0%, var(--bg) 28%);
-      line-height: 1.75;
-    }
-    a { color: inherit; text-decoration: none; }
-    .wrap { max-width: 1040px; margin: 0 auto; padding: 2rem 1.2rem 4rem; }
-    .back-link { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--accent); border: 1px solid rgba(16,185,129,0.28); border-radius: 999px; padding: 0.42rem 0.9rem; font-family: "JetBrains Mono", monospace; font-size: 0.74rem; background: rgba(13,23,36,0.74); }
-    header { margin-top: 1.2rem; padding: 1.8rem 0 1.6rem; border-bottom: 1px solid var(--border); }
-    .eyebrow { color: var(--accent); font-family: "JetBrains Mono", monospace; font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; }
-    h1 { margin-top: 0.6rem; font-size: clamp(1.9rem, 4vw, 3rem); letter-spacing: 0.04em; }
-    .sub { margin-top: 0.8rem; max-width: 760px; color: var(--muted); font-size: 0.95rem; }
-    .grid { display: grid; gap: 1rem; margin-top: 1.6rem; }
-    .entry { display: block; padding: 1.2rem 1.2rem 1.15rem; border-radius: 18px; border: 1px solid var(--border); background: linear-gradient(180deg, rgba(13,23,36,0.98), rgba(8,15,24,0.98)); box-shadow: var(--shadow); transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease; }
-    .entry:hover { transform: translateY(-2px); border-color: rgba(16,185,129,0.5); box-shadow: 0 28px 56px rgba(16,185,129,0.12); }
-    .entry.latest { border-color: rgba(16,185,129,0.62); background: linear-gradient(180deg, rgba(16,33,45,0.98), rgba(9,24,20,0.98)); }
-    .entry-top { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 0.65rem; }
-    .edition, .pill { font-family: "JetBrains Mono", monospace; font-size: 0.68rem; border-radius: 999px; padding: 0.22rem 0.65rem; }
-    .edition { color: var(--dim); border: 1px solid var(--border); background: var(--panel-2); }
-    .pill { color: #062b1c; background: var(--accent-2); font-weight: 600; }
-    h2 { font-size: 1.02rem; line-height: 1.55; }
-    .date { margin-top: 0.5rem; color: var(--dim); font-family: "JetBrains Mono", monospace; font-size: 0.72rem; }
-    .intro { margin-top: 0.72rem; color: var(--muted); font-size: 0.88rem; }
-    footer { margin-top: 2.5rem; color: var(--dim); font-family: "JetBrains Mono", monospace; font-size: 0.72rem; text-align: center; }
-    @media (max-width: 640px) { .wrap { padding: 1.2rem 0.95rem 3rem; } .entry { padding: 1rem; } }
+    :root { --bg:#071019; --panel:#0d1724; --panel-2:#122133; --border:#1d3346; --accent:#10b981; --accent-2:#6ee7b7; --text:#ecfdf5; --muted:#9fb7ad; --dim:#6f8b82; --shadow:0 22px 50px rgba(0,0,0,0.28); }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { min-height:100vh; color:var(--text); font-family:"Noto Serif SC",serif; background:radial-gradient(circle at top left, rgba(16,185,129,0.18), transparent 24%),radial-gradient(circle at top right, rgba(110,231,183,0.12), transparent 22%),linear-gradient(180deg,#09111b 0%,var(--bg) 28%); line-height:1.75; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { max-width:1040px; margin:0 auto; padding:2rem 1.2rem 4rem; }
+    .back-link { display:inline-flex; align-items:center; gap:0.35rem; color:var(--accent); border:1px solid rgba(16,185,129,0.28); border-radius:999px; padding:0.42rem 0.9rem; font-family:"JetBrains Mono",monospace; font-size:0.74rem; background:rgba(13,23,36,0.74); }
+    header { margin-top:1.2rem; padding:1.8rem 0 1.6rem; border-bottom:1px solid var(--border); }
+    .eyebrow { color:var(--accent); font-family:"JetBrains Mono",monospace; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; }
+    h1 { margin-top:0.6rem; font-size:clamp(1.9rem,4vw,3rem); letter-spacing:0.04em; }
+    .sub { margin-top:0.8rem; max-width:760px; color:var(--muted); font-size:0.95rem; }
+    .grid { display:grid; gap:1rem; margin-top:1.6rem; }
+    .entry { display:block; padding:1.2rem 1.2rem 1.15rem; border-radius:18px; border:1px solid var(--border); background:linear-gradient(180deg, rgba(13,23,36,0.98), rgba(8,15,24,0.98)); box-shadow:var(--shadow); transition:transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease; }
+    .entry:hover { transform:translateY(-2px); border-color:rgba(16,185,129,0.5); box-shadow:0 28px 56px rgba(16,185,129,0.12); }
+    .entry.latest { border-color:rgba(16,185,129,0.62); background:linear-gradient(180deg, rgba(16,33,45,0.98), rgba(9,24,20,0.98)); }
+    .entry-top { display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-bottom:0.65rem; }
+    .edition,.pill { font-family:"JetBrains Mono",monospace; font-size:0.68rem; border-radius:999px; padding:0.22rem 0.65rem; }
+    .edition { color:var(--dim); border:1px solid var(--border); background:var(--panel-2); }
+    .pill { color:#062b1c; background:var(--accent-2); font-weight:600; }
+    h2 { font-size:1.02rem; line-height:1.55; }
+    .date { margin-top:0.5rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.72rem; }
+    .intro { margin-top:0.72rem; color:var(--muted); font-size:0.88rem; }
+    footer { margin-top:2.5rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.72rem; text-align:center; }
+    @media (max-width:640px) { .wrap { padding:1.2rem 0.95rem 3rem; } .entry { padding:1rem; } }
   </style>
 </head>
 <body>
@@ -62,10 +42,19 @@
       <p class="sub">收录最近 20 期面向跨境电商、可持续合规与 AI 应用实战的产品数据日报，按期号倒序展示。</p>
     </header>
     <section class="grid">
-      <a class="entry latest" href="edition-0056.html">
+      <a class="entry latest" href="edition-0057.html">
+        <div class="entry-top">
+          <span class="edition">第 0057 期</span>
+          <span class="pill">最新</span>
+        </div>
+        <h2>出海 AI 洞察 · 第 0057 期</h2>
+        <p class="date">2026年7月16日 09:26</p>
+        <p class="intro">AI购物代理、零售归因与绿色供应链正在并线，出海鞋类团队要把商品和环保数据一起做成机器可执行资产。</p>
+      </a>
+      <a class="entry" href="edition-0056.html">
         <div class="entry-top">
           <span class="edition">第 0056 期</span>
-          <span class="pill">最新</span>
+
         </div>
         <h2>出海 AI 洞察 · 第 0056 期</h2>
         <p class="date">2026年7月15日 09:11</p>
@@ -74,6 +63,7 @@
       <a class="entry" href="edition-0055.html">
         <div class="entry-top">
           <span class="edition">第 0055 期</span>
+
         </div>
         <h2>出海 AI 洞察 · 第 0055 期</h2>
         <p class="date">2026年7月14日 09:07</p>
@@ -82,6 +72,7 @@
       <a class="entry" href="edition-0054.html">
         <div class="entry-top">
           <span class="edition">第 0054 期</span>
+
         </div>
         <h2>出海 AI 洞察 · 第 0054 期</h2>
         <p class="date">2026年7月13日 09:16</p>
@@ -90,6 +81,7 @@
       <a class="entry" href="edition-0053.html">
         <div class="entry-top">
           <span class="edition">第 0053 期</span>
+
         </div>
         <h2>出海 AI 洞察 · 第 0053 期</h2>
         <p class="date">2026年7月10日 09:36</p>
@@ -98,6 +90,7 @@
       <a class="entry" href="edition-0052.html">
         <div class="entry-top">
           <span class="edition">第 0052 期</span>
+
         </div>
         <h2>出海 AI 洞察 · 第 0052 期</h2>
         <p class="date">2026年7月9日 09:15</p>
@@ -106,6 +99,7 @@
       <a class="entry" href="edition-0051.html">
         <div class="entry-top">
           <span class="edition">第 0051 期</span>
+
         </div>
         <h2>出海 AI 洞察 · 第 0051 期</h2>
         <p class="date">2026年7月8日 09:25</p>
@@ -114,6 +108,7 @@
       <a class="entry" href="edition-0050.html">
         <div class="entry-top">
           <span class="edition">第 0050 期</span>
+
         </div>
         <h2>出海 AI 洞察 · 第 0050 期</h2>
         <p class="date">2026年7月7日 13:55</p>
@@ -122,6 +117,7 @@
       <a class="entry" href="edition-0049.html">
         <div class="entry-top">
           <span class="edition">第 0049 期</span>
+
         </div>
         <h2>出海 AI 洞察 · 第 0049 期</h2>
         <p class="date">2026年7月6日 09:10</p>
@@ -130,6 +126,7 @@
       <a class="entry" href="edition-0048.html">
         <div class="entry-top">
           <span class="edition">第 0048 期</span>
+
         </div>
         <h2>出海 AI 洞察 · 第 0048 期</h2>
         <p class="date">2026年7月3日 09:21</p>
@@ -138,6 +135,7 @@
       <a class="entry" href="edition-0047.html">
         <div class="entry-top">
           <span class="edition">第 0047 期</span>
+
         </div>
         <h2>出海 AI 洞察 · 第 0047 期</h2>
         <p class="date">2026年7月2日 10:07</p>
@@ -146,6 +144,7 @@
       <a class="entry" href="edition-0046.html">
         <div class="entry-top">
           <span class="edition">第 0046 期</span>
+
         </div>
         <h2>出海 AI 洞察 · 第 0046 期</h2>
         <p class="date">2026年7月1日 09:27</p>
@@ -154,6 +153,7 @@
       <a class="entry" href="edition-0045.html">
         <div class="entry-top">
           <span class="edition">第 0045 期</span>
+
         </div>
         <h2>出海 AI 洞察 · 第 0045 期</h2>
         <p class="date">2026年6月30日 09:14</p>
@@ -162,6 +162,7 @@
       <a class="entry" href="edition-0044.html">
         <div class="entry-top">
           <span class="edition">第 0044 期</span>
+
         </div>
         <h2>出海 AI 洞察 · 第 0044 期</h2>
         <p class="date">2026年6月29日 09:19</p>
@@ -170,6 +171,7 @@
       <a class="entry" href="edition-0043.html">
         <div class="entry-top">
           <span class="edition">第 0043 期</span>
+
         </div>
         <h2>出海 AI 洞察 · 第 0043 期</h2>
         <p class="date">2026年6月26日 13:53</p>
@@ -178,6 +180,7 @@
       <a class="entry" href="edition-0042.html">
         <div class="entry-top">
           <span class="edition">第 0042 期</span>
+
         </div>
         <h2>出海 AI 洞察 · 第 0042 期</h2>
         <p class="date">2026年6月25日 09:06</p>
@@ -186,6 +189,7 @@
       <a class="entry" href="edition-0041.html">
         <div class="entry-top">
           <span class="edition">第 0041 期</span>
+
         </div>
         <h2>出海 AI 洞察 · 第 0041 期</h2>
         <p class="date">2026年6月24日 09:28</p>
@@ -194,6 +198,7 @@
       <a class="entry" href="edition-0040.html">
         <div class="entry-top">
           <span class="edition">第 0040 期</span>
+
         </div>
         <h2>出海 AI 洞察 · 第 0040 期</h2>
         <p class="date">2026年6月23日 09:12</p>
@@ -202,6 +207,7 @@
       <a class="entry" href="edition-0039.html">
         <div class="entry-top">
           <span class="edition">第 0039 期</span>
+
         </div>
         <h2>出海 AI 洞察 · 第 0039 期</h2>
         <p class="date">2026年6月22日 09:10</p>
@@ -210,21 +216,14 @@
       <a class="entry" href="edition-0038.html">
         <div class="entry-top">
           <span class="edition">第 0038 期</span>
+
         </div>
         <h2>出海 AI 洞察 · 第 0038 期</h2>
         <p class="date">2026年6月19日 11:46</p>
         <p class="intro">AI 购物入口、绿色追溯与会员数据正在同时外移，出海环保鞋类要把商品、合规和归因字段做成可执行资产。</p>
       </a>
-      <a class="entry" href="edition-0037.html">
-        <div class="entry-top">
-          <span class="edition">第 0037 期</span>
-        </div>
-        <h2>出海 AI 洞察 · 第 0037 期</h2>
-        <p class="date">2026年6月18日 10:01</p>
-        <p class="intro">AI 购物代理、零售数据分身与环保追溯正在改写出海鞋类电商，商品、营销和可持续数据都要先变成机器可执行资产。</p>
-      </a>
     </section>
-    <footer>Latest issue: 第 0056 期</footer>
+    <footer>Last updated · 2026年7月16日 09:26</footer>
   </div>
 </body>
 </html>
