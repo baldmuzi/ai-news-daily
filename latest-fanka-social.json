@@ -1,32 +1,32 @@
 {
-  "edition": "0024",
-  "date": "2026年7月15日 09:13",
-  "intro": "本期从海边运动审美、社交型 wellness、以及头部 activewear 品牌的任务分流结构里，提炼 Fanka 夏季内容脚本与热天痛点表达。",
+  "edition": "0025",
+  "date": "2026年7月16日 09:23",
+  "intro": "本期信号集中在女性健康“简化做”、热浪场景穿搭与头部 activewear 品牌的任务分流结构；能学的不只是产品词，还有前3秒钩子、支撑分层与评论区提问方式。",
   "tags": [
-    "海边运动感",
-    "热天体感",
-    "任务分流",
-    "社交恢复",
-    "支撑细分"
+    "简化健康",
+    "BFR训练",
+    "热浪穿搭",
+    "支撑分层",
+    "腰头痛点"
   ],
   "top3": [
     {
-      "title": "“Surf’s Up” 夏季审美把 rash guard、tankini 和 wraparound sunglasses 重新写成运动感海边穿搭",
-      "comment": "海边运动感正在替代单纯度假感，适合切 beach workout 与恢复穿搭。",
-      "url": "https://www.whowhatwear.com/beauty/surfer-aesthetic-summer-trend"
+      "title": "“healthmaxxing”开始反向简化：Z世代把睡眠、规律运动和纤维重新拉回 wellness 主线",
+      "comment": "Z世代把睡眠、规律运动和纤维重新拉回核心。",
+      "url": "https://nypost.com/2026/07/15/health/how-healthmaxxing-is-becoming-americas-new-wellness-playbook/"
     },
     {
-      "title": "Buffbunny 直接把 Fabric、Sports Bra Support、Compression Level 和 Activity 做成第一层筛选",
-      "comment": "Buffbunny 把支撑、压缩和训练日并排，值得直接学进内容分流。",
+      "title": "Buffbunny 把 Fabric、Sports Bra Support、Compression Level 和 Activity 直接做成第一层分流",
+      "comment": "支撑、压缩和训练类型同屏，分流比讲故事更快。",
       "url": "https://www.buffbunny.com/"
     },
     {
-      "title": "Google 建议词把“sports bra digging into shoulders / shoulder pain”公开化，说明肩带压迫正被用户独立搜索",
-      "comment": "肩带压肩已成公开搜索词，bra 内容必须补体感解释。",
-      "url": "https://suggestqueries.google.com/complete/search?client=firefox&q=sports%20bra%20digging%20into%20shoulders"
+      "title": "Google 建议词把“anti-roll waistband / why do my leggings roll down at the waist”公开化，腰头卷边仍是底层痛点",
+      "comment": "腰头卷边被用户直接写成搜索问题，证明体感优先。",
+      "url": "https://suggestqueries.google.com/complete/search?client=firefox&q=anti%20roll%20waistband%20leggings"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0024.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0025.html",
   "report_type": "fanka-social-trends",
   "source_window": "趋势近72小时；账号结构近7天；用户痛点近30天"
 }
