@@ -1,27 +1,27 @@
 {
-  "edition": "0042",
-  "date": "2026年7月15日 09:07",
-  "intro": "本期聚焦欧盟库存销毁禁令、创作者AI、Nordstrom鞋履折扣与女性步行验证，提示VIVAIA把合规、内容和价值感一起运营。",
+  "edition": "0043",
+  "date": "2026年7月16日 09:24",
+  "intro": "本期聚焦渠道扩张、AI供应链、可持续 sneaker 与早秋折扣，提示VIVAIA把选品、库存和成熟客群价值感联动运营。",
   "tags": [
-    "库存合规",
-    "AI创作者",
-    "愿望单折扣",
-    "女性步行",
-    "价格信任"
+    "渠道扩张",
+    "AI供应链",
+    "可持续鞋",
+    "早秋折扣",
+    "怪趣平底"
   ],
   "top3": [
     {
-      "title": "WWD/FN 7月14日报道欧盟未售鞋服销毁禁令将生效，小品牌可用 deadstock 材料转化合规压力",
-      "comment": "欧盟未售鞋服销毁禁令推动库存责任和deadstock材料成为运营议题。"
+      "title": "Retail Dive 7月15日报道 Walmart 用 AI 与数字孪生重塑供应链，鞋服旺季库存需要更早进入“预测式运营”",
+      "comment": "Walmart 用AI和数字孪生优化供应链，提醒鞋服旺季提前做库存模拟。"
     },
     {
-      "title": "Glossy 7月13日研究称品牌仍谨慎使用 AI 做 influencer 和 CTV，创作者真实感仍是转化门槛",
-      "comment": "AI可提效创作者筛选，但舒适鞋转化仍需要真人脚感证据。"
+      "title": "Glossy 7月15日称 Salomon 在纽约最大门店之后上线 Foot Locker，美国增长从小众户外转入大众运动零售",
+      "comment": "Salomon 进入 Foot Locker，性能鞋语言从小众户外走向大众零售。"
     },
     {
-      "title": "ELLE 7月14日精选 Nordstrom Anniversary Sale 鞋履，Tory Burch、Margaux、On 等进入早秋愿望单折扣",
-      "comment": "Nordstrom周年促销把鞋履折扣提前变成秋季愿望单经营。"
+      "title": "Good On You 7月14日更新可持续 sneaker 指南，消费者正在从“买环保材料”转向“买更耐穿、可护理、少替换”的鞋",
+      "comment": "可持续 sneaker 叙事转向耐穿、护理、回收与生命周期证据。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0042.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0043.html"
 }

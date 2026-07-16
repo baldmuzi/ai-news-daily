@@ -11,9 +11,10 @@
     :root { --bg:#080c14; --surface:#17130d; --border:#463722; --accent:#804c1a; --accent-soft:#d89a5e; --text:#f5efe4; --muted:#d2c2aa; --dim:#b39f82; }
     * { box-sizing:border-box; } body { margin:0; background:radial-gradient(circle at top left, rgba(128,76,26,.26), transparent 34%), var(--bg); color:var(--text); font-family:'Noto Serif SC',serif; } a { color:inherit; }
     .page { width:min(1040px, calc(100% - 32px)); margin:0 auto; padding:36px 0 60px; } .home { display:inline-flex; text-decoration:none; border:1px solid var(--border); border-radius:999px; padding:8px 14px; color:var(--muted); background:rgba(23,19,13,.72); } .home:hover { color:var(--accent-soft); border-color:var(--accent-soft); }
-    header { margin:34px 0 24px; border-bottom:1px solid var(--border); padding-bottom:24px; } h1 { margin:0 0 10px; font-size:clamp(32px,5vw,52px); line-height:1.1; } .sub { color:var(--muted); font-family:'JetBrains Mono',monospace; }
-    .archive-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; } .archive-card { display:block; min-height:160px; text-decoration:none; border:1px solid var(--border); border-radius:8px; background:rgba(23,19,13,.88); padding:22px; } .archive-card:hover { border-color:var(--accent-soft); transform:translateY(-1px); } .archive-card.latest { background:linear-gradient(135deg, rgba(128,76,26,.38), rgba(23,19,13,.92)); border-color:var(--accent); } .issue { display:inline-flex; font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--accent-soft); margin-bottom:12px; } strong { display:block; font-size:21px; margin-bottom:8px; } p { margin:0; color:var(--muted); line-height:1.7; }
+    header { margin:34px 0 24px; border-bottom:1px solid var(--border); padding-bottom:24px; } h1 { margin:0 0 10px; font-size:clamp(32px,5vw,52px); line-height:1.1; letter-spacing:0; } .sub { color:var(--muted); font-family:'JetBrains Mono',monospace; }
+    .archive-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; } .archive-card { display:block; min-height:160px; text-decoration:none; border:1px solid var(--border); border-radius:8px; background:rgba(23,19,13,.88); padding:22px; transition:transform .18s ease,border-color .18s ease; } .archive-card:hover { border-color:var(--accent-soft); transform:translateY(-1px); } .archive-card.latest { background:linear-gradient(135deg, rgba(128,76,26,.38), rgba(23,19,13,.92)); border-color:var(--accent); } .issue { display:inline-flex; font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--accent-soft); margin-bottom:12px; } strong { display:block; font-size:21px; margin-bottom:8px; } p { margin:0; color:var(--muted); line-height:1.7; }
     @media (max-width:720px) { .archive-list { grid-template-columns:1fr; } .page { width:min(100% - 22px, 1040px); padding-top:24px; } }
+
   </style>
 </head>
 <body>
@@ -24,7 +25,12 @@
       <div class="sub">Latest 20 editions · accent #804c1a</div>
     </header>
     <section class="archive-list">
-      <a class="archive-card latest" href="edition-0042.html">
+      <a class="archive-card latest" href="edition-0043.html">
+        <span class="issue">第 0043 期</span>
+        <strong>2026年7月16日 09:24</strong>
+        <p>本期聚焦渠道扩张、AI供应链、可持续 sneaker 与早秋折扣，提示VIVAIA把选品、库存和成熟客群价值感联动运营。</p>
+      </a>
+      <a class="archive-card" href="edition-0042.html">
         <span class="issue">第 0042 期</span>
         <strong>2026年7月15日 09:07</strong>
         <p>本期聚焦欧盟库存销毁禁令、创作者AI、Nordstrom鞋履折扣与女性步行验证，提示VIVAIA把合规、内容和价值感一起运营。</p>
@@ -51,22 +57,22 @@
       </a>
       <a class="archive-card" href="edition-0037.html">
         <span class="issue">第 0037 期</span>
-        <strong>VIVAIA 品牌趋势日报</strong>
+        <strong>2026年7月8日 09:26</strong>
         <p>本期聚焦价格战、创作者社群、跑步生活方式与舒适鞋联名，给 VIVAIA 提供夏季转化与秋季预热的新入口。</p>
       </a>
       <a class="archive-card" href="edition-0036.html">
         <span class="issue">第 0036 期</span>
-        <strong>VIVAIA 品牌趋势日报</strong>
+        <strong>2026年7月6日 09:10</strong>
         <p>本期从循环设计、AI发现、创作者营销、成熟妈妈穿搭与夏季鞋色切入，提示VIVAIA同步做材料证据、内容响应和脚感分层。</p>
       </a>
       <a class="archive-card" href="edition-0035.html">
         <span class="issue">第 0035 期</span>
-        <strong>VIVAIA 品牌趋势日报</strong>
+        <strong>2026年7月3日 09:19</strong>
         <p>本期从纺织回收、二手球鞋、AI 个性化、红鞋颜色与大促节点切入，提示 VIVAIA 同步做可信材料、渠道内容和夏季配色。</p>
       </a>
       <a class="archive-card" href="edition-0034.html">
         <span class="issue">第 0034 期</span>
-        <strong>VIVAIA 品牌趋势日报</strong>
+        <strong>2026年7月2日 10:06</strong>
         <p>7月初欧美鞋服热点转向明星舒适鞋、足科支撑、复古裤长与独立日后比价，适合用场景化内容承接成熟客群。</p>
       </a>
       <a class="archive-card" href="edition-0033.html">
@@ -118,11 +124,6 @@
         <span class="issue">第 0024 期</span>
         <strong>VIVAIA 品牌趋势日报</strong>
         <p>本期聚焦50+女性鞋柜、赛事生活方式、Prime Day前价格心智与复古凉鞋，寻找夏季选品和活动新入口。</p>
-      </a>
-      <a class="archive-card" href="edition-0023.html">
-        <span class="issue">第 0023 期</span>
-        <strong>VIVAIA 品牌趋势日报</strong>
-        <p>本期从舒适鞋折扣、可持续影像、宽年龄穿搭与可打包替换鞋切入，寻找夏季内容和转化新抓手。</p>
       </a>
     </section>
   </main>
