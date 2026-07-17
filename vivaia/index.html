@@ -1,31 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>VIVAIA 品牌趋势 · 往期存档</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <style>
     :root { --bg:#080c14; --surface:#17130d; --border:#463722; --accent:#804c1a; --accent-soft:#d89a5e; --text:#f5efe4; --muted:#d2c2aa; --dim:#b39f82; }
-    * { box-sizing:border-box; } body { margin:0; background:radial-gradient(circle at top left, rgba(128,76,26,.26), transparent 34%), var(--bg); color:var(--text); font-family:'Noto Serif SC',serif; } a { color:inherit; }
-    .page { width:min(1040px, calc(100% - 32px)); margin:0 auto; padding:36px 0 60px; } .home { display:inline-flex; text-decoration:none; border:1px solid var(--border); border-radius:999px; padding:8px 14px; color:var(--muted); background:rgba(23,19,13,.72); } .home:hover { color:var(--accent-soft); border-color:var(--accent-soft); }
-    header { margin:34px 0 24px; border-bottom:1px solid var(--border); padding-bottom:24px; } h1 { margin:0 0 10px; font-size:clamp(32px,5vw,52px); line-height:1.1; letter-spacing:0; } .sub { color:var(--muted); font-family:'JetBrains Mono',monospace; }
+    * { box-sizing:border-box; } body { margin:0; background:radial-gradient(circle at top left, rgba(128,76,26,.22), transparent 35%), var(--bg); color:var(--text); font-family:'Noto Serif SC',serif; } .page { width:min(100% - 32px, 1040px); margin:0 auto; padding:34px 0 54px; } a { color:inherit; } .home { display:inline-flex; margin-bottom:24px; color:var(--muted); text-decoration:none; border:1px solid var(--border); border-radius:999px; padding:8px 13px; background:rgba(23,19,13,.74); } .hero { margin-bottom:24px; border:1px solid var(--border); border-radius:8px; padding:28px; background:linear-gradient(135deg, rgba(23,19,13,.96), rgba(34,27,16,.86)); } h1 { margin:0 0 10px; font-size:38px; } .sub { color:var(--dim); font-family:'JetBrains Mono',monospace; }
     .archive-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; } .archive-card { display:block; min-height:160px; text-decoration:none; border:1px solid var(--border); border-radius:8px; background:rgba(23,19,13,.88); padding:22px; transition:transform .18s ease,border-color .18s ease; } .archive-card:hover { border-color:var(--accent-soft); transform:translateY(-1px); } .archive-card.latest { background:linear-gradient(135deg, rgba(128,76,26,.38), rgba(23,19,13,.92)); border-color:var(--accent); } .issue { display:inline-flex; font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--accent-soft); margin-bottom:12px; } strong { display:block; font-size:21px; margin-bottom:8px; } p { margin:0; color:var(--muted); line-height:1.7; }
-    @media (max-width:720px) { .archive-list { grid-template-columns:1fr; } .page { width:min(100% - 22px, 1040px); padding-top:24px; } }
-
+    @media (max-width:720px) { .archive-list { grid-template-columns:1fr; } .page { width:min(100% - 22px, 1040px); padding-top:24px; } .hero,.archive-card { padding:18px; } h1 { font-size:31px; } }
   </style>
 </head>
 <body>
   <main class="page">
     <a class="home" href="../">← 返回首页</a>
-    <header>
+    <section class="hero">
       <h1>VIVAIA 品牌趋势 · 往期存档</h1>
       <div class="sub">Latest 20 editions · accent #804c1a</div>
-    </header>
+    </section>
     <section class="archive-list">
-      <a class="archive-card latest" href="edition-0043.html">
+      <a class="archive-card latest" href="edition-0044.html">
+        <span class="issue">第 0044 期</span>
+        <strong>2026年7月17日 09:08</strong>
+        <p>本期聚焦欧美渠道折扣、舒适证据、职场轻量创新与欧盟可持续新规，给 VIVAIA 提供活动节奏、选品分层与信任内容抓手。</p>
+      </a>
+      <a class="archive-card" href="edition-0043.html">
         <span class="issue">第 0043 期</span>
         <strong>2026年7月16日 09:24</strong>
         <p>本期聚焦渠道扩张、AI供应链、可持续 sneaker 与早秋折扣，提示VIVAIA把选品、库存和成熟客群价值感联动运营。</p>
@@ -42,17 +44,17 @@
       </a>
       <a class="archive-card" href="edition-0040.html">
         <span class="issue">第 0040 期</span>
-        <strong>VIVAIA 品牌趋势日报</strong>
+        <strong>2026年7月13日 09:14</strong>
         <p>本期聚焦舒适步行、DTC可持续IPO、周年促销与秀场社群化，提示VIVAIA把场景证据、价格节点和内容活动打通。</p>
       </a>
       <a class="archive-card" href="edition-0039.html">
         <span class="issue">第 0039 期</span>
-        <strong>VIVAIA 品牌趋势日报</strong>
+        <strong>2026年7月10日 09:34</strong>
         <p>本期聚焦退货信任、AI商品图、纺织回收、近岸制造与50+足部健康，提示VIVAIA把舒适卖点转成可验证场景。</p>
       </a>
       <a class="archive-card" href="edition-0038.html">
         <span class="issue">第 0038 期</span>
-        <strong>VIVAIA 品牌趋势日报</strong>
+        <strong>2026年7月9日</strong>
         <p>本期聚焦盛夏价格节点、争议凉鞋、宽脚健康需求与可持续场景化表达，为 VIVAIA 选品和活动找到新切口。</p>
       </a>
       <a class="archive-card" href="edition-0037.html">
@@ -77,53 +79,48 @@
       </a>
       <a class="archive-card" href="edition-0033.html">
         <span class="issue">第 0033 期</span>
-        <strong>VIVAIA 品牌趋势日报</strong>
+        <strong>2026年7月1日 09:00</strong>
         <p>本期从法国快时尚新法、欧盟包裹税、暑期机场穿搭和独立日促销切入，提示 VIVAIA 同步运营合规、旅行场景与渠道价格战。</p>
       </a>
       <a class="archive-card" href="edition-0032.html">
         <span class="issue">第 0032 期</span>
-        <strong>VIVAIA 品牌趋势日报</strong>
+        <strong>2026年6月30日 09:11</strong>
         <p>本期从 Shein 化学品诉讼、Prime Day 增长、社交优先营销到黑色凉鞋与水鞋联名切入，提示 VIVAIA 同步运营合规、渠道和夏季脚感。</p>
       </a>
       <a class="archive-card" href="edition-0031.html">
         <span class="issue">第 0031 期</span>
-        <strong>VIVAIA 品牌趋势日报</strong>
+        <strong>2026年6月29日 09:19</strong>
         <p>本期从会员联营、创作者秀场、50+步行鞋到混种凉鞋切入，提醒 VIVAIA 同步做渠道权益、成熟客群与新审美测试。</p>
       </a>
       <a class="archive-card" href="edition-0030.html">
         <span class="issue">第 0030 期</span>
-        <strong>VIVAIA 品牌趋势日报</strong>
+        <strong>2026年6月26日 13:52</strong>
         <p>本期聚焦透气网面、足科认可凉鞋、非亚马逊渠道战、成熟女性购物与供应链可持续新信号。</p>
       </a>
       <a class="archive-card" href="edition-0029.html">
         <span class="issue">第 0029 期</span>
-        <strong>VIVAIA 品牌趋势日报</strong>
+        <strong>2026年6月25日 09:00</strong>
         <p>本期聚焦 Prime Day 鞋服促销、红鞋社媒色彩、TikTok 审美回潮与成熟用户舒适竞品机会。</p>
       </a>
       <a class="archive-card" href="edition-0028.html">
         <span class="issue">第 0028 期</span>
-        <strong>VIVAIA 品牌趋势日报</strong>
+        <strong>2026年6月24日 09:00</strong>
         <p>本期聚焦 Prime Day 渠道战、AI 营销、TikTok 联盟内容与旅行步行需求，提炼 VIVAIA 夏季转化新抓手。</p>
       </a>
       <a class="archive-card" href="edition-0027.html">
         <span class="issue">第 0027 期</span>
-        <strong>VIVAIA 品牌趋势日报</strong>
+        <strong>2026年6月23日 09:13</strong>
         <p>本期聚焦低毒材料、热浪办公室、Prime Day 价格带与名人舒适鞋内容，给 VIVAIA 找到夏季转化新抓手。</p>
       </a>
       <a class="archive-card" href="edition-0026.html">
         <span class="issue">第 0026 期</span>
-        <strong>VIVAIA 品牌趋势日报</strong>
+        <strong>2026年6月22日 09:09</strong>
         <p>本期聚焦夏季胶囊、社媒穿搭公式、价格带促销与自然纤维活动，为 VIVAIA 提炼新选品入口。</p>
       </a>
       <a class="archive-card" href="edition-0025.html">
         <span class="issue">第 0025 期</span>
-        <strong>VIVAIA 品牌趋势日报</strong>
+        <strong>2026年6月18日 10:06</strong>
         <p>本期聚焦低价果冻鞋、夏季步行健康、Allbirds 退场与社媒穿搭公式，提炼选品和内容转化新抓手。</p>
-      </a>
-      <a class="archive-card" href="edition-0024.html">
-        <span class="issue">第 0024 期</span>
-        <strong>VIVAIA 品牌趋势日报</strong>
-        <p>本期聚焦50+女性鞋柜、赛事生活方式、Prime Day前价格心智与复古凉鞋，寻找夏季选品和活动新入口。</p>
       </a>
     </section>
   </main>
