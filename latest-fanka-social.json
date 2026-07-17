@@ -1,32 +1,32 @@
 {
-  "edition": "0025",
-  "date": "2026年7月16日 09:23",
-  "intro": "本期信号集中在女性健康“简化做”、热浪场景穿搭与头部 activewear 品牌的任务分流结构；能学的不只是产品词，还有前3秒钩子、支撑分层与评论区提问方式。",
+  "edition": "0026",
+  "date": "2026年7月17日 09:13",
+  "intro": "本期社媒焦点从 TikTok 跑团生活、问题先讲和恢复叙事，转到头部 activewear 账号的分流结构与 UGC 玩法，Fanka 可直接改写成短视频选题、评论互动和产品卖点。",
   "tags": [
-    "简化健康",
-    "BFR训练",
-    "热浪穿搭",
+    "跑团生活",
+    "问题先讲",
+    "恢复叙事",
     "支撑分层",
-    "腰头痛点"
+    "高温UGC"
   ],
   "top3": [
     {
-      "title": "“healthmaxxing”开始反向简化：Z世代把睡眠、规律运动和纤维重新拉回 wellness 主线",
-      "comment": "Z世代把睡眠、规律运动和纤维重新拉回核心。",
-      "url": "https://nypost.com/2026/07/15/health/how-healthmaxxing-is-becoming-americas-new-wellness-playbook/"
+      "title": "TikTok 上的 #running 正从“训练计划”转向跑团生活、GRWM 和社区感",
+      "comment": "跑步内容正在从训练计划转向跑团生活与社区归属。",
+      "url": "https://www.vogue.com/article/the-vogue-business-tiktok-trend-tracker"
     },
     {
-      "title": "Buffbunny 把 Fabric、Sports Bra Support、Compression Level 和 Activity 直接做成第一层分流",
-      "comment": "支撑、压缩和训练类型同屏，分流比讲故事更快。",
-      "url": "https://www.buffbunny.com/"
+      "title": "Alo 仍把 Travel、Yoga、Train、Pilates、Run 和 Wellness 摆在同一层，先分状态再分单品",
+      "comment": "Alo 先分状态再分单品，内容导航比硬推 SKU 更快。",
+      "url": "https://www.aloyoga.com/"
     },
     {
-      "title": "Google 建议词把“anti-roll waistband / why do my leggings roll down at the waist”公开化，腰头卷边仍是底层痛点",
-      "comment": "腰头卷边被用户直接写成搜索问题，证明体感优先。",
-      "url": "https://suggestqueries.google.com/complete/search?client=firefox&q=anti%20roll%20waistband%20leggings"
+      "title": "Google 建议词把“sports bra back fat”直接公开化，用户在搜的不是好看，是边缘平整和可穿性",
+      "comment": "用户在主动搜后背勒痕和平整度，bra 内容要改拍法。",
+      "url": "https://suggestqueries.google.com/complete/search?client=firefox&q=sports%20bra%20back%20fat"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0025.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0026.html",
   "report_type": "fanka-social-trends",
   "source_window": "趋势近72小时；账号结构近7天；用户痛点近30天"
 }
