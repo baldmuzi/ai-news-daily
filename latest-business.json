@@ -1,27 +1,27 @@
 {
-  "edition": "0057",
-  "date": "2026年7月16日 09:26",
-  "intro": "AI购物代理、零售归因与绿色供应链正在并线，出海鞋类团队要把商品和环保数据一起做成机器可执行资产。",
+  "edition": "0058",
+  "date": "2026年7月17日 09:10",
+  "intro": "AI购物入口、绿色追溯与零售智能体同步升级，出海鞋类团队要把商品和环保数据都做成机器可执行资产。",
   "tags": [
     "代理购物",
-    "零售归因",
-    "绿色合规",
-    "供应链智控",
-    "消费洞察"
+    "绿色追溯",
+    "社交流量",
+    "零售分析",
+    "供应链AI"
   ],
   "top3": [
     {
-      "title": "AI 重写供应链与合规决策",
-      "comment": "材料、能耗与审计数据要尽快汇入统一 AI 决策底座。"
+      "title": "Google 把 AI 助手推进到支付层",
+      "comment": "商品、库存和退款规则要先变成代理可执行数据。"
     },
     {
-      "title": "AI 购物入口争夺进入实战期",
-      "comment": "商品知识和价格规则正从页面资产变成助手调用资产。"
+      "title": "AI 导流开始成为高质量零售流量",
+      "comment": "分析口径要拆出 AI 渠道与 LLM 可见性监测。"
     },
     {
-      "title": "Disney 测试 App 内 AI 导购",
-      "comment": "搜索正转向场景意图理解，鞋类语义标签要补得更细。"
+      "title": "Gap 用 AI 追溯供应链与合规",
+      "comment": "环保鞋类最该先补材料、工厂与质检的数据链。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0057.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0058.html"
 }
