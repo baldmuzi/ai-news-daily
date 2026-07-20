@@ -1,32 +1,32 @@
 {
-  "edition": "0026",
-  "date": "2026年7月17日 09:13",
-  "intro": "本期社媒焦点从 TikTok 跑团生活、问题先讲和恢复叙事，转到头部 activewear 账号的分流结构与 UGC 玩法，Fanka 可直接改写成短视频选题、评论互动和产品卖点。",
+  "edition": "0027",
+  "date": "2026年7月20日 09:24",
+  "intro": "本期社媒线索集中在“健身即生活方式”的拍法、问题前置的内容结构，以及女性对贴合感与体感的更细颗粒度要求，Fanka 更该拍真实场景和真实体感。",
   "tags": [
-    "跑团生活",
     "问题先讲",
-    "恢复叙事",
-    "支撑分层",
-    "高温UGC"
+    "生活方式感",
+    "背面平整",
+    "高温训练",
+    "社群分流"
   ],
   "top3": [
     {
-      "title": "TikTok 上的 #running 正从“训练计划”转向跑团生活、GRWM 和社区感",
-      "comment": "跑步内容正在从训练计划转向跑团生活与社区归属。",
-      "url": "https://www.vogue.com/article/the-vogue-business-tiktok-trend-tracker"
+      "title": "“wellness girl” 叙事开始被器材堆叠反噬，vibration plate 成了 Instagram 新争议焦点",
+      "comment": "器材堆叠式 wellness 叙事走红，真实可执行感更重要。",
+      "url": "https://m.economictimes.com/industry/cons-products/electronics/the-vibration-plate-boom-separating-fitness-fact-from-instagram-fiction/amp_articleshow/132489254.cms"
     },
     {
-      "title": "Alo 仍把 Travel、Yoga、Train、Pilates、Run 和 Wellness 摆在同一层，先分状态再分单品",
-      "comment": "Alo 先分状态再分单品，内容导航比硬推 SKU 更快。",
-      "url": "https://www.aloyoga.com/"
+      "title": "Instagram Reels 本周热格式转向“Tap to reveal”和“Interactive calendar”，先卖悬念再卖内容",
+      "comment": "Reels 更奖励先抛悬念再给细节的内容结构。",
+      "url": "https://later.com/blog/instagram-reels-trends/"
     },
     {
-      "title": "Google 建议词把“sports bra back fat”直接公开化，用户在搜的不是好看，是边缘平整和可穿性",
-      "comment": "用户在主动搜后背勒痕和平整度，bra 内容要改拍法。",
-      "url": "https://suggestqueries.google.com/complete/search?client=firefox&q=sports%20bra%20back%20fat"
+      "title": "Google 建议词开始公开“flatten chest / band rides up / straps slipping”，bra 痛点更偏真实穿着体验",
+      "comment": "用户越来越直接搜索穿着体验，而不只搜显瘦。",
+      "url": "https://suggestqueries.google.com/complete/search?client=firefox&q=sports%20bra%20flatten%20breasts"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0026.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0027.html",
   "report_type": "fanka-social-trends",
   "source_window": "趋势近72小时；账号结构近7天；用户痛点近30天"
 }
