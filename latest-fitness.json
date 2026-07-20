@@ -1,33 +1,33 @@
 {
-  "edition": "0041",
-  "date": "2026年7月16日 09:26",
-  "intro": "本期从全球夏季训练、微运动和运动服饰消费切入，提炼 Fanka 压缩穿搭、防晒层与多场景内容机会。",
+  "edition": "0042",
+  "date": "2026年7月20日 09:18",
+  "intro": "本期聚焦社媒健身小器械、普拉提穿搭、舒适消费与户外耐力训练，提炼 Fanka 压缩服与女性运动内容的新切口。",
   "tags": [
-    "防晒训练服",
-    "微运动",
-    "夏季通勤",
-    "动作纠错",
-    "女性跑步"
+    "普拉提穿搭",
+    "社媒小器械",
+    "舒适消费",
+    "户外耐力",
+    "女性运动"
   ],
   "top3": [
     {
-      "title": "轻量运动长裤成为夏季旅行与通勤替代品",
-      "comment": "夏季运动裤从健身房扩展到旅行通勤。"
+      "title": "振动板热潮把“wellness girl”审美推向家用健身设备",
+      "comment": "社媒健身器械升温，适合做科学避坑内容。"
     },
     {
-      "title": "UPF 跑步上衣把防晒从配件升级为训练服功能",
-      "comment": "防晒功能服成为户外训练内容新切口。"
+      "title": "Pilates Princess 从短期审美变成普拉提基础衣橱清单",
+      "comment": "普拉提审美沉淀成可复用运动衣橱。"
     },
     {
-      "title": "工作日微运动替代“等下班再运动”的单一叙事",
-      "comment": "微运动让工作日内容更易被普通用户执行。"
+      "title": "热瑜伽与情绪健康研究让恢复内容更贴近女性心理状态",
+      "comment": "热瑜伽与情绪恢复提供女性健康内容切口。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0041.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0042.html",
   "blog": {
-    "title": "Sun-Safe Summer Workout Outfits: UPF Layers and Compression Basics",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/sun-safe-summer-workout-outfits-upf-compression.html",
-    "summary": "由本期 UPF 防晒训练服趋势延展为夏季户外运动穿搭指南"
+    "title": "Pilates Activewear Capsule: Supportive Staples Beyond the Trend",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/pilates-activewear-capsule-supportive-staples.html",
+    "summary": "由本期 Pilates Princess 普拉提穿搭趋势延展为支撑型基础衣橱指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
