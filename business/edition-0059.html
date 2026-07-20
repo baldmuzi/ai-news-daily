@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>出海 AI 洞察 — 第 0059 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#080c14; --surface:#0f1623; --surface-2:#142032; --border:#1f2d3f; --accent:#10b981; --accent-2:#34d399; --text:#e5eef7; --muted:#94a3b8; --dim:#64748b; --tag-bg:rgba(16,185,129,0.12); --shadow:0 24px 60px rgba(0,0,0,0.28); }
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    body { background:radial-gradient(circle at top left, rgba(16,185,129,0.14), transparent 28%),radial-gradient(circle at top right, rgba(52,211,153,0.10), transparent 24%),linear-gradient(180deg,#0a111c 0%,var(--bg) 26%); color:var(--text); font-family:"Noto Serif SC",serif; line-height:1.85; min-height:100vh; padding-bottom:4rem; }
+    a { color:inherit; }
+    header { position:relative; padding:3rem 1.5rem 2rem; border-bottom:1px solid var(--border); text-align:center; }
+    .back-link { position:absolute; top:1.2rem; left:1.5rem; color:var(--accent); text-decoration:none; font-family:"JetBrains Mono",monospace; font-size:0.72rem; border:1px solid rgba(16,185,129,0.32); border-radius:999px; padding:0.36em 0.9em; background:rgba(15,22,35,0.7); }
+    .back-link:hover { background:var(--tag-bg); }
+    .badge { display:inline-block; color:var(--accent); font-family:"JetBrains Mono",monospace; font-size:0.66rem; letter-spacing:0.12em; text-transform:uppercase; border:1px solid rgba(16,185,129,0.34); border-radius:999px; padding:0.25em 0.9em; margin-bottom:1rem; background:rgba(15,22,35,0.7); }
+    h1 { font-size:clamp(1.8rem,4vw,2.8rem); letter-spacing:0.04em; margin-bottom:0.45rem; }
+    .subtitle { color:var(--muted); font-size:0.92rem; letter-spacing:0.06em; }
+    .meta { margin-top:1rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.7rem; letter-spacing:0.06em; }
+    .intro { max-width:820px; margin:1.5rem auto 0; padding:1.15rem 1.35rem; border-radius:14px; border:1px solid var(--border); border-left:3px solid var(--accent); background:linear-gradient(135deg, rgba(15,22,35,0.98), rgba(10,18,30,0.94)); color:var(--muted); text-align:left; box-shadow:var(--shadow); }
+    .tags { display:flex; flex-wrap:wrap; justify-content:center; gap:0.5rem; margin-top:1.1rem; }
+    .tag { color:var(--accent); background:var(--tag-bg); border:1px solid rgba(16,185,129,0.24); border-radius:999px; padding:0.26em 0.8em; font-family:"JetBrains Mono",monospace; font-size:0.66rem; }
+    main { max-width:980px; margin:0 auto; padding:2rem 1.2rem 0; }
+    .section-title { border-bottom:1px solid var(--border); padding-bottom:0.65rem; margin-bottom:1rem; }
+    .section-title h2 { color:var(--accent); font-size:0.76rem; letter-spacing:0.14em; text-transform:uppercase; font-family:"JetBrains Mono",monospace; }
+    .grid { display:grid; gap:1.2rem; }
+    .card { background:linear-gradient(180deg, rgba(15,22,35,0.96), rgba(9,16,27,0.98)); border:1px solid var(--border); border-radius:16px; padding:1.45rem 1.5rem; box-shadow:var(--shadow); transition:transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease; }
+    .card:hover { transform:translateY(-2px); border-color:rgba(16,185,129,0.44); box-shadow:0 28px 60px rgba(16,185,129,0.08); }
+    .card-header { display:flex; flex-wrap:wrap; align-items:flex-start; gap:0.75rem; margin-bottom:0.7rem; }
+    .num,.cat { font-family:"JetBrains Mono",monospace; font-size:0.63rem; border-radius:999px; padding:0.22em 0.65em; white-space:nowrap; margin-top:0.15em; }
+    .num { color:var(--dim); background:var(--surface-2); border:1px solid var(--border); }
+    .cat { color:var(--accent); background:var(--tag-bg); border:1px solid rgba(16,185,129,0.24); }
+    .title-wrap { flex:1; min-width:0; }
+    .title-link { display:block; text-decoration:none; color:var(--text); font-size:1.02rem; font-weight:600; line-height:1.55; }
+    .title-link:hover { color:var(--accent-2); }
+    .source { color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.68rem; letter-spacing:0.04em; margin-bottom:0.9rem; }
+    .comment { color:var(--muted); font-size:0.88rem; }
+    .footer { display:flex; justify-content:flex-end; margin-top:1rem; }
+    .button { text-decoration:none; color:var(--accent); border:1px solid rgba(16,185,129,0.28); border-radius:999px; padding:0.42em 0.95em; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .button:hover { background:var(--tag-bg); border-color:rgba(16,185,129,0.45); }
+    footer { margin-top:4rem; padding:2rem 1.5rem; border-top:1px solid var(--border); text-align:center; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.68rem; letter-spacing:0.06em; }
+    @media (max-width:640px) { header { padding:4.2rem 1rem 2rem; } .back-link { left:1rem; } .card { padding:1.15rem 1rem; } .title-link { font-size:0.96rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="back-link" href="../business/">← 返回存档</a>
+    <div class="badge">Business Channel · Edition 0059</div>
+    <h1>出海 AI 洞察</h1>
+    <p class="subtitle">跨境电商 · 可持续发展 · AI 应用实战</p>
+    <div class="meta">2026年7月20日 09:21</div>
+    <div class="intro">AI正把出海鞋类电商的选品、导购和绿色追溯串成闭环，商品与环保数据要同时变成可执行资产。</div>
+    <div class="tags"><span class="tag">AI选品</span><span class="tag">评论洞察</span><span class="tag">空间试搭</span><span class="tag">绿色追溯</span><span class="tag">商采自动化</span></div>
+  </header>
+  <main>
+    <div class="section-title"><h2>Top 10 Signals</h2></div>
+    <section class="grid">
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.01</span>
+          <span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.cifnews.com/intelligence/platform/1954" target="_blank" rel="noreferrer">速卖通上线“AI商机选品”，把跨境选品从经验判断推向趋势预测</a></div>
+        </div>
+        <div class="source">雨果跨境 · 2026-07-13</div>
+        <div class="comment">【是什么】速卖通发布“AI商机选品”，让平台基于消费趋势、供给稀缺度和店铺历史数据自动生成 95% 以上的商机建议，并给出趋势解释、权益扶持和发品入口联动。<br />【对我们意味着什么】对出海鞋类 PM，这意味着选品不必只靠经验和赛马，而可以先用平台 AI 验证季节、材质和价格带机会，再决定哪些鞋款值得小单试投。</div>
+        <div class="footer"><a class="button" href="https://www.cifnews.com/intelligence/platform/1954" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.02</span>
+          <span class="cat">营销工具</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.retaildive.com/news/meta-muse-image-ai-powered-room-visualization-feature/824841/" target="_blank" rel="noreferrer">Meta 推出 AI 空间试搭，让广告目录直接变成可交互导购入口</a></div>
+        </div>
+        <div class="source">Retail Dive · 2026-07-09</div>
+        <div class="comment">【是什么】Meta 的 Muse Image 允许用户上传真实空间照片，把品牌目录中的商品直接嵌入场景图里做可视化比较，并跳转品牌站点完成购买。<br />【对我们意味着什么】鞋类品牌虽然不是家居，但逻辑完全一致：当广告素材能被 AI 直接拼进穿搭、通勤或旅行场景里，目录数据和视觉资产就成了新的转化基础设施。</div>
+        <div class="footer"><a class="button" href="https://www.retaildive.com/news/meta-muse-image-ai-powered-room-visualization-feature/824841/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.03</span>
+          <span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.retaildive.com/news/grocers-ai-back-end-operations/824806/" target="_blank" rel="noreferrer">零售商开始把 AI 投到后场运营，重点解决损耗、补货与质量判断</a></div>
+        </div>
+        <div class="source">Retail Dive · 2026-07-09</div>
+        <div class="comment">【是什么】Retail Dive 指出，零售商正把 AI 从前台聊天助手延伸到仓配、价格、补货、质检和损耗控制，像 Albertsons 已用 AI 判断生鲜到仓质量。<br />【对我们意味着什么】对环保鞋类团队，真正见 ROI 的不一定先是聊天导购，而可能是来料质检、补货预测和异常预警；这也是供应链降本与 ESG 数据沉淀能一起推进的切口。</div>
+        <div class="footer"><a class="button" href="https://www.retaildive.com/news/grocers-ai-back-end-operations/824806/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.04</span>
+          <span class="cat">消费洞察</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.retaildive.com/news/stitch-fix-expands-ai-image-generation-personalization/823815/" target="_blank" rel="noreferrer">Stitch Fix 扩大 AI 试穿，把“See it on me”做成按需生成的个性化搭配</a></div>
+        </div>
+        <div class="source">Retail Dive · 2026-07-02</div>
+        <div class="comment">【是什么】Stitch Fix 把 Vision 功能升级为用户上传自拍后可即时生成“自己穿上推荐搭配”的效果图，背后结合偏好数据、造型师经验和生成式 AI。<br />【对我们意味着什么】鞋类电商一直难解决“上脚想象”问题，这类按人生成的视觉反馈说明尺码、风格和搭配推荐正在合流，分析师要开始跟踪试穿式 AI 对点击、加购和退货的影响。</div>
+        <div class="footer"><a class="button" href="https://www.retaildive.com/news/stitch-fix-expands-ai-image-generation-personalization/823815/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.05</span>
+          <span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.retaildive.com/news/amazon-to-offer-ai-agents-to-other-retailers/821597/" target="_blank" rel="noreferrer">亚马逊把 AI 购物助手能力封装给零售商，缩短品牌自建导购周期</a></div>
+        </div>
+        <div class="source">Retail Dive · 2026-06-02</div>
+        <div class="comment">【是什么】Amazon 在 AWS 上推出 Agentic Shopping Assistant，宣称零售商可以在数周内接入会话式导购助手，并按自身品牌语气、商品数据和业务规则定制。<br />【对我们意味着什么】这意味着品牌未来不一定自己从零造助手，但前提是商品、库存、价格、尺码和售后规则都要结构化，否则即便接入现成能力也很难形成可信导购。</div>
+        <div class="footer"><a class="button" href="https://www.retaildive.com/news/amazon-to-offer-ai-agents-to-other-retailers/821597/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.06</span>
+          <span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.modernretail.co/technology/ai-is-now-doing-parts-of-merchants-jobs-managing-products-and-vendors/" target="_blank" rel="noreferrer">Modern Retail：AI 已开始接手商采的一部分工作，连议价与补货都在自动化</a></div>
+        </div>
+        <div class="source">Modern Retail · 2026-06-22</div>
+        <div class="comment">【是什么】Modern Retail 报道，Duvo.ai、Relex、Gain 等工具正让 AI 代做订货建议、供应商沟通、缺货预防和促销计划，商采角色正被重构成“人机协同”。<br />【对我们意味着什么】对鞋类团队，这类能力最适合先用于补货节奏、供应商响应和促销推演；数据分析师也可以新增“AI 建议采纳率”“缺货改善率”等经营指标。</div>
+        <div class="footer"><a class="button" href="https://www.modernretail.co/technology/ai-is-now-doing-parts-of-merchants-jobs-managing-products-and-vendors/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.07</span>
+          <span class="cat">消费洞察</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.cifnews.com/article/187501" target="_blank" rel="noreferrer">雨果跨境案例：用 AI “听”评论和搜索词，比用 AI 写文案更接近真实需求</a></div>
+        </div>
+        <div class="source">雨果跨境 · 2026-07-13</div>
+        <div class="comment">【是什么】雨果跨境报道，一家深圳卖家把类目评论、社媒讨论和站内搜索词交给多套 AI 处理，做用户画像、问题聚类和转化诊断，再反推产品迭代。<br />【对我们意味着什么】这对鞋类 PM 很直接：真正高价值的数据不是“AI 帮你写了多少文案”，而是能否从差评、退货和搜索语义里找出脚感、尺码、材质等真实痛点。</div>
+        <div class="footer"><a class="button" href="https://www.cifnews.com/article/187501" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.08</span>
+          <span class="cat">数据分析</span>
+          <div class="title-wrap"><a class="title-link" href="https://36kr.com/p/3858507356328968" target="_blank" rel="noreferrer">36氪：2026 年 618 成为首个 AI 全域落地大促，营销到客服全面渗透</a></div>
+        </div>
+        <div class="source">36氪 · 2026-06-18</div>
+        <div class="comment">【是什么】36氪援引《618消费洞察报告（2026）》指出，AI 已从投放、客服、直播延伸到整场大促的底层基础设施，开始系统性改写零售活动逻辑。<br />【对我们意味着什么】做出海鞋类增长时，大促复盘不能只看折扣和素材，要把 AI 投放、客服效率、直播转化与内容生成成本一起纳入统一指标体系。</div>
+        <div class="footer"><a class="button" href="https://36kr.com/p/3858507356328968" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.09</span>
+          <span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://techcrunch.com/2026/06/03/amazon-will-show-ai-product-images-when-you-search-for-some-reason/" target="_blank" rel="noreferrer">TechCrunch：Amazon 开始在搜索中显示 AI 生成商品图，重写商品发现入口</a></div>
+        </div>
+        <div class="source">TechCrunch · 2026-06-03</div>
+        <div class="comment">【是什么】Amazon 在购物 App 搜索里加入 AI 生成商品图，用视觉示意帮助用户表达模糊需求，再引导进入更接近的真实商品结果页。<br />【对我们意味着什么】这意味着鞋类发现链路正在从关键词命中转向“语义+视觉”理解，商品图、颜色、轮廓和卖点标签都要为机器检索而设计。</div>
+        <div class="footer"><a class="button" href="https://techcrunch.com/2026/06/03/amazon-will-show-ai-product-images-when-you-search-for-some-reason/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.10</span>
+          <span class="cat">可持续合规</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.retaildive.com/news/gap-improved-traceability-operations-data-collection/818846/" target="_blank" rel="noreferrer">Gap 用 AI 追溯层打通质检、实验室与合规数据，绿色供应链开始可操作化</a></div>
+        </div>
+        <div class="source">Retail Dive · 2026-05-04</div>
+        <div class="comment">【是什么】Gap 正使用 Inspectorio 的 Paramo AI layer，把供应商网络中的质检、实验室测试、合规与 traceability 数据拉通，并用 agents / copilots 自动识别风险。<br />【对我们意味着什么】对环保鞋类公司，这条线最值得借鉴：材料认证、工厂表现和实验室数据要尽快从零散表格升级为可追溯的数据链，方便 ESG 申报、质量复盘和供应商管理。</div>
+        <div class="footer"><a class="button" href="https://www.retaildive.com/news/gap-improved-traceability-operations-data-collection/818846/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+    </section>
+  </main>
+  <footer>Edition 0059 · 出海 AI 洞察</footer>
+</body>
+</html>
