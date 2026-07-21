@@ -1,33 +1,33 @@
 {
-  "edition": "0042",
-  "date": "2026年7月20日 09:18",
-  "intro": "本期聚焦社媒健身小器械、普拉提穿搭、舒适消费与户外耐力训练，提炼 Fanka 压缩服与女性运动内容的新切口。",
+  "edition": "0043",
+  "date": "2026年7月21日 09:10",
+  "intro": "本期从全球运动消费、跑步训练、骨骼健康与恢复风险出发，提炼 Fanka 压缩服、女性运动穿搭和内容运营的新切口。",
   "tags": [
-    "普拉提穿搭",
-    "社媒小器械",
-    "舒适消费",
-    "户外耐力",
-    "女性运动"
+    "运动消费",
+    "承重训练",
+    "恢复避坑",
+    "跑步技巧",
+    "赛事内容"
   ],
   "top3": [
     {
-      "title": "振动板热潮把“wellness girl”审美推向家用健身设备",
-      "comment": "社媒健身器械升温，适合做科学避坑内容。"
+      "title": "世界杯“在场消费”把体育内容扩展成全天候生活方式",
+      "comment": "体育内容转向全天候生活场景，适合做赛事穿搭与社群选题。"
     },
     {
-      "title": "Pilates Princess 从短期审美变成普拉提基础衣橱清单",
-      "comment": "普拉提审美沉淀成可复用运动衣橱。"
+      "title": "Lifestyle activewear 成为新的低调身份符号",
+      "comment": "运动服成为生活方式信号，面料和跨场景表达更重要。"
     },
     {
-      "title": "热瑜伽与情绪健康研究让恢复内容更贴近女性心理状态",
-      "comment": "热瑜伽与情绪恢复提供女性健康内容切口。"
+      "title": "骨密度研究让承重运动成为女性健康内容的新入口",
+      "comment": "承重运动和骨骼健康提供女性长期内容入口。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0042.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0043.html",
   "blog": {
-    "title": "Pilates Activewear Capsule: Supportive Staples Beyond the Trend",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/pilates-activewear-capsule-supportive-staples.html",
-    "summary": "由本期 Pilates Princess 普拉提穿搭趋势延展为支撑型基础衣橱指南"
+    "title": "Bone-Strength Workout Outfits for Women: Supportive Layers for Weight-Bearing Exercise",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/bone-strength-workout-outfits-women-weight-bearing-exercise.html",
+    "summary": "由本期骨密度与承重运动趋势延展为女性承重训练穿搭指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
