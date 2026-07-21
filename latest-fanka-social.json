@@ -1,32 +1,32 @@
 {
-  "edition": "0027",
-  "date": "2026年7月20日 09:24",
-  "intro": "本期社媒线索集中在“健身即生活方式”的拍法、问题前置的内容结构，以及女性对贴合感与体感的更细颗粒度要求，Fanka 更该拍真实场景和真实体感。",
+  "edition": "0028",
+  "date": "2026年7月21日 09:12",
+  "intro": "本期聚焦 softfit 夏日穿搭、舒适支撑分层、社区型运动内容与 bra/leggings 真实体感问题，适合 Fanka 直接转成短视频与评论区话术。",
   "tags": [
-    "问题先讲",
-    "生活方式感",
-    "背面平整",
-    "高温训练",
-    "社群分流"
+    "softfit审美",
+    "舒适支撑",
+    "社区运动感",
+    "分层卖点",
+    "体感痛点"
   ],
   "top3": [
     {
-      "title": "“wellness girl” 叙事开始被器材堆叠反噬，vibration plate 成了 Instagram 新争议焦点",
-      "comment": "器材堆叠式 wellness 叙事走红，真实可执行感更重要。",
-      "url": "https://m.economictimes.com/industry/cons-products/electronics/the-vibration-plate-boom-separating-fitness-fact-from-instagram-fiction/amp_articleshow/132489254.cms"
+      "title": "抖音 softfit 美学把夏日运动穿搭重新翻译成轻松出门感",
+      "comment": "先给完整氛围，再讲支撑和场景切换。",
+      "url": "https://jingxuan.douyin.com/m/video/7603708837875483386"
     },
     {
-      "title": "Instagram Reels 本周热格式转向“Tap to reveal”和“Interactive calendar”，先卖悬念再卖内容",
-      "comment": "Reels 更奖励先抛悬念再给细节的内容结构。",
-      "url": "https://later.com/blog/instagram-reels-trends/"
+      "title": "Gymshark 公开把创作者合作写成真实内容和标签参与机制",
+      "comment": "UGC 招募比单次带货更像长期社群建设。",
+      "url": "https://support.gymshark.com/en/articles/11186207-gymshark-athlete"
     },
     {
-      "title": "Google 建议词开始公开“flatten chest / band rides up / straps slipping”，bra 痛点更偏真实穿着体验",
-      "comment": "用户越来越直接搜索穿着体验，而不只搜显瘦。",
+      "title": "Google 建议词持续暴露 bra 压扁与下围上窜等体感问题",
+      "comment": "用户现在更直接搜索穿上以后哪里不舒服。",
       "url": "https://suggestqueries.google.com/complete/search?client=firefox&q=sports%20bra%20flatten%20breasts"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0027.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fanka-social/edition-0028.html",
   "report_type": "fanka-social-trends",
   "source_window": "趋势近72小时；账号结构近7天；用户痛点近30天"
 }
