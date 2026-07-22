@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>出海 AI 洞察 — 第 0061 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#080c14; --surface:#0f1623; --surface-2:#142032; --border:#1f2d3f; --accent:#10b981; --accent-2:#34d399; --text:#e5eef7; --muted:#94a3b8; --dim:#64748b; --tag-bg:rgba(16,185,129,0.12); --shadow:0 24px 60px rgba(0,0,0,0.28); }
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    body { background:radial-gradient(circle at top left, rgba(16,185,129,0.14), transparent 28%),radial-gradient(circle at top right, rgba(52,211,153,0.08), transparent 24%),var(--bg); color:var(--text); font-family:"Noto Serif SC",serif; line-height:1.75; min-height:100vh; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { max-width:1080px; margin:0 auto; padding:2rem 1.2rem 4rem; }
+    .back-link { display:inline-flex; align-items:center; color:var(--accent); border:1px solid rgba(16,185,129,0.28); border-radius:999px; padding:0.42rem 0.9rem; font-family:"JetBrains Mono",monospace; font-size:0.74rem; background:rgba(15,22,35,0.76); transition:border-color 0.18s ease,background 0.18s ease; }
+    .back-link:hover { border-color:var(--accent); background:rgba(16,185,129,0.1); }
+    header { padding:3rem 0 2.2rem; border-bottom:1px solid var(--border); }
+    .kicker { color:var(--accent); font-family:"JetBrains Mono",monospace; font-size:0.76rem; letter-spacing:0.16em; text-transform:uppercase; }
+    h1 { margin-top:0.62rem; font-size:clamp(2.3rem,6vw,4.8rem); line-height:1.14; letter-spacing:0.06em; }
+    .subtitle { margin-top:0.8rem; color:var(--muted); font-size:clamp(0.92rem,2vw,1.1rem); }
+    .meta { display:flex; flex-wrap:wrap; gap:0.7rem 1.2rem; margin-top:1.5rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.72rem; }
+    .intro { margin-top:1.6rem; max-width:820px; padding:1rem 1.1rem; border-left:3px solid var(--accent); border-radius:0 14px 14px 0; color:#cfe9df; background:linear-gradient(90deg,rgba(16,185,129,0.12),rgba(15,22,35,0.56)); }
+    .tags { display:flex; flex-wrap:wrap; gap:0.55rem; margin-top:1.1rem; }
+    .tag { color:var(--accent-2); background:var(--tag-bg); border:1px solid rgba(16,185,129,0.2); border-radius:999px; padding:0.28rem 0.7rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .cards { display:grid; gap:1.15rem; margin-top:2rem; }
+    .card { position:relative; overflow:hidden; padding:1.3rem 1.35rem 1.2rem; border:1px solid var(--border); border-radius:20px; background:linear-gradient(145deg,rgba(20,32,50,0.94),rgba(11,18,29,0.98)); box-shadow:var(--shadow); }
+    .card::before { content:""; position:absolute; inset:0 auto 0 0; width:3px; background:linear-gradient(180deg,var(--accent),transparent 86%); }
+    .card-header { display:grid; grid-template-columns:auto auto minmax(0,1fr); align-items:start; gap:0.65rem; }
+    .num,.cat { margin-top:0.15rem; border-radius:999px; font-family:"JetBrains Mono",monospace; font-size:0.64rem; white-space:nowrap; }
+    .num { color:var(--dim); padding:0.2rem 0; }
+    .cat { color:#a7f3d0; background:var(--tag-bg); border:1px solid rgba(16,185,129,0.22); padding:0.2rem 0.58rem; }
+    .title-link { display:block; font-size:clamp(1rem,2.1vw,1.22rem); font-weight:700; line-height:1.55; transition:color 0.18s ease; }
+    .title-link:hover { color:var(--accent-2); }
+    .source { margin-top:0.62rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .comment { margin-top:0.95rem; color:#c8d5e4; font-size:0.93rem; }
+    .footer { display:flex; justify-content:flex-end; margin-top:1rem; }
+    .button { color:var(--accent-2); border:1px solid rgba(16,185,129,0.32); border-radius:999px; padding:0.38rem 0.78rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; transition:background 0.18s ease,border-color 0.18s ease; }
+    .button:hover { background:rgba(16,185,129,0.1); border-color:var(--accent); }
+    body>footer { padding:0 1rem 2.5rem; color:var(--dim); text-align:center; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    @media (max-width:640px) { .wrap { padding:1.2rem 0.92rem 3rem; } header { padding:2rem 0 1.6rem; } .card { padding:1.05rem 1rem 1rem; } .card-header { grid-template-columns:auto auto; } .title-wrap { grid-column:1/-1; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="back-link" href="../business/">← 返回存档</a>
+    <header>
+      <div class="kicker">Edition 0061 · AI Product & Data Brief</div>
+      <h1>出海 AI 洞察</h1>
+      <p class="subtitle">跨境电商 · 可持续发展 · AI 应用实战</p>
+      <div class="meta"><span>2026年7月22日 09:07</span><span>TOP 10</span><span>面向产品经理与数据分析师</span></div>
+      <p class="intro">AI正把出海鞋类电商的导购、库存与营销分析连成闭环，环保团队也要开始核算模型与云服务的碳足迹。</p>
+      <div class="tags"><span class="tag">AI购物助手</span><span class="tag">货架视觉</span><span class="tag">高意向导流</span><span class="tag">营销归因</span><span class="tag">AI碳足迹</span></div>
+    </header>
+    <section class="cards">
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.01</span><span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://36kr.com/p/3905136359441543" target="_blank" rel="noreferrer">快手把 AI 购物助手嵌入搜索页，自然语言选品可直接一键加购</a></div>
+        </div>
+        <div class="source">36氪 / ZAKER财经 · 2026-07-21</div>
+        <div class="comment">【是什么】快手在商品搜索结果页上线 C 端 AI 购物助手，用户用自然语言描述预算和需求后即可完成筛选、对比并一键加购。<br />【对我们意味着什么】“通勤、宽脚、环保材质、预算”等组合需求会替代部分关键词检索；鞋类 PM 应用真实属性和尺码证据校准问答与排序。</div>
+        <div class="footer"><a class="button" href="https://36kr.com/p/3905136359441543" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.02</span><span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.retaildive.com/news/instacart-acquires-arpalus-ai-inventory-computer-vision-ecommerce/825559/" target="_blank" rel="noreferrer">Instacart 用货架计算机视觉补齐实时库存，商品识别准确率达 95%</a></div>
+        </div>
+        <div class="source">Retail Dive · 2026-07-20</div>
+        <div class="comment">【是什么】Instacart 收购 Arpalus，把手机和智能购物车拍到的货架图像交给计算机视觉模型，实时识别缺货并提升电商订单履约准确性。<br />【对我们意味着什么】鞋类团队可把相同思路用于门店、海外仓和样品间盘点，让库存可售率、缺码率和订单取消原因从人工抽查变为连续数据。</div>
+        <div class="footer"><a class="button" href="https://www.retaildive.com/news/instacart-acquires-arpalus-ai-inventory-computer-vision-ecommerce/825559/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.03</span><span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://m.ebrun.com/688436.html" target="_blank" rel="noreferrer">亿邦：产业智能体开始串联商品、价格、绿色供应链与履约</a></div>
+        </div>
+        <div class="source">亿邦动力 · 2026-07-19</div>
+        <div class="comment">【是什么】WAIC 相关案例显示，工业大模型与产业智能体正在进入商品和价格管控、绿色供应链及数智履约等跨系统流程。<br />【对我们意味着什么】出海鞋类可先把采购、材料认证、工厂交期和海外仓补货做成统一任务链，再让智能体在权限和审核节点内协同执行。</div>
+        <div class="footer"><a class="button" href="https://m.ebrun.com/688436.html" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.04</span><span class="cat">数据分析</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.techradar.com/pro/why-ai-recommendations-are-becoming-ecommerces-most-valuable-source-of-traffic" target="_blank" rel="noreferrer">3.5 万家 Shopify 品牌数据：AI 推荐流量转化率约为 Google 搜索的 2.9 倍</a></div>
+        </div>
+        <div class="source">TechRadar Pro · 2026-07-15</div>
+        <div class="comment">【是什么】对 3.5 万家 Shopify 品牌的分析显示，AI 引荐平均转化率为 3.6%，Google 搜索为 1.23%，且 AI 流量单次会话收入高约 30%。<br />【对我们意味着什么】数据团队应单列 ChatGPT 等 AI 来源，比较鞋款浏览深度、首购率、客单价和退货率，避免继续用传统 SEO 口径低估这类高意向流量。</div>
+        <div class="footer"><a class="button" href="https://www.techradar.com/pro/why-ai-recommendations-are-becoming-ecommerces-most-valuable-source-of-traffic" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.05</span><span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.36kr.com/newsflashes/3896380062647944" target="_blank" rel="noreferrer">腾讯元宝接入京东 AI Agent，推荐、履约与售后进入外部助手</a></div>
+        </div>
+        <div class="source">36氪 · 2026-07-15</div>
+        <div class="comment">【是什么】元宝与京东 AI Agent 打通小程序生态，让第三方助手可调用京东的商品推荐、供应链履约和售后服务。<br />【对我们意味着什么】独立站未来不只提供商品页面，还要准备可授权调用的库存、尺码建议、物流节点和退换货能力，才能接入外部 AI 入口。</div>
+        <div class="footer"><a class="button" href="https://www.36kr.com/newsflashes/3896380062647944" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.06</span><span class="cat">消费洞察</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.retaildive.com/news/customer-service-third-party-generative-ai-tools-brand-chatbots/825032/" target="_blank" rel="noreferrer">消费者解决服务问题时，使用第三方生成式 AI 的概率是品牌机器人的 3 倍</a></div>
+        </div>
+        <div class="source">Retail Dive · 2026-07-13</div>
+        <div class="comment">【是什么】Gartner 对 3500 多名客户的调查发现，第三方生成式 AI 使用量一年翻倍，而品牌自有聊天机器人自 2022 年以来没有显著增长。<br />【对我们意味着什么】鞋类客服不应只升级站内对话框，还要让尺码、护理、退换货知识可被外部助手准确引用，并保留可执行订单修改的自有入口。</div>
+        <div class="footer"><a class="button" href="https://www.retaildive.com/news/customer-service-third-party-generative-ai-tools-brand-chatbots/825032/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.07</span><span class="cat">营销工具</span>
+          <div class="title-wrap"><a class="title-link" href="https://digiday.com/marketing/d-research-marketers-hesitate-to-adopt-ai-for-influencer-and-ctv-marketing/" target="_blank" rel="noreferrer">营销团队正用大模型连接 CRM、Shopify 与达人数据，但归因和信任仍是门槛</a></div>
+        </div>
+        <div class="source">Digiday · 2026-07-09</div>
+        <div class="comment">【是什么】品牌把 CRM 与 Shopify 一方数据输入大模型生成细分人群，达人机构则用历史互动数据匹配创作者并预测内容表现。<br />【对我们意味着什么】出海鞋类可先用 AI 做人群洞察和达人候选排序，但投放前仍需人工审核品牌契合度，并用增量实验而非平台回传 ROAS 验证价值。</div>
+        <div class="footer"><a class="button" href="https://digiday.com/marketing/d-research-marketers-hesitate-to-adopt-ai-for-influencer-and-ctv-marketing/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.08</span><span class="cat">数据分析</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.techradar.com/pro/nearly-all-retailers-have-now-implemented-ai-but-many-are-still-waiting-to-see-business-value" target="_blank" rel="noreferrer">零售 AI 普及率已达 97%，但近半企业仍看不到可衡量回报</a></div>
+        </div>
+        <div class="source">TechRadar Pro · 2026-07-07</div>
+        <div class="comment">【是什么】UiPath 调研称 97% 的零售商已部署某种 AI，但 47% 仍在等待可衡量 ROI，42% 受困于数据可见性，79% 的关键运营决策仍需大量人工介入。<br />【对我们意味着什么】产品团队应从缺码补货、促销预测或退货预警中选一个闭环，先定义人工时长、预测误差和毛利改善，再决定是否扩展模型与智能体。</div>
+        <div class="footer"><a class="button" href="https://www.techradar.com/pro/nearly-all-retailers-have-now-implemented-ai-but-many-are-still-waiting-to-see-business-value" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.09</span><span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.prnewswire.com/news-releases/stockx-launches-stockx-listings-marking-the-companys-evolution-into-a-multi-experience-platform-built-for-the-next-generation-of-commerce-302809036.html" target="_blank" rel="noreferrer">StockX 用 AI 照片识别和自动匹配，把二手鞋上架压缩到数秒</a></div>
+        </div>
+        <div class="source">StockX / PR Newswire · 2026-06-24</div>
+        <div class="comment">【是什么】StockX Listings 用十年自有数据驱动照片分析、商品自动匹配和价格指引，让卖家数秒完成二手球鞋与复古服装上架。<br />【对我们意味着什么】鞋类品牌可借鉴这套能力建设回收、以旧换新和瑕疵品再售流程，用视觉识别降低 SKU 对齐、成色描述和定价的人力成本。</div>
+        <div class="footer"><a class="button" href="https://www.prnewswire.com/news-releases/stockx-launches-stockx-listings-marking-the-companys-evolution-into-a-multi-experience-platform-built-for-the-next-generation-of-commerce-302809036.html" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.10</span><span class="cat">可持续合规</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.theconsumergoodsforum.com/the-ai-footprint/" target="_blank" rel="noreferrer">消费品行业开始把模型、云服务与数据中心纳入 Scope 3 碳足迹</a></div>
+        </div>
+        <div class="source">The Consumer Goods Forum · 2026-06-16</div>
+        <div class="comment">【是什么】消费品论坛提出追踪 AI 使用量、能源与用水数据，把模型和云基础设施产生的间接排放纳入 Scope 3 管理及减碳路线图。<br />【对我们意味着什么】环保鞋类团队在扩大生成式内容、预测和客服模型前，应向云厂商索取能耗与排放透明度，并把 AI 用量写进年度 ESG 数据口径。</div>
+        <div class="footer"><a class="button" href="https://www.theconsumergoodsforum.com/the-ai-footprint/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+    </section>
+  </main>
+  <footer>Edition 0061 · 出海 AI 洞察</footer>
+</body>
+</html>
