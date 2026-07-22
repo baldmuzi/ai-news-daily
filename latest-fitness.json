@@ -1,33 +1,33 @@
 {
-  "edition": "0043",
-  "date": "2026年7月21日 09:10",
-  "intro": "本期从全球运动消费、跑步训练、骨骼健康与恢复风险出发，提炼 Fanka 压缩服、女性运动穿搭和内容运营的新切口。",
+  "edition": "0044",
+  "date": "2026年7月22日 09:11",
+  "intro": "本期从伙伴训练、女性睡眠、女子体育内容与功能鞋履出发，提炼 Fanka 压缩穿搭、社群挑战和零售内容的新机会。",
   "tags": [
-    "运动消费",
-    "承重训练",
-    "恢复避坑",
-    "跑步技巧",
-    "赛事内容"
+    "伙伴训练",
+    "女子体育内容",
+    "女性睡眠",
+    "功能鞋履",
+    "中文平台观察"
   ],
   "top3": [
     {
-      "title": "世界杯“在场消费”把体育内容扩展成全天候生活方式",
-      "comment": "体育内容转向全天候生活场景，适合做赛事穿搭与社群选题。"
+      "title": "伙伴间歇训练把健身房从独练转向共同完成",
+      "comment": "双人轮换把社群关系变成训练体验，适合发起伙伴挑战。"
     },
     {
-      "title": "Lifestyle activewear 成为新的低调身份符号",
-      "comment": "运动服成为生活方式信号，面料和跨场景表达更重要。"
+      "title": "女性 45+ 睡眠质量成为心血管健康讨论的新入口",
+      "comment": "女性 wellness 从训练扩展到睡眠、恢复和长期健康。"
     },
     {
-      "title": "骨密度研究让承重运动成为女性健康内容的新入口",
-      "comment": "承重运动和骨骼健康提供女性长期内容入口。"
+      "title": "女子体育用“赛季接力”延长世界杯后的内容热度",
+      "comment": "用赛事接力延续女子体育热度，并转化为体验型内容。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0043.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0044.html",
   "blog": {
-    "title": "Bone-Strength Workout Outfits for Women: Supportive Layers for Weight-Bearing Exercise",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/bone-strength-workout-outfits-women-weight-bearing-exercise.html",
-    "summary": "由本期骨密度与承重运动趋势延展为女性承重训练穿搭指南"
+    "title": "Partner Workout Outfits for Women: Supportive Layers for Training Together",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/partner-workout-outfits-for-women.html",
+    "summary": "由本期伙伴间歇训练趋势延展为女性双人训练与团体课程穿搭指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
