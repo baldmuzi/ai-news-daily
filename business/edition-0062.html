@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>出海 AI 洞察 — 第 0062 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#080c14; --surface:#0f1623; --surface-2:#142032; --border:#1f2d3f; --accent:#10b981; --accent-2:#34d399; --text:#e5eef7; --muted:#94a3b8; --dim:#64748b; --tag-bg:rgba(16,185,129,0.12); --shadow:0 24px 60px rgba(0,0,0,0.28); }
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    body { background:radial-gradient(circle at top left, rgba(16,185,129,0.14), transparent 28%),radial-gradient(circle at top right, rgba(52,211,153,0.08), transparent 24%),var(--bg); color:var(--text); font-family:"Noto Serif SC",serif; line-height:1.75; min-height:100vh; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { max-width:1080px; margin:0 auto; padding:2rem 1.2rem 4rem; }
+    .back-link { display:inline-flex; align-items:center; color:var(--accent); border:1px solid rgba(16,185,129,0.28); border-radius:999px; padding:0.42rem 0.9rem; font-family:"JetBrains Mono",monospace; font-size:0.74rem; background:rgba(15,22,35,0.76); transition:border-color 0.18s ease,background 0.18s ease; }
+    .back-link:hover { border-color:var(--accent); background:rgba(16,185,129,0.1); }
+    header { padding:3rem 0 2.2rem; border-bottom:1px solid var(--border); }
+    .kicker { color:var(--accent); font-family:"JetBrains Mono",monospace; font-size:0.76rem; letter-spacing:0.16em; text-transform:uppercase; }
+    h1 { margin-top:0.62rem; font-size:clamp(2.3rem,6vw,4.8rem); line-height:1.14; letter-spacing:0.06em; }
+    .subtitle { margin-top:0.8rem; color:var(--muted); font-size:clamp(0.92rem,2vw,1.1rem); }
+    .meta { display:flex; flex-wrap:wrap; gap:0.7rem 1.2rem; margin-top:1.5rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.72rem; }
+    .intro { margin-top:1.6rem; max-width:820px; padding:1rem 1.1rem; border-left:3px solid var(--accent); border-radius:0 14px 14px 0; color:#cfe9df; background:linear-gradient(90deg,rgba(16,185,129,0.12),rgba(15,22,35,0.56)); }
+    .tags { display:flex; flex-wrap:wrap; gap:0.55rem; margin-top:1.1rem; }
+    .tag { color:var(--accent-2); background:var(--tag-bg); border:1px solid rgba(16,185,129,0.2); border-radius:999px; padding:0.28rem 0.7rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .cards { display:grid; gap:1.15rem; margin-top:2rem; }
+    .card { position:relative; overflow:hidden; padding:1.3rem 1.35rem 1.2rem; border:1px solid var(--border); border-radius:20px; background:linear-gradient(145deg,rgba(20,32,50,0.94),rgba(11,18,29,0.98)); box-shadow:var(--shadow); }
+    .card::before { content:""; position:absolute; inset:0 auto 0 0; width:3px; background:linear-gradient(180deg,var(--accent),transparent 86%); }
+    .card-header { display:grid; grid-template-columns:auto auto minmax(0,1fr); align-items:start; gap:0.65rem; }
+    .num,.cat { margin-top:0.15rem; border-radius:999px; font-family:"JetBrains Mono",monospace; font-size:0.64rem; white-space:nowrap; }
+    .num { color:var(--dim); padding:0.2rem 0; }
+    .cat { color:#a7f3d0; background:var(--tag-bg); border:1px solid rgba(16,185,129,0.22); padding:0.2rem 0.58rem; }
+    .title-link { display:block; font-size:clamp(1rem,2.1vw,1.22rem); font-weight:700; line-height:1.55; transition:color 0.18s ease; }
+    .title-link:hover { color:var(--accent-2); }
+    .source { margin-top:0.62rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .comment { margin-top:0.95rem; color:#c8d5e4; font-size:0.93rem; }
+    .footer { display:flex; justify-content:flex-end; margin-top:1rem; }
+    .button { color:var(--accent-2); border:1px solid rgba(16,185,129,0.32); border-radius:999px; padding:0.38rem 0.78rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; transition:background 0.18s ease,border-color 0.18s ease; }
+    .button:hover { background:rgba(16,185,129,0.1); border-color:var(--accent); }
+    body>footer { padding:0 1rem 2.5rem; color:var(--dim); text-align:center; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    @media (max-width:640px) { .wrap { padding:1.2rem 0.92rem 3rem; } header { padding:2rem 0 1.6rem; } .card { padding:1.05rem 1rem 1rem; } .card-header { grid-template-columns:auto auto; } .title-wrap { grid-column:1/-1; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="back-link" href="../business/">← 返回存档</a>
+    <header>
+      <div class="kicker">Edition 0062 · AI Product & Data Brief</div>
+      <h1>出海 AI 洞察</h1>
+      <p class="subtitle">跨境电商 · 可持续发展 · AI 应用实战</p>
+      <div class="meta"><span>2026年7月23日 09:11</span><span>TOP 10</span><span>面向产品经理与数据分析师</span></div>
+      <p class="intro">AI正把出海鞋类电商的导购、归因与跨境运营推向智能体协同，环保团队也迎来可审计的鞋材生命周期数据。</p>
+      <div class="tags"><span class="tag">AI购物代理</span><span class="tag">跨境智能体</span><span class="tag">AI流量归因</span><span class="tag">鞋材LCA</span><span class="tag">绿色采购</span></div>
+    </header>
+    <section class="cards">
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.01</span><span class="cat">消费洞察</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.bloomreach.com/en?p=93773" target="_blank" rel="noreferrer">Bloomreach 调查：75.4% 的美英受访者已用 AI 参与购物决策</a></div>
+        </div>
+        <div class="source">Bloomreach · 2026-07-22</div>
+        <div class="comment">【是什么】对 4040 名美英消费者的调查显示，75.4% 已用 Claude、ChatGPT 或 Gemini 辅助购物，其中 48% 用于比较商品属性或价格。<br />【对我们意味着什么】鞋类数据团队应单列 AI 引导会话，追踪尺码、材质、价格比较后的转化与退货，避免只看入口流量。</div>
+        <div class="footer"><a class="button" href="https://www.bloomreach.com/en?p=93773" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.02</span><span class="cat">营销工具</span>
+          <div class="title-wrap"><a class="title-link" href="https://money.udn.com/money/story/5635/9643795" target="_blank" rel="noreferrer">SHOPLINE 联手 GEO 服务商，把商品与一方数据变成 AI 可引用内容</a></div>
+        </div>
+        <div class="source">经济日报 · 2026-07-22</div>
+        <div class="comment">【是什么】双方把 AI 搜索优化、零售一方数据和电商运营结合，帮助品牌构建可被模型理解、引用和推荐的商品及内容基础。<br />【对我们意味着什么】出海鞋类应把鞋楦、尺码、材料认证和使用场景结构化，并用品牌词、品类词的 AI 可见度与增量转化检验 GEO。</div>
+        <div class="footer"><a class="button" href="https://money.udn.com/money/story/5635/9643795" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.03</span><span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://segg.sh.gov.cn/zxfw/xwzx/20260722/6e498da09aba46bf99d73d4e8c0af49c.html" target="_blank" rel="noreferrer">五个 AI 助手协同关务、物流、营销与业财，跨境任务压缩至分钟级</a></div>
+        </div>
+        <div class="source">新华财经 / 上海市企业走出去综合服务平台 · 2026-07-22</div>
+        <div class="comment">【是什么】跨境 AI 助手平台用多智能体分派资金申请、海关归类、物流调度、达人营销和业财分析，关键节点由 AI 提议、人来拍板。<br />【对我们意味着什么】鞋类团队可先把 HS 编码、材料合规和海外仓补货串成可审计流程，并为每次模型建议保留证据、权限与人工批准。</div>
+        <div class="footer"><a class="button" href="https://segg.sh.gov.cn/zxfw/xwzx/20260722/6e498da09aba46bf99d73d4e8c0af49c.html" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.04</span><span class="cat">数据分析</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.axios.com/media-trends-membership/2026/07/18/ai-shopping-measurement-last-click" target="_blank" rel="noreferrer">AI 把发现与购买分散到更多渠道，末次点击归因进一步失真</a></div>
+        </div>
+        <div class="source">Axios · 2026-07-18</div>
+        <div class="comment">【是什么】消费者在 AI 搜索、聊天助手和内容渠道之间完成比较与购买，传统末次点击越来越难解释真正促成交易的触点。<br />【对我们意味着什么】数据分析师应建立 AI 引荐渠道组、品牌搜索辅助指标和地区留出实验，用增量而不是平台自报归因评估鞋类内容投入。</div>
+        <div class="footer"><a class="button" href="https://www.axios.com/media-trends-membership/2026/07/18/ai-shopping-measurement-last-click" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.05</span><span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.einnews.com/pr_news/927824361/visualai-launches-discovergpt-an-mcp-native-ai-discovery-platform-for-commerce" target="_blank" rel="noreferrer">discoverGPT 用 24 个 MCP 工具连接站内搜索、商品质量、外部智能体与虚拟试穿</a></div>
+        </div>
+        <div class="source">visualAI / EIN Presswire · 2026-07-20</div>
+        <div class="comment">【是什么】平台把统一商品目录封装成 REST API 与 24 个 MCP 工具，让站内自然语言搜索和 ChatGPT 等外部智能体调用同一份商品数据。<br />【对我们意味着什么】鞋类 PM 可减少站内外答案漂移，但接入前要为尺码、库存、环保声明设置字段级权限、刷新频率和缺失值降级。</div>
+        <div class="footer"><a class="button" href="https://www.einnews.com/pr_news/927824361/visualai-launches-discovergpt-an-mcp-native-ai-discovery-platform-for-commerce" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.06</span><span class="cat">数据分析</span>
+          <div class="title-wrap"><a class="title-link" href="https://docs.commercetools.com/api/releases/2026-07-16-managed-mcp-servers-become-generally-available" target="_blank" rel="noreferrer">commercetools 托管 MCP 正式可用，商家可限制智能体工具与输出字段</a></div>
+        </div>
+        <div class="source">commercetools · 2026-07-16</div>
+        <div class="comment">【是什么】Commerce MCP 可按项目配置智能体能调用的工具、参数、输出格式与 JSON 过滤，并配套记录执行结果、会话和耗时。<br />【对我们意味着什么】独立站接入购物代理时，可把查商品、查库存与创建购物车拆成可观测权限，按失败率、延迟和业务结果做上线门槛。</div>
+        <div class="footer"><a class="button" href="https://docs.commercetools.com/api/releases/2026-07-16-managed-mcp-servers-become-generally-available" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.07</span><span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.techradar.com/pro/agentic-commerce-why-ai-agents-are-transforming-the-ecommerce-landscape" target="_blank" rel="noreferrer">购物智能体从推荐走向交易，支付认证成为机器链路的新断点</a></div>
+        </div>
+        <div class="source">TechRadar Pro · 2026-07-20</div>
+        <div class="comment">【是什么】AI 智能体开始在约束内发起并完成交易，商家需要机器可读目录、模块化支付与稳定认证，单个失败步骤就会中止整条链路。<br />【对我们意味着什么】鞋类团队不能只优化聊天推荐，还要监控从尺码选择到支付授权的智能体漏斗，并为低置信答案和支付失败提供人工回退。</div>
+        <div class="footer"><a class="button" href="https://www.techradar.com/pro/agentic-commerce-why-ai-agents-are-transforming-the-ecommerce-landscape" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.08</span><span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.shopify.com/blog/ai-trends" target="_blank" rel="noreferrer">Shopify 用 UCP 暴露商品数据，并把 AI 订单纳入 Analytics</a></div>
+        </div>
+        <div class="source">Shopify · 2026-07-18</div>
+        <div class="comment">【是什么】Shopify 的智能体店面以 UCP 组织商品数据供 AI 抓取，并把经 AI 处理的订单回流到 Shopify Analytics 统一报告。<br />【对我们意味着什么】出海鞋类要给 AI 订单保留来源、会话和推荐理由，才能比较智能体流量的客单、毛利、退货和新客质量，而非只统计成交。</div>
+        <div class="footer"><a class="button" href="https://www.shopify.com/blog/ai-trends" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.09</span><span class="cat">可持续合规</span>
+          <div class="title-wrap"><a class="title-link" href="https://texfash.com/release/carbonfact-publishes-the-first-fully-disaggregated-open-source-lca-database-for-textiles-and-footwear" target="_blank" rel="noreferrer">Carbonfact 开放鞋服 LCA 数据，AI 层可下钻到鞋组装、天然橡胶与 PU 皮革</a></div>
+        </div>
+        <div class="source">texfash / Carbonfact · 2026-07-02</div>
+        <div class="comment">【是什么】平台发布 300 多个可审计 LCA 数据集，覆盖鞋组装、天然橡胶和合成 PU 皮革，并用 AI 层把工序级排放因子转成可行动分析。<br />【对我们意味着什么】环保鞋类可用供应商实测值替换行业平均数，建立鞋款级碳足迹与材料情景比较，同时保留参数和来源供审计复核。</div>
+        <div class="footer"><a class="button" href="https://texfash.com/release/carbonfact-publishes-the-first-fully-disaggregated-open-source-lca-database-for-textiles-and-footwear" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.10</span><span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.gesi.org/wp-content/uploads/2026/07/GeSi-Report-Supply-Chain-Final.pdf" target="_blank" rel="noreferrer">GeSI 案例：采购智能体先查现有库存，再做供应商评分与绿色采购</a></div>
+        </div>
+        <div class="source">GeSI · 2026-07</div>
+        <div class="comment">【是什么】AI 采购平台整合采购流程、供应商评分、业务规则与库存数据，优先复用现有库存，并在人工监督下持续评估供应商表现。<br />【对我们意味着什么】鞋类供应链可把材料认证、交期、质量与碳数据纳入供应商评分，先验证减少重复采购和废料，再扩展到自动化可持续报告。</div>
+        <div class="footer"><a class="button" href="https://www.gesi.org/wp-content/uploads/2026/07/GeSi-Report-Supply-Chain-Final.pdf" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+    </section>
+  </main>
+  <footer>Edition 0062 · 出海 AI 洞察</footer>
+</body>
+</html>
