@@ -1,33 +1,33 @@
 {
-  "edition": "0044",
-  "date": "2026年7月22日 09:11",
-  "intro": "本期从伙伴训练、女性睡眠、女子体育内容与功能鞋履出发，提炼 Fanka 压缩穿搭、社群挑战和零售内容的新机会。",
+  "edition": "0045",
+  "date": "2026年7月23日 09:16",
+  "intro": "本期从赛日个性表达、女性专属健身空间与复古性能女装出发，提炼 Fanka 压缩穿搭、社群体验和功能内容的新机会。",
   "tags": [
-    "伙伴训练",
-    "女子体育内容",
-    "女性睡眠",
-    "功能鞋履",
-    "中文平台观察"
+    "赛日个性表达",
+    "女性友好健身房",
+    "训练复古融合",
+    "无订阅穿戴",
+    "中文运动消费"
   ],
   "top3": [
     {
-      "title": "伙伴间歇训练把健身房从独练转向共同完成",
-      "comment": "双人轮换把社群关系变成训练体验，适合发起伙伴挑战。"
+      "title": "RunTok 把全妆、编发与完整造型带进赛日内容",
+      "comment": "赛日个性表达升温，品牌应兼顾自信、功能与外貌压力。"
     },
     {
-      "title": "女性 45+ 睡眠质量成为心血管健康讨论的新入口",
-      "comment": "女性 wellness 从训练扩展到睡眠、恢复和长期健康。"
+      "title": "女性专属健身房把安全感变成运动参与基础设施",
+      "comment": "安全、隐私与女性教练正在降低首次训练的进入门槛。"
     },
     {
-      "title": "女子体育用“赛季接力”延长世界杯后的内容热度",
-      "comment": "用赛事接力延续女子体育热度，并转化为体验型内容。"
+      "title": "adidas 把复古识别度接入女性训练科技",
+      "comment": "复古视觉负责吸引，面料与真实动作负责证明功能。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0044.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0045.html",
   "blog": {
-    "title": "Partner Workout Outfits for Women: Supportive Layers for Training Together",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/partner-workout-outfits-for-women.html",
-    "summary": "由本期伙伴间歇训练趋势延展为女性双人训练与团体课程穿搭指南"
+    "title": "Women-Only Gym Outfit Guide: What to Wear for a Comfortable First Workout",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/women-only-gym-outfit-guide-first-workout.html",
+    "summary": "由本期女性专属健身房趋势延展为首次进健身房的舒适支撑穿搭指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
