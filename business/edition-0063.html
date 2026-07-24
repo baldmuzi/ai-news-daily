@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>出海 AI 洞察 — 第 0063 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#080c14; --surface:#0f1623; --surface-2:#142032; --border:#1f2d3f; --accent:#10b981; --accent-2:#34d399; --text:#e5eef7; --muted:#94a3b8; --dim:#64748b; --tag-bg:rgba(16,185,129,0.12); --shadow:0 24px 60px rgba(0,0,0,0.28); }
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    body { background:radial-gradient(circle at top left, rgba(16,185,129,0.14), transparent 28%),radial-gradient(circle at top right, rgba(52,211,153,0.08), transparent 24%),var(--bg); color:var(--text); font-family:"Noto Serif SC",serif; line-height:1.75; min-height:100vh; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { max-width:1080px; margin:0 auto; padding:2rem 1.2rem 4rem; }
+    .back-link { display:inline-flex; align-items:center; color:var(--accent); border:1px solid rgba(16,185,129,0.28); border-radius:999px; padding:0.42rem 0.9rem; font-family:"JetBrains Mono",monospace; font-size:0.74rem; background:rgba(15,22,35,0.76); transition:border-color 0.18s ease,background 0.18s ease; }
+    .back-link:hover { border-color:var(--accent); background:rgba(16,185,129,0.1); }
+    header { padding:3rem 0 2.2rem; border-bottom:1px solid var(--border); }
+    .kicker { color:var(--accent); font-family:"JetBrains Mono",monospace; font-size:0.76rem; letter-spacing:0.16em; text-transform:uppercase; }
+    h1 { margin-top:0.62rem; font-size:clamp(2.3rem,6vw,4.8rem); line-height:1.14; letter-spacing:0.06em; }
+    .subtitle { margin-top:0.8rem; color:var(--muted); font-size:clamp(0.92rem,2vw,1.1rem); }
+    .meta { display:flex; flex-wrap:wrap; gap:0.7rem 1.2rem; margin-top:1.5rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.72rem; }
+    .intro { margin-top:1.6rem; max-width:820px; padding:1rem 1.1rem; border-left:3px solid var(--accent); border-radius:0 14px 14px 0; color:#cfe9df; background:linear-gradient(90deg,rgba(16,185,129,0.12),rgba(15,22,35,0.56)); }
+    .tags { display:flex; flex-wrap:wrap; gap:0.55rem; margin-top:1.1rem; }
+    .tag { color:var(--accent-2); background:var(--tag-bg); border:1px solid rgba(16,185,129,0.2); border-radius:999px; padding:0.28rem 0.7rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .cards { display:grid; gap:1.15rem; margin-top:2rem; }
+    .card { position:relative; overflow:hidden; padding:1.3rem 1.35rem 1.2rem; border:1px solid var(--border); border-radius:20px; background:linear-gradient(145deg,rgba(20,32,50,0.94),rgba(11,18,29,0.98)); box-shadow:var(--shadow); }
+    .card::before { content:""; position:absolute; inset:0 auto 0 0; width:3px; background:linear-gradient(180deg,var(--accent),transparent 86%); }
+    .card-header { display:grid; grid-template-columns:auto auto minmax(0,1fr); align-items:start; gap:0.65rem; }
+    .num,.cat { margin-top:0.15rem; border-radius:999px; font-family:"JetBrains Mono",monospace; font-size:0.64rem; white-space:nowrap; }
+    .num { color:var(--dim); padding:0.2rem 0; }
+    .cat { color:#a7f3d0; background:var(--tag-bg); border:1px solid rgba(16,185,129,0.22); padding:0.2rem 0.58rem; }
+    .title-link { display:block; font-size:clamp(1rem,2.1vw,1.22rem); font-weight:700; line-height:1.55; transition:color 0.18s ease; }
+    .title-link:hover { color:var(--accent-2); }
+    .source { margin-top:0.62rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .comment { margin-top:0.95rem; color:#c8d5e4; font-size:0.93rem; }
+    .footer { display:flex; justify-content:flex-end; margin-top:1rem; }
+    .button { color:var(--accent-2); border:1px solid rgba(16,185,129,0.32); border-radius:999px; padding:0.38rem 0.78rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; transition:background 0.18s ease,border-color 0.18s ease; }
+    .button:hover { background:rgba(16,185,129,0.1); border-color:var(--accent); }
+    body>footer { padding:0 1rem 2.5rem; color:var(--dim); text-align:center; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    @media (max-width:640px) { .wrap { padding:1.2rem 0.92rem 3rem; } header { padding:2rem 0 1.6rem; } .card { padding:1.05rem 1rem 1rem; } .card-header { grid-template-columns:auto auto; } .title-wrap { grid-column:1/-1; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="back-link" href="../business/">← 返回存档</a>
+    <header>
+      <div class="kicker">Edition 0063 · AI Product & Data Brief</div>
+      <h1>出海 AI 洞察</h1>
+      <p class="subtitle">跨境电商 · 可持续发展 · AI 应用实战</p>
+      <div class="meta"><span>2026年7月24日 09:28</span><span>TOP 10</span><span>面向产品经理与数据分析师</span></div>
+      <p class="intro">AI正把出海鞋类电商的意图导购、实时推荐与采购合规连成闭环，环保数据也开始进入可审计的供应链智能体。</p>
+      <div class="tags"><span class="tag">意图导购</span><span class="tag">实时推荐</span><span class="tag">跨境采购</span><span class="tag">合规智能体</span><span class="tag">AI货架监测</span></div>
+    </header>
+    <section class="cards">
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.01</span><span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.retaildive.com/news/michaels-ai-shopping-assistant-ask-mike/826016/" target="_blank" rel="noreferrer">Michaels 用 Gemini 六周上线意图式导购，已承接近 7.5 万次对话</a></div>
+        </div>
+        <div class="source">Retail Dive · 2026-07-23</div>
+        <div class="comment">【是什么】Michaels 用 Gemini Enterprise 六周建成 Ask Mike，将“策划生日派对”等场景描述转成个性化商品推荐，几周内产生近 7.5 万次对话。<br />【对我们意味着什么】鞋类可让用户用通勤、旅行、雨天等意图找鞋，并把对话到尺码选择、加购和退货作为独立漏斗。</div>
+        <div class="footer"><a class="button" href="https://www.retaildive.com/news/michaels-ai-shopping-assistant-ask-mike/826016/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.02</span><span class="cat">消费洞察</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.modernretail.co/technology/marketplace-briefing-how-whatnots-ai-powered-recommendation-system-gives-it-a-competitive-edge/" target="_blank" rel="noreferrer">Whatnot 把直播推荐延迟压到分钟级，让售罄与兴趣变化实时进入排序</a></div>
+        </div>
+        <div class="source">Modern Retail · 2026-07-23</div>
+        <div class="comment">【是什么】Whatnot 的推荐系统把直播库存、售罄和交互信号分钟级更新，收购 Shaped 后继续压低实时检索与排序延迟。<br />【对我们意味着什么】鞋类直播或快闪上新应把库存新鲜度、兴趣信号和推荐延迟纳入实验，避免把已售罄尺码继续推给高意向用户。</div>
+        <div class="footer"><a class="button" href="https://www.modernretail.co/technology/marketplace-briefing-how-whatnots-ai-powered-recommendation-system-gives-it-a-competitive-edge/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.03</span><span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://tech.yahoo.com/general/articles/alibaba-com-launches-sourcing-toolkit-130000708.html" target="_blank" rel="noreferrer">阿里 Accio 采购智能体开始代做比价、追单与供应商沟通</a></div>
+        </div>
+        <div class="source">Sourcing Journal / Yahoo Tech · 2026-07-22</div>
+        <div class="comment">【是什么】Accio Sourcing Toolkit 让采购智能体直接比较供应商、追踪报价、沟通条款并跟进订单，而不是只生成建议文本。<br />【对我们意味着什么】鞋类采购可先在低风险辅料上试跑，用交期、认证、MOQ 和回复质量做自动筛选，关键定点仍需人工批准。</div>
+        <div class="footer"><a class="button" href="https://tech.yahoo.com/general/articles/alibaba-com-launches-sourcing-toolkit-130000708.html" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.04</span><span class="cat">消费洞察</span>
+          <div class="title-wrap"><a class="title-link" href="https://36kr.com/p/3904793158977413" target="_blank" rel="noreferrer">Sensor Tower：AI 助手正改写时尚等高决策品类的发现与评估路径</a></div>
+        </div>
+        <div class="source">36氪 · 2026-07-21</div>
+        <div class="comment">【是什么】Sensor Tower 报告显示生成式 AI 正改变高客单价与时尚品类的商品发现和评估，AI 导流在主流零售品类持续增长。<br />【对我们意味着什么】鞋类数据团队应把 AI 助手作为上游影响渠道，结合品牌搜索、到站会话和购买后问卷估计其辅助转化。</div>
+        <div class="footer"><a class="button" href="https://36kr.com/p/3904793158977413" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.05</span><span class="cat">数据分析</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.supplychaindive.com/news/how-supply-chain-leaders-can-avoid-common-ai-pitfalls/825423/" target="_blank" rel="noreferrer">供应链 AI 进入校准期：高频决策、可见数据与人工基线缺一不可</a></div>
+        </div>
+        <div class="source">Supply Chain Dive · 2026-07-20</div>
+        <div class="comment">【是什么】Supply Chain Dive 总结 Starbucks 视觉盘点误判等案例，指出 AI 最适合高频、时限紧且数据可见的订货、库存部署与路线决策。<br />【对我们意味着什么】不要先做“大而全”的鞋类供应链智能体，应以人工基线、误判率、库存周转和周末无人值守测试控制扩张。</div>
+        <div class="footer"><a class="button" href="https://www.supplychaindive.com/news/how-supply-chain-leaders-can-avoid-common-ai-pitfalls/825423/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.06</span><span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.cfodive.com/news/Walmart-supply-chain-ai-digital-twin/825173/" target="_blank" rel="noreferrer">Walmart 用 AI 代理与数字孪生预演仓点关闭、延误和需求突变</a></div>
+        </div>
+        <div class="source">CIO Dive / CFO Dive · 2026-07-14</div>
+        <div class="comment">【是什么】Walmart 将购买历史、天气、机器学习代理和数字孪生结合，模拟仓点关闭、运输延迟与需求突变下的网络动作。<br />【对我们意味着什么】出海鞋类可用海外仓数字孪生测试断航、极端天气和爆款缺码，输出可人工执行的调拨方案。</div>
+        <div class="footer"><a class="button" href="https://www.cfodive.com/news/Walmart-supply-chain-ai-digital-twin/825173/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.07</span><span class="cat">可持续合规</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.supplychaindive.com/news/renfro-broadens-ai-tools-for-tighter-supply-chain-compliance/825203/" target="_blank" rel="noreferrer">袜类品牌 Renfro 用 AI 串联供应商绩效、追溯与环境合规</a></div>
+        </div>
+        <div class="source">Supply Chain Dive · 2026-07-16</div>
+        <div class="comment">【是什么】袜类品牌 Renfro 扩大 Inspectorio 的 AI 工作流，用于供应商绩效、可追溯性及北美、欧洲、亚洲的社会与环境合规。<br />【对我们意味着什么】环保鞋类可把材料认证、工厂审核和地区法规接进同一供应商评分，并保留模型判断到原始证据的链路。</div>
+        <div class="footer"><a class="button" href="https://www.supplychaindive.com/news/renfro-broadens-ai-tools-for-tighter-supply-chain-compliance/825203/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.08</span><span class="cat">营销工具</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.sprinklr.com/newsroom/sprinklr-introduces-new-ai-capabilities-to-help-brands-move-from-insights-to-real-time-customer-action/" target="_blank" rel="noreferrer">Sprinklr 把视频、评论与 LLM 可见度信号直接接到营销执行</a></div>
+        </div>
+        <div class="source">Sprinklr · 2026-07-15</div>
+        <div class="comment">【是什么】Sprinklr Summer 26 用多模态信号、LLM 品牌可见度、自动统计与 Copilot，把客户洞察直接连接到营销和服务执行。<br />【对我们意味着什么】跨境团队可把评论、视频与客服主题统一成需求信号，但需用实验区分 AI 建议带来的增量，而非只看内容产量。</div>
+        <div class="footer"><a class="button" href="https://www.sprinklr.com/newsroom/sprinklr-introduces-new-ai-capabilities-to-help-brands-move-from-insights-to-real-time-customer-action/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.09</span><span class="cat">营销工具</span>
+          <div class="title-wrap"><a class="title-link" href="https://techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai/" target="_blank" rel="noreferrer">Google 广告中心新增 AI 制作说明，生成式素材开始自动披露</a></div>
+        </div>
+        <div class="source">TechCrunch · 2026-07-09</div>
+        <div class="comment">【是什么】Google 在 Search、YouTube 和 Discover 的广告中心增加“广告如何制作”说明，并自动标记其生成式 AI 工具产出的素材。<br />【对我们意味着什么】鞋类广告资产要记录生成方式、原图与审核人，既便于跨市场合规，也能比较 AI 素材对信任、点击和退货的影响。</div>
+        <div class="footer"><a class="button" href="https://techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.10</span><span class="cat">数据分析</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.globenewswire.com/news-release/2026/06/17/3313204/0/en/peec-ai-launches-ai-shopping-analytics-as-product-recommendations-move-inside-chatgpt.html" target="_blank" rel="noreferrer">Peec 把 AI 购物推荐拆成 SKU 级曝光、排名、报价与引流去向</a></div>
+        </div>
+        <div class="source">Peec AI / GlobeNewswire · 2026-06-17</div>
+        <div class="comment">【是什么】Peec AI Shopping Analytics 以 SKU 粒度追踪商品在 AI 答案中的曝光、排名、引流去向、比较属性和报价偏差。<br />【对我们意味着什么】数据分析师可建立“AI 货架份额”，重点核对鞋款价格、尺码和环保卖点是否被错误引用或导向第三方渠道。</div>
+        <div class="footer"><a class="button" href="https://www.globenewswire.com/news-release/2026/06/17/3313204/0/en/peec-ai-launches-ai-shopping-analytics-as-product-recommendations-move-inside-chatgpt.html" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+    </section>
+  </main>
+  <footer>Edition 0063 · 出海 AI 洞察</footer>
+</body>
+</html>
