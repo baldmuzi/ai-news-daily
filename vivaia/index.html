@@ -10,8 +10,8 @@
   <style>
     :root { --bg:#080c14; --surface:#17130d; --border:#463722; --accent:#804c1a; --accent-soft:#d89a5e; --text:#f5efe4; --muted:#d2c2aa; --dim:#b39f82; }
     * { box-sizing:border-box; } body { margin:0; background:radial-gradient(circle at top left, rgba(128,76,26,.22), transparent 35%), var(--bg); color:var(--text); font-family:'Noto Serif SC',serif; } .page { width:min(100% - 32px, 1040px); margin:0 auto; padding:34px 0 54px; } a { color:inherit; } .home { display:inline-flex; margin-bottom:24px; color:var(--muted); text-decoration:none; border:1px solid var(--border); border-radius:999px; padding:8px 13px; background:rgba(23,19,13,.74); } .hero { margin-bottom:24px; border:1px solid var(--border); border-radius:8px; padding:28px; background:linear-gradient(135deg, rgba(23,19,13,.96), rgba(34,27,16,.86)); } h1 { margin:0 0 10px; font-size:38px; } .sub { color:var(--dim); font-family:'JetBrains Mono',monospace; }
-    .archive-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; } .archive-card { display:block; min-height:160px; text-decoration:none; border:1px solid var(--border); border-radius:8px; background:rgba(23,19,13,.88); padding:22px; transition:transform .18s ease,border-color .18s ease; } .archive-card:hover { border-color:var(--accent-soft); transform:translateY(-1px); } .archive-card.latest { background:linear-gradient(135deg, rgba(128,76,26,.38), rgba(23,19,13,.92)); border-color:var(--accent); } .issue { display:inline-flex; font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--accent-soft); margin-bottom:12px; } strong { display:block; font-size:21px; margin-bottom:8px; } p { margin:0; color:var(--muted); line-height:1.7; }
-    @media (max-width:720px) { .archive-list { grid-template-columns:1fr; } .page { width:min(100% - 22px, 1040px); padding-top:24px; } .hero,.archive-card { padding:18px; } h1 { font-size:31px; } }
+    .archive-list { display:grid; grid-template-columns:1fr; gap:16px; } .archive-card { display:block; min-height:160px; text-decoration:none; border:1px solid var(--border); border-radius:8px; background:rgba(23,19,13,.88); padding:22px; transition:transform .18s ease,border-color .18s ease; } .archive-card:hover { border-color:var(--accent-soft); transform:translateY(-1px); } .archive-card.latest { background:linear-gradient(135deg, rgba(128,76,26,.38), rgba(23,19,13,.92)); border-color:var(--accent); } .issue { display:inline-flex; font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--accent-soft); margin-bottom:12px; } strong { display:block; font-size:21px; margin-bottom:8px; } p { margin:0; color:var(--muted); line-height:1.7; }
+    @media (max-width:720px) { .page { width:min(100% - 22px, 1040px); padding-top:24px; } .hero,.archive-card { padding:18px; } h1 { font-size:31px; } }
   </style>
 </head>
 <body>
@@ -22,7 +22,12 @@
       <div class="sub">Latest 20 editions · accent #804c1a</div>
     </section>
     <section class="archive-list">
-      <a class="archive-card latest" href="edition-0049.html">
+      <a class="archive-card latest" href="edition-0050.html">
+        <span class="issue">第 0050 期</span>
+        <strong>2026年7月27日 09:14</strong>
+        <p>极端高温、拉长促销日历、TikTok Shop 限量直播与本地化门店同步升温，本期为 VIVAIA 提炼秋季选品、活动节奏与循环材料抓手。</p>
+      </a>
+      <a class="archive-card" href="edition-0049.html">
         <span class="issue">第 0049 期</span>
         <strong>2026年7月24日 09:34</strong>
         <p>关税合规、美国履约、AI 导购与可互动线下内容同日升温，本期为 VIVAIA 提炼全球渠道、社媒和成熟客群产品动作。</p>
@@ -116,11 +121,6 @@
         <span class="issue">第 0031 期</span>
         <strong>2026年6月29日 09:19</strong>
         <p>本期从会员联营、创作者秀场、50+步行鞋到混种凉鞋切入，提醒 VIVAIA 同步做渠道权益、成熟客群与新审美测试。</p>
-      </a>
-      <a class="archive-card" href="edition-0030.html">
-        <span class="issue">第 0030 期</span>
-        <strong>2026年6月26日 13:52</strong>
-        <p>本期聚焦透气网面、足科认可凉鞋、非亚马逊渠道战、成熟女性购物与供应链可持续新信号。</p>
       </a>
     </section>
   </main>
