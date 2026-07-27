@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>出海 AI 洞察 — 第 0064 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#080c14; --surface:#0f1623; --surface-2:#142032; --border:#1f2d3f; --accent:#10b981; --accent-2:#34d399; --text:#e5eef7; --muted:#94a3b8; --dim:#64748b; --tag-bg:rgba(16,185,129,0.12); --shadow:0 24px 60px rgba(0,0,0,0.28); }
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    body { background:radial-gradient(circle at top left, rgba(16,185,129,0.14), transparent 28%),radial-gradient(circle at top right, rgba(52,211,153,0.08), transparent 24%),var(--bg); color:var(--text); font-family:"Noto Serif SC",serif; line-height:1.75; min-height:100vh; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { max-width:1080px; margin:0 auto; padding:2rem 1.2rem 4rem; }
+    .back-link { display:inline-flex; align-items:center; color:var(--accent); border:1px solid rgba(16,185,129,0.28); border-radius:999px; padding:0.42rem 0.9rem; font-family:"JetBrains Mono",monospace; font-size:0.74rem; background:rgba(15,22,35,0.76); transition:border-color 0.18s ease,background 0.18s ease; }
+    .back-link:hover { border-color:var(--accent); background:rgba(16,185,129,0.1); }
+    header { padding:3rem 0 2.2rem; border-bottom:1px solid var(--border); }
+    .kicker { color:var(--accent); font-family:"JetBrains Mono",monospace; font-size:0.76rem; letter-spacing:0.16em; text-transform:uppercase; }
+    h1 { margin-top:0.62rem; font-size:clamp(2.3rem,6vw,4.8rem); line-height:1.14; letter-spacing:0.06em; }
+    .subtitle { margin-top:0.8rem; color:var(--muted); font-size:clamp(0.92rem,2vw,1.1rem); }
+    .meta { display:flex; flex-wrap:wrap; gap:0.7rem 1.2rem; margin-top:1.5rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.72rem; }
+    .intro { margin-top:1.6rem; max-width:820px; padding:1rem 1.1rem; border-left:3px solid var(--accent); border-radius:0 14px 14px 0; color:#cfe9df; background:linear-gradient(90deg,rgba(16,185,129,0.12),rgba(15,22,35,0.56)); }
+    .tags { display:flex; flex-wrap:wrap; gap:0.55rem; margin-top:1.1rem; }
+    .tag { color:var(--accent-2); background:var(--tag-bg); border:1px solid rgba(16,185,129,0.2); border-radius:999px; padding:0.28rem 0.7rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .cards { display:grid; gap:1.15rem; margin-top:2rem; }
+    .card { position:relative; overflow:hidden; padding:1.3rem 1.35rem 1.2rem; border:1px solid var(--border); border-radius:20px; background:linear-gradient(145deg,rgba(20,32,50,0.94),rgba(11,18,29,0.98)); box-shadow:var(--shadow); }
+    .card::before { content:""; position:absolute; inset:0 auto 0 0; width:3px; background:linear-gradient(180deg,var(--accent),transparent 86%); }
+    .card-header { display:grid; grid-template-columns:auto auto minmax(0,1fr); align-items:start; gap:0.65rem; }
+    .num,.cat { margin-top:0.15rem; border-radius:999px; font-family:"JetBrains Mono",monospace; font-size:0.64rem; white-space:nowrap; }
+    .num { color:var(--dim); padding:0.2rem 0; }
+    .cat { color:#a7f3d0; background:var(--tag-bg); border:1px solid rgba(16,185,129,0.22); padding:0.2rem 0.58rem; }
+    .title-link { display:block; font-size:clamp(1rem,2.1vw,1.22rem); font-weight:700; line-height:1.55; transition:color 0.18s ease; }
+    .title-link:hover { color:var(--accent-2); }
+    .source { margin-top:0.62rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .comment { margin-top:0.95rem; color:#c8d5e4; font-size:0.93rem; }
+    .footer { display:flex; justify-content:flex-end; margin-top:1rem; }
+    .button { color:var(--accent-2); border:1px solid rgba(16,185,129,0.32); border-radius:999px; padding:0.38rem 0.78rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; transition:background 0.18s ease,border-color 0.18s ease; }
+    .button:hover { background:rgba(16,185,129,0.1); border-color:var(--accent); }
+    body>footer { padding:0 1rem 2.5rem; color:var(--dim); text-align:center; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    @media (max-width:640px) { .wrap { padding:1.2rem 0.92rem 3rem; } header { padding:2rem 0 1.6rem; } .card { padding:1.05rem 1rem 1rem; } .card-header { grid-template-columns:auto auto; } .title-wrap { grid-column:1/-1; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="back-link" href="../business/">← 返回存档</a>
+    <header>
+      <div class="kicker">Edition 0064 · AI Product & Data Brief</div>
+      <h1>出海 AI 洞察</h1>
+      <p class="subtitle">跨境电商 · 可持续发展 · AI 应用实战</p>
+      <div class="meta"><span>2026年7月27日 09:15</span><span>TOP 10</span><span>面向产品经理与数据分析师</span></div>
+      <p class="intro">AI正把出海鞋类电商的比价、支付与跨境履约连成代理闭环，环保数据也进入可复核的碳管理智能体。</p>
+      <div class="tags"><span class="tag">代理支付</span><span class="tag">跨境结算</span><span class="tag">多模态搜款</span><span class="tag">AI比价</span><span class="tag">碳管理智能体</span></div>
+    </header>
+    <section class="cards">
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.01</span><span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://stellagent.ai/insights/moonpay-paybox-ai-shopping-wallet" target="_blank" rel="noreferrer">PayBox 给 Claude 与 ChatGPT 接上可设限的钱包，AI 开始真正代用户下单</a></div>
+        </div>
+        <div class="source">Stellagent / Fortune · 2026-07-24</div>
+        <div class="comment">【是什么】MoonPay 的 PayBox 可让 Claude、ChatGPT 在预算上限和购买前提醒等约束下完成真实支付，7 月 28 日上线。<br />【对我们意味着什么】鞋类结账需提前定义尺码确认、金额阈值、撤单和欺诈责任，并单独测量“代理推荐到支付成功”的漏斗。</div>
+        <div class="footer"><a class="button" href="https://stellagent.ai/insights/moonpay-paybox-ai-shopping-wallet" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.02</span><span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.digitalcommerce360.com/2026/07/22/esw-agentic-commerce-integration-microsoft-copilot/" target="_blank" rel="noreferrer">ESW 把 Copilot 导购接到跨境支付、风控、履约和售后</a></div>
+        </div>
+        <div class="source">Digital Commerce 360 · 2026-07-22</div>
+        <div class="comment">【是什么】ESW Agentic Commerce 将商品目录接入 Microsoft Copilot，并用预置代理承接跨境支付、欺诈管理、履约和客服。<br />【对我们意味着什么】出海鞋类可在不替换现有商城的前提下试验 AI 渠道，但要逐市场核对税费、币种、库存和退货承诺。</div>
+        <div class="footer"><a class="button" href="https://www.digitalcommerce360.com/2026/07/22/esw-agentic-commerce-integration-microsoft-copilot/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.03</span><span class="cat">消费洞察</span>
+          <div class="title-wrap"><a class="title-link" href="https://arxiv.org/abs/2607.17499" target="_blank" rel="noreferrer">淘宝原生多模态搜索模型上线，在线实验最高带来 13.61% GMV 提升</a></div>
+        </div>
+        <div class="source">arXiv / 淘宝 · 2026-07-20</div>
+        <div class="comment">【是什么】Pailitao-MMSearch 用 Qwen 统一理解图片、文字与复合意图，线上 A/B 测试最高提升 13.61% GMV 和 8.21% 成交量。<br />【对我们意味着什么】鞋类搜款应让用户上传参考图并追加“宽脚、通勤、非皮革”等条件，实验需同时看相关性、转化与退货。</div>
+        <div class="footer"><a class="button" href="https://arxiv.org/abs/2607.17499" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.04</span><span class="cat">数据分析</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.pymnts.com/news/retail/2026/amazon-walmart-face-new-gatekeeper-for-loyalty/" target="_blank" rel="noreferrer">大促购物者中 21% 已用 AI 比价，近四分之三因 AI 推荐而购买</a></div>
+        </div>
+        <div class="source">PYMNTS · 2026-07-23</div>
+        <div class="comment">【是什么】Amazon 与 Walmart 同期大促调查显示，21% 参与者用 AI 研究、找优惠或比价，其中近四分之三据 AI 推荐完成购买。<br />【对我们意味着什么】数据团队应把 AI 助手视为上游比较层，用购买后问卷、优惠码和会话路径补足传统末次点击的归因盲区。</div>
+        <div class="footer"><a class="button" href="https://www.pymnts.com/news/retail/2026/amazon-walmart-face-new-gatekeeper-for-loyalty/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.05</span><span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.digitaltoday.co.kr/en/view/84686/kakao-expands-ai-commerce-tests-payment-is-key-beyond-recommendations" target="_blank" rel="noreferrer">Kakao 用聊天语境识别送礼与出行需求，并把推荐接向预约和支付</a></div>
+        </div>
+        <div class="source">Digital Today · 2026-07-23</div>
+        <div class="comment">【是什么】KakaoTalk 根据关系、纪念日、聊天内容和历史行为推荐礼物或地点，并尝试在同一对话中完成预约和支付。<br />【对我们意味着什么】鞋类社交导购可从婚礼、旅行、入职等语境触发组合推荐，但必须把自然建议与广告干预清晰区分。</div>
+        <div class="footer"><a class="button" href="https://www.digitaltoday.co.kr/en/view/84686/kakao-expands-ai-commerce-tests-payment-is-key-beyond-recommendations" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.06</span><span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.marketscale.com/industries/marketing-tech/salesforces-new-b2b-commerce-suite-puts-an-ai-buying-agent-on-whatsapp-and-sms" target="_blank" rel="noreferrer">Salesforce 把 B2B 采购代理放进 WhatsApp 与短信，支持询价到下单</a></div>
+        </div>
+        <div class="source">MarketScale / Salesforce · 2026-07-22</div>
+        <div class="comment">【是什么】Salesforce Buyer Agent 在 WhatsApp 和短信中处理意图搜索、商品配置、询价、复购与购买，并保持报价到购物车的上下文。<br />【对我们意味着什么】鞋材与包装采购可先自动化重复补单和规格匹配，信用额度、议价和供应商定点仍设置人工审批。</div>
+        <div class="footer"><a class="button" href="https://www.marketscale.com/industries/marketing-tech/salesforces-new-b2b-commerce-suite-puts-an-ai-buying-agent-on-whatsapp-and-sms" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.07</span><span class="cat">数据分析</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.digitalcommerce360.com/2026/07/23/ecommerce-trends-3-ai-related-problems-retailers-are-trying-solve/" target="_blank" rel="noreferrer">零售 AI 的新代价：攻击面扩大、恶意机器人增长与推荐信任下滑</a></div>
+        </div>
+        <div class="source">Digital Commerce 360 · 2026-07-23</div>
+        <div class="comment">【是什么】调查中 78% 零售技术负责人称 AI 扩大攻击面，恶意机器人交易增 25%；86% 消费者担心 AI 商品推荐。<br />【对我们意味着什么】鞋类 PM 应把推荐解释、隐私提示和反欺诈并入发布门槛，分析师需分开监控转化增益、异常流量与信任指标。</div>
+        <div class="footer"><a class="button" href="https://www.digitalcommerce360.com/2026/07/23/ecommerce-trends-3-ai-related-problems-retailers-are-trying-solve/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.08</span><span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.supplychainbrain.com/blogs/1-think-tank/post/44385-managing-vendor-ai-agent-risk-in-the-supply-chain" target="_blank" rel="noreferrer">供应链代理可能把恶意发票当指令，需行为监测和自动熔断</a></div>
+        </div>
+        <div class="source">SupplyChainBrain · 2026-07-24</div>
+        <div class="comment">【是什么】接入 ERP、发票和物流系统的供应商代理可能被提示注入操控，文章建议持续行为监测、上下文追踪与确定性熔断。<br />【对我们意味着什么】跨境采购代理只给最小权限，任何改量、付款、改地址或取消运输的动作都应可追溯并支持即时撤权。</div>
+        <div class="footer"><a class="button" href="https://www.supplychainbrain.com/blogs/1-think-tank/post/44385-managing-vendor-ai-agent-risk-in-the-supply-chain" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.09</span><span class="cat">营销工具</span>
+          <div class="title-wrap"><a class="title-link" href="https://36kr.com/p/3908263326963328" target="_blank" rel="noreferrer">36氪 WAIC 实测：Agent 开始清洗表格、找替代供应商并直接交付分析</a></div>
+        </div>
+        <div class="source">36氪 · 2026-07-24</div>
+        <div class="comment">【是什么】WAIC 现场的分析 Agent 可串联 Excel 清洗、洞察和 PPT，供应链 Agent 则按自然语言完成风控与替代供应商搜寻。<br />【对我们意味着什么】出海鞋类团队可把周报和寻源拆成可核验步骤，让模型附上字段来源、筛选规则和供应商证据再交付结论。</div>
+        <div class="footer"><a class="button" href="https://36kr.com/p/3908263326963328" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.10</span><span class="cat">可持续合规</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.prnewswire.com/news-releases/gravity-launches-first-all-purpose-sustainability-agent-302833457.html" target="_blank" rel="noreferrer">Gravity 推出碳与能源智能体，用 85 项技能自动整理数据和披露</a></div>
+        </div>
+        <div class="source">Gravity / PRNewswire · 2026-07-23</div>
+        <div class="comment">【是什么】Gravity Agent 用 85 项专家技能迁移历史数据、寻找节能机会并起草披露，所有变更需人工审批且计算可复现。<br />【对我们意味着什么】环保鞋类可用它归集材料、工厂与物流碳数据，但必须保留排放因子、版本、审批人和原始凭证供审计。</div>
+        <div class="footer"><a class="button" href="https://www.prnewswire.com/news-releases/gravity-launches-first-all-purpose-sustainability-agent-302833457.html" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+    </section>
+  </main>
+  <footer>Edition 0064 · 出海 AI 洞察</footer>
+</body>
+</html>
