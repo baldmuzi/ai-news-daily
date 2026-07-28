@@ -1,33 +1,33 @@
 {
-  "edition": "0047",
-  "date": "2026年7月27日 09:25",
-  "intro": "本期从加权紧身裤、EMS 与女性运动安全切入，捕捉训练装备、社媒记录和赛事文化的新变化，为 Fanka 压缩穿搭与内容策划提供全球灵感。",
+  "edition": "0048",
+  "date": "2026年7月28日 09:32",
+  "intro": "本期从阔腿运动裤、主动旅行与中年女性有氧切入，连接训练心理、高温装备和中国赛事新信号，为 Fanka 压缩穿搭与全球内容策划提供新鲜灵感。",
   "tags": [
-    "加权紧身裤",
-    "EMS训练",
-    "女性运动健康",
-    "训练内容游戏化",
-    "女子赛事文化"
+    "阔腿运动裤",
+    "主动旅行穿搭",
+    "女性中年有氧",
+    "运动心理边界",
+    "高温装备实测"
   ],
   "top3": [
     {
-      "title": "加权紧身裤把穿戴阻力带入日常下装",
-      "comment": "用教育内容厘清加权、内置阻力与压缩三类功能边界"
+      "title": "Gaucho 阔腿运动裤回潮，activewear 开始松开紧身轮廓",
+      "comment": "阔腿 activewear 回潮，为压缩基底与宽松过渡层提供双轮廓内容"
     },
     {
-      "title": "EMS 训练回潮进入精品健身房",
-      "comment": "借穿戴科技讲面料与安全提问，不延伸医疗承诺"
+      "title": "跑步能支持情绪，但“运动就是治疗”正在被重新划界",
+      "comment": "用清晰健康边界替代“跑步解决一切”的社媒励志话术"
     },
     {
-      "title": "女性跑者私密健康进入训练内容",
-      "comment": "从速干、换装和清洁切入热天运动后的实用照护"
+      "title": "50+ 女性有氧内容转向渐进、恢复与可持续组合",
+      "comment": "围绕渐进、恢复和可持续组合服务 50+ 女性运动内容"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0047.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0048.html",
   "blog": {
-    "title": "Weighted Leggings vs. Compression Leggings: What to Know Before You Train",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/weighted-vs-compression-leggings-workout-guide.html",
-    "summary": "由本期加权紧身裤趋势延展，解释加权、压缩与内置阻力 leggings 的功能差异。"
+    "title": "How to Build an Active Travel Capsule for Women: Pack Light, Move More",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/active-travel-capsule-workout-outfits-women.html",
+    "summary": "由本期三双鞋主动旅行趋势延展为兼顾旅途、城市步行与酒店训练的女性胶囊穿搭指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
