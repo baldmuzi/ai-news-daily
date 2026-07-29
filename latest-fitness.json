@@ -1,33 +1,33 @@
 {
-  "edition": "0048",
-  "date": "2026年7月28日 09:32",
-  "intro": "本期从阔腿运动裤、主动旅行与中年女性有氧切入，连接训练心理、高温装备和中国赛事新信号，为 Fanka 压缩穿搭与全球内容策划提供新鲜灵感。",
+  "edition": "0049",
+  "date": "2026年7月29日 09:18",
+  "intro": "本期聚焦女性力量审美、女子运动员内容商业化与混合体能赛，连接高温防磨穿搭、运动装备体验和社群真实需求，为 Fanka 压缩服内容提供全球新鲜灵感。",
   "tags": [
-    "阔腿运动裤",
-    "主动旅行穿搭",
-    "女性中年有氧",
-    "运动心理边界",
-    "高温装备实测"
+    "女性力量审美",
+    "混合体能赛",
+    "高温防磨穿搭",
+    "女子体育营销",
+    "装备痛点内容"
   ],
   "top3": [
     {
-      "title": "Gaucho 阔腿运动裤回潮，activewear 开始松开紧身轮廓",
-      "comment": "阔腿 activewear 回潮，为压缩基底与宽松过渡层提供双轮廓内容"
+      "title": "中文健身内容开始用肌肉与力量反思白幼瘦审美",
+      "comment": "以真实能力记录替代身材对比，连接女性力量训练内容"
     },
     {
-      "title": "跑步能支持情绪，但“运动就是治疗”正在被重新划界",
-      "comment": "用清晰健康边界替代“跑步解决一切”的社媒励志话术"
+      "title": "女性大学运动员 NIL 合作参与量一年增长 123%",
+      "comment": "让女性运动员从产品露出升级为品牌内容共创者"
     },
     {
-      "title": "50+ 女性有氧内容转向渐进、恢复与可持续组合",
-      "comment": "围绕渐进、恢复和可持续组合服务 50+ 女性运动内容"
+      "title": "长跑选手跨界 HYROX，六个月拿下世界冠军",
+      "comment": "用跑步与力量工作站拆解混合体能赛穿搭需求"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0048.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0049.html",
   "blog": {
-    "title": "How to Build an Active Travel Capsule for Women: Pack Light, Move More",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/active-travel-capsule-workout-outfits-women.html",
-    "summary": "由本期三双鞋主动旅行趋势延展为兼顾旅途、城市步行与酒店训练的女性胶囊穿搭指南"
+    "title": "What to Wear for HYROX: A Hybrid Running and Strength Outfit Guide for Women",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/hyrox-workout-outfits-women-running-strength.html",
+    "summary": "由本期长跑选手跨界夺得 HYROX 世界冠军延展为女性混合跑步与力量赛穿搭指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
