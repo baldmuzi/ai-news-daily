@@ -1,33 +1,33 @@
 {
-  "edition": "0049",
-  "date": "2026年7月29日 09:18",
-  "intro": "本期聚焦女性力量审美、女子运动员内容商业化与混合体能赛，连接高温防磨穿搭、运动装备体验和社群真实需求，为 Fanka 压缩服内容提供全球新鲜灵感。",
+  "edition": "0050",
+  "date": "2026年7月30日 09:15",
+  "intro": "本期从女性耐力科学与经期健康出发，观察舞蹈训练、社媒内容结构、可穿戴数据和细节型 leggings，为 Fanka 压缩服与女性运动穿搭提供全球新鲜选题。",
   "tags": [
-    "女性力量审美",
-    "混合体能赛",
-    "高温防磨穿搭",
-    "女子体育营销",
-    "装备痛点内容"
+    "女性耐力科学",
+    "经期运动健康",
+    "舞蹈训练穿搭",
+    "社媒内容结构",
+    "细节型运动服"
   ],
   "top3": [
     {
-      "title": "中文健身内容开始用肌肉与力量反思白幼瘦审美",
-      "comment": "以真实能力记录替代身材对比，连接女性力量训练内容"
+      "title": "耐力研究开始追问女性跑者是否需要不同的配速与恢复逻辑",
+      "comment": "用女性数据讲配速、疲劳与恢复，避免套用单一训练结论"
     },
     {
-      "title": "女性大学运动员 NIL 合作参与量一年增长 123%",
-      "comment": "让女性运动员从产品露出升级为品牌内容共创者"
+      "title": "精英女运动员公开谈子宫内膜异位症",
+      "comment": "以可调整计划和就医边界取代把疼痛沉默包装成韧性"
     },
     {
-      "title": "长跑选手跨界 HYROX，六个月拿下世界冠军",
-      "comment": "用跑步与力量工作站拆解混合体能赛穿搭需求"
+      "title": "系带腰头成为秋季 leggings 的小细节大识别信号",
+      "comment": "从腰头和拼线等细节切入功能测试与个性表达"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0049.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0050.html",
   "blog": {
-    "title": "What to Wear for HYROX: A Hybrid Running and Strength Outfit Guide for Women",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/hyrox-workout-outfits-women-running-strength.html",
-    "summary": "由本期长跑选手跨界夺得 HYROX 世界冠军延展为女性混合跑步与力量赛穿搭指南"
+    "title": "What to Wear for Dance Cardio: Supportive Workout Outfits for Women",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/dance-cardio-workout-outfits-for-women.html",
+    "summary": "由本期舞蹈训练与增肌边界讨论延展为女性舞蹈有氧支撑、排汗与稳定穿搭指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
