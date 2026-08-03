@@ -1,33 +1,33 @@
 {
-  "edition": "0051",
-  "date": "2026年7月31日 09:14",
-  "intro": "本期从女子力量、多方向训练与核心评估，延伸至赛事营销和社群内容模板，为 Fanka 提炼女性运动、支撑穿搭与压缩服沟通的新鲜机会。",
+  "edition": "0052",
+  "date": "2026年8月3日 09:30",
+  "intro": "本期从真实舞者重塑 balletcore、女性身体观与女子赛事内容，延伸至数据化训练、恢复消费和压缩穿搭，为 Fanka 捕捉更真实、更可持续的创作机会。",
   "tags": [
-    "多方向训练",
-    "女性核心评估",
-    "女子力量表达",
-    "社群模板共创",
-    "赛事营销回报"
+    "真实舞者美学",
+    "女性身体观",
+    "女子赛事内容",
+    "训练数据校准",
+    "恢复消费场景"
   ],
   "top3": [
     {
-      "title": "从直线冲刺到侧向反应：女运动员复出训练凸显多方向能力",
-      "comment": "把侧移、旋转、跨步与停顿变成支撑穿搭的完整动作测试。"
+      "title": "Balletcore 回归，但主角从精致摆拍换成真正训练的舞者",
+      "comment": "用真实排练、汗迹与实用叠穿重写舞蹈美学内容。"
     },
     {
-      "title": "世界杯带动销量却压缩利润，运动品牌营销被追问回报质量",
-      "comment": "赛事借势需同时追踪触达、社群承接、毛利与长期留存。"
+      "title": "GLP-1 时代的身体观内容开始照顾更多女性",
+      "comment": "用力量、精力与舒适度替代身材前后对比。"
     },
     {
-      "title": "女性核心评估从一个数字转向体位与动作任务组合",
-      "comment": "用姿势、呼吸与任务解释穿着体验，并保留研究样本限制。"
+      "title": "WNBA 球员把全明星周末变成持续在线的第一视角内容",
+      "comment": "以连续日程和清晰边界建立女性赛事陪伴感。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0051.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0052.html",
   "blog": {
-    "title": "What to Wear for Multidirectional Training: A Women’s Workout Outfit Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/multidirectional-training-outfits-for-women.html",
-    "summary": "由本期女运动员多方向复出训练延展为女性侧向、旋转与变向训练的支撑穿搭指南"
+    "title": "Balletcore Workout Outfits for Real Dance Classes: Support, Layers, and Movement",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/balletcore-workout-outfits-real-dance-class.html",
+    "summary": "由本期真实舞者推动的新 balletcore 趋势延展为舞蹈课堂支撑、叠穿与通勤穿搭指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
