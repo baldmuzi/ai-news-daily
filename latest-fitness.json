@@ -1,33 +1,33 @@
 {
-  "edition": "0052",
-  "date": "2026年8月3日 09:30",
-  "intro": "本期从真实舞者重塑 balletcore、女性身体观与女子赛事内容，延伸至数据化训练、恢复消费和压缩穿搭，为 Fanka 捕捉更真实、更可持续的创作机会。",
+  "edition": "0053",
+  "date": "2026年8月4日 09:22",
+  "intro": "本期从女性赛事赞助、主流影视叙事与会员挑战，延伸到包容性运动、心理健康和功能穿搭，为 Fanka 捕捉更真实的运动内容与压缩服表达机会。",
   "tags": [
-    "真实舞者美学",
-    "女性身体观",
-    "女子赛事内容",
-    "训练数据校准",
-    "恢复消费场景"
+    "女性赛事商业",
+    "运动心理转变",
+    "会员挑战机制",
+    "包容性耐力",
+    "功能穿搭反馈"
   ],
   "top3": [
     {
-      "title": "Balletcore 回归，但主角从精致摆拍换成真正训练的舞者",
-      "comment": "用真实排练、汗迹与实用叠穿重写舞蹈美学内容。"
+      "title": "跑步进入不靠酒精也能享受社交的个人叙事",
+      "comment": "用女性真实经历表达运动带来的自信与选择，不作心理疗效承诺"
     },
     {
-      "title": "GLP-1 时代的身体观内容开始照顾更多女性",
-      "comment": "用力量、精力与舒适度替代身材前后对比。"
+      "title": "自适应铁人挑战把风险管理放到极限故事中心",
+      "comment": "从装备适配、摩擦检查与本人边界讲包容性耐力运动"
     },
     {
-      "title": "WNBA 球员把全明星周末变成持续在线的第一视角内容",
-      "comment": "以连续日程和清晰边界建立女性赛事陪伴感。"
+      "title": "一次简单挑战解锁全年训练内容",
+      "comment": "用低门槛任务承接会员内容、社群身份与长期留存"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0052.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0053.html",
   "blog": {
-    "title": "Balletcore Workout Outfits for Real Dance Classes: Support, Layers, and Movement",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/balletcore-workout-outfits-real-dance-class.html",
-    "summary": "由本期真实舞者推动的新 balletcore 趋势延展为舞蹈课堂支撑、叠穿与通勤穿搭指南"
+    "title": "Jump Rope vs. Running Outfits for Women: Support, Impact, and Fit",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/jump-rope-vs-running-outfits-women.html",
+    "summary": "由本期跳绳与跑步选择趋势延展为女性高冲击训练的支撑、贴合与穿着测试指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
