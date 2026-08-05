@@ -1,33 +1,33 @@
 {
-  "edition": "0053",
-  "date": "2026年8月4日 09:22",
-  "intro": "本期从女性赛事赞助、主流影视叙事与会员挑战，延伸到包容性运动、心理健康和功能穿搭，为 Fanka 捕捉更真实的运动内容与压缩服表达机会。",
+  "edition": "0054",
+  "date": "2026年8月5日 09:21",
+  "intro": "本期从全天候穿戴、支撑内衣边界与运动度假化，延伸到训练数据和户外补给，为 Fanka 提炼可信的女性运动与功能穿搭机会。",
   "tags": [
-    "女性赛事商业",
-    "运动心理转变",
-    "会员挑战机制",
-    "包容性耐力",
-    "功能穿搭反馈"
+    "全天候穿戴",
+    "支撑内衣边界",
+    "运动度假穿搭",
+    "训练数据解读",
+    "弹性运动习惯"
   ],
   "top3": [
     {
-      "title": "跑步进入不靠酒精也能享受社交的个人叙事",
-      "comment": "用女性真实经历表达运动带来的自信与选择，不作心理疗效承诺"
+      "title": "健身追踪器从更多数据转向更愿意一直戴",
+      "comment": "用一整天的摩擦点和调整次数表达舒适，而不只堆功能参数"
     },
     {
-      "title": "自适应铁人挑战把风险管理放到极限故事中心",
-      "comment": "从装备适配、摩擦检查与本人边界讲包容性耐力运动"
+      "title": "姿态支撑型内衣需要更清晰的功能边界",
+      "comment": "区分穿着提示、运动支撑和医疗矫正，避免疼痛治疗承诺"
     },
     {
-      "title": "一次简单挑战解锁全年训练内容",
-      "comment": "用低门槛任务承接会员内容、社群身份与长期留存"
+      "title": "Athleisure 品牌把性能面料带进度假装",
+      "comment": "以一衣多穿、干燥速度和行李体积设计旅行内容"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0053.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0054.html",
   "blog": {
-    "title": "Jump Rope vs. Running Outfits for Women: Support, Impact, and Fit",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/jump-rope-vs-running-outfits-women.html",
-    "summary": "由本期跳绳与跑步选择趋势延展为女性高冲击训练的支撑、贴合与穿着测试指南"
+    "title": "Posture Bras vs. Sports Bras for Workouts: Support, Fit, and Realistic Expectations",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/posture-bra-vs-sports-bra-workout-guide.html",
+    "summary": "由本期姿态支撑型内衣趋势延展为 posture bra 与 sports bra 的功能、贴合和医学边界对比指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
