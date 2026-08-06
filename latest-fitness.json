@@ -1,33 +1,33 @@
 {
-  "edition": "0054",
-  "date": "2026年8月5日 09:21",
-  "intro": "本期从全天候穿戴、支撑内衣边界与运动度假化，延伸到训练数据和户外补给，为 Fanka 提炼可信的女性运动与功能穿搭机会。",
+  "edition": "0055",
+  "date": "2026年8月6日 09:17",
+  "intro": "本期从产后回归、女子骑行装备与青年路径，延伸到训练压力和社群权益，为 Fanka 提炼女性运动与功能穿搭的新内容入口。",
   "tags": [
-    "全天候穿戴",
-    "支撑内衣边界",
-    "运动度假穿搭",
-    "训练数据解读",
-    "弹性运动习惯"
+    "产后回归边界",
+    "女子骑行装备",
+    "青年运动路径",
+    "社群权益设计",
+    "训练摩擦内容"
   ],
   "top3": [
     {
-      "title": "健身追踪器从更多数据转向更愿意一直戴",
-      "comment": "用一整天的摩擦点和调整次数表达舒适，而不只堆功能参数"
+      "title": "产后回归把支持系统放在迅速恢复之前",
+      "comment": "用专业支持与阶段变化讲真实回归，避免把个案写成训练处方"
     },
     {
-      "title": "姿态支撑型内衣需要更清晰的功能边界",
-      "comment": "区分穿着提示、运动支撑和医疗矫正，避免疼痛治疗承诺"
+      "title": "女子环法装备检查让内衣讨论回到规则与贴合",
+      "comment": "用骑姿测试拆解肩带、下围、接缝与呼吸空间"
     },
     {
-      "title": "Athleisure 品牌把性能面料带进度假装",
-      "comment": "以一衣多穿、干燥速度和行李体积设计旅行内容"
+      "title": "女性骑行生态出现顶层热、基层薄的路径缺口",
+      "comment": "把品牌曝光导向入门课、地区俱乐部和青年训练入口"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0054.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0055.html",
   "blog": {
-    "title": "Posture Bras vs. Sports Bras for Workouts: Support, Fit, and Realistic Expectations",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/posture-bra-vs-sports-bra-workout-guide.html",
-    "summary": "由本期姿态支撑型内衣趋势延展为 posture bra 与 sports bra 的功能、贴合和医学边界对比指南"
+    "title": "Cycling Outfits for Women: Comfort, Support, and Aerodynamics",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/cycling-outfits-women-comfort-support-aerodynamics.html",
+    "summary": "由本期女子环法内衣与空气动力学规则趋势延展为女性骑行支撑、贴合与舒适穿搭指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
