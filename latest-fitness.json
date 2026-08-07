@@ -1,33 +1,33 @@
 {
-  "edition": "0055",
-  "date": "2026年8月6日 09:17",
-  "intro": "本期从产后回归、女子骑行装备与青年路径，延伸到训练压力和社群权益，为 Fanka 提炼女性运动与功能穿搭的新内容入口。",
+  "edition": "0056",
+  "date": "2026年8月7日 09:19",
+  "intro": "本期从女性微运动、混合力量与赛事会员机制，延伸到耐力数据、耐用型训练和运动消费，为 Fanka 提炼压缩穿搭、功能测试与社群内容的新入口。",
   "tags": [
-    "产后回归边界",
-    "女子骑行装备",
-    "青年运动路径",
-    "社群权益设计",
-    "训练摩擦内容"
+    "女性微运动",
+    "混合力量训练",
+    "赛事会员机制",
+    "耐用型训练",
+    "功能消费测试"
   ],
   "top3": [
     {
-      "title": "产后回归把支持系统放在迅速恢复之前",
-      "comment": "用专业支持与阶段变化讲真实回归，避免把个案写成训练处方"
+      "title": "女性运动沟通从练够才算转向8.5分钟也有意义",
+      "comment": "用微运动降低开始门槛，但不把自报调查写成健康处方"
     },
     {
-      "title": "女子环法装备检查让内衣讨论回到规则与贴合",
-      "comment": "用骑姿测试拆解肩带、下围、接缝与呼吸空间"
+      "title": "女特技演员的混合力量进入大众娱乐叙事",
+      "comment": "用壶铃与职业技能讲强壮女性，测试穿搭的真实动作表现"
     },
     {
-      "title": "女性骑行生态出现顶层热、基层薄的路径缺口",
-      "comment": "把品牌曝光导向入门课、地区俱乐部和青年训练入口"
+      "title": "赛事会员机制从先到先得改为限额抽签",
+      "comment": "公开名额、候补和替代权益，让社群增长兼顾参与公平"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0055.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0056.html",
   "blog": {
-    "title": "Cycling Outfits for Women: Comfort, Support, and Aerodynamics",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/cycling-outfits-women-comfort-support-aerodynamics.html",
-    "summary": "由本期女子环法内衣与空气动力学规则趋势延展为女性骑行支撑、贴合与舒适穿搭指南"
+    "title": "What to Wear for Kettlebell Workouts: A Women’s Fit Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/kettlebell-workout-outfits-women-fit-guide.html",
+    "summary": "由本期女特技演员的壶铃与混合力量训练趋势延展为女性壶铃训练支撑、腰头与动作测试指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
