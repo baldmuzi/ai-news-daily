@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>出海 AI 洞察 — 第 0072 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#080c14; --surface:#0f1623; --surface-2:#142032; --border:#1f2d3f; --accent:#10b981; --accent-2:#34d399; --text:#e5eef7; --muted:#94a3b8; --dim:#64748b; --tag-bg:rgba(16,185,129,0.12); --shadow:0 24px 60px rgba(0,0,0,0.28); }
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    body { background:radial-gradient(circle at top left, rgba(16,185,129,0.14), transparent 28%),radial-gradient(circle at top right, rgba(52,211,153,0.08), transparent 24%),var(--bg); color:var(--text); font-family:"Noto Serif SC",serif; line-height:1.75; min-height:100vh; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { max-width:1080px; margin:0 auto; padding:2rem 1.2rem 4rem; }
+    .back-link { display:inline-flex; align-items:center; color:var(--accent); border:1px solid rgba(16,185,129,0.28); border-radius:999px; padding:0.4rem 0.8rem; font-family:"JetBrains Mono",monospace; font-size:0.72rem; background:rgba(16,185,129,0.1); }
+    header { padding:3rem 0 2.2rem; border-bottom:1px solid var(--border); }
+    .kicker { color:var(--accent); font-family:"JetBrains Mono",monospace; font-size:0.76rem; letter-spacing:0.16em; text-transform:uppercase; }
+    h1 { margin-top:0.62rem; font-size:clamp(2.3rem,6vw,4.8rem); line-height:1.14; letter-spacing:0.06em; }
+    .subtitle { margin-top:0.8rem; color:var(--muted); font-size:clamp(0.92rem,2vw,1.1rem); }
+    .meta { display:flex; flex-wrap:wrap; gap:0.7rem 1.2rem; margin-top:1.5rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.72rem; }
+    .intro { margin-top:1.6rem; max-width:820px; padding:1rem 1.1rem; border-left:3px solid var(--accent); border-radius:0 14px 14px 0; color:#cfe9df; background:linear-gradient(90deg,rgba(16,185,129,0.12),rgba(15,22,35,0.56)); }
+    .tags { display:flex; flex-wrap:wrap; gap:0.55rem; margin-top:1.1rem; }
+    .tag { color:var(--accent-2); background:var(--tag-bg); border:1px solid rgba(16,185,129,0.2); border-radius:999px; padding:0.28rem 0.7rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .cards { display:grid; gap:1.15rem; margin-top:2rem; }
+    .card { position:relative; overflow:hidden; padding:1.3rem 1.35rem 1.2rem; border:1px solid var(--border); border-radius:20px; background:linear-gradient(145deg,rgba(20,32,50,0.94),rgba(11,18,29,0.98)); box-shadow:var(--shadow); }
+    .card::before { content:""; position:absolute; inset:0 auto 0 0; width:3px; background:linear-gradient(180deg,var(--accent),transparent 86%); }
+    .card-header { display:grid; grid-template-columns:auto auto minmax(0,1fr); align-items:start; gap:0.65rem; }
+    .num,.cat { margin-top:0.15rem; border-radius:999px; font-family:"JetBrains Mono",monospace; font-size:0.64rem; white-space:nowrap; }
+    .num { color:var(--dim); padding:0.2rem 0; }
+    .cat { color:#a7f3d0; background:var(--tag-bg); border:1px solid rgba(16,185,129,0.22); padding:0.2rem 0.58rem; }
+    .title-link { display:block; font-size:clamp(1rem,2.1vw,1.22rem); font-weight:700; line-height:1.55; transition:color 0.18s ease; }
+    .title-link:hover { color:var(--accent-2); }
+    .source { margin-top:0.62rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .comment { margin-top:0.95rem; color:#c8d5e4; font-size:0.93rem; }
+    .footer { display:flex; justify-content:flex-end; margin-top:1rem; }
+    .button { color:var(--accent-2); border:1px solid rgba(16,185,129,0.32); border-radius:999px; padding:0.38rem 0.78rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; transition:background 0.18s ease,border-color 0.18s ease; }
+    .button:hover { background:rgba(16,185,129,0.1); border-color:var(--accent); }
+    body>footer { padding:0 1rem 2.5rem; color:var(--dim); text-align:center; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    @media (max-width:640px) { .wrap { padding:1.2rem 0.92rem 3rem; } header { padding:2rem 0 1.6rem; } .card { padding:1.05rem 1rem 1rem; } .card-header { grid-template-columns:auto auto; } .title-wrap { grid-column:1/-1; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="back-link" href="../business/">← 返回存档</a>
+    <header>
+      <div class="kicker">Edition 0072 · AI Product &amp; Data Brief</div>
+      <h1>出海 AI 洞察</h1>
+      <p class="subtitle">跨境电商 · 可持续发展 · AI 应用实战</p>
+      <div class="meta"><span>2026年8月7日 09:13</span><span>TOP 10</span><span>面向产品经理与数据分析师</span></div>
+      <p class="intro">AI正把出海鞋类电商的意图识别、导购广告与库存决策连成实时闭环，服饰供应链追溯和环保责任也进入可审计数据层。</p>
+      <div class="tags"><span class="tag">实时意图</span><span class="tag">AI流量</span><span class="tag">导购广告</span><span class="tag">动态库存</span><span class="tag">绿色追溯</span></div>
+    </header>
+    <section class="cards">
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.01</span><span class="cat">消费洞察</span>
+          <div class="title-wrap"><a class="title-link" href="https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce/" target="_blank" rel="noreferrer">实时意图AI让首访用户不再看到同一套商品货架</a></div>
+        </div>
+        <div class="source">TechCrunch · 2026-08-06</div>
+        <div class="comment">【是什么】Malachyte用双向量AI连续读取搜索、悬停、点击与上下文，在单次会话内同时推断即时需求和长期偏好。<br />【对我们意味着什么】鞋类站可按通勤、工装、脚型等会话信号实时重排商品，但要用新品曝光、转化和退货率共同验证，避免历史偏好固化。</div>
+        <div class="footer"><a class="button" href="https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.02</span><span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://techcrunch.com/2026/08/05/shopify-says-ai-search-is-driving-more-traffic-and-sales-not-replacing-google/" target="_blank" rel="noreferrer">Shopify：AI引流和订单同比翻倍，商品页成为新入口</a></div>
+        </div>
+        <div class="source">TechCrunch · 2026-08-05</div>
+        <div class="comment">【是什么】Shopify披露AI来源流量与订单同比翻倍，智能体依赖丰富结构化目录理解多维需求，并让一半会话直达商品页。<br />【对我们意味着什么】环保鞋应补齐材质、脚型、场景、认证和尺码字段，在GA4中拆分AI来源，比较直达PDP后的转化、退货与毛利。</div>
+        <div class="footer"><a class="button" href="https://techcrunch.com/2026/08/05/shopify-says-ai-search-is-driving-more-traffic-and-sales-not-replacing-google/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.03</span><span class="cat">营销工具</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.modernretail.co/technology/krogers-ai-shopping-assistant-has-ads-at-launch/" target="_blank" rel="noreferrer">Kroger把商品广告直接嵌入AI导购的购物清单</a></div>
+        </div>
+        <div class="source">Modern Retail · 2026-08-04</div>
+        <div class="comment">【是什么】Kroger的AI助手按预算和饮食需求规划清单、搭建购物车，并在相关回答中混排带“赞助”标识的商品广告。<br />【对我们意味着什么】鞋类导购广告要区分自然推荐与付费位，按查询意图、加购和增量成交归因，同时监控赞助曝光是否损害信任。</div>
+        <div class="footer"><a class="button" href="https://www.modernretail.co/technology/krogers-ai-shopping-assistant-has-ads-at-launch/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.04</span><span class="cat">消费洞察</span>
+          <div class="title-wrap"><a class="title-link" href="https://eu.36kr.com/zh/p/3916132291827331" target="_blank" rel="noreferrer">36氪：AI已进入比价、推荐、支付和商家运营链路</a></div>
+        </div>
+        <div class="source">36氪 / CTR洞察 · 2026-07-29</div>
+        <div class="comment">【是什么】CTR数据显示，中国AI应用覆盖用户已接近9亿，AI在大促中从后台工具走到比价、推荐和支付前台，并协助营销与客服。<br />【对我们意味着什么】出海团队应按发现、比较、付款、售后拆事件漏斗，区分AI带来的路径压缩与促销折扣本身的贡献。</div>
+        <div class="footer"><a class="button" href="https://eu.36kr.com/zh/p/3916132291827331" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.05</span><span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.flowlity.com/resources/safety-stock-formula-how-to-calculate-it-with-ai" target="_blank" rel="noreferrer">AI把季度安全库存公式改造成持续变化的缓冲区</a></div>
+        </div>
+        <div class="source">Flowlity · 2026-08-05</div>
+        <div class="comment">【是什么】概率AI按实时需求、供应商交期、SKU价值和多仓网络持续重算安全库存，替代统一服务水平下的静态表格。<br />【对我们意味着什么】鞋类应按款色码和补货周期动态设缓冲，以缺货率、库存周转和人工下限覆盖率验证，避免全目录一刀切。</div>
+        <div class="footer"><a class="button" href="https://www.flowlity.com/resources/safety-stock-formula-how-to-calculate-it-with-ai" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.06</span><span class="cat">可持续合规</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.supplychaindive.com/news/farm-rio-targets-digitized-supply-chain-improved-traceability/826737/" target="_blank" rel="noreferrer">Farm Rio用AI统一服饰质检、实验室与追溯证据</a></div>
+        </div>
+        <div class="source">Supply Chain Dive · 2026-08-03</div>
+        <div class="comment">【是什么】Farm Rio采用Inspectorio AI平台，自动采集与校验文件、翻译资料，并集中质检、实验室结果和端到端产品追溯。<br />【对我们意味着什么】环保鞋可把材料证书、化学测试、工厂审核和批次号绑定到SKU，但AI校验必须保留原文、版本与人工签核。</div>
+        <div class="footer"><a class="button" href="https://www.supplychaindive.com/news/farm-rio-targets-digitized-supply-chain-improved-traceability/826737/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.07</span><span class="cat">数据分析</span>
+          <div class="title-wrap"><a class="title-link" href="https://arxiv.org/abs/2608.05008" target="_blank" rel="noreferrer">首个LLM广告审计发现：低收入画像更易收到广告</a></div>
+        </div>
+        <div class="source">arXiv · 2026-08-05</div>
+        <div class="comment">【是什么】研究用91个分层模拟账号、335类提示和逾3000条广告审计LLM投放，发现低收入画像的广告曝光概率更高。<br />【对我们意味着什么】鞋类投放应保存提示、曝光、受众代理变量和结果，用分层账户定期做公平性审计，不能只看整体ROAS。</div>
+        <div class="footer"><a class="button" href="https://arxiv.org/abs/2608.05008" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.08</span><span class="cat">可持续合规</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.sciencedirect.com/science/article/pii/S0969698926002304" target="_blank" rel="noreferrer">AI自助结账与企业社会责任会共同改变零售选择</a></div>
+        </div>
+        <div class="source">Journal of Retailing and Consumer Services · 2026-08-01</div>
+        <div class="comment">【是什么】研究把智能购物车、扫码即走等AI结账与环保、就业及本地采购责任放入同一消费者决策框架。<br />【对我们意味着什么】鞋类PM评估AI便利性时要同步测量隐私、就业观感和环保声明信任，并按市场与人群分层观察转化。</div>
+        <div class="footer"><a class="button" href="https://www.sciencedirect.com/science/article/pii/S0969698926002304" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.09</span><span class="cat">可持续合规</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0040162526002039" target="_blank" rel="noreferrer">生成式AI要靠利益相关方协同才能放大供应链可持续性</a></div>
+        </div>
+        <div class="source">Technological Forecasting and Social Change · 2026-08-01</div>
+        <div class="comment">【是什么】研究梳理82篇文献，提出生成式AI通过知识整合、协同决策和动态能力推动负责任供应链，而非仅生成报告。<br />【对我们意味着什么】环保鞋的AI合规助手应连接采购、工厂、检测与法务，并用证据完整率、整改闭环和供应商改善验收。</div>
+        <div class="footer"><a class="button" href="https://www.sciencedirect.com/science/article/abs/pii/S0040162526002039" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.10</span><span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.unitai.co/" target="_blank" rel="noreferrer">掌心机器人加预测软件，瞄准电商单件履约与退货</a></div>
+        </div>
+        <div class="source">UNIT AI / PR Newswire · 2026-07-29</div>
+        <div class="comment">【是什么】UNIT AI用模块化仓储、掌心机器人和预测软件自动存取单件库存，面向电商履约、退货与多仓前置部署。<br />【对我们意味着什么】鞋类可先在高退货款和单件质检环节试点，以单位处理成本、错拣率、翻新回收率和能耗评估真实收益。</div>
+        <div class="footer"><a class="button" href="https://www.unitai.co/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+    </section>
+  </main>
+  <footer>Edition 0072 · 出海 AI 洞察</footer>
+</body>
+</html>
