@@ -1,33 +1,33 @@
 {
-  "edition": "0056",
-  "date": "2026年8月7日 09:19",
-  "intro": "本期从女性微运动、混合力量与赛事会员机制，延伸到耐力数据、耐用型训练和运动消费，为 Fanka 提炼压缩穿搭、功能测试与社群内容的新入口。",
+  "edition": "0057",
+  "date": "2026年8月10日 09:29",
+  "intro": "从女性赛事职业化、共同体式恢复到跑步奢侈消费与健身 AI，本期为 Fanka 提炼压缩穿搭、恢复安全和社群内容的新机会。",
   "tags": [
-    "女性微运动",
-    "混合力量训练",
-    "赛事会员机制",
-    "耐用型训练",
-    "功能消费测试"
+    "女性体育增长",
+    "共同体式恢复",
+    "旅行比赛恢复",
+    "恢复工具安全",
+    "高端跑步消费"
   ],
   "top3": [
     {
-      "title": "女性运动沟通从练够才算转向8.5分钟也有意义",
-      "comment": "用微运动降低开始门槛，但不把自报调查写成健康处方"
+      "title": "WNBA 增长不再需要反复解释，女性赛事进入专业体验竞争",
+      "comment": "女性赛事内容可从声量转向球员、球迷与恢复体验的完整服务。"
     },
     {
-      "title": "女特技演员的混合力量进入大众娱乐叙事",
-      "comment": "用壶铃与职业技能讲强壮女性，测试穿搭的真实动作表现"
+      "title": "美国浴场文化升温，恢复体验从独处变成共同体活动",
+      "comment": "用社交恢复场景连接轻活动、易穿脱分层与安全边界。"
     },
     {
-      "title": "赛事会员机制从先到先得改为限额抽签",
-      "comment": "公开名额、候补和替代权益，让社群增长兼顾参与公平"
+      "title": "目的地赛事把“如何抵达”纳入训练，旅行恢复成为内容主线",
+      "comment": "围绕机场久坐、落地散步与赛前摇跑展示稳定穿搭。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0056.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0057.html",
   "blog": {
-    "title": "What to Wear for Kettlebell Workouts: A Women’s Fit Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/kettlebell-workout-outfits-women-fit-guide.html",
-    "summary": "由本期女特技演员的壶铃与混合力量训练趋势延展为女性壶铃训练支撑、腰头与动作测试指南"
+    "title": "How to Use Recovery Tools Safely at Home: A Women’s Post-Workout Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/how-to-use-recovery-tools-safely-at-home-women.html",
+    "summary": "由本期按摩枪充电器召回趋势延展为女性居家恢复工具安全检查与舒适分层指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
