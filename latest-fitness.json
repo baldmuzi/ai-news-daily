@@ -1,33 +1,33 @@
 {
-  "edition": "0057",
-  "date": "2026年8月10日 09:29",
-  "intro": "从女性赛事职业化、共同体式恢复到跑步奢侈消费与健身 AI，本期为 Fanka 提炼压缩穿搭、恢复安全和社群内容的新机会。",
+  "edition": "0058",
+  "date": "2026年8月11日 09:21",
+  "intro": "从赛场入场穿搭、女性运动员内容角色，到智能体重秤、恢复日与跨项训练，本期为 Fanka 提炼功能穿搭、社媒社群和女性运动叙事的新机会。",
   "tags": [
-    "女性体育增长",
-    "共同体式恢复",
-    "旅行比赛恢复",
-    "恢复工具安全",
-    "高端跑步消费"
+    "女性运动叙事",
+    "赛事入场穿搭",
+    "恢复日重估",
+    "跨项训练",
+    "社群内容策展"
   ],
   "top3": [
     {
-      "title": "WNBA 增长不再需要反复解释，女性赛事进入专业体验竞争",
-      "comment": "女性赛事内容可从声量转向球员、球迷与恢复体验的完整服务。"
+      "title": "女性运动员成为文化与行动主义内容入口",
+      "comment": "从奖牌叙事扩展到身份、心理健康与社会议题"
     },
     {
-      "title": "美国浴场文化升温，恢复体验从独处变成共同体活动",
-      "comment": "用社交恢复场景连接轻活动、易穿脱分层与安全边界。"
+      "title": "赛事 walk-in 成为新的时装前排",
+      "comment": "用压缩底层、队色与个人细节打造可复制造型"
     },
     {
-      "title": "目的地赛事把“如何抵达”纳入训练，旅行恢复成为内容主线",
-      "comment": "围绕机场久坐、落地散步与赛前摇跑展示稳定穿搭。"
+      "title": "智能体重秤转向多指标追踪",
+      "comment": "用力量、活动度和长期趋势替代单一体重焦虑"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0057.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0058.html",
   "blog": {
-    "title": "How to Use Recovery Tools Safely at Home: A Women’s Post-Workout Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/how-to-use-recovery-tools-safely-at-home-women.html",
-    "summary": "由本期按摩枪充电器召回趋势延展为女性居家恢复工具安全检查与舒适分层指南"
+    "title": "What to Wear to a Sporting Event: A Women’s Game-Day Outfit Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/womens-sporting-event-outfits-game-day-guide.html",
+    "summary": "由本期赛事 walk-in 与 method dressing 趋势延展为女性观赛穿搭、功能分层与赛场 fit check 指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
