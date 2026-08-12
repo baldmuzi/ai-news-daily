@@ -1,33 +1,33 @@
 {
-  "edition": "0058",
-  "date": "2026年8月11日 09:21",
-  "intro": "从赛场入场穿搭、女性运动员内容角色，到智能体重秤、恢复日与跨项训练，本期为 Fanka 提炼功能穿搭、社媒社群和女性运动叙事的新机会。",
+  "edition": "0059",
+  "date": "2026年8月12日 09:19",
+  "intro": "从女性跑团与肌酸，到无屏穿戴、耐力补给和换季运动服，本期为 Fanka 提炼女性运动叙事与功能穿搭新机会。",
   "tags": [
-    "女性运动叙事",
-    "赛事入场穿搭",
-    "恢复日重估",
-    "跨项训练",
-    "社群内容策展"
+    "女性跑团",
+    "肌酸消费",
+    "无屏穿戴",
+    "耐力补给",
+    "换季运动服"
   ],
   "top3": [
     {
-      "title": "女性运动员成为文化与行动主义内容入口",
-      "comment": "从奖牌叙事扩展到身份、心理健康与社会议题"
+      "title": "女性跑步从训练扩展为社群与归属感",
+      "comment": "用不同配速与真实入团故事降低参与门槛"
     },
     {
-      "title": "赛事 walk-in 成为新的时装前排",
-      "comment": "用压缩底层、队色与个人细节打造可复制造型"
+      "title": "肌酸沟通走向女性力量与健康老龄化",
+      "comment": "把训练、营养、睡眠与装备角色清楚拆开"
     },
     {
-      "title": "智能体重秤转向多指标追踪",
-      "comment": "用力量、活动度和长期趋势替代单一体重焦虑"
+      "title": "无屏穿戴设备强调少打扰的持续记录",
+      "comment": "让身体感受与科技数据并列而非相互替代"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0058.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0059.html",
   "blog": {
-    "title": "What to Wear to a Sporting Event: A Women’s Game-Day Outfit Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/womens-sporting-event-outfits-game-day-guide.html",
-    "summary": "由本期赛事 walk-in 与 method dressing 趋势延展为女性观赛穿搭、功能分层与赛场 fit check 指南"
+    "title": "What to Wear to a Run Club: A Beginner-Friendly Outfit Guide for Women",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/what-to-wear-to-a-run-club-women.html",
+    "summary": "由本期女性跑团与归属感趋势延展为新手女性跑团穿搭、分层与出发前 fit check 指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
