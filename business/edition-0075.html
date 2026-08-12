@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>出海 AI 洞察 — 第 0075 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#080c14; --surface:#0f1623; --surface-2:#142032; --border:#1f2d3f; --accent:#10b981; --accent-2:#34d399; --text:#e5eef7; --muted:#94a3b8; --dim:#64748b; --tag-bg:rgba(16,185,129,0.12); --shadow:0 24px 60px rgba(0,0,0,0.28); }
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    body { background:radial-gradient(circle at top left, rgba(16,185,129,0.14), transparent 28%),radial-gradient(circle at top right, rgba(52,211,153,0.08), transparent 24%),var(--bg); color:var(--text); font-family:"Noto Serif SC",serif; line-height:1.75; min-height:100vh; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { max-width:1080px; margin:0 auto; padding:2rem 1.2rem 4rem; }
+    .back-link { display:inline-flex; align-items:center; color:var(--accent); border:1px solid rgba(16,185,129,0.28); border-radius:999px; padding:0.4rem 0.8rem; font-family:"JetBrains Mono",monospace; font-size:0.72rem; background:rgba(16,185,129,0.1); }
+    header { padding:3rem 0 2.2rem; border-bottom:1px solid var(--border); }
+    .kicker { color:var(--accent); font-family:"JetBrains Mono",monospace; font-size:0.76rem; letter-spacing:0.16em; text-transform:uppercase; }
+    h1 { margin-top:0.62rem; font-size:clamp(2.3rem,6vw,4.8rem); line-height:1.14; letter-spacing:0.06em; }
+    .subtitle { margin-top:0.8rem; color:var(--muted); font-size:clamp(0.92rem,2vw,1.1rem); }
+    .meta { display:flex; flex-wrap:wrap; gap:0.7rem 1.2rem; margin-top:1.5rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.72rem; }
+    .intro { margin-top:1.6rem; max-width:820px; padding:1rem 1.1rem; border-left:3px solid var(--accent); border-radius:0 14px 14px 0; color:#cfe9df; background:linear-gradient(90deg,rgba(16,185,129,0.12),rgba(15,22,35,0.56)); }
+    .tags { display:flex; flex-wrap:wrap; gap:0.55rem; margin-top:1.1rem; }
+    .tag { color:var(--accent-2); background:var(--tag-bg); border:1px solid rgba(16,185,129,0.2); border-radius:999px; padding:0.28rem 0.7rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .cards { display:grid; gap:1.15rem; margin-top:2rem; }
+    .card { position:relative; overflow:hidden; padding:1.3rem 1.35rem 1.2rem; border:1px solid var(--border); border-radius:20px; background:linear-gradient(145deg,rgba(20,32,50,0.94),rgba(11,18,29,0.98)); box-shadow:var(--shadow); }
+    .card::before { content:""; position:absolute; inset:0 auto 0 0; width:3px; background:linear-gradient(180deg,var(--accent),transparent 86%); }
+    .card-header { display:grid; grid-template-columns:auto auto minmax(0,1fr); align-items:start; gap:0.65rem; }
+    .num,.cat { margin-top:0.15rem; border-radius:999px; font-family:"JetBrains Mono",monospace; font-size:0.64rem; white-space:nowrap; }
+    .num { color:var(--dim); padding:0.2rem 0; }
+    .cat { color:#a7f3d0; background:var(--tag-bg); border:1px solid rgba(16,185,129,0.22); padding:0.2rem 0.58rem; }
+    .title-link { display:block; font-size:clamp(1rem,2.1vw,1.22rem); font-weight:700; line-height:1.55; transition:color 0.18s ease; }
+    .title-link:hover { color:var(--accent-2); }
+    .source { margin-top:0.62rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .comment { margin-top:0.95rem; color:#c8d5e4; font-size:0.93rem; }
+    .footer { display:flex; justify-content:flex-end; margin-top:1rem; }
+    .button { color:var(--accent-2); border:1px solid rgba(16,185,129,0.32); border-radius:999px; padding:0.38rem 0.78rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; transition:background 0.18s ease,border-color 0.18s ease; }
+    .button:hover { background:rgba(16,185,129,0.1); border-color:var(--accent); }
+    body>footer { padding:0 1rem 2.5rem; color:var(--dim); text-align:center; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    @media (max-width:640px) { .wrap { padding:1.2rem 0.92rem 3rem; } header { padding:2rem 0 1.6rem; } .card { padding:1.05rem 1rem 1rem; } .card-header { grid-template-columns:auto auto; } .title-wrap { grid-column:1/-1; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="back-link" href="../business/">← 返回存档</a>
+    <header>
+      <div class="kicker">Edition 0075 · AI Product &amp; Data Brief</div>
+      <h1>出海 AI 洞察</h1>
+      <p class="subtitle">跨境电商 · 可持续发展 · AI 应用实战</p>
+      <div class="meta"><span>2026年8月12日 09:16</span><span>TOP 10</span><span>面向产品经理与数据分析师</span></div>
+      <p class="intro">AI正把出海鞋类电商的搜索、经营分析与履约连成可执行闭环，环保包装也进入可模拟、可量化的减碳决策。</p>
+      <div class="tags"><span class="tag">语义导购</span><span class="tag">经营问答</span><span class="tag">履约智能体</span><span class="tag">实时决策</span><span class="tag">包装减碳</span></div>
+    </header>
+    <section class="cards">
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.01</span><span class="cat">数据分析</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.prnewswire.com/news-releases/shopline-partners-with-papermap-to-give-merchants-plain-english-answers-from-their-business-data-302843252.html" target="_blank" rel="noreferrer">SHOPLINE让商家用自然语言追问经营数据</a></div>
+        </div>
+        <div class="source">PR Newswire / SHOPLINE · 2026-08-05</div>
+        <div class="comment">【是什么】Papermap把店铺、广告、库存、退货、履约和运费数据装入私有沙箱，用自然语言生成可核验代码、答案与实时看板。<br />【对我们意味着什么】鞋类分析师可先落地毛利泄漏、SKU退货和获客成本问答，但要保留SQL或代码证据链，避免自然语言答案不可复算。</div>
+        <div class="footer"><a class="button" href="https://www.prnewswire.com/news-releases/shopline-partners-with-papermap-to-give-merchants-plain-english-answers-from-their-business-data-302843252.html" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.02</span><span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.prnewswire.com/news-releases/inteloai-announces-latest-release-of-merchant-ai-bringing-compounding-intelligence-to-retail-merchandising-302842781.html" target="_blank" rel="noreferrer">零售商品规划进入“预测—求解—反馈”闭环</a></div>
+        </div>
+        <div class="source">PR Newswire / intelo.ai · 2026-08-05</div>
+        <div class="comment">【是什么】Merchant AI把尺码级需求预测、约束优化、智能体编排和持久记忆合并，持续学习每次配货决策、人工覆盖与最终结果。<br />【对我们意味着什么】鞋类团队可按款色码输出采购和调拨建议，并把起订量、库存、资金与缺码损失写进约束，避免只追求预测精度。</div>
+        <div class="footer"><a class="button" href="https://www.prnewswire.com/news-releases/inteloai-announces-latest-release-of-merchant-ai-bringing-compounding-intelligence-to-retail-merchandising-302842781.html" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.03</span><span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.prnewswire.com/news-releases/shipbob-launches-first-anthropic-verified-fulfillment-connector-anchoring-its-ai-suite-302842134.html" target="_blank" rel="noreferrer">ShipBob把AI从履约问答接到仓内执行</a></div>
+        </div>
+        <div class="source">PR Newswire / ShipBob · 2026-08-04</div>
+        <div class="comment">【是什么】ShipBob用经Anthropic验证的连接器和MCP接入实时履约数据，同时让智能体、移动机器人和视觉模型处理订单动作与退货质检。<br />【对我们意味着什么】跨境鞋类可从查库存、改单和退货分级试点，但所有写操作都应配置权限、确认、回滚和动作日志。</div>
+        <div class="footer"><a class="button" href="https://www.prnewswire.com/news-releases/shipbob-launches-first-anthropic-verified-fulfillment-connector-anchoring-its-ai-suite-302842134.html" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.04</span><span class="cat">营销工具</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.prnewswire.com/news-releases/rokt-introduces-brain-v4-a-new-ai-engine-for-real-time-ecommerce-decisioning-302841896.html" target="_blank" rel="noreferrer">Rokt把结账页内容选择拆成实时AI决策层</a></div>
+        </div>
+        <div class="source">PR Newswire / Rokt · 2026-08-04</div>
+        <div class="comment">【是什么】Brain V4实时融合用户、交易、广告、素材与上下文信号，通过机器学习、竞价、排序和护栏决定展示优惠、推荐或什么都不展示。<br />【对我们意味着什么】鞋站加购与结账推荐应同时优化增量毛利、支付完成率和干扰率，并给“不展示”保留独立基线。</div>
+        <div class="footer"><a class="button" href="https://www.prnewswire.com/news-releases/rokt-introduces-brain-v4-a-new-ai-engine-for-real-time-ecommerce-decisioning-302841896.html" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.05</span><span class="cat">消费洞察</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.techradar.com/pro/new-study-reveals-how-ai-is-reshaping-how-people-shop-online-but-they-still-dont-really-trust-it-enough" target="_blank" rel="noreferrer">AI已抢到商品发现入口，购买信任仍未同步</a></div>
+        </div>
+        <div class="source">TechRadar Pro · 2026-08-01</div>
+        <div class="comment">【是什么】英国调研显示20%消费者已从AI搜索开始购物，87%认可推荐有用，但仅55%曾据此购买，准确性和商业影响仍是主要顾虑。<br />【对我们意味着什么】鞋类导购应拆分“发现、比较、信任、成交”四段漏斗，并给推荐依据、库存价格和赞助关系可见证据。</div>
+        <div class="footer"><a class="button" href="https://www.techradar.com/pro/new-study-reveals-how-ai-is-reshaping-how-people-shop-online-but-they-still-dont-really-trust-it-enough" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.06</span><span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.prnewswire.com/news-releases/daydream-launches-ai-powered-search-and-discovery-solution-for-fashion-brands-and-retailers-302837597.html" target="_blank" rel="noreferrer">Daydream把时尚语义搜索嵌入品牌独立站</a></div>
+        </div>
+        <div class="source">PR Newswire / Daydream · 2026-07-29</div>
+        <div class="comment">【是什么】面向时尚训练的自然语言与视觉搜索理解版型、垂坠、场景、审美和价位意图，再从品牌自有商品池返回匹配结果。<br />【对我们意味着什么】鞋类可把脚型、穿着场景、搭配与预算纳入导购，并用零结果率、筛选改写率和尺码退货验证语义理解。</div>
+        <div class="footer"><a class="button" href="https://www.prnewswire.com/news-releases/daydream-launches-ai-powered-search-and-discovery-solution-for-fashion-brands-and-retailers-302837597.html" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.07</span><span class="cat">营销工具</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.modernretail.co/sponsored/unpacked-how-agentic-ai-is-reshaping-the-consumer-journey/" target="_blank" rel="noreferrer">会员与促销规则开始变成智能体可读资产</a></div>
+        </div>
+        <div class="source">Modern Retail / Talon.One（赞助内容）· 2026-07-28</div>
+        <div class="comment">【是什么】统一激励协议把会员资格、优惠条件和可用奖励结构化，让购物智能体能发现、解释并在结账链路中执行促销。<br />【对我们意味着什么】出海鞋站应把地区、会员层级、最低消费和叠加规则机器可读化，同时监测折扣泄漏、长期价值与毛利。</div>
+        <div class="footer"><a class="button" href="https://www.modernretail.co/sponsored/unpacked-how-agentic-ai-is-reshaping-the-consumer-journey/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.08</span><span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.qbitai.com/2026/07/459432.html" target="_blank" rel="noreferrer">骑行服饰用AI生成设计实现“先卖再生产”</a></div>
+        </div>
+        <div class="source">量子位 / 亿邦动力 · 2026-07-24</div>
+        <div class="comment">【是什么】洛克兄弟先用AI生成服饰设计、上身与场景素材，上架测试花色和款型，再根据浏览与购买反馈安排实际生产。<br />【对我们意味着什么】鞋类小批量测试可借鉴，但必须披露合成图、验证实物一致性，并把试销信号转成可审计的生产阈值。</div>
+        <div class="footer"><a class="button" href="https://www.qbitai.com/2026/07/459432.html" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.09</span><span class="cat">可持续合规</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.gs1kenya.org/gs1/events/traceability/12" target="_blank" rel="noreferrer">AI与GS1标准共同搭建可验证追溯链</a></div>
+        </div>
+        <div class="source">GS1 Kenya · 2026-08-04 至 08-06</div>
+        <div class="comment">【是什么】追溯实践把AI、可信数据与GS1标准组合，用统一标识和连接数据支撑零售、农业及数字贸易中的来源核验。<br />【对我们意味着什么】环保鞋团队应先统一材料、供应商、批次和工序ID，再让AI做异常检测与证据摘要，避免模型建立在不可对齐的数据上。</div>
+        <div class="footer"><a class="button" href="https://www.gs1kenya.org/gs1/events/traceability/12" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.10</span><span class="cat">可持续合规</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.sciencedirect.com/science/article/pii/S2949736126000679" target="_blank" rel="noreferrer">鞋盒回收用AI模拟押金、复用率与减碳效果</a></div>
+        </div>
+        <div class="source">Green Technologies and Sustainability · 2026-07</div>
+        <div class="comment">【是什么】研究用混合Python-AI模拟押金与奖励组合，并以QR、区块链和智能合约追踪鞋盒回收、复用及生命周期碳排。<br />【对我们意味着什么】环保鞋可先用历史订单和逆向物流成本做情景模拟，再小范围验证回收率、可复用率、单盒碳减排和激励成本。</div>
+        <div class="footer"><a class="button" href="https://www.sciencedirect.com/science/article/pii/S2949736126000679" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+    </section>
+  </main>
+  <footer>Edition 0075 · 出海 AI 洞察</footer>
+</body>
+</html>
