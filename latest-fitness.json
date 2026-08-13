@@ -1,33 +1,33 @@
 {
-  "edition": "0059",
-  "date": "2026年8月12日 09:19",
-  "intro": "从女性跑团与肌酸，到无屏穿戴、耐力补给和换季运动服，本期为 Fanka 提炼女性运动叙事与功能穿搭新机会。",
+  "edition": "0060",
+  "date": "2026年8月13日 09:40",
+  "intro": "本期从全球零售、女性运动文化到赛事营养与弹力带训练，提炼 Fanka 可转化为压缩穿搭、社媒栏目和区域内容的新鲜机会。",
   "tags": [
-    "女性跑团",
-    "肌酸消费",
-    "无屏穿戴",
-    "耐力补给",
-    "换季运动服"
+    "零售出海",
+    "直觉训练",
+    "女性运动文化",
+    "赛事营养",
+    "弹力带力量"
   ],
   "top3": [
     {
-      "title": "女性跑步从训练扩展为社群与归属感",
-      "comment": "用不同配速与真实入团故事降低参与门槛"
+      "title": "Fabletics 海外开店计划强调本地运动体验",
+      "comment": "用城市气候与真实试穿建立区域内容档案"
     },
     {
-      "title": "肌酸沟通走向女性力量与健康老龄化",
-      "comment": "把训练、营养、睡眠与装备角色清楚拆开"
+      "title": "直觉训练反击算法噪音与证明式健身",
+      "comment": "用呼吸、稳定和体感替代单一数据表演"
     },
     {
-      "title": "无屏穿戴设备强调少打扰的持续记录",
-      "comment": "让身体感受与科技数据并列而非相互替代"
+      "title": "原住民女足球员参与 Nike N7 设计",
+      "comment": "让运动者真正参与文化叙事与产品创作"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0059.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0060.html",
   "blog": {
-    "title": "What to Wear to a Run Club: A Beginner-Friendly Outfit Guide for Women",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/what-to-wear-to-a-run-club-women.html",
-    "summary": "由本期女性跑团与归属感趋势延展为新手女性跑团穿搭、分层与出发前 fit check 指南"
+    "title": "What to Wear for Resistance Band Workouts: A Women’s Fit Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/resistance-band-workout-outfits-for-women.html",
+    "summary": "由本期弹力带臀腿训练趋势延展，讲清女性训练时的下装、支撑与面料选择。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
