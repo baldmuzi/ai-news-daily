@@ -1,33 +1,33 @@
 {
-  "edition": "0060",
-  "date": "2026年8月13日 09:40",
-  "intro": "本期从全球零售、女性运动文化到赛事营养与弹力带训练，提炼 Fanka 可转化为压缩穿搭、社媒栏目和区域内容的新鲜机会。",
+  "edition": "0061",
+  "date": "2026年8月14日 09:38",
+  "intro": "从轮滑回潮、线上 Pilates 到产后渐进重建，本期为 Fanka 提炼更低门槛的女性运动内容与功能穿搭机会。",
   "tags": [
-    "零售出海",
-    "直觉训练",
-    "女性运动文化",
-    "赛事营养",
-    "弹力带力量"
+    "轮滑回潮",
+    "线上普拉提",
+    "产后重建",
+    "运动裤功能",
+    "防汗内容"
   ],
   "top3": [
     {
-      "title": "Fabletics 海外开店计划强调本地运动体验",
-      "comment": "用城市气候与真实试穿建立区域内容档案"
+      "title": "90 年代轮滑回到户外健身视野",
+      "comment": "用屈膝、侧推与护具适配测试功能穿搭，降低新手参与门槛"
     },
     {
-      "title": "直觉训练反击算法噪音与证明式健身",
-      "comment": "用呼吸、稳定和体感替代单一数据表演"
+      "title": "免费 YouTube Pilates 挑战工作室订阅",
+      "comment": "按 10、20、30 分钟课程设计可保存的短练穿搭内容"
     },
     {
-      "title": "原住民女足球员参与 Nike N7 设计",
-      "comment": "让运动者真正参与文化叙事与产品创作"
+      "title": "产后运动转向渐进重建",
+      "comment": "聚焦呼吸、舒适穿脱与专业审核，避免塑形速度承诺"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0060.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0061.html",
   "blog": {
-    "title": "What to Wear for Resistance Band Workouts: A Women’s Fit Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/resistance-band-workout-outfits-for-women.html",
-    "summary": "由本期弹力带臀腿训练趋势延展，讲清女性训练时的下装、支撑与面料选择。"
+    "title": "What to Wear Rollerblading: A Women’s Activewear and Fit Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/what-to-wear-rollerblading-women-activewear-guide.html",
+    "summary": "由本期轮滑回潮趋势延展为女性轮滑穿搭、动作测试与防护装备分工指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
