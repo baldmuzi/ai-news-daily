@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>出海 AI 洞察 — 第 0079 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#080c14; --surface:#0f1623; --surface-2:#142032; --border:#1f2d3f; --accent:#10b981; --accent-2:#34d399; --text:#e5eef7; --muted:#94a3b8; --dim:#64748b; --tag-bg:rgba(16,185,129,0.12); --shadow:0 24px 60px rgba(0,0,0,0.28); }
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    body { background:radial-gradient(circle at top left, rgba(16,185,129,0.14), transparent 28%),radial-gradient(circle at top right, rgba(52,211,153,0.08), transparent 24%),var(--bg); color:var(--text); font-family:"Noto Serif SC",serif; line-height:1.75; min-height:100vh; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { max-width:1080px; margin:0 auto; padding:2rem 1.2rem 4rem; }
+    .back-link { display:inline-flex; align-items:center; color:var(--accent); border:1px solid rgba(16,185,129,0.28); border-radius:999px; padding:0.4rem 0.8rem; font-family:"JetBrains Mono",monospace; font-size:0.72rem; background:rgba(16,185,129,0.1); }
+    header { padding:3rem 0 2.2rem; border-bottom:1px solid var(--border); }
+    .kicker { color:var(--accent); font-family:"JetBrains Mono",monospace; font-size:0.76rem; letter-spacing:0.16em; text-transform:uppercase; }
+    h1 { margin-top:0.62rem; font-size:clamp(2.3rem,6vw,4.8rem); line-height:1.14; letter-spacing:0.06em; }
+    .subtitle { margin-top:0.8rem; color:var(--muted); font-size:clamp(0.92rem,2vw,1.1rem); }
+    .meta { display:flex; flex-wrap:wrap; gap:0.7rem 1.2rem; margin-top:1.5rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.72rem; }
+    .intro { margin-top:1.6rem; max-width:820px; padding:1rem 1.1rem; border-left:3px solid var(--accent); border-radius:0 14px 14px 0; color:#cfe9df; background:linear-gradient(90deg,rgba(16,185,129,0.12),rgba(15,22,35,0.56)); }
+    .tags { display:flex; flex-wrap:wrap; gap:0.55rem; margin-top:1.1rem; }
+    .tag { color:var(--accent-2); background:var(--tag-bg); border:1px solid rgba(16,185,129,0.2); border-radius:999px; padding:0.28rem 0.7rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .cards { display:grid; gap:1.15rem; margin-top:2rem; }
+    .card { position:relative; overflow:hidden; padding:1.3rem 1.35rem 1.2rem; border:1px solid var(--border); border-radius:20px; background:linear-gradient(145deg,rgba(20,32,50,0.94),rgba(11,18,29,0.98)); box-shadow:var(--shadow); }
+    .card::before { content:""; position:absolute; inset:0 auto 0 0; width:3px; background:linear-gradient(180deg,var(--accent),transparent 86%); }
+    .card-header { display:grid; grid-template-columns:auto auto minmax(0,1fr); align-items:start; gap:0.65rem; }
+    .num,.cat { margin-top:0.15rem; border-radius:999px; font-family:"JetBrains Mono",monospace; font-size:0.64rem; white-space:nowrap; }
+    .num { color:var(--dim); padding:0.2rem 0; }
+    .cat { color:#a7f3d0; background:var(--tag-bg); border:1px solid rgba(16,185,129,0.22); padding:0.2rem 0.58rem; }
+    .title-link { display:block; font-size:clamp(1rem,2.1vw,1.22rem); font-weight:700; line-height:1.55; transition:color 0.18s ease; }
+    .title-link:hover { color:var(--accent-2); }
+    .source { margin-top:0.62rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .comment { margin-top:0.95rem; color:#c8d5e4; font-size:0.93rem; }
+    .footer { display:flex; justify-content:flex-end; margin-top:1rem; }
+    .button { color:var(--accent-2); border:1px solid rgba(16,185,129,0.32); border-radius:999px; padding:0.38rem 0.78rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; transition:background 0.18s ease,border-color 0.18s ease; }
+    .button:hover { background:rgba(16,185,129,0.1); border-color:var(--accent); }
+    body>footer { padding:0 1rem 2.5rem; color:var(--dim); text-align:center; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    @media (max-width:640px) { .wrap { padding:1.2rem 0.92rem 3rem; } header { padding:2rem 0 1.6rem; } .card { padding:1.05rem 1rem 1rem; } .card-header { grid-template-columns:auto minmax(0,1fr); } .cat { justify-self:start; max-width:100%; } .title-wrap { grid-column:1/-1; min-width:0; } .title-link,.source,.comment { overflow-wrap:anywhere; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="back-link" href="../business/">← 返回存档</a>
+    <header>
+      <div class="kicker">Edition 0079 · AI Product &amp; Data Brief</div>
+      <h1>出海 AI 洞察</h1>
+      <p class="subtitle">跨境电商 · 可持续发展 · AI 应用实战</p>
+      <div class="meta"><span>2026年8月18日 09:13</span><span>TOP 10</span><span>面向产品经理与数据分析师</span></div>
+      <p class="intro">AI正在重塑出海鞋类电商的商品可发现性、退货风控与供应链执行，环保采购也从报表走向可验证的智能体数据闭环。</p>
+      <div class="tags"><span class="tag">智能体购物</span><span class="tag">退货风控</span><span class="tag">AI可发现性</span><span class="tag">供应链代理</span><span class="tag">绿色采购</span></div>
+    </header>
+    <section class="cards">
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.01</span><span class="cat">数据分析</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.techradar.com/pro/ai-image-tools-a-game-changer-for-creativity-and-retails-multi-billion-dollar-abuse-problem" target="_blank" rel="noreferrer">AI改图让退货欺诈进入批量伪证时代</a></div>
+        </div>
+        <div class="source">TechRadar · 2026-08-12</div>
+        <div class="comment">【是什么】生成式图像工具可批量伪造收据与损坏图，欺诈检测必须联合身份、设备、交易和索赔上下文。<br />【对我们意味着什么】鞋类退货审核应把图片证据降级为单一信号，用跨账户模式识别隔离风险而不普遍拖慢正常退款。</div>
+        <div class="footer"><a class="button" href="https://www.techradar.com/pro/ai-image-tools-a-game-changer-for-creativity-and-retails-multi-billion-dollar-abuse-problem" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.02</span><span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.project44.com/events/ai-virtual-summit-august-2026/" target="_blank" rel="noreferrer">project44让供应链代理自动改约与补数据</a></div>
+        </div>
+        <div class="source">project44 · 2026-08-13</div>
+        <div class="comment">【是什么】project44以物流数据图和世界模型驱动代理，预测延误后自动补齐承运数据、重订月台并发起受控采购。<br />【对我们意味着什么】跨境鞋履可先在高成本延误场景试点，重点记录预测置信度、人工接管率和每次自动动作的审计链。</div>
+        <div class="footer"><a class="button" href="https://www.project44.com/events/ai-virtual-summit-august-2026/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.03</span><span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.prnewswire.com/news-releases/ai-agents-are-already-shopping-and-most-merchants-arent-ready-new-research-finds-302840449.html" target="_blank" rel="noreferrer">WooCommerce提醒：AI代理只采购可验证的商品</a></div>
+        </div>
+        <div class="source">WooCommerce / IDC · 2026-08-03</div>
+        <div class="comment">【是什么】IDC研究称购物代理以结构化商品、实时库存与准确价格判断品牌，开放的MCP与数据栈决定能否被发现。<br />【对我们意味着什么】鞋类PDP要把尺码、材质、库存、运费和退货政策变成机器可读字段，并持续监测代理抓取错误。</div>
+        <div class="footer"><a class="button" href="https://www.prnewswire.com/news-releases/ai-agents-are-already-shopping-and-most-merchants-arent-ready-new-research-finds-302840449.html" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.04</span><span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.modernretail.co/sponsored/the-state-of-agentic-storefronts-how-ai-agents-guide-shoppers-on-frictionless-full-funnel-journeys/" target="_blank" rel="noreferrer">品牌正把静态站改造成会对话的代理店铺</a></div>
+        </div>
+        <div class="source">Modern Retail · 2026-07-15</div>
+        <div class="comment">【是什么】代理店铺用对话式发现、个性化推荐、虚拟试穿和聊天内购买串起全漏斗，并沉淀比点击更丰富的意图数据。<br />【对我们意味着什么】鞋类PM可把传统站与代理体验并行测试，比较转化、客单、退货率与对话中未满足的尺码需求。</div>
+        <div class="footer"><a class="button" href="https://www.modernretail.co/sponsored/the-state-of-agentic-storefronts-how-ai-agents-guide-shoppers-on-frictionless-full-funnel-journeys/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.05</span><span class="cat">可持续合规</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.prnewswire.com/news-releases/coupa-releases-fy26-sustainability-report-outlining-progress-in-ai-governance-and-climate-commitments-302835715.html" target="_blank" rel="noreferrer">Coupa用采购AI把可持续指标带进交易决策</a></div>
+        </div>
+        <div class="source">Coupa · 2026-07-28</div>
+        <div class="comment">【是什么】Coupa以采购数据集和自主代理呈现供应商多元化、碳强度与合规信号，把可持续洞察嵌入Source-to-Pay。<br />【对我们意味着什么】环保鞋团队可把再生材料证据、供应商评分与采购审批联动，让成本、交期和ESG在同一规则中权衡。</div>
+        <div class="footer"><a class="button" href="https://www.prnewswire.com/news-releases/coupa-releases-fy26-sustainability-report-outlining-progress-in-ai-governance-and-climate-commitments-302835715.html" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.06</span><span class="cat">消费洞察</span>
+          <div class="title-wrap"><a class="title-link" href="https://retailtimes.co.uk/ai-agents-are-reshaping-the-uk-path-to-purchase-new-cit-data-shows/" target="_blank" rel="noreferrer">CI&amp;T：购物代理已成为消费者的新比较入口</a></div>
+        </div>
+        <div class="source">Retail Times / CI&amp;T · 2026-07-22</div>
+        <div class="comment">【是什么】CI&amp;T调研显示，英国与爱尔兰68%受访者已用AI代理辅助购物，代理开始跨品牌实时比较并影响购买路径。<br />【对我们意味着什么】数据团队应新增“代理辅助”来源和意图字段，比较其客单、转化、退货与新客贡献，避免只看引荐点击。</div>
+        <div class="footer"><a class="button" href="https://retailtimes.co.uk/ai-agents-are-reshaping-the-uk-path-to-purchase-new-cit-data-shows/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.07</span><span class="cat">电商增长</span>
+          <div class="title-wrap"><a class="title-link" href="https://36kr.com/p/3905136359441543" target="_blank" rel="noreferrer">快手把AI购物助手嵌进搜索与一键加购</a></div>
+        </div>
+        <div class="source">36氪 · 2026-07-21</div>
+        <div class="comment">【是什么】快手在商品搜索页上线AI购物助手，可按预算与参数筛选、横向比较并直接加入购物车。<br />【对我们意味着什么】出海鞋站可测试“场景+脚型+预算”的对话筛选，但要校验尺码、库存与优惠是否实时一致。</div>
+        <div class="footer"><a class="button" href="https://36kr.com/p/3905136359441543" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.08</span><span class="cat">数据分析</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.prnewswire.com/news-releases/a-comm-technologies-inc-opens-public-comment-on-evidence-standard-for-agentic-commerce-302829047.html" target="_blank" rel="noreferrer">AEP为代理结账建立可复核证据链</a></div>
+        </div>
+        <div class="source">A-Comm · 2026-07-20</div>
+        <div class="comment">【是什么】开源A-Comm Evidence Protocol把发现、授权、购物车到履约事件封装进防篡改哈希链，可独立复核。<br />【对我们意味着什么】接入代理支付时应保存用户意图、权限、价格版本与人工批准，以便处理跨境争议、拒付和审计。</div>
+        <div class="footer"><a class="button" href="https://www.prnewswire.com/news-releases/a-comm-technologies-inc-opens-public-comment-on-evidence-standard-for-agentic-commerce-302829047.html" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.09</span><span class="cat">供应链</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.prnewswire.com/news-releases/instacart-acquires-arpalus-to-advance-real-time-shelf-intelligence-across-grocery-retail-302827054.html" target="_blank" rel="noreferrer">Instacart用计算机视觉修正线上库存</a></div>
+        </div>
+        <div class="source">Instacart · 2026-07-16</div>
+        <div class="comment">【是什么】Instacart收购Arpalus后，将实时货架视觉信号接入Store View与Caper Carts，提升缺货和目录准确性。<br />【对我们意味着什么】鞋类全渠道可用门店图像校准尺码库存，优先观察取消率、替代率和“有货不可售”的数据差。</div>
+        <div class="footer"><a class="button" href="https://www.prnewswire.com/news-releases/instacart-acquires-arpalus-to-advance-real-time-shelf-intelligence-across-grocery-retail-302827054.html" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-header">
+          <span class="num">No.10</span><span class="cat">营销工具</span>
+          <div class="title-wrap"><a class="title-link" href="https://www.cision.com/about/press-releases/2026-press-releases/cision-adds-ai-search-visibility-to-cisionone-helping-pr-teams-track-how-brands-appear-in-ai-answers-302825235/" target="_blank" rel="noreferrer">Cision把品牌在九类AI答案中的曝光量化</a></div>
+        </div>
+        <div class="source">Cision · 2026-07-14</div>
+        <div class="comment">【是什么】CisionOne新增AI Visibility Dashboard，跟踪ChatGPT、Gemini、Claude等平台中的品牌可见度、情绪与引用来源。<br />【对我们意味着什么】营销分析可建立鞋类核心问题集，按市场比较AI声量与引用媒体，再把变化关联自然流量和转化。</div>
+        <div class="footer"><a class="button" href="https://www.cision.com/about/press-releases/2026-press-releases/cision-adds-ai-search-visibility-to-cisionone-helping-pr-teams-track-how-brands-appear-in-ai-answers-302825235/" target="_blank" rel="noreferrer">阅读原文 →</a></div>
+      </article>
+    </section>
+  </main>
+  <footer>Edition 0079 · 出海 AI 洞察</footer>
+</body>
+</html>
