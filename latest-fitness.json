@@ -1,33 +1,33 @@
 {
-  "edition": "0062",
-  "date": "2026年8月17日 14:07",
-  "intro": "从女性社交网球、50+力量社群到社区混合赛事，本期关注运动即连接的新场景，提炼压缩服跨活动、跨年龄与线下社群的内容机会。",
+  "edition": "0063",
+  "date": "2026年8月18日 09:21",
+  "intro": "从健身投入、女性运动装备到微习惯训练，本期捕捉功能型运动服、恢复节奏与真实场景验证的新变化，为 Fanka 压缩服内容提供全球选题。",
   "tags": [
-    "社交运动",
-    "女性网球",
-    "主动老龄化",
-    "社区健身",
-    "混合赛事"
+    "健身投入",
+    "功能型运动服",
+    "女性运动装备",
+    "微习惯训练",
+    "恢复节奏"
   ],
   "top3": [
     {
-      "title": "Pickleball 与 Mat Pilates 组合",
-      "comment": "围绕侧向移动、热身和社交场景，做球场前后同一套穿搭测试"
+      "title": "健身成为不可妥协的长期投入",
+      "comment": "用30次穿着日志证明压缩服长期价值，不只做一次开箱"
     },
     {
-      "title": "50+力量社群双周见面",
-      "comment": "用可调整支撑与舒适活动范围，讲长期训练而非抗老口号"
+      "title": "女性运动服功能问题更具体",
+      "comment": "围绕大胸适配、遮盖度、口袋和多项目切换做统一测试"
     },
     {
-      "title": "DEKA三站排行榜机制",
-      "comment": "把跑、推、提重物拆成同一条裤子的三种动作测试"
+      "title": "女性运动装备成为个人符号",
+      "comment": "先讲真实防护与使用问题，再让产品进入人物故事"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0062.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0063.html",
   "blog": {
-    "title": "What to Wear for Pickleball and Social Tennis: A Women’s Activewear Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/what-to-wear-pickleball-social-tennis-women.html",
-    "summary": "由本期女性社交网球与 Pickleball 活动趋势延展为球场动作、支撑、收纳和场外叠穿指南"
+    "title": "What to Wear for Core Workouts: A Women’s Activewear Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/core-workout-outfits-for-women.html",
+    "summary": "由本期 shoulder tap 挑战延展为女性核心训练的腰头、支撑、地面动作与旋转适配指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
