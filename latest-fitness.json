@@ -1,33 +1,33 @@
 {
-  "edition": "0063",
-  "date": "2026年8月18日 09:21",
-  "intro": "从健身投入、女性运动装备到微习惯训练，本期捕捉功能型运动服、恢复节奏与真实场景验证的新变化，为 Fanka 压缩服内容提供全球选题。",
+  "edition": "0064",
+  "date": "2026年8月19日 09:16",
+  "intro": "从情绪释放舞蹈、女性力量社群到成熟人群训练与数字课程节奏，本期关注运动如何进入真实生活，并转化为 Fanka 压缩服与场景内容机会。",
   "tags": [
-    "健身投入",
-    "功能型运动服",
-    "女性运动装备",
-    "微习惯训练",
-    "恢复节奏"
+    "情绪释放舞蹈",
+    "女性力量社群",
+    "成熟人群训练",
+    "数字课程节奏",
+    "场景化运动服"
   ],
   "top3": [
     {
-      "title": "健身成为不可妥协的长期投入",
-      "comment": "用30次穿着日志证明压缩服长期价值，不只做一次开箱"
+      "title": "Bodyroll 把舞蹈与情绪释放合并",
+      "comment": "用自由舞动测试腰头与肩带，让情绪而非卡路里成为入口"
     },
     {
-      "title": "女性运动服功能问题更具体",
-      "comment": "围绕大胸适配、遮盖度、口袋和多项目切换做统一测试"
+      "title": "数字课程供给节奏影响会员留存",
+      "comment": "建立固定周菜单与下周预告，让内容连续性带来回访"
     },
     {
-      "title": "女性运动装备成为个人符号",
-      "comment": "先讲真实防护与使用问题，再让产品进入人物故事"
+      "title": "女性力量叙事离开单一体重指标",
+      "comment": "用动作、提重、衣服贴合和精力记录真实进步"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0063.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0064.html",
   "blog": {
-    "title": "What to Wear for Core Workouts: A Women’s Activewear Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/core-workout-outfits-for-women.html",
-    "summary": "由本期 shoulder tap 挑战延展为女性核心训练的腰头、支撑、地面动作与旋转适配指南"
+    "title": "What to Wear for Dance Fitness: A Women’s Movement and Fit Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/emotion-led-dance-workout-outfits-women.html",
+    "summary": "由本期情绪释放型公共舞蹈健身趋势延展为女性自由舞动、支撑、腰头与出门前动作测试指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
