@@ -1,27 +1,27 @@
 {
-  "edition": "0080",
-  "date": "2026年8月19日 09:09",
-  "intro": "AI正在把出海鞋类电商的发现、投放与履约变成可执行代理，同时用可追溯数据把环保合规嵌入选品和供应链。",
+  "edition": "0081",
+  "date": "2026年8月20日 09:25",
+  "intro": "AI正把出海鞋类电商的商品、支付与营销数据交给智能体执行，同时用可追溯供应链降低库存浪费与环保合规成本。",
   "tags": [
-    "代理购物",
-    "AI可发现性",
-    "营销归因",
-    "绿色追溯",
-    "跨境提效"
+    "绿色智能体",
+    "鞋业数据底座",
+    "代理支付",
+    "AI广告测量",
+    "消费决策迁移"
   ],
   "top3": [
     {
-      "title": "AI导流正在成为零售站的高价值入口",
-      "comment": "AI流量转化和每次访问收入更高，鞋类站应单独追踪代理来源与质量。"
+      "title": "Crocs用AI优先架构统一鞋类业务数据",
+      "comment": "鞋类企业应先打通SKU、库存与订单主数据，再扩展自动化。"
     },
     {
-      "title": "Google Universal Cart把代理从推荐推进到付款",
-      "comment": "代理结账要求商品、价格、库存和授权证据都变成机器可读。"
+      "title": "Similarweb首次把AI广告变成可观测渠道",
+      "comment": "把ChatGPT与Google AI广告单列渠道，按对话意图评估投放。"
     },
     {
-      "title": "假日购物前，消费者先让AI比价和找优惠",
-      "comment": "旺季要把尺码、材质、运费和优惠做成可引用答案，承接AI比较流量。"
+      "title": "Athena把跨境店铺运营交给一个智能体",
+      "comment": "产品、支付与归因共用事件模型，并保留预览和人工批准。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0080.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0081.html"
 }

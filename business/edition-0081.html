@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>出海 AI 洞察 — 第 0081 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#080c14; --surface:#0f1623; --surface-2:#142032; --border:#1f2d3f; --accent:#10b981; --accent-2:#34d399; --text:#e5eef7; --muted:#94a3b8; --dim:#64748b; --tag-bg:rgba(16,185,129,0.12); --shadow:0 24px 60px rgba(0,0,0,0.28); }
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    body { background:radial-gradient(circle at top left, rgba(16,185,129,0.14), transparent 28%),radial-gradient(circle at top right, rgba(52,211,153,0.08), transparent 24%),var(--bg); color:var(--text); font-family:"Noto Serif SC",serif; line-height:1.75; min-height:100vh; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { max-width:1080px; margin:0 auto; padding:2rem 1.2rem 4rem; }
+    .back-link { display:inline-flex; align-items:center; color:var(--accent); border:1px solid rgba(16,185,129,0.28); border-radius:999px; padding:0.4rem 0.8rem; font-family:"JetBrains Mono",monospace; font-size:0.72rem; background:rgba(16,185,129,0.1); }
+    header { padding:3rem 0 2.2rem; border-bottom:1px solid var(--border); }
+    .kicker { color:var(--accent); font-family:"JetBrains Mono",monospace; font-size:0.76rem; letter-spacing:0.16em; text-transform:uppercase; }
+    h1 { margin-top:0.62rem; font-size:clamp(2.3rem,6vw,4.8rem); line-height:1.14; letter-spacing:0.06em; }
+    .subtitle { margin-top:0.8rem; color:var(--muted); font-size:clamp(0.92rem,2vw,1.1rem); }
+    .meta { display:flex; flex-wrap:wrap; gap:0.7rem 1.2rem; margin-top:1.5rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.72rem; }
+    .intro { margin-top:1.6rem; max-width:820px; padding:1rem 1.1rem; border-left:3px solid var(--accent); border-radius:0 14px 14px 0; color:#cfe9df; background:linear-gradient(90deg,rgba(16,185,129,0.12),rgba(15,22,35,0.56)); }
+    .tags { display:flex; flex-wrap:wrap; gap:0.55rem; margin-top:1.1rem; }
+    .tag { color:var(--accent-2); background:var(--tag-bg); border:1px solid rgba(16,185,129,0.2); border-radius:999px; padding:0.28rem 0.7rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .cards { display:grid; gap:1.15rem; margin-top:2rem; }
+    .card { position:relative; overflow:hidden; padding:1.3rem 1.35rem 1.2rem; border:1px solid var(--border); border-radius:20px; background:linear-gradient(145deg,rgba(20,32,50,0.94),rgba(11,18,29,0.98)); box-shadow:var(--shadow); }
+    .card::before { content:""; position:absolute; inset:0 auto 0 0; width:3px; background:linear-gradient(180deg,var(--accent),transparent 86%); }
+    .card-header { display:grid; grid-template-columns:auto auto minmax(0,1fr); align-items:start; gap:0.65rem; }
+    .num,.cat { margin-top:0.15rem; border-radius:999px; font-family:"JetBrains Mono",monospace; font-size:0.64rem; white-space:nowrap; }
+    .num { color:var(--dim); padding:0.2rem 0; }
+    .cat { color:#a7f3d0; background:var(--tag-bg); border:1px solid rgba(16,185,129,0.22); padding:0.2rem 0.58rem; }
+    .title-link { display:block; font-size:clamp(1rem,2.1vw,1.22rem); font-weight:700; line-height:1.55; transition:color 0.18s ease; }
+    .title-link:hover { color:var(--accent-2); }
+    .source { margin-top:0.62rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .comment { margin-top:0.95rem; color:#c8d5e4; font-size:0.93rem; }
+    .footer { display:flex; justify-content:flex-end; margin-top:1rem; }
+    .button { color:var(--accent-2); border:1px solid rgba(16,185,129,0.32); border-radius:999px; padding:0.38rem 0.78rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; transition:background 0.18s ease,border-color 0.18s ease; }
+    .button:hover { background:rgba(16,185,129,0.1); border-color:var(--accent); }
+    body>footer { padding:0 1rem 2.5rem; color:var(--dim); text-align:center; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    @media (max-width:640px) { .wrap { padding:1.2rem 0.92rem 3rem; } header { padding:2rem 0 1.6rem; } .card { padding:1.05rem 1rem 1rem; } .card-header { grid-template-columns:auto minmax(0,1fr); } .cat { justify-self:start; max-width:100%; } .title-wrap { grid-column:1/-1; min-width:0; } .title-link,.source,.comment { overflow-wrap:anywhere; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="back-link" href="../business/">← 返回存档</a>
+    <header>
+      <div class="kicker">Edition 0081 · AI Product &amp; Data Brief</div>
+      <h1>出海 AI 洞察</h1>
+      <p class="subtitle">跨境电商 · 可持续发展 · AI 应用实战</p>
+      <div class="meta"><span>2026年8月20日 09:25</span><span>TOP 10</span><span>面向产品经理与数据分析师</span></div>
+      <p class="intro">AI正把出海鞋类电商的商品、支付与营销数据交给智能体执行，同时用可追溯供应链降低库存浪费与环保合规成本。</p>
+      <div class="tags"><span class="tag">绿色智能体</span><span class="tag">鞋业数据底座</span><span class="tag">代理支付</span><span class="tag">AI广告测量</span><span class="tag">消费决策迁移</span></div>
+    </header>
+    <section class="cards">
+      <article class="card"><div class="card-header"><span class="num">No.01</span><span class="cat">可持续合规</span><div class="title-wrap"><a class="title-link" href="https://www.techradar.com/pro/the-next-phase-of-ai-adoption-could-change-the-future-of-supply-chains" target="_blank" rel="noreferrer">代理型供应链同时优化库存、路线与能耗</a></div></div><div class="source">TechRadar Pro · 2026-08-18</div><div class="comment">【是什么】代理式AI可预测需求、自动改道或切换供应商，并用全链路追踪减少库存浪费、运输能耗和不必要的等待。<br />【对我们意味着什么】环保鞋团队可把库存、交期、物流碳排和供应商证据放进同一决策流，用缺货率、报废量与单位订单排放共同验收。</div><div class="footer"><a class="button" href="https://www.techradar.com/pro/the-next-phase-of-ai-adoption-could-change-the-future-of-supply-chains" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.02</span><span class="cat">数据分析</span><div class="title-wrap"><a class="title-link" href="https://www.similarweb.com/corp/web/ai-ads/" target="_blank" rel="noreferrer">Similarweb首次把AI广告变成可观测渠道</a></div></div><div class="source">Similarweb · 2026-08-17 发布</div><div class="comment">【是什么】AI Ads用真实用户面板追踪ChatGPT、Google AI Mode与AI Overviews中的广告、创意、对话语境和竞争份额。<br />【对我们意味着什么】数据团队应把AI广告独立建渠道，按“对话意图—曝光语境—落地页—订单”串联，而不是继续套用单关键词归因。</div><div class="footer"><a class="button" href="https://www.similarweb.com/corp/web/ai-ads/" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.03</span><span class="cat">供应链</span><div class="title-wrap"><a class="title-link" href="https://www.retaildive.com/news/crocs-digital-upgrade-AI/827438/" target="_blank" rel="noreferrer">Crocs用AI优先架构统一鞋类业务数据</a></div></div><div class="source">Retail Dive · 2026-08-13</div><div class="comment">【是什么】Crocs与Infosys签署十年合作，以AI优先方式统一数据、打破业务与IT孤岛，并用高级自动化降低成本和提升韧性。<br />【对我们意味着什么】鞋类企业在扩展智能体前，应先统一SKU、库存、订单与客户主数据，否则自动化只会更快放大口径冲突。</div><div class="footer"><a class="button" href="https://www.retaildive.com/news/crocs-digital-upgrade-AI/827438/" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.04</span><span class="cat">电商增长</span><div class="title-wrap"><a class="title-link" href="https://m.ebrun.com/694136.html" target="_blank" rel="noreferrer">天猫AI生意管家把新店经营压缩到一个对话入口</a></div></div><div class="source">亿邦动力 · 2026-08-13</div><div class="comment">【是什么】新商版经营Agent覆盖素材制作、上新发品、流量推广和经营分析，商家用自然语言下达需求后由AI拆解并输出结果。<br />【对我们意味着什么】出海鞋类可先试“每日巡检—建议—预览—人工批准”闭环，分别记录节省工时、采纳率和误操作率。</div><div class="footer"><a class="button" href="https://m.ebrun.com/694136.html" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.05</span><span class="cat">电商增长</span><div class="title-wrap"><a class="title-link" href="https://en.prnasia.com/releases/global/shoplazza-spotlights-athena-its-ai-commerce-agent-at-dtc-summit-2026-543647.shtml" target="_blank" rel="noreferrer">Athena把跨境店铺运营、支付与归因交给一个智能体</a></div></div><div class="source">PR Newswire APAC / Shoplazza · 2026-08-11</div><div class="comment">【是什么】Athena通过对话管理商品、营销、订单与分析，还可优化支付路由和广告归因，并在批量变更上线前提供预览确认。<br />【对我们意味着什么】多站点鞋类运营应先统一商品、支付和营销事件模型，再用审批日志约束跨系统自动执行。</div><div class="footer"><a class="button" href="https://en.prnasia.com/releases/global/shoplazza-spotlights-athena-its-ai-commerce-agent-at-dtc-summit-2026-543647.shtml" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.06</span><span class="cat">电商增长</span><div class="title-wrap"><a class="title-link" href="https://www.digitalcommerce360.com/2026/08/06/how-shopify-is-approaching-agentic-ai-2026/" target="_blank" rel="noreferrer">Shopify把十亿级商品目录蒸馏成代理可读事实源</a></div></div><div class="source">Digital Commerce 360 · 2026-08-06</div><div class="comment">【是什么】Shopify将二十年、十亿级商品数据结构化给大模型和购物代理，称基于Catalog的AI搜索转化率是抓取数据的两倍。<br />【对我们意味着什么】鞋类商品的尺码、材质、库存、运费与退货政策要进入统一事实源，并持续监测代理读取缺失字段。</div><div class="footer"><a class="button" href="https://www.digitalcommerce360.com/2026/08/06/how-shopify-is-approaching-agentic-ai-2026/" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.07</span><span class="cat">电商增长</span><div class="title-wrap"><a class="title-link" href="https://m.ebrun.com/695442.html" target="_blank" rel="noreferrer">Synchrony把零售卡优惠与融资带进ChatGPT购物链路</a></div></div><div class="source">亿邦动力 / Synchrony · 2026-08-18</div><div class="comment">【是什么】Synchrony与OpenAI合作，把门店卡、消费融资、奖励和忠诚度优惠接入AI原生购物与结账，并推出ChatGPT内优惠入口。<br />【对我们意味着什么】鞋类品牌接入代理支付时，应拆分优惠资格、授权、支付与退款事件，避免把推荐点击误算成真实成交。</div><div class="footer"><a class="button" href="https://m.ebrun.com/695442.html" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.08</span><span class="cat">消费洞察</span><div class="title-wrap"><a class="title-link" href="https://www.pymnts.com/study_posts/the-50-million-consumer-migration-the-data-behind-retails-shift-toward-ai-discovery/" target="_blank" rel="noreferrer">近五千万美国消费者把AI当作零售研究起点</a></div></div><div class="source">PYMNTS Intelligence · 2026-08</div><div class="comment">【是什么】调查估算约4960万美国成年人从AI开始商品研究，使用AI研究的消费者中83%至少改变了价格、品牌、商品或商家选择。<br />【对我们意味着什么】数据分析不能只看末次点击，应增加“进入候选、品牌切换、新商家发现”等AI影响指标。</div><div class="footer"><a class="button" href="https://www.pymnts.com/study_posts/the-50-million-consumer-migration-the-data-behind-retails-shift-toward-ai-discovery/" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.09</span><span class="cat">消费洞察</span><div class="title-wrap"><a class="title-link" href="https://www.retaildive.com/news/retail-shoppers-warm-up-agentic-ai-purchases/827563/" target="_blank" rel="noreferrer">代理购物接受度上升，但退货与人工复核仍是开关</a></div></div><div class="source">Retail Dive · 2026-08-13</div><div class="comment">【是什么】调查显示，提供七天退货保障时，42%的美国千禧一代愿让AI在250美元预算内代购；35%的受访者仍希望人工复核。<br />【对我们意味着什么】鞋类尺码与适配不确定性高，代理下单必须明确预算、尺码依据、退货条件和最终确认责任。</div><div class="footer"><a class="button" href="https://www.retaildive.com/news/retail-shoppers-warm-up-agentic-ai-purchases/827563/" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.10</span><span class="cat">营销工具</span><div class="title-wrap"><a class="title-link" href="https://www.retaildive.com/spons/why-retails-biggest-ai-assumption-is-wrong/826404/" target="_blank" rel="noreferrer">品牌预算不等于AI可见，结构化商品数据才是底座</a></div></div><div class="source">Retail Dive / Rezolve Ai（赞助内容）· 2026-08-17</div><div class="comment">【是什么】AI答案引擎更看重商品信息能否准确映射自然语言需求，而不是品牌知名度、广告预算或传统SEO积累。<br />【对我们意味着什么】鞋类团队应建立舒适度、材质、尺码和场景提示词测试集，持续跟踪答案入选率、引用来源和事实错误。</div><div class="footer"><a class="button" href="https://www.retaildive.com/spons/why-retails-biggest-ai-assumption-is-wrong/826404/" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+    </section>
+  </main>
+  <footer>Edition 0081 · 出海 AI 洞察</footer>
+</body>
+</html>
