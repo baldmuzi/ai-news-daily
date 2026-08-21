@@ -1,33 +1,33 @@
 {
-  "edition": "0065",
-  "date": "2026年8月20日 09:15",
-  "intro": "从短时舞动、筋膜释放到女性身体觉察与社群型健康活动，本期捕捉运动如何变得更柔软、更可进入，也为 Fanka 压缩服寻找新场景。",
+  "edition": "0066",
+  "date": "2026年8月21日 09:30",
+  "intro": "从节奏型 barre、包容性线上训练到 Find Your Fit 尺码服务，本期关注运动如何降低进入门槛，并为 Fanka 压缩服寻找更清晰的长度、支撑与场景表达。",
   "tags": [
-    "情绪驱动运动",
-    "筋膜释放",
-    "女性身体觉察",
-    "短时健康习惯",
-    "社群型运动"
+    "节奏型力量",
+    "包容性训练",
+    "女性尺码服务",
+    "零售谨慎消费",
+    "社群运动入口"
   ],
   "top3": [
     {
-      "title": "Twerkshop 把好玩与初学者动作教学放进同一堂课",
-      "comment": "用甩髋、下蹲和转体测试腰头稳定与面料回弹"
+      "title": "BarrePilates 把节奏、阻力与呼吸写进同一堂入门课",
+      "comment": "用脉冲、深蹲和呼吸动作测试腰头稳定与面料回弹"
     },
     {
-      "title": "Quick Minutes 用短课与社群支持承接长期坚持",
-      "comment": "做 7 天短课衣橱打卡，让栏目连续性带来回访"
+      "title": "SitGrit 用全坐姿线上课程扩展力量与有氧的参与入口",
+      "comment": "做坐姿抬臂、转体与长时间课程的舒适度检查"
     },
     {
-      "title": "女性健康工作坊把运动、恢复与睡眠放进入门地图",
-      "comment": "用按场景选衣清单连接训练、通勤和休息日"
+      "title": "女性跑步品牌用腿长选项和尺码问答减少买衣猜测",
+      "comment": "把身高、裤长、腰头和动作选择器做成可保存内容"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0065.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0066.html",
   "blog": {
-    "title": "What to Wear for Somatic Movement: A Women’s Gentle Mobility Outfit Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/somatic-movement-outfits-for-women.html",
-    "summary": "由本期女性身体觉察与温和活动课程信号延展为呼吸、柔和压缩、五分钟 fit check 与工作室到日常穿搭指南"
+    "title": "How to Choose Running Leggings by Length and Fit: A Women’s Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/how-to-choose-running-leggings-by-length-fit.html",
+    "summary": "由本期 Bimble & Bolt Find Your Fit 趋势延展为女性跑步裤长、腰头、支撑与五分钟 fit check 指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
