@@ -1,27 +1,27 @@
 {
-  "edition": "0081",
-  "date": "2026年8月20日 09:25",
-  "intro": "AI正把出海鞋类电商的商品、支付与营销数据交给智能体执行，同时用可追溯供应链降低库存浪费与环保合规成本。",
+  "edition": "0082",
+  "date": "2026年8月24日 09:10",
+  "intro": "AI正把出海鞋类电商的补货、推荐与营销变成实时决策系统，也让环保包装证据从分散文档走向可审计数据。",
   "tags": [
-    "绿色智能体",
-    "鞋业数据底座",
-    "代理支付",
-    "AI广告测量",
-    "消费决策迁移"
+    "零售智能体",
+    "实时意图推荐",
+    "鞋类GEO",
+    "营销增量测量",
+    "包装证据链"
   ],
   "top3": [
     {
-      "title": "Crocs用AI优先架构统一鞋类业务数据",
-      "comment": "鞋类企业应先打通SKU、库存与订单主数据，再扩展自动化。"
+      "title": "来伊份把200多个智能体放进零售运营",
+      "comment": "从补货、纠错到巡店和审批，用业务结果验收智能体。"
     },
     {
-      "title": "Similarweb首次把AI广告变成可观测渠道",
-      "comment": "把ChatGPT与Google AI广告单列渠道，按对话意图评估投放。"
+      "title": "零售分析升级为自动发现与闭环派单",
+      "comment": "让异常指标触发责任人和结果回写，而非停在仪表盘。"
     },
     {
-      "title": "Athena把跨境店铺运营交给一个智能体",
-      "comment": "产品、支付与归因共用事件模型，并保留预览和人工批准。"
+      "title": "AI代理把包装材料转成PPWR证据链",
+      "comment": "建立鞋盒与运输包装的SKU级材料和供应商证据。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0081.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0082.html"
 }

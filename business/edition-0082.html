@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>出海 AI 洞察 — 第 0082 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#080c14; --surface:#0f1623; --surface-2:#142032; --border:#1f2d3f; --accent:#10b981; --accent-2:#34d399; --text:#e5eef7; --muted:#94a3b8; --dim:#64748b; --tag-bg:rgba(16,185,129,0.12); --shadow:0 24px 60px rgba(0,0,0,0.28); }
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    body { background:radial-gradient(circle at top left, rgba(16,185,129,0.14), transparent 28%),radial-gradient(circle at top right, rgba(52,211,153,0.08), transparent 24%),var(--bg); color:var(--text); font-family:"Noto Serif SC",serif; line-height:1.75; min-height:100vh; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { max-width:1080px; margin:0 auto; padding:2rem 1.2rem 4rem; }
+    .back-link { display:inline-flex; align-items:center; color:var(--accent); border:1px solid rgba(16,185,129,0.28); border-radius:999px; padding:0.4rem 0.8rem; font-family:"JetBrains Mono",monospace; font-size:0.72rem; background:rgba(16,185,129,0.1); }
+    header { padding:3rem 0 2.2rem; border-bottom:1px solid var(--border); }
+    .kicker { color:var(--accent); font-family:"JetBrains Mono",monospace; font-size:0.76rem; letter-spacing:0.16em; text-transform:uppercase; }
+    h1 { margin-top:0.62rem; font-size:clamp(2.3rem,6vw,4.8rem); line-height:1.14; letter-spacing:0.06em; }
+    .subtitle { margin-top:0.8rem; color:var(--muted); font-size:clamp(0.92rem,2vw,1.1rem); }
+    .meta { display:flex; flex-wrap:wrap; gap:0.7rem 1.2rem; margin-top:1.5rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.72rem; }
+    .intro { margin-top:1.6rem; max-width:820px; padding:1rem 1.1rem; border-left:3px solid var(--accent); border-radius:0 14px 14px 0; color:#cfe9df; background:linear-gradient(90deg,rgba(16,185,129,0.12),rgba(15,22,35,0.56)); }
+    .tags { display:flex; flex-wrap:wrap; gap:0.55rem; margin-top:1.1rem; }
+    .tag { color:var(--accent-2); background:var(--tag-bg); border:1px solid rgba(16,185,129,0.2); border-radius:999px; padding:0.28rem 0.7rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .cards { display:grid; gap:1.15rem; margin-top:2rem; }
+    .card { position:relative; overflow:hidden; padding:1.3rem 1.35rem 1.2rem; border:1px solid var(--border); border-radius:20px; background:linear-gradient(145deg,rgba(20,32,50,0.94),rgba(11,18,29,0.98)); box-shadow:var(--shadow); }
+    .card::before { content:""; position:absolute; inset:0 auto 0 0; width:3px; background:linear-gradient(180deg,var(--accent),transparent 86%); }
+    .card-header { display:grid; grid-template-columns:auto auto minmax(0,1fr); align-items:start; gap:0.65rem; }
+    .num,.cat { margin-top:0.15rem; border-radius:999px; font-family:"JetBrains Mono",monospace; font-size:0.64rem; white-space:nowrap; }
+    .num { color:var(--dim); padding:0.2rem 0; }
+    .cat { color:#a7f3d0; background:var(--tag-bg); border:1px solid rgba(16,185,129,0.22); padding:0.2rem 0.58rem; }
+    .title-link { display:block; font-size:clamp(1rem,2.1vw,1.22rem); font-weight:700; line-height:1.55; transition:color 0.18s ease; }
+    .title-link:hover { color:var(--accent-2); }
+    .source { margin-top:0.62rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .comment { margin-top:0.95rem; color:#c8d5e4; font-size:0.93rem; }
+    .footer { display:flex; justify-content:flex-end; margin-top:1rem; }
+    .button { color:var(--accent-2); border:1px solid rgba(16,185,129,0.32); border-radius:999px; padding:0.38rem 0.78rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; transition:background 0.18s ease,border-color 0.18s ease; }
+    .button:hover { background:rgba(16,185,129,0.1); border-color:var(--accent); }
+    body>footer { padding:0 1rem 2.5rem; color:var(--dim); text-align:center; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    @media (max-width:640px) { .wrap { padding:1.2rem 0.92rem 3rem; } header { padding:2rem 0 1.6rem; } .card { padding:1.05rem 1rem 1rem; } .card-header { grid-template-columns:auto minmax(0,1fr); } .cat { justify-self:start; max-width:100%; } .title-wrap { grid-column:1/-1; min-width:0; } .title-link,.source,.comment { overflow-wrap:anywhere; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="back-link" href="../business/">← 返回存档</a>
+    <header>
+      <div class="kicker">Edition 0082 · AI Product &amp; Data Brief</div>
+      <h1>出海 AI 洞察</h1>
+      <p class="subtitle">跨境电商 · 可持续发展 · AI 应用实战</p>
+      <div class="meta"><span>2026年8月24日 09:10</span><span>TOP 10</span><span>面向产品经理与数据分析师</span></div>
+      <p class="intro">AI正把出海鞋类电商的补货、推荐与营销变成实时决策系统，也让环保包装证据从分散文档走向可审计数据。</p>
+      <div class="tags"><span class="tag">零售智能体</span><span class="tag">实时意图推荐</span><span class="tag">鞋类GEO</span><span class="tag">营销增量测量</span><span class="tag">包装证据链</span></div>
+    </header>
+    <section class="cards">
+      <article class="card"><div class="card-header"><span class="num">No.01</span><span class="cat">供应链</span><div class="title-wrap"><a class="title-link" href="https://www.eeo.com.cn/2026/0823/1008827.shtml" target="_blank" rel="noreferrer">来伊份把200多个智能体放进补货、巡店与审批</a></div></div><div class="source">经济观察网 · 2026-08-23</div><div class="comment">【是什么】来伊份与火山引擎把预测补货、商品纠错、多模态巡店和自动审批做成200多个零售智能体，覆盖“货”与“店”的日常流程。<br />【对我们意味着什么】鞋类团队可先从补货建议、商品属性纠错和门店异常识别切入，用缺货率、错码率、审批时长和人工接管率验收。</div><div class="footer"><a class="button" href="https://www.eeo.com.cn/2026/0823/1008827.shtml" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.02</span><span class="cat">数据分析</span><div class="title-wrap"><a class="title-link" href="https://retailnext.net/resources/blog/retailnext-cro-perspective-the-next-two-years-of-retail-analytics?hs_amp=true" target="_blank" rel="noreferrer">零售分析从周报升级为自动发现、派单和闭环复盘</a></div></div><div class="source">RetailNext · 2026-08-21</div><div class="comment">【是什么】AI原生零售平台把客流、设备和门店绩效信号实时转成工单、预测排班和管理动作，并追踪问题是否解决。<br />【对我们意味着什么】数据团队应让异常指标直接触发责任人、截止时间和结果回写，避免洞察停留在仪表盘阅读量。</div><div class="footer"><a class="button" href="https://retailnext.net/resources/blog/retailnext-cro-perspective-the-next-two-years-of-retail-analytics?hs_amp=true" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.03</span><span class="cat">营销工具</span><div class="title-wrap"><a class="title-link" href="https://www.modernretail.co/marketing/the-new-ai-playbook-the-rules-brands-are-setting-around-customer-facing-content/" target="_blank" rel="noreferrer">品牌开始为AI广告素材划定可用场景与禁区</a></div></div><div class="source">Modern Retail · 2026-08-20</div><div class="comment">【是什么】零售品牌用生成式AI扩展旧素材、制作图生视频和低成本长尾SKU广告，同时限制虚拟人物与高信任场景的使用。<br />【对我们意味着什么】鞋类素材工作流要记录生成方式、人工复核和适用渠道，并把商品结构、材质与穿着效果失真列为硬性拦截项。</div><div class="footer"><a class="button" href="https://www.modernretail.co/marketing/the-new-ai-playbook-the-rules-brands-are-setting-around-customer-facing-content/" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.04</span><span class="cat">营销工具</span><div class="title-wrap"><a class="title-link" href="https://www.techradar.com/pro/from-experimentation-to-execution-why-ai-in-b2b-marketing-must-now-prove-commercial-value" target="_blank" rel="noreferrer">营销AI从内容试验转向线索、测量与收入证明</a></div></div><div class="source">TechRadar Pro · 2026-08-19</div><div class="comment">【是什么】AI被嵌入活动规划、内容生产、线索评分、预测分析和自动报表，目标从节省时间转为缩短销售周期与证明商业价值。<br />【对我们意味着什么】出海营销应按任务建立基线，把生成量替换为有效线索率、决策速度、增量转化和人工复核成本。</div><div class="footer"><a class="button" href="https://www.techradar.com/pro/from-experimentation-to-execution-why-ai-in-b2b-marketing-must-now-prove-commercial-value" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.05</span><span class="cat">电商增长</span><div class="title-wrap"><a class="title-link" href="https://venturebeat.com/orchestration/commerce-ai-is-fragmenting-here-is-why-that-matters" target="_blank" rel="noreferrer">电商AI单点指标上涨，跨工具交接却可能漏掉订单</a></div></div><div class="source">VentureBeat / Rezolve Ai（赞助内容）· 2026-08-18</div><div class="comment">【是什么】搜索、对话推荐与结账工具各自表现良好时，产品、价格、库存和政策口径不一致仍会在交接处破坏上下文与转化。<br />【对我们意味着什么】鞋类站点要用统一商品事实层和端到端旅程ID测量“推荐—加购—结账”，不能只看每个AI组件的局部提升。</div><div class="footer"><a class="button" href="https://venturebeat.com/orchestration/commerce-ai-is-fragmenting-here-is-why-that-matters" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.06</span><span class="cat">电商增长</span><div class="title-wrap"><a class="title-link" href="https://www.modernretail.co/operations/how-dtc-startups-are-using-ai-to-scale-more-efficiently/" target="_blank" rel="noreferrer">鞋类DTC把AI搜索策略提前到新品发布之前</a></div></div><div class="source">Modern Retail · 2026-08-17</div><div class="comment">【是什么】包括大码女鞋品牌Vaila Shoes在内的DTC公司用AI做定价、制造与获客，并在新品上线前规划GEO内容和消费者问题。<br />【对我们意味着什么】新品立项时就应建立尺码、脚型、材质和场景问题集，在发布后追踪AI引用、落地页访问与尺码转化。</div><div class="footer"><a class="button" href="https://www.modernretail.co/operations/how-dtc-startups-are-using-ai-to-scale-more-efficiently/" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.07</span><span class="cat">消费洞察</span><div class="title-wrap"><a class="title-link" href="https://www.prnewswire.com/news-releases/croud-consumer-index-reveals-69-of-americans-would-let-ai-buy-for-them-without-approval-302848958.html" target="_blank" rel="noreferrer">AI辅助的时尚消费者更重风格意图，也更依赖外部验证</a></div></div><div class="source">Croud Consumer Index · 2026-08-11</div><div class="comment">【是什么】调查显示AI辅助时尚购物者支出更高、更多按风格与审美搜索，但不少用户会再通过评论、创作者和品牌内容验证推荐。<br />【对我们意味着什么】鞋类分析要把“AI发现”和“人类验证”拆成两段漏斗，分别评估风格词覆盖、评论质量、创作者触点和最终成交。</div><div class="footer"><a class="button" href="https://www.prnewswire.com/news-releases/croud-consumer-index-reveals-69-of-americans-would-let-ai-buy-for-them-without-approval-302848958.html" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.08</span><span class="cat">消费洞察</span><div class="title-wrap"><a class="title-link" href="https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce/" target="_blank" rel="noreferrer">实时意图模型在首次访问中重排商品，而非等待历史画像</a></div></div><div class="source">TechCrunch · 2026-08-06</div><div class="comment">【是什么】Malachyte用双头向量模型连续读取悬停、点击、滚动和搜索细化，在单次会话内同时判断长期偏好与当前购买意图。<br />【对我们意味着什么】鞋类推荐应对新客也实时响应“通勤、宽脚、防水”等行为信号，并用会话级实验验证排序变化是否减少无效浏览。</div><div class="footer"><a class="button" href="https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce/" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.09</span><span class="cat">电商增长</span><div class="title-wrap"><a class="title-link" href="https://techcrunch.com/2026/08/05/shopify-says-ai-search-is-driving-more-traffic-and-sales-not-replacing-google/" target="_blank" rel="noreferrer">Shopify称AI搜索为长尾商家带来新增流量与销售</a></div></div><div class="source">TechCrunch · 2026-08-05</div><div class="comment">【是什么】Shopify表示生成式AI搜索正在补充传统搜索，尤其帮助中小商家和长尾商品获得发现机会，并贡献可见的流量与销售。<br />【对我们意味着什么】出海鞋类应单列AI引荐会话，比较新客率、长尾SKU曝光、收入每访问和退货率，避免只看流量增幅。</div><div class="footer"><a class="button" href="https://techcrunch.com/2026/08/05/shopify-says-ai-search-is-driving-more-traffic-and-sales-not-replacing-google/" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.10</span><span class="cat">可持续合规</span><div class="title-wrap"><a class="title-link" href="https://www.integritynext.com/about-us/press/detail/integritynext-expands-product-compliance-pillar-with-ppwr-capabilities-ahead-of-2026-eu-enforcement" target="_blank" rel="noreferrer">AI代理把包装BOM与供应商声明转成PPWR证据链</a></div></div><div class="source">IntegrityNext · 2026-07-30</div><div class="comment">【是什么】AI代理解析包装BOM和材料披露，把包装SKU、供应商证据、物质阈值与符合性声明接入统一的PPWR合规工作流。<br />【对我们意味着什么】环保鞋盒、运输箱和填充物应建立SKU级材料主数据，让同一证据可复用于PPWR、PFAS与供应商审计。</div><div class="footer"><a class="button" href="https://www.integritynext.com/about-us/press/detail/integritynext-expands-product-compliance-pillar-with-ppwr-capabilities-ahead-of-2026-eu-enforcement" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+    </section>
+  </main>
+  <footer>Edition 0082 · 出海 AI 洞察</footer>
+</body>
+</html>
