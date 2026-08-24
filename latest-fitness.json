@@ -1,33 +1,33 @@
 {
-  "edition": "0066",
-  "date": "2026年8月21日 09:30",
-  "intro": "从节奏型 barre、包容性线上训练到 Find Your Fit 尺码服务，本期关注运动如何降低进入门槛，并为 Fanka 压缩服寻找更清晰的长度、支撑与场景表达。",
+  "edition": "0067",
+  "date": "2026年8月24日 09:16",
+  "intro": "从女性 wellness festival、城市训练空间到赛事装备合作，本期关注运动与零售、社群、恢复的融合，为 Fanka 压缩服与穿搭提供新场景。",
   "tags": [
-    "节奏型力量",
-    "包容性训练",
-    "女性尺码服务",
-    "零售谨慎消费",
-    "社群运动入口"
+    "城市运动空间",
+    "女性健康节",
+    "混合体能商业",
+    "赛事装备合作",
+    "社群内容线索"
   ],
   "top3": [
     {
-      "title": "BarrePilates 把节奏、阻力与呼吸写进同一堂入门课",
-      "comment": "用脉冲、深蹲和呼吸动作测试腰头稳定与面料回弹"
+      "title": "CorePower 把旗舰工作室做成城市运动节点",
+      "comment": "用通勤、热课、换装与课后叠穿串起完整内容动线"
     },
     {
-      "title": "SitGrit 用全坐姿线上课程扩展力量与有氧的参与入口",
-      "comment": "做坐姿抬臂、转体与长时间课程的舒适度检查"
+      "title": "HYROX 从赛事 IP 进入健身房固定训练区",
+      "comment": "按跑推拉弓步拆解腰头、口袋和面料动作测试"
     },
     {
-      "title": "女性跑步品牌用腿长选项和尺码问答减少买衣猜测",
-      "comment": "把身高、裤长、腰头和动作选择器做成可保存内容"
+      "title": "女性 wellness festival 用护照串联多站体验",
+      "comment": "设计 Move、Recover、Style 三站打卡与真实反馈"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0066.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0067.html",
   "blog": {
-    "title": "How to Choose Running Leggings by Length and Fit: A Women’s Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/how-to-choose-running-leggings-by-length-fit.html",
-    "summary": "由本期 Bimble & Bolt Find Your Fit 趋势延展为女性跑步裤长、腰头、支撑与五分钟 fit check 指南"
+    "title": "What to Wear to a Wellness Festival: A Women’s Activewear Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/what-to-wear-wellness-festival-women.html",
+    "summary": "由本期女性 wellness festival 与多站体验趋势延展为运动、恢复、市集和社交场景的一套穿搭指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
