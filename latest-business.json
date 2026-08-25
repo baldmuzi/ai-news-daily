@@ -1,27 +1,27 @@
 {
-  "edition": "0082",
-  "date": "2026年8月24日 09:10",
-  "intro": "AI正把出海鞋类电商的补货、推荐与营销变成实时决策系统，也让环保包装证据从分散文档走向可审计数据。",
+  "edition": "0083",
+  "date": "2026年8月25日 09:12",
+  "intro": "AI正把出海鞋类电商的跨境上架、导购、库存和营销分析交给智能体执行，同时把环保合规变成可审计的产品数据。",
   "tags": [
-    "零售智能体",
-    "实时意图推荐",
-    "鞋类GEO",
-    "营销增量测量",
-    "包装证据链"
+    "AI跨境代理",
+    "Agent可发现",
+    "消费者信任",
+    "供应链仿真",
+    "环保合规"
   ],
   "top3": [
     {
-      "title": "来伊份把200多个智能体放进零售运营",
-      "comment": "从补货、纠错到巡店和审批，用业务结果验收智能体。"
+      "title": "通义AI竞技场首期挑战：Agent一键生成跨境上架素材",
+      "comment": "多市场自动生成上架素材，适合用质量与返工率验收。"
     },
     {
-      "title": "零售分析升级为自动发现与闭环派单",
-      "comment": "让异常指标触发责任人和结果回写，而非停在仪表盘。"
+      "title": "Google Ads 与 Analytics 新增代理式洞察和执行",
+      "comment": "让营销洞察直接转成可审批、可测量的动作。"
     },
     {
-      "title": "AI代理把包装材料转成PPWR证据链",
-      "comment": "建立鞋盒与运输包装的SKU级材料和供应商证据。"
+      "title": "Renoon为哥本哈根时装周上线AI可持续要求筛选",
+      "comment": "用AI预审可持续材料，保留人工签核与证据链。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0082.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0083.html"
 }
