@@ -1,33 +1,33 @@
 {
-  "edition": "0067",
-  "date": "2026年8月24日 09:16",
-  "intro": "从女性 wellness festival、城市训练空间到赛事装备合作，本期关注运动与零售、社群、恢复的融合，为 Fanka 压缩服与穿搭提供新场景。",
+  "edition": "0068",
+  "date": "2026年8月25日 09:12",
+  "intro": "从女性力量与活动度、产后盆底教育，到多区域赛事、户外 retreat 和运动内容供给，本期关注更真实的训练场景，为 Fanka 压缩服与运动穿搭寻找可验证的新用法。",
   "tags": [
-    "城市运动空间",
-    "女性健康节",
-    "混合体能商业",
-    "赛事装备合作",
-    "社群内容线索"
+    "女性力量训练",
+    "活动度恢复",
+    "产后盆底教育",
+    "多区域运动社群",
+    "功能穿搭观察"
   ],
   "top3": [
     {
-      "title": "CorePower 把旗舰工作室做成城市运动节点",
-      "comment": "用通勤、热课、换装与课后叠穿串起完整内容动线"
+      "title": "10 分钟力量菜单把“开始训练”拆成可执行的女性入门动作",
+      "comment": "按深蹲、髋铰链和活动度测试腰头稳定与面料回弹"
     },
     {
-      "title": "HYROX 从赛事 IP 进入健身房固定训练区",
-      "comment": "按跑推拉弓步拆解腰头、口袋和面料动作测试"
+      "title": "11 分钟哑铃训练让女性力量训练有了低门槛入口",
+      "comment": "用五个基础动作拍同一条裤子的支撑与活动范围"
     },
     {
-      "title": "女性 wellness festival 用护照串联多站体验",
-      "comment": "设计 Move、Recover、Style 三站打卡与真实反馈"
+      "title": "女性周末瑜伽聚会把呼吸、温和动作与“重新找回节奏”放在一起",
+      "comment": "做 weekend reset 内容，展示通勤到垫上练习的轻量换装"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0067.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0068.html",
   "blog": {
-    "title": "What to Wear to a Wellness Festival: A Women’s Activewear Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/what-to-wear-wellness-festival-women.html",
-    "summary": "由本期女性 wellness festival 与多站体验趋势延展为运动、恢复、市集和社交场景的一套穿搭指南"
+    "title": "What to Wear for Strength and Mobility Workouts: A Women's Activewear Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/what-to-wear-for-strength-and-mobility-women.html",
+    "summary": "由本期 10 分钟力量、活动度与女性恢复训练趋势延展为一套兼顾支撑、伸展和日常穿着的指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
