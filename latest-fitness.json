@@ -1,33 +1,33 @@
 {
-  "edition": "0068",
-  "date": "2026年8月25日 09:12",
-  "intro": "从女性力量与活动度、产后盆底教育，到多区域赛事、户外 retreat 和运动内容供给，本期关注更真实的训练场景，为 Fanka 压缩服与运动穿搭寻找可验证的新用法。",
+  "edition": "0069",
+  "date": "2026年8月27日 09:51",
+  "intro": "从多运动数据故事、智能纺织到女性健身领导力与龙舟社群，本期捕捉训练、恢复和过渡季穿搭的新变化，为 Fanka 压缩服内容寻找更可验证的表达。",
   "tags": [
-    "女性力量训练",
-    "活动度恢复",
-    "产后盆底教育",
-    "多区域运动社群",
-    "功能穿搭观察"
+    "多运动叙事",
+    "智能运动面料",
+    "女性行业力量",
+    "龙舟社群",
+    "恢复感知"
   ],
   "top3": [
     {
-      "title": "10 分钟力量菜单把“开始训练”拆成可执行的女性入门动作",
-      "comment": "按深蹲、髋铰链和活动度测试腰头稳定与面料回弹"
+      "title": "Garmin 把多日多运动记录自动编成可分享的个人运动故事",
+      "comment": "多日多项目自动成故事，适合做女性运动周记与压缩底层场景记录。"
     },
     {
-      "title": "11 分钟哑铃训练让女性力量训练有了低门槛入口",
-      "comment": "用五个基础动作拍同一条裤子的支撑与活动范围"
+      "title": "E-Webbings 让传感器、加热与反馈功能直接进入织带结构",
+      "comment": "传感与电子元件进入织带，功能面料内容可从排汗走向结构交互。"
     },
     {
-      "title": "女性周末瑜伽聚会把呼吸、温和动作与“重新找回节奏”放在一起",
-      "comment": "做 weekend reset 内容，展示通勤到垫上练习的轻量换装"
+      "title": "女性健身行业峰会把更年期、领导力与商业增长放在同一议程",
+      "comment": "女性健身峰会把更年期与商业领导力并置，适合做从业者访谈。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0068.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0069.html",
   "blog": {
-    "title": "What to Wear for Strength and Mobility Workouts: A Women's Activewear Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/what-to-wear-for-strength-and-mobility-women.html",
-    "summary": "由本期 10 分钟力量、活动度与女性恢复训练趋势延展为一套兼顾支撑、伸展和日常穿着的指南"
+    "title": "How to Layer Activewear for Changing Temperatures: A Women’s Workout Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/how-to-layer-activewear-changing-temperatures-women.html",
+    "summary": "由本期换季 zip-up 运动穿搭与跑步恢复线索延展为女性训练前、中、后的实用分层指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
