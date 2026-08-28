@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>出海 AI 洞察 — 第 0085 期</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#080c14; --surface:#0f1623; --surface-2:#142032; --border:#1f2d3f; --accent:#10b981; --accent-2:#6ee7b7; --text:#e5eef7; --muted:#9aaabd; --dim:#6b7c91; --tag-bg:rgba(16,185,129,0.12); --shadow:0 24px 60px rgba(0,0,0,0.3); }
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    body { min-height:100vh; color:var(--text); font-family:"Noto Serif SC",serif; line-height:1.75; background:radial-gradient(circle at 8% 0%,rgba(16,185,129,0.16),transparent 28rem),radial-gradient(circle at 92% 12%,rgba(52,211,153,0.08),transparent 24rem),var(--bg); }
+    a { color:inherit; text-decoration:none; }
+    .wrap { max-width:1080px; margin:0 auto; padding:2rem 1.2rem 4rem; }
+    .back-link { display:inline-flex; align-items:center; color:var(--accent-2); border:1px solid rgba(16,185,129,0.3); border-radius:999px; padding:0.42rem 0.86rem; background:rgba(16,185,129,0.08); font-family:"JetBrains Mono",monospace; font-size:0.72rem; transition:background 0.18s ease,border-color 0.18s ease; }
+    .back-link:hover { background:rgba(16,185,129,0.14); border-color:var(--accent); }
+    header { padding:3rem 0 2.2rem; border-bottom:1px solid var(--border); }
+    .kicker { color:var(--accent); font-family:"JetBrains Mono",monospace; font-size:0.76rem; letter-spacing:0.16em; }
+    h1 { margin-top:0.62rem; font-size:clamp(2.3rem,6vw,4.8rem); line-height:1.14; letter-spacing:0.06em; }
+    .subtitle { margin-top:0.8rem; color:var(--muted); font-size:clamp(0.92rem,2vw,1.1rem); }
+    .meta { display:flex; flex-wrap:wrap; gap:0.7rem 1.2rem; margin-top:1.5rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.72rem; }
+    .intro { max-width:850px; margin-top:1.6rem; padding:1rem 1.1rem; border-left:3px solid var(--accent); border-radius:0 14px 14px 0; color:#d3eee3; background:linear-gradient(90deg,rgba(16,185,129,0.13),rgba(15,22,35,0.5)); }
+    .tags { display:flex; flex-wrap:wrap; gap:0.55rem; margin-top:1.1rem; }
+    .tag { color:var(--accent-2); background:var(--tag-bg); border:1px solid rgba(16,185,129,0.22); border-radius:999px; padding:0.28rem 0.7rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .cards { display:grid; gap:1.15rem; margin-top:2rem; }
+    .card { position:relative; overflow:hidden; padding:1.3rem 1.35rem 1.2rem; border:1px solid var(--border); border-radius:20px; background:linear-gradient(145deg,rgba(20,32,50,0.95),rgba(11,18,29,0.99)); box-shadow:var(--shadow); }
+    .card::before { content:""; position:absolute; inset:0 auto 0 0; width:3px; background:linear-gradient(180deg,var(--accent),rgba(16,185,129,0.08) 88%); }
+    .card-header { display:grid; grid-template-columns:auto auto minmax(0,1fr); align-items:start; gap:0.65rem; }
+    .num,.cat { margin-top:0.15rem; border-radius:999px; font-family:"JetBrains Mono",monospace; font-size:0.64rem; white-space:nowrap; }
+    .num { color:var(--dim); padding:0.2rem 0; }
+    .cat { color:#a7f3d0; background:var(--tag-bg); border:1px solid rgba(16,185,129,0.22); padding:0.2rem 0.58rem; }
+    .title-link { display:block; font-size:clamp(1rem,2.1vw,1.22rem); font-weight:700; line-height:1.55; transition:color 0.18s ease; }
+    .title-link:hover { color:var(--accent-2); }
+    .source { margin-top:0.62rem; color:var(--dim); font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    .comment { margin-top:0.95rem; color:#cbd7e5; font-size:0.93rem; }
+    .footer { display:flex; justify-content:flex-end; margin-top:1rem; }
+    .button { color:var(--accent-2); border:1px solid rgba(16,185,129,0.34); border-radius:999px; padding:0.38rem 0.78rem; font-family:"JetBrains Mono",monospace; font-size:0.68rem; transition:background 0.18s ease,border-color 0.18s ease; }
+    .button:hover { background:rgba(16,185,129,0.11); border-color:var(--accent); }
+    body>footer { padding:0 1rem 2.5rem; color:var(--dim); text-align:center; font-family:"JetBrains Mono",monospace; font-size:0.68rem; }
+    @media (max-width:640px) { .wrap { padding:1.2rem 0.92rem 3rem; } header { padding:2rem 0 1.6rem; } .card { padding:1.05rem 1rem 1rem; } .card-header { grid-template-columns:auto minmax(0,1fr); } .cat { justify-self:start; } .title-wrap { grid-column:1/-1; min-width:0; } .title-link,.source,.comment { overflow-wrap:anywhere; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="back-link" href="../business/">← 返回存档</a>
+    <header>
+      <div class="kicker">Edition 0085 · AI Product &amp; Data Brief</div>
+      <h1>出海 AI 洞察</h1>
+      <p class="subtitle">跨境电商 · 可持续发展 · AI 应用实战</p>
+      <div class="meta"><span>2026年8月28日</span><span>TOP 10</span><span>面向产品经理与数据分析师</span></div>
+      <p class="intro">AI正重塑出海鞋类电商的商品发现、营销分析与运营流程，并用可审计的供应链数据把环保目标落到采购和履约。</p>
+      <div class="tags"><span class="tag">AI商品发现</span><span class="tag">跨境营销</span><span class="tag">智能体CDP</span><span class="tag">绿色供应链</span><span class="tag">消费预测</span></div>
+    </header>
+    <section class="cards">
+      <article class="card"><div class="card-header"><span class="num">No.01</span><span class="cat">消费洞察</span><div class="title-wrap"><a class="title-link" href="https://nielseniq.com/global/en/news-center/2026/74-of-shoppers-use-ai-for-discovery-niq-showcases-what-that-means-for-the-consumer-purchase-journey-in-new-report/" target="_blank" rel="noreferrer">NIQ：74%的购物者已用AI发现商品</a></div></div><div class="source">NIQ · 2026-08-27</div><div class="comment">【是什么】NIQ与World Data Lab报告显示，近四分之三购物者已用AI进行商品发现，AI、零售媒体和社交电商正共同改写购买路径。<br />【对我们意味着什么】鞋类团队应将材质、尺码、场景与环保属性做成机器可读事实，并把AI推荐曝光、到站和成交纳入同一归因漏斗。</div><div class="footer"><a class="button" href="https://nielseniq.com/global/en/news-center/2026/74-of-shoppers-use-ai-for-discovery-niq-showcases-what-that-means-for-the-consumer-purchase-journey-in-new-report/" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.02</span><span class="cat">营销工具</span><div class="title-wrap"><a class="title-link" href="https://m.ebrun.com/700475.html" target="_blank" rel="noreferrer">小红书开放代理商全流程AI能力，B站搭建全球AI审核体系</a></div></div><div class="source">亿邦动力 · 2026-08-27</div><div class="comment">【是什么】小红书将开放覆盖代理商服务全流程的AI产品体系，B站国际版则在搭建AI驱动的全球内容审核能力。<br />【对我们意味着什么】出海鞋类可把多语种创意、投放运营与内容合规放进统一工作流，用审核时长、素材复用率和区域转化率衡量AI价值。</div><div class="footer"><a class="button" href="https://m.ebrun.com/700475.html" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.03</span><span class="cat">数据分析</span><div class="title-wrap"><a class="title-link" href="https://technode.global/2026/08/27/ai-retail-intelligence-footfall-foresight-lawrence-lim-starhub/" target="_blank" rel="noreferrer">AI零售智能把线上、门店与营销碎片信号接成预测决策</a></div></div><div class="source">TechNode Global · 2026-08-27</div><div class="comment">【是什么】文章提出用AI连接浏览、客流、交易、会员和活动数据，从复盘仪表盘升级为客群预测、交叉销售与实时营销建议。<br />【对我们意味着什么】数据团队应围绕统一身份和同意状态拼接跨渠道旅程，让模型直接回答哪个市场、客群和鞋款值得追加预算。</div><div class="footer"><a class="button" href="https://technode.global/2026/08/27/ai-retail-intelligence-footfall-foresight-lawrence-lim-starhub/" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.04</span><span class="cat">可持续合规</span><div class="title-wrap"><a class="title-link" href="https://link.springer.com/article/10.1007/s44491-026-00020-x" target="_blank" rel="noreferrer">研究梳理AI如何提升中小企业供应链可持续表现</a></div></div><div class="source">Springer Nature · 2026-08-26</div><div class="comment">【是什么】最新综述分析机器学习、生成式AI、NLP和计算机视觉在预测、流程优化与ESG决策中的应用，并强调跨企业实时数据整合。<br />【对我们意味着什么】环保鞋企可从材料证书缺项、供应商风险和运输排放异常三类场景起步，以整改闭环和环境绩效而非模型准确率验收。</div><div class="footer"><a class="button" href="https://link.springer.com/article/10.1007/s44491-026-00020-x" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.05</span><span class="cat">数据分析</span><div class="title-wrap"><a class="title-link" href="https://digital-power.com/en/inspiration/monthly-digital-insights-august-2026/" target="_blank" rel="noreferrer">Agentic CDP与自然语言分析让客户数据从报表走向行动</a></div></div><div class="source">Digital Power · 2026-08-25</div><div class="comment">【是什么】Hightouch让AI代理基于客户数据建人群并执行活动，GA4 Ask Advisor和Conversational Analytics API则支持自然语言查询。<br />【对我们意味着什么】分析师可减少手工取数，把时间转向身份解析、同意治理和指标口径；任何自动激活都应保留审批、回滚与实验对照。</div><div class="footer"><a class="button" href="https://digital-power.com/en/inspiration/monthly-digital-insights-august-2026/" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.06</span><span class="cat">营销工具</span><div class="title-wrap"><a class="title-link" href="https://www.techradar.com/pro/instinct-becomes-the-backup-plan-instead-of-the-default-how-marketers-can-beat-data-overload-to-make-better-decisions" target="_blank" rel="noreferrer">消费者转向LLM研究商品，营销点击更少但意图更强</a></div></div><div class="source">TechRadar Pro · 2026-08-24</div><div class="comment">【是什么】AI正在前移消费者的比较与研究环节，用户更多在大模型内完成筛选，因此进入品牌站的点击减少但往往更接近决策。<br />【对我们意味着什么】鞋类看板不能只盯访问量，应拆分AI来源的停留、尺码查询、加购和客单价，并用问答内容覆盖高意图长尾需求。</div><div class="footer"><a class="button" href="https://www.techradar.com/pro/instinct-becomes-the-backup-plan-instead-of-the-default-how-marketers-can-beat-data-overload-to-make-better-decisions" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.07</span><span class="cat">营销工具</span><div class="title-wrap"><a class="title-link" href="https://www.modernretail.co/marketing/the-new-ai-playbook-the-rules-brands-are-setting-around-customer-facing-content/" target="_blank" rel="noreferrer">品牌为面向消费者的AI创意设定使用边界</a></div></div><div class="source">Modern Retail · 2026-08-20</div><div class="comment">【是什么】品牌正用图生视频、素材重混和生成式视觉扩展广告产能，同时对AI人物、品牌声音与真实性设置人工护栏。<br />【对我们意味着什么】环保鞋类可用AI批量适配市场与版位，但产品结构、材料纹理和可持续声明必须基于真实证据，避免视觉幻觉损害信任。</div><div class="footer"><a class="button" href="https://www.modernretail.co/marketing/the-new-ai-playbook-the-rules-brands-are-setting-around-customer-facing-content/" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.08</span><span class="cat">消费洞察</span><div class="title-wrap"><a class="title-link" href="https://www.retailcustomerexperience.com/news/ai-will-power-holiday-shopping/" target="_blank" rel="noreferrer">72%的美国消费者会用AI获取假日购物灵感</a></div></div><div class="source">Retail Customer Experience · 2026-08-19</div><div class="comment">【是什么】Optimove调查显示，72%的消费者至少偶尔用AI找灵感与推荐，其中商品推荐、聊天机器人和视觉搜索是主要入口。<br />【对我们意味着什么】旺季鞋类专题应同时优化对话式推荐与视觉检索，并用预算、收礼人、场景和尺码约束设计可直接转成商品集合的提示词。</div><div class="footer"><a class="button" href="https://www.retailcustomerexperience.com/news/ai-will-power-holiday-shopping/" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.09</span><span class="cat">供应链</span><div class="title-wrap"><a class="title-link" href="https://www.modernretail.co/sponsored/ai-is-changing-retail-commerce-integrations-but-it-isnt-vibe-coding/" target="_blank" rel="noreferrer">自然语言配置与AI异常处理进入零售集成流程</a></div></div><div class="source">Modern Retail · 2026-08-18</div><div class="comment">【是什么】AI可把自然语言需求转成受约束的订单、EDI和ERP映射，并自动识别常见错误、应用已知修复，只升级新型异常。<br />【对我们意味着什么】跨境鞋类新增渠道时可缩短接口上线周期，但必须把限流、重试、字段验证和审计日志留在平台层，防止旺季静默错单。</div><div class="footer"><a class="button" href="https://www.modernretail.co/sponsored/ai-is-changing-retail-commerce-integrations-but-it-isnt-vibe-coding/" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+      <article class="card"><div class="card-header"><span class="num">No.10</span><span class="cat">电商增长</span><div class="title-wrap"><a class="title-link" href="https://www.modernretail.co/marketing/how-stanley-1913-is-adapting-its-marketing-for-the-ai-search-era-without-losing-a-human-touch/" target="_blank" rel="noreferrer">Stanley为AI搜索重构商品问答、护理说明与使用场景</a></div></div><div class="source">Modern Retail · 2026-08-13</div><div class="comment">【是什么】Stanley把商品特性与用户利益明确关联，补充产品级FAQ、护理和使用指南，并建立跨内容、电商、技术团队的LLM衡量框架。<br />【对我们意味着什么】鞋类可按通勤、旅行、雨天和久站等问题重写商品事实，让AI准确引用舒适度与环保信息，同时监测被提及率和转化。</div><div class="footer"><a class="button" href="https://www.modernretail.co/marketing/how-stanley-1913-is-adapting-its-marketing-for-the-ai-search-era-without-losing-a-human-touch/" target="_blank" rel="noreferrer">阅读原文 →</a></div></article>
+    </section>
+  </main>
+  <footer>Edition 0085 · 出海 AI 洞察</footer>
+</body>
+</html>
