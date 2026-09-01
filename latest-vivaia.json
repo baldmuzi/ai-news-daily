@@ -1,27 +1,27 @@
 {
-  "edition": "0073",
-  "date": "2026年8月28日 09:20",
-  "intro": "从 RE:WORK 的职场叙事，到 AI 风格诊断、循环延寿与熟龄消费者提问，本期把“买一双鞋”拆成四个可运营动作。",
+  "edition": "0074",
+  "date": "2026年9月1日 09:08",
+  "intro": "从鞋类客群增长与节日促销，到 On 的城市门店、慢时尚维修和 Reddit 的真实穿鞋问题，本期把秋季机会拆成场景筛选、服务延寿与内容归因。",
   "tags": [
-    "职场重启",
-    "AI 试衣",
-    "循环延寿",
-    "熟龄表达",
-    "秋季棕色"
+    "鞋类获客",
+    "节日价格",
+    "城市体验",
+    "维修换新",
+    "场合决策"
   ],
   "top3": [
     {
-      "title": "VIVAIA FW26 用 Meg Stalter × Jenna Lyons 把风格与舒适拍成办公室冲突喜剧",
-      "comment": "把职场冲突改造成可投票、可跳转的场景内容。"
+      "title": "Anthropologie 的鞋类客群一年增长近三成，Nike 首发被放进完整穿搭",
+      "comment": "用服装内容导流鞋类新客，测试套装加购与首单品类。"
     },
     {
-      "title": "Meadowhall 的 AI 风格套件把颜色诊断变成线下到店与购买入口",
-      "comment": "用鞋色诊断降低熟龄用户选择成本，并追踪预约转化。"
+      "title": "Slow Fashion Day 用维修、改造和公益工作坊把“少买一点”变成可参与活动",
+      "comment": "把维修、护理与公益做成可参与的复穿服务。"
     },
     {
-      "title": "UNINVITED 用可替换鞋饰延长旧球鞋的审美寿命",
-      "comment": "测试鞋面更新包，以复穿次数验证循环延寿价值。"
+      "title": "Reddit 给站立工作者的买鞋问题，核心是轻量、耐站与“不要像制服鞋”",
+      "comment": "按站立时长与外观偏好重写舒适鞋筛选。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0073.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0074.html"
 }
