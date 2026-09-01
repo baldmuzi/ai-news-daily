@@ -1,33 +1,33 @@
 {
-  "edition": "0070",
-  "date": "2026年8月28日 09:14",
-  "intro": "从自适应训练计划、山地跑技术装备到女性运动社群与中文平台挑战，本期关注更易坚持的训练服务、功能面料和真实身体叙事，为 Fanka 压缩服内容寻找可验证的新场景。",
+  "edition": "0071",
+  "date": "2026年9月1日 09:07",
+  "intro": "从健身服务再捆绑、短课挑战到女性友好型社群，本期关注“更容易持续”的运动设计与城市穿搭变化，为 Fanka 压缩服寻找跨课程、跨场景的内容切口。",
   "tags": [
-    "自适应训练",
-    "山地跑装备",
-    "女性运动社群",
-    "高效力量训练",
-    "中文平台观察"
+    "健身再捆绑",
+    "短课挑战",
+    "女性社群",
+    "城市运动穿搭",
+    "恢复与呼吸"
   ],
   "top3": [
     {
-      "title": "Ahotu 与 URUNN 把赛事发现连接到自适应训练计划",
-      "comment": "赛事发现接入动态训练计划，适合做女性训练旅程与压缩底层记录。"
+      "title": "健身行业进入“再捆绑”阶段：工作室与大健身房都在扩展服务边界",
+      "comment": "健身服务从单一课程转向力量、恢复与社群组合，适合做跨课程穿搭内容。"
     },
     {
-      "title": "norda 与 Black Diamond 推出面向高山跑的跨品类技术系列",
-      "comment": "山地跑合作把材料、环境和用途放进同一故事，适合做功能面料拆解。"
+      "title": "47 岁女性用力量训练加自重训练建立长期运动习惯",
+      "comment": "47 岁女性力量与自重训练故事，适合做重新开始也能变强的人物叙事。"
     },
     {
-      "title": "Outside Days 2026 的户外节庆经济影响继续扩大",
-      "comment": "户外节庆把内容、体验和目的地结合，适合做路线与穿搭清单。"
+      "title": "Activewear 从健身房延伸到咖啡、通勤与城市日常",
+      "comment": "Activewear 延伸到咖啡与通勤场景，适合做一件压缩裤的多场景造型。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0070.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0071.html",
   "blog": {
-    "title": "How to Build a Time-Efficient Strength Routine for Women",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/how-to-build-time-efficient-strength-routine-women.html",
-    "summary": "由本期 40 分钟 supersets 力量训练线索延展为女性高效训练与穿搭指南"
+    "title": "How to Choose Activewear for Multi-Modal Workouts as a Woman",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/how-to-choose-activewear-for-multi-modal-workouts-women.html",
+    "summary": "由本期健身服务再捆绑趋势延展为女性多模式训练穿搭指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
