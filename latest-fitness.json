@@ -1,33 +1,33 @@
 {
-  "edition": "0071",
-  "date": "2026年9月1日 09:12",
-  "intro": "从数字化挑战、音乐训练到女性健康社群与无缝新品，本期为 Fanka 压缩服寻找更可参与的训练与生活场景。",
+  "edition": "0072",
+  "date": "2026年9月2日 09:11",
+  "intro": "从女性专属障碍赛、妈妈友好 Pilates 到沉浸式零售与旅行 wellness，本期为 Fanka 压缩服寻找更真实的训练和生活场景。",
   "tags": [
-    "数字化挑战",
-    "音乐训练",
-    "女性健康社群",
-    "无缝功能面料",
-    "运动生活融合"
+    "女性专属运动",
+    "零售体验",
+    "妈妈友好训练",
+    "恢复性 wellness",
+    "运动社群"
   ],
   "top3": [
     {
-      "title": "6-6-6 步行挑战用固定时间与热身冷身把习惯做成模板",
-      "comment": "把数字规则转成穿着检查与可选时段打卡。"
+      "title": "Vogue 记录澳洲 CSB 借社媒、快闪和女性化剪裁进入美国市场",
+      "comment": "做从训练到咖啡店的真实穿着路径。"
     },
     {
-      "title": "Waka Flocka Flame 参加女性 Pilates 活动，健身课变成身体积极与社群现场",
-      "comment": "记录课前换装、动作适配与课后社交三段体验。"
+      "title": "Adidas 门店体验日把 sculpt、造型和定制礼物连成内容现场",
+      "comment": "用试穿—动作—定制三段式拍新品。"
     },
     {
-      "title": "Fuel Her Summit 把女性健康、营养、训练和早餐社群编成半日体验",
-      "comment": "用训练前中后内容包连接压缩服与社群服务。"
+      "title": "Muddy Princess 女性障碍赛用团队和步行规则扩大参与入口",
+      "comment": "测试防滑腰头、耐磨层和口袋收纳。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0071.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0072.html",
   "blog": {
-    "title": "What to Wear for Zone 2 Training: A Women's Comfortable Activewear Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/zone-2-training-outfits-for-women.html",
-    "summary": "由本期 Zone 2 强度分配讨论延展为女性稳态训练、透气分层与轻压缩穿搭指南"
+    "title": "What to Wear for a Women-Only Obstacle Run: A Practical Activewear Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/women-only-obstacle-run-outfits-guide.html",
+    "summary": "由本期女性专属障碍赛趋势延展，提供泥地、攀爬与团队挑战的穿搭和 fit check 指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
