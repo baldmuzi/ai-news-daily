@@ -1,33 +1,33 @@
 {
-  "edition": "0072",
-  "date": "2026年9月2日 09:11",
-  "intro": "从女性专属障碍赛、妈妈友好 Pilates 到沉浸式零售与旅行 wellness，本期为 Fanka 压缩服寻找更真实的训练和生活场景。",
+  "edition": "0073",
+  "date": "2026年9月3日 09:06",
+  "intro": "从 wellness 增长、社媒内容格式到女性力量与短时训练，本期为 Fanka 压缩服寻找训练日历、换季层搭和多年龄动作场景。",
   "tags": [
-    "女性专属运动",
-    "零售体验",
-    "妈妈友好训练",
-    "恢复性 wellness",
-    "运动社群"
+    "健康增长",
+    "社媒格式",
+    "女性力量",
+    "短时训练",
+    "功能穿搭"
   ],
   "top3": [
     {
-      "title": "Vogue 记录澳洲 CSB 借社媒、快闪和女性化剪裁进入美国市场",
-      "comment": "做从训练到咖啡店的真实穿着路径。"
+      "title": "BCG：activewear 品牌要把 wellness 邻接做成长期增长入口",
+      "comment": "把压缩服放进不同生命阶段的 wellness 场景。"
     },
     {
-      "title": "Adidas 门店体验日把 sculpt、造型和定制礼物连成内容现场",
-      "comment": "用试穿—动作—定制三段式拍新品。"
+      "title": "9 月健身社媒内容更偏向可执行教育、幽默和连续打卡",
+      "comment": "用教育、幽默和打卡做可保存短视频。"
     },
     {
-      "title": "Muddy Princess 女性障碍赛用团队和步行规则扩大参与入口",
-      "comment": "测试防滑腰头、耐磨层和口袋收纳。"
+      "title": "新研究观察到多组分训练可改善高龄女性的功能体能与心血管指标",
+      "comment": "做多年龄力量训练与稳定穿着指南。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0072.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0073.html",
   "blog": {
-    "title": "What to Wear for a Women-Only Obstacle Run: A Practical Activewear Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/women-only-obstacle-run-outfits-guide.html",
-    "summary": "由本期女性专属障碍赛趋势延展，提供泥地、攀爬与团队挑战的穿搭和 fit check 指南"
+    "title": "What to Wear for Sprint Intervals: A Women's Activewear Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/sprint-interval-workout-outfits-for-women.html",
+    "summary": "由短时冲刺研究趋势延展，提供女性间歇训练的支撑、透气与 fit check 指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
