@@ -1,7 +1,7 @@
 {
-  "edition": "0087",
-  "date": "2026年9月2日 09:10",
-  "intro": "AI正在把出海鞋类电商的智能购物、内容生产、营销分析与绿色供应链连成可执行闭环。",
+  "edition": "0088",
+  "date": "2026年9月3日 09:10",
+  "intro": "AI正把出海鞋类的商品发现、跨境运营、消费者洞察与绿色供应链连接成可量化的增长闭环。",
   "tags": [
     "智能购物",
     "跨境增长",
@@ -11,17 +11,17 @@
   ],
   "top3": [
     {
-      "title": "Amazon Alexa 新增主动购物提醒",
-      "comment": "Alexa可按新品和价格主动提醒并下单；鞋类应把上新、补货订阅转成可衡量复购。"
+      "title": "AI 导流美国零售商 Q1 增长 393%",
+      "comment": "AI流量转化更高；鞋类应优化商品数据并追踪代理带来的增量。"
     },
     {
-      "title": "Home Depot 将生成式AI助手扩展到门店",
-      "comment": "Magic Apron融合库存、地图和多语种问答；鞋类可验证线上知识到门店导购的闭环。"
+      "title": "AMP 协议提升商品被 AI 找到的概率",
+      "comment": "AMP统一代理商品信息；鞋类应建设知识层并监测推荐份额。"
     },
     {
-      "title": "Fast Simon Studio 自动生成品牌促销视觉",
-      "comment": "自然语言即可生成并优化活动素材；跨境团队要保留鞋款结构与环保声明的真实性校验。"
+      "title": "AI 供应链决策支持可持续发展",
+      "comment": "AI连接预测、风险与减排证据；环保鞋企应沉淀可追溯数据底座。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0087.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0088.html"
 }
