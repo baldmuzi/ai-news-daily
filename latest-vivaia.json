@@ -1,27 +1,27 @@
 {
-  "edition": "0075",
-  "date": "2026年9月2日 09:10",
-  "intro": "9 月初的新增机会从“买一双鞋”转向“把信息、场景与复穿证据讲清”：欧洲电商调研、劳动节价格核验、联名发布和可替换设计，为 VIVAIA 的选品、活动与内容提供可测试抓手。",
+  "edition": "0076",
+  "date": "2026年9月3日 09:10",
+  "intro": "秋季窗口已从“单一爆款”转向更具体的穿着理由：不追过度潮流、能跨场景复穿、兼顾包容设计与供应链证据。",
   "tags": [
-    "信息透明",
-    "价格证据",
-    "场景订阅",
-    "复穿记录",
-    "可替换设计"
+    "秋季鞋型",
+    "包容联名",
+    "复穿价值",
+    "材料尽调",
+    "场景内容"
   ],
   "top3": [
     {
-      "title": "BoF 调查显示，欧洲时尚电商的首要流失点仍是尺码与商品信息不清",
-      "comment": "BoF 对英国、德国、法国、西班牙和意大利 1 万名消费者及近 150 位行业负责人调研，指出尺码不"
+      "title": "秋季鞋趋势从高调装饰转向更雕塑、更有轮廓感的日常鞋",
+      "comment": "结构感鞋口与雕塑楔跟成为秋季识别点。"
     },
     {
-      "title": "Glamour 的办公室实测把“正式度、步行量、站立时间”放进同一双鞋的筛选",
-      "comment": "Glamour 9 月 1 日发布编辑实测办公鞋清单，覆盖抛光芭蕾鞋、可走通勤路的支撑鞋、以及能站到"
+      "title": "Materials Matter 新指南把人权尽调推进到材料标准的日常执行",
+      "comment": "把供应链风险评估、工资与安全纳入材料证据。"
     },
     {
-      "title": "adidas × Pharrell 的 Watermoc Pack 以水上运动遗产做跨季生活方式发布",
-      "comment": "adidas 8 月 31 日发布 Pharrell Williams 联名 VIRGINIA Wa"
+      "title": "FitFlop × Ester Manas 用尺码包容与设计感重做舒适拖鞋",
+      "comment": "方头、后带与多配色带来包容版型测试机会。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0075.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0076.html"
 }
