@@ -1,9 +1,9 @@
 {
-  "edition": "0088",
-  "date": "2026年9月3日 09:10",
-  "intro": "AI正把出海鞋类的商品发现、跨境运营、消费者洞察与绿色供应链连接成可量化的增长闭环。",
+  "edition": "0089",
+  "date": "2026年9月4日 09:10",
+  "intro": "AI正在把出海鞋类的商品发现、个性化营销、消费者测量与 Scope 3 数据串成一条可追踪的绿色增长链路。",
   "tags": [
-    "智能购物",
+    "代理电商",
     "跨境增长",
     "消费洞察",
     "营销分析",
@@ -11,17 +11,17 @@
   ],
   "top3": [
     {
-      "title": "AI 导流美国零售商 Q1 增长 393%",
-      "comment": "AI流量转化更高；鞋类应优化商品数据并追踪代理带来的增量。"
+      "title": "Target 用 AI 生成愿望清单并推荐下一步动作",
+      "comment": "AI结合浏览与购买信号做清单推荐；鞋类可测试个性化与加购提升。"
     },
     {
-      "title": "AMP 协议提升商品被 AI 找到的概率",
-      "comment": "AMP统一代理商品信息；鞋类应建设知识层并监测推荐份额。"
+      "title": "AI 导流来源洗牌，Claude 进入零售流量榜",
+      "comment": "AI导流同比增62%且收入更高；应分平台追踪推荐份额与订单。"
     },
     {
-      "title": "AI 供应链决策支持可持续发展",
-      "comment": "AI连接预测、风险与减排证据；环保鞋企应沉淀可追溯数据底座。"
+      "title": "EcoVadis 与 CO2 AI 推进 Scope 3 原始数据核算",
+      "comment": "AI连接供应商碳数据与足迹引擎；环保鞋企需沉淀可审计排放底座。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0088.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0089.html"
 }
