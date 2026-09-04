@@ -1,33 +1,33 @@
 {
-  "edition": "0073",
-  "date": "2026年9月3日 09:06",
-  "intro": "从 wellness 增长、社媒内容格式到女性力量与短时训练，本期为 Fanka 压缩服寻找训练日历、换季层搭和多年龄动作场景。",
+  "edition": "0074",
+  "date": "2026年9月4日 09:15",
+  "intro": "从 TikTok 内容格式、女性 HYROX、跑者恢复到秋季分层，本期为 Fanka 压缩服整理多年龄训练与 studio-to-street 机会。",
   "tags": [
-    "健康增长",
-    "社媒格式",
+    "社媒内容格式",
     "女性力量",
-    "短时训练",
-    "功能穿搭"
+    "恢复训练",
+    "秋季分层",
+    "功能消费"
   ],
   "top3": [
     {
-      "title": "BCG：activewear 品牌要把 wellness 邻接做成长期增长入口",
-      "comment": "把压缩服放进不同生命阶段的 wellness 场景。"
+      "title": "60 多岁女性参加 HYROX 世界赛，年龄成为新的力量叙事",
+      "comment": "做多年龄 HYROX 穿搭，展示跨步、推拉与跑步时的稳定。"
     },
     {
-      "title": "9 月健身社媒内容更偏向可执行教育、幽默和连续打卡",
-      "comment": "用教育、幽默和打卡做可保存短视频。"
+      "title": "长跑疲劳被重新定义：恢复能力比跑到耗尽更重要",
+      "comment": "用长跑后 24 小时穿搭连接训练、慢走与休息。"
     },
     {
-      "title": "新研究观察到多组分训练可改善高龄女性的功能体能与心血管指标",
-      "comment": "做多年龄力量训练与稳定穿着指南。"
+      "title": "秋季 leggings 走出健身房，风衣与芭蕾鞋加入衣橱",
+      "comment": "拍训练结束 10 分钟出门的压缩裤分层内容。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0073.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0074.html",
   "blog": {
-    "title": "What to Wear for Sprint Intervals: A Women's Activewear Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/sprint-interval-workout-outfits-for-women.html",
-    "summary": "由短时冲刺研究趋势延展，提供女性间歇训练的支撑、透气与 fit check 指南"
+    "title": "What to Wear for HYROX Training After 50: A Women's Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/hyrox-training-outfits-for-women-over-50.html",
+    "summary": "由 60 多岁女性参加 HYROX 世界赛趋势延展，提供多年龄训练的支撑、分层与 fit check 指南"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
