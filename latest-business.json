@@ -1,9 +1,9 @@
 {
-  "edition": "0089",
-  "date": "2026年9月4日 09:10",
-  "intro": "AI正在把出海鞋类的商品发现、个性化营销、消费者测量与 Scope 3 数据串成一条可追踪的绿色增长链路。",
+  "edition": "0090",
+  "date": "2026年9月7日 09:14",
+  "intro": "AI正在把出海鞋类的商品数据、智能购物、消费者洞察与低碳供应链连接起来，产品团队需要同时为增长和环保合规准备可读、可追溯的数据。",
   "tags": [
-    "代理电商",
+    "智能购物",
     "跨境增长",
     "消费洞察",
     "营销分析",
@@ -11,17 +11,17 @@
   ],
   "top3": [
     {
-      "title": "Target 用 AI 生成愿望清单并推荐下一步动作",
-      "comment": "AI结合浏览与购买信号做清单推荐；鞋类可测试个性化与加购提升。"
+      "title": "Shopify 总结 2026 年电商 AI 七大用例",
+      "comment": "商品数据机器可读是 AI 导购入口；鞋类要结构化尺码、材料与库存。"
     },
     {
-      "title": "AI 导流来源洗牌，Claude 进入零售流量榜",
-      "comment": "AI导流同比增62%且收入更高；应分平台追踪推荐份额与订单。"
+      "title": "AI 导流增长或把更多商家推向大型市场",
+      "comment": "AI购物流量加速进入平台；应同时追踪独立站与市场的推荐份额。"
     },
     {
-      "title": "EcoVadis 与 CO2 AI 推进 Scope 3 原始数据核算",
-      "comment": "AI连接供应商碳数据与足迹引擎；环保鞋企需沉淀可审计排放底座。"
+      "title": "Armada 用 AI 把物流 ETA 预测误差降 53%",
+      "comment": "AI可同时优化交期、补货与减废；鞋类可把碳排纳入供应链看板。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0089.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0090.html"
 }
