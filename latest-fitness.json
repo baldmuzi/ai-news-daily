@@ -1,33 +1,33 @@
 {
-  "edition": "0074",
-  "date": "2026年9月4日 09:15",
-  "intro": "从 TikTok 内容格式、女性 HYROX、跑者恢复到秋季分层，本期为 Fanka 压缩服整理多年龄训练与 studio-to-street 机会。",
+  "edition": "0075",
+  "date": "2026年9月7日 09:31",
+  "intro": "从秋季训练重启、身体觉察到女性运动社群，本期为 Fanka 梳理回归训练、功能分层与中文平台打卡的新内容入口。",
   "tags": [
-    "社媒内容格式",
-    "女性力量",
-    "恢复训练",
-    "秋季分层",
-    "功能消费"
+    "秋季训练重启",
+    "身体觉察",
+    "女性社群",
+    "功能面料",
+    "中文平台观察"
   ],
   "top3": [
     {
-      "title": "60 多岁女性参加 HYROX 世界赛，年龄成为新的力量叙事",
-      "comment": "做多年龄 HYROX 穿搭，展示跨步、推拉与跑步时的稳定。"
+      "title": "7 个动作的“九月重启”训练，把回归健身房压缩到 15 分钟",
+      "comment": "做15分钟重启衣橱，展示腰头稳定与训练后叠穿。"
     },
     {
-      "title": "长跑疲劳被重新定义：恢复能力比跑到耗尽更重要",
-      "comment": "用长跑后 24 小时穿搭连接训练、慢走与休息。"
+      "title": "神经滑动进入女性健身疼痛教育话题",
+      "comment": "用身体检查内容连接舒适支撑，并明确专业咨询边界。"
     },
     {
-      "title": "秋季 leggings 走出健身房，风衣与芭蕾鞋加入衣橱",
-      "comment": "拍训练结束 10 分钟出门的压缩裤分层内容。"
+      "title": "秋季运动服从买新套装转向训练后可穿",
+      "comment": "拍一条压缩底层贯穿力量、普拉提和出门三场景。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0074.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0075.html",
   "blog": {
-    "title": "What to Wear for HYROX Training After 50: A Women's Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/hyrox-training-outfits-for-women-over-50.html",
-    "summary": "由 60 多岁女性参加 HYROX 世界赛趋势延展，提供多年龄训练的支撑、分层与 fit check 指南"
+    "title": "How to Reset Your Workout Routine After Summer: A Women's Activewear Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/how-to-reset-your-workout-routine-after-summer.html",
+    "summary": "由九月15分钟重启训练趋势延展，提供女性回归训练的分层穿搭与舒适度检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
