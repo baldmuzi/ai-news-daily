@@ -1,27 +1,27 @@
 {
-  "edition": "0090",
-  "date": "2026年9月7日 09:14",
-  "intro": "AI正在把出海鞋类的商品数据、智能购物、消费者洞察与低碳供应链连接起来，产品团队需要同时为增长和环保合规准备可读、可追溯的数据。",
+  "edition": "0091",
+  "date": "2026年9月8日 09:17",
+  "intro": "AI把出海鞋类的商品发现、智能运营、消费者分析与绿色供应链连接成可执行闭环。",
   "tags": [
     "智能购物",
     "跨境增长",
+    "绿色供应链",
     "消费洞察",
-    "营销分析",
-    "绿色供应链"
+    "营销分析"
   ],
   "top3": [
     {
-      "title": "Shopify 总结 2026 年电商 AI 七大用例",
-      "comment": "商品数据机器可读是 AI 导购入口；鞋类要结构化尺码、材料与库存。"
+      "title": "SHOPLINE：AI 渠道订单量同比增长超 35 倍",
+      "comment": "SHOPLINE称AI渠道流量增15倍、订单增35倍，独立站需接入代理入口。"
     },
     {
-      "title": "AI 导流增长或把更多商家推向大型市场",
-      "comment": "AI购物流量加速进入平台；应同时追踪独立站与市场的推荐份额。"
+      "title": "菜鸟：全链路 AI 支撑中国品牌“全球三日达”",
+      "comment": "菜鸟以全链路AI支撑全球三日达，履约与合规成为品牌出海分水岭。"
     },
     {
-      "title": "Armada 用 AI 把物流 ETA 预测误差降 53%",
-      "comment": "AI可同时优化交期、补货与减废；鞋类可把碳排纳入供应链看板。"
+      "title": "Google Ads 与 Analytics 上线代理式营销工具",
+      "comment": "Google把广告与分析中的AI摘要、自然语言报表和基准对比推向日常运营。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0090.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0091.html"
 }
