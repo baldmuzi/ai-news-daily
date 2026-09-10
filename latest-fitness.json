@@ -1,33 +1,33 @@
 {
-  "edition": "0076",
-  "date": "2026年9月8日 09:19",
-  "intro": "近 72 小时素材偏少，本期聚焦女性多格式课程、运动节庆与秋季 activewear 功能升级，为 Fanka 提供更易参与、可跨场景延展的内容入口。",
+  "edition": "0077",
+  "date": "2026年9月10日 09:23",
+  "intro": "本期聚焦秋季运动色、女性力量入门、训练科技、恢复与社群内容，为 Fanka 提供从蓝色压缩裤到会员共创的长期内容入口。",
   "tags": [
-    "女性多格式课程",
-    "秋季功能面料",
-    "运动节庆",
-    "健康边界",
-    "社群内容"
+    "秋季运动色",
+    "女性力量入门",
+    "训练科技",
+    "恢复与睡眠",
+    "社群共创"
   ],
   "top3": [
     {
-      "title": "阶梯机 vs 坡度走：女性有氧选择回到“按目标组合”",
-      "comment": "Fanka 可做“同一条压缩裤，两种器械”实测，分别展示腰头稳定、腿部活动与训练后叠穿，把选择逻辑从单一燃脂转"
+      "title": "玉米花蓝 leggings 把秋季运动穿搭从黑色里带出来",
+      "comment": "用蓝色压缩裤连接训练、通勤与课后社交，内容从单一黑色运动服转向秋季日常化。"
     },
     {
-      "title": "跑步穿搭社区把秋季联名、早鸟发售与功能细节当作内容线索",
-      "comment": "把社区讨论转成口袋、反光、透气与叠穿的功能细节拆解，不复制未经证实的热度结论。"
+      "title": "Wahoo Apple Watch 训练 App 把训练、表现与恢复放进同一界面",
+      "comment": "训练 App 把表现与恢复放进同一界面，Fanka 可补上用户主观穿着反馈与分层场景。"
     },
     {
-      "title": "Boundless 把女性 35+ 的力量、普拉提与办公恢复排成一日菜单",
-      "comment": "Fanka 可把“同一身体的一天”做成内容栏目：早晨力量、午间久坐恢复、晚间核心，分别说明压缩、透气和柔软层的"
+      "title": "SET Active 让现有顾客成为发布会里的创作者与转化入口",
+      "comment": "SET Active 用老客共创和开放活动替代单一 influencer 逻辑，适合转成 Fanka 会员内容。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0076.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0077.html",
   "blog": {
-    "title": "How to Choose Activewear for Multi-Format Fitness Classes",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/multi-format-fitness-class-activewear-guide-women.html",
-    "summary": "由女性多格式课程与秋季 activewear 功能升级延展，提供跨力量、普拉提、mobility 与社交场景的穿搭方法。"
+    "title": "How to Style Blue Compression Leggings: A Women’s Outfit Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/blue-compression-leggings-outfit-guide-women.html",
+    "summary": "由本期 cornflower blue leggings 秋季穿搭信号延展，提供从训练到日常的蓝色压缩裤搭配方法。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
