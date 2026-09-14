@@ -1,33 +1,33 @@
 {
-  "edition": "0078",
-  "date": "2026年9月11日 09:23",
-  "intro": "全球健身正在从单项训练转向力量融合、社群与可解释科技。Fanka 可用功能面料实测、女性体育内容和压缩穿搭指南，把本期变化沉淀为长期内容。",
+  "edition": "0079",
+  "date": "2026年9月14日 09:29",
+  "intro": "本期全球素材显示，运动正在连接恢复、户外意义、粉丝文化与谨慎消费。Fanka 可用可验证的穿着测试和女性视角内容，把这些变化转成压缩服与运动生活方式的长期选题。",
   "tags": [
-    "普拉提力量化",
-    "平价功能服",
-    "女性体育营销",
-    "无订阅穿戴",
-    "社群转化"
+    "训练减量周",
+    "户外意义感",
+    "运动节庆体验",
+    "家用轻器械",
+    "女性拳击自信"
   ],
   "top3": [
     {
-      "title": "Reformer Pilates 开始拆出上肢与下肢力量专课",
-      "comment": "力量化 reformer 需要同时应对核心、器械与站立动作，Fanka 可做稳定腰头和活动度实测。"
+      "title": "Deload week 把训练周期拉回可持续",
+      "comment": "Women’sHealth编辑用一周亲身记录说明deload：降低组数、重量或跑量，延长休息，必要时改做低冲击"
     },
     {
-      "title": "Primark Form 把功能运动服带入大众价格带",
-      "comment": "平价运动服开始明确讲面料与功能，Fanka 可用透明测试说明压缩结构和耐用价值。"
+      "title": "户外运动的意义感来自情绪价值与心流",
+      "comment": "ScientificReports发布对508名参与过户外运动年轻人的横断面研究，比较健身训练、休闲娱乐、冒险"
     },
     {
-      "title": "女性体育营销从“支持态度”转向供给与合作方法",
-      "comment": "女性体育内容要从口号转向真实运动者故事、信息供给和长期合作。"
+      "title": "错过马拉松里程后，教练建议别用加量硬追",
+      "comment": "Runner’sWorld汇总教练给“掉里程”跑者的回补方案：拆分长跑、把每次中跑增加5–10分钟，并用交叉训"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0078.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0079.html",
   "blog": {
-    "title": "What to Wear for Strength-Based Reformer Pilates: A Women’s Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/strength-based-reformer-pilates-outfits-women.html",
-    "summary": "由本期 reformer Pilates 力量化趋势延展，解释女性如何选择适合器械、核心与力量切换的支撑型穿搭。"
+    "title": "What to Wear for Boxing Workouts: A Women’s Activewear Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/boxing-workout-outfits-for-women.html",
+    "summary": "由本期女性拳击趋势延展，讲解女性拳击训练的支撑、活动度与课后恢复穿搭。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
