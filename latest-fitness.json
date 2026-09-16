@@ -1,33 +1,33 @@
 {
-  "edition": "0080",
-  "date": "2026年9月15日 09:19",
-  "intro": "本期全球趋势从高温力量课、女性运动服的正式感，延伸到健身竞赛跨界与原生短视频。Fanka 可用真实训练测试、压缩穿搭和女性叙事，把新品内容做得更有场景与参与感。",
+  "edition": "0081",
+  "date": "2026年9月16日 09:20",
+  "intro": "本期从运动零售升级、高汗面料与女性力量叙事，延伸到旅行恢复和公共体验。Fanka 可用真实穿着测试、社群参与与压缩穿搭，把功能价值做得更易感知。",
   "tags": [
-    "正式感运动穿搭",
-    "高温力量课",
-    "健身跨界联名",
-    "短视频原生感",
-    "女性低冲击训练"
+    "高汗面料",
+    "女性力量叙事",
+    "运动零售升级",
+    "公共健身体验",
+    "原生短视频"
   ],
   "top3": [
     {
-      "title": "Kith Women 把运动服放进正式空间与全天候穿搭",
-      "comment": "Kith把正式空间、运动面料与全天穿搭放进同一女性系列。"
+      "title": "Old Navy 把 activewear 独立成 Sport 子品牌与店中店",
+      "comment": "大众零售商用子品牌、店中店和专属社媒强化运动服心智。"
     },
     {
-      "title": "Solidcore 用 90°F 红外热环境推出垫上重负荷力量课",
-      "comment": "Solidcore以红外热环境和更重负荷扩展低冲击力量课。"
+      "title": "Beyond Yoga 用高汗面料回应女性训练强度升级",
+      "comment": "从真实高汗训练反馈出发，用穿着测试和社群共创建立面料信任。"
     },
     {
-      "title": "健身房开始把教练关系装进自有品牌 App",
-      "comment": "Jonas与FitBudd让健身房用自有品牌App延续教练陪伴。"
+      "title": "Burn Boot Camp × Ilona Maher 把“强壮的身体”变成女性品牌主张",
+      "comment": "用女性力量、身体能力与团体训练承接品牌合作。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0080.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0081.html",
   "blog": {
-    "title": "Studio-to-Dinner Activewear: A Women’s Styling Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/studio-to-dinner-activewear-styling-guide-women.html",
-    "summary": "由 Kith 正式感运动穿搭趋势延展，提供从训练、通勤到晚餐场景的 Fanka 搭配指南。"
+    "title": "How to Choose Activewear for High-Sweat Workouts: A Women’s Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/high-sweat-workout-activewear-guide-women.html",
+    "summary": "由 Beyond Yoga 高汗面料趋势延展，沉淀为女性高汗训练的面料与穿着检查指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
