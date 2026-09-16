@@ -1,27 +1,27 @@
 {
-  "edition": "0095",
-  "date": "2026年9月15日 09:12",
-  "intro": "AI正把出海鞋类的购物助手、视觉搜款、实时个性化与绿色合规接入同一数据链，让跨境增长与环保证据同步迭代。",
+  "edition": "0096",
+  "date": "2026年9月16日 09:13",
+  "intro": "AI正把出海鞋类的时尚发现、A2A采购、营销归因与DPP合规接入同一数据链，让跨境增长与环保凭证同步可测。",
   "tags": [
-    "AI购物助手",
-    "视觉搜款",
-    "实时个性化",
-    "智能履约",
-    "绿色合规"
+    "时尚视觉搜索",
+    "A2A采购",
+    "AI广告",
+    "营销归因",
+    "产品护照"
   ],
   "top3": [
     {
-      "title": "Instacart、Shipt让对话与照片直接生成购物车",
-      "comment": "自然语言与图片直达可编辑购物车，适合验证鞋类场景化选品漏斗。"
+      "title": "Daydream把相册穿搭与Siri变成时尚搜索入口",
+      "comment": "相册视觉搜索叠加尺码与风格偏好，可验证鞋款搭配发现漏斗。"
     },
     {
-      "title": "Patagonia、Columbia用AI核验绿色材料证明链",
-      "comment": "自动比对订单、证书与出货记录，可前置发现环保材料证据断链。"
+      "title": "生成式AI引荐电商流量激增，商品数据转向可引用",
+      "comment": "应补齐鞋类属性与环保凭证，并单独测量AI引荐曝光和转化。"
     },
     {
-      "title": "菜鸟用全链路AI串起跨境履约、客服与包裹合规",
-      "comment": "AI配舱、判图、路由和数字员工贯通履约，可量化时效与合规收益。"
+      "title": "DeSL用AI文档智能生成鞋服数字产品护照",
+      "comment": "自动核对证书字段与到期日，可提前发现环保材料证据缺口。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0095.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0096.html"
 }
