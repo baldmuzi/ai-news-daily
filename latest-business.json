@@ -1,27 +1,27 @@
 {
-  "edition": "0096",
-  "date": "2026年9月16日 09:13",
-  "intro": "AI正把出海鞋类的时尚发现、A2A采购、营销归因与DPP合规接入同一数据链，让跨境增长与环保凭证同步可测。",
+  "edition": "0097",
+  "date": "2026年9月17日 09:10",
+  "intro": "AI正把出海鞋类的对话广告、智能结账、跨店运营与绿色算力接入同一数据链，让增长实验和环保责任都能被追踪。",
   "tags": [
-    "时尚视觉搜索",
-    "A2A采购",
-    "AI广告",
-    "营销归因",
-    "产品护照"
+    "对话广告",
+    "智能结账",
+    "跨店智能体",
+    "决策情报",
+    "绿色算力"
   ],
   "top3": [
     {
-      "title": "Daydream把相册穿搭与Siri变成时尚搜索入口",
-      "comment": "相册视觉搜索叠加尺码与风格偏好，可验证鞋款搭配发现漏斗。"
+      "title": "ChatGPT Ads推出品牌赞助智能体并接入Shopify",
+      "comment": "对话广告直连商品与测量，鞋类品牌应单独验证渠道增量。"
     },
     {
-      "title": "生成式AI引荐电商流量激增，商品数据转向可引用",
-      "comment": "应补齐鞋类属性与环保凭证，并单独测量AI引荐曝光和转化。"
+      "title": "Coach与Kate Spade在Gemini内直接成交",
+      "comment": "UCP把发现和结账压缩到同一对话，需补齐库存、授权与归因。"
     },
     {
-      "title": "DeSL用AI文档智能生成鞋服数字产品护照",
-      "comment": "自动核对证书字段与到期日，可提前发现环保材料证据缺口。"
+      "title": "店匠Athena用多智能体串联跨境经营",
+      "comment": "跨店上新、投放和支付可协同执行，但必须保留权限与审计。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0096.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0097.html"
 }
