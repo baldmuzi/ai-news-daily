@@ -1,33 +1,33 @@
 {
-  "edition": "0082",
-  "date": "2026年9月17日 09:15",
-  "intro": "本期从女性运动联名、健身房托育与教练人才链，延伸到心率训练和产后恢复。Fanka 可用细分场景与穿着检查，让压缩服内容更贴近真实运动支持。",
+  "edition": "0083",
+  "date": "2026年9月18日 09:18",
+  "intro": "本期从器械普拉提、赛事共创与城市快闪，延伸到模块化女装、冷水恢复证据和公园科学健身。Fanka 可用场景化穿搭与谨慎健康表达，连接产品、社群和真实运动体验。",
   "tags": [
-    "女性运动联名",
-    "健身房托育",
-    "心率训练",
-    "产后核心",
-    "会员场景运营"
+    "器械普拉提",
+    "体验式零售",
+    "模块化穿搭",
+    "恢复证据边界",
+    "公园科学健身"
   ],
   "top3": [
     {
-      "title": "NikeSKIMS 把女性训练装备做成完整系统",
-      "comment": "从内衣、鞋履到防滑袜与瑜伽垫，女性 activewear 竞争转向整套体验。"
+      "title": "Pilates 器械进入住宅、酒店与俱乐部",
+      "comment": "Technogym 把 reformer、空间设计与按需课程连成完整体验。"
     },
     {
-      "title": "健身房软件把托育纳入会员体验",
-      "comment": "托育管理成为家庭用户信任、复购与到店频率的基础设施。"
+      "title": "HYROX × Orangetheory 把赛事课搬进峰会",
+      "comment": "四天临时健身房把试练、设备和 wellness 内容放在同一现场。"
     },
     {
-      "title": "认证机构与健身房直连教练面试",
-      "comment": "教练人才链正在连接认证、招聘、门店扩张与专业内容供给。"
+      "title": "Beyond Yoga 快闪店连接课程与数字会员",
+      "comment": "纽约门店用限定商品、周末课程和线上训练延长用户关系。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0082.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0083.html",
   "blog": {
-    "title": "What to Wear for Postpartum Core Workouts: A Supportive Return-to-Movement Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/postpartum-core-workout-outfits-women.html",
-    "summary": "由产后核心渐进课程趋势延展，沉淀为女性回归运动的支撑与穿着检查指南。"
+    "title": "What to Wear to an Outdoor Fitness Class: A Women’s Layering and Support Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/outdoor-fitness-class-outfits-for-women.html",
+    "summary": "由女性公园团课趋势延展，沉淀为户外课程的分层、支撑、天气与随身装备指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
