@@ -1,27 +1,27 @@
 {
-  "edition": "0097",
-  "date": "2026年9月17日 09:10",
-  "intro": "AI正把出海鞋类的对话广告、智能结账、跨店运营与绿色算力接入同一数据链，让增长实验和环保责任都能被追踪。",
+  "edition": "0098",
+  "date": "2026年9月18日 09:13",
+  "intro": "从鞋类视觉找款到智能体结账，AI正重塑出海电商的商品、客服与营销数据链；碳感知模型选择也让增长效率与环保责任同步可量化。",
   "tags": [
-    "对话广告",
-    "智能结账",
-    "跨店智能体",
-    "决策情报",
-    "绿色算力"
+    "商品数据闭环",
+    "智能体结账",
+    "视觉找款",
+    "营销归因",
+    "碳感知AI"
   ],
   "top3": [
     {
-      "title": "ChatGPT Ads推出品牌赞助智能体并接入Shopify",
-      "comment": "对话广告直连商品与测量，鞋类品牌应单独验证渠道增量。"
+      "title": "ReFiBuy为Claude购物智能体建立商品数据闭环",
+      "comment": "商品属性与对话需求持续回流，鞋类品牌应优先补齐尺码和环保字段。"
     },
     {
-      "title": "Coach与Kate Spade在Gemini内直接成交",
-      "comment": "UCP把发现和结账压缩到同一对话，需补齐库存、授权与归因。"
+      "title": "LiveRamp强调AI广告的数据质量与治理",
+      "comment": "统一跨渠道事件与授权口径，才能让自动投放和归因结果可信。"
     },
     {
-      "title": "店匠Athena用多智能体串联跨境经营",
-      "comment": "跨店上新、投放和支付可协同执行，但必须保留权限与审计。"
+      "title": "Macy’s扩大AI补货预测部署",
+      "comment": "款色码预测应联动交期、退货和断码信号，兼顾在库率与滞销风险。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0097.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0098.html"
 }
