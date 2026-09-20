@@ -1,33 +1,33 @@
 {
-  "edition": "0083",
-  "date": "2026年9月18日 09:18",
-  "intro": "本期从器械普拉提、赛事共创与城市快闪，延伸到模块化女装、冷水恢复证据和公园科学健身。Fanka 可用场景化穿搭与谨慎健康表达，连接产品、社群和真实运动体验。",
+  "edition": "0084",
+  "date": "2026年9月20日 09:18",
+  "intro": "本期从 AI 训练教练、跑者补给与大学社交跑团，延伸到女性力量教育、运动节庆和秋季多场景穿搭。Fanka 可用可解释科技、恢复边界与真实社群体验，继续讲清压缩服如何服务不同生活节奏。",
   "tags": [
-    "器械普拉提",
-    "体验式零售",
-    "模块化穿搭",
-    "恢复证据边界",
-    "公园科学健身"
+    "AI训练教练",
+    "训练补给",
+    "女性力量",
+    "社群跑团",
+    "多场景穿搭"
   ],
   "top3": [
     {
-      "title": "Pilates 器械进入住宅、酒店与俱乐部",
-      "comment": "Technogym 把 reformer、空间设计与按需课程连成完整体验。"
+      "title": "Speediance 把 AI 训练、恢复与新硬件连成家庭健身系统",
+      "comment": "Fanka 可做“AI 建议如何落到穿着选择”内容：把训练强度、动作幅度、出汗和课后恢复拆成可观察指标，展示压"
     },
     {
-      "title": "HYROX × Orangetheory 把赛事课搬进峰会",
-      "comment": "四天临时健身房把试练、设备和 wellness 内容放在同一现场。"
+      "title": "跑者疲劳管理从“硬扛”转向区分过度训练与能量不足",
+      "comment": "Fanka 可做“训练前后体感记录卡”，让用户记录睡眠、训练时长、汗量、衣物摩擦和恢复感受；涉及持续疲劳、疼痛"
     },
     {
-      "title": "Beyond Yoga 快闪店连接课程与数字会员",
-      "comment": "纽约门店用限定商品、周末课程和线上训练延长用户关系。"
+      "title": "大学跑团把 DJ、冷水、咖啡和聊天做成“wellness darty”",
+      "comment": "Fanka 可策划“跑完再见面”的轻社群：先用 20 分钟跑走或快走降低门槛，再安排拉伸、换装和补水环节；内容"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0083.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0084.html",
   "blog": {
-    "title": "What to Wear to an Outdoor Fitness Class: A Women’s Layering and Support Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/outdoor-fitness-class-outfits-for-women.html",
-    "summary": "由女性公园团课趋势延展，沉淀为户外课程的分层、支撑、天气与随身装备指南。"
+    "title": "How to Build a Strength and Recovery Routine for Women: A Practical Activewear Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/strength-recovery-routine-activewear-guide-women.html",
+    "summary": "由训练负荷与恢复趋势延展，沉淀为女性力量训练、补给、休息和运动穿搭指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
