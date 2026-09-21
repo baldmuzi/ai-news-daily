@@ -1,33 +1,33 @@
 {
-  "edition": "0084",
-  "date": "2026年9月20日 09:18",
-  "intro": "本期从 AI 训练教练、跑者补给与大学社交跑团，延伸到女性力量教育、运动节庆和秋季多场景穿搭。Fanka 可用可解释科技、恢复边界与真实社群体验，继续讲清压缩服如何服务不同生活节奏。",
+  "edition": "0085",
+  "date": "2026年9月21日 09:08",
+  "intro": "本期从女性力量训练、电解质补给与一衣多场景穿搭，延伸到女性山地车、分级赛事、线下 wellness 社群和小红书榜单观察。Fanka 可把压缩服放回真实动作、出汗与换层场景，做更可信的内容测试。",
   "tags": [
-    "AI训练教练",
-    "训练补给",
     "女性力量",
-    "社群跑团",
-    "多场景穿搭"
+    "汗后补给",
+    "户外骑行",
+    "一衣多场景",
+    "社群活动"
   ],
   "top3": [
     {
-      "title": "Speediance 把 AI 训练、恢复与新硬件连成家庭健身系统",
-      "comment": "Fanka 可做“AI 建议如何落到穿着选择”内容：把训练强度、动作幅度、出汗和课后恢复拆成可观察指标，展示压"
+      "title": "女性力量训练继续从“动作清单”走向可重复的全身结构",
+      "comment": "Fanka 可以做“女性力量训练穿着检查表”：把深蹲、硬拉、推举和训练后通勤拆成腰头稳定、面料不透、肩带不移位"
     },
     {
-      "title": "跑者疲劳管理从“硬扛”转向区分过度训练与能量不足",
-      "comment": "Fanka 可做“训练前后体感记录卡”，让用户记录睡眠、训练时长、汗量、衣物摩擦和恢复感受；涉及持续疲劳、疼痛"
+      "title": "电解质饮料进入“按出汗场景使用”而不是日常必喝阶段",
+      "comment": "Fanka 可以围绕“汗量、时长、天气”做训练后内容，而不是暗示某种饮料或衣物有医疗作用。压缩裤和运动内衣的卖"
     },
     {
-      "title": "大学跑团把 DJ、冷水、咖啡和聊天做成“wellness darty”",
-      "comment": "Fanka 可策划“跑完再见面”的轻社群：先用 20 分钟跑走或快走降低门槛，再安排拉伸、换装和补水环节；内容"
+      "title": "提臀型 leggings 内容从单一审美转向“支撑、动作与场景”比较",
+      "comment": "Fanka 可做“同一条压缩裤的三种动作测试”：深蹲、步行和坐下，展示腰头、覆盖度、侧袋与面料回弹如何影响真实"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0084.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0085.html",
   "blog": {
-    "title": "How to Build a Strength and Recovery Routine for Women: A Practical Activewear Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/strength-recovery-routine-activewear-guide-women.html",
-    "summary": "由训练负荷与恢复趋势延展，沉淀为女性力量训练、补给、休息和运动穿搭指南。"
+    "title": "Women’s Mountain Bike Festival Activewear: A Trail-to-Town Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/womens-mountain-bike-festival-activewear-guide.html",
+    "summary": "由女性山地车节与户外社群趋势延展，沉淀为女性骑行日穿搭指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
