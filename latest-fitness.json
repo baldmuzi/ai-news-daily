@@ -1,33 +1,33 @@
 {
-  "edition": "0085",
-  "date": "2026年9月21日 09:08",
-  "intro": "本期从女性力量训练、电解质补给与一衣多场景穿搭，延伸到女性山地车、分级赛事、线下 wellness 社群和小红书榜单观察。Fanka 可把压缩服放回真实动作、出汗与换层场景，做更可信的内容测试。",
+  "edition": "0086",
+  "date": "2026年9月22日 09:32",
+  "intro": "本期从复古团课与女性力量教育，延伸到无障碍运动、户外体能和训练后仍可穿的秋季 activewear。Fanka 可把压缩服放回真实课程、分层与社群场景，用可复现的穿着测试替代泛泛的“燃脂”叙事。",
   "tags": [
-    "女性力量",
-    "汗后补给",
-    "户外骑行",
-    "一衣多场景",
-    "社群活动"
+    "复古团课",
+    "女性力量教育",
+    "无障碍运动",
+    "户外体能",
+    "分层衣橱"
   ],
   "top3": [
     {
-      "title": "女性力量训练继续从“动作清单”走向可重复的全身结构",
-      "comment": "Fanka 可以做“女性力量训练穿着检查表”：把深蹲、硬拉、推举和训练后通勤拆成腰头稳定、面料不透、肩带不移位"
+      "title": "Club Pilates 用“年代周”把复古音乐、穿搭与团课变成连续社群格式",
+      "comment": "Fanka 可测试“运动年代周”内容：每个年代对应一套压缩裤、运动内衣和外层搭配，再用真实课程反馈说明支撑、活"
     },
     {
-      "title": "电解质饮料进入“按出汗场景使用”而不是日常必喝阶段",
-      "comment": "Fanka 可以围绕“汗量、时长、天气”做训练后内容，而不是暗示某种饮料或衣物有医疗作用。压缩裤和运动内衣的卖"
+      "title": "21 天习惯重启把营养、瑜伽和小组讨论放进同一晚间工作坊",
+      "comment": "Fanka 可以围绕“训练前—训练中—训练后”做 21 天轻任务内容，把压缩服的换层、汗后摩擦和日常穿着写进习"
     },
     {
-      "title": "提臀型 leggings 内容从单一审美转向“支撑、动作与场景”比较",
-      "comment": "Fanka 可做“同一条压缩裤的三种动作测试”：深蹲、步行和坐下，展示腰头、覆盖度、侧袋与面料回弹如何影响真实"
+      "title": "酒店 wellness 日历把 Strong Pilates 变成持续、预约制的日常仪式",
+      "comment": "Fanka 可借鉴“日常仪式”叙事，做一组酒店、通勤与工作室之间的穿搭路线；用腰头稳定、肩带舒适和训练后可继续"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0085.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0086.html",
   "blog": {
-    "title": "Women’s Mountain Bike Festival Activewear: A Trail-to-Town Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/womens-mountain-bike-festival-activewear-guide.html",
-    "summary": "由女性山地车节与户外社群趋势延展，沉淀为女性骑行日穿搭指南。"
+    "title": "What to Wear for a Decades-Themed Pilates Class: A Women's Activewear Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/decades-themed-pilates-class-outfits-women.html",
+    "summary": "由 Club Pilates 年代周的复古团课格式延展，沉淀为女性 Pilates 课程的分层、支撑与场景穿搭指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
