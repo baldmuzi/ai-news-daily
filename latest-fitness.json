@@ -1,33 +1,33 @@
 {
-  "edition": "0086",
-  "date": "2026年9月22日 09:32",
-  "intro": "本期从复古团课与女性力量教育，延伸到无障碍运动、户外体能和训练后仍可穿的秋季 activewear。Fanka 可把压缩服放回真实课程、分层与社群场景，用可复现的穿着测试替代泛泛的“燃脂”叙事。",
+  "edition": "0087",
+  "date": "2026年9月23日 09:45",
+  "intro": "本期从健康数据、运动内衣测试与多项目社群，延伸到女性友好课程、城市恢复格式和中国体育消费现场。Fanka 可把压缩服放回真实运动链路，用可复现的支撑、摩擦与换层测试承接新内容。",
   "tags": [
-    "复古团课",
-    "女性力量教育",
-    "无障碍运动",
-    "户外体能",
-    "分层衣橱"
+    "运动数据",
+    "运动内衣",
+    "女性社群",
+    "多项目体验",
+    "城市恢复"
   ],
   "top3": [
     {
-      "title": "Club Pilates 用“年代周”把复古音乐、穿搭与团课变成连续社群格式",
-      "comment": "Fanka 可测试“运动年代周”内容：每个年代对应一套压缩裤、运动内衣和外层搭配，再用真实课程反馈说明支撑、活"
+      "title": "Bodybar Pilates 把生物标志物检测接入工作室会员体验",
+      "comment": "Fanka 可把训练、数据与穿着感受放进同一套会员内容，不做医疗承诺。"
     },
     {
-      "title": "21 天习惯重启把营养、瑜伽和小组讨论放进同一晚间工作坊",
-      "comment": "Fanka 可以围绕“训练前—训练中—训练后”做 21 天轻任务内容，把压缩服的换层、汗后摩擦和日常穿着写进习"
+      "title": "运动内衣评测重新强调高覆盖、可调节与跨课程耐穿",
+      "comment": "用举手、跑跳、俯身、久穿和洗护后复测讲清运动内衣差异。"
     },
     {
-      "title": "酒店 wellness 日历把 Strong Pilates 变成持续、预约制的日常仪式",
-      "comment": "Fanka 可借鉴“日常仪式”叙事，做一组酒店、通勤与工作室之间的穿搭路线；用腰头稳定、肩带舒适和训练后可继续"
+      "title": "迪卡侬“十项全能”挑战赛把多项目体验、社群和直播串成消费场景",
+      "comment": "从多项目切换测试压缩服的贴合、干爽和训练后换层。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0086.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0087.html",
   "blog": {
-    "title": "What to Wear for a Decades-Themed Pilates Class: A Women's Activewear Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/decades-themed-pilates-class-outfits-women.html",
-    "summary": "由 Club Pilates 年代周的复古团课格式延展，沉淀为女性 Pilates 课程的分层、支撑与场景穿搭指南。"
+    "title": "How to Choose a Sports Bra for Mixed Workouts: A Women's Fit Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/how-to-choose-a-sports-bra-for-mixed-workouts-women.html",
+    "summary": "由运动内衣长期评测与多项目课程趋势延展，沉淀为女性混合训练的支撑、覆盖与穿着检查指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
