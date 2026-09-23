@@ -1,27 +1,27 @@
 {
-  "edition": "0101",
-  "date": "2026年9月22日 09:19",
-  "intro": "AI 正把鞋类出海从关键词流量推向智能体交易：商品 feed、创作者信任与碳感知供应链，成为跨市场增长与环保合规的共同底座。",
+  "edition": "0102",
+  "date": "2026年9月23日 09:31",
+  "intro": "AI 把出海鞋类的陈列、视觉导购与归因串成数据链，环保预测与可审计供应链决定增长能否长期成立。",
   "tags": [
-    "智能体交易",
-    "商品可读性",
+    "智能陈列",
+    "视觉导购",
     "AI归因",
-    "绿色供应链",
+    "减废预测",
     "跨境增长"
   ],
   "top3": [
     {
-      "title": "Amazon 封锁 Meta Muse，智能体购物进入平台边界博弈",
-      "comment": "第三方购物代理触及平台控制权；鞋企需把授权、库存与结账做成可撤销接口。"
+      "title": "Fast Simon 把 Shopify Markets 的跨境陈列集中到一块 AI 面板",
+      "comment": "AI 按国家、季节和法规做陈列，并解释各市场表现。"
     },
     {
-      "title": "Google 扩展智能体电商工具，把 AI 曝光带进 Merchant Center",
-      "comment": "AI 搜索可见度开始可测；先治理商品 feed，再建立跨市场曝光与转化基线。"
+      "title": "Instacart 的 Clementine 把一句话变成可购买购物车",
+      "comment": "对话理解预算与偏好，直接生成并优化个性化购物车。"
     },
     {
-      "title": "WEF：AI 让 ESG 数据重新接上供应链、资本开支与卫星影像",
-      "comment": "AI 开始核验可持续叙事；鞋类合规要保留材料、工厂、运输与碳排证据链。"
+      "title": "Daydream 用 Apple Intelligence 把相册穿搭拆成单品",
+      "comment": "AI 从照片识别服饰并匹配可购买的相似款。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0101.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0102.html"
 }
