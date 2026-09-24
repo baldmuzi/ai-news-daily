@@ -1,27 +1,27 @@
 {
-  "edition": "0102",
-  "date": "2026年9月23日 09:31",
-  "intro": "AI 把出海鞋类的陈列、视觉导购与归因串成数据链，环保预测与可审计供应链决定增长能否长期成立。",
+  "edition": "0103",
+  "date": "2026年9月24日 09:11",
+  "intro": "AI 正重写出海鞋类的推荐、补货与跨境物流；可信商品数据和低碳模型选择，将共同决定增长质量。",
   "tags": [
-    "智能陈列",
-    "视觉导购",
-    "AI归因",
-    "减废预测",
-    "跨境增长"
+    "推荐可信度",
+    "商品数据",
+    "代理购物",
+    "智能补货",
+    "低碳模型"
   ],
   "top3": [
     {
-      "title": "Fast Simon 把 Shopify Markets 的跨境陈列集中到一块 AI 面板",
-      "comment": "AI 按国家、季节和法规做陈列，并解释各市场表现。"
+      "title": "AI 推荐已影响购买，但鞋服错误推荐正在透支消费者信任",
+      "comment": "AI 购物已普及，但鞋服错误推荐占后悔购买的 45%。"
     },
     {
-      "title": "Instacart 的 Clementine 把一句话变成可购买购物车",
-      "comment": "对话理解预算与偏好，直接生成并优化个性化购物车。"
+      "title": "Radian 用混合 AI 把选品、定价、促销与空间计划接到同一数据底座",
+      "comment": "混合 AI 让零售建议可追溯，并联动选品、价格与促销。"
     },
     {
-      "title": "Daydream 用 Apple Intelligence 把相册穿搭拆成单品",
-      "comment": "AI 从照片识别服饰并匹配可购买的相似款。"
+      "title": "Amazon 拒绝 Meta Muse 代客下单，代理购物进入授权边界测试",
+      "comment": "代理购物要先解决授权、责任和商家退出机制。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0102.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/business/edition-0103.html"
 }
