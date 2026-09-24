@@ -1,33 +1,33 @@
 {
-  "edition": "0087",
-  "date": "2026年9月23日 09:45",
-  "intro": "本期从健康数据、运动内衣测试与多项目社群，延伸到女性友好课程、城市恢复格式和中国体育消费现场。Fanka 可把压缩服放回真实运动链路，用可复现的支撑、摩擦与换层测试承接新内容。",
+  "edition": "0088",
+  "date": "2026年9月24日 09:37",
+  "intro": "本期从健康老龄化、女性生理数据与微运动日常化，延伸到健身房经营、AI家庭训练、运动服饰和中国全民健身消费场景。Fanka 可用真实体感测试讲清压缩服如何服务长期运动。",
   "tags": [
-    "运动数据",
-    "运动内衣",
-    "女性社群",
-    "多项目体验",
-    "城市恢复"
+    "健康老龄化",
+    "女性数据",
+    "微运动",
+    "AI训练",
+    "场景消费"
   ],
   "top3": [
     {
-      "title": "Bodybar Pilates 把生物标志物检测接入工作室会员体验",
-      "comment": "Fanka 可把训练、数据与穿着感受放进同一套会员内容，不做医疗承诺。"
+      "title": "Pvolve 与 Jennifer Aniston 把“运动长寿”定义为女性健康老龄化新类别",
+      "comment": "用起身、平衡和轻力量动作测试腰头、支撑与活动度，避免把服装写成延缓衰老方案。"
     },
     {
-      "title": "运动内衣评测重新强调高覆盖、可调节与跨课程耐穿",
-      "comment": "用举手、跑跳、俯身、久穿和洗护后复测讲清运动内衣差异。"
+      "title": "Xella Health × Oura 把女性生理数据、诊断与长期照护连接起来",
+      "comment": "做非医疗版训练体感日志，记录睡眠、出汗、强度与穿着偏好，明确压缩服不是医疗器械。"
     },
     {
-      "title": "迪卡侬“十项全能”挑战赛把多项目体验、社群和直播串成消费场景",
-      "comment": "从多项目切换测试压缩服的贴合、干爽和训练后换层。"
+      "title": "QILATES 把 TCM 灵感、呼吸和 exercise snacks 带入日常恢复",
+      "comment": "围绕会议间隙、练后躺下和短时换层做内容，把舒适与活动空间讲清楚。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0087.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0088.html",
   "blog": {
-    "title": "How to Choose a Sports Bra for Mixed Workouts: A Women's Fit Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/how-to-choose-a-sports-bra-for-mixed-workouts-women.html",
-    "summary": "由运动内衣长期评测与多项目课程趋势延展，沉淀为女性混合训练的支撑、覆盖与穿着检查指南。"
+    "title": "Exercise Snacks for Women: How to Add Small Movement Breaks to Your Day",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/exercise-snacks-movement-guide-women.html",
+    "summary": "由 QILATES 的 exercise snacks 与微运动日常化趋势延展，沉淀为女性短时活动、穿着舒适与恢复指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
