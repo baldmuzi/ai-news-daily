@@ -1,33 +1,33 @@
 {
-  "edition": "0088",
-  "date": "2026年9月24日 09:37",
-  "intro": "本期从健康老龄化、女性生理数据与微运动日常化，延伸到健身房经营、AI家庭训练、运动服饰和中国全民健身消费场景。Fanka 可用真实体感测试讲清压缩服如何服务长期运动。",
+  "edition": "0089",
+  "date": "2026年9月29日 09:22",
+  "intro": "本期关注女性 mobility、evening-maxxing 与运动空间、功能器械、场景零售和中国全民健身服务。Fanka 可把训练、恢复和出门穿着串成真实内容。",
   "tags": [
-    "健康老龄化",
-    "女性数据",
-    "微运动",
-    "AI训练",
-    "场景消费"
+    "女性mobility",
+    "睡前恢复",
+    "健身房扩张",
+    "功能器械",
+    "场景零售"
   ],
   "top3": [
     {
-      "title": "Pvolve 与 Jennifer Aniston 把“运动长寿”定义为女性健康老龄化新类别",
-      "comment": "用起身、平衡和轻力量动作测试腰头、支撑与活动度，避免把服装写成延缓衰老方案。"
+      "title": "40+ 女性把几分钟 mobility 作为训练前后的固定入口",
+      "comment": "用 mobility 测试腰头、面料和活动度，强调服装体验，不做医疗承诺。"
     },
     {
-      "title": "Xella Health × Oura 把女性生理数据、诊断与长期照护连接起来",
-      "comment": "做非医疗版训练体感日志，记录睡眠、出汗、强度与穿着偏好，明确压缩服不是医疗器械。"
+      "title": "“Evening-maxxing”把睡前恢复做成可分享的生活方式格式",
+      "comment": "做训练后换层与睡前放松清单，把舒适、透气和易护理讲清楚。"
     },
     {
-      "title": "QILATES 把 TCM 灵感、呼吸和 exercise snacks 带入日常恢复",
-      "comment": "围绕会议间隙、练后躺下和短时换层做内容，把舒适与活动空间讲清楚。"
+      "title": "ESpace 用 Pilates、恢复、咖啡和社区把 wellness 做成生活基础设施",
+      "comment": "围绕运动前后停留场景设计穿搭内容，验证压缩服的日常延展。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0088.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0089.html",
   "blog": {
-    "title": "Exercise Snacks for Women: How to Add Small Movement Breaks to Your Day",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/exercise-snacks-movement-guide-women.html",
-    "summary": "由 QILATES 的 exercise snacks 与微运动日常化趋势延展，沉淀为女性短时活动、穿着舒适与恢复指南。"
+    "title": "How to Choose Durable Activewear for Women: A Studio-to-Street Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/how-to-choose-durable-activewear-women.html",
+    "summary": "由 mobility、睡前恢复和跨场景运动服趋势延展，沉淀为耐穿、易护理的女性 activewear 选择指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
