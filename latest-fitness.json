@@ -1,33 +1,33 @@
 {
-  "edition": "0089",
-  "date": "2026年9月29日 09:22",
-  "intro": "本期关注女性 mobility、evening-maxxing 与运动空间、功能器械、场景零售和中国全民健身服务。Fanka 可把训练、恢复和出门穿着串成真实内容。",
+  "edition": "0090",
+  "date": "2026年9月30日 14:05",
+  "intro": "本期从15分钟力量训练、真实感健身内容和女性社群活动，延伸到移动健身空间、运动零售、中国团队打卡与女性赛事合作。",
   "tags": [
-    "女性mobility",
-    "睡前恢复",
-    "健身房扩张",
-    "功能器械",
-    "场景零售"
+    "短时力量",
+    "真实感健身",
+    "女性社群",
+    "移动健身",
+    "运动零售"
   ],
   "top3": [
     {
-      "title": "40+ 女性把几分钟 mobility 作为训练前后的固定入口",
-      "comment": "用 mobility 测试腰头、面料和活动度，强调服装体验，不做医疗承诺。"
+      "title": "15分钟复合动作让力量训练适配午休与忙碌日程",
+      "comment": "用深蹲、推举、髋铰链检查腰头、肩带、回弹和汗后换层。"
     },
     {
-      "title": "“Evening-maxxing”把睡前恢复做成可分享的生活方式格式",
-      "comment": "做训练后换层与睡前放松清单，把舒适、透气和易护理讲清楚。"
+      "title": "真实感健身内容正在挑战“完美健身画面”",
+      "comment": "记录暂停、修改和不同身材的真实动作体验，减少过度精修。"
     },
     {
-      "title": "ESpace 用 Pilates、恢复、咖啡和社区把 wellness 做成生活基础设施",
-      "comment": "围绕运动前后停留场景设计穿搭内容，验证压缩服的日常延展。"
+      "title": "女性 wellness 节把运动、心理、财务与年龄议题放进同一社区场景",
+      "comment": "把课程、补水、换层、聊天和内容共创设计成半日社群路线。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0089.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0090.html",
   "blog": {
-    "title": "How to Choose Durable Activewear for Women: A Studio-to-Street Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/how-to-choose-durable-activewear-women.html",
-    "summary": "由 mobility、睡前恢复和跨场景运动服趋势延展，沉淀为耐穿、易护理的女性 activewear 选择指南。"
+    "title": "What to Wear for a 15-Minute Strength Workout: A Women's Activewear Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/15-minute-strength-workout-outfits-for-women.html",
+    "summary": "由短时复合力量训练趋势延展，沉淀为女性短时全身训练的支撑、活动度与换层指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
