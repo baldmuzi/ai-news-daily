@@ -1,33 +1,33 @@
 {
-  "edition": "0090",
-  "date": "2026年9月30日 14:05",
-  "intro": "本期从15分钟力量训练、真实感健身内容和女性社群活动，延伸到移动健身空间、运动零售、中国团队打卡与女性赛事合作。",
+  "edition": "0091",
+  "date": "2026年10月8日 11:26",
+  "intro": "本期从每周两次力量、女性更年期训练和运动内衣研究，延伸到女性体育消费、运动处方与健身瑜伽赛事。",
   "tags": [
-    "短时力量",
-    "真实感健身",
-    "女性社群",
-    "移动健身",
-    "运动零售"
+    "每周两次力量",
+    "女性中年训练",
+    "运动内衣研究",
+    "女性体育消费",
+    "运动处方"
   ],
   "top3": [
     {
-      "title": "15分钟复合动作让力量训练适配午休与忙碌日程",
-      "comment": "用深蹲、推举、髋铰链检查腰头、肩带、回弹和汗后换层。"
+      "title": "每周两次力量训练也能建立肌肉，关键在结构而非频率",
+      "comment": "用支撑、活动度与面料回弹，服务忙碌女性的可持续力量训练。"
     },
     {
-      "title": "真实感健身内容正在挑战“完美健身画面”",
-      "comment": "记录暂停、修改和不同身材的真实动作体验，减少过度精修。"
+      "title": "更年期女性专门训练进入社区健身房课程设计",
+      "comment": "按力量、瑜伽、恢复和日常穿着分层表达，避免医疗化承诺。"
     },
     {
-      "title": "女性 wellness 节把运动、心理、财务与年龄议题放进同一社区场景",
-      "comment": "把课程、补水、换层、聊天和内容共创设计成半日社群路线。"
+      "title": "女性骑手的运动内衣支撑研究把场景适配带回产品讨论",
+      "comment": "用运动强度、动作方向和肩带结构做女性运动内衣支撑地图。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0090.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0091.html",
   "blog": {
-    "title": "What to Wear for a 15-Minute Strength Workout: A Women's Activewear Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/15-minute-strength-workout-outfits-for-women.html",
-    "summary": "由短时复合力量训练趋势延展，沉淀为女性短时全身训练的支撑、活动度与换层指南。"
+    "title": "Twice-Weekly Strength Workouts for Women: What to Wear for Consistent Training",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/twice-weekly-strength-workout-outfits-women.html",
+    "summary": "由每周两次力量训练趋势延展，沉淀为女性忙碌日程中的支撑、活动度与可持续穿着指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
