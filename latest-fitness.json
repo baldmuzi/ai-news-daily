@@ -1,33 +1,33 @@
 {
-  "edition": "0091",
-  "date": "2026年10月8日 11:26",
-  "intro": "本期从每周两次力量、女性更年期训练和运动内衣研究，延伸到女性体育消费、运动处方与健身瑜伽赛事。",
+  "edition": "0092",
+  "date": "2026年10月9日 09:15",
+  "intro": "本期聚焦女性健身赛事、长寿训练与混合课程消费，也关注冬季功能面料、女性友好健身空间和社媒健康内容。",
   "tags": [
-    "每周两次力量",
-    "女性中年训练",
-    "运动内衣研究",
-    "女性体育消费",
-    "运动处方"
+    "女性健身赛事",
+    "长寿训练",
+    "混合课程消费",
+    "冬季功能面料",
+    "健康内容可信度"
   ],
   "top3": [
     {
-      "title": "每周两次力量训练也能建立肌肉，关键在结构而非频率",
-      "comment": "用支撑、活动度与面料回弹，服务忙碌女性的可持续力量训练。"
+      "title": "DEKA 数据显示女性正在成为功能性健身赛事主力",
+      "comment": "围绕首次参赛女性做支撑、腰头稳定与赛前训练内容。"
     },
     {
-      "title": "更年期女性专门训练进入社区健身房课程设计",
-      "comment": "按力量、瑜伽、恢复和日常穿着分层表达，避免医疗化承诺。"
+      "title": "长寿训练被做成可测量、可备赛的八项综合挑战",
+      "comment": "把力量、平衡、耐力和恢复转成可理解的穿搭场景。"
     },
     {
-      "title": "女性骑手的运动内衣支撑研究把场景适配带回产品讨论",
-      "comment": "用运动强度、动作方向和肩带结构做女性运动内衣支撑地图。"
+      "title": "STRONG Pilates 用一张会员卡回应多馆消费疲劳",
+      "comment": "用一套穿搭覆盖力量、有氧与垫上动作，测试跨场景内容。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0091.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0092.html",
   "blog": {
-    "title": "Twice-Weekly Strength Workouts for Women: What to Wear for Consistent Training",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/twice-weekly-strength-workout-outfits-women.html",
-    "summary": "由每周两次力量训练趋势延展，沉淀为女性忙碌日程中的支撑、活动度与可持续穿着指南。"
+    "title": "DEKA Fitness Racing for Women: What to Wear for Your First Functional Challenge",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/deka-fitness-racing-activewear-guide-women.html",
+    "summary": "由女性功能性健身赛事趋势延展，沉淀为首次 DEKA 风格挑战的支撑、活动度与穿搭指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
