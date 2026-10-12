@@ -1,33 +1,33 @@
 {
-  "edition": "0092",
-  "date": "2026年10月9日 09:15",
-  "intro": "本期聚焦女性健身赛事、长寿训练与混合课程消费，也关注冬季功能面料、女性友好健身空间和社媒健康内容。",
+  "edition": "0093",
+  "date": "2026年10月12日 09:15",
+  "intro": "本期聚焦女性社群化训练、心理健康友好运动与沉浸式健身空间，也观察节庆场景中的运动服日常化和中国“运动处方”服务。Fanka 可把压缩服从单一训练装备，延展为支持连接、恢复与全天移动的基础层。",
   "tags": [
-    "女性健身赛事",
-    "长寿训练",
-    "混合课程消费",
-    "冬季功能面料",
-    "健康内容可信度"
+    "女性社群训练",
+    "心理健康运动",
+    "沉浸式健身",
+    "节庆运动穿搭",
+    "运动处方"
   ],
   "top3": [
     {
-      "title": "DEKA 数据显示女性正在成为功能性健身赛事主力",
-      "comment": "围绕首次参赛女性做支撑、腰头稳定与赛前训练内容。"
+      "title": "女性力量与跑步社群把“粉色主题”变成低门槛线下训练",
+      "comment": "女性力量社群与跑步场景适合做“第一次参加怎么穿”的内容。"
     },
     {
-      "title": "长寿训练被做成可测量、可备赛的八项综合挑战",
-      "comment": "把力量、平衡、耐力和恢复转成可理解的穿搭场景。"
+      "title": "Train for Tomorrow 把心理健康、海滩训练与免费装备放进同一场活动",
+      "comment": "把心理健康友好训练写成训练、呼吸、补水和恢复的完整流程。"
     },
     {
-      "title": "STRONG Pilates 用一张会员卡回应多馆消费疲劳",
-      "comment": "用一套穿搭覆盖力量、有氧与垫上动作，测试跨场景内容。"
+      "title": "Amped Universe 用主题化空间把力量训练、女性专属区与恢复体验做成健身目的地",
+      "comment": "围绕主题化健身空间，测试一套基础层如何跨力量、恢复和社交。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0092.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0093.html",
   "blog": {
-    "title": "DEKA Fitness Racing for Women: What to Wear for Your First Functional Challenge",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/deka-fitness-racing-activewear-guide-women.html",
-    "summary": "由女性功能性健身赛事趋势延展，沉淀为首次 DEKA 风格挑战的支撑、活动度与穿搭指南。"
+    "title": "What to Wear for Women’s Community Fitness: Training, Recovery, and Connection",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/women-community-fitness-outfits-training-recovery.html",
+    "summary": "由女性社群训练与恢复场景延展，整理适合跑团、力量课、wellness 活动的 Fanka 穿搭指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
