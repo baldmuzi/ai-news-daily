@@ -1,33 +1,33 @@
 {
-  "edition": "0093",
-  "date": "2026年10月12日 09:15",
-  "intro": "本期聚焦女性社群化训练、心理健康友好运动与沉浸式健身空间，也观察节庆场景中的运动服日常化和中国“运动处方”服务。Fanka 可把压缩服从单一训练装备，延展为支持连接、恢复与全天移动的基础层。",
+  "edition": "0094",
+  "date": "2026年10月13日 09:36",
+  "intro": "本期新变化从女性 athleisure 进入实体零售、固定小组训练和短时自适应健身 App，延伸到中国运动健康数字化、户外联名与 60+ 日常活动。Fanka 可把压缩服从训练单品讲成支持工作、出行、社群和长期运动习惯的基础层。",
   "tags": [
-    "女性社群训练",
-    "心理健康运动",
-    "沉浸式健身",
-    "节庆运动穿搭",
-    "运动处方"
+    "女性 athleisure",
+    "社群化训练",
+    "数字健身",
+    "运动健康科技",
+    "户外日常化"
   ],
   "top3": [
     {
-      "title": "女性力量与跑步社群把“粉色主题”变成低门槛线下训练",
-      "comment": "女性力量社群与跑步场景适合做“第一次参加怎么穿”的内容。"
+      "title": "Vitality 进入 Academy 实体零售，女性 athleisure 继续从线上走向试穿场景",
+      "comment": "用训练、通勤、周末三段试穿，讲清女性基础层如何跨场景。"
     },
     {
-      "title": "Train for Tomorrow 把心理健康、海滩训练与免费装备放进同一场活动",
-      "comment": "把心理健康友好训练写成训练、呼吸、补水和恢复的完整流程。"
+      "title": "Club Athletic 用固定 20 人小组把训练、跑团和社交做成同一会员体验",
+      "comment": "围绕第一次加入训练小组怎么穿，做签到、训练、合影和回家动线。"
     },
     {
-      "title": "Amped Universe 用主题化空间把力量训练、女性专属区与恢复体验做成健身目的地",
-      "comment": "围绕主题化健身空间，测试一套基础层如何跨力量、恢复和社交。"
+      "title": "短时、自适应和低冲击功能成为 2026 健身 App 选择的共同语言",
+      "comment": "把 20 分钟力量、低冲击恢复和出差训练拆成三套穿法。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0093.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0094.html",
   "blog": {
-    "title": "What to Wear for Women’s Community Fitness: Training, Recovery, and Connection",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/women-community-fitness-outfits-training-recovery.html",
-    "summary": "由女性社群训练与恢复场景延展，整理适合跑团、力量课、wellness 活动的 Fanka 穿搭指南。"
+    "title": "How to Build a Women’s Athleisure Capsule for Training and Everyday Life",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/womens-athleisure-capsule-training-everyday.html",
+    "summary": "由女性 athleisure 进入实体零售的趋势延展，整理从训练到通勤、旅行和日常移动的 Fanka 胶囊衣橱方法。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
