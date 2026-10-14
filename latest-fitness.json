@@ -1,33 +1,33 @@
 {
-  "edition": "0094",
-  "date": "2026年10月13日 09:36",
-  "intro": "本期新变化从女性 athleisure 进入实体零售、固定小组训练和短时自适应健身 App，延伸到中国运动健康数字化、户外联名与 60+ 日常活动。Fanka 可把压缩服从训练单品讲成支持工作、出行、社群和长期运动习惯的基础层。",
+  "edition": "0095",
+  "date": "2026年10月14日 09:17",
+  "intro": "本期聚焦女性生理数据、赛事社群、分层反馈与社区运动服务，Fanka 可把压缩服从训练装备延展为支持女性长期运动、恢复与日常移动的基础层。",
   "tags": [
-    "女性 athleisure",
-    "社群化训练",
-    "数字健身",
-    "运动健康科技",
-    "户外日常化"
+    "女性生理数据",
+    "赛事社群化",
+    "分层反馈",
+    "户外长期主义",
+    "社区运动服务"
   ],
   "top3": [
     {
-      "title": "Vitality 进入 Academy 实体零售，女性 athleisure 继续从线上走向试穿场景",
-      "comment": "用训练、通勤、周末三段试穿，讲清女性基础层如何跨场景。"
+      "title": "Collective X Health 用女性生理研究为运动与恢复产品补一层“证据底座”",
+      "comment": "把女性生理数据、训练体感和恢复记录做成温和的内容教育，不把压缩服写成医疗器械。"
     },
     {
-      "title": "Club Athletic 用固定 20 人小组把训练、跑团和社交做成同一会员体验",
-      "comment": "围绕第一次加入训练小组怎么穿，做签到、训练、合影和回家动线。"
+      "title": "Sweatpals × HYROX 把“比赛日”延伸成全年训练俱乐部与城市归属",
+      "comment": "围绕第一次 HYROX 训练包与赛后恢复，做城市社群穿搭和复训记录。"
     },
     {
-      "title": "短时、自适应和低冲击功能成为 2026 健身 App 选择的共同语言",
-      "comment": "把 20 分钟力量、低冲击恢复和出差训练拆成三套穿法。"
+      "title": "Gymverse 用同水平分组排行榜，把健身反馈从“拼最大重量”改成持续可见",
+      "comment": "用个人穿着记录挑战替代榜单热度，展示基础层在力量、拉伸和出差训练中的稳定性。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0094.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0095.html",
   "blog": {
-    "title": "How to Build a Women’s Athleisure Capsule for Training and Everyday Life",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/womens-athleisure-capsule-training-everyday.html",
-    "summary": "由女性 athleisure 进入实体零售的趋势延展，整理从训练到通勤、旅行和日常移动的 Fanka 胶囊衣橱方法。"
+    "title": "How Women Can Use Health Data to Plan Training and Recovery",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/womens-health-data-training-recovery-guide.html",
+    "summary": "由女性生理数据进入运动产品底层的趋势延展，整理如何用睡眠、体感、训练和穿着记录安排更可持续的运动。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
