@@ -1,33 +1,33 @@
 {
-  "edition": "0095",
-  "date": "2026年10月14日 09:17",
-  "intro": "本期聚焦女性生理数据、赛事社群、分层反馈与社区运动服务，Fanka 可把压缩服从训练装备延展为支持女性长期运动、恢复与日常移动的基础层。",
+  "edition": "0097",
+  "date": "2026年10月16日 09:07",
+  "intro": "本期从中国负重配件、纽约女性力量空间到全球运动零售与内容制作，观察女性如何更自在地训练和穿着；Fanka 可用压缩服基础层连接真实动作、恢复体验与日常表达。",
   "tags": [
-    "女性生理数据",
-    "赛事社群化",
-    "分层反馈",
-    "户外长期主义",
-    "社区运动服务"
+    "女性力量空间",
+    "负重配件",
+    "内容判断",
+    "运动零售",
+    "短时恢复"
   ],
   "top3": [
     {
-      "title": "Collective X Health 用女性生理研究为运动与恢复产品补一层“证据底座”",
-      "comment": "把女性生理数据、训练体感和恢复记录做成温和的内容教育，不把压缩服写成医疗器械。"
+      "title": "负重手环从训练工具变成可展示的日常运动配件",
+      "comment": "把配件种草延伸成真实跟练与穿着测试，不暗示戴上就瘦。"
     },
     {
-      "title": "Sweatpals × HYROX 把“比赛日”延伸成全年训练俱乐部与城市归属",
-      "comment": "围绕第一次 HYROX 训练包与赛后恢复，做城市社群穿搭和复训记录。"
+      "title": "布鲁克林女性力量馆把小班训练改成各练各的节奏",
+      "comment": "做第一次小班力量课的压缩穿搭和五动作试穿检查。"
     },
     {
-      "title": "Gymverse 用同水平分组排行榜，把健身反馈从“拼最大重量”改成持续可见",
-      "comment": "用个人穿着记录挑战替代榜单热度，展示基础层在力量、拉伸和出差训练中的稳定性。"
+      "title": "健身品牌内容制作从多发转向先定义每条作品的任务",
+      "comment": "拍摄前先定义穿着疑问，再拆出动作、细节和社群反馈版本。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0095.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0097.html",
   "blog": {
-    "title": "How Women Can Use Health Data to Plan Training and Recovery",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/womens-health-data-training-recovery-guide.html",
-    "summary": "由女性生理数据进入运动产品底层的趋势延展，整理如何用睡眠、体感、训练和穿着记录安排更可持续的运动。"
+    "title": "What to Wear to Your First Small-Group Strength Class: A Women’s Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/first-small-group-strength-class-outfits-women.html",
+    "summary": "由女性友好小班力量训练趋势延展，整理第一次上课的支撑、压缩裤、动作检查与课后穿搭。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
