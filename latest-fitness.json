@@ -1,33 +1,33 @@
 {
-  "edition": "0097",
-  "date": "2026年10月16日 09:07",
-  "intro": "本期从中国负重配件、纽约女性力量空间到全球运动零售与内容制作，观察女性如何更自在地训练和穿着；Fanka 可用压缩服基础层连接真实动作、恢复体验与日常表达。",
+  "edition": "0098",
+  "date": "2026年10月19日 09:11",
+  "intro": "从中国泳装商贸、北京户外产业到全球女性运动与社媒表达，本期关注服装如何服务真实动作和多场景生活；Fanka 可把压缩穿搭讲得更具体。",
   "tags": [
-    "女性力量空间",
-    "负重配件",
-    "内容判断",
-    "运动零售",
-    "短时恢复"
+    "泳装场景",
+    "户外分层",
+    "女性健康",
+    "社媒表达",
+    "运动消费"
   ],
   "top3": [
     {
-      "title": "负重手环从训练工具变成可展示的日常运动配件",
-      "comment": "把配件种草延伸成真实跟练与穿着测试，不暗示戴上就瘦。"
+      "title": "兴城泳装博览会进入上海时装周，运动与度假场景同场交易",
+      "comment": "关注运动服饰如何面向国际买手，同时做水边活动前后穿着内容。"
     },
     {
-      "title": "布鲁克林女性力量馆把小班训练改成各练各的节奏",
-      "comment": "做第一次小班力量课的压缩穿搭和五动作试穿检查。"
+      "title": "北京户外产业大会发布行业报告并启动北斗赛事管理系统",
+      "comment": "用真实路线、天气和装备检查解释户外压缩服分层。"
     },
     {
-      "title": "健身品牌内容制作从多发转向先定义每条作品的任务",
-      "comment": "拍摄前先定义穿着疑问，再拆出动作、细节和社群反馈版本。"
+      "title": "Black Diamond 推出室内攀岩到秋季岩场的成套装备",
+      "comment": "从攀岩馆到户外拍分层清单，具体测试活动度与腰头稳定。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0097.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0098.html",
   "blog": {
-    "title": "What to Wear to Your First Small-Group Strength Class: A Women’s Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/first-small-group-strength-class-outfits-women.html",
-    "summary": "由女性友好小班力量训练趋势延展，整理第一次上课的支撑、压缩裤、动作检查与课后穿搭。"
+    "title": "What to Wear for a Week of Mixed Cardio Workouts: A Women’s Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/mixed-cardio-workout-outfits-for-women.html",
+    "summary": "由女性多样有氧挑战个案延展，整理跑步、单车、舞蹈与轻松日的支撑和压缩穿搭。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
