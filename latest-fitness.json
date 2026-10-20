@@ -1,33 +1,33 @@
 {
-  "edition": "0098",
-  "date": "2026年10月19日 09:11",
-  "intro": "从中国泳装商贸、北京户外产业到全球女性运动与社媒表达，本期关注服装如何服务真实动作和多场景生活；Fanka 可把压缩穿搭讲得更具体。",
+  "edition": "0099",
+  "date": "2026年10月20日 09:09",
+  "intro": "从全球阶梯社群、跨境健身消费到女性健康服务与运动服饰上新，本期提炼压缩穿搭和内容创作的新机会。",
   "tags": [
-    "泳装场景",
-    "户外分层",
+    "阶梯社群",
+    "跨境健身",
     "女性健康",
-    "社媒表达",
-    "运动消费"
+    "运动分层",
+    "城市跑团"
   ],
   "top3": [
     {
-      "title": "兴城泳装博览会进入上海时装周，运动与度假场景同场交易",
-      "comment": "关注运动服饰如何面向国际买手，同时做水边活动前后穿着内容。"
+      "title": "NikeSKIMS 首次推出外套，把训练基础层延伸到凉季日常",
+      "comment": "从基础层延伸到外套，拍凉季训练前后真实穿搭。"
     },
     {
-      "title": "北京户外产业大会发布行业报告并启动北斗赛事管理系统",
-      "comment": "用真实路线、天气和装备检查解释户外压缩服分层。"
+      "title": "Friday Stairs 从坦帕扩向多城，免费阶梯训练成为社交入口",
+      "comment": "用第一堂阶梯训练展示支撑、腰头、鞋底和安全节奏。"
     },
     {
-      "title": "Black Diamond 推出室内攀岩到秋季岩场的成套装备",
-      "comment": "从攀岩馆到户外拍分层清单，具体测试活动度与腰头稳定。"
+      "title": "ClassPass 跨境预订数据把旅行中的运动课变成消费场景",
+      "comment": "把跨境运动课变成轻行李、多课程穿搭清单。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0098.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0099.html",
   "blog": {
-    "title": "What to Wear for a Week of Mixed Cardio Workouts: A Women’s Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/mixed-cardio-workout-outfits-for-women.html",
-    "summary": "由女性多样有氧挑战个案延展，整理跑步、单车、舞蹈与轻松日的支撑和压缩穿搭。"
+    "title": "What to Wear for Stair Workouts: A Women’s Support and Fit Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/stair-workout-outfits-for-women-support-fit-guide.html",
+    "summary": "由社区阶梯训练跨城扩张延展，整理女性上下台阶时的运动内衣、压缩裤、鞋履与户外分层检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
