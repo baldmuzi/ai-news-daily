@@ -1,33 +1,33 @@
 {
-  "edition": "0099",
-  "date": "2026年10月20日 09:09",
-  "intro": "从全球阶梯社群、跨境健身消费到女性健康服务与运动服饰上新，本期提炼压缩穿搭和内容创作的新机会。",
+  "edition": "0100",
+  "date": "2026年10月21日 09:07",
+  "intro": "全球女性运动内容正从单项训练走向数据、社群与体验场景；本期结合压缩服与运动穿搭，提炼可实拍的新选题。",
   "tags": [
-    "阶梯社群",
-    "跨境健身",
-    "女性健康",
-    "运动分层",
-    "城市跑团"
+    "训练数据",
+    "女性力量",
+    "攀岩穿搭",
+    "运动社群",
+    "体验零售"
   ],
   "top3": [
     {
-      "title": "NikeSKIMS 首次推出外套，把训练基础层延伸到凉季日常",
-      "comment": "从基础层延伸到外套，拍凉季训练前后真实穿搭。"
+      "title": "ACSM 2027 趋势榜把可穿戴、移动应用与动作质量排在前列",
+      "comment": "Fanka 可制作“数据之外如何判断衣着是否适合动作”的系列，把佩戴记录与真实活动度、支撑感和个人体感并置。"
     },
     {
-      "title": "Friday Stairs 从坦帕扩向多城，免费阶梯训练成为社交入口",
-      "comment": "用第一堂阶梯训练展示支撑、腰头、鞋底和安全节奏。"
+      "title": "女性运动奖项从线上投票走向线下社群现场",
+      "comment": "Fanka 可策划“让我继续运动的女性”人物短片，邀请教练、志愿者和普通参与者讲述真实支持，而非只呈现成绩。"
     },
     {
-      "title": "ClassPass 跨境预订数据把旅行中的运动课变成消费场景",
-      "comment": "把跨境运动课变成轻行李、多课程穿搭清单。"
+      "title": "Oura 将训练负荷与恢复节奏放进同一周视图",
+      "comment": "Fanka 可做“强度日与轻松日的穿着选择”记录，把衣物舒适度写进训练日志，避免把设备分数等同健康建议。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0099.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0100.html",
   "blog": {
-    "title": "What to Wear for Stair Workouts: A Women’s Support and Fit Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/stair-workout-outfits-for-women-support-fit-guide.html",
-    "summary": "由社区阶梯训练跨城扩张延展，整理女性上下台阶时的运动内衣、压缩裤、鞋履与户外分层检查。"
+    "title": "What to Wear for Indoor Climbing: A Women’s Bouldering and Strength Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/womens-indoor-climbing-outfit-guide-bouldering-strength.html",
+    "summary": "由攀岩馆与 COROS 合作延展，整理女性抱石、攀爬与辅助力量训练的穿着检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
