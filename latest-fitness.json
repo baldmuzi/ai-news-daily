@@ -1,33 +1,33 @@
 {
-  "edition": "0100",
-  "date": "2026年10月21日 09:07",
-  "intro": "全球女性运动内容正从单项训练走向数据、社群与体验场景；本期结合压缩服与运动穿搭，提炼可实拍的新选题。",
+  "edition": "0101",
+  "date": "2026年10月22日 09:10",
+  "intro": "全球女性运动新变化落在分级赛事、熟龄跑步与日常穿搭；Fanka 可从压缩服的实际活动度出发，拍出更可信的场景内容。",
   "tags": [
-    "训练数据",
-    "女性力量",
-    "攀岩穿搭",
-    "运动社群",
-    "体验零售"
+    "混合体能赛",
+    "熟龄跑步",
+    "通勤运动",
+    "秋冬穿搭",
+    "赛事分级"
   ],
   "top3": [
     {
-      "title": "ACSM 2027 趋势榜把可穿戴、移动应用与动作质量排在前列",
-      "comment": "Fanka 可制作“数据之外如何判断衣着是否适合动作”的系列，把佩戴记录与真实活动度、支撑感和个人体感并置。"
+      "title": "泳池版混合体能赛在法国扩展，跑步赛段换成游泳",
+      "comment": "拍摄泳池与岸上装备分区，明确压缩裤只用于适合的陆上活动。"
     },
     {
-      "title": "女性运动奖项从线上投票走向线下社群现场",
-      "comment": "Fanka 可策划“让我继续运动的女性”人物短片，邀请教练、志愿者和普通参与者讲述真实支持，而非只呈现成绩。"
+      "title": "50 岁后初跑马拉松的女性，把跑走交替与个人节奏带进训练",
+      "comment": "邀请熟龄女性分享支撑、裤腰与收纳选择，不用年龄设限。"
     },
     {
-      "title": "Oura 将训练负荷与恢复节奏放进同一周视图",
-      "comment": "Fanka 可做“强度日与轻松日的穿着选择”记录，把衣物舒适度写进训练日志，避免把设备分数等同健康建议。"
+      "title": "成都门店走访显示轻量穿戴装备进入通勤与工位运动场景",
+      "comment": "实拍通勤到工位的穿着活动度，不宣称配件有确定燃脂效果。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0100.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0101.html",
   "blog": {
-    "title": "What to Wear for Indoor Climbing: A Women’s Bouldering and Strength Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/womens-indoor-climbing-outfit-guide-bouldering-strength.html",
-    "summary": "由攀岩馆与 COROS 合作延展，整理女性抱石、攀爬与辅助力量训练的穿着检查。"
+    "title": "What to Wear for Your First Marathon After 50: A Women’s Running Outfit Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/first-marathon-after-50-running-outfit-guide.html",
+    "summary": "由50岁后女性初跑马拉松的采访延展，整理长跑训练、比赛日与跑后换装的穿着检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
