@@ -1,33 +1,33 @@
 {
-  "edition": "0101",
-  "date": "2026年10月22日 09:10",
-  "intro": "全球女性运动新变化落在分级赛事、熟龄跑步与日常穿搭；Fanka 可从压缩服的实际活动度出发，拍出更可信的场景内容。",
+  "edition": "0102",
+  "date": "2026年10月23日 09:14",
+  "intro": "全球女性运动与服饰市场出现品牌分化、场馆数字体验和球衣日常化新变化；Fanka 可围绕压缩服实穿、健康训练与多场景穿搭制作内容。",
   "tags": [
-    "混合体能赛",
-    "熟龄跑步",
-    "通勤运动",
-    "秋冬穿搭",
-    "赛事分级"
+    "品牌零售分化",
+    "多场景穿搭",
+    "女性膝部训练",
+    "团课数据",
+    "室内跑赛"
   ],
   "top3": [
     {
-      "title": "泳池版混合体能赛在法国扩展，跑步赛段换成游泳",
-      "comment": "拍摄泳池与岸上装备分区，明确压缩裤只用于适合的陆上活动。"
+      "title": "安踏三季度品牌零售表现分化，其他品牌增长高于主品牌",
+      "comment": "安踏集团数据呈品牌分化；Fanka 可按价位和运动场景做真实试穿。"
     },
     {
-      "title": "50 岁后初跑马拉松的女性，把跑走交替与个人节奏带进训练",
-      "comment": "邀请熟龄女性分享支撑、裤腰与收纳选择，不用年龄设限。"
+      "title": "美国 Meijer 推出青少年运动休闲线，主打训练与日常两用",
+      "comment": "Sage & Sky 新品强调训练与日常两用；可实拍一件单品多场景穿法。"
     },
     {
-      "title": "成都门店走访显示轻量穿戴装备进入通勤与工位运动场景",
-      "comment": "实拍通勤到工位的穿着活动度，不宣称配件有确定燃脂效果。"
+      "title": "女性膝部训练讨论从年龄限制转向动作与负荷管理",
+      "comment": "专家采访讨论下肢训练和休息；可展示运动裤在蹲、跨步时的活动度。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0101.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0102.html",
   "blog": {
-    "title": "What to Wear for Your First Marathon After 50: A Women’s Running Outfit Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/first-marathon-after-50-running-outfit-guide.html",
-    "summary": "由50岁后女性初跑马拉松的采访延展，整理长跑训练、比赛日与跑后换装的穿着检查。"
+    "title": "What to Wear for Knee-Friendly Workouts: A Women’s Activewear Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/knee-friendly-workout-outfits-women.html",
+    "summary": "由本期女性膝部训练报道延展，整理力量训练、轻量活动与休息日的运动穿着检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
