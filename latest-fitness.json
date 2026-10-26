@@ -1,33 +1,33 @@
 {
-  "edition": "0102",
-  "date": "2026年10月23日 09:14",
-  "intro": "全球女性运动与服饰市场出现品牌分化、场馆数字体验和球衣日常化新变化；Fanka 可围绕压缩服实穿、健康训练与多场景穿搭制作内容。",
+  "edition": "0103",
+  "date": "2026年10月26日 09:07",
+  "intro": "全球女性运动内容出现板式网球社群、分层面料与训练节奏的新案例；Fanka 可用压缩服实穿、社群挑战和多场景穿搭回应。",
   "tags": [
-    "品牌零售分化",
-    "多场景穿搭",
-    "女性膝部训练",
-    "团课数据",
-    "室内跑赛"
+    "板式网球社群",
+    "多气候面料",
+    "女性力量",
+    "公益运动",
+    "课程个性化"
   ],
   "top3": [
     {
-      "title": "安踏三季度品牌零售表现分化，其他品牌增长高于主品牌",
-      "comment": "安踏集团数据呈品牌分化；Fanka 可按价位和运动场景做真实试穿。"
+      "title": "Nike Tech 重组多气候功能服装，强调通勤到运动的分层",
+      "comment": "Nike Tech 公布多气候面料系列；可拍压缩基础层与外层的真实分层试穿。"
     },
     {
-      "title": "美国 Meijer 推出青少年运动休闲线，主打训练与日常两用",
-      "comment": "Sage & Sky 新品强调训练与日常两用；可实拍一件单品多场景穿法。"
+      "title": "Tracy Anderson 推出按动作评估分流的十天线上课程",
+      "comment": "IDENTITY 预告评估分流和弹性时长；可做三种训练时长的女性穿着记录。"
     },
     {
-      "title": "女性膝部训练讨论从年龄限制转向动作与负荷管理",
-      "comment": "专家采访讨论下肢训练和休息；可展示运动裤在蹲、跨步时的活动度。"
+      "title": "美国大学板式网球联赛把校外球场接入女子组赛事",
+      "comment": "美国大学板式网球联赛设女子组；可拍初次上场的支撑、侧移和赛后穿搭。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0102.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0103.html",
   "blog": {
-    "title": "What to Wear for Knee-Friendly Workouts: A Women’s Activewear Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/knee-friendly-workout-outfits-women.html",
-    "summary": "由本期女性膝部训练报道延展，整理力量训练、轻量活动与休息日的运动穿着检查。"
+    "title": "What to Wear for Padel: A Women’s Court-to-Club Outfit Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/womens-padel-outfit-guide-court-to-club.html",
+    "summary": "由本期美国大学板式网球联赛新动向延展，整理女性上场、移动与赛后社交的穿着检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
