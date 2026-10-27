@@ -1,33 +1,33 @@
 {
-  "edition": "0103",
-  "date": "2026年10月26日 09:07",
-  "intro": "全球女性运动内容出现板式网球社群、分层面料与训练节奏的新案例；Fanka 可用压缩服实穿、社群挑战和多场景穿搭回应。",
+  "edition": "0104",
+  "date": "2026年10月27日 09:08",
+  "intro": "全球女性运动新动向涵盖足球文化、健康记录、团课社群与面料研发；Fanka 可用压缩服实穿和真实训练场景创作内容。",
   "tags": [
-    "板式网球社群",
-    "多气候面料",
-    "女性力量",
-    "公益运动",
-    "课程个性化"
+    "女子足球文化",
+    "女性健康记录",
+    "团课社群",
+    "功能面料",
+    "社媒内容形式"
   ],
   "top3": [
     {
-      "title": "Nike Tech 重组多气候功能服装，强调通勤到运动的分层",
-      "comment": "Nike Tech 公布多气候面料系列；可拍压缩基础层与外层的真实分层试穿。"
+      "title": "Nike 与 Megan Rapinoe 推出女足灵感系列，连接球场与街头",
+      "comment": "Nike 女足胶囊将球场造型带进街头；可拍支撑、移动与赛后换装。"
     },
     {
-      "title": "Tracy Anderson 推出按动作评估分流的十天线上课程",
-      "comment": "IDENTITY 预告评估分流和弹性时长；可做三种训练时长的女性穿着记录。"
+      "title": "小红书“存肌肉就是存未来”进入生活方式内容讨论",
+      "comment": "千瓜观察到“存肌肉”话题；可记录女性力量练习和真实穿着体验。"
     },
     {
-      "title": "美国大学板式网球联赛把校外球场接入女子组赛事",
-      "comment": "美国大学板式网球联赛设女子组；可拍初次上场的支撑、侧移和赛后穿搭。"
+      "title": "多课程与恢复空间合并会员，成为多伦多新店卖点",
+      "comment": "多伦多新店预告多课程与恢复会员；可拍一周多场景穿着路径。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0103.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0104.html",
   "blog": {
-    "title": "What to Wear for Padel: A Women’s Court-to-Club Outfit Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/womens-padel-outfit-guide-court-to-club.html",
-    "summary": "由本期美国大学板式网球联赛新动向延展，整理女性上场、移动与赛后社交的穿着检查。"
+    "title": "What to Wear for Recreational Soccer: A Women’s Practice-to-Street Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/womens-recreational-soccer-outfit-guide.html",
+    "summary": "由本期 Nike 与 Megan Rapinoe 女足服饰系列延展，整理女性业余足球训练、换装与赛后穿搭。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
