@@ -1,33 +1,33 @@
 {
-  "edition": "0104",
-  "date": "2026年10月27日 09:08",
-  "intro": "全球女性运动新动向涵盖足球文化、健康记录、团课社群与面料研发；Fanka 可用压缩服实穿和真实训练场景创作内容。",
+  "edition": "0105",
+  "date": "2026年10月28日 09:08",
+  "intro": "全球女性运动内容聚焦能量补给、复古瑜伽穿搭、社群跑步与功能服饰跨场景应用；Fanka 可用压缩服实穿和低门槛体验回应新变化。",
   "tags": [
-    "女子足球文化",
-    "女性健康记录",
-    "团课社群",
-    "功能面料",
-    "社媒内容形式"
+    "运动补给",
+    "复古瑜伽",
+    "女性力量",
+    "跑团社群",
+    "跨场景面料"
   ],
   "top3": [
     {
-      "title": "Nike 与 Megan Rapinoe 推出女足灵感系列，连接球场与街头",
-      "comment": "Nike 女足胶囊将球场造型带进街头；可拍支撑、移动与赛后换装。"
+      "title": "女性运动中的训练不足补给风险进入主流健身讨论",
+      "comment": "女性运动健康报道提醒关注训练与补给平衡；内容可转向可持续运动。"
     },
     {
-      "title": "小红书“存肌肉就是存未来”进入生活方式内容讨论",
-      "comment": "千瓜观察到“存肌肉”话题；可记录女性力量练习和真实穿着体验。"
+      "title": "中文运动服饰趋势报告聚焦复古瑜伽与简约塑形廓形",
+      "comment": "POP Fashion 观察到复古瑜伽廓形；可用实穿动作测试验证穿搭。"
     },
     {
-      "title": "多课程与恢复空间合并会员，成为多伦多新店卖点",
-      "comment": "多伦多新店预告多课程与恢复会员；可拍一周多场景穿着路径。"
+      "title": "BODY20 以 20 分钟教练带练 EMS 切入女性力量训练",
+      "comment": "BODY20 用短时教练带练服务女性力量训练；可拍入门准备内容。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0104.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0105.html",
   "blog": {
-    "title": "What to Wear for Recreational Soccer: A Women’s Practice-to-Street Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/womens-recreational-soccer-outfit-guide.html",
-    "summary": "由本期 Nike 与 Megan Rapinoe 女足服饰系列延展，整理女性业余足球训练、换装与赛后穿搭。"
+    "title": "Retro Yoga Outfits for Women: How to Style Studio Pieces for Everyday Wear",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/retro-yoga-outfits-women-studio-everyday.html",
+    "summary": "由本期 POP Fashion 复古瑜伽服饰观察延展，整理女性从垫上训练到日常出行的廓形、配色与动作检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
