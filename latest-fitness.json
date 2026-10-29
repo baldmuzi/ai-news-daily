@@ -1,33 +1,33 @@
 {
-  "edition": "0105",
-  "date": "2026年10月28日 09:08",
-  "intro": "全球女性运动内容聚焦能量补给、复古瑜伽穿搭、社群跑步与功能服饰跨场景应用；Fanka 可用压缩服实穿和低门槛体验回应新变化。",
+  "edition": "0106",
+  "date": "2026年10月29日 09:10",
+  "intro": "全球女性运动装备正细化鞋楦与贴身面料，混合体能赛、户外分层和真实恢复故事也出现新内容切口；Fanka 可用压缩服实穿验证与低门槛表达回应。",
   "tags": [
-    "运动补给",
-    "复古瑜伽",
-    "女性力量",
-    "跑团社群",
-    "跨场景面料"
+    "女性专属装备",
+    "压缩衣工艺",
+    "混合体能赛",
+    "户外轻机能",
+    "运动恢复"
   ],
   "top3": [
     {
-      "title": "女性运动中的训练不足补给风险进入主流健身讨论",
-      "comment": "女性运动健康报道提醒关注训练与补给平衡；内容可转向可持续运动。"
+      "title": "女性专属运动鞋成为品牌差异化的新焦点",
+      "comment": "女性装备需求被更细致讨论；可用真实动作测试讲清贴合与支撑。"
     },
     {
-      "title": "中文运动服饰趋势报告聚焦复古瑜伽与简约塑形廓形",
-      "comment": "POP Fashion 观察到复古瑜伽廓形；可用实穿动作测试验证穿搭。"
+      "title": "压缩上衣设计关注立体成型与透气结构",
+      "comment": "新设计报告聚焦压缩上衣工艺；可拍近景展示通风与活动度。"
     },
     {
-      "title": "BODY20 以 20 分钟教练带练 EMS 切入女性力量训练",
-      "comment": "BODY20 用短时教练带练服务女性力量训练；可拍入门准备内容。"
+      "title": "世界铁联与 HYROX 建立混合体能赛合作框架",
+      "comment": "混合体能赛建立国际合作框架；可做跑与力量切换的穿着检查。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0105.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0106.html",
   "blog": {
-    "title": "Retro Yoga Outfits for Women: How to Style Studio Pieces for Everyday Wear",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/retro-yoga-outfits-women-studio-everyday.html",
-    "summary": "由本期 POP Fashion 复古瑜伽服饰观察延展，整理女性从垫上训练到日常出行的廓形、配色与动作检查。"
+    "title": "How to Choose a Fitted Workout Top for Women: Breathability, Support, and Movement",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/fitted-workout-top-women-fit-breathability-guide.html",
+    "summary": "由本期压缩上衣工艺趋势延展，整理女性挑选贴身训练上衣的透气、支撑与动作检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
