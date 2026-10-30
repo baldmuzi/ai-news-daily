@@ -1,33 +1,33 @@
 {
-  "edition": "0106",
-  "date": "2026年10月29日 09:10",
-  "intro": "全球女性运动装备正细化鞋楦与贴身面料，混合体能赛、户外分层和真实恢复故事也出现新内容切口；Fanka 可用压缩服实穿验证与低门槛表达回应。",
+  "edition": "0107",
+  "date": "2026年10月30日 09:21",
+  "intro": "全球女性力量社群、睡眠温控与运动服饰零售出现新变化；Fanka 可用压缩服实穿、可信选购信息和赛前准备内容，连接女性日常运动。",
   "tags": [
-    "女性专属装备",
-    "压缩衣工艺",
-    "混合体能赛",
-    "户外轻机能",
-    "运动恢复"
+    "女性力量社群",
+    "更年期睡眠",
+    "运动服消费",
+    "长期信任",
+    "马拉松准备"
   ],
   "top3": [
     {
-      "title": "女性专属运动鞋成为品牌差异化的新焦点",
-      "comment": "女性装备需求被更细致讨论；可用真实动作测试讲清贴合与支撑。"
+      "title": "女性力量训练营把课程进度、营养记录与社群分享接入同一 App",
+      "comment": "女性力量课程接入个人进度和社群分享；可做新手连续训练内容。"
     },
     {
-      "title": "压缩上衣设计关注立体成型与透气结构",
-      "comment": "新设计报告聚焦压缩上衣工艺；可拍近景展示通风与活动度。"
+      "title": "更年期睡眠工具加入分阶段温控模式",
+      "comment": "更年期睡眠产品增加温控与记录功能；可讨论运动穿搭的体感差异。"
     },
     {
-      "title": "世界铁联与 HYROX 建立混合体能赛合作框架",
-      "comment": "混合体能赛建立国际合作框架；可做跑与力量切换的穿着检查。"
+      "title": "adidas 三季度服装收入按固定汇率增长 19%",
+      "comment": "adidas 披露服装业务增长；可用场景化试穿回应运动服饰需求。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0106.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0107.html",
   "blog": {
-    "title": "How to Choose a Fitted Workout Top for Women: Breathability, Support, and Movement",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/fitted-workout-top-women-fit-breathability-guide.html",
-    "summary": "由本期压缩上衣工艺趋势延展，整理女性挑选贴身训练上衣的透气、支撑与动作检查。"
+    "title": "What to Wear During Marathon Taper Week: A Women’s Comfort and Packing Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/marathon-taper-week-outfit-checklist-women.html",
+    "summary": "由本期 Weini Kelati 首次马拉松采访延展，整理女性赛前一周的穿着检查和打包清单。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
