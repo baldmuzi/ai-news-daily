@@ -1,27 +1,27 @@
 {
-  "edition": "0111",
-  "date": "2026年10月30日 09:20",
-  "intro": "AI 选款入口仍在试探，VEJA 线下联名与纽约马拉松活动放大场景体验；可持续品牌试穿、二手交易和短视频选题，为 VIVAIA 的节日运营带来新测试。",
+  "edition": "0112",
+  "date": "2026年11月2日 10:15",
+  "intro": "社媒用小字放大和长片叙事争夺注意力，品牌试探 TikTok 正价成交；循环材料与秋冬鞋款配色，为 VIVAIA 节日选品和内容提供新切口。",
   "tags": [
-    "AI选款入口",
-    "联名现场",
-    "跑步社群",
-    "可持续试穿",
-    "二手交易"
+    "小字放大",
+    "长片叙事",
+    "社交正价",
+    "循环材料",
+    "秋冬点色"
   ],
   "top3": [
     {
-      "title": "美国消费者仅一成从 AI 开始找商品，商品字段先于自动成交",
-      "comment": "先补齐鞋宽、场景和库存字段，分别追踪 AI 引荐与成交。"
+      "title": "Instagram Reels 出现“小字放大”与电量回满的短视频叙事模板",
+      "comment": "用小字放大和电量切换测试实穿视频，比较完播与点击。"
     },
     {
-      "title": "VEJA × PLEASURES 把联名鞋首发做成唐人街社区晚间活动",
-      "comment": "参考联名首发的线下活动，测试试穿预约与会后访问。"
+      "title": "Michael Kors 称 TikTok Shop 销售接近内部预期四倍",
+      "comment": "以两款正价鞋试点 TikTok，分开观察新客和毛利。"
     },
     {
-      "title": "Good On You 强调可持续品牌的实体试穿与循环服务入口",
-      "comment": "把材料证据与循环服务带到试穿点，测扫码和咨询。"
+      "title": "Global Fashion Agenda 展示五组循环设计与材料伙伴的实物成果",
+      "comment": "让新材料先过来源、耐磨与量产三项门槛。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0111.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0112.html"
 }
