@@ -1,33 +1,33 @@
 {
-  "edition": "0107",
-  "date": "2026年10月30日 09:21",
-  "intro": "全球女性力量社群、睡眠温控与运动服饰零售出现新变化；Fanka 可用压缩服实穿、可信选购信息和赛前准备内容，连接女性日常运动。",
+  "edition": "0108",
+  "date": "2026年11月2日 10:15",
+  "intro": "全球女性橄榄球、户外机能联名与复合健身空间有新动向；Fanka 可把压缩服实穿、女性健康和运动场景转成可操作的内容。",
   "tags": [
-    "女性力量社群",
-    "更年期睡眠",
-    "运动服消费",
-    "长期信任",
-    "马拉松准备"
+    "女性橄榄球",
+    "机能浪漫",
+    "复合健身",
+    "冬季运动穿搭",
+    "骨骼健康"
   ],
   "top3": [
     {
-      "title": "女性力量训练营把课程进度、营养记录与社群分享接入同一 App",
-      "comment": "女性力量课程接入个人进度和社群分享；可做新手连续训练内容。"
+      "title": "Ilona Maher 谈女子橄榄球的参与门槛与女孩运动榜样",
+      "comment": "女子橄榄球倡导女孩参与；可拍女性新手入门与穿着检查。"
     },
     {
-      "title": "更年期睡眠工具加入分阶段温控模式",
-      "comment": "更年期睡眠产品增加温控与记录功能；可讨论运动穿搭的体感差异。"
+      "title": "The North Face 联名新大片用女运动员讲机能与柔和设计",
+      "comment": "户外联名用运动员演绎机能与柔和设计；可拍动作和细节双镜头。"
     },
     {
-      "title": "adidas 三季度服装收入按固定汇率增长 19%",
-      "comment": "adidas 披露服装业务增长；可用场景化试穿回应运动服饰需求。"
+      "title": "24 Hour Fitness 预告把力量、恢复和社交放进同一高端俱乐部",
+      "comment": "复合健身空间计划整合力量、恢复与社交；可做一日多场景实穿。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0107.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0108.html",
   "blog": {
-    "title": "What to Wear During Marathon Taper Week: A Women’s Comfort and Packing Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/marathon-taper-week-outfit-checklist-women.html",
-    "summary": "由本期 Weini Kelati 首次马拉松采访延展，整理女性赛前一周的穿着检查和打包清单。"
+    "title": "What to Wear for Women’s Rugby Training: A Starter Outfit Checklist",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/womens-rugby-training-outfit-starter-checklist.html",
+    "summary": "由本期 Ilona Maher 女性橄榄球采访延展，整理初次训练的支撑、活动度、分层与装备检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
