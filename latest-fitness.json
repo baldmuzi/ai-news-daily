@@ -1,33 +1,33 @@
 {
-  "edition": "0108",
-  "date": "2026年11月2日 10:15",
-  "intro": "全球女性橄榄球、户外机能联名与复合健身空间有新动向；Fanka 可把压缩服实穿、女性健康和运动场景转成可操作的内容。",
+  "edition": "0109",
+  "date": "2026年11月3日 09:13",
+  "intro": "全球运动科技、功能面料和女性训练叙事出现新素材；Fanka 可把压缩服实穿、恢复节奏与多场景穿搭转成清晰内容。",
   "tags": [
-    "女性橄榄球",
-    "机能浪漫",
-    "复合健身",
-    "冬季运动穿搭",
-    "骨骼健康"
+    "肌肉表现记录",
+    "排汗面料",
+    "女性训练",
+    "运动礼品",
+    "商圈运动"
   ],
   "top3": [
     {
-      "title": "Ilona Maher 谈女子橄榄球的参与门槛与女孩运动榜样",
-      "comment": "女子橄榄球倡导女孩参与；可拍女性新手入门与穿着检查。"
+      "title": "Suji 推出可在家记录肌肉表现的穿戴式评分",
+      "comment": "压迫袖带新增动作评分；可做女性训练日志，避免健康功效夸大。"
     },
     {
-      "title": "The North Face 联名新大片用女运动员讲机能与柔和设计",
-      "comment": "户外联名用运动员演绎机能与柔和设计；可拍动作和细节双镜头。"
+      "title": "Neat 预告新款上衣，以双层面料讲汗渍管理",
+      "comment": "品牌用双层结构讲解汗渍管理；可做面料术语和实穿检查。"
     },
     {
-      "title": "24 Hour Fitness 预告把力量、恢复和社交放进同一高端俱乐部",
-      "comment": "复合健身空间计划整合力量、恢复与社交；可做一日多场景实穿。"
+      "title": "南京体育嘉年华把体验闯关与运动护照带进商圈",
+      "comment": "多项目闯关结合商圈集章；可设计新手体验与装备适配短片。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0108.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0109.html",
   "blog": {
-    "title": "What to Wear for Women’s Rugby Training: A Starter Outfit Checklist",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/womens-rugby-training-outfit-starter-checklist.html",
-    "summary": "由本期 Ilona Maher 女性橄榄球采访延展，整理初次训练的支撑、活动度、分层与装备检查。"
+    "title": "Fitness Gifts for Women: How to Choose Activewear and Gear She’ll Actually Use",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/fitness-gifts-for-women-activewear-and-gear-guide.html",
+    "summary": "由本期 Shape 运动礼品选品延展，整理按运动习惯、版型、空间和使用频率挑选礼物的实用指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
