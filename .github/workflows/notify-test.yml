@@ -1,0 +1,55 @@
+name: Notify WeCom - test reports
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'test/**'
+  workflow_dispatch:
+    inputs:
+      channel:
+        description: Test channel to send
+        type: choice
+        default: vivaia
+        options: [vivaia, tech, business, fitness, fanka-social, all]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: test-notifications-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  notify-test:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Find changed test files
+        env:
+          GIT_BEFORE: ${{ github.event.before }}
+          GIT_AFTER: ${{ github.sha }}
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "push" ]; then
+            if [ -z "$GIT_BEFORE" ] || [[ "$GIT_BEFORE" =~ ^0+$ ]]; then
+              git ls-files test/ > /tmp/test-changed.txt
+            else
+              git diff --name-only "$GIT_BEFORE" "$GIT_AFTER" -- test/ > /tmp/test-changed.txt
+            fi
+          else
+            touch /tmp/test-changed.txt
+          fi
+
+      - name: Verify test pages and send only to test robot
+        env:
+          WECOM_WEBHOOK_TEST: ${{ secrets.WECOM_WEBHOOK_TEST }}
+          TEST_CHANNEL: ${{ inputs.channel }}
+          CHANGED_FILES_PATH: /tmp/test-changed.txt
+        run: python3 .github/scripts/notify_test.py

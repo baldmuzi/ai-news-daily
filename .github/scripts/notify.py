@@ -82,6 +82,8 @@ def should_notify(json_file, prefixes, event, changed):
 
 
 def build_mention_str(mention_env):
+    if not mention_env:
+        return ''
     raw = os.environ.get(mention_env, '').strip()
     if not raw:
         return ''
@@ -221,7 +223,7 @@ def build_notification_content(d, label, mention_env):
     extra_links_block = f"\n\n{extra_links_md}" if extra_links_md else ''
 
     mentions = build_mention_str(mention_env)
-    msg = os.environ.get(mention_env.replace('MENTION', 'MENTION_MSG'), '').strip()
+    msg = os.environ.get(mention_env.replace('MENTION', 'MENTION_MSG'), '').strip() if mention_env else ''
     mention_line = f"\n{mentions} {msg}".rstrip() if mentions else ''
 
     title = f"{label} #{edition}".strip()
@@ -231,7 +233,7 @@ def build_notification_content(d, label, mention_env):
         f"{intro}\n\n"
         f"**关键词：** {tags}\n\n"
         f"**Top 3 速览：**\n{top3_md}\n\n"
-        f"{markdown_link('📖 阅读完整版', url)}"
+        f"{markdown_link('📖 阅读完整版', url) if url else ''}"
         f"{extra_links_block}"
         f"{mention_line}"
     )
@@ -247,6 +249,8 @@ def post_wecom(webhook_env_val, json_path, label, mention_env):
 
     with open(json_path, encoding='utf-8') as f:
         d = json.load(f)
+    if d.get('environment') == 'test':
+        sys.exit('Test data must use test/ and the test notification workflow.')
 
     url = d.get('url', '')
     blog = d.get('blog') or {}
@@ -292,6 +296,8 @@ def post_wecom(webhook_env_val, json_path, label, mention_env):
 
 
 def main():
+    if os.environ.get('GITHUB_REF') != 'refs/heads/main':
+        sys.exit('Production notifications require refs/heads/main; use the dedicated test workflow.')
     event = os.environ.get('GITHUB_EVENT_NAME', 'push')
     changed_file = os.environ.get('CHANGED_FILES_PATH', '/tmp/changed.txt')
     changed = load_changed_files(changed_file)

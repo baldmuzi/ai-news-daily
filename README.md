@@ -91,6 +91,35 @@ Settings → Secrets and variables → Actions → New repository secret：
 
 > 企微 userid：企业微信管理后台 → 通讯录 → 成员详情。艾特全员用 `@all`。
 
+### 所有日报共用的测试模式
+
+正式与测试都推送到 `main`，通过目录和工作流隔离，不需要单独仓库或测试分支：
+
+| 用途 | 文件位置 | 网页 | 通知目标 |
+|---|---|---|---|
+| 正式日报 | 原有各栏目目录和根目录 `latest*.json` | 原有正式地址 | 原有各栏目机器人 |
+| 测试日报 | `test/<channel>/` | `/ai-news-daily/test/<channel>/` | 统一 `WECOM_WEBHOOK_TEST` |
+
+支持的 channel 为 `tech`、`business`、`fitness`、`fanka-social`、`vivaia`。测试中心是 https://baldmuzi.github.io/ai-news-daily/test/ 。
+
+1. 测试页面放在对应 `test/<channel>/` 下，可直接修改 `index.html` 作为固定完整预览页。首次提供的 VIVAIA 预览是正式第 0114 期的独立副本，页面注明它是样式样本，不代表新生成的日报。
+2. 仅预览样式时不需要通知数据文件；没有 `latest.json` 的栏目更新只部署页面，不发消息。
+3. 需要测试机器人消息时，在该目录创建 `latest.json`：保留 `edition`、`date`、`intro`、5 个 `tags`、3 个 `top3`；增加 `environment: "test"`、正确的 `channel` 和相对文件路径 `page`（默认 `index.html`）。`url` 可省略，发送脚本自动构造测试地址。
+4. 如需 Fanka 延展博客，把博客也放在该测试栏目目录，使用 `blog_page`、`blog_title`、`blog_index_page` 指定相对路径；禁止填写正式博客地址。
+5. `notify-test.yml` 只监听 `main` 的 `test/**`，按变更目录选择栏目，且只注入测试 Secret。所有选中栏目先统一校验，再等待完整页面和 JSON 的线上字节内容与该提交一致，最后发送。超时失败，不发送失效链接。
+6. 正式 `notify.yml` 不监听 `test/**`。只推送测试目录不会触发正式通知；若同一次 push 也修改正式栏目，则相应正式通知仍会正常触发，所以测试提交只能包含测试文件。
+7. 测试消息带 `【测试】`，不带正式群艾特、不回退到正式机器人。缺配置、数据标识错误、页面越界或接口错误均停止。
+8. 测试自动化提示词见 `prompts/vivaia-daily-test.txt`。它使用独立副本，只写 `test/vivaia/`，只将本次测试文件推送到 `main`。
+9. 修改固定页面后需提交并推送 `main` 才能在线查看更新；也可先本地预览。无需先修改或发布正式日报。Pages 仍会构建整个站点，但正式文件保持原样。
+
+手动重发时，在 Actions 的 `Notify WeCom - test reports` 中选择测试栏目；不要运行正式通知。日志中 `target=WECOM_WEBHOOK_TEST; errcode=0` 才是发送成功。
+
+离线验证（不会向机器人发消息）：
+
+```sh
+python3 -m unittest discover -s .github/scripts/tests -v
+```
+
 ### 3. 在 Claude Code 里创建远程任务
 
 ---
