@@ -1,0 +1,36 @@
+{
+  "environment": "test",
+  "channel": "vivaia",
+  "edition": "0001",
+  "date": "2026年11月4日 11:23",
+  "intro": "欧美节日鞋履营销转向真实使用场景与精选服务；新型海藻材料、返货规则和聚会搭配，为 VIVAIA 提供选品与活动测试方向。",
+  "tags": [
+    "农场实测",
+    "海藻材料",
+    "精选服务",
+    "退换透明",
+    "节日造型"
+  ],
+  "top3": [
+    {
+      "title": "On × Sky High Goods 用农场实测推出防水低帮鞋",
+      "category": "竞品动态",
+      "url": "https://press.on-running.com/on-and-sky-high-goods-present-their-fallwinter-2026-performance-workwear-collection-developed-and-tested-with-real-farmers",
+      "comment": "农场实测新鞋，建议公开防水与抓地测试。"
+    },
+    {
+      "title": "Violet Grey 进驻达拉斯与阿斯彭，押注小店精选服务",
+      "category": "消费洞察",
+      "url": "https://www.glossy.co/beauty/beauty-briefing-violet-greys-expansion-plans-are-taking-it-to-dallas-and-aspen/",
+      "comment": "小店精选服务启发线上按场景选鞋。"
+    },
+    {
+      "title": "GINLEE 与 MYCL 展示海藻基材料，鞋履应用仍待验证",
+      "category": "可持续时尚",
+      "url": "https://myclglobal.com/blogs/featured-projects/pioneering-sustainable-fashion-ginlee-merges-industrial-design-and-biotech-with-mylea%E2%84%A2-sea-at-jakarta-fashion-week",
+      "comment": "海藻材料仍处探索期，先做鞋面性能验证。"
+    }
+  ],
+  "page": "edition-0001.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/test/vivaia/edition-0001.html"
+}
