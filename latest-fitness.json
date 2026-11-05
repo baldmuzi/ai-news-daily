@@ -1,33 +1,33 @@
 {
-  "edition": "0110",
-  "date": "2026年11月4日 09:11",
-  "intro": "全球女性运动内容正从单项训练延伸到个性化力量计划、功能穿搭与户外恢复；Fanka 可用压缩服实穿和新手指南承接这些新变化。",
+  "edition": "0111",
+  "date": "2026年11月5日 09:10",
+  "intro": "全球女性运动新变化落在力量社群、个体恢复数据与实用服饰设计；Fanka 可用压缩服动作实测和真实场景清单，把趋势转成更易参与的内容。",
   "tags": [
-    "力量计划",
-    "功能穿搭",
-    "女性户外",
-    "运动科普",
-    "器械入门"
+    "女性力量社群",
+    "恢复数据",
+    "户外服饰",
+    "耐用消费",
+    "实穿细节"
   ],
   "top3": [
     {
-      "title": "Apple Fitness+ 新增可按器械与进度调整的健身房力量计划",
-      "comment": "四周力量计划按器械和进度调整；可做女性健身房入门装备清单。"
+      "title": "女性户外服饰品牌 Halfdays 进军欧洲，强调城市与山地双场景",
+      "comment": "女性户外品牌拓展欧洲，可做训练与冬季户外分层实穿指南。"
     },
     {
-      "title": "On 用农场工作场景重新解释运动服的耐用与活动度",
-      "comment": "农场工作场景强调耐用与活动度；可拍压缩服真实动作测试。"
+      "title": "女性赛车培养计划用可穿戴数据观察训练、睡眠和恢复",
+      "comment": "女性赛车项目记录个体恢复，可采访女性运动员的赛前准备。"
     },
     {
-      "title": "ATHX 混合体能赛延长器材合作至 2028 年",
-      "comment": "混合体能赛延长器材合作；可做跑步与力量转换穿搭指南。"
+      "title": "中文跑鞋消费观察转向耐用与日常价值讨论",
+      "comment": "中文跑鞋消费讨论实用价值，可用一周实穿呈现压缩服细节。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0110.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0111.html",
   "blog": {
-    "title": "What to Wear for Indoor Rowing: A Women’s Sports Bra and Leggings Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/indoor-rowing-outfit-guide-women-sports-bra-leggings.html",
-    "summary": "由本期室内划船机教学延展，整理运动内衣、裤腰、面料和重复屈伸时的穿着检查。"
+    "title": "What to Wear to Your First Bench Press Meet: A Women’s Outfit Checklist",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/first-bench-press-meet-outfit-guide-women.html",
+    "summary": "由本期女性力量社群卧推活动延展，整理首次参赛的运动内衣、压缩裤和现场穿着检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
