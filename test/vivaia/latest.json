@@ -1,36 +1,36 @@
 {
   "environment": "test",
   "channel": "vivaia",
-  "edition": "0001",
-  "date": "2026年11月4日 11:23",
-  "intro": "欧美节日鞋履营销转向真实使用场景与精选服务；新型海藻材料、返货规则和聚会搭配，为 VIVAIA 提供选品与活动测试方向。",
+  "edition": "0002",
+  "date": "2026年11月5日 09:12",
+  "intro": "欧美零售面对鞋履折扣压力，健康生活方式与成熟客群更值得细分；北欧回收追踪和品牌社媒叙事，为 VIVAIA 提供可验证的选品与活动实验。",
   "tags": [
-    "农场实测",
-    "海藻材料",
-    "精选服务",
-    "退换透明",
-    "节日造型"
+    "健康分层",
+    "回收追踪",
+    "折扣纪律",
+    "成熟面孔",
+    "故事式送礼"
   ],
   "top3": [
     {
-      "title": "On × Sky High Goods 用农场实测推出防水低帮鞋",
-      "category": "竞品动态",
-      "url": "https://press.on-running.com/on-and-sky-high-goods-present-their-fallwinter-2026-performance-workwear-collection-developed-and-tested-with-real-farmers",
-      "comment": "农场实测新鞋，建议公开防水与抓地测试。"
-    },
-    {
-      "title": "Violet Grey 进驻达拉斯与阿斯彭，押注小店精选服务",
+      "title": "麦肯锡：健康消费从年轻人扩展，成熟客群更看重可验证效果",
       "category": "消费洞察",
-      "url": "https://www.glossy.co/beauty/beauty-briefing-violet-greys-expansion-plans-are-taking-it-to-dallas-and-aspen/",
-      "comment": "小店精选服务启发线上按场景选鞋。"
+      "url": "https://www.mckinsey.com/industries/consumer-packaged-goods/our-insights/future-of-wellness-trends",
+      "comment": "成熟客群健康需求上升；用分场景实测验证鞋款表现。"
     },
     {
-      "title": "GINLEE 与 MYCL 展示海藻基材料，鞋履应用仍待验证",
+      "title": "北欧旧衣追踪暴露回收去向断点，环保叙事需要结果证据",
       "category": "可持续时尚",
-      "url": "https://myclglobal.com/blogs/featured-projects/pioneering-sustainable-fashion-ginlee-merges-industrial-design-and-biotech-with-mylea%E2%84%A2-sea-at-jakarta-fashion-week",
-      "comment": "海藻材料仍处探索期，先做鞋面性能验证。"
+      "url": "https://wwd.com/sourcing-journal/sustainability/nordic-used-textile-exports-eunomia-tracking-study-1239400702/",
+      "comment": "旧衣追踪显示终点信息不足；回收活动应公开可追溯范围。"
+    },
+    {
+      "title": "UGG 官方 Instagram 用创作者群像讲“送出感受”",
+      "category": "社媒热点",
+      "url": "https://www.instagram.com/p/DfPfauJmzxY/",
+      "comment": "UGG 以创作者群像做送礼叙事；测试场景化拆礼短片。"
     }
   ],
-  "page": "edition-0001.html",
-  "url": "https://baldmuzi.github.io/ai-news-daily/test/vivaia/edition-0001.html"
+  "page": "edition-0002.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/test/vivaia/edition-0002.html"
 }
