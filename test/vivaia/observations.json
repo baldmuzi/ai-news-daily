@@ -7,7 +7,7 @@
     "primary_url": "https://rothys.com/pages/gifting-hub",
     "terms_urls": [],
     "first_observed_at": "2026-11-05T14:34:42+08:00",
-    "last_observed_at": "2026-11-05T14:34:42+08:00",
+    "last_observed_at": "2026-11-05T15:21:33+08:00",
     "snapshots": [
       {
         "observed_at": "2026-11-05T14:34:42+08:00",
@@ -21,9 +21,23 @@
         },
         "evidence_paths": [],
         "change_summary": "首次观察，实际上线时间未知。"
+      },
+      {
+        "observed_at": "2026-11-05T15:21:33+08:00",
+        "status": "active_observed",
+        "mechanism": "公告栏与女性导航通往 The Gift Shop；礼物页展示精选鞋履与配饰。",
+        "conditions": "活动和优惠日期未披露；折扣范围未确认。",
+        "activity_dates": {
+          "start": null,
+          "end": null,
+          "timezone": null
+        },
+        "evidence_paths": [],
+        "change_summary": "本次官网入口未见实质变化，不重复进入正文。"
       }
     ],
-    "last_reported_edition": "0003"
+    "last_reported_edition": "0003",
+    "observation_type": "seasonal_campaign"
   },
   {
     "brand": "M.Gemi",
@@ -33,7 +47,7 @@
     "primary_url": "https://mgemi.com/pages/rewards",
     "terms_urls": [],
     "first_observed_at": "2026-11-05T14:34:42+08:00",
-    "last_observed_at": "2026-11-05T14:34:42+08:00",
+    "last_observed_at": "2026-11-05T15:21:33+08:00",
     "snapshots": [
       {
         "observed_at": "2026-11-05T14:34:42+08:00",
@@ -47,9 +61,23 @@
         },
         "evidence_paths": [],
         "change_summary": "常设入口首次观察，实际上线时间未知。"
+      },
+      {
+        "observed_at": "2026-11-05T15:21:33+08:00",
+        "status": "active_observed",
+        "mechanism": "首页仍显示会员免邮提示；本次未复核完整会员等级规则。",
+        "conditions": "此前完整权益见旧快照，本次仅确认首页入口未变。",
+        "activity_dates": {
+          "start": null,
+          "end": null,
+          "timezone": null
+        },
+        "evidence_paths": [],
+        "change_summary": "本次官网入口未见实质变化，不重复进入正文。"
       }
     ],
-    "last_reported_edition": "0003"
+    "last_reported_edition": "0003",
+    "observation_type": "evergreen_service"
   },
   {
     "brand": "VEJA",
@@ -75,7 +103,8 @@
         "change_summary": "常设送礼服务首次观察，实际上线时间未知。"
       }
     ],
-    "last_reported_edition": "0003"
+    "last_reported_edition": "0003",
+    "observation_type": "evergreen_service"
   },
   {
     "brand": "Allbirds",
@@ -85,7 +114,7 @@
     "primary_url": "https://www.allbirds.com/",
     "terms_urls": [],
     "first_observed_at": "2026-11-05T14:34:42+08:00",
-    "last_observed_at": "2026-11-05T14:34:42+08:00",
+    "last_observed_at": "2026-11-05T15:21:33+08:00",
     "snapshots": [
       {
         "observed_at": "2026-11-05T14:34:42+08:00",
@@ -99,9 +128,23 @@
         },
         "evidence_paths": [],
         "change_summary": "配送服务提示首次观察，实际上线时间未知。"
+      },
+      {
+        "observed_at": "2026-11-05T15:21:33+08:00",
+        "status": "active_observed",
+        "mechanism": "首页免邮门槛与最长 30 天发货风险提示；购物袋显示免邮差额。",
+        "conditions": "订单超过 $100 可免陆运；具体延迟适用商品与地区未确认。",
+        "activity_dates": {
+          "start": null,
+          "end": null,
+          "timezone": null
+        },
+        "evidence_paths": [],
+        "change_summary": "本次官网入口未见实质变化，不重复进入正文。"
       }
     ],
-    "last_reported_edition": "0003"
+    "last_reported_edition": "0003",
+    "observation_type": "evergreen_service"
   },
   {
     "brand": "Tory Burch",
@@ -111,7 +154,7 @@
     "primary_url": "https://www.toryburch.com/en-us/gifts/the-gift-guide/",
     "terms_urls": [],
     "first_observed_at": "2026-11-05T14:34:42+08:00",
-    "last_observed_at": "2026-11-05T14:34:42+08:00",
+    "last_observed_at": "2026-11-05T15:21:33+08:00",
     "snapshots": [
       {
         "observed_at": "2026-11-05T14:34:42+08:00",
@@ -125,9 +168,23 @@
         },
         "evidence_paths": [],
         "change_summary": "首次访问失败，不推断活动结束或生效。"
+      },
+      {
+        "observed_at": "2026-11-05T15:21:33+08:00",
+        "status": "access_failed",
+        "mechanism": "本次访问美国站再次被导向新加坡站。",
+        "conditions": "无法确认美国站当前活动与条件。",
+        "activity_dates": {
+          "start": null,
+          "end": null,
+          "timezone": null
+        },
+        "evidence_paths": [],
+        "change_summary": "仍无法确认美国活动；不推断失效。"
       }
     ],
-    "last_reported_edition": null
+    "last_reported_edition": null,
+    "observation_type": "unverified"
   },
   {
     "brand": "Allbirds",
@@ -155,6 +212,95 @@
         "change_summary": "首次观察；因条款日期冲突未列为有效活动。"
       }
     ],
-    "last_reported_edition": null
+    "last_reported_edition": null,
+    "observation_type": "unverified"
+  },
+  {
+    "brand": "M.Gemi",
+    "market": "US",
+    "currency": "USD",
+    "campaign_key": "mgemi-us-felize-shearling-seasonal",
+    "primary_url": "https://mgemi.com/products/the-felize-shearling-oxblood-croc-embossed-nappa",
+    "terms_urls": [],
+    "first_observed_at": "2026-11-05T15:21:33+08:00",
+    "last_observed_at": "2026-11-05T15:21:33+08:00",
+    "observation_type": "seasonal_campaign",
+    "last_reported_edition": "0004",
+    "snapshots": [
+      {
+        "observed_at": "2026-11-05T15:21:33+08:00",
+        "status": "active_observed",
+        "mechanism": "首页以限时、适合赠礼的文案推广 Felize Shearling。链接所指酒红鳄鱼压纹款当前显示 $298，商品说明为羊剪绒内里、皮革鞋面；这是季节性主推，不是已核验的限时降价。",
+        "conditions": "首页和商品页均已实际渲染并归档截图；品牌未披露活动效果、限量数量或截止日，不能推断稀缺库存。会员免邮与首购弹窗属于其他服务，本期不计为新活动，也未提交邮箱或结算。",
+        "activity_dates": {
+          "start": null,
+          "end": null,
+          "timezone": null
+        },
+        "evidence_paths": [
+          "test/vivaia/evidence/0004-mgemi-us-20261105-home.jpg",
+          "test/vivaia/evidence/0004-mgemi-us-20261105-product.jpg"
+        ],
+        "change_summary": "首次记录的季节性推广；活动上线时间未知，与上期常设服务不同。"
+      }
+    ]
+  },
+  {
+    "brand": "Boden",
+    "market": "UK",
+    "currency": "GBP",
+    "campaign_key": "boden-uk-christmas-partywear",
+    "primary_url": "https://www.boden.com/collections/womens-partywear",
+    "terms_urls": [
+      "https://www.boden.com/pages/payments-promotions"
+    ],
+    "first_observed_at": "2026-11-05T15:21:33+08:00",
+    "last_observed_at": "2026-11-05T15:21:33+08:00",
+    "observation_type": "seasonal_campaign",
+    "last_reported_edition": "0004",
+    "snapshots": [
+      {
+        "observed_at": "2026-11-05T15:21:33+08:00",
+        "status": "active_observed",
+        "mechanism": "英国站已展示 CHRISTMAS 导航，将女性派对服饰、送给她的礼物、儿童服饰和儿童礼物分组。Partywear 集合把节庆连衣裙、上装、外套和鞋放在同一选购场景，属于当前圣诞商品企划。",
+        "conditions": "实际页面标明英国、英镑，地区建议弹窗已关闭且未切换市场。公告栏及商品卡显示 AX6V 正价款减 15% 提示，但完整适用/叠加/期限未核验，不能承诺结算有效；本条入选依据为圣诞导航与派对专题，不以优惠码作为已验证活动机制。",
+        "activity_dates": {
+          "start": null,
+          "end": null,
+          "timezone": null
+        },
+        "evidence_paths": [
+          "test/vivaia/evidence/0004-boden-uk-20261105-partywear.jpg"
+        ],
+        "change_summary": "首次记录的季节性推广；活动上线时间未知，与上期常设服务不同。"
+      }
+    ]
+  },
+  {
+    "brand": "Nordstrom",
+    "market": "US",
+    "currency": "USD",
+    "campaign_key": "nordstrom-us-holiday-access-check",
+    "primary_url": "https://www.nordstrom.com/",
+    "terms_urls": [],
+    "first_observed_at": "2026-11-05T15:21:33+08:00",
+    "last_observed_at": "2026-11-05T15:21:33+08:00",
+    "observation_type": "unverified",
+    "last_reported_edition": null,
+    "snapshots": [
+      {
+        "observed_at": "2026-11-05T15:21:33+08:00",
+        "status": "access_failed",
+        "mechanism": "网页提取可见节日专题，但实际浏览器重定向至 siteclosed.nordstrom.com/invitation.html 并提示自动访问拦截。",
+        "conditions": "不以搜索/提取缓存确认当前活动；未绕过访问限制。",
+        "activity_dates": {
+          "start": null,
+          "end": null,
+          "timezone": null
+        },
+        "evidence_paths": [],
+        "change_summary": "首次检查失败，不计入正文。"
+      }
+    ]
   }
 ]

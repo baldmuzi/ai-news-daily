@@ -33,3 +33,20 @@
 - 覆盖：美国站 Rothy’s、Allbirds、M.Gemi、Tory Burch；补充美国 VEJA、Hermès 入口及澳洲 Allbirds。Tory Burch 美国站 403/区域跳转；Allbirds 澳洲站 Banner 与旧条款日期冲突，因此两者未作为有效活动。
 - 排除与限制：JCPenney 同事件 Retail Dive 转载原始 Marketing Dive 为 11 月 2 日，无法确认在滚动 72 小时内；旧版 0002 已用的 McKinsey、WWD、Adidas 等 URL 不复用。社媒/社区检索未找到时间与事实均可核验的新材料；官网截图未归档，页面渲染与文本已直访，但未结算、注册或验证送达。
 - 变化：采编从泛趋势切换为官网机制优先；首版活动台账已建立。本期缺少上次活动快照，所有“本期变化”仅能记录首次观察，后续无实质变化不重复报道。
+
+## 2026年11月5日 15:21 · 第 0004 期（多角度平衡版）
+
+- 独立正文 6 条：当期官网活动 2、其他情报 4、常设服务参考 0；4 个主分类。Top 3 为 Boden、KashKick 与 JCPenney。
+- M.Gemi：用限时羊剪绒驾驶鞋承接冬季赠礼；美国 / USD · 观察 2026年11月5日 15:21 · 季节性商品推广 · 首次观察，实际上线时间未知 · 起止日期/时区未披露；https://mgemi.com/products/the-felize-shearling-oxblood-croc-embossed-nappa
+- Boden 英国站：圣诞导航把派对穿搭与送礼分开承接；英国 / GBP · 观察 2026年11月5日 15:21 · 圣诞选购阶段 · 首次观察，实际上线时间未知 · 起止日期/时区未披露；https://www.boden.com/collections/womens-partywear
+- 奖励应用用户调查：黑五购买前的比价已延伸到数周；KashKick 原始研究 · 2026-11-04 发布 · 美国市场参考 / 会员自报样本 · 非总体消费者代表；https://kashkick.com/data-studies/black-friday-data-study/
+- Stitch Fix 缩减自有品牌数量，沿客户生活场景扩展商品组合；Modern Retail 原创采访 · 2026-11-04 发布 · 美国业务 · 经营策略 / 品牌自报；https://www.modernretail.co/operations/how-stitch-fix-is-using-ai-and-customer-feedback-to-build-its-private-brands/
+- CFDA 红毯出现梨绿色鞋：节庆鞋色可观察的新搭配方向；Who What Wear · 原始发布 2026-11-03 11:15 UTC · 美国红毯案例 · 编辑观察 / 含购物分佣链接；https://www.whowhatwear.com/fashion/celebrity-style/pear-colored-shoe-trend-alexa-chung
+- JCPenney 用真实顾客的三套聚会穿搭，把优惠讲成具体生活故事；Marketing Dive 原创采访 · 本周背景 · 原始发布日期 2026-11-02 · 美国 · 具体广告案例，非官网活动验证；https://www.marketingdive.com/news/why-jcpenney-is-taking-on-deal-fatigue-for-its-holiday-campaign/873354/
+- 时间：Stitch Fix、KashKick 与梨绿色鞋报道在主窗口；JCPenney 11 月 2 日原创采访保守标为本周背景，未使用其 Retail Dive 转载日期。
+- 去重：0001–0003 为当前可用历史，全部扫描；Rothy’s 礼物入口、Allbirds 履约提示与 M.Gemi 会员服务未实质变化，不重复入正文。VEJA 与澳洲 Allbirds 本期未重查，保留原快照，不更新为本次事实。
+- 采集：先核四个核心美国站，再补 Nordstrom 美国站、Boden 英国站；跨角度查消费调查、价格渠道、商品穿搭、经营与营销；Reddit HerOneBag 检索结果早于窗口、Instagram 查询未得合格新原帖。没有澳洲当期活动及独立新社媒原帖，未硬凑环保。
+- 排除：Glossy 11 月 4 日摘编的原报告为 8 月 4 日；Circana 11 月 4 日稿链接 10 月 23 日报告，未确认新增事实；Reebok 为未来发售的 PR 主导公告，Old Navy 人事新闻不优先；未用旧鞋型清单补数。
+- 证据限制：Tory Burch 美国站跳转新加坡；Nordstrom 浏览器拦截；Boden 优惠码 15% 提示与搜索条款缓存不同，本条只确认圣诞导航与商品承接，不承诺促销有效。活动起止/效果未披露，无注册/结算/履约验证。KashKick 是未经加权的自有会员样本，不外推全国或目标女性。
+- 版式变化：沿用测试 CSS，移除重复速览，官网与商业情报同等层级；3 张原始官网截图、3 条短行动；不改正式页或共享资源。
+- 本地验证：HTML/JSON/Top 3/字数/标题与按钮链接/台账证据路径/4 期存档校验通过；浏览器实测 1440px 与 390px，手机单列、3 张图片正常加载、锚点落位、全页无横向溢出。推送及通知状态需另查本次提交 Actions，不以本地检查代替发布成功。

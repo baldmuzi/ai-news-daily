@@ -1,36 +1,36 @@
 {
   "environment": "test",
   "channel": "vivaia",
-  "edition": "0003",
-  "date": "2026年11月5日 14:34",
-  "intro": "美国鞋履品牌正用礼物分组、会员权益和配送提示承接节日决策；两份新近零售报道提示，送礼引导与商品描述准确性值得本周优先测试。",
+  "edition": "0004",
+  "date": "2026年11月5日 15:21",
+  "intro": "美国限时赠礼与英国派对专题提供两种活动承接思路；本期再看预算比价、客户反馈选品、梨绿色鞋搭配和真实顾客广告，保留多角度业务判断。",
   "tags": [
-    "礼物分组",
-    "会员权益",
-    "配送预期",
-    "电子礼卡",
-    "描述准确性"
+    "季节限定",
+    "派对搭配",
+    "预算比价",
+    "反馈选品",
+    "真人广告"
   ],
   "top3": [
     {
-      "title": "Rothy’s 美国站把礼物入口接入公告栏与女性导航",
-      "category": "竞品官网活动",
-      "url": "https://rothys.com/pages/gifting-hub",
-      "comment": "礼物专题同时占据公告栏和女性导航；可测试双入口引导。"
+      "title": "Boden 英国站：圣诞导航把派对穿搭与送礼分开承接",
+      "category": "竞品当期活动",
+      "url": "https://www.boden.com/collections/womens-partywear",
+      "comment": "把自穿派对与送礼需求分开，减少不同购买任务混在一个入口。"
     },
     {
-      "title": "M.Gemi 美国站用会员免邮与提前购承接选购",
-      "category": "竞品官网活动",
-      "url": "https://mgemi.com/pages/rewards",
-      "comment": "免邮、积分和提前购集中说明；先核算成本再测权益解释。"
+      "title": "奖励应用用户调查：黑五购买前的比价已延伸到数周",
+      "category": "消费与购买行为",
+      "url": "https://kashkick.com/data-studies/black-friday-data-study/",
+      "comment": "会员样本提示提前比价行为；先审计跨页面价格与优惠条件一致性。"
     },
     {
-      "title": "美国调查：AI 推荐后的退货与商品描述偏差有关",
-      "category": "消费洞察",
-      "url": "https://www.retaildive.com/news/ai-recommendations-returns/873075/",
-      "comment": "调查指出描述偏差和尺码问题；先审查高流量鞋款字段。"
+      "title": "JCPenney 用真实顾客的三套聚会穿搭，把优惠讲成具体生活故事",
+      "category": "社媒与内容营销",
+      "url": "https://www.marketingdive.com/news/why-jcpenney-is-taking-on-deal-fatigue-for-its-holiday-campaign/873354/",
+      "comment": "真实人物与具体聚会场景，让促销内容有可核算的使用价值。"
     }
   ],
-  "page": "edition-0003.html",
-  "url": "https://baldmuzi.github.io/ai-news-daily/test/vivaia/edition-0003.html"
+  "page": "edition-0004.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/test/vivaia/edition-0004.html"
 }
