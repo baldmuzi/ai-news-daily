@@ -7,7 +7,7 @@
     "primary_url": "https://rothys.com/pages/gifting-hub",
     "terms_urls": [],
     "first_observed_at": "2026-11-05T14:34:42+08:00",
-    "last_observed_at": "2026-11-05T15:21:33+08:00",
+    "last_observed_at": "2026-11-05T15:52:00+08:00",
     "snapshots": [
       {
         "observed_at": "2026-11-05T14:34:42+08:00",
@@ -34,9 +34,24 @@
         },
         "evidence_paths": [],
         "change_summary": "本次官网入口未见实质变化，不重复进入正文。"
+      },
+      {
+        "observed_at": "2026-11-05T15:52:00+08:00",
+        "status": "active_observed",
+        "mechanism": "美国站公告栏正在引导进入 The Gift Shop。专题将包头便鞋（Clogs）、运动鞋、拖鞋和配饰分组，接着用 Jewel Tones 节庆色编辑组织商品，并提供男士、儿童等对象入口。当前页面展示的部分女鞋为 125–165 美元，不等同于整个专题价格范围。",
+        "conditions": "同日改版沿用 #0003，经本次浏览器直访复核；未发现可据以称为新上线的变化。活动起止、折扣码、门槛、会员条件、叠加及赠品包装未披露或未核验；不能据此承诺优惠与节前到货。效果未披露。",
+        "activity_dates": {
+          "start": null,
+          "end": null,
+          "timezone": null
+        },
+        "evidence_paths": [
+          "test/vivaia/evidence/0005-rothys-us-20261105-1550-gift.jpg"
+        ],
+        "change_summary": "同日改版沿用 #0003；用户仅本次豁免同日重复，未将持续存在写成新上线。"
       }
     ],
-    "last_reported_edition": "0003",
+    "last_reported_edition": "0005",
     "observation_type": "seasonal_campaign"
   },
   {
@@ -114,7 +129,7 @@
     "primary_url": "https://www.allbirds.com/",
     "terms_urls": [],
     "first_observed_at": "2026-11-05T14:34:42+08:00",
-    "last_observed_at": "2026-11-05T15:21:33+08:00",
+    "last_observed_at": "2026-11-05T15:42:00+08:00",
     "snapshots": [
       {
         "observed_at": "2026-11-05T14:34:42+08:00",
@@ -141,6 +156,19 @@
         },
         "evidence_paths": [],
         "change_summary": "本次官网入口未见实质变化，不重复进入正文。"
+      },
+      {
+        "observed_at": "2026-11-05T15:42:00+08:00",
+        "status": "active_observed",
+        "mechanism": "本次美国首页仍有超过100美元免陆运及最长30天发货提示，并推广Dasher NZ；未发现足以入选的节日活动证据。",
+        "conditions": "未列入本期活动正文；不将访问限制或未发现推断为活动结束。",
+        "activity_dates": {
+          "start": null,
+          "end": null,
+          "timezone": null
+        },
+        "evidence_paths": [],
+        "change_summary": "本次只读复核，未重复计数。"
       }
     ],
     "last_reported_edition": "0003",
@@ -154,7 +182,7 @@
     "primary_url": "https://www.toryburch.com/en-us/gifts/the-gift-guide/",
     "terms_urls": [],
     "first_observed_at": "2026-11-05T14:34:42+08:00",
-    "last_observed_at": "2026-11-05T15:21:33+08:00",
+    "last_observed_at": "2026-11-05T15:42:00+08:00",
     "snapshots": [
       {
         "observed_at": "2026-11-05T14:34:42+08:00",
@@ -181,6 +209,19 @@
         },
         "evidence_paths": [],
         "change_summary": "仍无法确认美国活动；不推断失效。"
+      },
+      {
+        "observed_at": "2026-11-05T15:42:00+08:00",
+        "status": "access_failed",
+        "mechanism": "本次请求美国首页再次跳转新加坡站，无法据此确认美国当期活动。",
+        "conditions": "未列入本期活动正文；不将访问限制或未发现推断为活动结束。",
+        "activity_dates": {
+          "start": null,
+          "end": null,
+          "timezone": null
+        },
+        "evidence_paths": [],
+        "change_summary": "本次只读复核，未重复计数。"
       }
     ],
     "last_reported_edition": null,
@@ -223,9 +264,9 @@
     "primary_url": "https://mgemi.com/products/the-felize-shearling-oxblood-croc-embossed-nappa",
     "terms_urls": [],
     "first_observed_at": "2026-11-05T15:21:33+08:00",
-    "last_observed_at": "2026-11-05T15:21:33+08:00",
+    "last_observed_at": "2026-11-05T15:52:00+08:00",
     "observation_type": "seasonal_campaign",
-    "last_reported_edition": "0004",
+    "last_reported_edition": "0005",
     "snapshots": [
       {
         "observed_at": "2026-11-05T15:21:33+08:00",
@@ -242,6 +283,22 @@
           "test/vivaia/evidence/0004-mgemi-us-20261105-product.jpg"
         ],
         "change_summary": "首次记录的季节性推广；活动上线时间未知，与上期常设服务不同。"
+      },
+      {
+        "observed_at": "2026-11-05T15:52:00+08:00",
+        "status": "active_observed",
+        "mechanism": "首页以限时、适合赠礼的文案推广 Felize Shearling。点击后进入酒红鳄鱼压纹款，商品页显示 298 美元、羊剪绒内里与皮革鞋面；这是季节性主推，不是已核验的限时降价。",
+        "conditions": "同日改版沿用 #0004，首页与商品页重新核验。品牌未披露活动起止、限量数量或效果，不推断稀缺库存。活动优惠码、会员专享、叠加、包装和到货承诺未核验；未提交邮箱、加购或结算。",
+        "activity_dates": {
+          "start": null,
+          "end": null,
+          "timezone": null
+        },
+        "evidence_paths": [
+          "test/vivaia/evidence/0005-mgemi-us-20261105-1550-home.jpg",
+          "test/vivaia/evidence/0005-mgemi-us-20261105-1552-product.jpg"
+        ],
+        "change_summary": "同日改版沿用 #0004；用户仅本次豁免同日重复，未将持续存在写成新上线。"
       }
     ]
   },
@@ -255,9 +312,9 @@
       "https://www.boden.com/pages/payments-promotions"
     ],
     "first_observed_at": "2026-11-05T15:21:33+08:00",
-    "last_observed_at": "2026-11-05T15:21:33+08:00",
+    "last_observed_at": "2026-11-05T15:52:00+08:00",
     "observation_type": "seasonal_campaign",
-    "last_reported_edition": "0004",
+    "last_reported_edition": "0005",
     "snapshots": [
       {
         "observed_at": "2026-11-05T15:21:33+08:00",
@@ -273,6 +330,21 @@
           "test/vivaia/evidence/0004-boden-uk-20261105-partywear.jpg"
         ],
         "change_summary": "首次记录的季节性推广；活动上线时间未知，与上期常设服务不同。"
+      },
+      {
+        "observed_at": "2026-11-05T15:52:00+08:00",
+        "status": "active_observed",
+        "mechanism": "英国站正在展示 Christmas 导航和 Women’s Partywear 集合。集合以节日穿搭为主题，组合连衣裙、上装、外套与鞋。页头及部分商品卡显示正价款用 AX6V 减 15% 提示；本条依据为当前派对专题，不将未完整核验的优惠条件写成结算承诺。",
+        "conditions": "同日改版沿用 #0004，集合页重新核验。专题起止、优惠码期限、完整排除款、门槛、会员及叠加条件未确认，包装与节日配送未验证；未做支付测试。效果未披露。",
+        "activity_dates": {
+          "start": null,
+          "end": null,
+          "timezone": null
+        },
+        "evidence_paths": [
+          "test/vivaia/evidence/0005-boden-uk-20261105-1550-party.jpg"
+        ],
+        "change_summary": "同日改版沿用 #0004；用户仅本次豁免同日重复，未将持续存在写成新上线。"
       }
     ]
   },
@@ -302,5 +374,35 @@
         "change_summary": "首次检查失败，不计入正文。"
       }
     ]
+  },
+  {
+    "brand": "H&M",
+    "market": "UK",
+    "currency": "GBP",
+    "campaign_key": "hm-uk-festive-returns-2026",
+    "primary_url": "https://www2.hm.com/en_gb/customer-service/returns.html",
+    "terms_urls": [],
+    "first_observed_at": "2026-11-05T15:52:00+08:00",
+    "last_observed_at": "2026-11-05T15:52:00+08:00",
+    "snapshots": [
+      {
+        "observed_at": "2026-11-05T15:52:00+08:00",
+        "status": "active_observed",
+        "mechanism": "英国站明确：2026 年 11 月 1 日至 12 月 16 日订购的正价或促销折扣商品，可退至 2027 年 1 月 17 日；标准 30 天政策若更晚则按更晚日期。Sale 商品仍为 14 天，外部品牌及页面列出的其他品牌不适用。这是有明确日期的节日安排。",
+        "conditions": "本期首次观察，实际上线时间未知；当前英国官网直接展示 2026/2027 日期。时区及截止具体时刻未披露，不能推广到其他国家。无优惠码或购买金额门槛机制；未核验其他专属优惠、包装或配送。效果未披露。",
+        "activity_dates": {
+          "start": "2026-11-01",
+          "end": "2026-12-16",
+          "return_deadline": "2027-01-17",
+          "timezone": null
+        },
+        "evidence_paths": [
+          "test/vivaia/evidence/0005-hm-uk-20261105-1550-returns.jpg"
+        ],
+        "change_summary": "首次观察到有明确2026/2027日期的节日延长退货，实际上线时间未知。"
+      }
+    ],
+    "last_reported_edition": "0005",
+    "observation_type": "seasonal_campaign"
   }
 ]

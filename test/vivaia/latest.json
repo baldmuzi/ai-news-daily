@@ -1,36 +1,36 @@
 {
   "environment": "test",
   "channel": "vivaia",
-  "edition": "0004",
-  "date": "2026年11月5日 15:21",
-  "intro": "美国限时赠礼与英国派对专题提供两种活动承接思路；本期再看预算比价、客户反馈选品、梨绿色鞋搭配和真实顾客广告，保留多角度业务判断。",
+  "edition": "0005",
+  "date": "2026年11月5日 15:55",
+  "intro": "从直营分化、合脚推荐到真实人物与手工内容，看欧美节日经营的新线索；另拆解四个官网活动，分别服务选品、送礼与购买保障。",
   "tags": [
-    "季节限定",
-    "派对搭配",
-    "预算比价",
-    "反馈选品",
-    "真人广告"
+    "渠道分化",
+    "合脚推荐",
+    "成熟叙事",
+    "手工内容",
+    "节日保障"
   ],
   "top3": [
     {
-      "title": "Boden 英国站：圣诞导航把派对穿搭与送礼分开承接",
-      "category": "竞品当期活动",
-      "url": "https://www.boden.com/collections/womens-partywear",
-      "comment": "把自穿派对与送礼需求分开，减少不同购买任务混在一个入口。"
+      "title": "Adidas：生活方式鞋承压，直营与渠道折扣应分开判断",
+      "category": "价格与渠道",
+      "url": "https://www.retaildive.com/news/adidas-q3-earnings-sales-growth-lifestyle-footwear-market/873640/",
+      "comment": "把直营表现与库存促销拆开看，按款式毛利和尺码制定活动。"
     },
     {
-      "title": "奖励应用用户调查：黑五购买前的比价已延伸到数周",
+      "title": "Aetrex 与 Foot Locker 讨论：合脚推荐要同时知道脚形和鞋形",
       "category": "消费与购买行为",
-      "url": "https://kashkick.com/data-studies/black-friday-data-study/",
-      "comment": "会员样本提示提前比价行为；先审计跨页面价格与优惠条件一致性。"
+      "url": "https://wwd.com/footwear-news/shoe-industry-news/shoe-fit-product-design-in-store-ai-3d-scan-heeluxe-aetrex-1239388181/",
+      "comment": "先补齐楦型与脚形说明，再评估扫描工具，不夸大退货改善。"
     },
     {
-      "title": "JCPenney 用真实顾客的三套聚会穿搭，把优惠讲成具体生活故事",
-      "category": "社媒与内容营销",
-      "url": "https://www.marketingdive.com/news/why-jcpenney-is-taking-on-deal-fatigue-for-its-holiday-campaign/873354/",
-      "comment": "真实人物与具体聚会场景，让促销内容有可核算的使用价值。"
+      "title": "H&M 英国站：把节日退货期限延长到 2027 年 1 月",
+      "category": "竞品当期活动",
+      "url": "https://www2.hm.com/en_gb/customer-service/returns.html",
+      "comment": "评估节日退货窗口前，先核仓储、财务和客服承接成本。"
     }
   ],
-  "page": "edition-0004.html",
-  "url": "https://baldmuzi.github.io/ai-news-daily/test/vivaia/edition-0004.html"
+  "page": "edition-0005.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/test/vivaia/edition-0005.html"
 }
