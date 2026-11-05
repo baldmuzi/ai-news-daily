@@ -24,3 +24,12 @@
   - Dior 官方 Instagram 帖子（2026年11月4日）：Dior 官方 Instagram 以动画短片延伸节日礼品系列；https://www.instagram.com/p/DfUE0dFxfwy/
   - Retail Dive / 品牌渠道报道（2026年11月4日）：Outdoor Voices 授权伙伴拓展英欧市场，先走批发与电商；https://www.retaildive.com/news/outdoor-voices-expands-uk-eu/873730/
 - 限制：近 3 天高质量素材不足 10 条；Instagram 仅选可定位具体官方帖子的 2 条，不能推断平台热度或销量；未发现可核验中文平台新趋势；竞品指定六品牌除 Tory Burch 的 CFDA 社群价值帖外未发现近 7 天可核验新动作。
+
+## 2026年11月5日 14:34 · 第 0003 期（新版官网活动优先）
+
+- 独立情报：6 条，其中官网活动/服务 4 条，消费洞察 2 条；全部为新一期独立选题，不复用前两期新闻 URL。
+- 官网入选：Rothy’s 美国礼物入口；M.Gemi 美国 Cliente Rewards；VEJA 美国电子礼卡；Allbirds 美国免邮及发货提示。均为本次首次观察，不代表今日上线；对应来源见本期 HTML 和 observations.json。
+- 新闻入选：Retail Dive 2026-11-03《AI recommendations are leading to returns》与《Holiday shoppers only want a dash of AI for the gift hunt》；原始发布时间在滚动 72 小时内，均是跨品类/美国市场材料，不外推 VIVAIA 结果。
+- 覆盖：美国站 Rothy’s、Allbirds、M.Gemi、Tory Burch；补充美国 VEJA、Hermès 入口及澳洲 Allbirds。Tory Burch 美国站 403/区域跳转；Allbirds 澳洲站 Banner 与旧条款日期冲突，因此两者未作为有效活动。
+- 排除与限制：JCPenney 同事件 Retail Dive 转载原始 Marketing Dive 为 11 月 2 日，无法确认在滚动 72 小时内；旧版 0002 已用的 McKinsey、WWD、Adidas 等 URL 不复用。社媒/社区检索未找到时间与事实均可核验的新材料；官网截图未归档，页面渲染与文本已直访，但未结算、注册或验证送达。
+- 变化：采编从泛趋势切换为官网机制优先；首版活动台账已建立。本期缺少上次活动快照，所有“本期变化”仅能记录首次观察，后续无实质变化不重复报道。

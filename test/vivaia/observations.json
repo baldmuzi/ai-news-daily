@@ -1,0 +1,160 @@
+[
+  {
+    "brand": "Rothy’s",
+    "market": "US",
+    "currency": "USD",
+    "campaign_key": "rothys-us-gift-shop",
+    "primary_url": "https://rothys.com/pages/gifting-hub",
+    "terms_urls": [],
+    "first_observed_at": "2026-11-05T14:34:42+08:00",
+    "last_observed_at": "2026-11-05T14:34:42+08:00",
+    "snapshots": [
+      {
+        "observed_at": "2026-11-05T14:34:42+08:00",
+        "status": "active_observed",
+        "mechanism": "公告栏与女性导航通往 The Gift Shop；礼物页展示精选鞋履与配饰。",
+        "conditions": "活动和优惠日期未披露；折扣范围未确认。",
+        "activity_dates": {
+          "start": null,
+          "end": null,
+          "timezone": null
+        },
+        "evidence_paths": [],
+        "change_summary": "首次观察，实际上线时间未知。"
+      }
+    ],
+    "last_reported_edition": "0003"
+  },
+  {
+    "brand": "M.Gemi",
+    "market": "US",
+    "currency": "USD",
+    "campaign_key": "mgemi-us-cliente-rewards",
+    "primary_url": "https://mgemi.com/pages/rewards",
+    "terms_urls": [],
+    "first_observed_at": "2026-11-05T14:34:42+08:00",
+    "last_observed_at": "2026-11-05T14:34:42+08:00",
+    "snapshots": [
+      {
+        "observed_at": "2026-11-05T14:34:42+08:00",
+        "status": "active_observed",
+        "mechanism": "首页会员免邮提示；权益页说明免费加入、积分、提前购与等级。",
+        "conditions": "年消费等级 $500+ / $1000+；具体等级权益与排除项未逐一核实。",
+        "activity_dates": {
+          "start": null,
+          "end": null,
+          "timezone": null
+        },
+        "evidence_paths": [],
+        "change_summary": "常设入口首次观察，实际上线时间未知。"
+      }
+    ],
+    "last_reported_edition": "0003"
+  },
+  {
+    "brand": "VEJA",
+    "market": "US",
+    "currency": "USD",
+    "campaign_key": "veja-us-egift-card",
+    "primary_url": "https://www.veja-store.com/en_us/p/buy-giftCard.html",
+    "terms_urls": [],
+    "first_observed_at": "2026-11-05T14:34:42+08:00",
+    "last_observed_at": "2026-11-05T14:34:42+08:00",
+    "snapshots": [
+      {
+        "observed_at": "2026-11-05T14:34:42+08:00",
+        "status": "active_observed",
+        "mechanism": "电子礼卡可选邮件送达日期，线上使用，收到后有效 12 个月。",
+        "conditions": "页面与帮助摘要金额口径有差异；未完成购买或送达验证。",
+        "activity_dates": {
+          "start": null,
+          "end": null,
+          "timezone": null
+        },
+        "evidence_paths": [],
+        "change_summary": "常设送礼服务首次观察，实际上线时间未知。"
+      }
+    ],
+    "last_reported_edition": "0003"
+  },
+  {
+    "brand": "Allbirds",
+    "market": "US",
+    "currency": "USD",
+    "campaign_key": "allbirds-us-shipping-notices",
+    "primary_url": "https://www.allbirds.com/",
+    "terms_urls": [],
+    "first_observed_at": "2026-11-05T14:34:42+08:00",
+    "last_observed_at": "2026-11-05T14:34:42+08:00",
+    "snapshots": [
+      {
+        "observed_at": "2026-11-05T14:34:42+08:00",
+        "status": "active_observed",
+        "mechanism": "首页免邮门槛与最长 30 天发货风险提示；购物袋显示免邮差额。",
+        "conditions": "订单超过 $100 可免陆运；具体延迟适用商品与地区未确认。",
+        "activity_dates": {
+          "start": null,
+          "end": null,
+          "timezone": null
+        },
+        "evidence_paths": [],
+        "change_summary": "配送服务提示首次观察，实际上线时间未知。"
+      }
+    ],
+    "last_reported_edition": "0003"
+  },
+  {
+    "brand": "Tory Burch",
+    "market": "US",
+    "currency": "USD",
+    "campaign_key": "toryburch-us-gift-guide-check",
+    "primary_url": "https://www.toryburch.com/en-us/gifts/the-gift-guide/",
+    "terms_urls": [],
+    "first_observed_at": "2026-11-05T14:34:42+08:00",
+    "last_observed_at": "2026-11-05T14:34:42+08:00",
+    "snapshots": [
+      {
+        "observed_at": "2026-11-05T14:34:42+08:00",
+        "status": "access_failed",
+        "mechanism": "美国站礼物入口未能直接核验；请求 403，浏览器被导向新加坡站。",
+        "conditions": "无法确认美国站当前活动与条件。",
+        "activity_dates": {
+          "start": null,
+          "end": null,
+          "timezone": null
+        },
+        "evidence_paths": [],
+        "change_summary": "首次访问失败，不推断活动结束或生效。"
+      }
+    ],
+    "last_reported_edition": null
+  },
+  {
+    "brand": "Allbirds",
+    "market": "AU",
+    "currency": "AUD",
+    "campaign_key": "allbirds-au-storewide-sale-check",
+    "primary_url": "https://www.allbirds.com.au/",
+    "terms_urls": [
+      "https://www.allbirds.com.au/pages/sale-terms-and-conditions"
+    ],
+    "first_observed_at": "2026-11-05T14:34:42+08:00",
+    "last_observed_at": "2026-11-05T14:34:42+08:00",
+    "snapshots": [
+      {
+        "observed_at": "2026-11-05T14:34:42+08:00",
+        "status": "conditions_conflict",
+        "mechanism": "首页可见 Save Up To 50% Storewide 横幅与折扣商品。",
+        "conditions": "公开 Sale Terms & Conditions 页面仍描述 2026 年 8 月已过期活动，当前促销范围和有效期无法确认。",
+        "activity_dates": {
+          "start": null,
+          "end": null,
+          "timezone": null
+        },
+        "evidence_paths": [],
+        "change_summary": "首次观察；因条款日期冲突未列为有效活动。"
+      }
+    ],
+    "last_reported_edition": null
+  }
+]

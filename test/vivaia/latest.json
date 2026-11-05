@@ -1,36 +1,36 @@
 {
   "environment": "test",
   "channel": "vivaia",
-  "edition": "0002",
-  "date": "2026年11月5日 09:12",
-  "intro": "欧美零售面对鞋履折扣压力，健康生活方式与成熟客群更值得细分；北欧回收追踪和品牌社媒叙事，为 VIVAIA 提供可验证的选品与活动实验。",
+  "edition": "0003",
+  "date": "2026年11月5日 14:34",
+  "intro": "美国鞋履品牌正用礼物分组、会员权益和配送提示承接节日决策；两份新近零售报道提示，送礼引导与商品描述准确性值得本周优先测试。",
   "tags": [
-    "健康分层",
-    "回收追踪",
-    "折扣纪律",
-    "成熟面孔",
-    "故事式送礼"
+    "礼物分组",
+    "会员权益",
+    "配送预期",
+    "电子礼卡",
+    "描述准确性"
   ],
   "top3": [
     {
-      "title": "麦肯锡：健康消费从年轻人扩展，成熟客群更看重可验证效果",
+      "title": "Rothy’s 美国站把礼物入口接入公告栏与女性导航",
+      "category": "竞品官网活动",
+      "url": "https://rothys.com/pages/gifting-hub",
+      "comment": "礼物专题同时占据公告栏和女性导航；可测试双入口引导。"
+    },
+    {
+      "title": "M.Gemi 美国站用会员免邮与提前购承接选购",
+      "category": "竞品官网活动",
+      "url": "https://mgemi.com/pages/rewards",
+      "comment": "免邮、积分和提前购集中说明；先核算成本再测权益解释。"
+    },
+    {
+      "title": "美国调查：AI 推荐后的退货与商品描述偏差有关",
       "category": "消费洞察",
-      "url": "https://www.mckinsey.com/industries/consumer-packaged-goods/our-insights/future-of-wellness-trends",
-      "comment": "成熟客群健康需求上升；用分场景实测验证鞋款表现。"
-    },
-    {
-      "title": "北欧旧衣追踪暴露回收去向断点，环保叙事需要结果证据",
-      "category": "可持续时尚",
-      "url": "https://wwd.com/sourcing-journal/sustainability/nordic-used-textile-exports-eunomia-tracking-study-1239400702/",
-      "comment": "旧衣追踪显示终点信息不足；回收活动应公开可追溯范围。"
-    },
-    {
-      "title": "UGG 官方 Instagram 用创作者群像讲“送出感受”",
-      "category": "社媒热点",
-      "url": "https://www.instagram.com/p/DfPfauJmzxY/",
-      "comment": "UGG 以创作者群像做送礼叙事；测试场景化拆礼短片。"
+      "url": "https://www.retaildive.com/news/ai-recommendations-returns/873075/",
+      "comment": "调查指出描述偏差和尺码问题；先审查高流量鞋款字段。"
     }
   ],
-  "page": "edition-0002.html",
-  "url": "https://baldmuzi.github.io/ai-news-daily/test/vivaia/edition-0002.html"
+  "page": "edition-0003.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/test/vivaia/edition-0003.html"
 }
