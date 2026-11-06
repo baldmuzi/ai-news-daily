@@ -1,32 +1,32 @@
 {
   "edition": "0116",
-  "date": "2026年11月6日 10:18",
-  "intro": "中龄网购与客户反馈为选品提供新依据；澳洲销售承压，跨渠道定价和节日购买保障值得检视。官网活动独立拆解折扣、预算导购与延长退货。",
+  "date": "2026年11月6日 12:14",
+  "intro": "中年客群的线上购买、澳洲促销节奏与鞋履全价经营提供新参考；黑五返券、延长退货和场景专题，则把节日活动从降价扩展到复购与选购体验。",
   "tags": [
-    "中龄网购",
-    "春夏承压",
-    "反馈选品",
-    "手作幕后",
-    "送礼保障"
+    "中年网购",
+    "澳洲消费",
+    "全价经营",
+    "黑五返券",
+    "节日保障"
   ],
   "top3": [
     {
-      "title": "中龄网购不应被年轻化素材掩盖",
-      "comment": "35–54 岁受访者服装网购率达 41.2%；值得单独测试核心客群素材。",
-      "category": "消费与购买行为",
-      "url": "https://www.emarketer.com/content/middle-aged-shoppers-more-likely-than-young-adults-buy-clothes-online"
+      "title": "Coach 鞋履增长与同价经营",
+      "comment": "鞋履收入增逾两成，Soho 运动鞋跨渠道同价；黑五前先检查同款优惠信息。",
+      "category": "竞品经营",
+      "url": "https://wwd.com/footwear-news/shoe-industry-news/coach-shoes-sales-growth-expansion-q1-2027-earnings-1239403304/"
     },
     {
-      "title": "把“舒适”拆成真实生活任务",
-      "comment": "Stitch Fix 从 5,000 多条教师留言提炼需求；选品可先从反馈归类开始。",
+      "title": "把客户反馈写成产品要求",
+      "comment": "Stitch Fix 用职业场景反馈指导设计，可参考其从具体动作找改进点的方法。",
       "category": "竞品经营",
       "url": "https://www.modernretail.co/operations/how-stitch-fix-is-using-ai-and-customer-feedback-to-build-its-private-brands/"
     },
     {
-      "title": "提前送礼，先讲清楚跨年退货",
-      "comment": "M&S 英国正价商品延长退货，Sale 仍 14 天；保障与限制须一起展示。",
+      "title": "Vessi 用返券衔接第二单",
+      "comment": "本月购物返券、下月起兑换；活动设计需同时算清复购毛利和使用门槛。",
       "category": "竞品当期活动",
-      "url": "https://www.marksandspencer.com/help-and-support/returns-and-refunds"
+      "url": "https://vessi.com/collections/pre-black-friday-sale"
     }
   ],
   "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0116.html"
