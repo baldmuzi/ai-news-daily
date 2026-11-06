@@ -1,33 +1,33 @@
 {
-  "edition": "0111",
-  "date": "2026年11月5日 09:10",
-  "intro": "全球女性运动新变化落在力量社群、个体恢复数据与实用服饰设计；Fanka 可用压缩服动作实测和真实场景清单，把趋势转成更易参与的内容。",
+  "edition": "0112",
+  "date": "2026年11月6日 09:09",
+  "intro": "全球女性运动新动向聚焦公益跑社群、混合训练与恢复空间；Fanka 可用压缩服实穿、社区场景和耐穿细节，把最新变化转成具体内容。",
   "tags": [
-    "女性力量社群",
-    "恢复数据",
-    "户外服饰",
-    "耐用消费",
-    "实穿细节"
+    "女孩公益跑",
+    "混合训练",
+    "恢复空间",
+    "社区健身",
+    "运动零售"
   ],
   "top3": [
     {
-      "title": "女性户外服饰品牌 Halfdays 进军欧洲，强调城市与山地双场景",
-      "comment": "女性户外品牌拓展欧洲，可做训练与冬季户外分层实穿指南。"
+      "title": "FP Movement 把女孩公益跑扩展至美国 16 座城市",
+      "comment": "Fanka 可做“第一次参加社区 5K 穿什么”图文与短视频，记录运动内衣支撑、压缩裤腰稳定性及赛前保暖层，让"
     },
     {
-      "title": "女性赛车培养计划用可穿戴数据观察训练、睡眠和恢复",
-      "comment": "女性赛车项目记录个体恢复，可采访女性运动员的赛前准备。"
+      "title": "迈阿密新恢复俱乐部尝试按日常场景组织服务",
+      "comment": "Fanka 可把训练前后换装、舒适休息与轻活动拍成“真实恢复日”内容，明确衣物是穿着选择，不宣称具有治疗效果。"
     },
     {
-      "title": "中文跑鞋消费观察转向耐用与日常价值讨论",
-      "comment": "中文跑鞋消费讨论实用价值，可用一周实穿呈现压缩服细节。"
+      "title": "STRONG Pilates 计划在英国扩张混合式课程门店",
+      "comment": "Fanka 可制作“同一套衣服完成划船、抗阻和垫上动作”的穿着检查，展示运动内衣与压缩裤在不同动作中的实际贴合"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0111.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0112.html",
   "blog": {
-    "title": "What to Wear to Your First Bench Press Meet: A Women’s Outfit Checklist",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/first-bench-press-meet-outfit-guide-women.html",
-    "summary": "由本期女性力量社群卧推活动延展，整理首次参赛的运动内衣、压缩裤和现场穿着检查。"
+    "title": "What to Wear to Your First Community 5K: A Women’s Outfit Checklist",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/first-community-5k-outfit-checklist-women.html",
+    "summary": "由本期 FP Movement 女孩公益 5K 活动延展，整理初次社区跑的运动内衣、裤装和赛前穿着检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
