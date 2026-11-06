@@ -1,0 +1,1006 @@
+{
+  "edition": "0116",
+  "mode": "replacement",
+  "started_at": "2026-11-06T09:57:41.256751+08:00",
+  "dedupe_editions": [
+    "0111",
+    "0112",
+    "0113",
+    "0114",
+    "0115"
+  ],
+  "excluded_from_dedupe": [
+    "old edition 0116",
+    "memory entries describing old edition 0116"
+  ],
+  "maintained_observations_read": "test/vivaia/observations.json",
+  "queries": [
+    {
+      "group": "A1-4",
+      "platform": "web search",
+      "queries": [
+        "women footwear trend autumn 2026 November comfortable flats",
+        "ballet flat loafer knit shoe trend November 2026",
+        "women over 40 fashion consumer insight November 2026",
+        "sustainable footwear fashion regulation November 2026"
+      ],
+      "result_urls": [
+        "https://www.whowhatwear.com/fa",
+        "https://www.whowhatwear.com/what-to-buy-now",
+        "https://www.womanandhome.com/fa",
+        "https://www.marieclaire.com/fa",
+        "https://nextbig.io/trend/ballet-flat",
+        "https://phia.com/editorial",
+        "https://www.ri",
+        "https://www.vogue.com/article/velvet-flat",
+        "https://www.emarketer.com/content/middle-aged-",
+        "https://tollbit.wwd.com/",
+        "https://www.theguardian.com/thefilter/2026/oct/15/be",
+        "https://www.vogue.com/article/fall-2026-",
+        "https://www.cntraveller.com/article/comfortable-flat",
+        "https://integratedin",
+        "https://micam.it/wp-content/upload",
+        "https://wwd.com/footwear-new",
+        "https://www.fa",
+        "https://download",
+        "https://www.europarl.europa.eu/legi",
+        "https://livetrend.co/wp-content/upload",
+        "https://www.reddit.com/r/femalefa",
+        "https://en.wikipedia.org/wiki/Ballet_flat",
+        "https://www.reddit.com/r/Bu",
+        "https://www.reddit.com/r/women",
+        "https://en.wikipedia.org/wiki/2020",
+        "https://www.reddit.com/r/Au",
+        "https://www.reddit.com/r/ThrowingFit",
+        "https://www.reddit.com/r/fa",
+        "https://en.wikipedia.org/wiki/2010",
+        "https://www.reddit.com/r/branding/comment",
+        "https://en.wikipedia.org/wiki/Slip-on_",
+        "https://en.wikipedia.org/wiki/Fa"
+      ]
+    },
+    {
+      "group": "A5-8",
+      "platform": "web search",
+      "queries": [
+        "comfortable work shoes women return to office November 2026",
+        "women footwear retail sales November 2026 consumer",
+        "age inclusive fashion campaign women 35 55 November 2026",
+        "Rothy's Allbirds Tory Burch M.Gemi Hermès VEJA shoes November 2026"
+      ],
+      "result_urls": [
+        "https://www.circana.com/po",
+        "https://cdn.nrf.com/re",
+        "https://www.glamour.com/gallery/be",
+        "https://www.con",
+        "https://www.eileenfi",
+        "https://www.ragtrader.com.au/in",
+        "https://rebeccaru",
+        "https://retailbo",
+        "https://anneklein.com/page",
+        "https://www.zappo",
+        "https://www.macy",
+        "https://www.feat",
+        "https://www.euromonitor.com/ab",
+        "https://www.alixpartner",
+        "https://hk",
+        "https://fdra.org/wp-content/upload",
+        "https://www.pajunen.fi/wp-content/upload",
+        "https://www.reddit.com/r/WomenofIreland/comment",
+        "https://www.reddit.com/r/GenXWomen/comment",
+        "https://www.reddit.com/r/handbag",
+        "https://www.reddit.com/r/XXRunning/comment",
+        "https://www.pikolino",
+        "https://www.reddit.com/r/cap",
+        "https://www.reddit.com/r/Au",
+        "https://www.reddit.com/r/au"
+      ]
+    },
+    {
+      "group": "B-Instagram/TikTok/YouTube/Pinterest",
+      "platform": "web search",
+      "queries": [
+        "site:instagram.com/reel comfortable shoes women November 2026",
+        "site:tiktok.com travel shoes women November 2026",
+        "site:youtube.com comfortable walking shoes women over 40 November 2026",
+        "site:pinterest.com spring summer shoes women Australia 2026"
+      ],
+      "result_urls": [
+        "https://new"
+      ]
+    },
+    {
+      "group": "B-Facebook/Reddit/Threads",
+      "platform": "web search",
+      "queries": [
+        "site:facebook.com comfortable shoes women November 2026",
+        "site:reddit.com/r/HerOneBag travel shoes November 2026",
+        "site:threads.net comfortable shoes women November 2026"
+      ],
+      "result_urls": [
+        "https://www.reddit.com/r/HerOneBag/comment",
+        "https://developer",
+        "https://www.bu",
+        "https://br-fr.facebook.com/ad",
+        "https://th-th.facebook.com/audiencenetwork/re",
+        "https://thefilecard.com/privacy ("
+      ]
+    },
+    {
+      "group": "C1-4",
+      "platform": "web search",
+      "queries": [
+        "Instagram fashion trends 2026 women shoes reels November",
+        "TikTok fashion trends November 2026 shoes women",
+        "YouTube shopping trends November 2026 fashion footwear women",
+        "Pinterest Predicts 2026 fashion shoes women November"
+      ],
+      "result_urls": [
+        "https://www.whowhatwear.com/fa",
+        "https://www.whowhatwear.com/what-to-buy-now",
+        "https://www.womanandhome.com/fa",
+        "https://www.marieclaire.com/fa",
+        "https://later.com/blog/in",
+        "https://trendreport.com/trend",
+        "https://trendreport.com/topic/fall-fa",
+        "https://www.ri",
+        "https://draper.chat/blog/in",
+        "https://influ.",
+        "https://mochilab",
+        "https://my",
+        "https://www.pepperagency.com/blog/tiktok-in",
+        "https://trend",
+        "https://cdn1.tenchat.ru/",
+        "https://ir.ebay",
+        "https://www.youtube.com/watch?v=QXdeMtHLwV8",
+        "https://commercial.yougov.com/r",
+        "https://www.youtube.com/watch?v=ZOzyQC2X3tA",
+        "https://connective3.com/wp-content/upload",
+        "https://ad",
+        "https://www.reddit.com/r/Pintere",
+        "https://en.wikipedia.org/wiki/Haul_video",
+        "https://www.reddit.com/r/femalefa",
+        "https://www.reddit.com/r/fa",
+        "https://www.reddit.com/r/u_Speciali",
+        "https://en.wikipedia.org/wiki/Outfit_of_the_day"
+      ]
+    },
+    {
+      "group": "C5-7/D1",
+      "platform": "web search",
+      "queries": [
+        "Reddit women fashion comfortable shoes discussion November 2026",
+        "Threads fashion conversation women shoes November 2026",
+        "social media fashion campaign women 35-55 footwear November 2026",
+        "可持续时尚 女鞋流行趋势 鞋服消费 2026年11月"
+      ],
+      "result_urls": [
+        "https://www.whowhatwear.com/fa",
+        "https://www.whowhatwear.com/what-to-buy-now",
+        "https://www.marieclaire.com/fa",
+        "https://finance.",
+        "https://www.ri",
+        "https://www.co",
+        "https://www.reddit.com/r/femalefa",
+        "https://www.reddit.com/r/fa",
+        "https://www.mum",
+        "https://www.pop-fa",
+        "https://www.reddit.com/r/Shoe",
+        "https://www.camper.com/en",
+        "https://m.ikanchai.com/pcarticle/664834",
+        "https://www.cntac.org.cn/zixun/",
+        "https://motionapp.com/creator/the-fa",
+        "https://footwearmagazine.com/zuhair-murad-aldo-",
+        "https://ai.valimart.net/new",
+        "https://www.reddit.com/r/femaletraveler",
+        "https://pdf.dfcfw.com/pdf/H3_AP202506101688063087_1.pdf?1749546523000.pdf=",
+        "https://pdf",
+        "https://dzb.xfrb.com.cn/UploadFile",
+        "https://www.alixpartner",
+        "https://www.chinaleather.org/upload/2025/12/11/%E3%80%8A%E5%8C%97%E4%BA%AC%E7%9A%AE%E9%9D%A9%E3%80%8B2025%E5%B9%B4%E7%AC%AC12%E6%9C%9F.pdf"
+      ]
+    },
+    {
+      "group": "D2/season",
+      "platform": "web search",
+      "queries": [
+        "小红书 女鞋 中年女性 通勤鞋 舒适 2026年11月",
+        "抖音 舒适女鞋 2026年11月",
+        "Australia spring summer footwear retail women November 2026"
+      ],
+      "result_urls": [
+        "https://www.getprice.com.au/article",
+        "https://dir.jd.com/guide/jd-geo-guide-chun-qiu-nv-",
+        "https://www.we",
+        "https://hu",
+        "https://www.",
+        "https://www.ninewe",
+        "https://www.ru",
+        "https://www.elle.com.au/",
+        "https://forecut.in/au",
+        "https://ai.pubdata.cn/hotgood",
+        "https://thecarou",
+        "https://img.feigua.cn/dy",
+        "https://fe-video-qc.xh",
+        "https://pdf.dfcfw.com/pdf/H3_AP202410051640176395_1.pdf?1728384697000.pdf="
+      ]
+    },
+    {
+      "group": "round2-consumer",
+      "platform": "web search",
+      "queries": [
+        "consumer holiday shopping survey November 4 2026 retail",
+        "site:modernretail.co November 2026 shoppers pricing holiday brands"
+      ],
+      "result_urls": [
+        "https://www.kiplinger.com/inve",
+        "https://nrf.com/blog/2026-holiday-",
+        "https://www.gartner.com/en/new",
+        "https://www.circana.com/po",
+        "https://cdn.nrf.com/media-center/pre",
+        "https://www.publicnow.com/view/001880544A3385251C67A1528FEE6ABB6BADB0BC",
+        "https://www.rab.com/public/r",
+        "https://www.adtaxi.com/blog/adtaxi-holiday-",
+        "https://core",
+        "https://cdn.nrf.com/re",
+        "https://www.ep",
+        "https://www.rrd.com/upload",
+        "https://retail",
+        "https://newcon",
+        "https://a",
+        "https://marketing.optimove.com/hubf",
+        "https://about.ad",
+        "https://www.reddit.com/r/Execli/comment",
+        "https://www.reddit.com/r/inflation/comment",
+        "https://www.reddit.com/r/Tariff",
+        "https://www.reddit.com/r/SurveyCircle/comment",
+        "https://www.",
+        "https://www.reddit.com/r/Target/comment",
+        "https://www.reddit.com/r/IAmA/comment",
+        "https://www.reddit.com/r/takemy",
+        "https://doc",
+        "https://www.reddit.com/r/SurveyExchange/comment",
+        "https://www.reddit.com/r/u_Aba",
+        "https://www.reddit.com/r/SampleSize/comment",
+        "https://www.reddit.com/r/marketinteltool",
+        "https://www.reddit.com/r/ontario/comment",
+        "https://en.wikipedia.org/wiki/Small_Bu",
+        "https://en.wikipedia.org/wiki/Offer",
+        "https://en.wikipedia.org/wiki/Black_Friday_%28",
+        "https://en.wikipedia.org/wiki/Chri"
+      ]
+    },
+    {
+      "group": "round2-marketing",
+      "platform": "web search",
+      "queries": [
+        "site:marketingdive.com November 2026 holiday campaign shopping",
+        "site:glossy.co November 2026 TikTok creators shopping"
+      ],
+      "result_urls": [
+        "https://www.marketingdive.com/new",
+        "https://www.marketingdive.com/ex/mobilemarketer/cm",
+        "https://www.marketingdive.com/",
+        "https://www.glo"
+      ]
+    },
+    {
+      "group": "social-targeted",
+      "platform": "web search",
+      "queries": [
+        "site:reddit.com/r/femalefashionadvice \"November 04 2026\" shoes",
+        "site:reddit.com/r/HerOneBag \"November\" \"2026\" shoes travel",
+        "site:instagram.com/reel/ \"November 4, 2026\" shoes",
+        "site:youtube.com/watch \"November\" \"2026\" comfortable shoes"
+      ],
+      "result_urls": [
+        "https://www.reddit.com/r/HerOneBag/comment",
+        "https://www.reddit.com/mod/HerOneBag/wiki/index/read",
+        "https://www.reddit.com/r/HerOneBag/? ... I'm looking for a pair of Chel",
+        "https://www.reddit.com/r/HerOneBag/?f=flair",
+        "https://www.bu"
+      ]
+    },
+    {
+      "group": "round2-channel-expand",
+      "platform": "web search",
+      "queries": [
+        "site:modernretail.co \"Nov 5, 2026\"",
+        "site:retaildive.com \"Nov. 5, 2026\"",
+        "site:glossy.co \"Nov 5, 2026\"",
+        "site:wwd.com \"November 5, 2026\" shoes"
+      ],
+      "result_urls": [
+        "https://www.glo"
+      ]
+    },
+    {
+      "group": "activities-expand",
+      "platform": "web search",
+      "queries": [
+        "site:clarks.com \"2026\" \"November\" offer",
+        "site:marksandspencer.com \"2026\" \"2027\" returns",
+        "site:theiconic.com.au \"30%\" \"November\"",
+        "site:rothys.com \"FORYOU26\""
+      ],
+      "result_urls": [
+        "https://www.mark",
+        "https://www.theiconic.com.au/promotion",
+        "https://www.theiconic.com.au/all?campaign=lp-SEED30offStorewide-1792457933 ",
+        "https://www.theiconic.com.au/all?campaign=lp-HackFridayUpto30OFFLANDINGPAGE-4526",
+        "https://www.theiconic.com.au/beauty-all/?campaign=lp-HackFridayUpto30OFFLANDINGPAGE-4526 ",
+        "https://www.theiconic.com.au/",
+        "https://www.theiconic.com.au/men",
+        "https://www.theiconic.com.au/iconicexclu",
+        "https://www.theiconic.com.au/all/?campaign=lp-HackFridayUpto30OFFLANDINGPAGE-4526&brand%5B%5D=5612&brand%5B%5D=2111&brand%5B%5D=6549&brand%5B%5D=893&brand%5B%5D=964&brand%5B%5D=3864&brand%5B%5D=7138&brand%5B%5D=893&brand%5B%5D=2111&brand%5B%5D=336&brand%5B%5D=3554&brand%5B%5D=4897&brand%5B%5D=5609 ",
+        "https://www.theiconic.com.au/women",
+        "https://www.theiconic.com.au/all/?campaign=lp-HackFridayUpto30OFFLANDINGPAGE-4526&category%5B%5D=10&category%5B%5D=18&category%5B%5D=21&category%5B%5D=32&category%5B%5D=9&category%5B%5D=16&category%5B%5D=4&category%5B%5D=8 ",
+        "https://www.theiconic.com.au/kid",
+        "https://www.theiconic.com.au/home-all/?campaign=lp-HackFridayUpto30OFFLANDINGPAGE-4526 ",
+        "https://www.theiconic.com.au/de",
+        "https://www.theiconic.com.au/all/?campaign=lp-HackFridayUpto30OFFChri",
+        "https://www.theiconic.com.au/all?campaign=lp-HackFridayUpto30OFFLANDINGPAGE-4526&brand%5B%5D=2097&brand%5B%5D=4362&brand%5B%5D=1022&brand%5B%5D=439&brand%5B%5D=6130&brand%5B%5D=4333&brand%5B%5D=7161&brand%5B%5D=7317&brand%5B%5D=3569&brand%5B%5D=560&brand%5B%5D=4421&brand%5B%5D=57&brand%5B%5D=358&brand%5B%5D=5636&brand%5B%5D=7316 ",
+        "https://corporate.mark",
+        "https://rothy"
+      ]
+    },
+    {
+      "group": "dated-social-channel",
+      "platform": "web search",
+      "queries": [
+        "site:reddit.com/r/femalefashionadvice \"November 05, 2026\"",
+        "site:reddit.com/r/femalefashionadvice \"November 04, 2026\"",
+        "site:modernretail.co \"November 4, 2026\"",
+        "site:techcrunch.com \"2026/11/04\" shopping"
+      ],
+      "result_urls": [
+        "https://www.modernretail.co/operation",
+        "https://www.reddit.com/r/",
+        "https://www.reddit.com/r/TameImpala/comment",
+        "https://www.reddit.com/r/raocflair/comment"
+      ]
+    },
+    {
+      "group": "candidate verification",
+      "platform": "web search",
+      "queries": [
+        "\"A Closer Look\" \"Steve Madden\" \"2026\" \"November 5\"",
+        "\"Footwear Remains\" \"Coach\" \"2026\"",
+        "\"Ikea leans into events\" \"2026\""
+      ],
+      "result_urls": [
+        "https://www.retaildive.com/new",
+        "https://www.",
+        "https://imgproxy.divecdn.com/nkq03y_SCGYvcaABvOQ2xXv0AqYVCpEpGrJOXnEl8I",
+        "https://themorningpul",
+        "https://trari.com/en/day/2026-11-04/",
+        "https://finance.yahoo.com/",
+        "https://worlda.live/philippine",
+        "https://tveveryday.com/nbc-today-thi",
+        "https://embed-rech-01.dialog.cm/435mag8/doc",
+        "https://www.the",
+        "https://www.philadelphiaeagle"
+      ]
+    },
+    {
+      "group": "social-final-check",
+      "platform": "web search",
+      "queries": [
+        "TikTok Shop app apps.apple.com November 2026 Singapore",
+        "site:reddit.com/r/femalefashionadvice/comments \"November 4, 2026\" shoes"
+      ],
+      "result_urls": [
+        "https://techcrunch.com/2026/11/05/tiktok-quietly-launche",
+        "https://www.engadget.com/2308419/tiktok-ju",
+        "https://thevergenew",
+        "https://he",
+        "https://app",
+        "https://tech.yahoo.com/",
+        "https://www.africafront.new",
+        "https://en.",
+        "https://www.tubefilter.com/2026/11/05/tiktok-",
+        "https://finance.yahoo.com/media-adverti",
+        "https://gagadget.com/en/733038-tiktok-quietly-launche",
+        "https://www.rithum.com/wp-content/upload",
+        "https://page",
+        "https://ad",
+        "https://d3m889aznlr23d.cloudfront.net/img/event",
+        "https://techxplore.com/new",
+        "https://www.reddit.com/r/TikTokShopForBrand",
+        "https://www.reddit.com/r/a",
+        "https://www.reddit.com/r/TikTok",
+        "https://www.reddit.com/r/tiktok",
+        "https://en.wikipedia.org/wiki/TikTok_Shop",
+        "https://www.reddit.com/r/TikTokShopSeller",
+        "https://www.reddit.com/r/SgTea/comment"
+      ]
+    },
+    {
+      "group": "original-campaigns",
+      "platform": "web search",
+      "queries": [
+        "site:gapinc.com \"2026\" \"Jingle Jet\"",
+        "site:levi.com \"2026\" \"Let’s Get Fuzzy\"",
+        "site:instagram.com \"Prada\" \"Animated By Hand\" November 2026"
+      ],
+      "result_urls": [
+        "https://www.levi.com/GB/en_GB/feature",
+        "https://www.levi.com/US/en_US/feature",
+        "https://www.gapinc.com/e",
+        "https://www.levi.com/ES/en/",
+        "https://www.levi.com/ES/en/feature",
+        "https://www.levi.com/IE/en_IE/",
+        "https://www.levi.com/PL/en/",
+        "https://www.levi.com/NL/en/",
+        "https://www.levi.com/GB/en_GB/%3F",
+        "https://www.levi.com/FR/en/?m",
+        "https://www.levi.com/DE/en/"
+      ]
+    }
+  ],
+  "rss": [
+    {
+      "url": "https://wwd.com/feed/",
+      "status": "parsed",
+      "initial_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "items": [
+        {
+          "title": "Tesco Accused of Concealing Forced Labor at Thai Factory as UK Lawsuit Advances",
+          "link": "https://wwd.com/sourcing-journal/sustainability/tesco-uk-intertek-vk-garment-thailand-wrc-forced-labor-1239403667/",
+          "pubDate": "Thu, 05 Nov 2026 22:46:28 +0000"
+        },
+        {
+          "title": "Reformation Continues Growth Streak With 19.1% Q3 Sales Gain",
+          "link": "https://wwd.com/business-news/financial/reformation-hali-borenstein-q3-2026-sales-gain-1239403268/",
+          "pubDate": "Thu, 05 Nov 2026 22:10:18 +0000"
+        },
+        {
+          "title": "Maersk Raises Guidance Again as Congestion Lifts Rates Despite Falling Volumes",
+          "link": "https://wwd.com/sourcing-journal/logistics/maersk-raises-guidance-again-port-congestion-lifts-freight-rates-q3-1239403347/",
+          "pubDate": "Thu, 05 Nov 2026 21:51:13 +0000"
+        },
+        {
+          "title": "A Closer Look at the Fall Footwear That Drove Steve Madden’s Wholesale Business in Q3",
+          "link": "https://wwd.com/footwear-news/shoe-industry-news/steve-madden-casual-heels-booties-loafers-tall-shaft-boots-1239402993/",
+          "pubDate": "Thu, 05 Nov 2026 21:40:00 +0000"
+        },
+        {
+          "title": "Livvy Dunne on How NIL Changed Her Life and Her Move Into Acting",
+          "link": "https://wwd.com/footwear-news/shoe-features/livvy-dunne-nil-nobull-baywatch-1239403598/",
+          "pubDate": "Thu, 05 Nov 2026 21:26:27 +0000"
+        }
+      ]
+    },
+    {
+      "url": "https://www.businessoffashion.com/rss",
+      "status": "fetch/parse failed",
+      "error": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/htm",
+      "initial_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "items": []
+    },
+    {
+      "url": "https://footwearnews.com/feed/",
+      "status": "parsed",
+      "initial_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "items": [
+        {
+          "title": "A Closer Look at the Fall Footwear That Drove Steve Madden’s Wholesale Business in Q3",
+          "link": "https://wwd.com/footwear-news/shoe-industry-news/steve-madden-casual-heels-booties-loafers-tall-shaft-boots-1239402993/",
+          "pubDate": "Thu, 05 Nov 2026 21:40:00 +0000"
+        },
+        {
+          "title": "Livvy Dunne on How NIL Changed Her Life and Her Move Into Acting",
+          "link": "https://wwd.com/footwear-news/shoe-features/livvy-dunne-nil-nobull-baywatch-1239403598/",
+          "pubDate": "Thu, 05 Nov 2026 21:26:27 +0000"
+        },
+        {
+          "title": "Steve Madden Bets on Men’s Business and Celebrates Brand’s Origins in Fall Campaign",
+          "link": "https://wwd.com/footwear-news/shoe-industry-news/steve-madden-mens-business-fall-2026-campaign-1239400135/",
+          "pubDate": "Thu, 05 Nov 2026 21:23:18 +0000"
+        },
+        {
+          "title": "Footwear Remains ‘Significant Growth Opportunity’ for Coach",
+          "link": "https://wwd.com/footwear-news/shoe-industry-news/coach-shoes-sales-growth-expansion-q1-2027-earnings-1239403304/",
+          "pubDate": "Thu, 05 Nov 2026 21:02:56 +0000"
+        },
+        {
+          "title": "Brain Dead and Adidas Are Dabbling in the Approach Shoe Trend With Super Fuzzy Suede",
+          "link": "https://wwd.com/footwear-news/sneaker-news/brain-dead-adidas-approach-climbing-shoes-release-date-1239403353/",
+          "pubDate": "Thu, 05 Nov 2026 20:51:18 +0000"
+        }
+      ]
+    },
+    {
+      "url": "https://www.glossy.co/feed/",
+      "status": "parsed",
+      "initial_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "items": [
+        {
+          "title": "Interparfums, Inc. to launch new Off-White, Longchamp fragrances in 2027",
+          "link": "https://www.glossy.co/beauty/interparfums-inc-to-launch-new-off-white-longchamp-fragrances-in-2027/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+          "pubDate": "Thu, 05 Nov 2026 17:53:05 +0000"
+        },
+        {
+          "title": "How is CVS sneaking brands into its stores without brand approval?",
+          "link": "https://www.glossy.co/podcasts/how-is-cvs-sneaking-brands-into-its-stores-without-brand-approval/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+          "pubDate": "Thu, 05 Nov 2026 05:00:00 +0000"
+        },
+        {
+          "title": "Fashion Briefing: As AI content takes over, brands embrace hand-drawn animation for holiday",
+          "link": "https://www.glossy.co/fashion/fashion-briefing-as-ai-content-takes-over-brands-embrace-hand-drawn-animation-for-holiday/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+          "pubDate": "Thu, 05 Nov 2026 05:00:00 +0000"
+        },
+        {
+          "title": "Rhode’s European summer fuels 51% sales spike for E.l.f. Beauty ",
+          "link": "https://www.glossy.co/beauty/rhodes-european-summer-fuels-51-sales-spike-for-e-l-f-beauty/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+          "pubDate": "Wed, 04 Nov 2026 22:47:00 +0000"
+        },
+        {
+          "title": "Cardi B’s hair-care brand is bringing new shoppers to Revolve",
+          "link": "https://www.glossy.co/beauty/revolve-cardi-b-grow-good-beauty-earnings/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+          "pubDate": "Wed, 04 Nov 2026 22:04:03 +0000"
+        }
+      ]
+    },
+    {
+      "url": "https://www.retaildive.com/feeds/news/",
+      "status": "parsed",
+      "initial_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "items": [
+        {
+          "title": "Walmart ramps up Sparky features in time for the holidays",
+          "link": "https://www.retaildive.com/news/walmart-sparky-features-AI-holidays/873718/",
+          "pubDate": "Thu, 05 Nov 2026 13:01:00 -0500"
+        },
+        {
+          "title": "Amazon adds over 100 Alexa for Shopping functions",
+          "link": "https://www.retaildive.com/news/amazon-adds-alexa-ai-shopping-functions/873602/",
+          "pubDate": "Thu, 05 Nov 2026 12:38:00 -0500"
+        },
+        {
+          "title": "Ikea leans into events for the holidays",
+          "link": "https://www.retaildive.com/news/ikea-holiday-market-store-events/873869/",
+          "pubDate": "Thu, 05 Nov 2026 12:22:00 -0500"
+        },
+        {
+          "title": "E.l.f. Beauty growth driven by innovation, not just pricing power",
+          "link": "https://www.retaildive.com/news/elf-beauty-q2-earnings-sales-growth-innovation-pricing-power/873868/",
+          "pubDate": "Thu, 05 Nov 2026 12:02:00 -0500"
+        },
+        {
+          "title": "Ethan Allen CEO out as chair after activist board shakeup",
+          "link": "https://www.retaildive.com/news/ethan-allen-ceo-out-as-chair-after-activist-board-shakeup/873850/",
+          "pubDate": "Thu, 05 Nov 2026 11:41:00 -0500"
+        }
+      ]
+    },
+    {
+      "url": "https://goodonyou.eco/feed/",
+      "status": "parsed",
+      "initial_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "items": [
+        {
+          "title": "50+ more sustainable ideas for Christmas gifts and holiday presents",
+          "link": "https://goodonyou.eco/sustainable-christmas-gifts/",
+          "pubDate": "Wed, 04 Nov 2026 23:00:07 +0000"
+        },
+        {
+          "title": "More sustainable fashion brand offers this November 2026",
+          "link": "https://goodonyou.eco/good-offers-wrap/",
+          "pubDate": "Wed, 04 Nov 2026 22:00:45 +0000"
+        },
+        {
+          "title": "The ultimate guide to yoga clothes from more sustainable brands",
+          "link": "https://goodonyou.eco/ethical-sustainable-yoga-clothes/",
+          "pubDate": "Mon, 02 Nov 2026 23:00:55 +0000"
+        },
+        {
+          "title": "11 things to know in sustainable fashion and beauty this November",
+          "link": "https://goodonyou.eco/sustainable-fashion-and-beauty-news-november-2026/",
+          "pubDate": "Mon, 02 Nov 2026 12:26:04 +0000"
+        },
+        {
+          "title": "Prefer to shop IRL? These top-rated brands have physical retail stores around the world",
+          "link": "https://goodonyou.eco/more-sustainable-brands-stores/",
+          "pubDate": "Thu, 29 Oct 2026 11:01:10 +0000"
+        }
+      ]
+    },
+    {
+      "url": "https://www.harpersbazaar.com/rss/all.xml",
+      "status": "parsed",
+      "initial_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "items": [
+        {
+          "title": "A Definitive Guide to the Best Black Boots",
+          "link": "https://www.harpersbazaar.com/fashion/trends/a74333035/best-black-boots-fall-style/",
+          "pubDate": "Thu, 05 Nov 2026 21:44:52 +0000"
+        },
+        {
+          "title": "Presidents, Bullfighters, and California—Elaine de Kooning Painted Whatever She Wanted",
+          "link": "https://www.harpersbazaar.com/culture/art-books-music/a74338548/elaine-de-kooning-new-york-overdue-exhibition-berry-campbell/",
+          "pubDate": "Thu, 05 Nov 2026 21:31:16 +0000"
+        },
+        {
+          "title": "Hunter Schafer’s Studded Lime-Green Hoodie Is a One-of-a-Kind Statement",
+          "link": "https://www.harpersbazaar.com/celebrity/latest/a74348750/hunter-schafer-upcycled-bedazzled-lime-green-hoodie-emerging-designer-nihl-photos/",
+          "pubDate": "Thu, 05 Nov 2026 21:11:52 +0000"
+        },
+        {
+          "title": "Jennifer Lopez Debuts Her Blondest Hair Yet in a Nude Photo Shoot",
+          "link": "https://www.harpersbazaar.com/beauty/hair/a74345366/jennifer-lopez-blond-hair-transformation-halloween-costume/",
+          "pubDate": "Thu, 05 Nov 2026 20:28:55 +0000"
+        },
+        {
+          "title": "Kim Kardashian and Jennifer Lawrence Prove Opposites Attract in Contrasting Night-Out Looks",
+          "link": "https://www.harpersbazaar.com/celebrity/latest/a74347876/kim-kardashian-jennifer-lawrence-contrasting-girls-night-outfits-skims-robes-photos/",
+          "pubDate": "Thu, 05 Nov 2026 19:50:24 +0000"
+        }
+      ]
+    },
+    {
+      "url": "https://www.instyle.com/rss/all.xml",
+      "status": "fetch/parse failed",
+      "error": "<p>\n  If you are a reader experiencing an access issue, please contact\n  <a href=\"mailto:support@people.inc\">support@peo",
+      "initial_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "items": []
+    },
+    {
+      "url": "https://www.whowhatwear.com/rss",
+      "status": "parsed",
+      "initial_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>",
+      "items": [
+        {
+          "title": " True Whitaker On '90s Low-Rise, Party Dressing, and Celebrating the Holidays with Old Navy ",
+          "link": "https://www.whowhatwear.com/fashion/shopping/true-whitaker-old-navy-holiday-campaign-2026",
+          "pubDate": "Fri, 06 Nov 2026 01:01:03 +0000"
+        },
+        {
+          "title": " Not Every Skirt Trend Works With Moto Boots—This One Does ",
+          "link": "https://www.whowhatwear.com/fashion/celebrity-style/emma-chamberlain-new-boyfriend-eden-joel-outfits",
+          "pubDate": "Fri, 06 Nov 2026 00:36:47 +0000"
+        },
+        {
+          "title": " Kate Hudson Packed Nordstrom's Skimpiest Bikini for Her BFF's Wedding in Hawaii—and It's Still in Stock ",
+          "link": "https://www.whowhatwear.com/fashion/celebrity-style/kate-hudson-black-and-white-bikini-hawaii",
+          "pubDate": "Fri, 06 Nov 2026 00:20:05 +0000"
+        },
+        {
+          "title": " My Bestie and I Love Aritzia—14 Winter Staples We Both Agree On ",
+          "link": "https://www.whowhatwear.com/fashion/shopping/artizia-winter-staples-2026",
+          "pubDate": "Thu, 05 Nov 2026 22:00:00 +0000"
+        },
+        {
+          "title": " 6 Editor-Approved Multichrome Eyeshadows That Will Elevate Any Makeup Look This Season ",
+          "link": "https://www.whowhatwear.com/beauty/makeup/best-multichrome-eyeshadows",
+          "pubDate": "Thu, 05 Nov 2026 21:20:19 +0000"
+        }
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "title": "35–54 岁受访者的服装网购率高于年轻人，客群呈现值得重估",
+      "url": "https://www.emarketer.com/content/middle-aged-shoppers-more-likely-than-young-adults-buy-clothes-online",
+      "original_date": "2026-11-03",
+      "date_evidence": "原始页面仅标日期；时区边界不明，保守列为本周背景",
+      "source": "EMARKETER / Bizrate Insights",
+      "status": "verified; selected",
+      "category": "消费与购买行为",
+      "labels": [
+        "本周背景"
+      ]
+    },
+    {
+      "title": "澳洲 10 月时尚销售下滑 3.2%，促销日历让同比判断更复杂",
+      "url": "https://www.ragtrader.com.au/insights/fashion-sales-fall-3-2-as-consumer-pressure-mounts",
+      "original_date": "2026-11-04",
+      "date_evidence": "原文日期；未披露具体时刻与时区",
+      "source": "Ragtrader / The Retail Score",
+      "status": "verified; selected",
+      "category": "消费与购买行为",
+      "labels": []
+    },
+    {
+      "title": "Stitch Fix 从 5,000 多条教师反馈中找选品问题",
+      "url": "https://www.modernretail.co/operations/how-stitch-fix-is-using-ai-and-customer-feedback-to-build-its-private-brands/",
+      "original_date": "2026-11-04",
+      "date_evidence": "原始元数据 05:00 UTC",
+      "source": "Modern Retail · Julia Waldow",
+      "status": "verified; selected",
+      "category": "竞品经营",
+      "labels": [
+        "品牌自报"
+      ]
+    },
+    {
+      "title": "Steve Madden 披露短靴与高筒靴分化，秋冬鞋不能一并押注",
+      "url": "https://wwd.com/footwear-news/shoe-industry-news/steve-madden-casual-heels-booties-loafers-tall-shaft-boots-1239402993/",
+      "original_date": "2026-11-05",
+      "date_evidence": "原始元数据 21:40 UTC",
+      "source": "Footwear News · Vicki M. Young",
+      "status": "verified; selected",
+      "category": "商品与穿搭",
+      "labels": [
+        "品牌自报"
+      ]
+    },
+    {
+      "title": "Coach 鞋履增长逾 20%，以同价商品连接正价与奥莱渠道",
+      "url": "https://wwd.com/footwear-news/shoe-industry-news/coach-shoes-sales-growth-expansion-q1-2027-earnings-1239403304/",
+      "original_date": "2026-11-05",
+      "date_evidence": "原始元数据 21:02:56 UTC",
+      "source": "Footwear News · Stephen Garner",
+      "status": "verified; selected",
+      "category": "价格与渠道",
+      "labels": [
+        "品牌自报"
+      ]
+    },
+    {
+      "title": "Levi’s 把定格动画制作过程变成节日内容的一部分",
+      "url": "https://www.glossy.co/fashion/fashion-briefing-as-ai-content-takes-over-brands-embrace-hand-drawn-animation-for-holiday/",
+      "original_date": "2026-11-05",
+      "date_evidence": "原始元数据 05:00 UTC",
+      "source": "Glossy · Danny Parisi",
+      "status": "verified; selected",
+      "category": "社媒与内容营销",
+      "labels": [
+        "品牌自报"
+      ]
+    },
+    {
+      "title": "TikTok 独立购物应用出现在新加坡商店，关注内容与购物入口的分工",
+      "url": "https://techcrunch.com/2026/11/05/tiktok-quietly-launches-a-standalone-tiktok-shop-app/",
+      "original_date": "2026-11-05",
+      "date_evidence": "报道原始时间 07:33 PST；应用上架日期未确认",
+      "source": "TechCrunch / Apple App Store 官方应用页",
+      "status": "verified; selected",
+      "category": "价格与渠道",
+      "labels": []
+    },
+    {
+      "title": "Walmart 的 Sparky 把购物清单转成购物车，购买任务更具体",
+      "url": "https://www.retaildive.com/news/walmart-sparky-features-AI-holidays/873718/",
+      "original_date": "2026-11-05",
+      "date_evidence": "原文日期；页面元数据 13:01，未标时区",
+      "source": "Retail Dive · Walmart 功能披露",
+      "status": "verified; selected",
+      "category": "价格与渠道",
+      "labels": [
+        "品牌自报"
+      ]
+    },
+    {
+      "title": "Old Navy 用节日航班串起家庭礼物，并露出具体价格",
+      "url": "https://www.gapinc.com/en-us/articles/2026/11/all-aboard-the-jingle-jet-introducing-old-navy-s-h",
+      "original_date": "2026-11-05",
+      "date_evidence": "原文日期；未披露具体时刻与时区",
+      "source": "Old Navy / Gap Inc. 官方新闻中心",
+      "status": "verified; selected",
+      "category": "社媒与内容营销",
+      "labels": [
+        "新闻稿为主"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "id": "activity-ninewest",
+      "brand": "Nine West",
+      "market": "澳大利亚",
+      "currency": "AUD",
+      "title": "Nine West 澳洲：正价鞋自动减 A$50，商品卡直接显示折后价",
+      "stage": "限时促销进行中",
+      "observed": "2026-11-06 10:05（Asia/Shanghai）",
+      "dates": "起止日期、截止时刻及时区未披露",
+      "change": "首次观察；不等于今日上线。0111–0115 及既有观察记录未收录此机制。",
+      "mechanism": "正价鞋减 A$50",
+      "limit": "排除已降价款、鞋护理及礼卡；不可叠加优惠",
+      "url": "https://www.ninewest.com.au/collections/shoes",
+      "rules": "https://www.ninewest.com.au/policies/promotions",
+      "what": "官网当前公告写明正价鞋减 A$50；优惠已反映在商品和购物车价格，不是在结账时再减一次。活动规则排除鞋护理、礼卡和已降价款，不与其他优惠或优惠码叠加，售完为止，不能追溯既有订单。未另列满额门槛、会员要求或优惠码；未披露与本活动绑定的赠品、包装及特别配送退换安排。",
+      "path": "本次 headless 渲染：首页公告“$50 OFF FULL PRICE SHOES | SHOP NOW”通向 Shoes 集合；集合页提供鞋型、颜色、尺码等筛选，商品卡标“$50 OFF APPLIED”并并列原价与当前价，例如 CAMPTON 从 A$159.95 到 A$109.95。规则页同时保留已过期活动，因此核验时以当前入口、商品价格和未标过期的对应规则三者交叉确认。",
+      "action": "本周可测试：面向澳洲春夏选购顾客，在毛利和可售尺码允许时，对明确的正价商品池测试固定金额优惠，并在列表就展示实际价格与排除条件。前提是价格引擎能保持列表、详情和购物车一致；A$50 仅是竞品机制，不是建议 VIVAIA 直接采用的优惠力度。",
+      "boundary": "当前有效性来自首页公告、集合商品价和促销规则的一致展示；未知截止时间，不承诺持续到某日。促销规则中的过期条目不算本期变化。优惠效果、销量与转化数据均未披露。",
+      "links": [
+        [
+          "首页公告入口",
+          "https://www.ninewest.com.au/"
+        ],
+        [
+          "活动与商品集合",
+          "https://www.ninewest.com.au/collections/shoes"
+        ],
+        [
+          "促销规则",
+          "https://www.ninewest.com.au/policies/promotions"
+        ]
+      ],
+      "images": [
+        {
+          "file": "0116-ninewest-au-products-20261106100549.jpg",
+          "url": "https://www.ninewest.com.au/collections/shoes",
+          "caption": "商品集合实际渲染：优惠标签与划线原价、当前价同屏。观察于 10:05:49，Asia/Shanghai。"
+        }
+      ]
+    },
+    {
+      "id": "activity-ms",
+      "brand": "M&S",
+      "market": "英国",
+      "currency": "GBP",
+      "title": "M&S 英国：节日正价商品可延长退货，Sale 仍仅 14 天",
+      "stage": "节日退货政策执行中",
+      "observed": "2026-11-06 10:03（Asia/Shanghai）",
+      "dates": "购买起点 2026-10-22；退货至 2027-01-17 或普通 28 天期限，取较晚者；时刻及时区未披露",
+      "change": "首次观察；不等于今日上线。与常规退货相比，本期有明确节日日期及正价限制。",
+      "mechanism": "节日延长退货",
+      "limit": "仅正价商品延长；Sale 商品 14 天；仍须满足通常退货条件",
+      "url": "https://www.marksandspencer.com/help-and-support/returns-and-refunds",
+      "rules": "https://www.marksandspencer.com/help-and-support/returns-and-refunds",
+      "what": "英国官网 Christmas returns FAQ 明确：2026 年 10 月 22 日及之后购买的正价商品，可以退至 2027 年 1 月 17 日，或适用通常 28 天期限，以较晚者为准。Sale 商品仍为 14 天，其他常规退货条件继续适用。未另设此项政策的会员、优惠码或金额门槛；具体购买截止日、截止时刻及时区未披露。不能理解为所有商品无条件可退。",
+      "path": "本次 headless 核验：首页有 Christmas 导航；顾客可经 Help 及 Returns & Refunds 支持入口，展开“What is your Christmas returns policy?”阅读节日条款。截图保存的是展开后的正价与 Sale 区分。本次未观察到该承诺固定出现在每个商品页或购物车，因此不把它描述成全站购买按钮旁的保障提示。",
+      "action": "中长期评估：面向提前购礼的英国顾客，评估有限商品池的延长退货方案；先核算跨年退货准备金、仓储与重新上架能力，再决定日期和排除项。本周可先测试把现有已确认的退换规则放到礼物页及商品页，清楚区分正价、促销与不适用商品。",
+      "boundary": "活动与规则同为英国官网当前 FAQ，已直接展开核验；不能套用到其他国家站。页面没有披露对销量或送礼转化的影响，效果未披露。本期未核验专属赠品包装或配送截止，不附加相关承诺。",
+      "links": [
+        [
+          "英国首页与 Christmas 入口",
+          "https://www.marksandspencer.com/"
+        ],
+        [
+          "节日活动规则 · 展开 Christmas returns FAQ",
+          "https://www.marksandspencer.com/help-and-support/returns-and-refunds"
+        ]
+      ],
+      "images": [
+        {
+          "file": "0116-marks-spencer-uk-returns-20261106100351.jpg",
+          "url": "https://www.marksandspencer.com/help-and-support/returns-and-refunds",
+          "caption": "展开后的节日退货 FAQ：正价商品延长期限与 Sale 14 天条款。观察于 10:03:51，Asia/Shanghai。"
+        }
+      ]
+    },
+    {
+      "id": "activity-birkenstock",
+      "brand": "Birkenstock",
+      "market": "美国",
+      "currency": "USD",
+      "title": "Birkenstock 美国：按预算选礼，搭配跨年退货保障",
+      "stage": "节日礼物专题与退货安排执行中",
+      "observed": "2026-11-06 10:03–10:05（Asia/Shanghai）",
+      "dates": "礼物专题起止未披露；2026-11-01 至 12-31 购买的合格商品，退货延至 2027-01-31；时刻及时区未披露",
+      "change": "首次观察；不等于今日上线。本条观察预算导购和退货机制，与 0114 的 Staud 联名鞋款不是同一事件。",
+      "mechanism": "预算导购＋节日购买保障",
+      "limit": "部分款需 VIP；退货须保持原始状态与包装，护肤品仍按收货后 30 天",
+      "url": "https://www.birkenstock.com/us/gift-guide/",
+      "rules": "https://www.birkenstock.com/us/us-policies-return.html",
+      "what": "美国站礼物专题提供人群、品类和预算入口，价格导航含 Gifts Under $50 / $100 / $160；页面也突出 Clogs Under $160。现行规则将 11 月 1 日至 12 月 31 日购买的合格商品退货期延至次年 1 月 31 日，须保持原始状态和包装。护肤品仍为收货后 30 天；美国官网订单按线上流程退回，不在门店或授权零售商退货，运费不退。",
+      "path": "本次 headless 渲染：首页 Gift Guide 入口通向红色礼物主视觉及 For Her、For Him、Clogs、Slippers、Foot Care 等模块；预算入口进入商品集合，可继续用尺码、款式等筛选。核验 Gifts Under $160 集合后进入 Blair 商品页，发现“VIP Exclusives / JOIN BIRKENSTOCK VIP TO BUY”限制。不能把预算专题解读为全部商品无会员门槛；个别商品标价达到 $160，实际价格以商品页为准。",
+      "action": "本周可测试：若有足够可售款，面向美国送礼顾客建立与 VIVAIA 实际 US$99–199 价格带匹配的预算分组，并让人群、场景和尺码筛选接续同一商品池。前提是价格库存同步，会员限制先于购买按钮清楚显示；延长退货须经成本与履约评估，不随导购专题自动承诺。",
+      "boundary": "主活动页、预算集合、商品页及退货规则均本次直接核验。专题本身未披露统一折扣、优惠码、额外满额门槛或赠品；不推断存在赠礼包装或特定配送截止。礼物专题上线时间未知，效果未披露。与 M&S 的比较只能涉及已披露规则，不能推断谁的转化更好。",
+      "links": [
+        [
+          "礼物专题",
+          "https://www.birkenstock.com/us/gift-guide/"
+        ],
+        [
+          "预算集合 · Gifts Under $160",
+          "https://www.birkenstock.com/us/gift-shop/gifts-under-160/"
+        ],
+        [
+          "Blair 商品与 VIP 限制",
+          "https://www.birkenstock.com/us/blair-suede-leather/blair-suede-suedeleather-S005691-eva-w_27.html"
+        ],
+        [
+          "美国退货规则",
+          "https://www.birkenstock.com/us/us-policies-return.html"
+        ]
+      ],
+      "images": [
+        {
+          "file": "0116-birkenstock-us-gift-20261106100352.jpg",
+          "url": "https://www.birkenstock.com/us/gift-guide/",
+          "caption": "礼物专题首屏：人群与品类导购入口。观察于 10:03:52，Asia/Shanghai。"
+        },
+        {
+          "file": "0116-birkenstock-us-price-20261106100352.jpg",
+          "url": "https://www.birkenstock.com/us/gift-shop/gifts-under-160/",
+          "caption": "预算集合与尺码筛选，商品卡同时标出 VIP Exclusives 限制。观察于 10:03:52，Asia/Shanghai。"
+        },
+        {
+          "file": "0116-birkenstock-us-returns-20261106100550.jpg",
+          "url": "https://www.birkenstock.com/us/us-policies-return.html",
+          "caption": "美国退货规则：节日购买区间、延长退货期限及状态要求。观察于 10:05:50，Asia/Shanghai。"
+        }
+      ]
+    }
+  ],
+  "platform_status": {
+    "Instagram": "无明确日期：未定位近72小时合格原帖",
+    "TikTok": "帖子访问受限；另核验11月5日独立Shop应用报道及官方App Store页面",
+    "YouTube": "仅有过期结果或无明确原始日期；动态榜单不作新事实",
+    "Pinterest": "仅有过期结果：官方夏季报告超7天",
+    "Facebook": "未发现相关且日期可核验的新结果",
+    "Reddit": "仅有过期结果：检出的鞋履与旅行讨论未落入窗口",
+    "Threads": "未发现相关结果"
+  },
+  "second_round": {
+    "consumer_channel": [
+      "consumer holiday shopping survey November 4 2026 retail",
+      "site:modernretail.co November 2026 shoppers pricing holiday brands"
+    ],
+    "content_campaign": [
+      "site:marketingdive.com November 2026 holiday campaign shopping",
+      "site:glossy.co November 2026 TikTok creators shopping"
+    ],
+    "expanded_markets": [
+      "Australia",
+      "UK"
+    ],
+    "completed": true
+  },
+  "count_note": "搜索命中总数与排除总数未完整统计；仅准确统计入选条数。",
+  "step1_completed": true,
+  "edition_decision": {
+    "file_count": 116,
+    "max_existing": 116,
+    "edition": "0116",
+    "reason": "User explicitly requested regeneration and replacement, excluding old 0116 from deduplication."
+  },
+  "exclusions": [
+    {
+      "event": "Circana Q3 sales / Adidas Q3 / VEJA Atlas / JCPenney weekly deals / Nordstrom Bowie / Michael Kors TikTok / Aubrium creator videos",
+      "reason": "同一事件已用于0111–0115；转载不重复计数"
+    },
+    {
+      "event": "velvet flats / ballet flats / loafers evergreen trend lists",
+      "reason": "历史重复主题或无实质新事实"
+    },
+    {
+      "event": "Pinterest summer report / Gartner Oct 26 / NRF Oct 28 / undated social posts",
+      "reason": "超过7天或无法确认原始日期"
+    },
+    {
+      "event": "Chinese JD footwear and generic industry summaries",
+      "reason": "历史重复、日期或相关性不足；无近3天可核验中文平台新趋势"
+    },
+    {
+      "event": "future fragrance licensing / awards / unrelated beauty financial news",
+      "reason": "PR或低相关性，缺少实际可参考机制"
+    },
+    {
+      "event": "Rothy’s gift guide / M.Gemi seasonal entry",
+      "reason": "本次观察未证实相对既有记录的实质机制变化"
+    },
+    {
+      "event": "Allbirds US / Tory Burch US / VEJA",
+      "reason": "Allbirds未核验到新的合格节日机制；Tory重定向新加坡且此前活动重复；VEJA普通礼卡不入选"
+    },
+    {
+      "event": "Clarks US",
+      "reason": "访问限制，未绕过；不推断促销是否结束"
+    }
+  ],
+  "generated_at": "2026-11-06T10:18:13.964336+08:00",
+  "rolling_72h_start": "2026-11-03T10:18:13.964336+08:00",
+  "background_count": 1,
+  "news_count": 9,
+  "activity_count": 3,
+  "browser_validation": {
+    "widths": [
+      1440,
+      390
+    ],
+    "document_widths": [
+      1440,
+      390
+    ],
+    "news": 9,
+    "activities": 3,
+    "images_loaded": 5,
+    "invalid_anchors": 0,
+    "overflow_elements": 0,
+    "highlight_click": "activity-ms passed"
+  }
+}
