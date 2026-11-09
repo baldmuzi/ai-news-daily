@@ -1,33 +1,33 @@
 {
-  "edition": "0112",
-  "date": "2026年11月6日 09:09",
-  "intro": "全球女性运动新动向聚焦公益跑社群、混合训练与恢复空间；Fanka 可用压缩服实穿、社区场景和耐穿细节，把最新变化转成具体内容。",
+  "edition": "0113",
+  "date": "2026年11月9日 09:14",
+  "intro": "全球女性运动新素材关注运动内衣起源、线下社群与冬季消费；Fanka 可用压缩服实穿和场景化穿搭，把新报道转成易参与的内容。",
   "tags": [
-    "女孩公益跑",
-    "混合训练",
-    "恢复空间",
-    "社区健身",
-    "运动零售"
+    "女性运动社群",
+    "运动内衣",
+    "冰雪消费",
+    "椅上瑜伽",
+    "社媒挑战"
   ],
   "top3": [
     {
-      "title": "FP Movement 把女孩公益跑扩展至美国 16 座城市",
-      "comment": "Fanka 可做“第一次参加社区 5K 穿什么”图文与短视频，记录运动内衣支撑、压缩裤腰稳定性及赛前保暖层，让"
+      "title": "南非女性健身节把训练、对话和社交排进同一日程",
+      "comment": "Fanka 可围绕“从训练到社交的一日穿搭”拍真实行程，分别展示运动内衣支撑、压缩裤活动度与课后叠穿。"
     },
     {
-      "title": "迈阿密新恢复俱乐部尝试按日常场景组织服务",
-      "comment": "Fanka 可把训练前后换装、舒适休息与轻活动拍成“真实恢复日”内容，明确衣物是穿着选择，不宣称具有治疗效果。"
+      "title": "北京冰雪消费季把赛事、场馆与装备优惠连成参与路径",
+      "comment": "Fanka 可做“首次去冰场或雪场如何分层”的实用内容，明确压缩裤可作为贴身层，但保暖、防水与安全装备仍须按场"
     },
     {
-      "title": "STRONG Pilates 计划在英国扩张混合式课程门店",
-      "comment": "Fanka 可制作“同一套衣服完成划船、抗阻和垫上动作”的穿着检查，展示运动内衣与压缩裤在不同动作中的实际贴合"
+      "title": "美联社重访运动内衣的女性发明故事",
+      "comment": "Fanka 可用“女性运动装备先解决什么问题”做教育内容，展示不同动作下的支撑与舒适检查，避免把压缩感等同医疗"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0112.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0113.html",
   "blog": {
-    "title": "What to Wear to Your First Community 5K: A Women’s Outfit Checklist",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/first-community-5k-outfit-checklist-women.html",
-    "summary": "由本期 FP Movement 女孩公益 5K 活动延展，整理初次社区跑的运动内衣、裤装和赛前穿着检查。"
+    "title": "Chair Yoga vs. Active Yoga: What Women Should Wear for Each Class",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/chair-yoga-vs-active-yoga-what-to-wear-women.html",
+    "summary": "由本期爱尔兰女性瑜伽项目延展，比较椅上瑜伽与常规瑜伽的活动幅度、内衣支撑及裤装穿着检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
