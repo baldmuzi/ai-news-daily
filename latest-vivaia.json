@@ -1,33 +1,33 @@
 {
-  "edition": "0116",
-  "date": "2026年11月6日 12:14",
-  "intro": "中年客群的线上购买、澳洲促销节奏与鞋履全价经营提供新参考；黑五返券、延长退货和场景专题，则把节日活动从降价扩展到复购与选购体验。",
+  "edition": "0117",
+  "date": "2026年11月9日 09:15",
+  "intro": "节日预算趋稳，商品精简与库存规划要求更细；社媒内容转向真实试装和找款需求，官网活动则结合会员优惠、礼物分组与退货保障。",
   "tags": [
-    "中年网购",
-    "澳洲消费",
-    "全价经营",
-    "黑五返券",
-    "节日保障"
+    "节日预算",
+    "尺码库存",
+    "商品精简",
+    "社媒找款",
+    "礼物保障"
   ],
   "top3": [
     {
-      "title": "Coach 鞋履增长与同价经营",
-      "comment": "鞋履收入增逾两成，Soho 运动鞋跨渠道同价；黑五前先检查同款优惠信息。",
-      "category": "竞品经营",
-      "url": "https://wwd.com/footwear-news/shoe-industry-news/coach-shoes-sales-growth-expansion-q1-2027-earnings-1239403304/"
+      "title": "节日礼物预算持平",
+      "comment": "Gallup调查平均预算为1,011美元；礼物页需帮助顾客在预算内比较。",
+      "category": "消费与购买行为",
+      "url": "https://news.gallup.com/poll/716462/holiday-shopping-plans-point-average-retail-year.aspx"
     },
     {
-      "title": "把客户反馈写成产品要求",
-      "comment": "Stitch Fix 用职业场景反馈指导设计，可参考其从具体动作找改进点的方法。",
+      "title": "先保证主推款关键尺码有货",
+      "comment": "Reformation用需求规划改善有货率；活动前优先检查主推款的尺码缺口。",
       "category": "竞品经营",
-      "url": "https://www.modernretail.co/operations/how-stitch-fix-is-using-ai-and-customer-feedback-to-build-its-private-brands/"
+      "url": "https://www.retaildive.com/news/reformation-q3-earnings-sales-growth-ai-planning-tool-in-stock-rates/873991/"
     },
     {
-      "title": "Vessi 用返券衔接第二单",
-      "comment": "本月购物返券、下月起兑换；活动设计需同时算清复购毛利和使用门槛。",
+      "title": "延长退货，也写清费用",
+      "comment": "Dolce Vita节日退货延至一月底，每单收费4.95美元；保障与成本应一起说明。",
       "category": "竞品当期活动",
-      "url": "https://vessi.com/collections/pre-black-friday-sale"
+      "url": "https://www.dolcevita.com/collections/all-gifts"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0116.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0117.html"
 }
