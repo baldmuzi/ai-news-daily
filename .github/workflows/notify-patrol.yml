@@ -1,0 +1,66 @@
+name: Notify WeCom on patrol
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'fanka-patrol/data/*.json'
+      - 'vivaia-patrol/data/*.json'
+  workflow_dispatch:
+    inputs:
+      channel:
+        description: Patrol channel
+        required: true
+        type: choice
+        options: [fanka, vivaia]
+      run_id:
+        description: 'Exact run ID, e.g. 2026-11-10-002 (sending again may duplicate a message)'
+        required: true
+        type: string
+      dry_run:
+        description: 'Preview only; no network request or robot message'
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - channel: fanka
+            secret: WECOM_WEBHOOK_FANKA_PATROL
+          - channel: vivaia
+            secret: WECOM_WEBHOOK_VIVAIA_PATROL
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Verify deployed snapshot and notify this patrol robot
+        env:
+          PATROL_CHANNEL: ${{ matrix.channel }}
+          PATROL_WEBHOOK: ${{ secrets[matrix.secret] }}
+          REQUESTED_CHANNEL: ${{ inputs.channel }}
+          REQUESTED_RUN: ${{ inputs.run_id }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          GIT_BEFORE: ${{ github.event.before }}
+          GIT_AFTER: ${{ github.sha }}
+        run: |
+          args=(--channel "$PATROL_CHANNEL")
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            if [ "$REQUESTED_CHANNEL" != "$PATROL_CHANNEL" ]; then
+              echo 'Other channel selected; no message.'
+              exit 0
+            fi
+            args+=(--run-id "$REQUESTED_RUN")
+            if [ "$DRY_RUN" = "true" ]; then args+=(--dry-run); fi
+          fi
+          python3 .github/scripts/notify_patrol.py "${args[@]}"

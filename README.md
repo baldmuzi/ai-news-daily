@@ -79,7 +79,7 @@ Claude Code 远程任务（多个频道独立运行）
 - 不覆盖旧轮次 JSON。再次巡查需新建日期与三位序号文件，重复发现时沿用相同原文 URL；保留原始观察才能追溯旧日期内容。校验：`python3 -m unittest discover -s scripts/tests -p 'test_fanka_patrol.py'`。
 - 可仅补查部分平台：当轮 `sources` 只记录实际检查的平台。主看板按平台汇总最近检查结果，逐行标明日期与轮次；每日页面仅汇总当天检查，独立存档只保留当轮结果。Google 作为发现入口，搜索摘要不单独计入评价，核实后的内容归到原文平台。
 - 收录规则（Fanka、VIVAIA 共用）：品牌官方发布且没有实际读到消费者反馈的内容，只记入 `sources` 的访问说明，不加入新轮次 `records`。官方帖下实际读到的评价或咨询可收录，判断只针对消费者反馈。新增记录可用 `publisher_type`（`brand` / `consumer` / `creator` / `unknown`）与布尔值 `consumer_feedback_read` 明确来源及反馈读取情况；缺失反馈标记的官方内容默认不纳入。主看板、每日汇总、计数、筛选及对应 JSON 导出执行此规则；历史单次 HTML 与原始 JSON 保持当时观察不变。旧数据中的“品牌官方内容”“品牌官方历史内容”兼容排除，创作者合作内容仍沿用已有单独分类。
-- 初版为手动巡查，未配置自动化、企微通知或后台案件处理；“建议复核”是人工编辑标记。缺失数据不是零，首轮不计算增长率或全网情绪比例。
+- 已准备每日定时任务提示词与独立企微通知代码，任务需另外启用，机器人需新增 Secret；见[巡查自动化配置](prompts/patrol-automation-setup.md)。“建议复核”是编辑标记，未接入后台案件处理。缺失数据不是零，不计算全网情绪比例。
 - 用户陈述与已独立核实的事实区分；正文、评论和视频简介的读取范围分别记录；赞助内容不计为独立消费者评价。地域未知保持未知，普通账号会话不等同于免登录访问。
 
 ### VIVAIA 舆情巡查频道
@@ -91,7 +91,7 @@ Claude Code 远程任务（多个频道独立运行）
 - 生成：`python3 scripts/build_vivaia_patrol.py`。共用 `scripts/build_fanka_patrol.py` 与 `scripts/templates/fanka-patrol.html`；构建时将共用的 `fanka-patrol/assets/patrol.css`、`patrol.js` 复制至 VIVAIA 目录。共用样式或模板调整后分别运行两个构建命令。
 - 首轮 2026-11-10 收录 9 条实际读取的记录：Trustpilot 6 条、Reddit 2 条、YouTube 1 条。TikTok 搜索报错，记录为未获取；没有把搜索摘要、平台 AI 总结或视频前贴广告作为用户评价。
 - 本轮为近期公开网页样本，涵盖美国及其他地区，不是北美或全网全量采集。相对时间不推算为精确发布时间，用户陈述与产品事实区分，已回复不等同于已解决。
-- 当前为手动巡查，不配置自动化或通知。后续先本地生成、检查，发布须遵循用户当次要求。
+- 历史轮次为手动巡查；[VIVAIA 每日巡查提示词](prompts/vivaia-patrol-daily.txt)已包含构建、检查、发布与通知核验。与 [Fanka 每日巡查提示词](prompts/fanka-patrol-daily.txt)独立使用；配置方法见[巡查自动化配置](prompts/patrol-automation-setup.md)。
 
 本地浏览器日志和页面快照位于 `.playwright-cli/`，不属于发布内容，已通过 `.gitignore` 排除。截图等正式证据仍须放在对应频道的内容目录。
 

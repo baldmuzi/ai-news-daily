@@ -83,6 +83,15 @@ class PatrolHistoryTests(unittest.TestCase):
         daily_page = patrol.render(self.next, [self.next], mode='day')
         self.assertNotIn('<article class="record"', daily_page)
 
+    def test_scheduled_mode_does_not_relabel_old_manual_snapshot(self):
+        self.next['mode'] = '定时巡查'
+        page = patrol.render(self.next, [self.next, self.first])
+        self.assertIn('最近一轮为定时巡查', page)
+        self.assertIn('每天巡查一次，非实时监控', page)
+        historical = patrol.render(self.first, [self.first], mode='run')
+        self.assertNotIn('定时巡查', historical)
+        self.assertIn('当前为手动更新', historical)
+
     def test_partial_patrol_keeps_other_sources_with_actual_check_dates(self):
         initial = json.loads((patrol.ROOT / 'vivaia-patrol/data/2026-11-10-001.json').read_text())
         retry = json.loads((patrol.ROOT / 'vivaia-patrol/data/2026-11-10-002.json').read_text())

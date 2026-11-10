@@ -95,6 +95,7 @@ def aggregate_sources(runs):
 
 def render(data, runs, mode='main', selected_runs=None, brand='Fanka'):
     snapshot = mode == 'run'
+    scheduled = data.get('mode') == '定时巡查'
     prefix = '' if mode == 'main' else '../'
     selected_runs = selected_runs or ([data] if snapshot else runs)
     records = aggregate(selected_runs, include_official_only=snapshot)
@@ -119,7 +120,7 @@ def render(data, runs, mode='main', selected_runs=None, brand='Fanka'):
     elif day:
         notice = f'仅展示 {e(data["date"])} 当天巡查收录的内容。<a href="../index.html">返回全部巡查主看板</a>'
     else:
-        notice = '主看板汇总全部巡查；同一原文合并展示最新观察，历史观察保留在存档中。当前为手动巡查。'
+        notice = '主看板汇总全部巡查；同一原文合并展示最新观察，历史观察保留在存档中。' + ('最近一轮为定时巡查。' if scheduled else '当前为手动巡查。')
     if not snapshot:
         notice += ' 记录区不收录未读到消费者反馈的品牌官方内容；官方帖下已读到的评价与咨询仍保留。历史单次存档保留当时的原始观察。'
     groups = defaultdict(list)
@@ -137,6 +138,8 @@ def render(data, runs, mode='main', selected_runs=None, brand='Fanka'):
         scope_description='全部巡查记录，按最近巡查日期倒序' if mode == 'main' else ('仅展示当天巡查到的内容' if day else '保留本次巡查当时的观察'),
         sentiment_options=''.join(f'<option value="{key}">{label}（{sum(r.get("sentiment_category", "unknown") == key for r in records)}）</option>' for key, label in SENTIMENTS.items()),
         date_options=''.join(f'<option>{e(date)}</option>' for date in groups),
+        patrol_mode='定时巡查' if scheduled else '手动巡查',
+        update_note='每天巡查一次，非实时监控。' if scheduled else '当前为手动更新。',
         issue_label='最近巡查' if mode == 'main' else '巡查记录',
         records_title='全部记录' if mode == 'main' else ('当天记录' if day else '本次记录'),
         archive_title='每日巡查存档' if mode == 'main' else ('当天各次巡查' if day else '本次巡查存档'),
