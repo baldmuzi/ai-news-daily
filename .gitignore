@@ -1,0 +1,3 @@
+# Local browser diagnostics; not report content or publication assets.
+.playwright-cli/
+__pycache__/

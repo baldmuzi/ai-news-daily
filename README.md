@@ -57,11 +57,26 @@ Claude Code 远程任务（多个频道独立运行）
 | 产品/数据频道存档 | `https://baldmuzi.github.io/ai-news-daily/business/` |
 | 运动健康频道存档 | `https://baldmuzi.github.io/ai-news-daily/fitness/` |
 | Fanka 社交趋势存档 | `https://baldmuzi.github.io/ai-news-daily/fanka-social/` |
+| Fanka 舆情巡查看板 | `https://baldmuzi.github.io/ai-news-daily/fanka-patrol/` |
 | VIVAIA 品牌趋势存档 | `https://baldmuzi.github.io/ai-news-daily/vivaia/` |
 
 ---
 
 ## 部署步骤
+
+### Fanka 舆情巡查频道
+
+`fanka-patrol/` 使用“最新巡查看板 + 每次独立存档”，不沿用固定条数的内容日报。它关注 Fanka 自身的公开评价与讨论，与 `fanka-social/` 的社交趋势拆解分开。
+
+- `fanka-patrol/data/YYYY-MM-DD-NNN.json`：每次巡查的证据数据。首版复用 2026-11-10 本聊天已实际读取的 6 条网页样本，不声称新增全量采集。
+- `fanka-patrol/index.html`：最新看板，支持关键词、平台、内容类型及待复核筛选。
+- `fanka-patrol/runs/YYYY-MM-DD-NNN.html`：独立巡查存档。相对时间保留为采集当时显示值，不伪造精确发布时间。
+- `scripts/build_fanka_patrol.py` 与 `scripts/templates/fanka-patrol.html`：静态页面生成器和模板；样式、交互位于 `fanka-patrol/assets/`。
+- 更新方式：加入真实的新一轮 JSON，运行 `python3 scripts/build_fanka_patrol.py`，检查页面后提交发布。生成器不采集数据，也不发送消息。
+- 初版为手动巡查，未配置自动化、企微通知或后台案件处理；“建议复核”是人工编辑标记。缺失数据不是零，首轮不计算增长率或全网情绪比例。
+- 用户陈述与已独立核实的事实区分；正文、评论和视频简介的读取范围分别记录；赞助内容不计为独立消费者评价。地域未知保持未知，普通账号会话不等同于免登录访问。
+
+本地浏览器日志和页面快照位于 `.playwright-cli/`，不属于发布内容，已通过 `.gitignore` 排除。截图等正式证据仍须放在对应频道的内容目录。
 
 ### 1. 开启 GitHub Pages
 

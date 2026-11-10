@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "2026-11-10-001",
+  "date": "2026-11-10",
+  "sequence": "001",
+  "mode": "手动巡查",
+  "scope": "Fanka 品牌公开网页；本次为访问能力与内容样本测试，非全量采集。",
+  "baseline": true,
+  "sources": [
+    {"name":"Trustpilot","status":"正文可读","access":"免登录","discovery":"品牌评价页","sorting":"Most recent（最新）可用","detail":"读取到评价正文、星级、地区和原文链接。此前曾遇连接验证，本轮访问成功。","limitation":"页面发布时间与消费体验日期分开记录；仅代表本次读取的样本。","url":"https://www.trustpilot.com/review/fanka.com"},
+    {"name":"Reddit","status":"正文与回复可读","access":"已有普通账号会话","discovery":"站内搜索 Fanka","sorting":"搜索“新”排序可用","detail":"读取到帖子正文及多层回复，发现标题未含品牌、正文和回复提及 Fanka 的讨论。","limitation":"本轮不是严格匿名测试；搜索存在同名人名等噪声。","url":"https://www.reddit.com/search/?q=Fanka&sort=new"},
+    {"name":"TikTok","status":"直达视频可读","access":"免登录","discovery":"Google 发现后直达视频","sorting":"站内搜索报错，最新排序未验证","detail":"读取到视频文案、标签、相对时间与互动数。","limitation":"样本显示 0 条评论，不能验证非空评论读取；未转写口播。","url":"https://www.tiktok.com/@vanestiktokpage/video/7705680135155879198"},
+    {"name":"YouTube","status":"详情可读 · 评论未获取","access":"已有普通账号会话","discovery":"站内搜索 Fanka review","sorting":"“本周”筛选可用，非严格最新排序","detail":"读取到完整简介、日期和赞助声明；未分析完整视频内容。","limitation":"评论正文未成功加载；不是严格匿名测试。","url":"https://www.youtube.com/watch?v=3Oej_awfZsM"},
+    {"name":"Google","status":"发现入口可用","access":"已有普通账号会话","discovery":"搜索 Fanka reviews","sorting":"最近一周筛选可用","detail":"用于发现近期讨论与视频入口；摘要不单独计入已核实记录。","limitation":"当前环境显示新加坡且存在个性化，不能代表北美搜索排名或全网覆盖。","url":"https://www.google.com/search?q=Fanka+reviews&tbs=qdr:w"}
+  ],
+  "records": [
+    {"id":"tp-delivery","platform":"Trustpilot","kind":"消费者评价","priority":true,"title":"订单未收到，用户称联系与退款诉求未获回应","published_label":"访问时显示 2 小时前","published_date":null,"experience_date":"2026-10-07","region":"US（资料标记）","rating":1,"topics":["物流","客服","退款"],"sentiment":"负面反馈","summary":"用户称 10 月初下单后仍未收到商品，多次联系及提出退款诉求未获回应。该内容是公开用户陈述，尚未核对订单与客服记录。","evidence":"已读取单条评价原文；页面带 Verified 标记，不代表诉求事实已独立核实。","action":"客服优先核对关联订单、物流轨迹与沟通记录，确认是否有未处理请求。","url":"https://www.trustpilot.com/reviews/6af2527a402b719d4c6131de","metrics":null},
+    {"id":"tp-mixed","platform":"Trustpilot","kind":"消费者评价","priority":true,"title":"五星评价中仍有物流问题：原订单丢失，最终认可产品","published_label":"访问时显示 4 小时前","published_date":null,"experience_date":"2026-10-12","region":"US（资料标记）","rating":5,"topics":["物流","产品体验"],"sentiment":"物流负面 / 产品正面","summary":"用户表示原订单丢失，裤子最终送达且体验良好。星级为五星，但内容同时包含物流抱怨和产品认可。","evidence":"已读取品牌评价列表中的完整短评。","action":"将物流反馈单独归类，与低星评价一起复核，不按五星自动排除问题。","url":"https://www.trustpilot.com/reviews/6af2339421153e033bf95d08","metrics":null},
+    {"id":"tp-positive","platform":"Trustpilot","kind":"消费者评价","priority":false,"title":"用户认可裤子的做工和外观","published_label":"访问时显示 3 小时前","published_date":null,"experience_date":"2026-10-12","region":"US（资料标记）","rating":5,"topics":["做工","外观"],"sentiment":"正面反馈","summary":"一条简短五星评价认为裤子做工好、款式时尚。内容较短，尚不足以判断具体款式或长期穿着表现。","evidence":"已读取品牌评价列表中的完整短评。","action":"作为做工与外观的正面样本保留，后续观察是否有持续一致的反馈。","url":"https://www.trustpilot.com/reviews/6af23e524634e93d84994ad2","metrics":null},
+    {"id":"reddit-compression","platform":"Reddit","kind":"社区讨论","priority":false,"title":"用户比较压缩袜与压缩裤，正文及回复提到 Fanka","published_label":"帖子显示 1 天前；品牌相关回复显示 6 小时前","published_date":null,"experience_date":null,"region":"未确认","rating":null,"topics":["压缩体验","购买咨询"],"sentiment":"咨询 / 推荐提及","summary":"发帖人表示试过 Fanka，并询问压缩裤与压缩袜的体验差异。在后续回复中再次提及 Fanka leggings；其他回复不一定针对 Fanka。","evidence":"已读取帖子正文及多层回复。个人穿着感受不构成产品功效验证。","action":"关注用户对压缩部位和款式选择的疑问；标题检索之外，也要跟踪正文和旧帖新回复。","url":"https://www.reddit.com/r/POTS/comments/1xr2lwk/compression_socks_vs_leggings/","metrics":null},
+    {"id":"tiktok-video","platform":"TikTok","kind":"视频内容 · 商业关系未确认","priority":false,"title":"近期短视频展示 Fanka 压缩裤，视频直达可读取","published_label":"访问时显示 1 天前","published_date":null,"experience_date":null,"region":"未确认","rating":null,"topics":["压缩裤","短视频"],"sentiment":"不判定完整视频倾向","summary":"视频文案为“Compression leggings but upgraded!”，并带有 #fankaleggings 标签。本次只核实页面文案与元信息，未转写口播或验证商业关系。","evidence":"免登录直达成功；样本显示 0 条评论，未验证非空评论采集。","action":"作为内容线索保留；判断口碑前需要补充视频内容和评论证据。","url":"https://www.tiktok.com/@vanestiktokpage/video/7705680135155879198","metrics":{"likes":16,"saves":4,"comments":0}},
+    {"id":"youtube-sponsored","platform":"YouTube","kind":"已披露赞助内容","priority":false,"title":"PowerBand 试穿评测明确披露由 Fanka 赞助","published_label":"2026 年 11 月 6 日","published_date":"2026-11-06","experience_date":null,"region":"未确认","rating":null,"topics":["PowerBand","试穿","品牌合作"],"sentiment":"推广内容单独记录","summary":"视频简介列出三款 PowerBand 裤装并介绍试穿比较，明确声明由 Fanka 赞助。本记录用于追踪品牌合作内容，不计作独立消费者评价。","evidence":"已展开读取完整简介及赞助声明；评论未加载，未分析完整口播。","action":"可纳入合作内容清单；简介中的促销说法不视为已核实的官网活动。","url":"https://www.youtube.com/watch?v=3Oej_awfZsM","metrics":{"views":2723,"likes":132}}
+  ]
+}
