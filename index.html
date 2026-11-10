@@ -28,6 +28,15 @@ header h1{font-family:'Noto Serif SC',serif;font-size:clamp(2rem,5vw,3rem);font-
 .channel-card.fanka-social{--accent:#38bdf8;}
 .channel-card.fanka-patrol{--accent:#a5b4fc;}
 .channel-card.vivaia{--accent:#804c1a;}
+.channel-card.paused{--accent:#94a3b8;background:#0c1018;border-top-color:#64748b;}
+.channel-card.paused::before{display:none;}
+.channel-card.paused .card-icon{filter:grayscale(1);opacity:.65;}
+.channel-card.paused .card-name{color:#b3bdcc;}
+.channel-card.paused .card-tag{letter-spacing:.02em;}
+.channel-card:focus-visible{outline:2px solid var(--accent);outline-offset:4px;}
+.paused-heading{margin-top:44px;}
+.paused-hint{font-family:'Noto Sans SC',sans-serif;font-size:.72rem;letter-spacing:0;text-transform:none;color:#94a3b8;}
+@media(max-width:480px){.paused-heading{flex-wrap:wrap;gap:8px;}.paused-hint{flex-basis:100%;}}
 .card-icon{font-size:1.6rem;margin-bottom:16px;line-height:1;}
 .card-name{font-family:'Noto Serif SC',serif;font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:8px;}
 .card-tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.6rem;letter-spacing:.1em;padding:2px 8px;border-radius:4px;background:color-mix(in srgb,var(--accent) 15%,transparent);color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 30%,transparent);margin-bottom:14px;}
@@ -45,22 +54,8 @@ footer a{color:#3b82f6;text-decoration:none;}
     <h1>早报中心</h1>
     <div class="header-sub">AI 资讯 · 出海洞察 · 运动健康趋势 · 品牌商机 · 舆情巡查</div>
   </header>
-  <div class="section-title">选择频道</div>
+  <div class="section-title">当前频道</div>
   <div class="channels">
-    <a class="channel-card tech" href="editions/">
-      <div class="card-icon">⚡</div>
-      <div class="card-name">AI 技术快讯</div>
-      <div class="card-tag">TECH · DAILY</div>
-      <div class="card-desc">面向软件工程师和技术研究者。聚焦模型前沿、开源生态、软件开发工具，每期精选 Top 10 重要 AI 技术动态，附中文深度点评。</div>
-      <div class="card-cta">查看往期存档 →</div>
-    </a>
-    <a class="channel-card biz" href="business/">
-      <div class="card-icon">🌏</div>
-      <div class="card-name">出海 AI 洞察</div>
-      <div class="card-tag">BUSINESS · DAILY</div>
-      <div class="card-desc">面向产品经理和数据分析师。聚焦跨境电商 AI 应用、可持续合规、消费者行为洞察，结合出海环保鞋类业务视角解读。</div>
-      <div class="card-cta">查看往期存档 →</div>
-    </a>
     <a class="channel-card fitness" href="fitness/">
       <div class="card-icon">🏃‍♀️</div>
       <div class="card-name">运动健康趋势</div>
@@ -68,11 +63,11 @@ footer a{color:#3b82f6;text-decoration:none;}
       <div class="card-desc">面向品牌经理和内容运营。追踪全球 Fitness &amp; Wellness 最新流行趋势、新兴运动方式与社媒热点，为 Fanka 内容创作提供灵感。</div>
       <div class="card-cta">查看往期存档 →</div>
     </a>
-    <a class="channel-card fanka-social" href="fanka-social/">
-      <div class="card-icon">📱</div>
-      <div class="card-name">Fanka 社交趋势拆解</div>
-      <div class="card-tag">SOCIAL · DAILY</div>
-      <div class="card-desc">面向社媒运营和内容策划。追踪 TikTok、Instagram、小红书、抖音等平台信号，拆解头部账号内容结构、CTA 与用户痛点。</div>
+    <a class="channel-card vivaia" href="vivaia/">
+      <div class="card-icon">👠</div>
+      <div class="card-name">VIVAIA 品牌趋势</div>
+      <div class="card-tag">VIVAIA · DAILY</div>
+      <div class="card-desc">面向商品与活动运营。聚焦全球鞋服时尚趋势、中年女性消费洞察、可持续时尚热点，以热点为切入口挖掘商业机会，助力提升网站访问与 GMV。</div>
       <div class="card-cta">查看往期存档 →</div>
     </a>
     <a class="channel-card fanka-patrol" href="fanka-patrol/">
@@ -81,11 +76,28 @@ footer a{color:#3b82f6;text-decoration:none;}
       <div class="card-desc">聚焦消费者评价、品牌讨论与视频内容。查看待复核事项、原文证据及平台采集情况，按每次巡查留档；首版为公开网页采集基线。</div>
       <div class="card-cta">打开巡查看板 →</div>
     </a>
-    <a class="channel-card vivaia" href="vivaia/">
-      <div class="card-icon">👠</div>
-      <div class="card-name">VIVAIA 品牌趋势</div>
-      <div class="card-tag">VIVAIA · DAILY</div>
-      <div class="card-desc">面向商品与活动运营。聚焦全球鞋服时尚趋势、中年女性消费洞察、可持续时尚热点，以热点为切入口挖掘商业机会，助力提升网站访问与 GMV。</div>
+  </div>
+  <div class="section-title paused-heading">已暂停频道 <span class="paused-hint">自动日报已暂停，往期内容仍可查看</span></div>
+  <div class="channels">
+    <a class="channel-card tech paused" href="editions/">
+      <div class="card-icon">⚡</div>
+      <div class="card-name">AI 技术快讯</div>
+      <div class="card-tag">TECH · 日报已暂停</div>
+      <div class="card-desc">面向软件工程师和技术研究者。聚焦模型前沿、开源生态、软件开发工具，每期精选 Top 10 重要 AI 技术动态，附中文深度点评。</div>
+      <div class="card-cta">查看往期存档 →</div>
+    </a>
+    <a class="channel-card biz paused" href="business/">
+      <div class="card-icon">🌏</div>
+      <div class="card-name">出海 AI 洞察</div>
+      <div class="card-tag">BUSINESS · 日报已暂停</div>
+      <div class="card-desc">面向产品经理和数据分析师。聚焦跨境电商 AI 应用、可持续合规、消费者行为洞察，结合出海环保鞋类业务视角解读。</div>
+      <div class="card-cta">查看往期存档 →</div>
+    </a>
+    <a class="channel-card fanka-social paused" href="fanka-social/">
+      <div class="card-icon">📱</div>
+      <div class="card-name">Fanka 社交趋势拆解</div>
+      <div class="card-tag">SOCIAL · 日报已暂停</div>
+      <div class="card-desc">面向社媒运营和内容策划。追踪 TikTok、Instagram、小红书、抖音等平台信号，拆解头部账号内容结构、CTA 与用户痛点。</div>
       <div class="card-cta">查看往期存档 →</div>
     </a>
   </div>
