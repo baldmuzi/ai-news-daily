@@ -1,33 +1,33 @@
 {
-  "edition": "0113",
-  "date": "2026年11月9日 09:14",
-  "intro": "全球女性运动新素材关注运动内衣起源、线下社群与冬季消费；Fanka 可用压缩服实穿和场景化穿搭，把新报道转成易参与的内容。",
+  "edition": "0114",
+  "date": "2026年11月10日 09:13",
+  "intro": "全球女性运动内容的新变化，落在恢复节奏、社群体验与运动服饰场景；Fanka 可用压缩服实穿测试和短视频，连接训练与日常穿搭。",
   "tags": [
-    "女性运动社群",
-    "运动内衣",
-    "冰雪消费",
-    "椅上瑜伽",
-    "社媒挑战"
+    "恢复训练",
+    "社群体验",
+    "女性穿搭",
+    "内容形式",
+    "运动零售"
   ],
   "top3": [
     {
-      "title": "南非女性健身节把训练、对话和社交排进同一日程",
-      "comment": "Fanka 可围绕“从训练到社交的一日穿搭”拍真实行程，分别展示运动内衣支撑、压缩裤活动度与课后叠穿。"
+      "title": "美国度假酒店与意大利运动服品牌推出专属胶囊系列",
+      "comment": "Fanka 可拍训练、出行、休息一日穿搭，检验压缩裤活动度与外搭切换。"
     },
     {
-      "title": "北京冰雪消费季把赛事、场馆与装备优惠连成参与路径",
-      "comment": "Fanka 可做“首次去冰场或雪场如何分层”的实用内容，明确压缩裤可作为贴身层，但保暖、防水与安全装备仍须按场"
+      "title": "精品健身房合作平台 Pirl 连接品牌与线下课程",
+      "comment": "Fanka 可试点女性工作室课堂体验，记录报名、试穿反馈与复访。"
     },
     {
-      "title": "美联社重访运动内衣的女性发明故事",
-      "comment": "Fanka 可用“女性运动装备先解决什么问题”做教育内容，展示不同动作下的支撑与舒适检查，避免把压缩感等同医疗"
+      "title": "西昌体育旅游消费季把赛事与在地体验串成一程",
+      "comment": "Fanka 可做跑步轻旅行装备清单，展示赛前、赛后与城市步行场景。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0113.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0114.html",
   "blog": {
-    "title": "Chair Yoga vs. Active Yoga: What Women Should Wear for Each Class",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/chair-yoga-vs-active-yoga-what-to-wear-women.html",
-    "summary": "由本期爱尔兰女性瑜伽项目延展，比较椅上瑜伽与常规瑜伽的活动幅度、内衣支撑及裤装穿着检查。"
+    "title": "What to Wear for Your First Gym Machine Workout: A Women’s Fit Checklist",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/first-gym-machine-workout-outfit-guide-women.html",
+    "summary": "由本期力量器械与自由重量比较延展，整理初次器械训练时运动内衣、压缩裤、接缝与活动度检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
