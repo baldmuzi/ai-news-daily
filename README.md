@@ -66,15 +66,30 @@ Claude Code 远程任务（多个频道独立运行）
 
 ### Fanka 舆情巡查频道
 
-`fanka-patrol/` 使用“最新巡查看板 + 每次独立存档”，不沿用固定条数的内容日报。它关注 Fanka 自身的公开评价与讨论，与 `fanka-social/` 的社交趋势拆解分开。
+`fanka-patrol/` 使用“全部记录主看板 + 每日巡查存档 + 每次独立存档”，不沿用固定条数的内容日报。它关注 Fanka 自身的公开评价与讨论，与 `fanka-social/` 的社交趋势拆解分开。
 
 - `fanka-patrol/data/YYYY-MM-DD-NNN.json`：每次巡查的证据数据。首版复用 2026-11-10 本聊天已实际读取的 6 条网页样本，不声称新增全量采集。
-- `fanka-patrol/index.html`：最新看板，支持关键词、平台、内容类型及待复核筛选。
+- `fanka-patrol/index.html`：汇总所有巡查，按最近巡查日期和当日序号倒序展示，支持关键词、平台、内容类型、评价倾向、最近巡查日期及待复核筛选。同一原文 URL 合并为一张卡片，展示最新观察，并保留首次收录日期和各次观察链接；不同 URL 保留为不同内容。主看板日期筛选按最近巡查日期匹配，查看某日全部观察请进入每日存档。
+- `fanka-patrol/days/YYYY-MM-DD.html`：仅展示当天巡查到的内容；同日多次发现同一原文时显示当天最新观察，附当天各次巡查入口。
 - `fanka-patrol/runs/YYYY-MM-DD-NNN.html`：独立巡查存档。相对时间保留为采集当时显示值，不伪造精确发布时间。
+- `fanka-patrol/exports/all.json` 与 `exports/daily/YYYY-MM-DD.json`：主看板和每日存档对应的数据导出，由原始巡查数据生成。
 - `scripts/build_fanka_patrol.py` 与 `scripts/templates/fanka-patrol.html`：静态页面生成器和模板；样式、交互位于 `fanka-patrol/assets/`。
 - 更新方式：加入真实的新一轮 JSON，运行 `python3 scripts/build_fanka_patrol.py`，检查页面后提交发布。生成器不采集数据，也不发送消息。
+- `sentiment_category` 由已读证据人工标注：`negative`（负面）、`positive`（正面）、`mixed`（正负混合）、`neutral`（中性／咨询）、`unknown`（未判定）。缺省为未判定，不根据星级自动推断；保留 `sentiment` 说明具体倾向，赞助内容不直接算作正面。筛选选项的数量为当前页面去重总量，不随其他筛选变化。
+- 不覆盖旧轮次 JSON。再次巡查需新建日期与三位序号文件，重复发现时沿用相同原文 URL；保留原始观察才能追溯旧日期内容。校验：`python3 -m unittest discover -s scripts/tests -p 'test_fanka_patrol.py'`。
 - 初版为手动巡查，未配置自动化、企微通知或后台案件处理；“建议复核”是人工编辑标记。缺失数据不是零，首轮不计算增长率或全网情绪比例。
 - 用户陈述与已独立核实的事实区分；正文、评论和视频简介的读取范围分别记录；赞助内容不计为独立消费者评价。地域未知保持未知，普通账号会话不等同于免登录访问。
+
+### VIVAIA 舆情巡查频道
+
+`vivaia-patrol/` 与 Fanka 巡查共用展示模板和生成逻辑，数据、看板、每日存档与单次存档分别独立。入口位于早报中心的活跃频道区；与 `vivaia/` 品牌趋势日报独立。
+
+- 主看板：`vivaia-patrol/index.html`；每日存档：`vivaia-patrol/days/YYYY-MM-DD.html`；单次存档：`vivaia-patrol/runs/YYYY-MM-DD-NNN.html`。
+- 数据：`vivaia-patrol/data/YYYY-MM-DD-NNN.json`，须含 `brand: "VIVAIA"`；原始时间提示、体验日期、评价倾向及证据边界沿用 Fanka 字段。重复巡查新增文件，不覆盖旧观察。
+- 生成：`python3 scripts/build_vivaia_patrol.py`。共用 `scripts/build_fanka_patrol.py` 与 `scripts/templates/fanka-patrol.html`；构建时将共用的 `fanka-patrol/assets/patrol.css`、`patrol.js` 复制至 VIVAIA 目录。共用样式或模板调整后分别运行两个构建命令。
+- 首轮 2026-11-10 收录 9 条实际读取的记录：Trustpilot 6 条、Reddit 2 条、YouTube 1 条。TikTok 搜索报错，记录为未获取；没有把搜索摘要、平台 AI 总结或视频前贴广告作为用户评价。
+- 本轮为近期公开网页样本，涵盖美国及其他地区，不是北美或全网全量采集。相对时间不推算为精确发布时间，用户陈述与产品事实区分，已回复不等同于已解决。
+- 当前为手动巡查，不配置自动化或通知。后续先本地生成、检查，发布须遵循用户当次要求。
 
 本地浏览器日志和页面快照位于 `.playwright-cli/`，不属于发布内容，已通过 `.gitignore` 排除。截图等正式证据仍须放在对应频道的内容目录。
 

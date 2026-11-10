@@ -1,0 +1,327 @@
+{
+  "brand": "VIVAIA",
+  "updated_date": "2026-11-10",
+  "runs": [
+    "2026-11-10-001"
+  ],
+  "records": [
+    {
+      "id": "tp-easy-use",
+      "platform": "Trustpilot",
+      "kind": "消费者评价",
+      "title": "最新短评认可使用便捷，但未说明具体商品",
+      "url": "https://www.trustpilot.com/reviews/6af1b06e7988733e20d8af7f",
+      "published_label": "访问时显示 18 hours ago",
+      "published_date": null,
+      "experience_date": "2026-10-11",
+      "region": "SG（资料标记）",
+      "rating": 5,
+      "sentiment_category": "positive",
+      "sentiment": "正面反馈",
+      "topics": [
+        "使用体验"
+      ],
+      "summary": "用户给出五星，认为使用方便、操作容易；短评未明确指向鞋款或网站环节。",
+      "evidence": "已读取最新评价列表的完整短评、五星及地区标记；Unprompted review。不能据此推断鞋履舒适度。",
+      "action": "作为使用体验的简短样本保留，后续出现具体商品或服务细节时再细分。",
+      "priority": false,
+      "metrics": null,
+      "_first_seen": "2026-11-10",
+      "_last_seen": "2026-11-10",
+      "_last_run": "2026-11-10-001",
+      "_observations": [
+        {
+          "date": "2026-11-10",
+          "run_id": "2026-11-10-001",
+          "sequence": "001",
+          "record_id": "tp-easy-use"
+        }
+      ]
+    },
+    {
+      "id": "tp-pain",
+      "platform": "Trustpilot",
+      "kind": "消费者评价",
+      "title": "一星评价反映穿着疼痛，品牌已回复并请求补充信息",
+      "url": "https://www.trustpilot.com/reviews/6af0d7b8ac982f546ef256a3",
+      "published_label": "评价及品牌回复均显示 A day ago",
+      "published_date": null,
+      "experience_date": "2025-11-08",
+      "region": "IE（资料标记）",
+      "rating": 1,
+      "sentiment_category": "negative",
+      "sentiment": "负面反馈",
+      "topics": [
+        "舒适度",
+        "价格预期",
+        "售后跟进"
+      ],
+      "summary": "用户称支付约 €120 后，鞋履在脚趾附近骨头位置造成明显疼痛，使用扩鞋器也未改善。VIVAIA 已公开回复，表示通过平台请求联系资料，并将反馈交给产品团队；是否解决尚未核实。",
+      "evidence": "已读取单条评价及完整品牌回复。体验日期原文确为 2025-11-08，与本次近期发布提示分别保留；用户陈述不等于已独立核实的产品问题。",
+      "action": "核对是否收到用户补充信息，并跟进具体鞋款、尺码及售后处理结果；不要将已回复等同于已解决。",
+      "priority": true,
+      "metrics": null,
+      "_first_seen": "2026-11-10",
+      "_last_seen": "2026-11-10",
+      "_last_run": "2026-11-10-001",
+      "_observations": [
+        {
+          "date": "2026-11-10",
+          "run_id": "2026-11-10-001",
+          "sequence": "001",
+          "record_id": "tp-pain"
+        }
+      ]
+    },
+    {
+      "id": "tp-arch-support",
+      "platform": "Trustpilot",
+      "kind": "消费者评价",
+      "title": "五星认可轻便舒适，同时指出足弓支撑较少",
+      "url": "https://www.trustpilot.com/reviews/6af0ba5cda4ee08fcb0c805b",
+      "published_label": "访问时显示 1 days ago",
+      "published_date": null,
+      "experience_date": "2026-10-29",
+      "region": "US（资料标记）",
+      "rating": 5,
+      "sentiment_category": "mixed",
+      "sentiment": "正负面信息并存",
+      "topics": [
+        "足弓支撑",
+        "宽脚尺码",
+        "轻便"
+      ],
+      "summary": "用户喜欢这款运动鞋替代选择，认为轻便舒适；宽脚加半码后合适。但鞋底较平、足弓支撑较少，用户自行加了鞋垫。",
+      "evidence": "已读取列表中的完整评价、五星和地区标记。标题未说明具体款式，不能归因到某个型号，也不能只按五星视为纯正面。",
+      "action": "归入支撑需求反馈，结合具体款式复核页面说明与尺码建议；后续观察是否反复出现。",
+      "priority": true,
+      "metrics": null,
+      "_first_seen": "2026-11-10",
+      "_last_seen": "2026-11-10",
+      "_last_run": "2026-11-10-001",
+      "_observations": [
+        {
+          "date": "2026-11-10",
+          "run_id": "2026-11-10-001",
+          "sequence": "001",
+          "record_id": "tp-arch-support"
+        }
+      ]
+    },
+    {
+      "id": "tp-brown-boots",
+      "platform": "Trustpilot",
+      "kind": "消费者评价",
+      "title": "复购用户认可棕色踝靴的外观与初次穿着体验",
+      "url": "https://www.trustpilot.com/reviews/6af0a9813af99dea9ffa0842",
+      "published_label": "访问时显示 2 days ago",
+      "published_date": null,
+      "experience_date": "2026-11-07",
+      "region": "GB（资料标记）",
+      "rating": 5,
+      "sentiment_category": "positive",
+      "sentiment": "正面反馈",
+      "topics": [
+        "踝靴",
+        "复购",
+        "穿着体验"
+      ],
+      "summary": "复购用户认为棕色踝靴好看、跟高合适，开箱后穿去舞会也舒适，并考虑购买同款黑色。",
+      "evidence": "已读取完整短评；这是个人初次穿着体验，不构成长时间或所有脚型的舒适度保证。",
+      "action": "保留为踝靴穿搭与复购动机样本，后续按具体型号归档。",
+      "priority": false,
+      "metrics": null,
+      "_first_seen": "2026-11-10",
+      "_last_seen": "2026-11-10",
+      "_last_run": "2026-11-10-001",
+      "_observations": [
+        {
+          "date": "2026-11-10",
+          "run_id": "2026-11-10-001",
+          "sequence": "001",
+          "record_id": "tp-brown-boots"
+        }
+      ]
+    },
+    {
+      "id": "tp-boots-sizing",
+      "platform": "Trustpilot",
+      "kind": "消费者评价",
+      "title": "用户加半码购买靴子后认可舒适度",
+      "url": "https://www.trustpilot.com/reviews/6af0874002cefde8ed96cdf6",
+      "published_label": "访问时显示 2 days ago",
+      "published_date": null,
+      "experience_date": "2026-11-08",
+      "region": "US（资料标记）",
+      "rating": 5,
+      "sentiment_category": "positive",
+      "sentiment": "正面反馈",
+      "topics": [
+        "靴子",
+        "尺码选择",
+        "舒适度"
+      ],
+      "summary": "用户称这是自己穿过最舒适的靴子，并说明比平时选大半码。她表示自己的拇外翻脚型穿着也合适。",
+      "evidence": "已读取完整短评；仅为个体体验，不构成功效验证或通用加码建议。",
+      "action": "记录尺码选择背景，不将个案直接转化为全款式尺码或健康建议。",
+      "priority": false,
+      "metrics": null,
+      "_first_seen": "2026-11-10",
+      "_last_seen": "2026-11-10",
+      "_last_run": "2026-11-10-001",
+      "_observations": [
+        {
+          "date": "2026-11-10",
+          "run_id": "2026-11-10-001",
+          "sequence": "001",
+          "record_id": "tp-boots-sizing"
+        }
+      ]
+    },
+    {
+      "id": "tp-return-service",
+      "platform": "Trustpilot",
+      "kind": "消费者评价",
+      "title": "退货与换码流程获得正面反馈",
+      "url": "https://www.trustpilot.com/reviews/6aeba9602a5f433fdee6992c",
+      "published_label": "访问时显示 5 days ago",
+      "published_date": null,
+      "experience_date": "2026-10-18",
+      "region": "US（资料标记）",
+      "rating": 5,
+      "sentiment_category": "positive",
+      "sentiment": "正面反馈",
+      "topics": [
+        "退换货",
+        "客服",
+        "靴子"
+      ],
+      "summary": "用户认为客服体验好、退货容易，并完成了更换尺码；退换货指引易懂，靴子穿着舒适。",
+      "evidence": "已读取完整评价；未核实订单和实际退款时长，不推断全部退货流程都顺畅。",
+      "action": "保留为售后流程的正面样本，与后续退换货投诉分别跟踪。",
+      "priority": false,
+      "metrics": null,
+      "_first_seen": "2026-11-10",
+      "_last_seen": "2026-11-10",
+      "_last_run": "2026-11-10-001",
+      "_observations": [
+        {
+          "date": "2026-11-10",
+          "run_id": "2026-11-10-001",
+          "sequence": "001",
+          "record_id": "tp-return-service"
+        }
+      ]
+    },
+    {
+      "id": "reddit-eduarda",
+      "platform": "Reddit",
+      "kind": "社区讨论",
+      "title": "Eduarda 购买咨询出现价格与冬季适用性质疑",
+      "url": "https://www.reddit.com/r/deinfluencingPH/comments/1xr1ql4/dim_vivaia_eduarda_boots/",
+      "published_label": "帖子显示 2 天前；已读回复包括 14 小时前",
+      "published_date": null,
+      "experience_date": null,
+      "region": "菲律宾社区；作者实际所在地未核实",
+      "rating": null,
+      "sentiment_category": "mixed",
+      "sentiment": "购买疑虑为主 / 其他款式认可并存",
+      "topics": [
+        "Eduarda",
+        "价格预期",
+        "耐用性",
+        "旅行"
+      ],
+      "summary": "发帖人计划赴韩国旅行，询问 Eduarda 是否适合长时间步行和冬季天气。多条回复质疑价格、保暖及维护便利性，也有人认可自己拥有的 Cecily、同时建议其他款式先试穿。",
+      "evidence": "已读取帖子正文及多条回复。社区以劝退消费为主题，样本有选择偏向；部分评论属于推测而非 Eduarda 实测，自动管理提示与删除内容不作为事实证据。",
+      "action": "复核官方材质、养护和适用场景说明，观察疑问是否持续；不把评论中的防水、耐用性说法直接写成产品事实。",
+      "priority": true,
+      "metrics": null,
+      "_first_seen": "2026-11-10",
+      "_last_seen": "2026-11-10",
+      "_last_run": "2026-11-10-001",
+      "_observations": [
+        {
+          "date": "2026-11-10",
+          "run_id": "2026-11-10-001",
+          "sequence": "001",
+          "record_id": "reddit-eduarda"
+        }
+      ]
+    },
+    {
+      "id": "reddit-london",
+      "platform": "Reddit",
+      "kind": "社区讨论",
+      "title": "伦敦旅行记录将 VIVAIA 黑色运动靴列为步行主力",
+      "url": "https://www.reddit.com/r/HerOneBag/comments/1xr2wvt/trip_report_wardrobe_london_oct_24nov_8_2026/",
+      "published_label": "访问时帖子显示 2 天前",
+      "published_date": null,
+      "experience_date": null,
+      "region": "US（作者自述返回 Oregon）；旅行地 London",
+      "rating": null,
+      "sentiment_category": "positive",
+      "sentiment": "正面反馈",
+      "topics": [
+        "旅行",
+        "步行",
+        "运动靴"
+      ],
+      "summary": "作者回顾两周伦敦旅行，行李清单明确包含黑色 VIVAIA 运动靴，并称运动鞋与黑色靴子是主要步行鞋履；两周平均每天步行约 5.5 英里。",
+      "evidence": "已读取正文和可见回复。作者带了多双鞋，步行里程不能全部归给 VIVAIA；不据此推断治疗或普遍健康效果。",
+      "action": "作为实际旅行场景样本保留，后续如需用于营销，应另行核实型号及内容使用授权。",
+      "priority": false,
+      "metrics": null,
+      "_first_seen": "2026-11-10",
+      "_last_seen": "2026-11-10",
+      "_last_run": "2026-11-10-001",
+      "_observations": [
+        {
+          "date": "2026-11-10",
+          "run_id": "2026-11-10-001",
+          "sequence": "001",
+          "record_id": "reddit-london"
+        }
+      ]
+    },
+    {
+      "id": "youtube-affiliate",
+      "platform": "YouTube",
+      "kind": "已披露佣金链接内容",
+      "title": "近期三款鞋履搭配视频明确披露佣金链接",
+      "url": "https://www.youtube.com/watch?v=ylIIQsh7XGk",
+      "published_label": "2026 年 11 月 5 日",
+      "published_date": "2026-11-05",
+      "experience_date": null,
+      "region": "未确认",
+      "rating": null,
+      "sentiment_category": "unknown",
+      "sentiment": "商业内容；未判定完整视频倾向",
+      "topics": [
+        "Atria",
+        "Siena",
+        "Lexi",
+        "品牌推广"
+      ],
+      "summary": "Sophia Knightly 的视频简介介绍 Atria 长靴、Siena 乐福鞋与 Lexi 运动鞋，并提供折扣码；简介明确表示购买链接可能带来佣金。",
+      "evidence": "已展开读取完整简介、发布日期及佣金披露；未读取完整口播与评论。播放器前贴广告与作者内容分开，不能用前贴广告判定作者获赞助。",
+      "action": "作为商业内容线索单独追踪；简介促销条件未向官网交叉验证，不作为已核实的活动规则。",
+      "priority": false,
+      "metrics": {
+        "views": 77,
+        "likes": 5
+      },
+      "_first_seen": "2026-11-10",
+      "_last_seen": "2026-11-10",
+      "_last_run": "2026-11-10-001",
+      "_observations": [
+        {
+          "date": "2026-11-10",
+          "run_id": "2026-11-10-001",
+          "sequence": "001",
+          "record_id": "youtube-affiliate"
+        }
+      ]
+    }
+  ]
+}

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Fanka 公开评价与品牌讨论巡查看板。原文证据、待复核事项、来源覆盖与逐次巡查记录。">
-  <title>Fanka 舆情巡查 · $date · 早报中心</title>
+  <meta name="description" content="${brand} 公开评价与品牌讨论巡查看板。原文证据、待复核事项、来源覆盖与逐次巡查记录。">
+  <title>${brand} 舆情巡查 · $scope · $date · 早报中心</title>
   <link rel="stylesheet" href="${prefix}assets/patrol.css">
   <script src="${prefix}assets/patrol.js" defer></script>
 </head>
@@ -13,11 +13,11 @@
 <div class="shell">
   <aside class="sidebar">
     <a class="hub-link" href="$home">← 早报中心</a>
-    <a class="brand" href="${prefix}index.html">Fanka<span>舆情巡查</span></a>
+    <a class="brand" href="${prefix}index.html">${brand}<span>舆情巡查</span></a>
     <nav aria-label="频道导航">
-      <a href="#overview">本次概览</a>
+      <a href="#overview">${scope}概览</a>
       <a href="#attention">待关注事项 <span>$attention_count</span></a>
-      <a href="#records">全部记录 <span>$count</span></a>
+      <a href="#records">$records_title <span>$count</span></a>
       <a href="#coverage">平台采集情况</a>
       <a href="#archive">巡查存档</a>
     </nav>
@@ -26,42 +26,45 @@
   <main id="main">
     <div class="page-notice">$notice</div>
     <header class="hero" id="overview">
-      <div><p class="eyebrow">品牌评价 · 社区讨论 · 视频内容</p><h1>看见反馈，<br>找到需要跟进的事。</h1><p class="hero-description">Fanka 舆情巡查。每一条判断，都能回到原文。</p></div>
-      <div class="issue"><span>巡查记录</span><strong>/$sequence</strong><time datetime="$date">$date</time><span class="baseline">$description</span></div>
+      <div><p class="eyebrow">品牌评价 · 社区讨论 · 视频内容</p><h1>看见反馈，<br>找到需要跟进的事。</h1><p class="hero-description">${brand} 舆情巡查。每一条判断，都能回到原文。</p></div>
+      <div class="issue"><span>$issue_label</span><strong>/$sequence</strong><time datetime="$date">$date</time><span class="baseline">$description</span></div>
     </header>
-    <div class="stats" aria-label="本次样本概览">
-      <div><span class="stat-label">收录记录</span><strong>$count</strong><p>本次样本量，非全网提及总量</p></div>
+    <div class="stats" aria-label="记录概览">
+      <div><span class="stat-label">收录记录</span><strong>$count</strong><p>按原文链接去重，非全网提及总量</p></div>
       <div><span class="stat-label">建议复核</span><strong>$attention_count</strong><p>人工筛选的关注项，尚未确认事实</p></div>
-      <div><span class="stat-label">已检查平台</span><strong>$source_count</strong><p>包括发现入口，读取范围见下方</p></div>
+      <div><span class="stat-label">最近一次检查平台</span><strong>$source_count</strong><p>包括发现入口，读取范围见下方</p></div>
     </div>
     <section class="section" id="attention" aria-labelledby="attention-title">
-      <div class="section-heading"><div><p class="eyebrow">先处理重要反馈</p><h2 id="attention-title">本次待关注</h2></div><span class="section-note">用户陈述，等待业务记录核对</span></div>
+      <div class="section-heading"><div><p class="eyebrow">先处理重要反馈</p><h2 id="attention-title">建议关注</h2></div><span class="section-note">用户陈述，等待业务记录核对</span></div>
       <div class="focus-list">$attention</div>
       <p class="context-note">这些是待核对的用户陈述。当前样本不足以判断投诉是否增长，也不构成品牌整体口碑结论。</p>
     </section>
     <section class="section" id="records" aria-labelledby="records-title">
-      <div class="section-heading"><div><p class="eyebrow">原文、背景与判断依据</p><h2 id="records-title">本次记录</h2></div><a class="text-link" href="$run_json" download>下载本次数据 ↗</a></div>
+      <div class="section-heading"><div><p class="eyebrow">原文、背景与判断依据</p><h2 id="records-title">$records_title</h2></div><a class="text-link" href="$run_json" download>下载当前数据 ↗</a></div>
       <form class="filters" role="search" aria-label="筛选巡查记录" hidden>
-        <label class="search-label">关键词<input id="search" type="search" placeholder="搜索物流、尺码、PowerBand…" autocomplete="off"></label>
+        <label class="search-label">关键词<input id="search" type="search" placeholder="搜索物流、尺码、穿着体验…" autocomplete="off"></label>
         <label>来源<select id="platform"><option value="">全部来源</option>$platform_options</select></label>
         <label>内容类型<select id="kind"><option value="">全部类型</option>$kind_options</select></label>
+        <label class="sentiment-filter">评价倾向<select id="sentiment"><option value="">全部倾向</option>$sentiment_options</select></label>
+        <label class="date-filter">最近巡查日期<select id="date"><option value="">全部日期</option>$date_options</select></label>
         <div class="filter-bottom"><label class="checkbox-label"><input id="priority" type="checkbox">只看建议复核</label><button id="reset" type="reset">清除筛选</button></div>
       </form>
+      <p class="context-note">倾向按已读内容判断，不仅看星级；正负混合单独列出。未判定不代表中性，赞助内容不直接计为正面口碑。选项数量为当前页面总量。</p>
       <noscript><p class="context-note">当前展示全部记录。启用 JavaScript 后可搜索和筛选。</p></noscript>
-      <div class="results-line"><p id="result-count" role="status" aria-live="polite">共 $count 条记录</p><span>相对时间均为 $date 访问时显示值</span></div>
+      <div class="results-line"><p id="result-count" role="status" aria-live="polite">共 $count 条记录</p><span>$scope_description</span></div>
       <div class="record-list">$records</div>
       <div class="empty" id="empty" hidden><h3>没有匹配的记录</h3><p>试试其他关键词，或清除来源和类型筛选。</p><button id="empty-reset" type="button">显示全部记录</button></div>
     </section>
     <section class="section" id="coverage" aria-labelledby="coverage-title">
-      <div class="section-heading"><div><p class="eyebrow">可读范围与访问限制</p><h2 id="coverage-title">平台采集情况</h2></div><span class="section-note">本次访问结果，不代表长期可用性</span></div>
-      <div class="table-scroll" tabindex="0" role="region" aria-label="平台采集情况，可横向滚动"><table><caption class="visually-hidden">本次五个平台的访问结果</caption><thead><tr><th scope="col">平台 / 会话</th><th scope="col">读取结果</th><th scope="col">时间筛选</th><th scope="col">证据边界</th></tr></thead><tbody>$source_rows</tbody></table></div>
-      <div class="method"><h3>如何理解这份巡查</h3><div><p><strong>时间</strong>分别保留发布时间提示、体验日期和巡查日期。“2 小时前”是当时页面的显示值，不是实时计时。</p><p><strong>范围</strong>公开网页样本；部分平台沿用普通账号会话。未新增品牌授权，不能视为全平台匿名验证。</p><p><strong>判断</strong>用户观点、混合评价与赞助内容分开记录。地区未知不推断为北美；首次巡查不计算增长率或情绪占比。</p></div></div>
+      <div class="section-heading"><div><p class="eyebrow">可读范围与访问限制</p><h2 id="coverage-title">平台采集情况</h2></div><span class="section-note">$coverage_note</span></div>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="平台采集情况，可横向滚动"><table><caption class="visually-hidden">最近一次巡查的平台访问结果</caption><thead><tr><th scope="col">平台 / 会话</th><th scope="col">读取结果</th><th scope="col">时间筛选</th><th scope="col">证据边界</th></tr></thead><tbody>$source_rows</tbody></table></div>
+      <div class="method"><h3>如何理解这份巡查</h3><div><p><strong>时间</strong>分别保留发布时间提示、体验日期和巡查日期。“2 小时前”是当时页面的显示值，不是实时计时。</p><p><strong>范围</strong>公开网页样本；部分平台沿用普通账号会话。未新增品牌授权，不能视为全平台匿名验证。</p><p><strong>判断</strong>用户观点、混合评价与赞助内容分开记录。地区未知不推断为北美；样本不用于推断全网增长率或情绪占比。</p></div></div>
     </section>
     <section class="section archive" id="archive" aria-labelledby="archive-title">
-      <div><p class="eyebrow">按每次巡查留档</p><h2 id="archive-title">巡查记录</h2><p class="context-note">新一轮巡查完成后更新看板，并保留独立存档。当前尚未启用自动巡查或消息推送。</p></div>
+      <div><p class="eyebrow">按日期查看历史</p><h2 id="archive-title">$archive_title</h2><p class="context-note">主看板汇总全部日期；每日存档仅包含当天巡查，并保留每次观察的固定链接。当前为手动更新。</p></div>
       <div class="archive-list">$archive</div>
     </section>
-    <footer><span>Fanka 舆情巡查 · 早报中心</span><a href="$snapshot_url">本次固定链接 ↗</a><a href="$home">返回早报中心</a></footer>
+    <footer><span>${brand} 舆情巡查 · 早报中心</span><a href="$snapshot_url">最近一次巡查固定链接 ↗</a><a href="$home">返回早报中心</a></footer>
   </main>
 </div>
 </body>
