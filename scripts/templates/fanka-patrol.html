@@ -32,7 +32,7 @@
     <div class="stats" aria-label="记录概览">
       <div><span class="stat-label">收录记录</span><strong>$count</strong><p>按原文链接去重，非全网提及总量</p></div>
       <div><span class="stat-label">建议复核</span><strong>$attention_count</strong><p>人工筛选的关注项，尚未确认事实</p></div>
-      <div><span class="stat-label">最近一次检查平台</span><strong>$source_count</strong><p>包括发现入口，读取范围见下方</p></div>
+      <div><span class="stat-label">$source_label</span><strong>$source_count</strong><p>包括发现入口，读取范围见下方</p></div>
     </div>
     <section class="section" id="attention" aria-labelledby="attention-title">
       <div class="section-heading"><div><p class="eyebrow">先处理重要反馈</p><h2 id="attention-title">建议关注</h2></div><span class="section-note">用户陈述，等待业务记录核对</span></div>
@@ -57,7 +57,7 @@
     </section>
     <section class="section" id="coverage" aria-labelledby="coverage-title">
       <div class="section-heading"><div><p class="eyebrow">可读范围与访问限制</p><h2 id="coverage-title">平台采集情况</h2></div><span class="section-note">$coverage_note</span></div>
-      <div class="table-scroll" tabindex="0" role="region" aria-label="平台采集情况，可横向滚动"><table><caption class="visually-hidden">最近一次巡查的平台访问结果</caption><thead><tr><th scope="col">平台 / 会话</th><th scope="col">读取结果</th><th scope="col">时间筛选</th><th scope="col">证据边界</th></tr></thead><tbody>$source_rows</tbody></table></div>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="平台采集情况，可横向滚动"><table><caption class="visually-hidden">$coverage_caption</caption><thead><tr><th scope="col">平台 / 会话</th><th scope="col">读取结果</th><th scope="col">时间筛选</th><th scope="col">证据边界</th></tr></thead><tbody>$source_rows</tbody></table></div>
       <div class="method"><h3>如何理解这份巡查</h3><div><p><strong>时间</strong>分别保留发布时间提示、体验日期和巡查日期。“2 小时前”是当时页面的显示值，不是实时计时。</p><p><strong>范围</strong>公开网页样本；部分平台沿用普通账号会话。未新增品牌授权，不能视为全平台匿名验证。</p><p><strong>判断</strong>用户观点、混合评价与赞助内容分开记录。地区未知不推断为北美；样本不用于推断全网增长率或情绪占比。</p></div></div>
     </section>
     <section class="section archive" id="archive" aria-labelledby="archive-title">

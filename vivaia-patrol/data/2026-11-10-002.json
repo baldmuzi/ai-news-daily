@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "2026-11-10-002",
+  "date": "2026-11-10",
+  "sequence": "002",
+  "brand": "VIVAIA",
+  "mode": "手动补充巡查",
+  "baseline": false,
+  "observed_at": "2026-11-10T15:31:20+08:00",
+  "scope": "仅补查 TikTok 与 Google；Trustpilot、Reddit、YouTube 未在本轮重新读取。公开网页样本，不代表全网覆盖。",
+  "sources": [
+    {
+      "name": "TikTok",
+      "status": "搜索、直达视频及部分评论可读",
+      "access": "免登录",
+      "discovery": "站内搜索 VIVAIA；Google 最近一周检索发现直达视频",
+      "sorting": "站内综合结果混有旧内容，最新排序未验证；直达页逐条核对时间提示",
+      "detail": "本次站内搜索成功。收录 2 条近期视频；其中 1 条成功读取 5 条顶层评论，另 1 条标注品牌合作。上轮搜索报错不代表没有内容。",
+      "limitation": "评论总数 7 的样本仅展开读取 5 条，另 2 条折叠回复未展开。未转写完整口播，不由文案推断全部视频内容。",
+      "url": "https://www.tiktok.com/search?q=VIVAIA"
+    },
+    {
+      "name": "Google",
+      "status": "发现入口可用",
+      "access": "已有普通账号会话",
+      "discovery": "VIVAIA reviews；site:tiktok.com VIVAIA review",
+      "sorting": "最近一周筛选可用；搜索时间提示需回原文核对",
+      "detail": "检索到 Reddit、TikTok、Instagram 等入口；沿搜索结果打开 TikTok 原文核实。搜索摘要不单独作为评价记录，按原文平台归档。",
+      "limitation": "页面显示个性化结果及新加坡地区；不能代表北美搜索排名或全网热度。时间筛选不保证所有结果均在一周内发布。",
+      "url": "https://www.google.com/search?q=VIVAIA+reviews&tbs=qdr:w"
+    }
+  ],
+  "records": [
+    {
+      "id": "tiktok-lexiscaduto",
+      "platform": "TikTok",
+      "kind": "视频文案与评论",
+      "title": "近期门店主题视频文案与可见评论表达对鞋款的喜爱",
+      "url": "https://www.tiktok.com/@lexiscaduto/video/7706214469076077854",
+      "published_label": "访问时显示 14 小时前",
+      "published_date": null,
+      "experience_date": null,
+      "region": "未确认；文案带 Garden State Plaza 标签",
+      "rating": null,
+      "sentiment_category": "positive",
+      "sentiment": "已读文案与可见评论正向；商业关系未确认",
+      "topics": [
+        "门店",
+        "穆勒鞋",
+        "靴子",
+        "款式偏好"
+      ],
+      "summary": "Lexiscaduto 的视频文案表达想把鞋款都带走的喜爱，并提及 VIVAIA 与 Garden State Plaza。免登录读取的 5 条顶层评论中，有人喜欢穆勒鞋、白色款和靴子，也有人表示想去门店。",
+      "evidence": "读取直达视频的文案、相对发布时间、互动数和 5 条顶层评论。页面显示共 7 条评论，另 2 条折叠回复未展开。可见文案未见广告披露，但不足以确认无商业关系；未转写或分析完整视频。分类仅基于已读文案与评论，不代表实际长期穿着评价。",
+      "action": "作为款式偏好与门店兴趣线索保留；后续复查新增评论和商业合作披露，不推断购买转化。",
+      "priority": false,
+      "metrics": {
+        "likes": 131,
+        "comments": 7,
+        "saves": 21
+      }
+    },
+    {
+      "id": "tiktok-shelby-filipa",
+      "platform": "TikTok",
+      "kind": "已披露品牌合作内容",
+      "title": "Shelby 发布 Filipa 靴款合作视频，附个人推广码",
+      "url": "https://www.tiktok.com/@shelbylatta/video/7705960134723276062",
+      "published_label": "访问时显示 1 天前",
+      "published_date": null,
+      "experience_date": null,
+      "region": "未确认",
+      "rating": null,
+      "sentiment_category": "unknown",
+      "sentiment": "已披露商业合作；不计为独立正面口碑",
+      "topics": [
+        "Filipa",
+        "靴子",
+        "品牌合作",
+        "推广码"
+      ],
+      "summary": "Shelby | Mindful Motherhood 的文案推广 VIVAIA Filipa 靴款并提供个人代码；文案包含广告标签，页面同时显示品牌合作标记。",
+      "evidence": "读取直达页文案、相对时间、互动数、广告标签和品牌合作标记。访问时显示 0 条评论；未读取完整口播。文案中的多用途评价属于创作者宣传表述，推广码适用条件未向官网验证。",
+      "action": "作为近期商业传播样本跟踪；与独立消费者评价分开，不把促销代码作为已核实的优惠规则。",
+      "priority": false,
+      "metrics": {
+        "likes": 1,
+        "comments": 0,
+        "saves": 0
+      }
+    }
+  ]
+}

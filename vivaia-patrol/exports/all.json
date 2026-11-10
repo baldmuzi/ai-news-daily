@@ -2,9 +2,90 @@
   "brand": "VIVAIA",
   "updated_date": "2026-11-10",
   "runs": [
+    "2026-11-10-002",
     "2026-11-10-001"
   ],
   "records": [
+    {
+      "id": "tiktok-lexiscaduto",
+      "platform": "TikTok",
+      "kind": "视频文案与评论",
+      "title": "近期门店主题视频文案与可见评论表达对鞋款的喜爱",
+      "url": "https://www.tiktok.com/@lexiscaduto/video/7706214469076077854",
+      "published_label": "访问时显示 14 小时前",
+      "published_date": null,
+      "experience_date": null,
+      "region": "未确认；文案带 Garden State Plaza 标签",
+      "rating": null,
+      "sentiment_category": "positive",
+      "sentiment": "已读文案与可见评论正向；商业关系未确认",
+      "topics": [
+        "门店",
+        "穆勒鞋",
+        "靴子",
+        "款式偏好"
+      ],
+      "summary": "Lexiscaduto 的视频文案表达想把鞋款都带走的喜爱，并提及 VIVAIA 与 Garden State Plaza。免登录读取的 5 条顶层评论中，有人喜欢穆勒鞋、白色款和靴子，也有人表示想去门店。",
+      "evidence": "读取直达视频的文案、相对发布时间、互动数和 5 条顶层评论。页面显示共 7 条评论，另 2 条折叠回复未展开。可见文案未见广告披露，但不足以确认无商业关系；未转写或分析完整视频。分类仅基于已读文案与评论，不代表实际长期穿着评价。",
+      "action": "作为款式偏好与门店兴趣线索保留；后续复查新增评论和商业合作披露，不推断购买转化。",
+      "priority": false,
+      "metrics": {
+        "likes": 131,
+        "comments": 7,
+        "saves": 21
+      },
+      "_first_seen": "2026-11-10",
+      "_last_seen": "2026-11-10",
+      "_last_run": "2026-11-10-002",
+      "_observations": [
+        {
+          "date": "2026-11-10",
+          "run_id": "2026-11-10-002",
+          "sequence": "002",
+          "record_id": "tiktok-lexiscaduto"
+        }
+      ]
+    },
+    {
+      "id": "tiktok-shelby-filipa",
+      "platform": "TikTok",
+      "kind": "已披露品牌合作内容",
+      "title": "Shelby 发布 Filipa 靴款合作视频，附个人推广码",
+      "url": "https://www.tiktok.com/@shelbylatta/video/7705960134723276062",
+      "published_label": "访问时显示 1 天前",
+      "published_date": null,
+      "experience_date": null,
+      "region": "未确认",
+      "rating": null,
+      "sentiment_category": "unknown",
+      "sentiment": "已披露商业合作；不计为独立正面口碑",
+      "topics": [
+        "Filipa",
+        "靴子",
+        "品牌合作",
+        "推广码"
+      ],
+      "summary": "Shelby | Mindful Motherhood 的文案推广 VIVAIA Filipa 靴款并提供个人代码；文案包含广告标签，页面同时显示品牌合作标记。",
+      "evidence": "读取直达页文案、相对时间、互动数、广告标签和品牌合作标记。访问时显示 0 条评论；未读取完整口播。文案中的多用途评价属于创作者宣传表述，推广码适用条件未向官网验证。",
+      "action": "作为近期商业传播样本跟踪；与独立消费者评价分开，不把促销代码作为已核实的优惠规则。",
+      "priority": false,
+      "metrics": {
+        "likes": 1,
+        "comments": 0,
+        "saves": 0
+      },
+      "_first_seen": "2026-11-10",
+      "_last_seen": "2026-11-10",
+      "_last_run": "2026-11-10-002",
+      "_observations": [
+        {
+          "date": "2026-11-10",
+          "run_id": "2026-11-10-002",
+          "sequence": "002",
+          "record_id": "tiktok-shelby-filipa"
+        }
+      ]
+    },
     {
       "id": "tp-easy-use",
       "platform": "Trustpilot",

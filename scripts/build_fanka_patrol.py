@@ -72,6 +72,16 @@ def aggregate(runs):
     return sorted(merged.values(), key=lambda r: r['_last_run'], reverse=True)
 
 
+def aggregate_sources(runs):
+    """Keep each platform's latest actual check, including partial patrols."""
+    sources = {}
+    for run in sorted(runs, key=lambda d: d['id']):
+        for source in run['sources']:
+            sources[source['name']] = dict(source, _run_id=run['id'],
+                                           _date=run['date'], _sequence=run['sequence'])
+    return list(sources.values())
+
+
 def render(data, runs, mode='main', selected_runs=None, brand='Fanka'):
     snapshot = mode == 'run'
     prefix = '' if mode == 'main' else '../'
@@ -80,13 +90,17 @@ def render(data, runs, mode='main', selected_runs=None, brand='Fanka'):
     day = mode == 'day'
     scope = '全部巡查' if mode == 'main' else ('当天巡查' if day else '本次巡查')
     focus = [r for r in records if r['priority']]
-    sources = data['sources']
+    sources = aggregate_sources(selected_runs)
     kinds = sorted({r['kind'] for r in records})
     platforms = sorted({r['platform'] for r in records})
     attention = ''.join(f'''<a class="focus-item" href="#{e(r['id'])}" data-reveal="{e(r['id'])}">
       <span class="focus-number">0{i}</span><div><span class="focus-meta">{e(r['platform'])} · 建议复核</span><h3>{e(r['title'])}</h3><p>{e(r['action'])}</p></div><span class="focus-arrow" aria-hidden="true">↗</span></a>'''
       for i, r in enumerate(focus, 1))
-    rows = ''.join(f'''<tr><th scope="row"><a href="{e(s['url'])}" target="_blank" rel="noopener noreferrer">{e(s['name'])} ↗</a><small>{e(s['access'])}</small></th><td><strong>{e(s['status'])}</strong><p>{e(s['detail'])}</p></td><td>{e(s['sorting'])}</td><td>{e(s['limitation'])}</td></tr>''' for s in sources)
+    def source_time(source):
+        if snapshot:
+            return ''
+        return f'<small>最近检查：<a href="{prefix}runs/{e(source["_run_id"])}.html#coverage">{e(source["_date"])} / {e(source["_sequence"])}</a></small>'
+    rows = ''.join(f'''<tr><th scope="row"><a href="{e(s['url'])}" target="_blank" rel="noopener noreferrer">{e(s['name'])} ↗</a><small>{e(s['access'])}</small>{source_time(s)}</th><td><strong>{e(s['status'])}</strong><p>{e(s['detail'])}</p></td><td>{e(s['sorting'])}</td><td>{e(s['limitation'])}</td></tr>''' for s in sources)
     dates = sorted({d['date'] for d in runs}, reverse=True)
     archive = ''.join(f'<a class="archive-link" href="{prefix}days/{e(date)}.html"><span>{e(date)} · 当天巡查</span><span>{sum(d["date"] == date for d in runs)} 次巡查 ↗</span></a>' for date in dates)
     if snapshot:
@@ -112,7 +126,9 @@ def render(data, runs, mode='main', selected_runs=None, brand='Fanka'):
         issue_label='最近巡查' if mode == 'main' else '巡查记录',
         records_title='全部记录' if mode == 'main' else ('当天记录' if day else '本次记录'),
         archive_title='每日巡查存档' if mode == 'main' else ('当天各次巡查' if day else '本次巡查存档'),
-        coverage_note=f'{data["date"]} / {data["sequence"]} 的访问结果；历史情况见各次存档',
+        coverage_note=f'{data["date"]} / {data["sequence"]} 的访问结果；历史情况见各次存档' if snapshot else '各平台最近一次巡查结果；检查日期与轮次见表内',
+        coverage_caption='最近一次巡查的平台访问结果' if snapshot else '各平台最近一次实际检查结果',
+        source_label='最近一次检查平台' if snapshot else '已巡查平台',
         count=f'{len(records):02}', attention_count=f'{len(focus):02}', source_count=f'{len(sources):02}',
         attention=attention, records=rendered_records, source_rows=rows,
         platform_options=''.join(f'<option>{e(p)}</option>' for p in platforms),

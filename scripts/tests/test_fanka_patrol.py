@@ -83,6 +83,29 @@ class PatrolHistoryTests(unittest.TestCase):
         daily_page = patrol.render(self.next, [self.next], mode='day')
         self.assertNotIn('<article class="record"', daily_page)
 
+    def test_partial_patrol_keeps_other_sources_with_actual_check_dates(self):
+        initial = json.loads((patrol.ROOT / 'vivaia-patrol/data/2026-11-10-001.json').read_text())
+        retry = json.loads((patrol.ROOT / 'vivaia-patrol/data/2026-11-10-002.json').read_text())
+        sources = {s['name']: s for s in patrol.aggregate_sources([retry, initial])}
+        self.assertEqual(len(sources), 5)
+        self.assertEqual(sources['Trustpilot']['_sequence'], '001')
+        self.assertEqual(sources['TikTok']['_sequence'], '002')
+        self.assertEqual(sources['TikTok']['status'], retry['sources'][0]['status'])
+        self.assertEqual(sources['Google']['_sequence'], '002')
+        main = patrol.render(retry, [retry, initial], brand='VIVAIA')
+        self.assertIn('最近检查：', main)
+        self.assertEqual(len(patrol.aggregate([retry, initial])), 11)
+        snapshot = patrol.render(retry, [retry, initial], mode='run', brand='VIVAIA')
+        self.assertNotIn('>Trustpilot ↗', snapshot)
+        self.assertNotIn('最近检查：', snapshot)
+        self.assertEqual(patrol.render(initial, [initial], mode='run', brand='VIVAIA'),
+                         patrol.render(initial, [retry, initial], mode='run', brand='VIVAIA'))
+        next_day = copy.deepcopy(retry)
+        next_day.update(id='2026-11-11-001', date='2026-11-11', sequence='001')
+        daily = patrol.render(next_day, [next_day], mode='day', brand='VIVAIA')
+        self.assertNotIn('>Trustpilot ↗', daily)
+        self.assertIn('2026-11-11 / 001', daily)
+
     def test_sentiment_update_preserves_historical_classification(self):
         self.next['records'][0]['sentiment_category'] = 'mixed'
         records = patrol.aggregate([self.next, self.first])
