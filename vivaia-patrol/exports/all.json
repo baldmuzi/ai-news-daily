@@ -2,10 +2,90 @@
   "brand": "VIVAIA",
   "updated_date": "2026-11-10",
   "runs": [
+    "2026-11-10-003",
     "2026-11-10-002",
     "2026-11-10-001"
   ],
   "records": [
+    {
+      "id": "instagram-cream-sneakers",
+      "platform": "Instagram",
+      "kind": "品牌官方内容",
+      "title": "官方发布奶油色运动鞋黑五心愿单内容，消费者评论尚不可读",
+      "url": "https://www.instagram.com/vivaia_official/p/DfhgYGXkabZ/",
+      "published_label": "原帖显示 17 小时前；图片日期标注 November 09, 2026",
+      "published_date": "2026-11-09",
+      "experience_date": null,
+      "region": "未确认；官方账号内容",
+      "rating": null,
+      "sentiment_category": "unknown",
+      "sentiment": "品牌宣传；未取得消费者评价",
+      "topics": [
+        "黑五",
+        "运动鞋",
+        "Sneakerinas",
+        "官方内容"
+      ],
+      "summary": "VIVAIA 官方帖文介绍奶油色缎面 Sneakerinas 与网面运动鞋，并邀请用户选择黑五心愿单鞋款。Facebook 公共主页也出现同主题宣传；本轮合并说明，不重复计为消费者反馈。",
+      "evidence": "读取 Instagram 完整文案、原帖时间提示和 253 赞的快照。点击加载更多评论后出现登录／注册提示，未读到消费者评论；“还没有评论”的占位状态不作为零评论的证据。Facebook 主页可展开同主题文案，显示 5 小时前，但评论同样要求登录。",
+      "action": "保留为品牌传播基线；后续若能读取评论，再补充真实疑问和评价。文案未核验促销优惠，不将官方宣传计为正面口碑。",
+      "priority": false,
+      "metrics": {
+        "likes": 253
+      },
+      "related_urls": [
+        "https://www.facebook.com/vivaiashoes/posts/pfbid0Jvg7oa97kSMDTgejiaBvSZLdtKj7zmtmhDkTsjYCNYwTfLLesf2SrisSk5AmARkzl"
+      ],
+      "_first_seen": "2026-11-10",
+      "_last_seen": "2026-11-10",
+      "_last_run": "2026-11-10-003",
+      "_observations": [
+        {
+          "date": "2026-11-10",
+          "run_id": "2026-11-10-003",
+          "sequence": "003",
+          "record_id": "instagram-cream-sneakers"
+        }
+      ]
+    },
+    {
+      "id": "nordstrom-sliders-sample",
+      "platform": "Nordstrom",
+      "kind": "商品页历史评价样本",
+      "title": "Sneaker Sliders 历史评价：舒适度认可与尺码、退货疑问并存",
+      "url": "https://www.nordstrom.com/s/unisex-sneaker-sliders-hands-free-mesh/8470788",
+      "published_label": "所读评价日期含 2026-10-28 与 2025-11-08；不是当天新增评价",
+      "published_date": null,
+      "experience_date": null,
+      "region": "用户地区未确认；访问页面地区为 Singapore",
+      "rating": null,
+      "sentiment_category": "mixed",
+      "sentiment": "多条历史样本汇总；含官网转载与推广收集",
+      "topics": [
+        "Sneaker Sliders",
+        "尺码",
+        "舒适度",
+        "退货",
+        "转载评价",
+        "历史样本"
+      ],
+      "summary": "10 月 28 日的转载样本中，K 认可舒适度但希望补货；Silvia I. 称鞋码偏大、折扣购买后未能退货，并带有推广收集标记。另一个标记已验证购买、日期为 2025 年 11 月 8 日的样本称鞋子偏小偏窄并已退回。不同人的反馈方向不一致，不能据此统一建议加码或减码。",
+      "evidence": "已读取上述评价正文、日期及星级：K 为 5 星，Silvia I. 为 1 星，afghandogz 为 2 星。前两条标注 Reposted from VIVAIA；Silvia I. 还标注参与推广活动收集。已选择 Most Recent 并试用 Verified Purchases，置顶评价不随筛选消失；未将置顶与列表重复样本分别计数。此卡为同一商品页样本汇总，非单条评价；未取得独立评价固定链接，未跨官网核实原始日期。",
+      "action": "如跟进，先按鞋款、订单渠道和购买时条款核对尺码及退货情况；消费者退货说法不直接作为平台政策结论。后续遇到同一作者、日期与正文的转载时合并，不增加独立评价数。",
+      "priority": false,
+      "metrics": null,
+      "_first_seen": "2026-11-10",
+      "_last_seen": "2026-11-10",
+      "_last_run": "2026-11-10-003",
+      "_observations": [
+        {
+          "date": "2026-11-10",
+          "run_id": "2026-11-10-003",
+          "sequence": "003",
+          "record_id": "nordstrom-sliders-sample"
+        }
+      ]
+    },
     {
       "id": "tiktok-lexiscaduto",
       "platform": "TikTok",
