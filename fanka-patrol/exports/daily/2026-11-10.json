@@ -80,43 +80,6 @@
       ]
     },
     {
-      "id": "facebook-tan-powerband",
-      "platform": "Facebook",
-      "kind": "品牌官方历史内容",
-      "title": "官方历史帖介绍 Tan 色 PowerBand 裤装的腰线与口袋设计",
-      "url": "https://www.facebook.com/fanka.official/posts/pfbid02JMECnC4Qfpb4cm8etL3eowegv4HZepE9j83Gc7S7W2Jsvergdb17aigFBRqo4XZl",
-      "published_label": "页面显示 2026 年 10 月 22 日；历史内容，非当天新帖",
-      "published_date": "2026-10-22",
-      "experience_date": null,
-      "region": "主页标记 Singapore；不代表受众地区",
-      "rating": null,
-      "sentiment_category": "unknown",
-      "sentiment": "官方宣传；未取得消费者评论",
-      "topics": [
-        "PowerBand",
-        "Tan 色",
-        "V 形腰线",
-        "口袋",
-        "历史内容"
-      ],
-      "summary": "Fanka 官方帖介绍 Tan 色裤装的 V 形腰线、侧边口袋及内置阻力设计。此次仅作为品牌传播背景保存，未取得可用于判断口碑的消费者评论。",
-      "evidence": "已展开读取完整帖文和日期。点击评论后出现登录提示，未读取评论正文；有关阻力的表述来自品牌文案，未独立验证。主页当前呈现旧帖，不能认定该帖为品牌最新发布。",
-      "action": "可用于观察官方卖点表达；后续能读取评论时再跟进消费者反馈，不直接计为正面评价。",
-      "priority": false,
-      "metrics": null,
-      "_first_seen": "2026-11-10",
-      "_last_seen": "2026-11-10",
-      "_last_run": "2026-11-10-002",
-      "_observations": [
-        {
-          "date": "2026-11-10",
-          "run_id": "2026-11-10-002",
-          "sequence": "002",
-          "record_id": "facebook-tan-powerband"
-        }
-      ]
-    },
-    {
       "id": "tp-delivery",
       "platform": "Trustpilot",
       "kind": "消费者评价",

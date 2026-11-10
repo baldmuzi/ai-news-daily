@@ -143,6 +143,53 @@ class PatrolHistoryTests(unittest.TestCase):
             with self.assertRaisesRegex(AssertionError, 'different brand'):
                 patrol.main(channel=vivaia_dir, brand='Fanka')
 
+    def test_official_posts_without_feedback_leave_current_views_only(self):
+        for name, brand, excluded_id, retained_id, expected, sequences in [
+            ('fanka-patrol', 'Fanka', 'facebook-tan-powerband', 'instagram-burgundy-comment', 8, ('001', '002')),
+            ('vivaia-patrol', 'VIVAIA', 'instagram-cream-sneakers', 'tiktok-shelby-filipa', 12, ('001', '002', '003')),
+        ]:
+            with self.subTest(brand=brand), tempfile.TemporaryDirectory() as directory:
+                channel = Path(directory)
+                (channel / 'data').mkdir()
+                runs = []
+                for sequence in sequences:
+                    path = patrol.ROOT / name / 'data' / f'2026-11-10-{sequence}.json'
+                    (channel / 'data' / path.name).write_bytes(path.read_bytes())
+                    runs.append(json.loads(path.read_text()))
+                original = copy.deepcopy(runs)
+                patrol.main(channel=channel, brand=brand)
+                for filename in ['index.html', 'days/2026-11-10.html']:
+                    page = (channel / filename).read_text()
+                    self.assertNotIn(f'id="{excluded_id}"', page)
+                    self.assertIn(f'id="{retained_id}"', page)
+                    self.assertIn('Instagram ↗', page)
+                    self.assertIn('Facebook ↗', page)
+                for filename in ['exports/all.json', 'exports/daily/2026-11-10.json']:
+                    records = json.loads((channel / filename).read_text())['records']
+                    self.assertEqual(len(records), expected)
+                    self.assertNotIn(excluded_id, {r['id'] for r in records})
+                for run in runs:
+                    if any(r['id'] == excluded_id for r in run['records']):
+                        self.assertIn(f'id="{excluded_id}"',
+                                      (channel / 'runs' / f'{run["id"]}.html').read_text())
+                self.assertEqual(runs, original)
+
+    def test_official_post_with_new_consumer_feedback_can_enter_records(self):
+        run = copy.deepcopy(self.first)
+        run['records'] = run['records'][:1]
+        run['records'][0].update(publisher_type='brand', consumer_feedback_read=False)
+        self.assertEqual(patrol.aggregate([run]), [])
+        self.assertEqual(len(patrol.aggregate([run], include_official_only=True)), 1)
+        later = copy.deepcopy(run)
+        later.update(id='2026-11-11-001', date='2026-11-11')
+        later['records'][0]['consumer_feedback_read'] = True
+        self.assertEqual(len(patrol.aggregate([run, later])), 1)
+        self.assertEqual(len(patrol.aggregate([run, later])[0]['_observations']), 2)
+        # A newer observation without feedback must not reveal an older record.
+        later['records'][0]['consumer_feedback_read'] = False
+        run['records'][0]['consumer_feedback_read'] = True
+        self.assertEqual(patrol.aggregate([run, later]), [])
+
 
 if __name__ == '__main__':
     unittest.main()

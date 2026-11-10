@@ -44,7 +44,15 @@ def render_record(r, prefix):
     </article>'''
 
 
-def aggregate(runs):
+def official_without_feedback(record):
+    """Exclude brand-only posts, not creator posts or readable user feedback."""
+    if 'publisher_type' in record:
+        return record['publisher_type'] == 'brand' and not record.get('consumer_feedback_read', False)
+    # Compatibility with observations saved before these explicit fields existed.
+    return record['kind'] in {'品牌官方内容', '品牌官方历史内容'}
+
+
+def aggregate(runs, *, include_official_only=False):
     """One source URL per card; retain earliest anchor and all observations."""
     merged = {}
     used_ids = set()
@@ -69,7 +77,10 @@ def aggregate(runs):
                                _last_seen=run['date'], _last_run=run['id'],
                                _observations=observations)
     # Stable source order inside the same run; never infer exact publish times.
-    return sorted(merged.values(), key=lambda r: r['_last_run'], reverse=True)
+    records = merged.values()
+    if not include_official_only:
+        records = [r for r in records if not official_without_feedback(r)]
+    return sorted(records, key=lambda r: r['_last_run'], reverse=True)
 
 
 def aggregate_sources(runs):
@@ -86,7 +97,7 @@ def render(data, runs, mode='main', selected_runs=None, brand='Fanka'):
     snapshot = mode == 'run'
     prefix = '' if mode == 'main' else '../'
     selected_runs = selected_runs or ([data] if snapshot else runs)
-    records = aggregate(selected_runs)
+    records = aggregate(selected_runs, include_official_only=snapshot)
     day = mode == 'day'
     scope = '全部巡查' if mode == 'main' else ('当天巡查' if day else '本次巡查')
     focus = [r for r in records if r['priority']]
@@ -109,11 +120,14 @@ def render(data, runs, mode='main', selected_runs=None, brand='Fanka'):
         notice = f'仅展示 {e(data["date"])} 当天巡查收录的内容。<a href="../index.html">返回全部巡查主看板</a>'
     else:
         notice = '主看板汇总全部巡查；同一原文合并展示最新观察，历史观察保留在存档中。当前为手动巡查。'
+    if not snapshot:
+        notice += ' 记录区不收录未读到消费者反馈的品牌官方内容；官方帖下已读到的评价与咨询仍保留。历史单次存档保留当时的原始观察。'
     groups = defaultdict(list)
     for record in records:
         groups[record['_last_seen']].append(record)
     rendered_records = ''.join(f'<section class="date-group" data-date="{e(date)}" aria-label="{e(date)} 巡查记录"><div class="date-heading"><h3>{e(date)}</h3><a href="{prefix}days/{e(date)}.html">查看当天巡查 ↗</a></div>' + '\n'.join(render_record(r, prefix) for r in rows) + '</section>' for date, rows in groups.items())
-    run_links = ''.join(f'<a class="archive-link" href="{prefix}runs/{e(d["id"])}.html"><span>第 {e(d["sequence"])} 次巡查</span><span>{len(d["records"])} 条观察 ↗</span></a>' for d in selected_runs)
+    observation_label = '条观察' if snapshot else '条原始观察'
+    run_links = ''.join(f'<a class="archive-link" href="{prefix}runs/{e(d["id"])}.html"><span>第 {e(d["sequence"])} 次巡查</span><span>{len(d["records"])} {observation_label} ↗</span></a>' for d in selected_runs)
     if day or snapshot:
         archive = run_links
     download = 'exports/all.json' if mode == 'main' else (f'exports/daily/{data["date"]}.json' if day else f'data/{data["id"]}.json')
@@ -152,6 +166,8 @@ def main(channel=None, brand='Fanka'):
         urls = [r['url'] for r in d['records']]
         assert len(urls) == len(set(urls)), 'Duplicate source URLs'
         assert all(r.get('sentiment_category', 'unknown') in SENTIMENTS for r in d['records']), 'Invalid sentiment category'
+        assert all('consumer_feedback_read' not in r or isinstance(r['consumer_feedback_read'], bool) for r in d['records']), 'Feedback flag must be boolean'
+        assert all('publisher_type' not in r or r['publisher_type'] in {'brand', 'consumer', 'creator', 'unknown'} for r in d['records']), 'Invalid publisher type'
         assert all(url.startswith('https://') for url in urls)
         assert all(r['platform'] in {s['name'] for s in d['sources']} for r in d['records'])
     # Both channels use the same interaction and visual assets.
