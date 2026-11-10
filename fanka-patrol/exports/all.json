@@ -2,9 +2,120 @@
   "brand": "Fanka",
   "updated_date": "2026-11-10",
   "runs": [
+    "2026-11-10-002",
     "2026-11-10-001"
   ],
   "records": [
+    {
+      "id": "instagram-burgundy-comment",
+      "platform": "Instagram",
+      "kind": "官方帖下的公开评论",
+      "title": "Powerband 上衣官方帖下出现对酒红色款的正向偏好",
+      "url": "https://www.instagram.com/fankaofficial/p/DfgKunfkzls/",
+      "published_label": "原帖日期标注 November 08, 2026；帖文与已读评论均显示 1 天前",
+      "published_date": "2026-11-08",
+      "experience_date": null,
+      "region": "评论者地区未确认",
+      "rating": null,
+      "sentiment_category": "positive",
+      "sentiment": "仅一条可见评论表达颜色偏好；非购买后体验",
+      "topics": [
+        "Powerband",
+        "上衣",
+        "酒红色",
+        "颜色偏好",
+        "公开评论"
+      ],
+      "summary": "Fanka 官方帖介绍 Powerband Resistance Long Sleeve Top 并提及黑五。两条可见评论中，一位用户表达对酒红色款的喜爱；另一条仅为含义不明的短文本，未用于判断倾向。",
+      "evidence": "已读取官方文案、两条评论和原帖日期。正向分类只针对颜色偏好评论，不代表已购买或验证穿着效果。页面带有“AI 内容”标记，该标记属于官方帖，不能据此推断评论由 AI 生成。加载更多评论要求登录，不能保证评论全量。",
+      "action": "将酒红色作为颜色偏好线索；后续跟踪尺码、穿着和购买疑问，不把颜色喜爱当作产品功效验证。",
+      "priority": false,
+      "metrics": null,
+      "_first_seen": "2026-11-10",
+      "_last_seen": "2026-11-10",
+      "_last_run": "2026-11-10-002",
+      "_observations": [
+        {
+          "date": "2026-11-10",
+          "run_id": "2026-11-10-002",
+          "sequence": "002",
+          "record_id": "instagram-burgundy-comment"
+        }
+      ]
+    },
+    {
+      "id": "instagram-stirrup-question",
+      "platform": "Instagram",
+      "kind": "创作者帖下的购买咨询",
+      "title": "旧视频下出现新问题：踩脚裤腹部加高部分穿着如何",
+      "url": "https://www.instagram.com/reel/DfOW7jCiqrY/",
+      "published_label": "视频日期标注 November 01, 2026；已读评论显示 2 天前",
+      "published_date": "2026-11-01",
+      "experience_date": null,
+      "region": "未确认",
+      "rating": null,
+      "sentiment_category": "neutral",
+      "sentiment": "购买咨询；创作者商业关系未确认",
+      "topics": [
+        "踩脚裤",
+        "腹部覆盖",
+        "穿着咨询",
+        "旧帖新评论"
+      ],
+      "summary": "pattyunfinished 的视频文案提到 Fanka 踩脚款与更多尺码。一条显示 2 天前的评论询问这款踩脚裤加高腰腹部分的实际穿着感受；本轮没有读到针对该问题的回复。",
+      "evidence": "已读取原帖文案、11 月 1 日日期及一条具体评论，页面显示共 3 条评论，但本轮仅看到其中 1 条。未分析完整视频，未确认商业关系；不从压缩相关标签推断医疗功效。分类针对已读咨询，不代表完整视频倾向。",
+      "action": "后续复查该问题是否有回复，并观察腰腹覆盖、卷边或尺码等具体需求；如回复用户，应依据实际产品资料。",
+      "priority": false,
+      "metrics": null,
+      "_first_seen": "2026-11-10",
+      "_last_seen": "2026-11-10",
+      "_last_run": "2026-11-10-002",
+      "_observations": [
+        {
+          "date": "2026-11-10",
+          "run_id": "2026-11-10-002",
+          "sequence": "002",
+          "record_id": "instagram-stirrup-question"
+        }
+      ]
+    },
+    {
+      "id": "facebook-tan-powerband",
+      "platform": "Facebook",
+      "kind": "品牌官方历史内容",
+      "title": "官方历史帖介绍 Tan 色 PowerBand 裤装的腰线与口袋设计",
+      "url": "https://www.facebook.com/fanka.official/posts/pfbid02JMECnC4Qfpb4cm8etL3eowegv4HZepE9j83Gc7S7W2Jsvergdb17aigFBRqo4XZl",
+      "published_label": "页面显示 2026 年 10 月 22 日；历史内容，非当天新帖",
+      "published_date": "2026-10-22",
+      "experience_date": null,
+      "region": "主页标记 Singapore；不代表受众地区",
+      "rating": null,
+      "sentiment_category": "unknown",
+      "sentiment": "官方宣传；未取得消费者评论",
+      "topics": [
+        "PowerBand",
+        "Tan 色",
+        "V 形腰线",
+        "口袋",
+        "历史内容"
+      ],
+      "summary": "Fanka 官方帖介绍 Tan 色裤装的 V 形腰线、侧边口袋及内置阻力设计。此次仅作为品牌传播背景保存，未取得可用于判断口碑的消费者评论。",
+      "evidence": "已展开读取完整帖文和日期。点击评论后出现登录提示，未读取评论正文；有关阻力的表述来自品牌文案，未独立验证。主页当前呈现旧帖，不能认定该帖为品牌最新发布。",
+      "action": "可用于观察官方卖点表达；后续能读取评论时再跟进消费者反馈，不直接计为正面评价。",
+      "priority": false,
+      "metrics": null,
+      "_first_seen": "2026-11-10",
+      "_last_seen": "2026-11-10",
+      "_last_run": "2026-11-10-002",
+      "_observations": [
+        {
+          "date": "2026-11-10",
+          "run_id": "2026-11-10-002",
+          "sequence": "002",
+          "record_id": "facebook-tan-powerband"
+        }
+      ]
+    },
     {
       "id": "tp-delivery",
       "platform": "Trustpilot",
