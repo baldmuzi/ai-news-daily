@@ -1,33 +1,33 @@
 {
-  "edition": "0117",
-  "date": "2026年11月9日 09:15",
-  "intro": "节日预算趋稳，商品精简与库存规划要求更细；社媒内容转向真实试装和找款需求，官网活动则结合会员优惠、礼物分组与退货保障。",
+  "edition": "0118",
+  "date": "2026年11月10日 09:16",
+  "intro": "会员权益延伸到退款便利，销售增长更需核对量价与利润；节日内容借助员工导购，官网通过双11筛选、礼物分组和渠道专属标签帮助选购。",
   "tags": [
-    "节日预算",
-    "尺码库存",
-    "商品精简",
-    "社媒找款",
-    "礼物保障"
+    "会员试点",
+    "量价分化",
+    "渠道盈利",
+    "员工导购",
+    "双11促销"
   ],
   "top3": [
     {
-      "title": "节日礼物预算持平",
-      "comment": "Gallup调查平均预算为1,011美元；礼物页需帮助顾客在预算内比较。",
-      "category": "消费与购买行为",
-      "url": "https://news.gallup.com/poll/716462/holiday-shopping-plans-point-average-retail-year.aspx"
+      "title": "TikTok Shop 试点付费会员",
+      "comment": "每月9.99美元打包指定商品优惠与退款便利，会员价值覆盖购买和售后。",
+      "category": "价格与渠道",
+      "url": "https://www.modernretail.co/operations/exclusive-tiktok-shop-launches-a-paid-premium-tier-for-1m-of-its-top-us-shoppers/"
     },
     {
-      "title": "先保证主推款关键尺码有货",
-      "comment": "Reformation用需求规划改善有货率；活动前优先检查主推款的尺码缺口。",
+      "title": "Rothy’s 销售增长仍伴亏损",
+      "comment": "三季度销售增12.3%，仍亏损260万美元；渠道扩张须同时看贡献利润。",
       "category": "竞品经营",
-      "url": "https://www.retaildive.com/news/reformation-q3-earnings-sales-growth-ai-planning-tool-in-stock-rates/873991/"
+      "url": "https://wwd.com/footwear-news/shoe-industry-news/havaianas-q3-2026-earnings-flip-flops-alpargatas-1239407635/"
     },
     {
-      "title": "延长退货，也写清费用",
-      "comment": "Dolce Vita节日退货延至一月底，每单收费4.95美元；保障与成本应一起说明。",
+      "title": "Camper 双11先筛尺码再选款",
+      "comment": "指定款七五折集合直列尺码与折后价，大促导购可先解决可买范围。",
       "category": "竞品当期活动",
-      "url": "https://www.dolcevita.com/collections/all-gifts"
+      "url": "https://www.camper.com/en_US/women/shoes/singles_day_all"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0117.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0118.html"
 }
