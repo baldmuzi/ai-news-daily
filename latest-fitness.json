@@ -1,33 +1,33 @@
 {
-  "edition": "0114",
-  "date": "2026年11月10日 09:13",
-  "intro": "全球女性运动内容的新变化，落在恢复节奏、社群体验与运动服饰场景；Fanka 可用压缩服实穿测试和短视频，连接训练与日常穿搭。",
+  "edition": "0115",
+  "date": "2026年11月11日 09:11",
+  "intro": "全球女性运动新报道聚焦训练节奏、包容性与运动零售；Fanka 可用压缩服实穿、跑走交替穿搭和社群故事，回应本期新变化。",
   "tags": [
-    "恢复训练",
-    "社群体验",
-    "女性穿搭",
-    "内容形式",
-    "运动零售"
+    "跑走交替",
+    "包容性健身",
+    "女性篮球",
+    "运动鞋穿搭",
+    "训练恢复"
   ],
   "top3": [
     {
-      "title": "美国度假酒店与意大利运动服品牌推出专属胶囊系列",
-      "comment": "Fanka 可拍训练、出行、休息一日穿搭，检验压缩裤活动度与外搭切换。"
+      "title": "无障碍健身白皮书把器械与服务可达性列为真实需求",
+      "comment": "Fanka 可采访不同活动能力的真实使用者，检视穿脱便利、尺码信息和动作适配；不要替用户假定需求。"
     },
     {
-      "title": "精品健身房合作平台 Pirl 连接品牌与线下课程",
-      "comment": "Fanka 可试点女性工作室课堂体验，记录报名、试穿反馈与复访。"
+      "title": "NikeSKIMS 复古跑鞋在首尔线下与线上同步发售",
+      "comment": "Fanka 可做复古运动鞋与压缩裤的真实通勤、轻运动穿搭测试，清楚区分造型与专业跑步适用性。"
     },
     {
-      "title": "西昌体育旅游消费季把赛事与在地体验串成一程",
-      "comment": "Fanka 可做跑步轻旅行装备清单，展示赛前、赛后与城市步行场景。"
+      "title": "WCBA 新赛季新增两支俱乐部，扩展女子篮球叙事",
+      "comment": "Fanka 可跟进新城市女篮球员与球迷的日常故事，展示球场训练和观赛穿搭的不同需求。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0114.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0115.html",
   "blog": {
-    "title": "What to Wear for Your First Gym Machine Workout: A Women’s Fit Checklist",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/first-gym-machine-workout-outfit-guide-women.html",
-    "summary": "由本期力量器械与自由重量比较延展，整理初次器械训练时运动内衣、压缩裤、接缝与活动度检查。"
+    "title": "Run-Walk Interval Outfits for Women: Support, Layers, and a Comfort Check",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/run-walk-interval-outfits-women-comfort-guide.html",
+    "summary": "由本期跑走交替训练指南延展，整理切换速度时运动内衣、压缩裤、口袋和天气分层的穿着检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
