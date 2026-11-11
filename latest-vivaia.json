@@ -1,33 +1,33 @@
 {
-  "edition": "0118",
-  "date": "2026年11月10日 09:16",
-  "intro": "会员权益延伸到退款便利，销售增长更需核对量价与利润；节日内容借助员工导购，官网通过双11筛选、礼物分组和渠道专属标签帮助选购。",
+  "edition": "0119",
+  "date": "2026年11月11日 09:16",
+  "intro": "实穿评测显示舒适与审美需要同时回应；中年客群营销、社媒购物调查与渠道数据提供新线索，官网案例则把季节用途、价格和优惠条件讲得更清楚。",
   "tags": [
-    "会员试点",
-    "量价分化",
-    "渠道盈利",
-    "员工导购",
-    "双11促销"
+    "实穿反馈",
+    "中年客群",
+    "社媒购物",
+    "渠道组合",
+    "明码优惠"
   ],
   "top3": [
     {
-      "title": "TikTok Shop 试点付费会员",
-      "comment": "每月9.99美元打包指定商品优惠与退款便利，会员价值覆盖购买和售后。",
-      "category": "价格与渠道",
-      "url": "https://www.modernretail.co/operations/exclusive-tiktok-shop-launches-a-paid-premium-tier-for-1m-of-its-top-us-shoppers/"
+      "title": "舒适获认可，审美仍影响选择",
+      "comment": "VIVAIA实穿评测肯定支撑与透气，也保留外观意见；内容应帮助顾客判断适配。",
+      "category": "商品与穿搭",
+      "url": "https://nymag.com/strategist/article/my-hunt-for-heels-that-dont-hurt-my-arches.html"
     },
     {
-      "title": "Rothy’s 销售增长仍伴亏损",
-      "comment": "三季度销售增12.3%，仍亏损260万美元；渠道扩张须同时看贡献利润。",
-      "category": "竞品经营",
-      "url": "https://wwd.com/footwear-news/shoe-industry-news/havaianas-q3-2026-earnings-flip-flops-alpargatas-1239407635/"
+      "title": "为40岁以上女性组织日常搭配",
+      "comment": "Freemans自报相关系列销售增21%；同龄团队将客群定位落实到天气与搭配。",
+      "category": "社媒与内容营销",
+      "url": "https://www.theindustry.fashion/freemans-sees-own-brand-womenswear-sales-jump-21-following-autumn-campaign/"
     },
     {
-      "title": "Camper 双11先筛尺码再选款",
-      "comment": "指定款七五折集合直列尺码与折后价，大促导购可先解决可买范围。",
+      "title": "让顾客看懂优惠已计入售价",
+      "comment": "Nine West澳洲正价鞋减50澳元，商品页直接显示减后价并说明不可叠加。",
       "category": "竞品当期活动",
-      "url": "https://www.camper.com/en_US/women/shoes/singles_day_all"
+      "url": "https://www.ninewest.com.au/collections/shoes"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0118.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0119.html"
 }
