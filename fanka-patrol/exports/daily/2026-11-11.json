@@ -1,0 +1,490 @@
+{
+  "brand": "Fanka",
+  "date": "2026-11-11",
+  "runs": [
+    "2026-11-11-001"
+  ],
+  "records": [
+    {
+      "id": "tp-delivery",
+      "platform": "Trustpilot",
+      "kind": "消费者评价",
+      "title": "复查：未收货及退款诉求仍未见公开回复",
+      "url": "https://www.trustpilot.com/reviews/6af2527a402b719d4c6131de",
+      "published_label": "A day ago（北京时间2026-11-11观察）",
+      "published_date": null,
+      "experience_date": "2026-10-07",
+      "region": "US（评价者资料标记）",
+      "rating": 1,
+      "sentiment_category": "negative",
+      "sentiment": "负面反馈，事实待核实",
+      "topics": [
+        "物流",
+        "退款",
+        "客服"
+      ],
+      "summary": "用户仍称10月初下单后未收货，多次联系及退款请求未获回应。本轮重读原文，未见新增品牌回复或用户确认解决，不能据此判断后台处理状态。",
+      "evidence": "本轮实际读取评价列表及单条固定链接正文、星级、资料地区、体验日期；页面带 Verified 标记，个人陈述未独立核对。发表时间仅有相对提示，绝对日期留空。单条页未见品牌回复。",
+      "action": "优先核对订单物流、退款申请和客服响应；有消费者确认后再更新处理状态。",
+      "priority": true,
+      "metrics": null,
+      "publisher_type": "consumer",
+      "consumer_feedback_read": true,
+      "_first_seen": "2026-11-11",
+      "_last_seen": "2026-11-11",
+      "_last_run": "2026-11-11-001",
+      "_observations": [
+        {
+          "date": "2026-11-11",
+          "run_id": "2026-11-11-001",
+          "sequence": "001",
+          "record_id": "tp-delivery"
+        }
+      ]
+    },
+    {
+      "id": "tp-mixed",
+      "platform": "Trustpilot",
+      "kind": "消费者评价",
+      "title": "复查：原订单丢失，用户仍认可最终收到的裤子",
+      "url": "https://www.trustpilot.com/reviews/6af2339421153e033bf95d08",
+      "published_label": "A day ago（北京时间2026-11-11观察）",
+      "published_date": null,
+      "experience_date": "2026-10-12",
+      "region": "US（评价者资料标记）",
+      "rating": 5,
+      "sentiment_category": "mixed",
+      "sentiment": "正负体验并存",
+      "topics": [
+        "物流",
+        "产品体验"
+      ],
+      "summary": "原评价同时提到订单丢失和最终收到裤子后的认可。本轮未见新增公开回复或状态变化；五星不消除物流问题。",
+      "evidence": "本轮实际读取评价列表及单条固定链接正文、星级、资料地区、体验日期；页面带 Verified 标记，个人陈述未独立核对。发表时间仅有相对提示，绝对日期留空。单条页未见品牌回复。",
+      "action": "复核原订单丢件原因及补发时效，保留产品正面反馈。",
+      "priority": true,
+      "metrics": null,
+      "publisher_type": "consumer",
+      "consumer_feedback_read": true,
+      "_first_seen": "2026-11-11",
+      "_last_seen": "2026-11-11",
+      "_last_run": "2026-11-11-001",
+      "_observations": [
+        {
+          "date": "2026-11-11",
+          "run_id": "2026-11-11-001",
+          "sequence": "001",
+          "record_id": "tp-mixed"
+        }
+      ]
+    },
+    {
+      "id": "tp-support-sizing",
+      "platform": "Trustpilot",
+      "kind": "消费者评价",
+      "title": "加拿大用户认可支撑感、品质和尺码",
+      "url": "https://www.trustpilot.com/reviews/6af29002ab3cd54d1e706df6",
+      "published_label": "A day ago（首次收录，不等于当天发布）",
+      "published_date": null,
+      "experience_date": "2026-10-12",
+      "region": "CA（评价者资料标记）",
+      "rating": 5,
+      "sentiment_category": "positive",
+      "sentiment": "正面体验",
+      "topics": [
+        "品质",
+        "尺码",
+        "支撑感"
+      ],
+      "summary": "用户表示喜欢裤子的支撑感，认为品质好且尺码准确。短评未说明具体款式和长期表现。",
+      "evidence": "本轮实际读取评价列表及单条固定链接正文、星级、资料地区、体验日期；页面带 Verified 标记，个人陈述未独立核对。发表时间仅有相对提示，绝对日期留空。单条页未见品牌回复。",
+      "action": "保留为尺码与品质正面样本，后续结合具体款式对照。",
+      "priority": false,
+      "metrics": null,
+      "publisher_type": "consumer",
+      "consumer_feedback_read": true,
+      "_first_seen": "2026-11-11",
+      "_last_seen": "2026-11-11",
+      "_last_run": "2026-11-11-001",
+      "_observations": [
+        {
+          "date": "2026-11-11",
+          "run_id": "2026-11-11-001",
+          "sequence": "001",
+          "record_id": "tp-support-sizing"
+        }
+      ]
+    },
+    {
+      "id": "tp-service-replacement",
+      "platform": "Trustpilot",
+      "kind": "消费者评价",
+      "title": "用户称客服通过更换另一款裤子处理问题",
+      "url": "https://www.trustpilot.com/reviews/6af111114765e6168a51503d",
+      "published_label": "2 days ago；历史样本首次收录",
+      "published_date": null,
+      "experience_date": "2026-10-12",
+      "region": "US（评价者资料标记）",
+      "rating": 5,
+      "sentiment_category": "positive",
+      "sentiment": "正面体验",
+      "topics": [
+        "售后",
+        "产品体验"
+      ],
+      "summary": "用户称客服回应其问题，并通过更换另一款裤子予以解决。这是该用户自己的处理结果陈述，不代表其他订单。",
+      "evidence": "历史样本首次收录，非当天新增投诉。本轮实际读取评价列表及单条固定链接正文、星级、资料地区、体验日期；页面带 Verified 标记，个人陈述未独立核对。发表时间仅有相对提示，绝对日期留空。单条页未见品牌回复。",
+      "action": "可复盘此换款服务经验；不推定其他未收货或退款案件已解决。",
+      "priority": false,
+      "metrics": null,
+      "publisher_type": "consumer",
+      "consumer_feedback_read": true,
+      "_first_seen": "2026-11-11",
+      "_last_seen": "2026-11-11",
+      "_last_run": "2026-11-11-001",
+      "_observations": [
+        {
+          "date": "2026-11-11",
+          "run_id": "2026-11-11-001",
+          "sequence": "001",
+          "record_id": "tp-service-replacement"
+        }
+      ]
+    },
+    {
+      "id": "tp-reversible-pockets",
+      "platform": "Trustpilot",
+      "kind": "消费者评价",
+      "title": "下单体验良好，但双面裤光滑面缺口袋引起不满",
+      "url": "https://www.trustpilot.com/reviews/6af06c9e957cfa0007acd43d",
+      "published_label": "3 days ago；历史样本首次收录",
+      "published_date": null,
+      "experience_date": "2026-10-11",
+      "region": "US（评价者资料标记）",
+      "rating": 3,
+      "sentiment_category": "mixed",
+      "sentiment": "正负体验并存",
+      "topics": [
+        "双面穿",
+        "口袋"
+      ],
+      "summary": "用户肯定下单体验，但称新购双面裤仅装饰面有两个口袋，光滑面没有；与此前买到的款式不同，认为不便。",
+      "evidence": "历史样本首次收录，非当天新增投诉。本轮实际读取评价列表及单条固定链接正文、星级、资料地区、体验日期；页面带 Verified 标记，个人陈述未独立核对。发表时间仅有相对提示，绝对日期留空。单条页未见品牌回复。",
+      "action": "核对具体SKU正反面口袋设计，检查详情页是否说明差异。",
+      "priority": false,
+      "metrics": null,
+      "publisher_type": "consumer",
+      "consumer_feedback_read": true,
+      "_first_seen": "2026-11-11",
+      "_last_seen": "2026-11-11",
+      "_last_run": "2026-11-11-001",
+      "_observations": [
+        {
+          "date": "2026-11-11",
+          "run_id": "2026-11-11-001",
+          "sequence": "001",
+          "record_id": "tp-reversible-pockets"
+        }
+      ]
+    },
+    {
+      "id": "tp-shipping-replacement",
+      "platform": "Trustpilot",
+      "kind": "消费者评价",
+      "title": "首单去向不明，客服提出补发及缺货换款",
+      "url": "https://www.trustpilot.com/reviews/6aefedccafd7d40560bd630b",
+      "published_label": "3 days ago；历史样本首次收录",
+      "published_date": null,
+      "experience_date": "2026-10-12",
+      "region": "US（评价者资料标记）",
+      "rating": 3,
+      "sentiment_category": "mixed",
+      "sentiment": "正负体验并存",
+      "topics": [
+        "物流",
+        "产品体验"
+      ],
+      "summary": "用户称网站下单方便、第二单已收到，但首单疑似未发出或滞留海关；客服询问补发或等待，并允许缺货商品换款。原文未确认首单最终送达。",
+      "evidence": "历史样本首次收录，非当天新增投诉。本轮实际读取评价列表及单条固定链接正文、星级、资料地区、体验日期；页面带 Verified 标记，个人陈述未独立核对。发表时间仅有相对提示，绝对日期留空。单条页未见品牌回复。",
+      "action": "核对首单物流和补发选择是否落地，确认缺货替换商品及最终收货。",
+      "priority": true,
+      "metrics": null,
+      "publisher_type": "consumer",
+      "consumer_feedback_read": true,
+      "_first_seen": "2026-11-11",
+      "_last_seen": "2026-11-11",
+      "_last_run": "2026-11-11-001",
+      "_observations": [
+        {
+          "date": "2026-11-11",
+          "run_id": "2026-11-11-001",
+          "sequence": "001",
+          "record_id": "tp-shipping-replacement"
+        }
+      ]
+    },
+    {
+      "id": "tp-sizing-return",
+      "platform": "Trustpilot",
+      "kind": "消费者评价",
+      "title": "用户称商品偏小且无法退换",
+      "url": "https://www.trustpilot.com/reviews/6aee338737b5c8a50278fdf7",
+      "published_label": "4 days ago；历史样本首次收录",
+      "published_date": null,
+      "experience_date": "2026-10-09",
+      "region": "US（评价者资料标记）",
+      "rating": 2,
+      "sentiment_category": "negative",
+      "sentiment": "负面反馈，事实待核实",
+      "topics": [
+        "尺码",
+        "退换"
+      ],
+      "summary": "用户称收到的商品比宣传尺码小，且无法更换或退货。原因、款式和实际申请过程未在短评中说明。",
+      "evidence": "历史样本首次收录，非当天新增投诉。本轮实际读取评价列表及单条固定链接正文、星级、资料地区、体验日期；页面带 Verified 标记，个人陈述未独立核对。发表时间仅有相对提示，绝对日期留空。单条页未见品牌回复。",
+      "action": "复核尺码表、购买SKU及退换申请记录，确认受限原因和可提供的处理方式。",
+      "priority": true,
+      "metrics": null,
+      "publisher_type": "consumer",
+      "consumer_feedback_read": true,
+      "_first_seen": "2026-11-11",
+      "_last_seen": "2026-11-11",
+      "_last_run": "2026-11-11-001",
+      "_observations": [
+        {
+          "date": "2026-11-11",
+          "run_id": "2026-11-11-001",
+          "sequence": "001",
+          "record_id": "tp-sizing-return"
+        }
+      ]
+    },
+    {
+      "id": "reddit-compression",
+      "platform": "Reddit",
+      "kind": "社区讨论",
+      "title": "复查：压缩裤咨询仍集中在腹部覆盖与款式选择",
+      "url": "https://www.reddit.com/r/POTS/comments/1xr2lwk/compression_socks_vs_leggings/",
+      "published_label": "帖子3天前；品牌相关回复1天前（2026-11-11观察）",
+      "published_date": null,
+      "experience_date": null,
+      "region": "未确认",
+      "rating": null,
+      "sentiment_category": "neutral",
+      "sentiment": "咨询与推荐提及，非功效证明",
+      "topics": [
+        "压缩体验",
+        "购买咨询",
+        "腹部覆盖"
+      ],
+      "summary": "发帖人称试过Fanka，询问压缩裤与袜的差异；回复中有人索要腹部覆盖款链接，发帖人建议搜索Fanka leggings。本轮未取得可确认的新进展。",
+      "evidence": "实际读正文及8条可见回复；显示9条评论不能视为全量已读。沿用历史帖子URL合并，未把同串回复当独立用户卡；其他品牌建议不归于Fanka。无商业关系声明可确认；不推导医疗效果。",
+      "action": "继续观察具体款式及腹部覆盖咨询，不将个人压缩感受用作医疗宣传。",
+      "priority": false,
+      "metrics": null,
+      "publisher_type": "consumer",
+      "consumer_feedback_read": true,
+      "_first_seen": "2026-11-11",
+      "_last_seen": "2026-11-11",
+      "_last_run": "2026-11-11-001",
+      "_observations": [
+        {
+          "date": "2026-11-11",
+          "run_id": "2026-11-11-001",
+          "sequence": "001",
+          "record_id": "reddit-compression"
+        }
+      ]
+    },
+    {
+      "id": "instagram-stirrup-question",
+      "platform": "Instagram",
+      "kind": "创作者帖下的购买咨询",
+      "title": "复查：踩脚裤加高腰腹的穿着问题仍未见可读回复",
+      "url": "https://www.instagram.com/reel/DfOW7jCiqrY/",
+      "published_label": "视频November 01, 2026；已读咨询3天前",
+      "published_date": "2026-11-01",
+      "experience_date": null,
+      "region": "未确认",
+      "rating": null,
+      "sentiment_category": "neutral",
+      "sentiment": "购买咨询，回复范围受限",
+      "topics": [
+        "踩脚裤",
+        "腰腹覆盖",
+        "旧帖复查"
+      ],
+      "summary": "原咨询仍询问踩脚裤加高腰腹部分的实际穿着感受，本轮可见范围内没有针对问题的回复。",
+      "evidence": "实际重读帖文及1条咨询；页面显示3条评论但只读到1条，加载更多要求登录，不能断言无人回复。商业关系未确认，未分析口播。",
+      "action": "后续复查是否回复，并整理腰腹覆盖与尺码说明。",
+      "priority": false,
+      "metrics": null,
+      "publisher_type": "creator",
+      "consumer_feedback_read": true,
+      "_first_seen": "2026-11-11",
+      "_last_seen": "2026-11-11",
+      "_last_run": "2026-11-11-001",
+      "_observations": [
+        {
+          "date": "2026-11-11",
+          "run_id": "2026-11-11-001",
+          "sequence": "001",
+          "record_id": "instagram-stirrup-question"
+        }
+      ]
+    },
+    {
+      "id": "instagram-powerband-interest",
+      "platform": "Instagram",
+      "kind": "创作者帖下的公开评论汇总",
+      "title": "PowerBand 创作者帖下出现外观认可和购买意向",
+      "url": "https://www.instagram.com/reel/DfixVEHKEPd/",
+      "published_label": "原帖1天前；已读评论10—14小时前（2026-11-11观察）",
+      "published_date": null,
+      "experience_date": null,
+      "region": "未确认",
+      "rating": null,
+      "sentiment_category": "positive",
+      "sentiment": "外观与购买意向，非已购后效果",
+      "topics": [
+        "PowerBand",
+        "外观",
+        "购买意向"
+      ],
+      "summary": "可见评论有人认为裤子好看，有人表示要加入圣诞购物清单，也有人喜欢压缩设计；其中多条只是对创作者的社交赞美，不作为产品反馈。",
+      "evidence": "本轮读帖文及12条可见评论，页面总数26；这是单帖样本汇总卡，不是一个人的评价。帖文有专属折扣码，赠品/付费/佣金细节未确认。未分析视频；关于背部支撑的猜测和创作者体重经历不构成功效依据。",
+      "action": "作为外观和购买意向线索，后续关注真实购买后的尺码及穿着反馈。",
+      "priority": false,
+      "metrics": null,
+      "publisher_type": "creator",
+      "consumer_feedback_read": true,
+      "_first_seen": "2026-11-11",
+      "_last_seen": "2026-11-11",
+      "_last_run": "2026-11-11-001",
+      "_observations": [
+        {
+          "date": "2026-11-11",
+          "run_id": "2026-11-11-001",
+          "sequence": "001",
+          "record_id": "instagram-powerband-interest"
+        }
+      ]
+    },
+    {
+      "id": "tiktok-marissa-reversible",
+      "platform": "TikTok",
+      "kind": "创作者短视频文案",
+      "title": "创作者文案表达对双面穿裤子的喜爱",
+      "url": "https://www.tiktok.com/@marissaj0809/video/7705854561960987917",
+      "published_label": "18 小时前（北京时间2026-11-11观察）",
+      "published_date": null,
+      "experience_date": null,
+      "region": "未确认",
+      "rating": null,
+      "sentiment_category": "positive",
+      "sentiment": "仅文案表达正向偏好",
+      "topics": [
+        "双面穿",
+        "短视频"
+      ],
+      "summary": "Marissa的短文案表达喜欢这条裤子，并提到可双面穿及Fanka标签；没有更多可核实的具体体验细节。",
+      "evidence": "实际读完整短文案和相对时间；未转写或分析完整口播。页面明确显示3赞、0评论、0收藏，点击评论后提示登录后可评论；商业关系未确认，不当作独立自费测评。",
+      "action": "保留有限文案线索，后续有具体使用评价或评论再补充。",
+      "priority": false,
+      "metrics": {
+        "likes": 3,
+        "comments": 0,
+        "saves": 0
+      },
+      "publisher_type": "creator",
+      "consumer_feedback_read": false,
+      "_first_seen": "2026-11-11",
+      "_last_seen": "2026-11-11",
+      "_last_run": "2026-11-11-001",
+      "_observations": [
+        {
+          "date": "2026-11-11",
+          "run_id": "2026-11-11-001",
+          "sequence": "001",
+          "record_id": "tiktok-marissa-reversible"
+        }
+      ]
+    },
+    {
+      "id": "facebook-ultra-discussion",
+      "platform": "Facebook",
+      "kind": "公开社区评论汇总",
+      "title": "公开讨论兼有认可、腰部偏紧反馈及款式咨询",
+      "url": "https://www.facebook.com/groups/chronicvenousinsufficiencycvi/posts/1785822125806352/",
+      "published_label": "原帖2026年11月6日；已读评论2—5天前；历史样本首次收录",
+      "published_date": "2026-11-06",
+      "experience_date": null,
+      "region": "未确认",
+      "rating": null,
+      "sentiment_category": "mixed",
+      "sentiment": "正负反馈和咨询并存",
+      "topics": [
+        "腰部偏紧",
+        "款式比较",
+        "购买咨询"
+      ],
+      "summary": "原帖询问Fanka Ultra体验。已读回复中有人表示喜欢，有人更偏好其他品牌；一位使用ez recovery的用户称大码腰部较紧，但其他方面不错，另有人询问款式差异。",
+      "evidence": "页面明确标记公开小组，游客读取。最相关与由新到旧各读3条、去重共5条，其中1条仅推荐其他品牌，排除于Fanka结论。排序已生效但未加载更多或展开回复；显示21条不是已读数。卡片汇总多位用户，不能将Ultra与ez recovery视作同款，也不推导医疗效果。",
+      "action": "核对具体系列的大码腰围设计及尺码说明，继续观察腰紧反馈是否重复出现。",
+      "priority": false,
+      "metrics": null,
+      "publisher_type": "consumer",
+      "consumer_feedback_read": true,
+      "_first_seen": "2026-11-11",
+      "_last_seen": "2026-11-11",
+      "_last_run": "2026-11-11-001",
+      "_observations": [
+        {
+          "date": "2026-11-11",
+          "run_id": "2026-11-11-001",
+          "sequence": "001",
+          "record_id": "facebook-ultra-discussion"
+        }
+      ]
+    },
+    {
+      "id": "facebook-imagery-trust",
+      "platform": "Facebook",
+      "kind": "消费者公开帖",
+      "title": "历史用户质疑宣传图片真实性并表示不再购买",
+      "url": "https://www.facebook.com/jennifer.losty/posts/as-someone-who-has-purchased-from-fanka-this-is-disgusting-i-knew-they-edited-th/29456791623933671/",
+      "published_label": "原帖2026年11月6日；5天前；历史样本首次收录",
+      "published_date": "2026-11-06",
+      "experience_date": null,
+      "region": "未确认",
+      "rating": null,
+      "sentiment_category": "negative",
+      "sentiment": "对宣传图片真实性不满，指控未独立核实",
+      "topics": [
+        "宣传图片",
+        "品牌信任"
+      ],
+      "summary": "发帖人自称购买过Fanka，质疑宣传图片存在AI生成及人体细节异常，并表示不再购买。此为用户观点，未独立鉴定所附图片及来源。",
+      "evidence": "游客实际读取完整公开正文及页面日期；未读取评论，互动指标不填。搜索摘要提到退款政策，但原文未读到，因此不纳入。保留数字帖子URL；与页面另一pfbid链接为同一帖，不另计一条。",
+      "action": "请内容团队核对该用户所指素材原图、发布渠道与真实性说明，评估是否需要修正素材或澄清。",
+      "priority": true,
+      "metrics": null,
+      "publisher_type": "consumer",
+      "consumer_feedback_read": true,
+      "related_urls": [
+        "https://www.facebook.com/jennifer.losty/posts/pfbid0PDM5tHK3VLEZXKAYU527gJrf7NdX8ro7BEG54LosWUhY8ssPj1nHActdqWTEwESYl"
+      ],
+      "_first_seen": "2026-11-11",
+      "_last_seen": "2026-11-11",
+      "_last_run": "2026-11-11-001",
+      "_observations": [
+        {
+          "date": "2026-11-11",
+          "run_id": "2026-11-11-001",
+          "sequence": "001",
+          "record_id": "facebook-imagery-trust"
+        }
+      ]
+    }
+  ]
+}
