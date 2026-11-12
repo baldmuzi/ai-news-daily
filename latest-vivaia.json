@@ -1,33 +1,33 @@
 {
-  "edition": "0119",
-  "date": "2026年11月11日 09:16",
-  "intro": "实穿评测显示舒适与审美需要同时回应；中年客群营销、社媒购物调查与渠道数据提供新线索，官网案例则把季节用途、价格和优惠条件讲得更清楚。",
+  "edition": "0120",
+  "date": "2026年11月12日 09:13",
+  "intro": "澳洲黑五调查显示低价与送礼节省更受关注，美国鞋价仍在上行；核心款更新、成熟女性内容及官网预热、赠品和退换安排，为活动准备提供参考。",
   "tags": [
-    "实穿反馈",
-    "中年客群",
-    "社媒购物",
-    "渠道组合",
-    "明码优惠"
+    "理性比价",
+    "鞋价上行",
+    "核心款更新",
+    "分区预热",
+    "购后保障"
   ],
   "top3": [
     {
-      "title": "舒适获认可，审美仍影响选择",
-      "comment": "VIVAIA实穿评测肯定支撑与透气，也保留外观意见；内容应帮助顾客判断适配。",
-      "category": "商品与穿搭",
-      "url": "https://nymag.com/strategist/article/my-hunt-for-heels-that-dont-hurt-my-arches.html"
+      "title": "澳洲黑五更重视低价与节省",
+      "comment": "58%计划购物者因低价参与；春夏自用与送礼页面应讲清实付价格和用途。",
+      "category": "消费与购买行为",
+      "url": "https://www.roymorgan.com/findings/10368-arc-roy-morgan-black-friday-cyber-monday-spending-forecasts-2026"
     },
     {
-      "title": "为40岁以上女性组织日常搭配",
-      "comment": "Freemans自报相关系列销售增21%；同龄团队将客群定位落实到天气与搭配。",
-      "category": "社媒与内容营销",
-      "url": "https://www.theindustry.fashion/freemans-sees-own-brand-womenswear-sales-jump-21-following-autumn-campaign/"
+      "title": "围绕熟悉的核心款更新功能",
+      "comment": "Blundstone自报年销量接近400万双；核心靴底更新提供产品延续的参考。",
+      "category": "竞品经营",
+      "url": "https://wwd.com/footwear-news/shoe-industry-news/blundstone-chief-growth-officer-kris-hall-interview-1239411952/"
     },
     {
-      "title": "让顾客看懂优惠已计入售价",
-      "comment": "Nine West澳洲正价鞋减50澳元，商品页直接显示减后价并说明不可叠加。",
+      "title": "黑五预告先写清市场与时区",
+      "comment": "Vionic公布11月13日开售时间；多市场活动可统一预告、提醒与后续商品入口。",
       "category": "竞品当期活动",
-      "url": "https://www.ninewest.com.au/collections/shoes"
+      "url": "https://vionicshoes.com.au/pages/black-friday-sale-updates"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0119.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0120.html"
 }
