@@ -1,33 +1,33 @@
 {
-  "edition": "0115",
-  "date": "2026年11月11日 09:11",
-  "intro": "全球女性运动新报道聚焦训练节奏、包容性与运动零售；Fanka 可用压缩服实穿、跑走交替穿搭和社群故事，回应本期新变化。",
+  "edition": "0116",
+  "date": "2026年11月12日 09:11",
+  "intro": "全球女性运动新动态聚焦运动内衣适配、女性赛场设施与户外慢探索；Fanka 可用压缩服实穿和多场景穿搭内容回应真实需求。",
   "tags": [
-    "跑走交替",
-    "包容性健身",
-    "女性篮球",
-    "运动鞋穿搭",
-    "训练恢复"
+    "运动内衣适配",
+    "女性训练空间",
+    "户外慢探索",
+    "运动零售",
+    "主动恢复"
   ],
   "top3": [
     {
-      "title": "无障碍健身白皮书把器械与服务可达性列为真实需求",
-      "comment": "Fanka 可采访不同活动能力的真实使用者，检视穿脱便利、尺码信息和动作适配；不要替用户假定需求。"
+      "title": "全球健康产业报告显示“身心运动”需求继续扩张",
+      "comment": "用真实动作展示压缩服在瑜伽、普拉提与轻活动中的舒适差异。"
     },
     {
-      "title": "NikeSKIMS 复古跑鞋在首尔线下与线上同步发售",
-      "comment": "Fanka 可做复古运动鞋与压缩裤的真实通勤、轻运动穿搭测试，清楚区分造型与专业跑步适用性。"
+      "title": "双 11 运动品牌清库存，细分户外品类增长与大盘分化",
+      "comment": "用场景与使用频次解释版型选择，避免只靠折扣促购。"
     },
     {
-      "title": "WCBA 新赛季新增两支俱乐部，扩展女子篮球叙事",
-      "comment": "Fanka 可跟进新城市女篮球员与球迷的日常故事，展示球场训练和观赛穿搭的不同需求。"
+      "title": "女子足球训练设施开始细化哺乳、恢复与力量空间",
+      "comment": "采访业余女足球员，呈现训练场的支撑、活动度与更衣需求。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0115.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0116.html",
   "blog": {
-    "title": "Run-Walk Interval Outfits for Women: Support, Layers, and a Comfort Check",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/run-walk-interval-outfits-women-comfort-guide.html",
-    "summary": "由本期跑走交替训练指南延展，整理切换速度时运动内衣、压缩裤、口袋和天气分层的穿着检查。"
+    "title": "What to Wear for Slow Hiking and Wildlife Watching: A Women’s Layering Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/slow-hiking-wildlife-watching-outfits-women.html",
+    "summary": "由本期自然观察型徒步鞋新品延展，整理慢速徒步与野生动物观察时的分层、裤装、口袋和天气检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
