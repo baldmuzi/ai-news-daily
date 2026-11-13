@@ -1,33 +1,33 @@
 {
-  "edition": "0116",
-  "date": "2026年11月12日 09:11",
-  "intro": "全球女性运动新动态聚焦运动内衣适配、女性赛场设施与户外慢探索；Fanka 可用压缩服实穿和多场景穿搭内容回应真实需求。",
+  "edition": "0117",
+  "date": "2026年11月13日 09:09",
+  "intro": "全球女性运动新素材聚焦训练社群、骨骼健康与冬季户外；Fanka 可用压缩服实穿、运动穿搭和参与式内容回应新需求。",
   "tags": [
-    "运动内衣适配",
-    "女性训练空间",
-    "户外慢探索",
+    "训练社群",
+    "骨骼健康",
+    "冬季运动",
     "运动零售",
-    "主动恢复"
+    "穿搭实测"
   ],
   "top3": [
     {
-      "title": "全球健康产业报告显示“身心运动”需求继续扩张",
-      "comment": "用真实动作展示压缩服在瑜伽、普拉提与轻活动中的舒适差异。"
+      "title": "WHOOP 在会员 App 中推出可分享训练数据的社交功能",
+      "comment": "做“我愿意分享的训练瞬间”短视频征集，重点呈现舒适穿着和真实动作；不要求用户公开敏感身体指标。"
     },
     {
-      "title": "双 11 运动品牌清库存，细分户外品类增长与大盘分化",
-      "comment": "用场景与使用频次解释版型选择，避免只靠折扣促购。"
+      "title": "HYROX 官方训练内容进入健身房现有会员 App",
+      "comment": "拍摄“第一次 HYROX 训练课穿什么”实测，分段展示跑动、深蹲和搬运时的支撑、腰头稳定与口袋需求。"
     },
     {
-      "title": "女子足球训练设施开始细化哺乳、恢复与力量空间",
-      "comment": "采访业余女足球员，呈现训练场的支撑、活动度与更衣需求。"
+      "title": "澳大利亚女性运动奖把悬崖跳水与基层体育人物同台呈现",
+      "comment": "做“她们怎样开始这项运动”的人物短片系列，邀请普通女性参与者分享入门场景，而非只呈现领奖瞬间。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0116.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0117.html",
   "blog": {
-    "title": "What to Wear for Slow Hiking and Wildlife Watching: A Women’s Layering Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/slow-hiking-wildlife-watching-outfits-women.html",
-    "summary": "由本期自然观察型徒步鞋新品延展，整理慢速徒步与野生动物观察时的分层、裤装、口袋和天气检查。"
+    "title": "What to Wear to Your First HYROX Training Class: A Women’s Outfit Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/first-hyrox-training-class-outfit-guide-women.html",
+    "summary": "由本期 HYROX 训练内容进入健身房会员 App 延展，整理首次混合训练课的运动内衣、压缩裤、鞋和实穿检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
