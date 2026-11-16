@@ -1,33 +1,33 @@
 {
-  "edition": "0117",
-  "date": "2026年11月13日 09:09",
-  "intro": "全球女性运动新素材聚焦训练社群、骨骼健康与冬季户外；Fanka 可用压缩服实穿、运动穿搭和参与式内容回应新需求。",
+  "edition": "0118",
+  "date": "2026年11月16日 09:11",
+  "intro": "全球女性运动新变化从冬季训练节奏延伸到普拉提社群、运动零售与日常穿搭；Fanka 可用压缩服实穿和真实场景内容回应。",
   "tags": [
-    "训练社群",
-    "骨骼健康",
-    "冬季运动",
-    "运动零售",
-    "穿搭实测"
+    "冬季训练",
+    "普拉提社群",
+    "实穿选码",
+    "恢复体验",
+    "运动零售"
   ],
   "top3": [
     {
-      "title": "WHOOP 在会员 App 中推出可分享训练数据的社交功能",
-      "comment": "做“我愿意分享的训练瞬间”短视频征集，重点呈现舒适穿着和真实动作；不要求用户公开敏感身体指标。"
+      "title": "冬季训练出现“Winter Arc”与“Soft Winter”两种节奏",
+      "comment": "用力量日与温和日实穿对照，展示支撑、裤腰和可脱卸外层。"
     },
     {
-      "title": "HYROX 官方训练内容进入健身房现有会员 App",
-      "comment": "拍摄“第一次 HYROX 训练课穿什么”实测，分段展示跑动、深蹲和搬运时的支撑、腰头稳定与口袋需求。"
+      "title": "普拉提行业展把课程、门店运营与零售放到同一议程",
+      "comment": "拍不同普拉提课的入门穿搭，结合真实动作收集试穿反馈。"
     },
     {
-      "title": "澳大利亚女性运动奖把悬崖跳水与基层体育人物同台呈现",
-      "comment": "做“她们怎样开始这项运动”的人物短片系列，邀请普通女性参与者分享入门场景，而非只呈现领奖瞬间。"
+      "title": "编辑实穿 CSB 提醒：压缩感和尺码体验需要一起讲",
+      "comment": "做同尺码不同体感短片，展示压缩裤活动度和选码过程。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0117.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0118.html",
   "blog": {
-    "title": "What to Wear to Your First HYROX Training Class: A Women’s Outfit Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/first-hyrox-training-class-outfit-guide-women.html",
-    "summary": "由本期 HYROX 训练内容进入健身房会员 App 延展，整理首次混合训练课的运动内衣、压缩裤、鞋和实穿检查。"
+    "title": "Winter Strength or Gentle Pilates? A Women’s Activewear Guide for Both",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/winter-strength-pilates-activewear-guide-women.html",
+    "summary": "由本期 Winter Arc 与 Soft Winter 训练节奏报道延展，比较力量日和普拉提日的运动内衣、压缩裤与冬季分层选择。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
