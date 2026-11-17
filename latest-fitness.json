@@ -1,33 +1,33 @@
 {
-  "edition": "0118",
-  "date": "2026年11月16日 09:11",
-  "intro": "全球女性运动新变化从冬季训练节奏延伸到普拉提社群、运动零售与日常穿搭；Fanka 可用压缩服实穿和真实场景内容回应。",
+  "edition": "0119",
+  "date": "2026年11月17日 09:11",
+  "intro": "全球女性运动新变化覆盖分场景训练服饰、会员体验与滑雪前准备；Fanka 可用压缩服实穿、课程清单和真实穿搭回应。",
   "tags": [
-    "冬季训练",
-    "普拉提社群",
-    "实穿选码",
-    "恢复体验",
-    "运动零售"
+    "训练分场景",
+    "会员多体验",
+    "社媒实拍",
+    "女性力量",
+    "滑雪准备"
   ],
   "top3": [
     {
-      "title": "冬季训练出现“Winter Arc”与“Soft Winter”两种节奏",
-      "comment": "用力量日与温和日实穿对照，展示支撑、裤腰和可脱卸外层。"
+      "title": "Nike 将训练服饰按力量、混合与工作室场景细分",
+      "comment": "按力量、混合与工作室场景拍实穿，核对压缩、支撑和活动度。"
     },
     {
-      "title": "普拉提行业展把课程、门店运营与零售放到同一议程",
-      "comment": "拍不同普拉提课的入门穿搭，结合真实动作收集试穿反馈。"
+      "title": "Wellhub 增加同日第二次线下体验的付费入口",
+      "comment": "做同日两项运动的穿搭记录，验证一套服饰跨课程是否舒适。"
     },
     {
-      "title": "编辑实穿 CSB 提醒：压缩感和尺码体验需要一起讲",
-      "comment": "做同尺码不同体感短片，展示压缩裤活动度和选码过程。"
+      "title": "健身短视频样本中“先给结果再讲过程”成为可测试的开场格式",
+      "comment": "用真实动作前后的服饰状态开场，说明尺码与动作，避免身材夸张承诺。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0118.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0119.html",
   "blog": {
-    "title": "Winter Strength or Gentle Pilates? A Women’s Activewear Guide for Both",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/winter-strength-pilates-activewear-guide-women.html",
-    "summary": "由本期 Winter Arc 与 Soft Winter 训练节奏报道延展，比较力量日和普拉提日的运动内衣、压缩裤与冬季分层选择。"
+    "title": "What to Wear for Ski Conditioning Workouts: A Women’s Activewear Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/ski-conditioning-workout-outfits-for-women.html",
+    "summary": "由本期女性滑雪假期前训练指南延展，整理雪前力量、平衡和有氧练习的运动内衣、压缩裤与分层穿着检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
