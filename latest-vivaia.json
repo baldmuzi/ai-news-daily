@@ -1,33 +1,33 @@
 {
-  "edition": "0122",
-  "date": "2026年11月16日 09:13",
-  "intro": "Quince 以精选采购扩展品类，Asics 休闲业务增长快于跑鞋；节日短剧、澳洲品质型送礼需求及黑五活动切换，为选品和页面运营提供新参考。",
+  "edition": "0123",
+  "date": "2026年11月17日 09:15",
+  "intro": "渠道专属商品、跨境结算总价与整套穿搭导购提供新经营参考；澳洲黑五和夏季礼物专题提醒运营同步核对优惠范围、款色价格与退换承诺。",
   "tags": [
-    "精选采购",
-    "休闲增长",
-    "品质礼物",
-    "节日短剧",
-    "黑五换档"
+    "渠道专属",
+    "结算总价",
+    "整套导购",
+    "组合优惠",
+    "夏季送礼"
   ],
   "top3": [
     {
-      "title": "Quince 用少量成熟款扩充配套商品",
-      "comment": "新访谈披露直接采购与补单情况，可参考其控制选品范围的方式。",
+      "title": "专属商品为渠道提供选购理由",
+      "comment": "JD 强调专属配色与差异选品，减少同款只比价格的竞争。",
       "category": "价格与渠道",
-      "url": "https://www.modernretail.co/operations/why-quince-is-bringing-on-more-third-party-brands/"
+      "url": "https://wwd.com/footwear-news/shoe-features/jd-sports-ceo-nike-investor-day-predictions-interview-1239419819/"
     },
     {
-      "title": "Asics 休闲业务增速高于专业跑鞋",
-      "comment": "前九月 SportStyle 增长70%，比较竞品时需按穿着用途拆分。",
-      "category": "竞品经营",
-      "url": "https://wwd.com/footwear-news/shoe-industry-news/asics-q3-results-operating-guidance-fell-shares-declined-1239411387/"
+      "title": "恢复跨境配送还需解释实付总价",
+      "comment": "Fairechild 重开美国配送，预先展示进口费用，顾客仍面临总价门槛。",
+      "category": "价格与渠道",
+      "url": "https://www.modernretail.co/operations/diversify-your-markets-learnings-from-a-canadian-brand-rebuilding-its-us-business/"
     },
     {
-      "title": "Nine West 澳洲从减50元转为六折",
-      "comment": "正价鞋与配件已换黑五优惠，页面明确展示价已包含折扣。",
+      "title": "第二双优惠要说明谁参与、哪双打折",
+      "comment": "ECCO 澳洲按较低价一双减40%，明确排除系列与会员券限制。",
       "category": "竞品当期活动",
-      "url": "https://www.ninewest.com.au/collections/shoes-accessories"
+      "url": "https://au.ecco.com/"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0122.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0123.html"
 }
