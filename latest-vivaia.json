@@ -1,33 +1,33 @@
 {
-  "edition": "0123",
-  "date": "2026年11月17日 09:15",
-  "intro": "渠道专属商品、跨境结算总价与整套穿搭导购提供新经营参考；澳洲黑五和夏季礼物专题提醒运营同步核对优惠范围、款色价格与退换承诺。",
+  "edition": "0124",
+  "date": "2026年11月18日 09:14",
+  "intro": "创作者收藏清单、美国零售分化与经典鞋款供给调整带来新参考；黑五官网案例重点看价格说明、每日优惠节奏及节日退换条件。",
   "tags": [
-    "渠道专属",
-    "结算总价",
-    "整套导购",
-    "组合优惠",
-    "夏季送礼"
+    "礼物收藏",
+    "渠道分化",
+    "商品集中度",
+    "每日优惠",
+    "节日退换"
   ],
   "top3": [
     {
-      "title": "专属商品为渠道提供选购理由",
-      "comment": "JD 强调专属配色与差异选品，减少同款只比价格的竞争。",
-      "category": "价格与渠道",
-      "url": "https://wwd.com/footwear-news/shoe-features/jd-sports-ceo-nike-investor-day-predictions-interview-1239419819/"
+      "title": "创作者推荐成为可收藏的礼物清单",
+      "comment": "77%美国受访者会收藏礼物灵感，内容应方便回看并找到对应商品。",
+      "category": "社媒与内容营销",
+      "url": "https://news.syr.edu/2026/11/16/save-trust-buy-creators-drive-holiday-gift-ideas-for-77-of-u-s-adults/"
     },
     {
-      "title": "恢复跨境配送还需解释实付总价",
-      "comment": "Fairechild 重开美国配送，预先展示进口费用，顾客仍面临总价门槛。",
-      "category": "价格与渠道",
-      "url": "https://www.modernretail.co/operations/diversify-your-markets-learnings-from-a-canadian-brand-rebuilding-its-us-business/"
+      "title": "Nike 为经典系列收缩给出新预期",
+      "comment": "四大系列收入预计较峰值减少70亿美元，提醒品牌关注畅销款依赖。",
+      "category": "竞品经营",
+      "url": "https://wwd.com/footwear-news/shoe-industry-news/jordan-brand-recovery-explained-nike-investor-day-1239421897/"
     },
     {
-      "title": "第二双优惠要说明谁参与、哪双打折",
-      "comment": "ECCO 澳洲按较低价一双减40%，明确排除系列与会员券限制。",
+      "title": "Dolce Vita 每日优惠显示下一轮倒计时",
+      "comment": "每日更新参与款，商品明示折扣已计入，适合参考多阶段促销信息同步。",
       "category": "竞品当期活动",
-      "url": "https://au.ecco.com/"
+      "url": "https://www.dolcevita.com/collections/cyber-week-preview"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0123.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0124.html"
 }
