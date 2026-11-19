@@ -1,33 +1,33 @@
 {
-  "edition": "0120",
-  "date": "2026年11月18日 09:13",
-  "intro": "全球女性运动新素材延伸到线下课程、健康教育与户外零售；Fanka 可用压缩服实穿、运动穿搭和真实社群内容回应。",
+  "edition": "0121",
+  "date": "2026年11月19日 09:09",
+  "intro": "全球女性运动的新素材覆盖社群屏幕、熟龄健康、户外服饰与赛场力量；Fanka 可用压缩服实穿、训练穿搭和真实参与故事回应。",
   "tags": [
-    "线下课程",
-    "女性健康",
-    "社媒动作",
-    "户外社群",
-    "压缩实穿"
+    "女性力量",
+    "会员社群",
+    "运动零售",
+    "功能穿搭",
+    "社媒观察"
   ],
   "top3": [
     {
-      "title": "Yelp 搜索样本显示 Lagree 与线下活动受到更多关注",
-      "comment": "以首节 Lagree 课实穿记录回应搜索兴趣，核对支撑与活动度。"
+      "title": "复旦观察：运动户外增量偏向专业细分与通勤穿搭",
+      "comment": "用“一件运动底层从训练到通勤”的实穿清单展示压缩裤、分层外套与换装方式，并区分功能与造型。"
     },
     {
-      "title": "健身视频样本出现错误动作后纠正的短视频开场",
-      "comment": "与教练拍动作前后对照，同时展示运动服饰的真实贴合状态。"
+      "title": "Myzone 把个人进步和社群目标放到健身房屏幕上",
+      "comment": "Fanka 可与工作室试做“本周完成第一次力量课”等成员故事墙，征得同意后呈现努力过程，不只展示身材结果。"
     },
     {
-      "title": "女性生育健康教育平台以免费课程回应知识缺口",
-      "comment": "用专家访谈讨论女性不同人生阶段的运动体验，守住医疗边界。"
+      "title": "Salomon 将中国本地服饰与门店体验写进增长叙事",
+      "comment": "把地域天气、训练路线与女性真实穿着问题放进产品内容，测试本地化场景表达。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0120.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0121.html",
   "blog": {
-    "title": "What to Wear to Your First Lagree Class: A Women’s Outfit Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/what-to-wear-first-lagree-class-women.html",
-    "summary": "由本期 Yelp 的 Lagree 线下课程搜索观察延展，整理首节 Lagree 课的运动内衣、压缩裤、防滑袜与器械动作穿着检查。"
+    "title": "What to Wear to Your First Women’s Weightlifting Meet: An Outfit Checklist",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/first-womens-weightlifting-meet-outfit-guide.html",
+    "summary": "由本期女子举重赛事报道延展，整理首次走近举重台时训练服、运动内衣、鞋与装备规则的实用检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
