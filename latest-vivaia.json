@@ -1,33 +1,33 @@
 {
-  "edition": "0125",
-  "date": "2026年11月19日 09:13",
-  "intro": "直播选款、促销毛利与试用服务带来运营参考；黑五官网已出现会员提前购换档，节日专题则把装饰元素与穿着细节串联起来。",
+  "edition": "0126",
+  "date": "2026年11月20日 10:09",
+  "intro": "促销意向、线上渠道与同款复购呈现不同购买需求；竞品用延后赠券、鞋包专题和跨渠道折扣组织节日选购，可据此检查价格说明与老客购买路径。",
   "tags": [
-    "直播库存",
-    "促销毛利",
-    "试用服务",
-    "会员换档",
-    "节日装饰"
+    "促销选择",
+    "渠道分化",
+    "同款复购",
+    "消费赠券",
+    "系列搭配"
   ],
   "top3": [
     {
-      "title": "ThredUp 直播先隔离库存，再即时选款",
-      "comment": "每周10场仓库直播，按需求展示商品；库存与尺码信息需跟上现场答疑。",
-      "category": "社媒与内容营销",
-      "url": "https://www.modernretail.co/operations/thredup-launches-tiktok-shop-livestreams-as-part-of-its-social-commerce-push/"
+      "title": "六成受访购物者愿因优惠换品牌",
+      "comment": "ICSC调查显示价格会影响品牌选择，应检查主推款优惠能否被清楚理解。",
+      "category": "消费与购买行为",
+      "url": "https://www.icsc.com/news-and-views/icsc-exchange/thanksgiving-weekend-2026-spending-expected-to-reach-124-billion-as-shoppers-embrace-ai-and-seek-out-deals"
     },
     {
-      "title": "TJX 销售改善，仍需看清实际毛利",
-      "comment": "美国主力业务同店增2%，剔除关税退款后毛利率下降，促销复盘应同时看成本。",
+      "title": "JD 线上增长与门店客流下降并存",
+      "comment": "第三季度线上销售增0.8%，渠道表现分化，复盘需拆开访问、转化与销售。",
       "category": "价格与渠道",
-      "url": "https://www.retaildive.com/news/traffic-recovery-tj-maxx-marshalls-boost-tjx-q3/875025/"
+      "url": "https://www.jdplc.com/q3-2026-27-trading-statement/"
     },
     {
-      "title": "ECCO 分清会员期与公开开售时间",
-      "comment": "澳洲改为会员七五折提前购，20日晚开放普通网购，页面与优惠码须同步换档。",
+      "title": "Vessi 把消费赠券安排到下月使用",
+      "comment": "按本单金额赠券，下次须满80美元；应分清即时折扣和后续购买权益。",
       "category": "竞品当期活动",
-      "url": "https://au.ecco.com/black-friday"
+      "url": "https://vessi.com/collections/pre-black-friday-sale"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0125.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0126.html"
 }
