@@ -1,33 +1,33 @@
 {
-  "edition": "0122",
-  "date": "2026年11月20日 10:03",
-  "intro": "全球女性运动新素材落在熟龄健康、线下社群、创作者工具与运动零售；Fanka 可把压缩服实穿、热垫上普拉提穿搭和真实参与故事做成内容。",
+  "edition": "0123",
+  "date": "2026年11月23日 09:09",
+  "intro": "全球女性运动新变化落在节日运动穿搭、线下恢复服务与健身内容形式；Fanka 可用压缩服实穿、女性力量故事和场景搭配回应。",
   "tags": [
-    "女性健康",
-    "运动社群",
-    "热练穿搭",
-    "创作者工具",
-    "零售观察"
+    "节日运动穿搭",
+    "女性力量",
+    "恢复服务",
+    "健身游戏",
+    "社媒内容"
   ],
   "top3": [
     {
-      "title": "Therabody 收购温控穿戴技术，聚焦女性更年期体验",
-      "comment": "围绕不同人生阶段的运动舒适度做内容；压缩服只谈穿着体验，不承诺医疗效果。"
+      "title": "Fabletics 节日系列把训练服延伸到聚会穿搭",
+      "comment": "拍训练后赴约的真实换装，说明压缩裤与外搭如何兼顾动作和场合。"
     },
     {
-      "title": "YMCA 调查把可到达的运动社交空间列为社区需求",
-      "comment": "与工作室共做低门槛体验课，记录第一次到场的真实问题和社群连接。"
+      "title": "健身短视频样本出现肌肉示意图叠加形式",
+      "comment": "测试“肌肉示意图＋真实穿着”短视频，先核对动作解说，再比较内容表现。"
     },
     {
-      "title": "F1 Academy 明年将通过 Apple TV 覆盖美国观众",
-      "comment": "讲女性车手的训练和赛场准备，让更多女性运动故事被看见。"
+      "title": "World Gym 财报称普拉提与 HYROX 课程进入会员增长组合",
+      "comment": "用一套穿搭完成普拉提与功能训练，实测支撑、稳定和换装需求。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0122.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0123.html",
   "blog": {
-    "title": "What to Wear to Heated Mat Pilates: A Women’s Outfit Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/heated-mat-pilates-outfit-guide-women.html",
-    "summary": "由本期热垫上普拉提工作室扩张报道延展，提供女性课程穿搭与热环境准备清单。"
+    "title": "What to Wear from a Workout to Holiday Plans: A Women’s Activewear Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/workout-to-holiday-plans-activewear-outfits-women.html",
+    "summary": "由本期 Fabletics 节日运动服跨场景穿搭内容延展，提供训练后赴约的实用换装指南。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
