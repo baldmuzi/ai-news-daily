@@ -1,33 +1,33 @@
 {
-  "edition": "0126",
-  "date": "2026年11月20日 10:09",
-  "intro": "促销意向、线上渠道与同款复购呈现不同购买需求；竞品用延后赠券、鞋包专题和跨渠道折扣组织节日选购，可据此检查价格说明与老客购买路径。",
+  "edition": "0127",
+  "date": "2026年11月23日 09:11",
+  "intro": "新报道呈现精简选品、用途导购与现场试穿的不同做法；黑五活动则把第二双优惠、自动折扣和节日退换分别讲清，可据此检查商品选择与购买条件。",
   "tags": [
-    "促销选择",
-    "渠道分化",
-    "同款复购",
-    "消费赠券",
-    "系列搭配"
+    "选购清单",
+    "精简选品",
+    "用途导购",
+    "第二双优惠",
+    "节日退换"
   ],
   "top3": [
     {
-      "title": "六成受访购物者愿因优惠换品牌",
-      "comment": "ICSC调查显示价格会影响品牌选择，应检查主推款优惠能否被清楚理解。",
+      "title": "澳洲近半黑五参与者尚无清单",
+      "comment": "Canstar调查显示不少人尚未选定商品，可用场景与预算帮助缩小范围。",
       "category": "消费与购买行为",
-      "url": "https://www.icsc.com/news-and-views/icsc-exchange/thanksgiving-weekend-2026-spending-expected-to-reach-124-billion-as-shoppers-embrace-ai-and-seek-out-deals"
+      "url": "https://www.canstar.com.au/news/impulse-intent-half-aussies-heading-black-friday-sales-no-plan/"
     },
     {
-      "title": "JD 线上增长与门店客流下降并存",
-      "comment": "第三季度线上销售增0.8%，渠道表现分化，复盘需拆开访问、转化与销售。",
+      "title": "On 把用途与性能放进门店导购",
+      "comment": "门店按穿着场景标注鞋款，并展示性能等级，帮助顾客比较系列差异。",
       "category": "价格与渠道",
-      "url": "https://www.jdplc.com/q3-2026-27-trading-statement/"
+      "url": "https://www.modernretail.co/operations/on-is-making-a-bigger-play-for-american-shoppers-one-store-at-a-time/"
     },
     {
-      "title": "Vessi 把消费赠券安排到下月使用",
-      "comment": "按本单金额赠券，下次须满80美元；应分清即时折扣和后续购买权益。",
+      "title": "Vessi 第二双减25美元附退换限制",
+      "comment": "商品页直接展示组合价格，额外折扣商品为Final Sale，条件需就近说明。",
       "category": "竞品当期活动",
-      "url": "https://vessi.com/collections/pre-black-friday-sale"
+      "url": "https://vessi.com/collections/black-friday-sale"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0126.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0127.html"
 }
