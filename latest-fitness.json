@@ -1,33 +1,33 @@
 {
-  "edition": "0123",
-  "date": "2026年11月23日 09:09",
-  "intro": "全球女性运动新变化落在节日运动穿搭、线下恢复服务与健身内容形式；Fanka 可用压缩服实穿、女性力量故事和场景搭配回应。",
+  "edition": "0124",
+  "date": "2026年11月24日 09:16",
+  "intro": "全球女性运动新素材聚焦 sculpt 课程命名、熟龄力量表达与户外体验；Fanka 可用压缩服实穿、课程穿搭和真实运动场景做内容。",
   "tags": [
-    "节日运动穿搭",
-    "女性力量",
-    "恢复服务",
-    "健身游戏",
-    "社媒内容"
+    "Sculpt课程",
+    "熟龄力量",
+    "户外运动",
+    "压缩服实穿",
+    "运动零售"
   ],
   "top3": [
     {
-      "title": "Fabletics 节日系列把训练服延伸到聚会穿搭",
-      "comment": "拍训练后赴约的真实换装，说明压缩裤与外搭如何兼顾动作和场合。"
+      "title": "Sculpt 课程越常见，训练内容定义却仍模糊",
+      "comment": "Fanka 可做“sculpt 课到底练什么”图解，分别测试垫上、站姿和力量动作的运动内衣支撑与压缩裤覆盖，不"
     },
     {
-      "title": "健身短视频样本出现肌肉示意图叠加形式",
-      "comment": "测试“肌肉示意图＋真实穿着”短视频，先核对动作解说，再比较内容表现。"
+      "title": "Club Pilates 更新工作室设计与零售区域",
+      "comment": "Fanka 可围绕进店、上课、课后补给的完整动线拍摄穿搭内容，让产品使用场景与课程体验衔接。"
     },
     {
-      "title": "World Gym 财报称普拉提与 HYROX 课程进入会员增长组合",
-      "comment": "用一套穿搭完成普拉提与功能训练，实测支撑、稳定和换装需求。"
+      "title": "O’Neill 品牌资产被收购，户外内容与体验成扩展方向",
+      "comment": "Fanka 可梳理女性户外活动的动作和气候需求，做压缩服与保暖外层的分层实测，避免直接套用冲浪服卖点。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0123.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0124.html",
   "blog": {
-    "title": "What to Wear from a Workout to Holiday Plans: A Women’s Activewear Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/workout-to-holiday-plans-activewear-outfits-women.html",
-    "summary": "由本期 Fabletics 节日运动服跨场景穿搭内容延展，提供训练后赴约的实用换装指南。"
+    "title": "What to Wear to a Sculpt Class: A Women’s Activewear Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/what-to-wear-sculpt-class-women.html",
+    "summary": "由本期 sculpt 课程定义讨论延展，整理垫上、杠铃与混合课程的运动内衣、压缩裤和动作检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
