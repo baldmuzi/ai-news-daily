@@ -1,33 +1,33 @@
 {
-  "edition": "0127",
-  "date": "2026年11月23日 09:11",
-  "intro": "新报道呈现精简选品、用途导购与现场试穿的不同做法；黑五活动则把第二双优惠、自动折扣和节日退换分别讲清，可据此检查商品选择与购买条件。",
+  "edition": "0128",
+  "date": "2026年11月24日 09:15",
+  "intro": "AI参与礼物选购，价格比较仍需清晰依据。门店试穿与食品色名带来新的运营参考；黑五官网案例聚焦分档优惠、预售提醒和节日退货条件。",
   "tags": [
-    "选购清单",
-    "精简选品",
-    "用途导购",
-    "第二双优惠",
-    "节日退换"
+    "AI选购",
+    "价格基准",
+    "门店试穿",
+    "色彩命名",
+    "节日售后"
   ],
   "top3": [
     {
-      "title": "澳洲近半黑五参与者尚无清单",
-      "comment": "Canstar调查显示不少人尚未选定商品，可用场景与预算帮助缩小范围。",
+      "title": "AI先参与选购，付款仍由顾客确认",
+      "comment": "NRF分析显示，仅6%的节日购物AI使用者让其完成购买，商品信息仍是基础。",
       "category": "消费与购买行为",
-      "url": "https://www.canstar.com.au/news/impulse-intent-half-aussies-heading-black-friday-sales-no-plan/"
+      "url": "https://nrf.com/blog/half-of-holiday-shoppers-plan-to-use-ai-this-season"
     },
     {
-      "title": "On 把用途与性能放进门店导购",
-      "comment": "门店按穿着场景标注鞋款，并展示性能等级，帮助顾客比较系列差异。",
+      "title": "黑五降价需要明确比较基准",
+      "comment": "英国追踪发现部分优惠此前更低；核对同款价格记录，避免夸大最低价。",
       "category": "价格与渠道",
-      "url": "https://www.modernretail.co/operations/on-is-making-a-bigger-play-for-american-shoppers-one-store-at-a-time/"
+      "url": "https://www.retailgazette.co.uk/blog/2026/11/black-friday-price-check-finds-2300-deals-were-cheaper-before-the-sales/"
     },
     {
-      "title": "Vessi 第二双减25美元附退换限制",
-      "comment": "商品页直接展示组合价格，额外折扣商品为Final Sale，条件需就近说明。",
+      "title": "节日延退同时写清费用与渠道",
+      "comment": "Cole Haan明确申请截止与每单邮寄费，支付方式也会影响门店退货资格。",
       "category": "竞品当期活动",
-      "url": "https://vessi.com/collections/black-friday-sale"
+      "url": "https://www.colehaan.com/collections/holiday-gift-guide"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0127.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0128.html"
 }
