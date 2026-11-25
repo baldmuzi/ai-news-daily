@@ -1,33 +1,33 @@
 {
-  "edition": "0128",
-  "date": "2026年11月24日 09:15",
-  "intro": "AI参与礼物选购，价格比较仍需清晰依据。门店试穿与食品色名带来新的运营参考；黑五官网案例聚焦分档优惠、预售提醒和节日退货条件。",
+  "edition": "0129",
+  "date": "2026年11月25日 09:49",
+  "intro": "澳洲大促参与意向上升，服饰鞋履计划购买比例却下降。门店改造、商品陈列与社媒引流的新材料，提示运营同时关注价格认知、选购效率和节日服务。",
   "tags": [
-    "AI选购",
-    "价格基准",
-    "门店试穿",
-    "色彩命名",
-    "节日售后"
+    "品类预算",
+    "价格认知",
+    "陈列排序",
+    "社媒引流",
+    "送礼服务"
   ],
   "top3": [
     {
-      "title": "AI先参与选购，付款仍由顾客确认",
-      "comment": "NRF分析显示，仅6%的节日购物AI使用者让其完成购买，商品信息仍是基础。",
+      "title": "澳洲大促参与增多，服饰鞋履预算仍需谨慎判断",
+      "comment": "计划买服饰鞋履的大促购物者比例降11个百分点，活动访问量不等于品类需求。",
       "category": "消费与购买行为",
-      "url": "https://nrf.com/blog/half-of-holiday-shoppers-plan-to-use-ai-this-season"
+      "url": "https://lens.monash.edu/consumers-seeking-black-friday-bang-for-buck-amidst-cost-of-living-pressures/"
     },
     {
-      "title": "黑五降价需要明确比较基准",
-      "comment": "英国追踪发现部分优惠此前更低；核对同款价格记录，避免夸大最低价。",
-      "category": "价格与渠道",
-      "url": "https://www.retailgazette.co.uk/blog/2026/11/black-friday-price-check-finds-2300-deals-were-cheaper-before-the-sales/"
+      "title": "Shoe Station撤回改店计划，重新匹配原有客群",
+      "comment": "多数改店拟恢复原招牌，提示高价系列扩张前先确认老客接受度。",
+      "category": "竞品经营",
+      "url": "https://wwd.com/footwear-news/shoe-industry-news/shoe-station-group-stops-store-conversions-q3-2026-1239465231/"
     },
     {
-      "title": "节日延退同时写清费用与渠道",
-      "comment": "Cole Haan明确申请截止与每单邮寄费，支付方式也会影响门店退货资格。",
+      "title": "Manolo Blahnik把包装与售后接入节日选购",
+      "comment": "礼物专题同时说明包装和正价订单延长退货，帮助顾客判断是否适合送礼。",
       "category": "竞品当期活动",
-      "url": "https://www.colehaan.com/collections/holiday-gift-guide"
+      "url": "https://www.manoloblahnik.com/us/the-latest/post/manolos-gift-guide-2026"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0128.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0129.html"
 }
