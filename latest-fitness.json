@@ -1,33 +1,33 @@
 {
-  "edition": "0124",
-  "date": "2026年11月24日 09:16",
-  "intro": "全球女性运动新素材聚焦 sculpt 课程命名、熟龄力量表达与户外体验；Fanka 可用压缩服实穿、课程穿搭和真实运动场景做内容。",
+  "edition": "0125",
+  "date": "2026年11月25日 09:45",
+  "intro": "全球女性运动新变化涉及入门体能赛、健康数据与跨场景运动零售；Fanka 可用压缩服实穿、支撑测试和真实参与故事制作内容。",
   "tags": [
-    "Sculpt课程",
-    "熟龄力量",
-    "户外运动",
-    "压缩服实穿",
-    "运动零售"
+    "女性体能赛",
+    "健康数据",
+    "运动零售",
+    "产后运动",
+    "社群体验"
   ],
   "top3": [
     {
-      "title": "Sculpt 课程越常见，训练内容定义却仍模糊",
-      "comment": "Fanka 可做“sculpt 课到底练什么”图解，分别测试垫上、站姿和力量动作的运动内衣支撑与压缩裤覆盖，不"
+      "title": "腰夹式健康设备让女性参与决定数据用途",
+      "comment": "Fanka 可拍“穿着与设备如何共存”的访谈和动作测试，询问腰头、口袋与佩戴舒适度，不承诺设备或服饰的健康效果"
     },
     {
-      "title": "Club Pilates 更新工作室设计与零售区域",
-      "comment": "Fanka 可围绕进店、上课、课后补给的完整动线拍摄穿搭内容，让产品使用场景与课程体验衔接。"
+      "title": "DEKA Atlanta 首次参赛者与女性占比过半",
+      "comment": "Fanka 可邀请首次参赛女性记录准备过程，拍多站动作中的运动内衣支撑、压缩裤腰头和鞋履检查。"
     },
     {
-      "title": "O’Neill 品牌资产被收购，户外内容与体验成扩展方向",
-      "comment": "Fanka 可梳理女性户外活动的动作和气候需求，做压缩服与保暖外层的分层实测，避免直接套用冲浪服卖点。"
+      "title": "Free People 集团与服装租赁业务带动零售讨论",
+      "comment": "Fanka 可研究消费者在购买和租赁间的场景需求，做耐穿、复穿与多场景搭配内容，避免由一家集团财报推断整体市场"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0124.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0125.html",
   "blog": {
-    "title": "What to Wear to a Sculpt Class: A Women’s Activewear Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/what-to-wear-sculpt-class-women.html",
-    "summary": "由本期 sculpt 课程定义讨论延展，整理垫上、杠铃与混合课程的运动内衣、压缩裤和动作检查。"
+    "title": "What to Wear to Your First DEKA Fitness Race: A Women’s Outfit Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/first-deka-fitness-race-outfit-guide-women.html",
+    "summary": "由本期 DEKA Atlanta 女选手与新手参与数据延展，整理首场混合体能赛的运动内衣、压缩裤、鞋和赛前穿着检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
