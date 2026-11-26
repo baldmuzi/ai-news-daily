@@ -1,33 +1,33 @@
 {
-  "edition": "0125",
-  "date": "2026年11月25日 09:45",
-  "intro": "全球女性运动新变化涉及入门体能赛、健康数据与跨场景运动零售；Fanka 可用压缩服实穿、支撑测试和真实参与故事制作内容。",
+  "edition": "0126",
+  "date": "2026年11月26日 09:12",
+  "intro": "全球女性运动新素材聚焦服饰面料、轻量会员挑战与多场景训练；Fanka 可用压缩服实穿、穿搭测试和真实参与故事制作内容。",
   "tags": [
-    "女性体能赛",
-    "健康数据",
+    "面料选择",
+    "会员挑战",
+    "女性力量",
     "运动零售",
-    "产后运动",
-    "社群体验"
+    "社媒教学"
   ],
   "top3": [
     {
-      "title": "腰夹式健康设备让女性参与决定数据用途",
-      "comment": "Fanka 可拍“穿着与设备如何共存”的访谈和动作测试，询问腰头、口袋与佩戴舒适度，不承诺设备或服饰的健康效果"
+      "title": "Gymshark 披露美国商场门店扩张计划",
+      "comment": "Fanka 可研究门店试穿、训练活动与线上内容如何衔接，用可复用的穿搭测试视频服务线下体验。"
     },
     {
-      "title": "DEKA Atlanta 首次参赛者与女性占比过半",
-      "comment": "Fanka 可邀请首次参赛女性记录准备过程，拍多站动作中的运动内衣支撑、压缩裤腰头和鞋履检查。"
+      "title": "女性美利奴羊毛运动内搭品牌获年度品牌认可",
+      "comment": "Fanka 可做“面料、场景、洗护”实穿问答，用可展示的材料与版型信息说明自家压缩服，不借奖项推断消费者偏好。"
     },
     {
-      "title": "Free People 集团与服装租赁业务带动零售讨论",
-      "comment": "Fanka 可研究消费者在购买和租赁间的场景需求，做耐穿、复穿与多场景搭配内容，避免由一家集团财报推断整体市场"
+      "title": "Life Time 推出假期 20 天会员训练计划",
+      "comment": "Fanka 可做不以体重为中心的“假期 20 天可选动作”内容，展示运动内衣与压缩裤在不同强度下的穿着检查。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0125.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0126.html",
   "blog": {
-    "title": "What to Wear to Your First DEKA Fitness Race: A Women’s Outfit Guide",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/first-deka-fitness-race-outfit-guide-women.html",
-    "summary": "由本期 DEKA Atlanta 女选手与新手参与数据延展，整理首场混合体能赛的运动内衣、压缩裤、鞋和赛前穿着检查。"
+    "title": "Merino vs. Synthetic Workout Leggings: A Practical Fabric Guide for Women",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/merino-vs-synthetic-workout-leggings-fabric-guide-women.html",
+    "summary": "由本期女性美利奴羊毛运动内搭品牌报道延展，比较面料触感、穿着场景、护理与压缩裤实穿检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
