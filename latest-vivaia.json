@@ -1,33 +1,33 @@
 {
-  "edition": "0129",
-  "date": "2026年11月25日 09:49",
-  "intro": "澳洲大促参与意向上升，服饰鞋履计划购买比例却下降。门店改造、商品陈列与社媒引流的新材料，提示运营同时关注价格认知、选购效率和节日服务。",
+  "edition": "0130",
+  "date": "2026年11月26日 09:20",
+  "intro": "本期关注配送与评价监管、社媒内容如何连接官网选购，以及旺季运输成本。官网案例展示当日特惠和固定价格专区，可参考其商品组织与优惠说明。",
   "tags": [
-    "品类预算",
-    "价格认知",
-    "陈列排序",
-    "社媒引流",
-    "送礼服务"
+    "购买保障",
+    "社媒导购",
+    "欧洲消费",
+    "运输成本",
+    "黑五特价"
   ],
   "top3": [
     {
-      "title": "澳洲大促参与增多，服饰鞋履预算仍需谨慎判断",
-      "comment": "计划买服饰鞋履的大促购物者比例降11个百分点，活动访问量不等于品类需求。",
-      "category": "消费与购买行为",
-      "url": "https://lens.monash.edu/consumers-seeking-black-friday-bang-for-buck-amidst-cost-of-living-pressures/"
+      "title": "配送承诺与评价规则进入执法重点",
+      "comment": "SHEIN拟议和解涉及配送、评价与客服，促销前需检查售后路径。",
+      "category": "政策与落地",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/11/shein-pay-100-million-over-allegations-deceptive-unfair-practices"
     },
     {
-      "title": "Shoe Station撤回改店计划，重新匹配原有客群",
-      "comment": "多数改店拟恢复原招牌，提示高价系列扩张前先确认老客接受度。",
-      "category": "竞品经营",
-      "url": "https://wwd.com/footwear-news/shoe-industry-news/shoe-station-group-stops-store-conversions-q3-2026-1239465231/"
+      "title": "直播解释商品，官网完成选购",
+      "comment": "Ring Concierge让直播连接官网详细信息，鞋履内容也需接上选码与试穿说明。",
+      "category": "社媒与内容营销",
+      "url": "https://www.glossy.co/fashion/how-ring-concierge-is-using-the-loose-diamond-social-media-trend-to-funnel-buyers-to-its-own-channels/"
     },
     {
-      "title": "Manolo Blahnik把包装与售后接入节日选购",
-      "comment": "礼物专题同时说明包装和正价订单延长退货，帮助顾客判断是否适合送礼。",
+      "title": "黑五活动另设79美元专区",
+      "comment": "FitFlop用统一价格组织多种款式，页面需讲清专区价与全站折扣的关系。",
       "category": "竞品当期活动",
-      "url": "https://www.manoloblahnik.com/us/the-latest/post/manolos-gift-guide-2026"
+      "url": "https://www.fitflop.com/us/en/shop/sale-stars-us"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0129.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0130.html"
 }
