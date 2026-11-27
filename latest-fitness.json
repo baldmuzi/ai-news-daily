@@ -1,33 +1,33 @@
 {
-  "edition": "0126",
-  "date": "2026年11月26日 09:12",
-  "intro": "全球女性运动新素材聚焦服饰面料、轻量会员挑战与多场景训练；Fanka 可用压缩服实穿、穿搭测试和真实参与故事制作内容。",
+  "edition": "0127",
+  "date": "2026年11月27日 09:14",
+  "intro": "全球女性运动新变化聚焦加重训练装备、旅行房内健身、围绝经期健康与社媒共创；Fanka 可用压缩服实穿和跨场景穿搭做可信内容。",
   "tags": [
-    "面料选择",
-    "会员挑战",
     "女性力量",
-    "运动零售",
-    "社媒教学"
+    "旅行训练",
+    "社媒共创",
+    "运动穿搭",
+    "健康恢复"
   ],
   "top3": [
     {
-      "title": "Gymshark 披露美国商场门店扩张计划",
-      "comment": "Fanka 可研究门店试穿、训练活动与线上内容如何衔接，用可复用的穿搭测试视频服务线下体验。"
+      "title": "女性专用负重背心品牌获得战略投资",
+      "comment": "Fanka 可拍负重训练的穿着检查：内衣支撑、压缩裤活动范围、背心与衣物摩擦点，避免把装备写成健康疗效。"
     },
     {
-      "title": "女性美利奴羊毛运动内搭品牌获年度品牌认可",
-      "comment": "Fanka 可做“面料、场景、洗护”实穿问答，用可展示的材料与版型信息说明自家压缩服，不借奖项推断消费者偏好。"
+      "title": "FINNSUL 公布“用户参与促成联名”的社媒案例",
+      "comment": "Fanka 可邀请真实运动社群参与内容选题和试穿反馈，记录合作过程与参与者声音，不把一次案例当成普遍爆款公式。"
     },
     {
-      "title": "Life Time 推出假期 20 天会员训练计划",
-      "comment": "Fanka 可做不以体重为中心的“假期 20 天可选动作”内容，展示运动内衣与压缩裤在不同强度下的穿着检查。"
+      "title": "新研究观察围绝经期症状与体重指数的相关性",
+      "comment": "Fanka 可采访中年女性真实运动穿着需求，讨论舒适与活动自由；健康问题请咨询专业人士。"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0126.html",
+  "url": "https://baldmuzi.github.io/ai-news-daily/fitness/edition-0127.html",
   "blog": {
-    "title": "Merino vs. Synthetic Workout Leggings: A Practical Fabric Guide for Women",
-    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/merino-vs-synthetic-workout-leggings-fabric-guide-women.html",
-    "summary": "由本期女性美利奴羊毛运动内搭品牌报道延展，比较面料触感、穿着场景、护理与压缩裤实穿检查。"
+    "title": "What to Wear for a Hotel Room Workout: A Women's Travel Activewear Guide",
+    "url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/hotel-room-workout-outfits-women-travel-guide.html",
+    "summary": "由本期酒店房内训练服务发布延展，整理旅行时小空间运动的服装、支撑、打包与换洗检查。"
   },
   "blog_index_url": "https://baldmuzi.github.io/ai-news-daily/fanka_html/"
 }
