@@ -1,33 +1,33 @@
 {
-  "edition": "0130",
-  "date": "2026年11月26日 09:20",
-  "intro": "本期关注配送与评价监管、社媒内容如何连接官网选购，以及旺季运输成本。官网案例展示当日特惠和固定价格专区，可参考其商品组织与优惠说明。",
+  "edition": "0131",
+  "date": "2026年11月27日 09:16",
+  "intro": "新研究关注陌生品牌的内容可信度，零售案例提示区分价格与销量增长。官网活动展示当日特惠和尺码导购，可据此检查商品说明、选购路径及优惠条件。",
   "tags": [
-    "购买保障",
-    "社媒导购",
-    "欧洲消费",
-    "运输成本",
-    "黑五特价"
+    "内容可信",
+    "价量拆分",
+    "品牌故事",
+    "连续浏览",
+    "尺码导购"
   ],
   "top3": [
     {
-      "title": "配送承诺与评价规则进入执法重点",
-      "comment": "SHEIN拟议和解涉及配送、评价与客服，促销前需检查售后路径。",
-      "category": "政策与落地",
-      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/11/shein-pay-100-million-over-allegations-deceptive-unfair-practices"
+      "title": "AI内容增加陌生品牌的购买顾虑",
+      "comment": "66%受访者因AI内容而更谨慎，实物与试穿信息需帮助新客判断。",
+      "category": "消费与购买行为",
+      "url": "https://www.fticonsulting.com/insights/reports/trust-transition-retail-resiliency-survey-2026-holiday-edition"
     },
     {
-      "title": "直播解释商品，官网完成选购",
-      "comment": "Ring Concierge让直播连接官网详细信息，鞋履内容也需接上选码与试穿说明。",
-      "category": "社媒与内容营销",
-      "url": "https://www.glossy.co/fashion/how-ring-concierge-is-using-the-loose-diamond-social-media-trend-to-funnel-buyers-to-its-own-channels/"
+      "title": "销售额增长，需要拆开看价格和件数",
+      "comment": "Best Buy电脑均价升约25%、销量下降，活动复盘应识别增长来源。",
+      "category": "价格与渠道",
+      "url": "https://www.modernretail.co/operations/best-buy-customers-undeterred-by-rising-prices/"
     },
     {
-      "title": "黑五活动另设79美元专区",
-      "comment": "FitFlop用统一价格组织多种款式，页面需讲清专区价与全站折扣的关系。",
+      "title": "黑五专区先按尺码缩小选款范围",
+      "comment": "Peter Sheppard把尺码入口与规则放在列表前，自动折扣仍需清楚说明。",
       "category": "竞品当期活动",
-      "url": "https://www.fitflop.com/us/en/shop/sale-stars-us"
+      "url": "https://www.petersheppard.com.au/collections/black-friday"
     }
   ],
-  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0130.html"
+  "url": "https://baldmuzi.github.io/ai-news-daily/vivaia/edition-0131.html"
 }
